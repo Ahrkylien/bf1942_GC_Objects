@@ -2,11 +2,11 @@ GeometryTemplate.create StandardMesh X-Wing_Fus_M1
 GeometryTemplate.file Vehicles/XWing/xwing_fus
 GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 20
-GeometryTemplate.setLodDistance 2 50
-GeometryTemplate.setLodDistance 3 100
-GeometryTemplate.setLodDistance 4 150
-GeometryTemplate.setLodDistance 5 250
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 500
+GeometryTemplate.setLodDistance 3 1000
+GeometryTemplate.setLodDistance 4 1500
+GeometryTemplate.setLodDistance 5 2500
 
 GeometryTemplate.create StandardMesh X-Wing_Fus_L1
 GeometryTemplate.file Vehicles/XWing/xwing_low_m1
@@ -16,41 +16,41 @@ GeometryTemplate.create StandardMesh Transparisteel_Canopy_M1
 GeometryTemplate.file Vehicles/XWing/Transparisteel_Canopy_m1
 GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 20
-GeometryTemplate.setLodDistance 2 50
-GeometryTemplate.setLodDistance 3 100
-GeometryTemplate.setLodDistance 4 150
-GeometryTemplate.setLodDistance 5 250
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 500
+GeometryTemplate.setLodDistance 3 1000
+GeometryTemplate.setLodDistance 4 1500
+GeometryTemplate.setLodDistance 5 2500
 
 GeometryTemplate.create StandardMesh Astromech_Droid
 GeometryTemplate.file Vehicles/XWing/xwing_r2
 GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 20
-GeometryTemplate.setLodDistance 2 50
-GeometryTemplate.setLodDistance 3 100
-GeometryTemplate.setLodDistance 4 150
-GeometryTemplate.setLodDistance 5 250
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 500
+GeometryTemplate.setLodDistance 3 1000
+GeometryTemplate.setLodDistance 4 1500
+GeometryTemplate.setLodDistance 5 2500
 
 GeometryTemplate.create StandardMesh XWing_SFoil_1_M1
 GeometryTemplate.file Vehicles/XWing/XWing_SFoil_1
 GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 20
-GeometryTemplate.setLodDistance 2 50
-GeometryTemplate.setLodDistance 3 100
-GeometryTemplate.setLodDistance 4 150
-GeometryTemplate.setLodDistance 5 250
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 500
+GeometryTemplate.setLodDistance 3 1000
+GeometryTemplate.setLodDistance 4 1500
+GeometryTemplate.setLodDistance 5 2500
 
 GeometryTemplate.create StandardMesh XWing_SFoil_2_M1
 GeometryTemplate.file Vehicles/XWing/XWing_SFoil_2
 GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 20
-GeometryTemplate.setLodDistance 2 50
-GeometryTemplate.setLodDistance 3 100
-GeometryTemplate.setLodDistance 4 150
-GeometryTemplate.setLodDistance 5 250
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 500
+GeometryTemplate.setLodDistance 3 1000
+GeometryTemplate.setLodDistance 4 1500
+GeometryTemplate.setLodDistance 5 2500
 
 GeometryTemplate.create StandardMesh XWing_Wheel_M1
 GeometryTemplate.file Vehicles/AWing/AWing_Wheel

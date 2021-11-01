@@ -4,9 +4,9 @@ ObjectTemplate.setNetworkableInfo NebulonB_Body_Info
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.inertiaModifier 80000/5/80000
-ObjectTemplate.drag 8
-ObjectTemplate.mass 1000000
+ObjectTemplate.inertiaModifier 1000/5/1000
+ObjectTemplate.drag 2
+ObjectTemplate.mass 100000
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 0
 ObjectTemplate.explosionRadius 15

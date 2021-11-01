@@ -15,14 +15,14 @@ GeometryTemplate.file 1PGerRightHand
 GeometryTemplate.create AnimatedMesh Soldier/3PJapBody
 GeometryTemplate.setSkin animations/JapBody.skn
 GeometryTemplate.file JapBody
-GeometryTemplate.setLodRange 0 0 1 30 2 80
-GeometryTemplate.setLodRange 3 150 4 210 5 230
+GeometryTemplate.setLodRange 0 0 1 60 2 160
+GeometryTemplate.setLodRange 3 300 4 420 5 460
 GeometryTemplate.setLodPercent 0 1.0
-GeometryTemplate.setLodPercent 1 0.7
-GeometryTemplate.setLodPercent 2 0.3
-GeometryTemplate.setLodPercent 3 0.2
-GeometryTemplate.setLodPercent 4 0.1
-GeometryTemplate.setLodPercent 5 0.05
+GeometryTemplate.setLodPercent 1 0.9
+GeometryTemplate.setLodPercent 2 0.8
+GeometryTemplate.setLodPercent 3 0.7
+GeometryTemplate.setLodPercent 4 0.6
+GeometryTemplate.setLodPercent 5 0.5
 
 beginRem
 GeometryTemplate.create AnimatedMesh Soldier/JapComplexHead1
@@ -53,14 +53,14 @@ endRem
 GeometryTemplate.create AnimatedMesh Soldier/JapHead
 GeometryTemplate.setSkin animations/JapHead.skn
 GeometryTemplate.file JapHead
-GeometryTemplate.setLodRange 0 0 1 10 2 30
-GeometryTemplate.setLodRange 3 50 4 60 5 100
+GeometryTemplate.setLodRange 0 0 1 10 2 60
+GeometryTemplate.setLodRange 3 100 4 120 5 200
 GeometryTemplate.setLodPercent 0 1.0
-GeometryTemplate.setLodPercent 1 0.7
-GeometryTemplate.setLodPercent 2 0.3
-GeometryTemplate.setLodPercent 3 0.2
-GeometryTemplate.setLodPercent 4 0.1
-GeometryTemplate.setLodPercent 5 0.03
+GeometryTemplate.setLodPercent 1 0.9
+GeometryTemplate.setLodPercent 2 0.8
+GeometryTemplate.setLodPercent 3 0.7
+GeometryTemplate.setLodPercent 4 0.6
+GeometryTemplate.setLodPercent 5 0.5
 
 GeometryTemplate.create AnimatedMesh Soldier/JapLeftHand
 GeometryTemplate.setSkin animations/JapLeftHand.skn

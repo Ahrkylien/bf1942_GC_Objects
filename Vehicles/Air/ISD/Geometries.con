@@ -3,11 +3,11 @@ GeometryTemplate.create StandardMesh isd
 GeometryTemplate.file Vehicles/ISD/isd
 GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 10
-GeometryTemplate.setLodDistance 2 15
-GeometryTemplate.setLodDistance 3 30
-GeometryTemplate.setLodDistance 4 50
-GeometryTemplate.setLodDistance 5 100
+GeometryTemplate.setLodDistance 1 2000
+GeometryTemplate.setLodDistance 2 2500
+GeometryTemplate.setLodDistance 3 2800
+GeometryTemplate.setLodDistance 4 3000
+GeometryTemplate.setLodDistance 5 3500
 
 
 

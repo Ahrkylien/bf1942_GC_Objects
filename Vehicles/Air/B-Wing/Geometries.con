@@ -2,11 +2,11 @@ GeometryTemplate.create StandardMesh B-Wing_Fus
 GeometryTemplate.file Vehicles/BWing/bwing_fus
 GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 80
-GeometryTemplate.setLodDistance 2 150
-GeometryTemplate.setLodDistance 3 300
-GeometryTemplate.setLodDistance 4 500
-GeometryTemplate.setLodDistance 5 1000
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 500
+GeometryTemplate.setLodDistance 3 1000
+GeometryTemplate.setLodDistance 4 1500
+GeometryTemplate.setLodDistance 5 2500
 
 GeometryTemplate.create StandardMesh B-Wing_Low
 GeometryTemplate.file Vehicles/BWing/bwing_low
@@ -16,31 +16,31 @@ GeometryTemplate.create StandardMesh BWing_BotWing
 GeometryTemplate.file Vehicles/BWing/bwing_botwing
 GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 80
-GeometryTemplate.setLodDistance 2 150
-GeometryTemplate.setLodDistance 3 300
-GeometryTemplate.setLodDistance 4 500
-GeometryTemplate.setLodDistance 5 1000
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 500
+GeometryTemplate.setLodDistance 3 1000
+GeometryTemplate.setLodDistance 4 1500
+GeometryTemplate.setLodDistance 5 2500
 
 GeometryTemplate.create StandardMesh BWing_TopWing
 GeometryTemplate.file Vehicles/BWing/bwing_topwing
 GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 80
-GeometryTemplate.setLodDistance 2 150
-GeometryTemplate.setLodDistance 3 300
-GeometryTemplate.setLodDistance 4 500
-GeometryTemplate.setLodDistance 5 1000
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 500
+GeometryTemplate.setLodDistance 3 1000
+GeometryTemplate.setLodDistance 4 1500
+GeometryTemplate.setLodDistance 5 2500
 
 GeometryTemplate.create StandardMesh BWing_Cockpit
 GeometryTemplate.file Vehicles/BWing/bwing_cockpit
 GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 80
-GeometryTemplate.setLodDistance 2 150
-GeometryTemplate.setLodDistance 3 300
-GeometryTemplate.setLodDistance 4 500
-GeometryTemplate.setLodDistance 5 1000
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 500
+GeometryTemplate.setLodDistance 3 1000
+GeometryTemplate.setLodDistance 4 1500
+GeometryTemplate.setLodDistance 5 2500
 
 GeometryTemplate.create StandardMesh BWing_Wheel_M1
 GeometryTemplate.file Vehicles/AWing/AWing_Wheel

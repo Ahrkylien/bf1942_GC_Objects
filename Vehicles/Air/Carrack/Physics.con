@@ -7,7 +7,7 @@ ObjectTemplate.loadSoundScript Sounds/carrackengine.ssc
 ObjectTemplate.setMinRotation 0/0/-700
 ObjectTemplate.setMaxRotation 0/0/3000
 ObjectTemplate.setMaxSpeed 0/0/3000
-ObjectTemplate.setAcceleration 0/0/80
+ObjectTemplate.setAcceleration 0/0/3000
 ObjectTemplate.setAutomaticPitchStabilization 1
 ObjectTemplate.setInputToRoll c_PIThrottle
 ObjectTemplate.setAutomaticReset 1

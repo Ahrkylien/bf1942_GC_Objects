@@ -7,7 +7,7 @@ ObjectTemplate.hasResponsePhysics 0
 ObjectTemplate.hasMobilePhysics 0
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.inertiaModifier 80000/5/80000
-ObjectTemplate.drag 5
+ObjectTemplate.drag 4
 ObjectTemplate.mass 16000
 ObjectTemplate.explosionRadius 15
 ObjectTemplate.explosionDamage 10

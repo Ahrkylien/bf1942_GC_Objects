@@ -1,10 +1,10 @@
 GeometryTemplate.create StandardMesh yt600
 GeometryTemplate.file Vehicles/yt600/yt600
-GeometryTemplate.hasDynamicShadow 0
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 200
-GeometryTemplate.setLodDistance 2 500
-GeometryTemplate.setLodDistance 3 800
-GeometryTemplate.setLodDistance 4 1000
-GeometryTemplate.setLodDistance 5 1200
+GeometryTemplate.setLodDistance 1 2000
+GeometryTemplate.setLodDistance 2 2500
+GeometryTemplate.setLodDistance 3 2800
+GeometryTemplate.setLodDistance 4 3000
+GeometryTemplate.setLodDistance 5 3500
 

@@ -1,11 +1,12 @@
 GeometryTemplate.create StandardMesh lancerbody
 GeometryTemplate.file Vehicles/lancer/lancer_hull
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 900
-GeometryTemplate.setLodDistance 2 1500
-GeometryTemplate.setLodDistance 3 1600
-GeometryTemplate.setLodDistance 4 1700
-GeometryTemplate.setLodDistance 5 1800
+GeometryTemplate.setLodDistance 1 2000
+GeometryTemplate.setLodDistance 2 2500
+GeometryTemplate.setLodDistance 3 2800
+GeometryTemplate.setLodDistance 4 3000
+GeometryTemplate.setLodDistance 5 3500
 
 GeometryTemplate.create StandardMesh lancergun
 GeometryTemplate.file Vehicles/lancer/lancer_gun
@@ -13,20 +14,20 @@ GeometryTemplate.file Vehicles/lancer/lancer_gun
 GeometryTemplate.create StandardMesh lancerinside
 GeometryTemplate.file Vehicles/lancer/lancer_interior
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 100
-GeometryTemplate.setLodDistance 2 300
-GeometryTemplate.setLodDistance 3 400
-GeometryTemplate.setLodDistance 4 500
-GeometryTemplate.setLodDistance 5 600
+GeometryTemplate.setLodDistance 1 2000
+GeometryTemplate.setLodDistance 2 2500
+GeometryTemplate.setLodDistance 3 2800
+GeometryTemplate.setLodDistance 4 3000
+GeometryTemplate.setLodDistance 5 3500
 
 GeometryTemplate.create StandardMesh lancerwindow
 GeometryTemplate.file Vehicles/lancer/lancer_windows
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 100
-GeometryTemplate.setLodDistance 2 800
-GeometryTemplate.setLodDistance 3 1300
-GeometryTemplate.setLodDistance 4 1400
-GeometryTemplate.setLodDistance 5 1800
+GeometryTemplate.setLodDistance 1 2000
+GeometryTemplate.setLodDistance 2 2500
+GeometryTemplate.setLodDistance 3 2800
+GeometryTemplate.setLodDistance 4 3000
+GeometryTemplate.setLodDistance 5 3500
 
 GeometryTemplate.create StandardMesh lancerunit
 GeometryTemplate.file Vehicles/lancer/lancer_unit
@@ -39,12 +40,13 @@ GeometryTemplate.setLodDistance 5 500
 
 GeometryTemplate.create StandardMesh Lancerlow
 GeometryTemplate.file Vehicles/lancer/lancer_hull_m2
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 100
-GeometryTemplate.setLodDistance 2 200
-GeometryTemplate.setLodDistance 3 300
-GeometryTemplate.setLodDistance 4 400
-GeometryTemplate.setLodDistance 5 500
+GeometryTemplate.setLodDistance 1 2000
+GeometryTemplate.setLodDistance 2 2500
+GeometryTemplate.setLodDistance 3 2800
+GeometryTemplate.setLodDistance 4 3000
+GeometryTemplate.setLodDistance 5 3500
 
 GeometryTemplate.create StandardMesh 1P_LancerGunnerHUD_M1
 GeometryTemplate.file Vehicles/lancer/lancer_hud

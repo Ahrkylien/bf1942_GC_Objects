@@ -1,11 +1,12 @@
 GeometryTemplate.create StandardMesh carrackbody
 GeometryTemplate.file Vehicles/carrack/carrack_hull
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 900
-GeometryTemplate.setLodDistance 2 1500
-GeometryTemplate.setLodDistance 3 1600
-GeometryTemplate.setLodDistance 4 1700
-GeometryTemplate.setLodDistance 5 1800
+GeometryTemplate.setLodDistance 1 2000
+GeometryTemplate.setLodDistance 2 2500
+GeometryTemplate.setLodDistance 3 2800
+GeometryTemplate.setLodDistance 4 3000
+GeometryTemplate.setLodDistance 5 3500
 
 GeometryTemplate.create StandardMesh carrackgun
 GeometryTemplate.file Vehicles/lambda/lambda_back_gun
@@ -13,17 +14,18 @@ GeometryTemplate.file Vehicles/lambda/lambda_back_gun
 GeometryTemplate.create StandardMesh carrackinside
 GeometryTemplate.file Vehicles/carrack/carrack_inside
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 100
-GeometryTemplate.setLodDistance 2 300
-GeometryTemplate.setLodDistance 3 400
-GeometryTemplate.setLodDistance 4 500
-GeometryTemplate.setLodDistance 5 600
+GeometryTemplate.setLodDistance 1 1000
+GeometryTemplate.setLodDistance 2 1500
+GeometryTemplate.setLodDistance 3 1800
+GeometryTemplate.setLodDistance 4 2000
+GeometryTemplate.setLodDistance 5 2500
 
 GeometryTemplate.create StandardMesh carracklow
 GeometryTemplate.file Vehicles/carrack/carrack_hull_m2
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 100
-GeometryTemplate.setLodDistance 2 200
-GeometryTemplate.setLodDistance 3 300
-GeometryTemplate.setLodDistance 4 400
-GeometryTemplate.setLodDistance 5 500
+GeometryTemplate.setLodDistance 1 2000
+GeometryTemplate.setLodDistance 2 2500
+GeometryTemplate.setLodDistance 3 2800
+GeometryTemplate.setLodDistance 4 3000
+GeometryTemplate.setLodDistance 5 3500
