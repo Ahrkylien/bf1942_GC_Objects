@@ -1,0 +1,28 @@
+ObjectTemplate.create Kit Empire_Scout_NoCamo
+ObjectTemplate.setType Scout
+ObjectTemplate.setKitTeam 1
+ObjectTemplate.geometry Kit_Axis_Scout
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_scout_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_scout_64x64.tga"
+
+ObjectTemplate.addWeaponIcon "Weapon/icon_axisknife.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_e11s.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_binoculars.dds"
+
+ObjectTemplate.setKitIcon 0 "kits/Icon_scout_axis_selected.tga"
+ObjectTemplate.setKitName 0 "RESPAWN_SCOUT"
+ObjectTemplate.setKitActiveName 0 "RESPAWN_ACTIVE_SCOUT"
+
+ObjectTemplate.addTemplate E-11Sniper
+ObjectTemplate.addTemplate KnifeAllies
+ObjectTemplate.addTemplate BinocularsRebel
+
+ObjectTemplate.addTemplate Sprint2
+ObjectTemplate.addTemplate NoChute
+
+ObjectTemplate.aiTemplate  Scout

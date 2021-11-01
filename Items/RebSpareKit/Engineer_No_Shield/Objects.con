@@ -1,0 +1,32 @@
+ObjectTemplate.create Kit Rebel_Engineer_NoShield
+ObjectTemplate.setType Engineer
+ObjectTemplate.setKitTeam 2
+ObjectTemplate.geometry Kit_Allies_Engineer
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+
+rem Add Class Visual Art
+ObjectTemplate.addTemplate reb_backpack
+
+ObjectTemplate.setHealthBarIcon "Ingame/reb_Healthbar_empty_engineer_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/reb_Healthbar_full_engineer_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/icon_alliesknife.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_Dl44"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_demokit.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_hydrospanner.dds"
+
+ObjectTemplate.setKitIcon 4 "kits/Icon_engineer_allies_selected.tga"
+ObjectTemplate.setKitName 4 "RESPAWN_ENGINEER"
+ObjectTemplate.setKitActiveName 4 "RESPAWN_ACTIVE_ENGINEER"
+
+ObjectTemplate.addTemplate Dl44
+ObjectTemplate.addTemplate KnifeAllies
+ObjectTemplate.addTemplate RepairPack
+ObjectTemplate.addTemplate Detonator
+ObjectTemplate.addTemplate ExpPack
+
+ObjectTemplate.addTemplate NoChute
+
+ObjectTemplate.aitemplate Engineer

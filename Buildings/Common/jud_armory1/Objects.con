@@ -7,8 +7,8 @@ ObjectTemplate.setPosition -.259602/.622984/.0129127
 ObjectTemplate.setRotation 0/-78.4135/0
 
 
-ObjectTemplate.addTemplate TL-21_Spawner
-ObjectTemplate.setPosition -.0912584/.50/-0.05
+ObjectTemplate.addTemplate e11_Spawner
+ObjectTemplate.setPosition -.0912584/.622984/.0129127
 ObjectTemplate.setRotation 0/-78.4135/0
 
 
@@ -17,8 +17,8 @@ ObjectTemplate.setPosition .0767183/.622984/.0129127
 ObjectTemplate.setRotation 0/-78.4135/0
 
 
-ObjectTemplate.addTemplate Disrupter2_Spawner
-ObjectTemplate.setPosition .244394/.475/.0129127
+ObjectTemplate.addTemplate e11_Spawner
+ObjectTemplate.setPosition .244394/.622984/.0129127
 ObjectTemplate.setRotation 0/-78.4135/0
 
 

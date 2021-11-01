@@ -6,7 +6,7 @@ ObjectTemplate.addTemplate a295_Spawner
 ObjectTemplate.setPosition -.259602/.60/.0129127
 ObjectTemplate.setRotation 0/-78.4135/0
 
-ObjectTemplate.addTemplate Rebel_Tracker_Spawner
+ObjectTemplate.addTemplate a295_Spawner
 ObjectTemplate.setPosition -.0912584/.60/.0129127
 ObjectTemplate.setRotation 0/-78.4135/0
 
@@ -14,8 +14,8 @@ ObjectTemplate.addTemplate a295_Spawner
 ObjectTemplate.setPosition .0767183/.60/.0129127
 ObjectTemplate.setRotation 0/-78.4135/0
 
-ObjectTemplate.addTemplate Disrupter_Spawner
-ObjectTemplate.setPosition .244394/.525/.0129127
+ObjectTemplate.addTemplate a295_Spawner
+ObjectTemplate.setPosition .244394/.60/.0129127
 ObjectTemplate.setRotation 0/-78.4135/0
 
 

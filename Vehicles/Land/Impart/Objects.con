@@ -167,7 +167,7 @@ rem -------------------------------------
 ObjectTemplate.addTemplate ImpartGunBase
 ObjectTemplate.setPosition 0/1.17/0
 ObjectTemplate.addTemplate ImpartGunnerCamera
-ObjectTemplate.setPosition 0/6.0/-7
+ObjectTemplate.setPosition 0/2/0
 rem -------------------------------------
 ObjectTemplate.setMinRotation -60/0/0
 ObjectTemplate.setMaxRotation 60/0/0

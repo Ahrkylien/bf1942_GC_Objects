@@ -185,8 +185,8 @@ rem -------------------------------------
 ObjectTemplate.addTemplate Assault_TankGunBase
 ObjectTemplate.setPosition 0/0.6291/0
 rem -------------------------------------
-ObjectTemplate.setMinRotation -145/0/0
-ObjectTemplate.setMaxRotation 145/0/0
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
 ObjectTemplate.setMaxSpeed 20/25/0
 ObjectTemplate.setAcceleration 1000/0/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX
@@ -422,7 +422,7 @@ ObjectTemplate.addTemplate Assault_TankEngine
 ObjectTemplate.addTemplate RAT_PCO
 
 ObjectTemplate.addTemplate Assault_TankCamera
-ObjectTemplate.setPosition 0/3.85/0
+ObjectTemplate.setPosition 0/2.5/3
 
 ObjectTemplate.addTemplate Assault_Tank_wheel_tlm
 ObjectTemplate.setPosition -2.7884/0.8811/0.7641

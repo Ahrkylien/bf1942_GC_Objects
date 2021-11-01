@@ -1,0 +1,882 @@
+rem *********** 5.Dec 04 by Django
+rem *********** Patched by SZier
+rem *********** version 4.0
+rem *********** (Intergrated into Build R5 - HUDS - Etc)
+rem *********** patch 3 - Jan 6th 2004
+rem *********** patch 4 - Jan 14th 2004 Django
+rem *********** patch 5 - Jan 19th 2004 Django
+rem *********** patch  Jan 29th 2004 Django
+
+rem *** atatde ***
+ObjectTemplate.create playercontrolobject ATAT
+ObjectTemplate.NameTagOffset -0.3/-0.2/0
+ObjectTemplate.setNetworkableInfo atatdeBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 12
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.damageFromWater 90
+ObjectTemplate.drag 1
+ObjectTemplate.mass 200000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.hitpoints 850
+ObjectTemplate.maxhitpoints 850
+ObjectTemplate.material 831
+ObjectTemplate.setSoldierExitLocation 0/16.3845/7 0/0/0
+ObjectTemplate.criticalDamage 12
+ObjectTemplate.hpLostWhileCriticalDamage 1.2
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.hpLostWhileUpSideDown 2500
+ObjectTemplate.hpLostWhileDamageFromWater 100
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.addArmorEffect 500 e_scrapmetal 0/20/0
+ObjectTemplate.addArmorEffect 400 em_FletcherDamage 0/15/8
+ObjectTemplate.addArmorEffect 300 e_scrapmetal 0/15/10
+ObjectTemplate.addArmorEffect 200 e_scrapmetal -3/20/-7
+ObjectTemplate.addArmorEffect 100 em_FletcherDamage 8/15/0
+ObjectTemplate.addArmorEffect 50 em_FletcherDamage 0/18/-6
+ObjectTemplate.addArmorEffect 25 em_FletcherDamage 2/19/5
+ObjectTemplate.addArmorEffect 5 em_FletcherDamage 0/15/15
+ObjectTemplate.addArmorEffect 0 e_ExplGas 2/20/-4
+ObjectTemplate.addArmorEffect 0 e_ExplGas -2/17/4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/20/-10
+ObjectTemplate.addArmorEffect 0 e_ExplGas -0/17/10
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 2/16/-8
+ObjectTemplate.addArmorEffect 10 em_ExFumePOW 0/17/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+
+ObjectTemplate.aiTemplate ATATAI
+ObjectTemplate.setVehicleIcon "vehicle/Icon_atatde.dds"
+ObjectTemplate.setVehicleIconPos 28/46
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.sonarPos 1
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTHeavyTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_at-at_64x64.dds"
+ObjectTemplate.addTemplate lodatatde
+ObjectTemplate.setPosition 0.0/25.8666/-1.12945e-006
+ObjectTemplate.addTemplate atatde_soldierspawn
+ObjectTemplate.setPosition 0.0/16.0/1.59545
+ObjectTemplate.setRotation 142.5/0.0/0.0
+
+
+rem *** lodatatde ***
+ObjectTemplate.create lodobject lodatatde
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate atatdecomplex
+ObjectTemplate.setPosition 0.0/-25.5154/8.63572e-007
+ObjectTemplate.addTemplate atatdesimple
+ObjectTemplate.setPosition 0.0/-27.5569/1.00487e-006
+ObjectTemplate.addTemplate atatdewreck
+ObjectTemplate.setPosition 0.0/-28.5569/9.8404e-007
+ObjectTemplate.setRotation 0.0/0/0.0
+
+ObjectTemplate.lodSelector atatdeLodSelector
+
+rem *** atatdecomplex ***
+ObjectTemplate.create bundle atatdecomplex
+ObjectTemplate.geometry atatdeHips
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+rem ------------------------------------------
+ObjectTemplate.addTemplate atatdedummyengine
+ObjectTemplate.setPosition 0.0/-9.46692/-0.25
+ObjectTemplate.addTemplate ladder_7m_m1
+ObjectTemplate.setPosition -1.9078/18.25/-3.7332
+ObjectTemplate.setRotation 0.0/0.0/0.0
+ObjectTemplate.addTemplate atatdeentry
+ObjectTemplate.setPosition -0.254946/16.7364/9.0486
+ObjectTemplate.addTemplate atatdecopilotentry
+ObjectTemplate.setPosition -0.254946/16.7364/9.0486
+rem ObjectTemplate.addTemplate atatdeentry
+rem ObjectTemplate.setPosition -0.510408/-1/5.15192
+ObjectTemplate.addTemplate drive_wheelfl
+ObjectTemplate.setPosition -4.07151/11.9298/7.76987
+ObjectTemplate.addTemplate drive_wheelfr
+ObjectTemplate.setPosition 4.04341/11.0624/7.45934
+ObjectTemplate.setRotation 180.0/0.0/0.0
+ObjectTemplate.addTemplate drive_wheelbl
+ObjectTemplate.setPosition -3.43125/11.129/-9.6768
+ObjectTemplate.setRotation 180.0/0.0/0.0
+ObjectTemplate.addTemplate drive_wheelbr
+ObjectTemplate.setPosition 3.45142/12.3494/-9.52854
+ObjectTemplate.addTemplate atatdecockpit
+ObjectTemplate.setPosition 0.116066/15.594/12.4921
+
+ObjectTemplate.addtemplate ammobox
+ObjectTemplate.setPosition 0.0417251/21.0202/1.71152
+ObjectTemplate.setRotation 1.33099/0.851369/-0.00125754
+ObjectTemplate.addtemplate healthpack
+ObjectTemplate.setPosition 0.0184998/21.70/1.71816
+ObjectTemplate.setRotation -86.4635/-0.349741/-0.70692
+
+ObjectTemplate.addTemplate passengers
+
+ObjectTemplate.AddToCollisionGroup c_CGLandscape
+ObjectTemplate.AddToCollisionGroup c_CGStaticObjects
+rem ----------------------------------------------
+
+rem *** passengers ***
+ObjectTemplate.create bundle passengers
+ObjectTemplate.addTemplate atatdedoorpco
+ObjectTemplate.addTemplate atatdehatchpco4
+ObjectTemplate.addTemplate atatdehatchpco5
+ObjectTemplate.addTemplate atatdehatchpco6
+
+rem *** atatdecockpit ***
+ObjectTemplate.create rotationalbundle atatdecockpit
+ObjectTemplate.setNetworkableInfo atatdeBodyInfo
+ObjectTemplate.loadSoundScript Sounds/atatdedoor.ssc
+ObjectTemplate.geometry atatdeHead
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.setMinRotation -35/-28/0
+ObjectTemplate.setMaxRotation 35/28/0
+ObjectTemplate.setMaxSpeed 50/50/0
+ObjectTemplate.setAcceleration 100/100/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.addTemplate ATATPilotCamera
+ObjectTemplate.setPosition -0.0564456/-1.98411/10.2762
+ObjectTemplate.setRotation -0.236847/8/0
+ObjectTemplate.addTemplate atatdechinlaserbundle
+ObjectTemplate.setPosition -0.113952/-6.22904/8.82807
+ObjectTemplate.addTemplate atatdeslgunner
+ObjectTemplate.setPosition -0.359013/-1.81437/8.31939
+ObjectTemplate.setRotation 0.0172348/0.823694/-1.93141e-005
+
+
+
+rem *** atatdechinlaserbundle ***
+ObjectTemplate.create bundle atatdechinlaserbundle
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.addTemplate atatdechinlasergunL
+ObjectTemplate.setPosition -1.40038/3.65075/-8.40719
+ObjectTemplate.setRotation -0.0265579/6.74724/0.0041542
+ObjectTemplate.addTemplate atatdechinlasergunR
+ObjectTemplate.setPosition 1.54391/3.65065/-8.40642
+ObjectTemplate.setRotation -0.0265579/6.74724/0.0041542
+
+rem *** atatdeclgunnerseat ***
+ObjectTemplate.create seatobject atatpassseat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+ObjectTemplate.seatAnimationUpperBody Ub_PassengerInHanomag
+ObjectTemplate.seatAnimationLowerBody Lb_PassengerInHanomag
+
+ObjectTemplate.create SeatObject atatdoorseat
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+
+rem *** atatdeslgunner ***
+ObjectTemplate.create playercontrolobject atatdeslgunner
+ObjectTemplate.setNetworkableInfo atatdeBodyInfo
+ObjectTemplate.aiTemplate ATATcopilotAI
+ObjectTemplate.setVehicleIcon "vehicle/Icon_atatde.dds"
+ObjectTemplate.setVehicleIconPos 33/43
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTHeavyTank
+ObjectTemplate.sonarPos 1
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_at-at_16x16.dds"
+ObjectTemplate.setSoldierExitLocation 0/1.3845/-12.56142 0/0/0
+rem ----------------------------------------------
+ObjectTemplate.addTemplate atatdesidelaserbundle
+ObjectTemplate.setPosition 0.387211/0.170352/-1.72714
+ObjectTemplate.setRotation 0.0/8.32756/0.0
+
+
+rem *** atatdesidelaserbundle ***
+ObjectTemplate.create rotationalbundle atatdesidelaserbundle
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setNetworkableInfo atatdeBodyInfo
+ObjectTemplate.loadSoundScript Sounds/atatdeSLRotate.ssc
+ObjectTemplate.setMinRotation -7.5/-70/0
+ObjectTemplate.setMaxRotation 9.5/20/0
+ObjectTemplate.setMaxSpeed 25/25/0
+ObjectTemplate.setAcceleration 500/500/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+rem ---------------------------------------------------
+ObjectTemplate.addTemplate atatdesidelaser
+ObjectTemplate.setPosition 0.0082386/-0.582462/-0.139846
+ObjectTemplate.setRotation 0.160423/8.5/-0.0277403
+ObjectTemplate.addTemplate atatde_mgun_m1
+ObjectTemplate.setPosition -0.108254/2.12771/-4.86353
+ObjectTemplate.setRotation 0.155113/18.9317/-0.0290077
+ObjectTemplate.addTemplate atatdesidelasergun
+ObjectTemplate.setPosition -0.0892521/-1.43497/5.46204
+ObjectTemplate.setRotation 0.155304/18.6004/-0.0289115
+ObjectTemplate.addTemplate ATATGunnerCamera
+ObjectTemplate.setPosition -0.0891015/-1.43953/5.46151
+ObjectTemplate.setRotation 0.0697479/18.2913/-0.03796
+rem ---------------------------------------------------
+
+
+rem *** atatdesidelaser ***
+ObjectTemplate.create bundle atatdesidelaser
+ObjectTemplate.geometry atatdeSideLaser
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setAttachToListener 1
+
+rem *** atatde_mgun_m1 ***
+ObjectTemplate.create bundle atatde_mgun_m1
+ObjectTemplate.geometry atatde_Mgun_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setAttachToListener 1
+
+rem ******************************************
+rem PCO's
+rem ******************************************
+
+rem *** atatdehatchpco4 ***
+ObjectTemplate.create playercontrolobject atatdehatchpco4
+ObjectTemplate.NameTagOffset 0/0.60/0
+ObjectTemplate.aiTemplate ATATPassenger4AI
+ObjectTemplate.setNetworkableInfo atatdePassengerInfo
+ObjectTemplate.setVehicleIcon "vehicle/Icon_atatde.dds"
+ObjectTemplate.setVehicleIconPos 86/36
+ObjectTemplate.setNumberOfWeaponIcons 0
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_at-at_16x16.dds"
+ObjectTemplate.setSoldierExitLocation 3.40914/16.3845/-1.56142 0/0/0
+ObjectTemplate.sonarPos 1
+ObjectTemplate.addTemplate atatdehatchcamera
+ObjectTemplate.setPosition 3.40914/16/-1.56142
+ObjectTemplate.setRotation -90.0/0.0/0.0
+ObjectTemplate.addTemplate atatpassseat
+ObjectTemplate.setPosition 3.40914/15.3986/-1.56142
+ObjectTemplate.setRotation -90.0/0.0/0.0
+ObjectTemplate.addTemplate atatdeentry
+ObjectTemplate.setPosition 3.40914/15.3845/-1.56142
+ObjectTemplate.addTemplate atatdeentry
+ObjectTemplate.setPosition -0.510408/-1/-3.15192
+
+rem *** atatdehatchpco5 ***
+ObjectTemplate.create playercontrolobject atatdehatchpco5
+ObjectTemplate.NameTagOffset 0/0.60/0
+ObjectTemplate.aiTemplate ATATPassenger5AI
+ObjectTemplate.setNetworkableInfo atatdePassengerInfo
+ObjectTemplate.setVehicleIcon "vehicle/Icon_atatde.dds"
+ObjectTemplate.setVehicleIconPos 86/33
+ObjectTemplate.setNumberOfWeaponIcons 0
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_at-at_16x16.dds"
+ObjectTemplate.setSoldierExitLocation 0/-8.5/-3 0/0/0
+ObjectTemplate.sonarPos 1
+ObjectTemplate.addTemplate atatdehatchcamera
+ObjectTemplate.setPosition 3.40914/16/1.56142
+ObjectTemplate.setRotation -90.0/0.0/0.0
+ObjectTemplate.addtemplate atatpassseat
+ObjectTemplate.setPosition 3.40914/15.4002/1.56142
+ObjectTemplate.setRotation -90.0/0.0/0.0
+ObjectTemplate.addTemplate atatdeentry
+ObjectTemplate.setPosition 3.40914/15.3845/1.56142
+ObjectTemplate.addTemplate atatdeentry
+ObjectTemplate.setPosition -0.510408/-1/-3.15192
+
+
+rem *** atatdehatchpco6 ***
+ObjectTemplate.create playercontrolobject atatdehatchpco6
+ObjectTemplate.NameTagOffset 0/0.60/0
+ObjectTemplate.aiTemplate ATATPassenger6AI
+ObjectTemplate.setSoldierExitLocation 0/-8.5/-3 0/0/0
+ObjectTemplate.setNetworkableInfo atatdePassengerInfo
+ObjectTemplate.setVehicleIcon "vehicle/Icon_atatde.dds"
+ObjectTemplate.setVehicleIconPos 86/33
+ObjectTemplate.setNumberOfWeaponIcons 0
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_at-at_16x16.dds"
+ObjectTemplate.sonarPos 1
+ObjectTemplate.addTemplate atatdehatchcamera
+ObjectTemplate.setPosition -2.10466/16/0
+ObjectTemplate.setRotation 90.0/0.0/0.0
+ObjectTemplate.addtemplate atatpassseat
+ObjectTemplate.setPosition -2.10466/15.4/0.0
+ObjectTemplate.setRotation 90.0/0.0/0.0
+ObjectTemplate.addTemplate atatdeentry
+ObjectTemplate.setPosition -2.10466/15.3845/0
+ObjectTemplate.addTemplate atatdeentry
+ObjectTemplate.setPosition -0.510408/-1/-3.15192
+
+
+rem *** atatdedoorpco ***
+ObjectTemplate.create playercontrolobject atatdedoorpco
+ObjectTemplate.NameTagOffset 0/0.60/0
+ObjectTemplate.setNetworkableInfo atatdePassengerInfo
+ObjectTemplate.aiTemplate ATATPassenger3AI
+ObjectTemplate.setSoldierExitLocation -3.469/16.1705/-4.33479 0/0/0
+ObjectTemplate.setVehicleIcon "vehicle/Icon_atatde.dds"
+ObjectTemplate.setVehicleIconPos 76/33
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.sonarPos 1
+ObjectTemplate.addTemplate atatdeentry
+ObjectTemplate.setPosition -3.469/15.6705/-4.33479
+ObjectTemplate.addTemplate atatdeentry
+ObjectTemplate.setPosition -0.510408/-1/-5.15192
+ObjectTemplate.addTemplate atatdehatchcamera
+ObjectTemplate.setPosition -3.469/16/-4.33479
+ObjectTemplate.setRotation -70/0/0
+ObjectTemplate.addTemplate atatdoorseat
+ObjectTemplate.setPosition -3.469/15.6705/-4.33479
+ObjectTemplate.setRotation -70/0/0
+ObjectTemplate.addTemplate atatdedoorrot
+ObjectTemplate.setPosition -4.86043/14.71/3.51076
+ObjectTemplate.setRotation 82.2785/-88.9915/-172.277
+
+
+rem *** atatde_door_m1 ***
+ObjectTemplate.create simpleobject atatde_door_m1
+ObjectTemplate.geometry atatde_door_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+
+rem *** atatdedoorrot ***
+ObjectTemplate.create rotationalbundle atatdedoorrot
+ObjectTemplate.setNetworkableInfo atatdeBodyInfo
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.loadSoundScript Sounds/atatdedoor.ssc
+ObjectTemplate.setMinRotation 0/-95/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/20/0
+ObjectTemplate.setAcceleration 0/18/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.geometry atatde_door_m1
+
+
+rem *** atatdesimple ***
+ObjectTemplate.create simpleobject atatdesimple
+ObjectTemplate.geometry atatde_Hull_L1
+
+
+rem *** atatdewreck ***
+ObjectTemplate.create bundle atatdewreck
+ObjectTemplate.geometry wreck_atatde_m1
+ObjectTemplate.addTemplate e_scrapmetalsmoke
+ObjectTemplate.setPosition 4.37417/-8.33631/-15.2535
+ObjectTemplate.startoneffects 0
+
+rem *** atatdehatchcamera ***
+ObjectTemplate.create camera atatdehatchcamera
+ObjectTemplate.setMinRotation -100/-30/0
+ObjectTemplate.setMaxRotation 100/30/0
+ObjectTemplate.setMaxSpeed 100/100/0
+ObjectTemplate.setAcceleration 5000/-5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+
+rem *** atatdeentry ***
+ObjectTemplate.create entrypoint atatdeentry
+ObjectTemplate.setEntryRadius 5.0
+
+rem *** atatdecopilotentry ***
+ObjectTemplate.create entrypoint atatdecopilotentry
+ObjectTemplate.setEntryRadius 3.0
+
+rem *** atatde_soldierspawn ***
+ObjectTemplate.create spawnpoint atatde_soldierspawn
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 64
+ObjectTemplate.setGroup 64
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** atatde_door_entry ***
+ObjectTemplate.create entrypoint atatde_door_entry
+ObjectTemplate.setEntryRadius 1.0
+
+
+
+ObjectTemplate.create Camera ATATPilotCamera
+ObjectTemplate.addTemplate lodATATPilotHUD
+ObjectTemplate.setPosition 0/0/0.3
+
+
+ObjectTemplate.create Camera ATATGunnerCamera
+ObjectTemplate.addTemplate lodATATGunnerHUD2
+ObjectTemplate.setPosition 0/0/0.3
+
+
+ObjectTemplate.create LodObject lodATATPilotHUD
+rem -------------------------------------
+ObjectTemplate.addTemplate ATATPilotHUDExternal
+ObjectTemplate.addTemplate ATATPilotHUDInternal
+ObjectTemplate.setPosition 0.0/-0.0018494/0.000257758
+
+rem -------------------------------------
+ObjectTemplate.lodSelector ATATHUDSelector
+
+ObjectTemplate.create LodObject lodATATGunnerHUD2
+rem -------------------------------------
+ObjectTemplate.addTemplate ATATPilotHUDExternal
+ObjectTemplate.addTemplate ATATGunnerHUDInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector ATATHUDSelector
+
+
+ObjectTemplate.create SimpleObject ATATPilotHUDExternal
+rem ObjectTemplate.geometry Model_Null
+
+ObjectTemplate.create SimpleObject ATATPilotHUDInternal
+ObjectTemplate.geometry ATATPilotHUD
+
+ObjectTemplate.create SimpleObject ATATGunnerHUDInternal
+ObjectTemplate.geometry ATATGunnerHUD
+
+LodSelectorTemplate.create DistCompareSelector ATATHUDSelector
+LodSelectorTemplate.addLodDistance 5
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem **************************************************************************
+rem CRAZY LEG ROTATIONAL BUNDLE STUFF!!!!! 
+rem **************************************************************************
+rem **************************************************************************
+rem CRAZY LEG ROTATIONAL BUNDLE STUFF!!!!! 
+rem **************************************************************************
+
+rem *** drive_wheelfl ***
+ObjectTemplate.create rotationalbundle drive_wheelfl
+ObjectTemplate.setNetworkableInfo atatdelegInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 50/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+ObjectTemplate.addTemplate counterrot0fl
+ObjectTemplate.setRotation 0.0/10.0/0.0
+ObjectTemplate.addTemplate counterrot1fl
+ObjectTemplate.setPosition 0.0/-10.0/-1.71011
+
+
+rem *** counterrot0fl ***
+ObjectTemplate.create rotationalbundle counterrot0fl
+ObjectTemplate.setNetworkableInfo atatdelegInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 100/0/0
+ObjectTemplate.setAcceleration -2000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+ObjectTemplate.addTemplate upperlegfl
+ObjectTemplate.setPosition 0.0/-4.64451e-007/1.42602e-006
+ObjectTemplate.setRotation 0.0/10.0/0.0
+
+
+rem *** upperlegfl ***
+ObjectTemplate.create rotationalbundle upperlegfl
+ObjectTemplate.setNetworkableInfo atatdelegInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 50/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+ObjectTemplate.addTemplate legsegmentflspring
+ObjectTemplate.setPosition 0.0/6.42219e-006/-1.67878e-006
+
+
+rem *** counterrot1fl ***
+ObjectTemplate.create rotationalbundle counterrot1fl
+ObjectTemplate.setNetworkableInfo atatdelegInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 100/0/0
+ObjectTemplate.setAcceleration -2000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+ObjectTemplate.addTemplate lowerlegfl
+ObjectTemplate.setPosition 0.0/-0.430364/-2.03343
+
+
+rem *** lowerlegfl ***
+ObjectTemplate.create rotationalbundle lowerlegfl
+ObjectTemplate.setNetworkableInfo atatdelegInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 50/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+ObjectTemplate.addTemplate legsegment2flspring
+ObjectTemplate.addTemplate backrightleg
+ObjectTemplate.setPosition 6.28063/0.692592/-17.3871
+ObjectTemplate.addTemplate drive_wheellfoot
+ObjectTemplate.setPosition 0.310685/-6.88196/-2.66866
+ObjectTemplate.addTemplate drive_wheellfoot
+ObjectTemplate.setPosition 7.89597/-6.58261/-20.3688
+
+
+rem *** backrightleg ***
+ObjectTemplate.create bundle backrightleg
+ObjectTemplate.addTemplate legsegment2brspring
+
+
+rem *** drive_wheellfoot ***
+ObjectTemplate.create rotationalbundle drive_wheellfoot
+ObjectTemplate.setNetworkableInfo atatdelegInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 50/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+ObjectTemplate.addTemplate counterrot2fl
+ObjectTemplate.setRotation 0.0/10.0/0.0
+
+
+rem *** counterrot2fl ***
+ObjectTemplate.create rotationalbundle counterrot2fl
+ObjectTemplate.setNetworkableInfo atatdelegInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 100/0/0
+ObjectTemplate.setAcceleration -2000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+ObjectTemplate.addTemplate footsegmentrot
+ObjectTemplate.setPosition 0.0/4.77416e-006/8.77065e-007
+ObjectTemplate.setRotation 0.0/10.0/0.0
+
+
+rem *** footsegmentrot ***
+ObjectTemplate.create rotationalbundle footsegmentrot
+ObjectTemplate.setNetworkableInfo atatdelegInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 50/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+ObjectTemplate.addTemplate footl
+ObjectTemplate.setPosition 0.0/-6.07284e-007/6.98627e-006
+ObjectTemplate.addTemplate atatde_footcrush
+ObjectTemplate.setPosition 0.0/-4.25552/-1.62542
+ObjectTemplate.setRotation 0.0/20.8982/0.0
+
+
+
+rem ******* Foot Crush **********************************
+ObjectTemplate.create Obstacle atatde_footcrush
+ObjectTemplate.geometry footcrush
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.addToCollisionGroup c_CGProjectiles
+ObjectTemplate.aiTemplate dam_rails
+rem *****************************************************
+
+
+rem *** drive_wheelfr ***
+ObjectTemplate.create rotationalbundle drive_wheelfr
+ObjectTemplate.setNetworkableInfo atatdelegInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 50/0/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+ObjectTemplate.addTemplate counterrot0fr
+ObjectTemplate.setRotation 0.0/10.0/0.0
+ObjectTemplate.addTemplate counterrot1fr
+ObjectTemplate.setPosition -2.40139e-007/-10.0/-1.71011
+
+
+rem *** counterrot0fr ***
+ObjectTemplate.create rotationalbundle counterrot0fr
+ObjectTemplate.setNetworkableInfo atatdelegInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 100/0/0
+ObjectTemplate.setAcceleration -1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+ObjectTemplate.addTemplate upperlegfr
+ObjectTemplate.setPosition 0.0/1.23984e-005/-2.03895e-006
+ObjectTemplate.setRotation 0.0/10.0/0.0
+
+
+rem *** upperlegfr ***
+ObjectTemplate.create rotationalbundle upperlegfr
+ObjectTemplate.setNetworkableInfo atatdelegInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 50/0/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+ObjectTemplate.addTemplate legsegmentfrspring
+ObjectTemplate.setPosition 0.0/-2.25915e-006/-2.72725e-006
+
+
+rem *** counterrot1fr ***
+ObjectTemplate.create rotationalbundle counterrot1fr
+ObjectTemplate.setNetworkableInfo atatdelegInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 100/0/0
+ObjectTemplate.setAcceleration -1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+ObjectTemplate.addTemplate lowerlegfr
+ObjectTemplate.setPosition 0.0/-0.0734909/-1.44995
+
+
+rem *** lowerlegfr ***
+ObjectTemplate.create rotationalbundle lowerlegfr
+ObjectTemplate.setNetworkableInfo atatdelegInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 50/0/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+ObjectTemplate.addTemplate legsegment2frspring
+ObjectTemplate.addTemplate backleftleg
+ObjectTemplate.setPosition 6.57964/0.304956/17.4691
+ObjectTemplate.addTemplate drive_wheelrfoot
+ObjectTemplate.setPosition 0.412897/-6.19767/2.27191
+ObjectTemplate.addTemplate drive_wheelrfoot
+ObjectTemplate.setPosition 7.88215/-6.29983/19.343
+
+
+rem *** drive_wheelrfoot ***
+ObjectTemplate.create rotationalbundle drive_wheelrfoot
+ObjectTemplate.setNetworkableInfo atatdelegInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 50/0/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+ObjectTemplate.addTemplate counterrot2fr
+ObjectTemplate.setRotation 0.0/10.0/0.0
+
+
+rem *** counterrot2fr ***
+ObjectTemplate.create rotationalbundle counterrot2fr
+ObjectTemplate.setNetworkableInfo atatdelegInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 100/0/0
+ObjectTemplate.setAcceleration -1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+ObjectTemplate.addTemplate footsegmentrotr
+ObjectTemplate.setPosition 1.72818e-007/1.30473e-005/-1.94632e-006
+ObjectTemplate.setRotation 0.0/10.0/0.0
+
+
+rem *** footsegmentrotr ***
+ObjectTemplate.create rotationalbundle footsegmentrotr
+ObjectTemplate.setNetworkableInfo atatdelegInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 50/0/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+ObjectTemplate.addTemplate footr
+ObjectTemplate.setPosition 1.72818e-007/-2.07438e-006/2.17007e-006
+ObjectTemplate.addTemplate atatde_footcrush
+ObjectTemplate.setPosition -1.72818e-007/-4.25413/1.54838
+ObjectTemplate.setRotation 0.0/-21.3031/0.0
+
+rem *** backleftleg ***
+ObjectTemplate.create bundle backleftleg
+ObjectTemplate.addTemplate legsegment2blspring
+
+
+rem *** drive_wheelbl ***
+ObjectTemplate.create rotationalbundle drive_wheelbl
+ObjectTemplate.setNetworkableInfo atatdelegInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 50/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+ObjectTemplate.addTemplate counterrot0bl
+ObjectTemplate.setRotation 0.0/10.0/0.0
+
+
+rem *** counterrot0bl ***
+ObjectTemplate.create rotationalbundle counterrot0bl
+ObjectTemplate.setNetworkableInfo atatdelegInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 100/0/0
+ObjectTemplate.setAcceleration -2000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+ObjectTemplate.addTemplate upperlegbl
+ObjectTemplate.setPosition 0.0/-8.69085e-006/3.33739e-006
+ObjectTemplate.setRotation 0.0/10.0/0.0
+
+
+rem *** upperlegbl ***
+ObjectTemplate.create rotationalbundle upperlegbl
+ObjectTemplate.setNetworkableInfo atatdelegInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 50/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+ObjectTemplate.addTemplate legsegmentblspring
+ObjectTemplate.setPosition 0.0/-4.31886e-006/2.96512e-007
+
+
+rem *** drive_wheelbr ***
+ObjectTemplate.create rotationalbundle drive_wheelbr
+ObjectTemplate.setNetworkableInfo atatdelegInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 50/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+ObjectTemplate.addTemplate counterrot0br
+ObjectTemplate.setRotation 0.0/10.0/0.0
+
+
+rem *** counterrot0br ***
+ObjectTemplate.create rotationalbundle counterrot0br
+ObjectTemplate.setNetworkableInfo atatdelegInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 100/0/0
+ObjectTemplate.setAcceleration -2000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+ObjectTemplate.addTemplate upperlegbr
+ObjectTemplate.setPosition 0.0/-3.70533e-006/-4.57992e-006
+ObjectTemplate.setRotation 0.0/10.0/0.0
+
+
+rem *** upperlegbr ***
+ObjectTemplate.create rotationalbundle upperlegbr
+ObjectTemplate.setNetworkableInfo atatdelegInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 50/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+ObjectTemplate.addTemplate legsegmentbrspring
+ObjectTemplate.setPosition 0.0/1.72575e-006/1.16683e-006
+
+
+rem *** atatdedummyfrontwheelr ***
+ObjectTemplate.create rotationalbundle atatdedummyfrontwheelr
+ObjectTemplate.setNetworkableInfo atatdeSteeringInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMinRotation -20/0/0
+ObjectTemplate.setMaxRotation 20/0/0
+ObjectTemplate.setMaxSpeed 150/0/0
+ObjectTemplate.setAcceleration 50/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.addTemplate atatdedummyfrontspringr
+ObjectTemplate.setPosition -0.246506/0.00896149/0.00045929
+
+
+rem *** atatdedummyfrontwheell ***
+ObjectTemplate.create rotationalbundle atatdedummyfrontwheell
+ObjectTemplate.setNetworkableInfo atatdeSteeringInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMinRotation -20/0/0
+ObjectTemplate.setMaxRotation 20/0/0
+ObjectTemplate.setMaxSpeed 150/0/0
+ObjectTemplate.setAcceleration 50/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.addTemplate atatdedummyfrontspringl
+ObjectTemplate.setPosition 0.248666/0.00714722/0.00453949
+
+
+rem *******************************************************************************************
+
+
+rem *** ATAT2 ***
+ObjectTemplate.create playercontrolobject ATAT2
+ObjectTemplate.NameTagOffset -0.3/-0.2/0
+ObjectTemplate.setNetworkableInfo atatdeBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 12
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.damageFromWater 90
+ObjectTemplate.drag 5
+ObjectTemplate.mass 200000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.hitpoints 850
+ObjectTemplate.maxhitpoints 850
+ObjectTemplate.material 831
+ObjectTemplate.setSoldierExitLocation 0/16.3845/7 0/0/0
+ObjectTemplate.criticalDamage 12
+ObjectTemplate.hpLostWhileCriticalDamage 1.2
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.hpLostWhileUpSideDown 2500
+ObjectTemplate.hpLostWhileDamageFromWater 100
+ObjectTemplate.addArmorEffect 24 e_WillyDamage 0/8.059/1.14512
+ObjectTemplate.addArmorEffect 5 e_ExplGas 0/8.059/1.14512
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.aiTemplate ATATAI
+ObjectTemplate.setVehicleIcon "vehicle/Icon_atatde.dds"
+ObjectTemplate.setVehicleIconPos 28/46
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.sonarPos 1
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTHeavyTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_at-at_64x64.dds"
+ObjectTemplate.addTemplate lodatatde
+ObjectTemplate.setPosition 0.0/25.8666/-1.12945e-006
+ObjectTemplate.addTemplate atatde_soldierspawn1
+ObjectTemplate.setPosition -1.0/16.51103/1.59545
+ObjectTemplate.setRotation 142.5/0.0/0.0
+
+
+rem *** atatde_soldierspawn1 ***
+ObjectTemplate.create spawnpoint atatde_soldierspawn1
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 65
+ObjectTemplate.setGroup 65
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTrop 
+
+
+rem *** atatdecockpitselector ***
+LodSelectorTemplate.create distcompareselector atatdecockpitselector
+LodSelectorTemplate.addLodDistance 2
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** atatdelodselector ***
+LodSelectorTemplate.create distcompareselector2 atatdelodselector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 300
+
+

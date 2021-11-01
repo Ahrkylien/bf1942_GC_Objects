@@ -4,7 +4,7 @@ ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.itemIndex 4
 ObjectTemplate.projectileTemplate ImperialgasgrenProjectile
 ObjectTemplate.projectilePosition 0/0/0
-ObjectTemplate.magSize 2
+ObjectTemplate.magSize 3
 ObjectTemplate.numOfMag 1
 ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 2
@@ -83,7 +83,7 @@ ObjectTemplate.hitPoints 9999
 ObjectTemplate.maxHitPoints 9999
 ObjectTemplate.explosionDamage 0
 rem *** MattiasH doesn't permit random time on projectiles. ask him about this.
-ObjectTemplate.timeToLive CRD_NONE/26/0/0
+ObjectTemplate.timeToLive CRD_NONE/21.5/0/0
 ObjectTemplate.useMMOnEndEffect 0
 ObjectTemplate.dieAfterColl 0
 ObjectTemplate.radius 1.0

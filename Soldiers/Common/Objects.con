@@ -6,9 +6,9 @@ ObjectTemplate.setPivotPosition 0/0/0
 ObjectTemplate.setMaxSpeed 0/0/0
 ObjectTemplate.setHasTarget 0
 ObjectTemplate.CVMInside 1
-ObjectTemplate.CVMChase 0
-ObjectTemplate.CVMFrontChase 0
-ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMChase 1
+ObjectTemplate.CVMFrontChase 1
+ObjectTemplate.CVMFlyBy 1
 ObjectTemplate.CVMTrace 0
 ObjectTemplate.CVMExternTrace 0
 

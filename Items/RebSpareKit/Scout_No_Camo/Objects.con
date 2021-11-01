@@ -1,0 +1,29 @@
+ObjectTemplate.create Kit Rebel_Scout_NoCamo
+ObjectTemplate.setType Scout
+ObjectTemplate.setKitTeam 2
+ObjectTemplate.geometry Kit_Allies_Scout
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+
+ObjectTemplate.addTemplate reb_scoutpack
+
+ObjectTemplate.setHealthBarIcon "Ingame/reb_Healthbar_empty_scout_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/reb_Healthbar_full_scout_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/icon_axisknife.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_dressilian.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_binoculars.dds"
+
+ObjectTemplate.setKitIcon 0 "kits/Icon_scout_allies_selected.tga"
+ObjectTemplate.setKitName 0 "RESPAWN_SCOUT"
+ObjectTemplate.setKitActiveName 0 "RESPAWN_ACTIVE_SCOUT"
+
+ObjectTemplate.addTemplate DressilianRifle
+ObjectTemplate.addTemplate KnifeAllies
+ObjectTemplate.addTemplate BinocularsRebel
+
+ObjectTemplate.addTemplate Sprint
+ObjectTemplate.addTemplate NoChute
+
+ObjectTemplate.aitemplate Scout

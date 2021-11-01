@@ -1,5 +1,4 @@
-rem *********** fix. New  29 april 05 Django
-rem *********** new engine code
+rem *********** patch 4 Django
 
 
 rem *** atatdedummyengine ***
@@ -10,18 +9,19 @@ ObjectTemplate.loadSoundScript Sounds/atatdeEngine.ssc
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.setMinRotation -100/0/-100
-ObjectTemplate.setMaxRotation 1/0/1
-ObjectTemplate.setMaxSpeed 2/0/2
-ObjectTemplate.setAcceleration 0.5/0/0.5
+ObjectTemplate.setMinRotation 0/0/-2
+ObjectTemplate.setMaxRotation 0/0/5
+ObjectTemplate.setMaxSpeed 0/0/5
+ObjectTemplate.setAcceleration 0/0/5
 ObjectTemplate.setInputToRoll c_PIThrottle
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setEngineType c_ETTank
-ObjectTemplate.setTorque 20
-ObjectTemplate.setDifferential 2
-ObjectTemplate.setNumberOfGears 2
+ObjectTemplate.setTorque 60
+ObjectTemplate.setDifferential 1
+ObjectTemplate.setNumberOfGears 3
 ObjectTemplate.setGearUp 0.95
 ObjectTemplate.setGearDown 0.45
+ObjectTemplate.SetGearChangeTime 2
 
 ObjectTemplate.addTemplate atatdedummyfrontwheelr
 ObjectTemplate.setPosition 7.24785/-0/9.8672

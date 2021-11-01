@@ -1,6 +1,7 @@
 rem *** snowspeeder ***
 ObjectTemplate.create PlayerControlObject snowspeeder
 ObjectTemplate.setNetworkableInfo snowspeeder_body_info
+ObjectTemplate.NameTagOffset 0/0.4/1
 ObjectTemplate.saveInSeparateFile 1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
@@ -10,8 +11,8 @@ ObjectTemplate.mass 2500
 ObjectTemplate.inertiaModifier 1/1/1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.explosionRadius 8
-ObjectTemplate.explosionDamage 5
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
 ObjectTemplate.hasArmor 1
 ObjectTemplate.angleMod 1
 ObjectTemplate.speedMod 0.5
@@ -35,7 +36,7 @@ ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Snowspeeder 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.damageFromWater 1
-ObjectTemplate.aiTemplate snowspeeder
+ObjectTemplate.aiTemplate SnowSpeederAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodsnowspeeder
 rem -------------------------------------
@@ -191,7 +192,8 @@ ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
 rem *** snowspeederCoPilot ***
 ObjectTemplate.create PlayerControlObject snowspeederCoPilot
 ObjectTemplate.setNetworkableInfo snowspeeder_body_info
-ObjectTemplate.aiTemplate snowspeederCoPilotAI
+ObjectTemplate.NameTagOffset 0/0.5/-2
+ObjectTemplate.aiTemplate SnowSpeederMGAI
 rem ----------------------------------------------
 ObjectTemplate.addTemplate snowspeederCoPilotGunBase
 ObjectTemplate.setPosition 0/0/0
@@ -203,12 +205,15 @@ rem ----------------------------------------------
 ObjectTemplate.setSoldierExitLocation -3/0.05/1 0/0/0
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_snowspeeder.tga"
 ObjectTemplate.setVehicleIconPos 83/33
-ObjectTemplate.setNumberOfWeaponIcons 1
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.tga"
 ObjectTemplate.setPrimaryAmmoBar ABHeatBarOnly
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_hss_64x64.dds"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+endrem
 ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCLand
-ObjectTemplate.setVehicleType  VTFighter
+ObjectTemplate.setVehicleType  VTAAGun
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_snowspeeder_16x16.tga"
 
 rem *** snowspeederCoPilotGunBase
@@ -219,8 +224,8 @@ rem ----------------------------------------------
 ObjectTemplate.addTemplate snowspeederCoPilotGunRotation
 ObjectTemplate.setPosition 0/0.38/0
 rem ----------------------------------------------
-ObjectTemplate.setMinRotation -40/0/0
-ObjectTemplate.setMaxRotation 40/0/0
+ObjectTemplate.setMinRotation -50/0/0
+ObjectTemplate.setMaxRotation 50/0/0
 ObjectTemplate.setMaxSpeed 90/0/0
 ObjectTemplate.setAcceleration 5000/0/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX
@@ -233,9 +238,10 @@ rem ----------------------------------------------
 ObjectTemplate.addTemplate snowspeederCoPilotCamera
 ObjectTemplate.setPosition 0/0.34/-0.07
 ObjectTemplate.addTemplate SnowspeederRearLaser
+ObjectTemplate.addTemplate Harpoon_Weapon
 rem ----------------------------------------------
-ObjectTemplate.setMinRotation 0/-34/0
-ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMinRotation 0/-39/0
+ObjectTemplate.setMaxRotation 0/15/0
 ObjectTemplate.setMaxSpeed 0/90/0
 ObjectTemplate.setAcceleration 0/5000/0
 ObjectTemplate.setInputToPitch c_PIMouseLookY
@@ -312,20 +318,10 @@ LodSelectorTemplate.create DistCompareSelector2 snowspeederLodSelector
 LodSelectorTemplate.hasDestroyedLod 1
 LodSelectorTemplate.addLodDistance 200
 
-
-
-
-
-
-
-
-rem --------------------------------------------------------------------------
-rem **************************************************************************
-rem HARPOON LOADED SNOW SPEEDER!
-
-rem *** snowspeeder2 ***
-ObjectTemplate.create PlayerControlObject snowspeeder_v
+rem *** snowspeeder2  with Harpoon***
+ObjectTemplate.create PlayerControlObject Snowspeeder_v
 ObjectTemplate.setNetworkableInfo snowspeeder_body_info
+ObjectTemplate.NameTagOffset 0/0.4/1
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.AddPcoPosId 0
 ObjectTemplate.SetPcoId 0
@@ -338,7 +334,7 @@ ObjectTemplate.inertiaModifier 1/1/1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
-ObjectTemplate.explosionDamage 5
+ObjectTemplate.explosionDamage 0
 ObjectTemplate.hasArmor 1
 ObjectTemplate.angleMod 1
 ObjectTemplate.speedMod 1
@@ -350,19 +346,15 @@ ObjectTemplate.hpLostWhileCriticalDamage 0.65
 ObjectTemplate.explosionForceMod 10
 ObjectTemplate.hpLostWhileUpSideDown 6.5
 ObjectTemplate.hpLostWhileDamageFromWater 6.5
-
 ObjectTemplate.addArmorEffect 26 em_PlaneDamage 2.3/0/-3
-
 ObjectTemplate.addArmorEffect 26 em_StukaDamage 2.3/0/-3
 ObjectTemplate.addArmorEffect 26 em_PlaneDamage 0/0/-3
-
 ObjectTemplate.addArmorEffect 13 e_StukaFire 0/0/-3
-
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Snowspeeder 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.damageFromWater 1
-ObjectTemplate.aiTemplate snowspeeder
+ObjectTemplate.aiTemplate SnowSpeederAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodsnowspeeder2
 rem -------------------------------------
@@ -475,7 +467,7 @@ ObjectTemplate.setRotation 0/0/-28
 rem *** snowspeederCoPilot ***
 ObjectTemplate.create PlayerControlObject snowspeederCoPilot2
 ObjectTemplate.setNetworkableInfo snowspeeder_body_info
-ObjectTemplate.aiTemplate snowspeederCoPilotAI
+ObjectTemplate.aiTemplate SnowSpeederMGAI
 ObjectTemplate.AddPcoPosId 0
 ObjectTemplate.SetPcoId 1
 rem ----------------------------------------------
@@ -490,16 +482,16 @@ ObjectTemplate.setSoldierExitLocation -3/0.05/1 0/0/0
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_snowspeeder.tga"
 ObjectTemplate.setVehicleIconPos 83/33
 ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_hss_64x64.dds"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_laser_64x64.tga"
-ObjectTemplate.setSecondaryAmmoBar ABHeatBarOnly
-
-
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.tga"
+ObjectTemplate.setPrimaryAmmoBar ABHeatBarOnly
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_hss_64x64.dds"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCLand
-ObjectTemplate.setVehicleType  VTFighter
+ObjectTemplate.setVehicleType  VTAAGun
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_snowspeeder_16x16.tga"
+
+
 
 rem *** snowspeederCoPilotGunBase
 ObjectTemplate.create RotationalBundle snowspeederCoPilotGunBase2
@@ -515,6 +507,7 @@ ObjectTemplate.setMaxSpeed 90/0/0
 ObjectTemplate.setAcceleration 5000/0/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX
 
+
 rem *** snowspeederCoPilotGunRotation ***
 ObjectTemplate.create RotationalBundle snowspeederCoPilotGunRotation2
 ObjectTemplate.setNetworkableInfo snowspeeder_body_info
@@ -522,12 +515,11 @@ ObjectTemplate.geometry snowspeeder_gun_rotation
 rem ----------------------------------------------
 ObjectTemplate.addTemplate snowspeederCoPilotCamera
 ObjectTemplate.setPosition 0/0.34/-0.07
-ObjectTemplate.addTemplate Harpoon_Weapon
 ObjectTemplate.addTemplate SnowspeederRearLaser
+ObjectTemplate.addTemplate Harpoon_Weapon
 rem ----------------------------------------------
 ObjectTemplate.setMinRotation 0/-39/0
 ObjectTemplate.setMaxRotation 0/15/0
 ObjectTemplate.setMaxSpeed 0/90/0
 ObjectTemplate.setAcceleration 0/5000/0
 ObjectTemplate.setInputToPitch c_PIMouseLookY
-

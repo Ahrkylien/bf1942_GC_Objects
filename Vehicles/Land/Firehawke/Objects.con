@@ -99,8 +99,8 @@ rem -------------------------------------
 ObjectTemplate.addTemplate Firehawke_GunBase
 ObjectTemplate.setPosition 0.0/0.586245/1.12307
 rem -------------------------------------
-ObjectTemplate.setMinRotation -145/0/0
-ObjectTemplate.setMaxRotation 145/0/0
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
 ObjectTemplate.setMaxSpeed 20/20/0
 ObjectTemplate.setAcceleration 1000/0/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX

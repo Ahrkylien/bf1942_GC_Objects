@@ -10,7 +10,7 @@ ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.loadSoundScript Sounds/SmokeGranade.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate Em_SmokeGranade_Smoke
-ObjectTemplate.timeToLive CRD_NONE/40/0/0
+ObjectTemplate.timeToLive CRD_NONE/12/0/0
 ObjectTemplate.setPosition 0/-1/0
 rem -------------------------------------
 

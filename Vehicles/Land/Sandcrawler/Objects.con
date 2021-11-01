@@ -80,7 +80,7 @@ ObjectTemplate.setPosition -12/-3/0
 ObjectTemplate.addTemplate SandcrawlerEngine
 
 ObjectTemplate.addTemplate SandcrawlerCamera
-ObjectTemplate.setPosition 0/5.22/24.614
+ObjectTemplate.setPosition 0/45/-10
 ObjectTemplate.setRotation 0/0/0
 
 ObjectTemplate.addTemplate SandcrawlerInterior
@@ -272,9 +272,9 @@ ObjectTemplate.geometry Sandcrawler_whe4R_M1
 
 rem *** SandcrawlerCamera ***
 ObjectTemplate.create Camera SandcrawlerCamera
-ObjectTemplate.setMinRotation -100/-30/0
-ObjectTemplate.setMaxRotation 100/30/0
-ObjectTemplate.setMaxSpeed 200/-200/0
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/0/0
 ObjectTemplate.setAcceleration 100000/100000/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX
 ObjectTemplate.setInputToPitch c_PIMouseLookY

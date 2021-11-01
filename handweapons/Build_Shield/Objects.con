@@ -50,6 +50,7 @@ ObjectTemplate.addTemplate ShieldSimple
 
 ObjectTemplate.create Obstacle ShieldBlock
 ObjectTemplate.geometry shield_down
+ObjectTemplate.damage 0
 ObjectTemplate.setHasCollisionPhysics 1
 ObjectTemplate.AddToCollisionGroup c_CGLandscape
 ObjectTemplate.AddToCollisionGroup c_CGStaticObjects
@@ -74,7 +75,7 @@ ObjectTemplate.setHasPointPhysics 0
 ObjectTemplate.hasCollisionEffect 0
 ObjectTemplate.invisibleAtEndEffect 1
 rem *** Landmines explodes after 120 seconds, if not detonated by hand first.
-ObjectTemplate.timeToLive CRD_NONE/460/0/0
+ObjectTemplate.timeToLive CRD_NONE/240/0/0
 ObjectTemplate.dieAfterColl 0
 ObjectTemplate.radius 0.5
 ObjectTemplate.ForceOnExplosion 20
