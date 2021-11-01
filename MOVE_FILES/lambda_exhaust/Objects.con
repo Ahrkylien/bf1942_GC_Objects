@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject lambda_exhaust
+ObjectTemplate.geometry lambda_exhaust
+

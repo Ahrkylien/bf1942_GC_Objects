@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle jud_square
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry jud_square
+objectTemplate.aiTemplate jud_square
+rem ---------------------------

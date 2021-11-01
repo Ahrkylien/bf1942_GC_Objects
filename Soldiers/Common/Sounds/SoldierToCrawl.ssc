@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/SoldierToCrawl.ssc
+	
+#templateLevel MEDIUM
+
+	#include Medium/SoldierToCrawl.ssc
+	
+#templateLevel LOW
+
+	#include Low/SoldierToCrawl.ssc

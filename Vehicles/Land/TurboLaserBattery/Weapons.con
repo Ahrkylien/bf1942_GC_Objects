@@ -1,0 +1,21 @@
+rem *** TurboLaserBatteryGun ***
+ObjectTemplate.create FireArms TurboLaserBatteryGun
+ObjectTemplate.geometry TurboLaserBatteryBarrel_m1
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/TurboLaserFire.ssc
+ObjectTemplate.aiTemplate ShermanMainGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileGreenS
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 600
+ObjectTemplate.reloadtime 5
+ObjectTemplate.roundOfFire 5.3
+ObjectTemplate.recoilSpeed 18
+ObjectTemplate.recoilSize 5
+ObjectTemplate.addFireArmsPosition 0.37/0/2.34 0/0/0
+ObjectTemplate.addFireArmsPosition -0.37/0/2.34 0/0/0
+

@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject endor_bush1
+ObjectTemplate.aiTemplate bush1
+ObjectTemplate.geometry endor_bush1
+ObjectTemplate.setHasCollisionPhysics 1
+
+

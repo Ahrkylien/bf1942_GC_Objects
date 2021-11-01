@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject van_ass
+ObjectTemplate.geometry van_ass
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate van_ass
+

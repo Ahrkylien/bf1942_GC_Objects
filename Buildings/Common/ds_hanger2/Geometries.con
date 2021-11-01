@@ -1,0 +1,18 @@
+GeometryTemplate.create StandardMesh ds_hanger2
+GeometryTemplate.file buildings/deathstar/ds_hanger2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 800
+GeometryTemplate.setLodDistance 4 1200
+GeometryTemplate.setLodDistance 5 1500
+
+GeometryTemplate.create StandardMesh ds_fakedoor
+GeometryTemplate.file buildings/judicator/jud_fakedoor02
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800
+

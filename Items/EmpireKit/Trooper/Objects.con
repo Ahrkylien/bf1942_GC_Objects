@@ -1,0 +1,28 @@
+ObjectTemplate.create Kit Empire_Trooper
+ObjectTemplate.setType Assault
+ObjectTemplate.setKitTeam 1
+ObjectTemplate.geometry Kit_Axis_Assault
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+rem ObjectTemplate.addTemplate German_hippack
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_assault_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_assault_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/icon_axisknife.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_speederpistol.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_e11.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_cryoban.dds"
+
+ObjectTemplate.setKitIcon 1 "kits/Icon_assault_axis_selected.tga"
+ObjectTemplate.setKitName 1 "RESPAWN_ASSAULT"
+ObjectTemplate.setKitActiveName 1 "RESPAWN_ACTIVE_ASSAULT"
+
+rem *** The order is important, first the best weapons!
+ObjectTemplate.addTemplate E-11
+ObjectTemplate.addTemplate SpeederPistol
+ObjectTemplate.addTemplate KnifeAxis
+ObjectTemplate.addTemplate cryoban
+ObjectTemplate.addTemplate NoChute
+
+ObjectTemplate.aiTemplate  Assault
+

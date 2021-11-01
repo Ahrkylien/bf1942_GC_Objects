@@ -1,0 +1,5 @@
+GeometryTemplate.create TreeMesh endviv1b
+GeometryTemplate.file endviv1b
+GeometryTemplate.swayEnable 0
+GeometryTemplate.billboard 1
+GeometryTemplate.billboardDistance 150

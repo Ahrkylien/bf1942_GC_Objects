@@ -1,0 +1,77 @@
+GeometryTemplate.create StandardMesh SailBarge_Hul1_M1
+GeometryTemplate.file Vehicles/SailBarge/sailbarge_hull
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 80
+GeometryTemplate.setLodDistance 3 150
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh SailBarge_Sails_M1
+GeometryTemplate.file Vehicles/SailBarge/sailbarge_sails
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 80
+GeometryTemplate.setLodDistance 3 150
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh SailBarge_Flap_M1
+GeometryTemplate.file Vehicles/SailBarge/sailbarge_flap
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 140
+
+GeometryTemplate.create StandardMesh SailBarge_Interior_M1
+GeometryTemplate.file Vehicles/SailBarge/sailbarge_interior
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 80
+GeometryTemplate.setLodDistance 3 150
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh SailBarge_DeckGun_M1
+GeometryTemplate.file Vehicles/SailBarge/deckgun
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 140
+
+GeometryTemplate.create StandardMesh SailBarge_DeckGunBase_M1
+GeometryTemplate.file Vehicles/SailBarge/deckgun_platform
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 140
+
+GeometryTemplate.create StandardMesh SailBarge_Hul1_L1
+GeometryTemplate.file Vehicles/SailBarge/sailbarge_hull
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh SailBarge_door
+GeometryTemplate.file Vehicles/SailBarge/sailbarge_hull_door
+
+GeometryTemplate.create StandardMesh SailBarge_door_ext
+GeometryTemplate.file Vehicles/SailBarge/sailbarge_hull_door_ext
+
+GeometryTemplate.create StandardMesh SailBarge_door_comp
+GeometryTemplate.file Vehicles/SailBarge/sailbarge_door_comp
+
+GeometryTemplate.create StandardMesh Wreck_SailBarge_M1
+GeometryTemplate.file Vehicles/SailBarge/sailbarge_wreck
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 80
+GeometryTemplate.setLodDistance 3 150
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 300
+

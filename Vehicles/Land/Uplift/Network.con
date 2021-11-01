@@ -1,0 +1,5 @@
+NetworkableInfo.createNewInfo UpliftEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo UpliftBodyInfo
+NetworkableInfo.setPredictionMode PMLinear

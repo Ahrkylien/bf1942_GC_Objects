@@ -1,0 +1,18 @@
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/probedroid-launch.wav
+minDistance 6
+volume .5
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1	
+endEffect

@@ -1,0 +1,43 @@
+ObjectTemplate.create Bundle tan_isd_hanger2
+ObjectTemplate.geometry tan_isd_hanger2
+ObjectTemplate.setHasCollisionPhysics 1
+
+rem **Vehical Additions to SD**
+ObjectTemplate.addTemplate tieintspawner1
+ObjectTemplate.setPosition 13.45/46/-10.66
+ObjectTemplate.setRotation 220/0/0
+
+ObjectTemplate.addTemplate tiefighterspawner1
+ObjectTemplate.setPosition -13.39/46/14.92
+ObjectTemplate.setRotation 220/0/0
+
+objectTemplate.aiTemplate tan_isd_hanger2
+
+rem *** TIE INT Spawner ***
+ObjectTemplate.create ObjectSpawner tieintspawner1
+ObjectTemplate.setObjectTemplate 1 avenger
+ObjectTemplate.setObjectTemplate 2 avenger
+rem ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 5
+ObjectTemplate.maxSpawnDelay 10
+ObjectTemplate.TimeToLive 30
+ObjectTemplate.Distance 20
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 5
+ObjectTemplate.damageWhenLost 10
+
+rem *** TIE Spawner ***
+ObjectTemplate.create ObjectSpawner tiefighterspawner1
+ObjectTemplate.setObjectTemplate 1 alpha
+ObjectTemplate.setObjectTemplate 2 alpha
+rem ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 5
+ObjectTemplate.maxSpawnDelay 10
+ObjectTemplate.TimeToLive 30
+ObjectTemplate.Distance 20
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 5
+ObjectTemplate.damageWhenLost 10
+

@@ -1,0 +1,11 @@
+ObjectTemplate.create Bundle mos_building1
+ObjectTemplate.geometry mos_building1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition -0.027/2.602/-2.896
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition -0.012/7.636/2.884
+ObjectTemplate.setRotation -90/0/0
+objectTemplate.aiTemplate mos_building1
+

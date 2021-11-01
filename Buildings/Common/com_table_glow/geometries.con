@@ -1,0 +1,5 @@
+GeometryTemplate.create StandardMesh com_table_glow
+GeometryTemplate.file buildings/dantooine/com_table_glow
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300
+

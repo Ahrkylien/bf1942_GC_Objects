@@ -1,0 +1,55 @@
+ObjectTemplate.create Bundle monument
+ObjectTemplate.geometry monument
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.loadSoundScript Sounds/capenginerunner.ssc
+
+ObjectTemplate.addTemplate e_lightglare
+ObjectTemplate.setPosition 4.57546/3.55/2.93696
+
+ObjectTemplate.addTemplate e_lightglare
+ObjectTemplate.setPosition 4.57546/3.55/6.92083
+
+ObjectTemplate.addTemplate e_lightglare
+ObjectTemplate.setPosition 4.57546/3.55/10.8222
+
+ObjectTemplate.addTemplate e_lightglare
+ObjectTemplate.setPosition 4.57546/3.55/14.7437
+
+ObjectTemplate.addTemplate e_lightglare
+ObjectTemplate.setPosition -4.66346/3.55/6.86291
+
+ObjectTemplate.addTemplate e_lightglare
+ObjectTemplate.setPosition -4.66346/3.55/14.7447
+
+ObjectTemplate.addTemplate e_lightglare
+ObjectTemplate.setPosition -4.66346/3.55/2.93964
+
+ObjectTemplate.addTemplate e_lightglare
+ObjectTemplate.setPosition -4.66346/3.55/10.8101
+
+ObjectTemplate.addTemplate e_lightglare
+ObjectTemplate.setPosition 4.57546/-3.78/2.93696
+
+ObjectTemplate.addTemplate e_lightglare
+ObjectTemplate.setPosition 4.57546/-3.78/6.92083
+
+ObjectTemplate.addTemplate e_lightglare
+ObjectTemplate.setPosition 4.57546/-3.78/10.8222
+
+ObjectTemplate.addTemplate e_lightglare
+ObjectTemplate.setPosition 4.57546/-3.78/14.7437
+
+ObjectTemplate.addTemplate e_lightglare
+ObjectTemplate.setPosition -4.66346/-3.78/6.86291
+
+ObjectTemplate.addTemplate e_lightglare
+ObjectTemplate.setPosition -4.66346/-3.78/14.7447
+
+ObjectTemplate.addTemplate e_lightglare
+ObjectTemplate.setPosition -4.66346/-3.78/2.93964
+
+ObjectTemplate.addTemplate e_lightglare
+ObjectTemplate.setPosition -4.66346/-3.78/10.8101
+
+
+

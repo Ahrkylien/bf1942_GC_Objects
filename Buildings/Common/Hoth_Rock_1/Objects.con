@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject hoth_rock_1
+ObjectTemplate.aiTemplate hoth_rock_1
+ObjectTemplate.geometry hoth_rock_1
+ObjectTemplate.setHasCollisionPhysics 1
+
+

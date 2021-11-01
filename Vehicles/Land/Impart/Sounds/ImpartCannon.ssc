@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/ImpartCannon.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/ImpartCannon.ssc
+	
+#templateLevel LOW
+
+	#include Low/ImpartCannon.ssc

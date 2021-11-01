@@ -1,0 +1,21 @@
+ObjectTemplate.create Bundle SentryTowerBase
+ObjectTemplate.geometry spy_turret_base
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.addTemplate spy_turret_ladder_m1
+ObjectTemplate.setPosition -1.1282/2.6143/-0.6465
+ObjectTemplate.setRotation 60/6/0
+ObjectTemplate.addTemplate SentryTowerSpawn
+
+
+ObjectTemplate.create ObjectSpawner SentryTowerSpawn
+ObjectTemplate.setObjectTemplate 1 SentryTower
+ObjectTemplate.setObjectTemplate 2 SentryTower
+ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 60
+ObjectTemplate.maxSpawnDelay 90
+rem ObjectTemplate.TimeToLive 8
+ObjectTemplate.Distance 10
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 5

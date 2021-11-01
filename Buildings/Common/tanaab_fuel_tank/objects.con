@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject tanaab_fuel_tank
+ObjectTemplate.geometry tanaab_fuel_tank
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate tanaab_fuel_tank
+objectTemplate.loadSoundScript Sounds/ambient.ssc	
+

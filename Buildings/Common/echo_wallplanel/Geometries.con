@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh echo_wallplanel
+GeometryTemplate.file buildings/Hoth/SuperEcho/echo_wallplanel
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 20
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 40
+GeometryTemplate.setLodDistance 5 50

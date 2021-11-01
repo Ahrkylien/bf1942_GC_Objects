@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject Cloudcar_Engine_FX
+ObjectTemplate.geometry Cloudcar_Engine_FX
+

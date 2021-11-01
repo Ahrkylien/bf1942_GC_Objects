@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject ds_rayshield
+ObjectTemplate.geometry ds_rayshield_m
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate ds_objectivebase
+

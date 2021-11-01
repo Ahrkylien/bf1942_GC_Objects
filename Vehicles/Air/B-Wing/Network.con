@@ -1,0 +1,8 @@
+NetworkableInfo.createNewInfo B-Wing_wing_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo B-Wing_engine_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo B-Wing_body_info
+NetworkableInfo.setPredictionMode PMLinear

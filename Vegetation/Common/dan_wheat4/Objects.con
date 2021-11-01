@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle dan_wheat4
+ObjectTemplate.geometry dan_wheat4
+rem ObjectTemplate.createSkeleton animations/dan_wheat1.ske
+rem ObjectTemplate.setAnimationState WheatBlow
+ObjectTemplate.cullRadiusScale 2

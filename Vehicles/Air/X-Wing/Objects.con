@@ -1,0 +1,327 @@
+rem *** X-Wing ***
+ObjectTemplate.create PlayerControlObject X-Wing
+ObjectTemplate.AddPcoPosId 0
+ObjectTemplate.SetPcoId 0
+ObjectTemplate.setNetworkableInfo X-Wing_body_info
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 0.25
+ObjectTemplate.mass 2750
+ObjectTemplate.inertiaModifier 1.1275/1.090/1.1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.hitpoints 90
+ObjectTemplate.maxhitpoints 90
+ObjectTemplate.material 801
+ObjectTemplate.criticalDamage 18
+ObjectTemplate.hpLostWhileCriticalDamage 0.9
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.hpLostWhileUpSideDown 9
+ObjectTemplate.hpLostWhileDamageFromWater 9
+
+ObjectTemplate.addArmorEffect 54 em_StukaDamage -1.53/1.4/-7.2
+ObjectTemplate.addArmorEffect 54 em_PlaneDamage -1.53/-1.4/-7.2
+
+ObjectTemplate.addArmorEffect 36 em_PlaneDamage 1.53/1.4/-7.2
+ObjectTemplate.addArmorEffect 36 em_StukaDamage -1.53/1.4/-7.2
+ObjectTemplate.addArmorEffect 36 em_StukaDamage -1.53/-1.4/-7.2
+ObjectTemplate.addArmorEffect 36 em_PlaneDamage 0/0.6/-5.8
+
+ObjectTemplate.addArmorEffect 18 e_StukaFire 0/0.6/-5.8
+
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_xwing 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodX-Wing
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.5/0/0 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/icon_xwing.dds"
+ObjectTemplate.setVehicleIconPos 67/63
+ObjectTemplate.setNumberOfWeaponIcons 2
+
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_rocket.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_laser_64x64.tga"
+ObjectTemplate.setSecondaryAmmoBar ABHeatBarOnly
+
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTFighter
+ObjectTemplate.setMinimapIcon "minimap/minimap_icon_xwing_16x16.dds"
+
+rem *** lodX-Wing ***
+ObjectTemplate.create LodObject lodX-Wing
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate X-WingComplex
+ObjectTemplate.addTemplate X-WingSimple
+ObjectTemplate.addTemplate X-WingWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector X-WingLodSelector
+
+rem *** X-WingComplex ***
+ObjectTemplate.create Bundle X-WingComplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate LambdaSonar
+ObjectTemplate.addTemplate lodX-WingCockpit
+ObjectTemplate.addTemplate X-WingCamera
+ObjectTemplate.setPosition 0/0.82/-0.8
+
+ObjectTemplate.addTemplate X-WingSeat
+ObjectTemplate.setPosition 0/0.2/-0.3
+ObjectTemplate.addTemplate X-WingEntry
+ObjectTemplate.setPosition 0/0/1
+ObjectTemplate.addTemplate Astromech_Droid_Control
+ObjectTemplate.addTemplate XWingProtonTorpedoLauncher
+ObjectTemplate.setPosition 0/0/1
+
+ObjectTemplate.addTemplate X-WingVTOLEngineRack
+ObjectTemplate.setPosition 6/1.5/6
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate X-WingVTOLEngineRack
+ObjectTemplate.setPosition 6/1.5/-6
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate X-WingVTOLEngineRack
+ObjectTemplate.setPosition -6/1.5/6
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate X-WingVTOLEngineRack
+ObjectTemplate.setPosition -6/1.5/-6
+ObjectTemplate.setRotation 0/-90/0
+
+ObjectTemplate.addTemplate RollWheelBundle
+ObjectTemplate.setPosition 6/-1.9/6
+ObjectTemplate.addTemplate RollWheelBundle
+ObjectTemplate.setPosition -6/-1.9/6
+ObjectTemplate.addTemplate DummyWheel
+ObjectTemplate.setPosition 6/-1.9/-6
+ObjectTemplate.addTemplate DummyWheel
+ObjectTemplate.setPosition -6/-1.9/-6
+
+ObjectTemplate.addTemplate X-WingFlapLeftMiddle
+ObjectTemplate.setPosition -2.736/-0.216/-0.699
+ObjectTemplate.setRotation 13/0/-9.498
+ObjectTemplate.addTemplate X-WingFlapLeftOuter
+ObjectTemplate.setPosition -5.357/0/0.35
+ObjectTemplate.setRotation 18.4/0/-8.999
+ObjectTemplate.addTemplate X-WingFlapRightMiddle
+ObjectTemplate.setPosition 2.741/-0.216/-0.699
+ObjectTemplate.setRotation -12.998/0/9
+ObjectTemplate.addTemplate X-WingFlapRightOuter
+ObjectTemplate.setPosition 5.362/0/0.35
+ObjectTemplate.setRotation -18.399/0/9.5
+ObjectTemplate.addTemplate X-WingFlapTailLeft
+ObjectTemplate.setPosition -1.263/0.8/-5.877
+ObjectTemplate.setRotation 0/-1.7/0
+ObjectTemplate.addTemplate X-WingFlapTailRight
+ObjectTemplate.setPosition 1.266/0.8/-5.877
+ObjectTemplate.setRotation 0/-1.7/0
+ObjectTemplate.addTemplate X-WingRudder
+ObjectTemplate.setPosition 0/1.088/-6.067
+ObjectTemplate.setRotation 0/0/-89.998
+
+ObjectTemplate.addTemplate X-WingBodyWingVertical
+ObjectTemplate.setRotation 0/0/-89.999
+
+ObjectTemplate.addTemplate XWing_Engine
+ObjectTemplate.setPosition 0/0/-3
+ObjectTemplate.addTemplate XWing_Dummy_Laser
+
+rem *** Astromech_Droid_Control ***
+ObjectTemplate.create PlayerControlObject Astromech_Droid_Control
+ObjectTemplate.AddPcoPosId 0
+ObjectTemplate.SetPcoId 1
+ObjectTemplate.setNetworkableInfo X-Wing_body_info
+rem ---------------------------------
+ObjectTemplate.addTemplate Astromech_Droid
+ObjectTemplate.setPosition 0.023/0.9057/-2.575
+ObjectTemplate.addTemplate X-WingEntry
+ObjectTemplate.setPosition 0/1/-4
+rem ---------------------------------
+ObjectTemplate.sonarPos 1
+ObjectTemplate.setSoldierExitLocation 0/-0.8/-9 0/0/0
+ObjectTemplate.GUIIndex 54
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_xwing.dds"
+ObjectTemplate.setVehicleIconPos 56/50
+ObjectTemplate.setNumberOfWeaponIcons 1
+rem ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_droidcapsuleweapon.dds"
+rem ObjectTemplate.setPrimaryAmmoBar ABAmmoBarOnly
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_repairkit_64x32.dds"
+ObjectTemplate.setPrimaryAmmoBar ABHeatBarOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTFighter 
+ObjectTemplate.setMinimapIcon "minimap/minimap_icon_xwing_16x16.dds"
+
+rem *** Astromech_Droid ***
+ObjectTemplate.Create RotationalBundle Astromech_Droid
+ObjectTemplate.setNetworkableInfo X-Wing_body_info
+ObjectTemplate.Geometry Astromech_Droid
+ObjectTemplate.loadSoundScript Sounds/XWingDroidRotate.ssc
+rem -----------------------------------
+rem ObjectTemplate.addTemplate DroidCapsuleLauncher
+rem ObjectTemplate.setPosition 0/-1/0
+ObjectTemplate.addTemplate Astromech_Droid_Pitch
+ObjectTemplate.setPosition 0/0.1/0
+rem -----------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 90/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** Astromech_Droid_Pitch ***
+ObjectTemplate.Create RotationalBundle Astromech_Droid_Pitch
+rem -----------------------------------
+ObjectTemplate.addTemplate Astromech_Droid_camera
+ObjectTemplate.setPosition 0/0.1/0.1
+ObjectTemplate.addTemplate R2D2DummyEngine
+ObjectTemplate.setPosition 0/0.1/0.1
+ObjectTemplate.addTemplate Astromech_Droid_repair
+ObjectTemplate.setPosition 0/0/0.2
+rem -----------------------------------
+ObjectTemplate.setMinRotation 0/-1/0
+ObjectTemplate.setMaxRotation 0/8/0
+ObjectTemplate.setMaxSpeed 0/90/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** Astromech_Droid_camera ***
+ObjectTemplate.create Camera Astromech_Droid_camera
+ObjectTemplate.setMinRotation 0/-1/0
+ObjectTemplate.setMaxRotation 0/8/0
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+
+rem *** lodX-WingCockpit ***
+ObjectTemplate.create LodObject lodX-WingCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate X-WingCockpitExternal
+ObjectTemplate.addTemplate X-WingCockpitInternal
+ObjectTemplate.setPosition 0/-0.025/-0.4
+rem -------------------------------------
+ObjectTemplate.lodSelector X-WingCockpitSelector
+
+rem *** X-WingCockpitExternal ***
+ObjectTemplate.create SimpleObject X-WingCockpitExternal
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.geometry X-Wing_Fus_M1
+
+rem *** X-WingCockpitInternal ***
+ObjectTemplate.create SimpleObject X-WingCockpitInternal
+ObjectTemplate.geometry 1P_X-Wing_Int_M1
+
+rem *** X-WingCockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector X-WingCockpitSelector
+LodSelectorTemplate.addLodDistance 10
+LodSelectorTemplate.addLodComparison 0.5
+
+rem *** X-WingCamera ***
+ObjectTemplate.create Camera X-WingCamera
+ObjectTemplate.setMinRotation -70/0/0
+ObjectTemplate.setMaxRotation 70/15/0
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/-5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.OutsideHudOffset 0/0/1.5
+
+rem *** X-WingEntry ***
+ObjectTemplate.create EntryPoint X-WingEntry
+ObjectTemplate.setEntryRadius 7
+
+rem *** X-WingSeat ***
+ObjectTemplate.create SeatObject X-WingSeat
+ObjectTemplate.seatFlags c_SeatShowHalfBodySoldier
+
+rem *** X-WingSimple ***
+ObjectTemplate.create Bundle X-WingSimple
+ObjectTemplate.geometry X-Wing_Fus_L1
+
+rem *** X-WingWreck ***
+ObjectTemplate.create SimpleObject X-WingWreck
+ObjectTemplate.geometry Wreck_X-Wing
+
+rem *** X-WingLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 X-WingLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 350
+
+rem *** X-WingS-Foil-1 ***
+ObjectTemplate.create LandingGear X-WingS_Foil_1
+ObjectTemplate.geometry XWing_SFoil_1_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -----------------------------------
+ObjectTemplate.addTemplate XWing_Laser_Cannon
+ObjectTemplate.setPosition -6.25/0.45/-1
+ObjectTemplate.setRotation 1.2/0.2/0
+ObjectTemplate.addTemplate XWing_Laser_Cannon
+ObjectTemplate.setPosition 6.25/-0.45/-1 
+ObjectTemplate.setRotation -1.2/-0.2/0
+ObjectTemplate.addTemplate e_engineXWing
+ObjectTemplate.setPosition 1.866/-1.001/-5.351
+ObjectTemplate.addTemplate e_engineXWing
+ObjectTemplate.setPosition -1.921/0.964/-5.351
+rem -----------------------------------
+ObjectTemplate.setMinRotation 0/0/-15
+ObjectTemplate.setMaxSpeed 0/0/12
+ObjectTemplate.setAcceleration 0/0/-10
+ObjectTemplate.setGearDownHeight 9999
+ObjectTemplate.setGearDownEngineInput 0.66
+ObjectTemplate.setGearUpEngineInput 0.71
+
+rem *** X-WingS-Foil-2 ***
+ObjectTemplate.create LandingGear X-WingS_Foil_2
+ObjectTemplate.geometry XWing_SFoil_2_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -----------------------------------
+ObjectTemplate.addTemplate XWing_Laser_Cannon
+ObjectTemplate.setPosition -6.25/-0.45/-1
+ObjectTemplate.setRotation 1.2/-0.2/0
+ObjectTemplate.addTemplate XWing_Laser_Cannon
+ObjectTemplate.setPosition 6.25/0.45/-1 
+ObjectTemplate.setRotation -1.2/0.2/0
+ObjectTemplate.addTemplate e_engineXWing
+ObjectTemplate.setPosition 1.866/0.964/-5.351
+ObjectTemplate.addTemplate e_engineXWing
+ObjectTemplate.setPosition -1.921/-1.001/-5.351
+rem -----------------------------------
+ObjectTemplate.setMaxRotation 0/0/15
+ObjectTemplate.setMaxSpeed 0/0/12
+ObjectTemplate.setAcceleration 0/0/10
+ObjectTemplate.setGearDownHeight 9999
+ObjectTemplate.setGearDownEngineInput 0.66
+ObjectTemplate.setGearUpEngineInput 0.71
+
+rem *** Transparisteel_Canopy ***
+ObjectTemplate.create LandingGear Transparisteel_Canopy
+ObjectTemplate.loadSoundScript Sounds/XWingCanopy.ssc
+ObjectTemplate.geometry Transparisteel_Canopy_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMinRotation 0/-28/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/30/0
+ObjectTemplate.setGearDownHeight 2.75
+ObjectTemplate.setGearUpHeight 2.76
+ObjectTemplate.setGearDownEngineInput 0.09
+ObjectTemplate.setGearUpEngineInput 0.1

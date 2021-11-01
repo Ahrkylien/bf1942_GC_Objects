@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject hothhut1
+ObjectTemplate.aiTemplate hothhut1
+ObjectTemplate.geometry hothhut1
+ObjectTemplate.setHasCollisionPhysics 1
+
+

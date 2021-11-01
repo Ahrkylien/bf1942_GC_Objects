@@ -1,0 +1,38 @@
+GeometryTemplate.create StandardMesh Skiff_Hul1_M1
+GeometryTemplate.file Vehicles/Skiff/skiff
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 140
+
+GeometryTemplate.create StandardMesh Skiff_rudder_left_m1
+GeometryTemplate.file Vehicles/Skiff/skiff_rudder_left
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 140
+
+GeometryTemplate.create StandardMesh Skiff_rudder_right_m1
+GeometryTemplate.file Vehicles/Skiff/skiff_rudder_right
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 140
+
+GeometryTemplate.create StandardMesh Skiff_Hul1_L1
+GeometryTemplate.file Vehicles/Skiff/skiff
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_Skiff_M1
+GeometryTemplate.file Vehicles/Skiff/Wreck_Skiff
+
+

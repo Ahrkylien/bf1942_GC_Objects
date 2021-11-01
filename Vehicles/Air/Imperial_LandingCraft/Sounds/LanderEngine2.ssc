@@ -1,0 +1,342 @@
+#include ../../../Common/Sounds/EngineMap.ssc
+
+newPatch
+
+####################
+### Engine Start ###
+####################
+load @ROOT/Sound/@RTD/lander-engine-start.wav
+minDistance 30
+dopplerOff
+priority -2
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 200
+	param 1
+	param -1	
+endEffect
+
+###############
+### Engine1 ###
+###############
+
+load @ROOT/Sound/@RTD/lander-engine-1.wav
+loop
+minDistance 60
+randomStartPitch .05/.05 
+volume 0.5
+priority 9
+
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 1.2
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0
+	param 1.05
+	param 0.98
+	param 0.08
+endEffect
+
+*** Engine Volume Start ***
+beginEffect
+	controlDestination Volume
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0
+	param 1
+	param 0.9
+	param 0.4
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 160
+	param 280
+	param 1
+	param -1		
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 1
+	param 1
+	param -1	
+endEffect
+
+###############
+### Engine2 ###
+###############
+
+load @ROOT/Sound/@RTD/lander-engine-2.wav
+loop
+minDistance 60
+randomStartPitch .05/.05 
+volume 0.45
+priority 9
+
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 1.2
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0
+	param 1.05
+	param 0.9
+	param 0.2
+endEffect
+
+*** Engine Volume Start ***
+beginEffect
+	controlDestination Volume
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0.5
+	param 1
+	param 0.2
+	param 0.4
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 160
+	param 280
+	param 1
+	param -1		
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 1
+	param 1
+	param -1	
+endEffect
+
+###############
+### Engine3 ###
+###############
+
+load @ROOT/Sound/@RTD/lander-engine-3.wav
+loop
+minDistance 60
+randomStartPitch .05/.05 
+volume 0.65
+priority 9
+
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 1.2
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0.1
+	param 0.9
+	param 0.9
+	param 0.1
+endEffect
+
+*** Engine Volume Start ***
+beginEffect
+	controlDestination Volume
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0
+	param 1
+	param 0.4
+	param 0.6
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 160
+	param 280
+	param 1
+	param -1		
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 1
+	param 1
+	param -1	
+endEffect
+
+
+
+###############
+### Engine4 ###
+###############
+
+load @ROOT/Sound/@RTD/lander-engine-4.wav
+loop
+minDistance 60
+randomStartPitch .05/.05 
+volume 0.6
+priority 9
+
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 1.2
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0
+	param 1.05
+	param 0.99
+	param 0.02
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 160
+	param 280
+	param 1
+	param -1		
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 1
+	param 1
+	param -1	
+endEffect
+
+################
+### Cockpitl ###
+################
+
+load @ROOT/Sound/@RTD/lambda-cockpit-l.wav
+loop
+minDistance 20
+relativePosition 1.2/0/23.05
+volume 0.4
+priority 6
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 4
+	param 1
+	param -1		
+endEffect
+
+################
+### Cockpitr ###
+################
+
+load @ROOT/Sound/@RTD/lambda-cockpit-r.wav
+loop
+minDistance 20
+relativePosition 1.6/0/23.05
+volume 0.4
+priority 6
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 4
+	param 1
+	param -1		
+endEffect
+
+###################
+### Engine Stop ###
+###################
+
+load @ROOT/Sound/@RTD/lander-engine-stop.wav
+minDistance 30
+trigger Release
+dopplerOff
+priority -2
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 200
+	param 1
+	param -1	
+endEffect
+
+

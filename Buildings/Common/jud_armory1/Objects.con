@@ -1,0 +1,75 @@
+ObjectTemplate.create Bundle jud_armory1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry jud_armory
+
+ObjectTemplate.addTemplate e11_Spawner
+ObjectTemplate.setPosition -.259602/.622984/.0129127
+ObjectTemplate.setRotation 0/-78.4135/0
+
+
+ObjectTemplate.addTemplate TL-21_Spawner
+ObjectTemplate.setPosition -.0912584/.50/-0.05
+ObjectTemplate.setRotation 0/-78.4135/0
+
+
+ObjectTemplate.addTemplate e11_Spawner
+ObjectTemplate.setPosition .0767183/.622984/.0129127
+ObjectTemplate.setRotation 0/-78.4135/0
+
+
+ObjectTemplate.addTemplate Disrupter2_Spawner
+ObjectTemplate.setPosition .244394/.475/.0129127
+ObjectTemplate.setRotation 0/-78.4135/0
+
+
+objectTemplate.aiTemplate jud_armory
+rem ---------------------------
+
+
+
+
+rem ----------------------------------------- 
+rem ---  E11 Spawn  ---
+rem ----------------------------------------- 
+ObjectTemplate.create ObjectSpawner e11_Spawner
+ObjectTemplate.setObjectTemplate 1 e11_kit
+ObjectTemplate.setObjectTemplate 2 e11_kit
+ObjectTemplate.MinSpawnDelay 10	
+ObjectTemplate.MaxSpawnDelay 20
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.TimeToLive 45
+ObjectTemplate.Distance 40
+ObjectTemplate.team 1
+ObjectTemplate.DamageWhenLost 10
+ObjectTemplate.maxNrOfObjectSpawned 2
+
+rem ----------------------------------------- 
+rem ---  Disrupter2 Spawn  ---
+rem ----------------------------------------- 
+ObjectTemplate.create ObjectSpawner Disrupter2_Spawner
+ObjectTemplate.setObjectTemplate 1 Disruptor_Kit_Imp
+ObjectTemplate.setObjectTemplate 2 Disruptor_Kit_Imp
+ObjectTemplate.MinSpawnDelay 10
+ObjectTemplate.MaxSpawnDelay 20
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.team 1
+ObjectTemplate.TimeToLive 45
+ObjectTemplate.Distance 40
+ObjectTemplate.DamageWhenLost 10
+ObjectTemplate.maxNrOfObjectSpawned 2
+
+rem ----------------------------------------- 
+rem ---  TL-21 Spawn  ---
+rem ----------------------------------------- 
+ObjectTemplate.create ObjectSpawner TL-21_Spawner
+ObjectTemplate.setObjectTemplate 1 TL-21_kit
+ObjectTemplate.setObjectTemplate 2 TL-21_kit
+ObjectTemplate.MinSpawnDelay 10
+ObjectTemplate.MaxSpawnDelay 20
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.team 1
+ObjectTemplate.TimeToLive 45
+ObjectTemplate.Distance 40
+ObjectTemplate.DamageWhenLost 10
+ObjectTemplate.maxNrOfObjectSpawned 1
+

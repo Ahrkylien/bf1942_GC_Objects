@@ -1,0 +1,28 @@
+ObjectTemplate.create Bundle tat_skiff_static
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry tat_skiff_static
+
+ObjectTemplate.addTemplate SarlaccSkiffSpawner
+ObjectTemplate.setPosition -6/-2/0
+ObjectTemplate.setRotation 0/0/0
+
+objectTemplate.aiTemplate tat_skiff_static
+
+rem ---------------------------
+
+
+rem *** SkiffSpawner ***
+ObjectTemplate.create ObjectSpawner SarlaccSkiffSpawner
+ObjectTemplate.setObjectTemplate 1 Skiff
+ObjectTemplate.setObjectTemplate 2 Skiff
+ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 10
+ObjectTemplate.maxSpawnDelay 30
+ObjectTemplate.TimeToLive 30
+ObjectTemplate.Distance 20
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 3
+ObjectTemplate.damageWhenLost 10
+
+

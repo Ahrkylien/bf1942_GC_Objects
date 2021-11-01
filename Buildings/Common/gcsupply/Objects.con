@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle gcsupply
+ObjectTemplate.geometry gcsupply
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate gcsupply
+

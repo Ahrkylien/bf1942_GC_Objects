@@ -1,0 +1,9 @@
+GeometryTemplate.create StandardMesh tan_isd_back
+GeometryTemplate.file buildings/Tanaab/tan_isd_back
+
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 1500

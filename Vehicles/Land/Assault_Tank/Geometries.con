@@ -1,0 +1,182 @@
+renderer.beginGlobalCluster Assault_Tank
+
+
+GeometryTemplate.create StandardMesh Assault_Tank_Hull_M1
+GeometryTemplate.file Vehicles/Assault_Tank/Rebel_Tank_main
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 150
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create StandardMesh Assault_Tank_decals
+GeometryTemplate.file Vehicles/Assault_Tank/Rebel_Tank_decals
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 150
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create StandardMesh Assault_Tank_wheel_large
+GeometryTemplate.file Vehicles/Assault_Tank/Rebel_Tank_wheel_left_large
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 50
+GeometryTemplate.setLodDistance 4 75
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Assault_Tank_wheel_small_left
+GeometryTemplate.file Vehicles/Assault_Tank/Rebel_Tank_wheel_small_left
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 50
+GeometryTemplate.setLodDistance 4 75
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Assault_Tank_wheel_small_right
+GeometryTemplate.file Vehicles/Assault_Tank/Rebel_Tank_wheel_small_left
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 50
+GeometryTemplate.setLodDistance 4 75
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Assault_Tank_wheel_tlm
+GeometryTemplate.file Vehicles/Assault_Tank/Rebel_Tank_wheel_tlm
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 50
+GeometryTemplate.setLodDistance 4 75
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Assault_Tank_wheel_tlo
+GeometryTemplate.file Vehicles/Assault_Tank/Rebel_Tank_wheel_tlo
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 50
+GeometryTemplate.setLodDistance 4 75
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Assault_Tank_barrel_pivot
+GeometryTemplate.file Vehicles/Assault_Tank/Rebel_Tank_barrel_pivot
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 50
+GeometryTemplate.setLodDistance 4 75
+GeometryTemplate.setLodDistance 5 100
+
+rem --------------------------------
+
+GeometryTemplate.create StandardMesh Assault_Tank_track_left
+GeometryTemplate.file Vehicles/Assault_Tank/Rebel_Tank_track_left
+GeometryTemplate.setSkin animations/Rebel_Tank_track_left.skn
+
+GeometryTemplate.create StandardMesh Assault_Tank_track_right
+GeometryTemplate.file Vehicles/Assault_Tank/Rebel_Tank_track_left
+GeometryTemplate.setSkin animations/Rebel_Tank_track_left.skn
+
+rem -------------------------------
+
+GeometryTemplate.create StandardMesh Assault_Tank_barrel_pivot
+GeometryTemplate.file Vehicles/Assault_Tank/Rebel_Tank_barrel_pivot
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 150
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create StandardMesh Assault_Tank_barrels
+GeometryTemplate.file Vehicles/Assault_Tank/Rebel_Tank_barrels
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 150
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create StandardMesh Assault_Tank_Turret
+GeometryTemplate.file Vehicles/Assault_Tank/Rebel_Tank_turret
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 150
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800
+
+rem ----------------------------
+
+GeometryTemplate.create StandardMesh Assault_Tank_Launcher
+GeometryTemplate.file Vehicles/Assault_Tank/Rebel_Tank_Launcher
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 150
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh rat_turret_base
+GeometryTemplate.file Vehicles/Assault_Tank/rat_turret_base
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 150
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create StandardMesh rat_turrent_launcher
+GeometryTemplate.file Vehicles/Assault_Tank/rat_turrent_launcher
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 150
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create StandardMesh Assault_Tank_Hull_L1
+GeometryTemplate.file Vehicles/Assault_Tank/Rebel_Tank_main
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 350
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Wreck_Assault_Tank_m1
+GeometryTemplate.file Vehicles/Assault_Tank/wreck_rebel_tank
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 350
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh r_rocket_m1
+GeometryTemplate.file r_rocket_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+geometryTemplate.Scale 0.75/0.75/0.75

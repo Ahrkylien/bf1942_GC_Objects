@@ -1,0 +1,7 @@
+GeometryTemplate.create StandardMesh I.M.D.SMissileDummy
+GeometryTemplate.file Vehicles/I.M.D.S/missile_turret_missile
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50

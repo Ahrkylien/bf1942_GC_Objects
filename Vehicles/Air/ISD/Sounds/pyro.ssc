@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/pyro.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/pyro.ssc
+	
+#templateLevel LOW
+
+	#include Low/pyro.ssc

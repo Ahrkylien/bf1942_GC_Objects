@@ -1,0 +1,7 @@
+ObjectTemplate.create Bundle jud_bridge
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry jud_bridge
+objectTemplate.aiTemplate jud_bridge
+ObjectTemplate.loadSoundScript Sounds/Ambient.ssc
+rem ---------------------------
+

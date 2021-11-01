@@ -1,0 +1,5 @@
+NetworkableInfo.createNewInfo TramcarEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo TramcarBodyInfo
+NetworkableInfo.setPredictionMode PMLinear

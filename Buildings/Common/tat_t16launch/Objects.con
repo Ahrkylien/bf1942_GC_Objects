@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle tat_t16launch
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry tat_t16launch
+objectTemplate.aiTemplate tat_t16launch
+rem ---------------------------

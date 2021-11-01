@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle ds_hanger
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry ds_hanger
+objectTemplate.aiTemplate ds_hanger
+

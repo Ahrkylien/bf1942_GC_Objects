@@ -1,0 +1,9 @@
+GeometryTemplate.create StandardMesh canopy2
+GeometryTemplate.file buildings/Endor/canopy2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 400
+GeometryTemplate.setLodDistance 2 500
+GeometryTemplate.setLodDistance 3 600
+GeometryTemplate.setLodDistance 4 700
+GeometryTemplate.setLodDistance 5 800
+

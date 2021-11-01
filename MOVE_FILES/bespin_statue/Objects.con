@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject bespin_statue
+ObjectTemplate.geometry bespin_statue
+

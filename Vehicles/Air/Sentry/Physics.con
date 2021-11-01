@@ -1,0 +1,190 @@
+
+
+rem *** Sentry_BobEngine ***
+ObjectTemplate.create Engine Sentry_BobEngine
+ObjectTemplate.setNetworkableInfo Sentry_BobEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/SentryEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-1000
+ObjectTemplate.setMaxRotation 0/0/1000
+ObjectTemplate.setMaxSpeed 0/0/21000
+ObjectTemplate.setAcceleration 0/0/21000
+rem ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 10.5
+ObjectTemplate.setDifferential 7
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.4
+
+rem *** SentryGlideEngine ***
+ObjectTemplate.create Engine SentrymoveEngine
+ObjectTemplate.setNetworkableInfo Sentry_BobEngineInfo
+ObjectTemplate.loadSoundScript Sounds/SentryEngine.ssc
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/1
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/5000
+ObjectTemplate.setInputToRoll c_PIAltFire
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 200
+ObjectTemplate.setDifferential 5
+
+
+rem *** Sentry_BobHoverEngine1 ***
+ObjectTemplate.create Engine Sentry_BobHoverEngine1
+ObjectTemplate.setNetworkableInfo Sentry_BobHoverEngine1Info
+rem ObjectTemplate.loadSoundScript Sounds/SentryEngine.ssc
+rem -------------------------------------
+rem ObjectTemplate.addTemplate lodSentry_BobHoverProp
+rem ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1000/-1000/0
+ObjectTemplate.setMaxRotation 1000/1000/1000
+ObjectTemplate.setMaxSpeed 50/50/10000
+ObjectTemplate.setAcceleration 50/50/10000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 13.55
+ObjectTemplate.setDifferential 4.05
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 3000
+
+rem *** Sentry_BobHoverEngine2 ***
+ObjectTemplate.create Engine Sentry_BobHoverEngine2
+ObjectTemplate.setNetworkableInfo Sentry_BobHoverEngine2Info
+rem ObjectTemplate.loadSoundScript Sounds/SentryEngine.ssc
+rem -------------------------------------
+rem ObjectTemplate.addTemplate lodSentry_BobHoverProp
+rem ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1000/-1000/0
+ObjectTemplate.setMaxRotation 1000/1000/1000
+ObjectTemplate.setMaxSpeed 50/50/10000
+ObjectTemplate.setAcceleration 50/50/10000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 13.55
+ObjectTemplate.setDifferential 4.05
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 3000
+
+
+
+rem *** Sentry_BobHoverEngine3 ***
+ObjectTemplate.create Engine Sentry_BobHoverEngine3
+ObjectTemplate.setNetworkableInfo Sentry_BobHoverEngine3Info
+ObjectTemplate.loadSoundScript Sounds/SentryEngine.ssc
+rem -------------------------------------
+rem ObjectTemplate.addTemplate lodSentry_BobHoverProp
+rem ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1000/-1000/0
+ObjectTemplate.setMaxRotation 1000/1000/1000
+ObjectTemplate.setMaxSpeed 50/50/10000
+ObjectTemplate.setAcceleration 50/50/10000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 13.55
+ObjectTemplate.setDifferential 4.05
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 3000
+
+
+rem *** Sentry_BobEngineSpring ***
+ObjectTemplate.create Spring Sentry_BobEngineSpring1
+ObjectTemplate.setNetworkableInfo Sentry_BobEngineSpring1Info
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.hasResponsePhysics 1
+rem ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate Sentry_BobHoverEngine1
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/270/0
+
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 0
+
+rem *** Sentry_BobEngineSpring ***
+ObjectTemplate.create Spring Sentry_BobEngineSpring2
+ObjectTemplate.setNetworkableInfo Sentry_BobEngineSpring2Info
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.hasResponsePhysics 1
+rem ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate Sentry_BobHoverEngine2
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/270/0
+
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 0
+
+rem *** Sentry_BobEngineSpring ***
+ObjectTemplate.create Spring Sentry_BobEngineSpring3
+ObjectTemplate.setNetworkableInfo Sentry_BobEngineSpring3Info
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.hasResponsePhysics 1
+rem ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate Sentry_BobHoverEngine3
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/270/0
+
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 0
+
+
+
+rem *** Sentry_BobTailEngineV ***
+ObjectTemplate.create Engine Sentry_BobTailEngineV
+ObjectTemplate.setNetworkableInfo Sentry_BobEngineInfo
+rem ObjectTemplate.loadSoundScript Sounds/Ambient.ssc
+ObjectTemplate.setMinRotation -1000/-1000/0
+ObjectTemplate.setMaxRotation 1000/1000/1000
+ObjectTemplate.setMaxSpeed 50/50/10000
+ObjectTemplate.setAcceleration 50/50/10000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 0.1
+ObjectTemplate.setDifferential 0.1
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 30
+
+rem *** Sentry_BobTailEngineA ***
+ObjectTemplate.create Engine Sentry_BobTailEngineA
+ObjectTemplate.setNetworkableInfo Sentry_BobEngineInfo
+rem ObjectTemplate.loadSoundScript Sounds/Ambient.ssc
+ObjectTemplate.setMinRotation -1000/-1000/0
+ObjectTemplate.setMaxRotation 1000/1000/1000
+ObjectTemplate.setMaxSpeed 50/50/10000
+ObjectTemplate.setAcceleration 50/50/10000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 0.1
+ObjectTemplate.setDifferential 0.1
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 30

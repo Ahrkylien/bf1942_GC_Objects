@@ -1,0 +1,6 @@
+GeometryTemplate.create AnimatedMesh com_table_anim
+GeometryTemplate.setSkin animations/holo.skn
+GeometryTemplate.file buildings/dantooine/com_table_anim
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300
+

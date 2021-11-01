@@ -1,0 +1,19 @@
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/ambient-tatooineflies.wav
+loop
+minDistance 8
+volume 0.5
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 10
+	param 1
+	param -1	
+endEffect

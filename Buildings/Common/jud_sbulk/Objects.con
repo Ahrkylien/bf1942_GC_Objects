@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle jud_sbulk
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry jud_sbulk
+objectTemplate.aiTemplate jud_sbulk

@@ -1,0 +1,45 @@
+ObjectTemplate.create HandFireArms BinocularsRebel
+ObjectTemplate.itemIndex 5
+ObjectTemplate.magType 2
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magSize -1
+ObjectTemplate.fireOnce 1
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
+ObjectTemplate.projectileTemplate BinocularsProjectile
+ObjectTemplate.projectile2Template BinocularsProjectile2
+ObjectTemplate.createSkeleton animations/Binoculars.ske
+ObjectTemplate.useSkeletonPartAsMain base
+ObjectTemplate.zoomFov 0.1
+ObjectTemplate.useScope 1
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.GUIIndex 84
+ObjectTemplate.setScopeIcon "reb_binocular2.tga"
+ObjectTemplate.setSightIcon "scout_ring_128x128.tga"
+ObjectTemplate.setSniperSight 0
+
+ObjectTemplate.hasDynamicShadow 0
+
+ObjectTemplate.createSkeleton animations/BinocularsRebel.ske
+ObjectTemplate.useSkeletonPartAsMain Binoculars
+ObjectTemplate.addTemplate BinocularsRebelLod
+
+
+rem ** Objects
+
+
+ObjectTemplate.create SimpleObject BinocularsRebelSimple
+ObjectTemplate.geometry Shad_Binoculars
+
+ObjectTemplate.create AnimatedBundle  BinocularsRebelComplex
+ObjectTemplate.geometry Binoculars
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.createSkeleton animations/BinocularsRebel.ske
+
+ObjectTemplate.create LodObject BinocularsRebelLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate BinocularsRebelComplex
+ObjectTemplate.addTemplate BinocularsRebelSimple
+
+

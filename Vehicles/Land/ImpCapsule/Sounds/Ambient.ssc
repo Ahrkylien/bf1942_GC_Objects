@@ -1,0 +1,19 @@
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/ammobox.wav
+loop
+minDistance 4
+volume .3
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 4
+	param 1
+	param -1	
+endEffect

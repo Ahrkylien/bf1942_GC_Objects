@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle jabaspalace
+ObjectTemplate.geometry jabaspalace
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate jabaspalace
+

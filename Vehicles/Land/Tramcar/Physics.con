@@ -1,0 +1,29 @@
+
+rem *** erengine ***
+ObjectTemplate.create Engine TramcarEngine
+ObjectTemplate.setNetworkableInfo TramcarEngineInfo
+ObjectTemplate.loadSoundScript Sounds/LandspeederEngine.ssc
+ObjectTemplate.setMinRotation 0/0/-90
+ObjectTemplate.setMaxRotation 0/0/90
+ObjectTemplate.setMaxSpeed 0/0/1000
+ObjectTemplate.setAcceleration 0/0/15
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 200
+ObjectTemplate.setDifferential 10
+ObjectTemplate.setAutomaticRollStabilization 1
+ObjectTemplate.setAutomaticYawStabilization 1
+ObjectTemplate.setAutomaticPitchStabilization 1
+
+rem *** _Wheel ***
+ObjectTemplate.create Spring Tramcar_Wheel
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry corsair_Bwheel_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFDummyGrip
+ObjectTemplate.setStrength 30
+ObjectTemplate.setDamping 12
+ObjectTemplate.createInvisible 1

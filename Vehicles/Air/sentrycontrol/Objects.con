@@ -1,0 +1,75 @@
+rem *** probedroidcontrol ***
+ObjectTemplate.create PlayerControlObject sentrycontrol
+ObjectTemplate.setNetworkableInfo probedroidcontrolBodyInfo
+rem -------------------------------------
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 10
+ObjectTemplate.drag 2
+ObjectTemplate.dragOffset 0/0/0
+ObjectTemplate.mass 4500
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 100
+ObjectTemplate.maxhitpoints 100
+ObjectTemplate.material 801
+ObjectTemplate.criticalDamage 20
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.hpLostWhileCriticalDamage 1
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+rem -------------------------------------
+ObjectTemplate.addArmorEffect 40 e_KatyushaDamage -1.2/1/0
+ObjectTemplate.addArmorEffect 20 e_KatyushaFire -1.2/1/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas -1.2/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.timetoliveafterdeath 10
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.aiTemplate WasserFallLauncherAI
+rem -------------------------------------
+ObjectTemplate.addTemplate lodprobedroidcontrol2
+rem -------------------------------------
+ObjectTemplate.GUIIndex 20
+ObjectTemplate.setSoldierExitLocation -2/2/-2 -180/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_probedroidcontrol.dds"
+ObjectTemplate.setVehicleIconPos 72/64
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_probedroidweapon.dds"
+ObjectTemplate.setPrimaryAmmoBar ABReloadBarOnly
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_probedroid_16x16.dds"
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTArtillery
+ObjectTemplate.setToolTipType  TTWasserfall
+ObjectTemplate.hasRestrictedExit 1
+rem -------------------------------------
+
+rem *** lodprobedroidcontrol ***
+ObjectTemplate.create LodObject lodprobedroidcontrol2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate probedroidcontrolComplex2
+rem ObjectTemplate.addTemplate probedroidcontrolWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector probedroidcontrolLodSelector
+
+rem *** probedroidcontrolComplex ***
+ObjectTemplate.create Bundle probedroidcontrolComplex2
+ObjectTemplate.geometry R5D4Control_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+objectTemplate.loadSoundScript Sounds/ambient.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate sentrylauncher
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate probedroidcontrol_Entry
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate probedroidcontrol_Camera
+ObjectTemplate.setPosition -1.2/1.2/-1.6
+ObjectTemplate.addTemplate probedroidcontrolseat
+ObjectTemplate.setPosition -0.3/1.2/-0.8
+rem -------------------------------------

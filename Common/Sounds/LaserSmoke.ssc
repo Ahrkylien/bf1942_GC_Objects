@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include LaserSmoke_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include LaserSmoke_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include LaserSmoke_MedLow.ssc

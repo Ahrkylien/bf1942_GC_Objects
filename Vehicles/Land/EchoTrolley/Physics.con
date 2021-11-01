@@ -1,0 +1,84 @@
+rem *** EchoTrolleyEngine ***
+ObjectTemplate.create Engine EchoTrolleyEngine
+ObjectTemplate.setNetworkableInfo TigerEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/EchoTrolleyEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate EchoTrolleyFrontWheelBundle
+ObjectTemplate.setPosition 2/-0.25/2
+ObjectTemplate.addTemplate EchoTrolleyFrontWheelBundle
+ObjectTemplate.setPosition -1.99/-0.25/2.01
+ObjectTemplate.addTemplate EchoTrolleyDriveWheel
+ObjectTemplate.setPosition 2/-0.25/-2
+ObjectTemplate.addTemplate EchoTrolleyDriveWheel
+ObjectTemplate.setPosition -1.99/-0.25/-2.01
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/0/-10
+ObjectTemplate.setMaxRotation 1/0/10
+ObjectTemplate.setMaxSpeed 4/0/40
+ObjectTemplate.setAcceleration 4/0/50
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 6
+ObjectTemplate.setDifferential 4
+ObjectTemplate.setNumberOfGears 4
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+
+rem *** EchoTrolleyFrontWheelBundle ***
+ObjectTemplate.create RotationalBundle EchoTrolleyFrontWheelBundle
+ObjectTemplate.setNetworkableInfo EchoTrolleyInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate EchoTrolleyRollWheel
+rem -------------------------------------
+ObjectTemplate.setMinRotation -35/0/0
+ObjectTemplate.setMaxRotation 35/0/0
+ObjectTemplate.setMaxSpeed 240/0/0
+ObjectTemplate.setAcceleration 200/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+rem *** EchoTrolleyBackWheelBundle ***
+ObjectTemplate.create Bundle EchoTrolleyBackWheelBundle
+ObjectTemplate.setNetworkableInfo EchoTrolleyInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate EchoTrolleyDriveWheel
+rem -------------------------------------
+ObjectTemplate.setMinRotation -35/0/0
+ObjectTemplate.setMaxRotation 35/0/0
+ObjectTemplate.setMaxSpeed 240/0/0
+ObjectTemplate.setAcceleration -200/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+rem *** EchoTrolleyDriveWheel ***
+ObjectTemplate.create Spring EchoTrolleyDriveWheel
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry hanomag_tireR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 6
+ObjectTemplate.createInvisible 1
+
+rem *** EchoTrolleyRollWheel ***
+ObjectTemplate.create Spring EchoTrolleyRollWheel
+ObjectTemplate.geometry hanomag_tireR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 6
+ObjectTemplate.createInvisible 1

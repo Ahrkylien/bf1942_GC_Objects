@@ -1,0 +1,53 @@
+ObjectTemplate.create Engine Tie_Bomb_Engine
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/100000
+ObjectTemplate.setAcceleration 0/0/100000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setEngineType c_ETRocket
+ObjectTemplate.setTorque 80.0
+ObjectTemplate.setNoPropellerEffectAtSpeed 1000
+ObjectTemplate.setDifferential 50.0
+
+rem *** Floater ***
+ObjectTemplate.create FloatingBundle WaterBounce
+ObjectTemplate.setHullHeight 15.0
+ObjectTemplate.setFloatMaxLift 9.0
+ObjectTemplate.setFloatMinLift 9.0
+ObjectTemplate.setDragModifier 8000.0
+
+rem *** CapialBodyWingVertical ***
+ObjectTemplate.create Wing CapitalBodyWingVertical
+ObjectTemplate.setNetworkableInfo Capital_Wing_Info
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/-0.1
+ObjectTemplate.setWingLift 8
+ObjectTemplate.setFlapLift 0
+
+rem *** CapitalShip_Floater ***
+ObjectTemplate.create FloatingBundle Capital_Floater
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.setHullHeight 300000
+ObjectTemplate.setFloatMaxLift 1.962
+ObjectTemplate.setFloatMinLift 1.962
+rem ObjectTemplate.setAutomaticRollStabilization 1
+rem ObjectTemplate.setAutomaticPitchStabilization 1
+ObjectTemplate.setDragModifier 0   
+ObjectTemplate.setMinRotation 0/5/0
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 0/5/0
+ObjectTemplate.setAcceleration 0/4/0
+ObjectTemplate.setInputToPitch 0
+ObjectTemplate.setAutomaticReset 0
+
+rem *** Capital_Wheel ***
+ObjectTemplate.create Spring Capital_Wheel
+ObjectTemplate.geometry corsair_Bwheel_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFDummyGrip
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12
+ObjectTemplate.createInvisible 1

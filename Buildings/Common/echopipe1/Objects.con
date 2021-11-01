@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject echopipe1
+ObjectTemplate.aiTemplate echopipe1
+ObjectTemplate.geometry echopipe1
+ObjectTemplate.setHasCollisionPhysics 1
+
+

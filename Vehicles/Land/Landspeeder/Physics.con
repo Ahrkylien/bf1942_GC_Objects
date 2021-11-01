@@ -1,0 +1,128 @@
+
+
+rem *** Engine ***
+ObjectTemplate.create Engine landspeederEngine
+ObjectTemplate.setNetworkableInfo LandspeederEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/LandspeederEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate LandspeederFrontWheelR
+ObjectTemplate.setPosition 2/-.5/4
+ObjectTemplate.addTemplate LandspeederFrontWheelL
+ObjectTemplate.setPosition -2/-.5/4
+
+rem ObjectTemplate.addTemplate LandspeederBackSpringR
+rem ObjectTemplate.setPosition 3.2/-0.8/-0.8
+rem ObjectTemplate.addTemplate LandspeederBackSpringL
+rem ObjectTemplate.setPosition -3.2/-0.8/-0.8
+
+ObjectTemplate.addTemplate LandspeederBackSpringR
+ObjectTemplate.setPosition 2/-.5/-4
+ObjectTemplate.addTemplate LandspeederBackSpringL
+ObjectTemplate.setPosition -2/-.5/-4
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-5000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/6000
+ObjectTemplate.setAcceleration 0/0/5000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 110
+ObjectTemplate.setDifferential 30
+ObjectTemplate.setNumberOfGears 50
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.4
+
+
+
+rem ---
+ObjectTemplate.create Engine GravEngine
+ObjectTemplate.setNetworkableInfo LandspeederEngineInfo
+ObjectTemplate.loadSoundScript Sounds/LandspeederEngine.ssc
+ObjectTemplate.setMinRotation -0.3/0/0000
+ObjectTemplate.setMaxRotation 0.3/0/5000
+ObjectTemplate.setMaxSpeed 3500/0/1500
+ObjectTemplate.setAcceleration 1500/0/7500
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 10
+ObjectTemplate.setDifferential 7
+ObjectTemplate.setGearUp 0.3
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 190
+
+
+
+
+rem --------------------------------------------
+rem wheels
+rem ---
+rem *** WillyFrontSpringR ***
+ObjectTemplate.create Spring LandspeederFrontSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Willy_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+rem ObjectTemplate.addTemplate e_wdustWheelFL
+rem ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 40
+ObjectTemplate.setDamping 5
+ObjectTemplate.createInvisible 1
+
+
+rem *** WillyFrontSpringL ***
+ObjectTemplate.create Spring LandspeederFrontSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Willy_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+rem ObjectTemplate.addTemplate e_wdustWheelFL
+rem ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 40
+ObjectTemplate.setDamping 5
+ObjectTemplate.createInvisible 1
+
+rem *** WillyBackSpringR ***
+ObjectTemplate.create Spring LandspeederBackSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Willy_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+rem ObjectTemplate.addTemplate e_wdustWheelFL
+rem ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 40
+ObjectTemplate.setDamping 5
+ObjectTemplate.createInvisible 1
+
+rem *** WillyBackSpringL ***
+ObjectTemplate.create Spring LandspeederBackSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Willy_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+rem ObjectTemplate.addTemplate e_wdustWheelFL
+rem ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 40
+ObjectTemplate.setDamping 5
+ObjectTemplate.createInvisible 1

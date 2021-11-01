@@ -1,0 +1,19 @@
+
+
+rem *** e_WaterFrontPTBoat ***
+ObjectTemplate.create EffectBundle e_Waveskim
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/e_WaterFront.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_WaterFoam
+ObjectTemplate.setPosition -0.05/0/0
+ObjectTemplate.setRotation -169.999/0/0
+ObjectTemplate.addTemplate Em_WaterFoamR
+ObjectTemplate.setPosition 0.05/0/0
+ObjectTemplate.setRotation 170/0/0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+ObjectTemplate.minDistanceUnderwaterSurface 0
+ObjectTemplate.maxDistanceUnderwaterSurface 10
+
+

@@ -1,0 +1,9 @@
+
+GeometryTemplate.create StandardMesh monument
+GeometryTemplate.file monument
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 600
+GeometryTemplate.setLodDistance 4 700
+GeometryTemplate.setLodDistance 5 1000

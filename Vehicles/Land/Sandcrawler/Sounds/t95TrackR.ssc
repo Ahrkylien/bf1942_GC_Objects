@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/TigerTrackR.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/TigerTrackR.ssc
+	
+#templateLevel LOW
+
+	#include Low/TigerTrackR.ssc

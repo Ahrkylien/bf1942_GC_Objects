@@ -1,0 +1,35 @@
+GeometryTemplate.create StandardMesh wavebody
+GeometryTemplate.file Vehicles/waveskim/waveskim_hull
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 500
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create StandardMesh Wave_Turbolaser_Barrel_M1
+GeometryTemplate.file Vehicles/waveskim/waveskim_gun
+
+GeometryTemplate.create StandardMesh Wave_Turbolaser_Base_M1
+GeometryTemplate.file Vehicles/waveskim/waveskim_turrent
+
+GeometryTemplate.create StandardMesh wave_low
+GeometryTemplate.file Vehicles/waveskim/waveskim_hull
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 500
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create StandardMesh waveramp
+GeometryTemplate.file Vehicles/waveskim/waveskim_ramp
+
+GeometryTemplate.create StandardMesh waveramp2
+GeometryTemplate.file Vehicles/waveskim/waveskim_ramp2
+
+GeometryTemplate.create StandardMesh wavecockpit
+GeometryTemplate.file Vehicles/waveskim/waveskim_cockpit
+

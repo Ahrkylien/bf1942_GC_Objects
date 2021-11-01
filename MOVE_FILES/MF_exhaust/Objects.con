@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject MF_exhaust
+ObjectTemplate.geometry MF_exhaust
+

@@ -1,0 +1,15 @@
+GeometryTemplate.create StandardMesh Harpoon
+GeometryTemplate.file Harpoon_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+
+GeometryTemplate.create StandardMesh HarpoonGunMesh
+GeometryTemplate.file HarpoonGun
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+
+

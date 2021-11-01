@@ -1,0 +1,177 @@
+
+
+rem ----------------------------------------------------------
+rem Firearm: Disruptor
+rem ----------------------------------------------------------
+ObjectTemplate.create HandFireArms disruptor
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.itemIndex 3
+ObjectTemplate.projectileTemplate disruptorProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.magSize 10
+ObjectTemplate.numOfMag 5
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 1.6
+ObjectTemplate.roundOfFire 1.25
+ObjectTemplate.fireOnce 1
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.zoomFov 0.9
+ObjectTemplate.GUIIndex 6
+ObjectTemplate.setHudAmmoType ATIconAndReloadBar
+ObjectTemplate.setAmmoIcon "ammo/icon_laser_64x32.dds"
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.soldierZoomFov 0.6 
+ObjectTemplate.soldierZoomPosition -0.05/-0.06/0
+ObjectTemplate.soldierCameraPosition 0.01/-0.09/0.01
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	1
+ObjectTemplate.timeToNotAllowChange 0.25
+
+Rem *** Deviation Begin *****
+
+rem ObjectTemplate.velocity 1000
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/1.2/1.2/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 1
+
+ObjectTemplate.setFireDev 0 0 0
+ObjectTemplate.setDevMod  1 0.7 0.5
+ObjectTemplate.setMinDev 0.25
+ObjectTemplate.setTurnDev 0 0 0 0
+ObjectTemplate.setSpeedDev 1.5 0.4 0.4 0.1
+ObjectTemplate.setMiscDev 2.5 2.5 0.1
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript Sounds/Disruptor.ssc
+ObjectTemplate.createSkeleton animations/Disruptor.ske
+ObjectTemplate.useSkeletonPartAsMain thompson
+ObjectTemplate.addTemplate disruptorLod
+
+ObjectTemplate.addTemplate e_MuzzDisruptor
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.08/0.75
+ObjectTemplate.setRotation 0/0/0
+
+
+
+rem ----------------------------------------------------------
+rem Firearm: Dist2
+rem ----------------------------------------------------------
+ObjectTemplate.create HandFireArms disruptor2
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.itemIndex 3
+ObjectTemplate.projectileTemplate disruptorProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.magSize 10
+ObjectTemplate.numOfMag 5
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 1.6
+ObjectTemplate.roundOfFire 1.25
+ObjectTemplate.fireOnce 1
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.zoomFov 0.9
+ObjectTemplate.GUIIndex 6
+ObjectTemplate.setHudAmmoType ATIconAndReloadBar
+ObjectTemplate.setAmmoIcon "ammo/icon_laser_64x32.dds"
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.soldierZoomFov 0.6 
+ObjectTemplate.soldierZoomPosition -0.05/-0.06/0
+ObjectTemplate.soldierCameraPosition -0.02/-0.04/0.01
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	1
+ObjectTemplate.timeToNotAllowChange 0.25
+
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 1000
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/1.2/1.2/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 1
+
+ObjectTemplate.setFireDev 0 0 0
+ObjectTemplate.setDevMod  1 0.7 0.5
+ObjectTemplate.setMinDev 0.25
+ObjectTemplate.setTurnDev 0 0 0 0
+ObjectTemplate.setSpeedDev 1.5 0.4 0.4 0.1
+ObjectTemplate.setMiscDev 2.5 2.5 0.1
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript Sounds/Disruptor.ssc
+ObjectTemplate.createSkeleton animations/Disruptor2.ske
+ObjectTemplate.useSkeletonPartAsMain thompson
+ObjectTemplate.addTemplate disruptor2Lod
+
+ObjectTemplate.addTemplate e_MuzzDisruptor
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0/0.75
+ObjectTemplate.setRotation 0/0/0
+
+
+
+rem
+rem ** Objects
+rem
+
+ObjectTemplate.create SimpleObject disruptorSimple
+ObjectTemplate.geometry disruptor
+
+ObjectTemplate.create AnimatedBundle disruptorComplex
+ObjectTemplate.geometry disruptor
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.createSkeleton animations/Disruptor.ske
+
+
+ObjectTemplate.create LodObject disruptorLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate disruptorComplex
+ObjectTemplate.addTemplate disruptorSimple
+
+
+rem 2 *****************************************
+ObjectTemplate.create SimpleObject disruptor2Simple
+ObjectTemplate.geometry disruptor2
+
+ObjectTemplate.create AnimatedBundle disruptor2Complex
+ObjectTemplate.geometry disruptor2
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.createSkeleton animations/Disruptor2.ske
+
+ObjectTemplate.create LodObject disruptor2Lod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate disruptor2Complex
+ObjectTemplate.addTemplate disruptor2Simple
+
+
+
+rem ****************************************
+rem PROJECTILE DISRUPTOR (No4)
+
+ObjectTemplate.create Projectile disruptorProjectile
+ObjectTemplate.geometry LaserSight_m1
+rem --------------------------------
+rem ObjectTemplate.addTemplate e_distrail
+rem --------------------------------
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.hasStartEffect 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 531
+ObjectTemplate.loadSoundScript ..\..\common\Sounds\projectile.ssc
+
+

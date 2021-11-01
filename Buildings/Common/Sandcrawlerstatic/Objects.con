@@ -1,0 +1,31 @@
+rem *** SandcrawlerStatic ***
+ObjectTemplate.create Bundle SandcrawlerStatic
+ObjectTemplate.geometry Sandcrawler_Hull_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate SandcrawlerInterior
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate SandcrawlerStaticDoorMesh
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate SandcrawlerStaticWheels
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+
+rem *** SandcrawlerStaticDoorMesh ***
+ObjectTemplate.create SimpleObject SandcrawlerStaticDoorMesh
+ObjectTemplate.geometry Sandcrawler_Door_M1
+ObjectTemplate.hasCollisionPhysics 1
+
+rem *** SandcrawlerStaticWheels ***
+ObjectTemplate.create Bundle SandcrawlerStaticWheels
+ObjectTemplate.geometry Sandcrawler_TrackL_M1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.geometry Sandcrawler_TrackR_M1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.geometry Sandcrawler_whe1R_M1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.geometry Sandcrawler_whe2R_M1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.geometry Sandcrawler_whe4R_M1
+ObjectTemplate.hasCollisionPhysics 1

@@ -1,0 +1,13 @@
+NetworkableInfo.createNewInfo ATSTDesertEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo ATSTDesertSteeringInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo ATSTDesertBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo ATSTDesertTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+

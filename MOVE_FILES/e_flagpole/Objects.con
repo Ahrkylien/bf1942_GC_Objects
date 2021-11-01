@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject e_flagpole
+ObjectTemplate.geometry e_flagpole
+

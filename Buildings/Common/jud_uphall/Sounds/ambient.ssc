@@ -1,0 +1,219 @@
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/ambient-jud_elevator.wav
+relativePosition 0/0/0
+dopplerOff
+loop
+minDistance 35
+volume 0.7
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/ambient-jud_elevator.wav
+relativePosition 0/35/0
+dopplerOff
+loop
+minDistance 35
+volume 0.7
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/ambient-jud_elevator.wav
+relativePosition 0/70/0
+dopplerOff
+loop
+minDistance 35
+volume 0.7
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/ambient-jud_elevator.wav
+relativePosition 0/105/0
+dopplerOff
+loop
+minDistance 35
+volume 0.7
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/ambient-jud_elevator.wav
+relativePosition 0/140/0
+dopplerOff
+loop
+minDistance 35
+volume 0.7
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/ambient-jud_elevator.wav
+relativePosition 0/175/0
+dopplerOff
+loop
+minDistance 35
+volume 0.7
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/ambient-jud_elevator.wav
+relativePosition 0/210/0
+dopplerOff
+loop
+minDistance 35
+volume 0.7
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/ambient-jud_elevator.wav
+relativePosition 0/245/0
+dopplerOff
+loop
+minDistance 35
+volume 0.7
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/ambient-jud_elevator.wav
+relativePosition 0/280/0
+dopplerOff
+loop
+minDistance 35
+volume 0.7
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/ambient-jud_elevator.wav
+relativePosition 0/215/0
+dopplerOff
+loop
+minDistance 35
+volume 0.7
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/ambient-jud_elevator.wav
+relativePosition 0/240/0
+dopplerOff
+loop
+minDistance 35
+volume 0.7
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/ambient-jud_elevator.wav
+relativePosition 0/275/0
+dopplerOff
+loop
+minDistance 35
+volume 0.7
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 50
+	param 1
+	param -1	
+endEffect

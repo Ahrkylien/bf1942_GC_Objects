@@ -1,0 +1,187 @@
+rem *** CloudcarEngineLeft ***
+ObjectTemplate.create Engine CloudcarEngineLeft
+ObjectTemplate.setNetworkableInfo Cloudcar_engine_info
+rem -------------------------------------
+ObjectTemplate.setMinRotation -0.3/0/0
+ObjectTemplate.setMaxRotation 0.3/0/100
+ObjectTemplate.setMaxSpeed 1000/0/500
+ObjectTemplate.setAcceleration 500/0/10000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 23
+ObjectTemplate.setDifferential 3
+
+rem *** CloudcarEngineRight ***
+ObjectTemplate.create Engine CloudcarEngineRight
+ObjectTemplate.setNetworkableInfo Cloudcar_engine_info
+rem -------------------------------------
+ObjectTemplate.setMinRotation -0.3/0/0
+ObjectTemplate.setMaxRotation 0.3/0/100
+ObjectTemplate.setMaxSpeed 1000/0/500
+ObjectTemplate.setAcceleration 500/0/10000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 23
+ObjectTemplate.setDifferential 3
+
+rem *** CloudcarEngineDummy ***
+ObjectTemplate.create Engine CloudcarEngineDummy
+ObjectTemplate.loadSoundScript Sounds/CloudcarEngine.ssc
+rem -------------------------------------
+ObjectTemplate.setMinRotation -0.3/0/0
+ObjectTemplate.setMaxRotation 0.3/0/100
+ObjectTemplate.setMaxSpeed 1000/0/500
+ObjectTemplate.setAcceleration 500/0/10000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 0.001
+ObjectTemplate.setDifferential 0
+
+rem *** CloudcarAirbreakLeft ***
+ObjectTemplate.create Wing CloudcarAirbreakLeft
+ObjectTemplate.setNetworkableInfo Cloudcar_wing_info
+ObjectTemplate.setMinRotation 0/-2/0
+ObjectTemplate.setMaxRotation 0/2/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPitchOffset -2.5
+ObjectTemplate.setPositionOffset 1.539/-0.05/0.883
+ObjectTemplate.setFlapLift 2
+ObjectTemplate.setRegulateToLift 4.91
+ObjectTemplate.setWingToRegulatorRatio 1
+
+rem *** CloudcarAirbreakRight ***
+ObjectTemplate.create Wing CloudcarAirbreakRight
+ObjectTemplate.setNetworkableInfo Cloudcar_wing_info
+ObjectTemplate.setMinRotation 0/-2/0
+ObjectTemplate.setMaxRotation 0/2/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPitchOffset -2.5
+ObjectTemplate.setPositionOffset -1.539/-0.05/0.883
+ObjectTemplate.setFlapLift 2
+ObjectTemplate.setRegulateToLift 4.91
+ObjectTemplate.setWingToRegulatorRatio 1
+
+rem *** CloudcarRudderBackVertical ***
+ObjectTemplate.create Wing CloudcarRudderBackVertical
+ObjectTemplate.setNetworkableInfo Cloudcar_wing_info
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/60/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/-0.5/0
+ObjectTemplate.setWingLift 1.5
+ObjectTemplate.setFlapLift 1.5
+
+rem *** CloudcarBodyWingVertical ***
+ObjectTemplate.create Wing CloudcarBodyWingVertical
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/-0.6
+ObjectTemplate.setWingLift 2
+ObjectTemplate.setFlapLift 0
+
+rem *** CloudcarRudderBackLeft ***
+ObjectTemplate.create Wing CloudcarRudderBackLeft
+ObjectTemplate.setNetworkableInfo Cloudcar_wing_info
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/-60/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0.5/0/0
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setWingLift 0.5
+ObjectTemplate.setFlapLift 0.7
+
+rem *** CloudcarRudderBackRight ***
+ObjectTemplate.create Wing CloudcarRudderBackRight
+ObjectTemplate.setNetworkableInfo Cloudcar_wing_info
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/-60/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset -0.5/0/0
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setWingLift 0.5
+ObjectTemplate.setFlapLift 0.7
+
+rem *** CloudcarRudderFrontLeft ***
+ObjectTemplate.create Wing CloudcarRudderFrontLeft
+ObjectTemplate.setNetworkableInfo Cloudcar_wing_info
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/120/0
+ObjectTemplate.setAcceleration 0/-120/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 0.5/0/0.41
+ObjectTemplate.setWingLift 2.4
+ObjectTemplate.setFlapLift 2.3
+
+rem *** CloudcarRudderFrontRight ***
+ObjectTemplate.create Wing CloudcarRudderFrontRight
+ObjectTemplate.setNetworkableInfo Cloudcar_wing_info
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/120/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset -0.5/0/0.41
+ObjectTemplate.setWingLift 2.4
+ObjectTemplate.setFlapLift 2.3
+
+rem *** CloudcarFlapLeftInner ***
+ObjectTemplate.create RotationalBundle CloudcarFlapLeftInner
+ObjectTemplate.setNetworkableInfo Cloudcar_wing_info
+ObjectTemplate.geometry Cloudcar_Flap_Left_Inner
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/150/0
+ObjectTemplate.setAcceleration 0/-150/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+
+rem *** CloudcarFlapLeftOuter ***
+ObjectTemplate.create RotationalBundle CloudcarFlapLeftOuter
+ObjectTemplate.setNetworkableInfo Cloudcar_wing_info
+ObjectTemplate.geometry Cloudcar_Flap_Left_Outer
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/150/0
+ObjectTemplate.setAcceleration 0/-150/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+
+rem *** CloudcarFlapRightInner ***
+ObjectTemplate.create RotationalBundle CloudcarFlapRightInner
+ObjectTemplate.setNetworkableInfo Cloudcar_wing_info
+ObjectTemplate.geometry Cloudcar_Flap_Right_Inner
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/150/0
+ObjectTemplate.setAcceleration 0/-150/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+
+rem *** CloudcarFlapRightOuter ***
+ObjectTemplate.create RotationalBundle CloudcarFlapRightOuter
+ObjectTemplate.setNetworkableInfo Cloudcar_wing_info
+ObjectTemplate.geometry Cloudcar_Flap_Right_Outer
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/150/0
+ObjectTemplate.setAcceleration 0/150/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1

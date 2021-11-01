@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include SideSqueak_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include SideSqueak_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include SideSqueak_MedLow.ssc

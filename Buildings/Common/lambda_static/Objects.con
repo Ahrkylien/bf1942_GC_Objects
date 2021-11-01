@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject lambda_static
+ObjectTemplate.aiTemplate lambda_static
+ObjectTemplate.geometry lambda_static
+ObjectTemplate.setHasCollisionPhysics 1
+
+

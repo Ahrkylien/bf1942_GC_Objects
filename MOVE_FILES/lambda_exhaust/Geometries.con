@@ -1,0 +1,2 @@
+GeometryTemplate.create StandardMesh lambda_exhaust
+GeometryTemplate.file MOVE_FILES/lambda_exhaust

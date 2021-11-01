@@ -1,0 +1,25 @@
+ObjectTemplate.create Kit  Jap_Medic3
+ObjectTemplate.setType Medic
+ObjectTemplate.setKitTeam 1
+
+ObjectTemplate.geometry speedergun
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_assault_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_assault_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/icon_axisknife.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_speederpistol.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+
+ObjectTemplate.setKitIcon 3 "kits/Icon_assault_axis_selected.tga"
+ObjectTemplate.setKitName 3 "RESPAWN_MEDIC"
+ObjectTemplate.setKitActiveName 3 "RESPAWN_ACTIVE_MEDIC"
+
+ObjectTemplate.addTemplate SpeederPistol
+ObjectTemplate.addTemplate KnifeAxis
+ObjectTemplate.addTemplate NoChute
+
+ObjectTemplate.aiTemplate  Assault

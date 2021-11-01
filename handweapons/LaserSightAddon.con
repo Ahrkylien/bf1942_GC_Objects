@@ -1,0 +1,47 @@
+beginRem
+rem *** LaserSightAddon ***
+ObjectTemplate.create FireArms LaserSightAddon
+ObjectTemplate.magSize -1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 0.0001
+ObjectTemplate.roundOfFire 10
+ObjectTemplate.altFireOnce 0
+ObjectTemplate.projectileTemplate LaserSightProjectile
+rem ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.setFireDev 0 0 0
+ObjectTemplate.setDevMod 0 0 0
+ObjectTemplate.setTurnDev 0 0 0 0
+ObjectTemplate.setSpeedDev 0 0 0 0
+ObjectTemplate.setMiscDev 0 0 0
+ObjectTemplate.setMinDev 0
+ObjectTemplate.setIsFirstPersonPart 0
+
+rem *** LaserSightProjectile ***
+ObjectTemplate.create Projectile LaserSightProjectile
+ObjectTemplate.geometry LaserSight_m1
+rem ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.hasStartEffect 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 0
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.stopAtEndEffect 0
+ObjectTemplate.invisible 0
+rem ObjectTemplate.material -1
+rem ObjectTemplate.addTemplate LaserSight
+ObjectTemplate.setIsFirstPersonPart 0
+
+ObjectTemplate.create SimpleObject LaserSight
+ObjectTemplate.geometry LaserSight_m1
+
+GeometryTemplate.create StandardMesh LaserSight_m1
+GeometryTemplate.file MOVE_FILES/scopelight
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10000
+endRem

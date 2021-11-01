@@ -1,0 +1,4 @@
+GeometryTemplate.create TreeMesh gcforallrush1
+GeometryTemplate.file gcforallrush1
+GeometryTemplate.billboard 1
+GeometryTemplate.billboardDistance 50

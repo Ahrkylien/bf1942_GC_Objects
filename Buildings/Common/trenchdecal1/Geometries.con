@@ -1,0 +1,6 @@
+GeometryTemplate.create StandardMesh trenchdecal1
+GeometryTemplate.file buildings/trench_decal1
+GeometryTemplate.setLodDistance 0 0
+
+
+

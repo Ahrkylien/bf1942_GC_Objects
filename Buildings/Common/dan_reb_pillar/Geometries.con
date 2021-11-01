@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh dan_reb_pillar
+GeometryTemplate.file buildings/dantooine/dan_reb_pilar
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800

@@ -1,0 +1,11 @@
+NetworkableInfo.createNewInfo SkiffBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SkiffEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SkiffPassengerInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+

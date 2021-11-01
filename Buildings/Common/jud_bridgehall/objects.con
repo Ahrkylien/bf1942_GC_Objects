@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject jud_bridgehall
+ObjectTemplate.geometry jud_bridgehall
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate jud_bridgehall
+

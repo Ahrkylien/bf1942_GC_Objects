@@ -1,0 +1,168 @@
+
+
+rem *** ioncannonx ***
+ObjectTemplate.create PlayerControlObject ioncannonx
+ObjectTemplate.setNetworkableInfo IonCannonxInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 1500
+ObjectTemplate.maxhitpoints 1500
+ObjectTemplate.material 811
+ObjectTemplate.criticalDamage 7.5
+ObjectTemplate.hpLostWhileCriticalDamage 0.75
+ObjectTemplate.explosionRadius 30
+ObjectTemplate.explosionDamage 200
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/5/0
+ObjectTemplate.addArmorEffect 10 em_ExFumePOW 0/0/0
+ObjectTemplate.addArmorEffect 240 em_FletcherDamage -3/0/-2
+ObjectTemplate.addArmorEffect 240 em_FletcherDamage -2/0/-1
+ObjectTemplate.addArmorEffect 240 em_FletcherDamage -1/0/0
+ObjectTemplate.addArmorEffect 120 em_FletcherDamage 1/0/1
+ObjectTemplate.addArmorEffect 120 em_FletcherDamage 2/0/2
+ObjectTemplate.addArmorEffect 80 em_FletcherDamage 3/0/3
+ObjectTemplate.addArmorEffect 50 em_ExFumePOW 2/3/0
+ObjectTemplate.addArmorEffect 0 e_Wreck1Smoke 0/1/0
+ObjectTemplate.aiTemplate DefGunUnit
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.timetoliveafterdeath 999999
+ObjectTemplate.setSoldierExitLocation  -32.14/-19.15/-248.98 0/0/0
+rem ObjectTemplate.setSoldierExitLocation -22/-5/0 0/0/0
+rem ObjectTemplate.setSoldierExitLocation 0/0/0
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory Land
+ObjectTemplate.setVehicleType AAGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_alpha_16x16.tga"
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Ioncannonx.dds"
+ObjectTemplate.addArmorEffect 0 e_ExplGas -9/12/-1
+ObjectTemplate.addArmorEffect 0 e_ExplGas 9/5.83/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas -3/10/0
+ObjectTemplate.addArmorEffect 0 e_ExplCap 3/12/1
+ObjectTemplate.addArmorEffect 12 e_ExplGas 0/4.3/7.3
+ObjectTemplate.addArmorEffect 15 e_ExplGas 0/12/9
+ObjectTemplate.addArmorEffect 11 e_ExplGas 6.9/13/3
+ObjectTemplate.addArmorEffect 30 e_ExplGas -6.9/13/3
+ObjectTemplate.addArmorEffect 50 e_ExplGas 0/15/0
+ObjectTemplate.addArmorEffect 13 e_ExplGas 0/14/0
+ObjectTemplate.addArmorEffect 50 e_ExplGas 0/15/2
+ObjectTemplate.addArmorEffect 80 e_ExplGas 6.9/5/5
+ObjectTemplate.addArmorEffect 75 e_ExplGas -6/13/3
+ObjectTemplate.addArmorEffect 40 e_ExplGas 0/14/0
+ObjectTemplate.addArmorEffect 14 e_ExplGas 0/15/0
+ObjectTemplate.addArmorEffect 50 e_ExplGas 0/12/0
+ObjectTemplate.addArmorEffect 70 e_ExplGas 1/13/0
+ObjectTemplate.addArmorEffect 35 e_ExplGas -1/12/0
+ObjectTemplate.addArmorEffect 30 e_ExplGas 0/12/0
+ObjectTemplate.addTemplate lodioncannonx
+
+
+rem *** lodioncannonx ***
+ObjectTemplate.create LodObject lodioncannonx
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.lodSelector lodIonCannonxSelector
+ObjectTemplate.addTemplate ioncannonxcomplex
+ObjectTemplate.addTemplate ioncannonxwreck
+ObjectTemplate.setPosition 0.0/3.43473/0.0065211
+
+
+rem *** ioncannonxcomplex ***
+ObjectTemplate.create Bundle ioncannonxcomplex
+ObjectTemplate.geometry ioncannonxBody
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate IonCannonxSeat
+rem ObjectTemplate.setPosition -32.14/-19.15/-248.98
+ObjectTemplate.addTemplate ioncannonxentry
+ObjectTemplate.setPosition -32.14/-19.15/-248.98
+ObjectTemplate.addTemplate ioncannonxrotation
+ObjectTemplate.setPosition 0.0/14.7483/-6e-007
+ObjectTemplate.addTemplate ioncannonxDoor
+ObjectTemplate.setPosition -20.3153/-5.6898/3.01677
+ObjectTemplate.setRotation 99.4829/9.62875/0.164411
+
+
+rem *** ioncannonxentry ***
+ObjectTemplate.create EntryPoint ioncannonxentry
+ObjectTemplate.setEntryRadius 15
+
+
+rem *** IoncannonxSeat ***
+ObjectTemplate.create SeatObject IonCannonxSeat
+ObjectTemplate.seatFlags c_SeatIsOutside
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+
+
+
+rem *** ioncannonxrotation ***
+ObjectTemplate.create RotationalBundle ioncannonxrotation
+ObjectTemplate.setNetworkableInfo ioncannonxInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem ObjectTemplate.loadSoundScript Sounds/ioncannonxRotate.ssc
+ObjectTemplate.loadSoundScript Sounds/TurretRotate.ssc
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 60/60/0
+ObjectTemplate.setAcceleration 200/200/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.addTemplate ioncannonxcamera
+ObjectTemplate.setPosition 0.0/17.3/0.0
+ObjectTemplate.setRotation 180.0/-90.0/-180.0
+ObjectTemplate.addTemplate IonCannonxGun
+ObjectTemplate.setPosition 0.0/2.96/0.0
+ObjectTemplate.setRotation 180.0/-90.0/-180.0
+
+
+rem *** ioncannonxcamera ***
+ObjectTemplate.create Camera ioncannonxcamera
+ObjectTemplate.OutsideHudOffset 0/0/0.5
+ObjectTemplate.addTemplate lodioncannonxhud
+ObjectTemplate.setPosition 0/0/0.2
+
+rem *** lodioncannonxhud ***
+ObjectTemplate.create LodObject lodioncannonxhud
+ObjectTemplate.lodSelector ioncannonxhudSelector
+ObjectTemplate.addTemplate ioncannonxhudExternal
+ObjectTemplate.addTemplate ioncannonxhudInternal
+
+
+rem *** ioncannonxhudExternal ***
+ObjectTemplate.create SimpleObject ioncannonxhudExternal
+ObjectTemplate.geometry Model_Null
+
+
+rem *** ioncannonxhudExternal ***
+ObjectTemplate.create Bundle ioncannonxhudInternal
+ObjectTemplate.geometry 1P_ATSTGunnerHUD_M1
+
+
+rem *** ioncannonxDoor ***
+ObjectTemplate.create SimpleObject ioncannonxDoor
+ObjectTemplate.geometry ioncannonxDoor
+
+rem *** ioncannonxwreck ***
+ObjectTemplate.create SimpleObject ioncannonxwreck
+ObjectTemplate.geometry Wreck_ioncannonx
+ObjectTemplate.addTemplate e_ScrapMetalSmoke
+ObjectTemplate.addTemplate e_ScrapMetalSmoke
+ObjectTemplate.setPosition 3.0/-0.495522/11.64
+ObjectTemplate.addTemplate e_ScrapMetalSmoke
+ObjectTemplate.setPosition 3.0/-0.495522/11.64
+
+
+rem *** ioncannonxhudselector ***
+LodSelectorTemplate.create DistCompareSelector ioncannonxHUDSelector
+LodSelectorTemplate.addLodDistance 5
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** lodioncannonxselector ***
+LodSelectorTemplate.create DistCompareSelector2 lodioncannonxselector
+LodSelectorTemplate.hasDestroyedLod 1

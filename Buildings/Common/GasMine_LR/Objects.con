@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject GasMine_LR
+ObjectTemplate.geometry GasMine_LR
+ObjectTemplate.setHasCollisionPhysics 1

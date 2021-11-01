@@ -1,0 +1,92 @@
+ObjectTemplate.create BFSoldier GermanDesertSoldier
+ObjectTemplate.createSkeleton animations/UsSoldier.ske
+
+include ../Common/CommonSoldierData.inc
+rem Sound.addRunTimeDirectory Language German
+game.addLanguageRunTimeDirectory German
+include ../Common/Sounds/SoldierSound.inc
+
+ObjectTemplate.setSoldierStandingIcon "Soldier/Icon_ger_soldier_standing.tga"
+ObjectTemplate.setSoldierCrouchIcon "Soldier/Icon_ger_soldier_crouching.tga"
+ObjectTemplate.setSoldierProneIcon "Soldier/Icon_ger_soldier_lying.tga"
+
+ObjectTemplate.setMinimapIcon "flag_ger.tga"
+ObjectTemplate.setControlPointIcon "conp_ger.tga"
+ObjectTemplate.setTicketIcon "flag_ticket_ger.tga"
+ObjectTemplate.setTeamFlagIcon "Icon_flag_ger.tga"
+ObjectTemplate.setRadioLanguage "German"
+
+ObjectTemplate.addTemplate GerSoldierComplexHead
+ObjectTemplate.setRandomGeometries 3
+ObjectTemplate.setIsFirstPersonPart 0
+ObjectTemplate.setLodValue 0.01
+ObjectTemplate.bindToSkeletonPart Bip01_Spine3 3
+
+ObjectTemplate.addTemplate GerSoldierHead
+ObjectTemplate.setIsFirstPersonPart 0
+ObjectTemplate.setLodValue -0.01
+
+ObjectTemplate.addTemplate DesGerSoldier3PBody
+ObjectTemplate.setIsFirstPersonPart 0
+
+ObjectTemplate.addTemplate DesGerSoldier1PBody
+ObjectTemplate.setIsFirstPersonPart 1
+
+ObjectTemplate.addTemplate GerSoldierRightHand
+ObjectTemplate.setIsFirstPersonPart 0
+ObjectTemplate.setLodValue 0.03
+
+ObjectTemplate.addTemplate GerSoldierLeftHand
+ObjectTemplate.setIsFirstPersonPart 0
+ObjectTemplate.setLodValue 0.03
+
+ObjectTemplate.addTemplate 1PGerSoldierRightHand
+ObjectTemplate.setIsFirstPersonPart 1
+ObjectTemplate.setLodValue 0.03
+
+ObjectTemplate.addTemplate 1PGerSoldierLeftHand
+ObjectTemplate.setIsFirstPersonPart 1
+ObjectTemplate.setLodValue 0.03
+
+ObjectTemplate.create SimpleObject DesGerSoldier1PBody
+ObjectTemplate.geometry Soldier/1PDesGerBody
+
+ObjectTemplate.create SimpleObject DesGerSoldier3PBody
+ObjectTemplate.geometry Soldier/3PDesGerBody
+ObjectTemplate.hasDynamicShadow 1
+
+ObjectTemplate.create AnimatedBundle GerSoldierComplexHead1
+rem *** SHOULD BE UsFace.Ske on every nationality.
+ObjectTemplate.createSkeleton animations/UsFace.ske
+ObjectTemplate.geometry Soldier/GerComplexHead1
+ObjectTemplate.hasDynamicShadow 1
+
+ObjectTemplate.create AnimatedBundle GerSoldierComplexHead2
+rem *** SHOULD BE UsFace.Ske on every nationality.
+ObjectTemplate.createSkeleton animations/UsFace.ske
+ObjectTemplate.geometry Soldier/GerComplexHead2
+ObjectTemplate.hasDynamicShadow 1
+
+ObjectTemplate.create AnimatedBundle GerSoldierComplexHead3
+rem *** SHOULD BE UsFace.Ske on every nationality.
+ObjectTemplate.createSkeleton animations/UsFace.ske
+ObjectTemplate.geometry Soldier/GerComplexHead3
+ObjectTemplate.hasDynamicShadow 1
+
+ObjectTemplate.create SimpleObject GerSoldierHead
+ObjectTemplate.geometry Soldier/GerHead
+ObjectTemplate.hasDynamicShadow 1
+
+ObjectTemplate.create SimpleObject GerSoldierLeftHand
+ObjectTemplate.geometry Soldier/GerLeftHand
+
+ObjectTemplate.create SimpleObject GerSoldierRightHand
+ObjectTemplate.geometry Soldier/GerRightHand
+
+ObjectTemplate.create SimpleObject 1PGerSoldierLeftHand
+ObjectTemplate.geometry Soldier/1PGerLeftHand
+
+ObjectTemplate.create SimpleObject 1PGerSoldierRightHand
+ObjectTemplate.geometry Soldier/1PGerRightHand
+
+	

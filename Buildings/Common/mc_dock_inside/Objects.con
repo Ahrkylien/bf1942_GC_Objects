@@ -1,0 +1,12 @@
+ObjectTemplate.create Bundle mc_dock_inside
+ObjectTemplate.geometry mc_dock_inside
+objectTemplate.aiTemplate mc_dock_inside
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.addTemplate echo_pan1
+ObjectTemplate.setPosition 17.7942/3.85631/11.4512
+ObjectTemplate.setRotation -109.049/34.5915/0.593803
+
+ObjectTemplate.addTemplate echo_pan3
+ObjectTemplate.setPosition -4.965/3.85631/-17.2318
+ObjectTemplate.setRotation 105.22/0.0/38.706

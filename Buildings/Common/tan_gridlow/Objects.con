@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle tan_gridlow
+ObjectTemplate.geometry tan_gridlow
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate tan_gridlow
+rem ---------------------------

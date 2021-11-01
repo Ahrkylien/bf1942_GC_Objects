@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject ambient-comms1
+ObjectTemplate.setHasCollisionPhysics 0
+objectTemplate.loadSoundScript Sounds/ambient-comms1.ssc
+
+

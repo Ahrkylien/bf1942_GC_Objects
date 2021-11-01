@@ -1,0 +1,82 @@
+newPatch
+load @ROOT/Sound/@RTD/sarlacc-damage-1.wav
+randomStartPitch 0.03 / 0.0
+minDistance 5
+volume 0.9
+priority -5
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 10
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/sarlacc-damage-2.wav
+randomStartPitch 0.03 / 0.0
+minDistance 5
+volume 0.9
+priority -5
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 10
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/sarlacc-damage-3.wav
+randomStartPitch 0.03 / 0.0
+minDistance 5
+volume 0.9
+priority -5
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 10
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/sarlacc-damage-4.wav
+randomStartPitch 0.03 / 0.0
+minDistance 5
+volume 0.9
+priority -5
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 10
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/sarlacc-damage-5.wav
+randomStartPitch 0.03 / 0.0
+minDistance 5
+volume 0.9
+priority -5
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 10
+	param 1
+	param -1	
+endEffect
+
+randomPlay 1

@@ -1,0 +1,6 @@
+ObjectTemplate.create Bundle tat_medium
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry tat_medium
+objectTemplate.aiTemplate tat_medium
+ObjectTemplate.cullRadiusScale 3
+rem ---------------------------

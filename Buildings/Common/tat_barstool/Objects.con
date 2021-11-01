@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle tat_barstool
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry tat_barstool
+objectTemplate.aiTemplate tat_barstool
+rem ---------------------------

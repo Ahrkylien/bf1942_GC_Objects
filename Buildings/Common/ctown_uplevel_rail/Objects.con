@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject ctown_uplevel_rail
+ObjectTemplate.geometry ctown_uplevel_rail
+ObjectTemplate.setHasCollisionPhysics 1

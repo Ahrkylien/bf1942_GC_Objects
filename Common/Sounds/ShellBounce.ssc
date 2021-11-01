@@ -1,0 +1,13 @@
+#templateLevel HIGH
+
+load @ROOT/Sound/@RTD/silence.wav
+
+#templateLevel MEDIUM
+
+load @ROOT/Sound/@RTD/silence.wav
+
+#templateLevel LOW
+
+load @ROOT/Sound/@RTD/silence.wav
+
+

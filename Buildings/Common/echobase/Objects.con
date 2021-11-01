@@ -1,0 +1,60 @@
+ObjectTemplate.create Bundle echobase
+ObjectTemplate.aiTemplate echobase
+ObjectTemplate.geometry echobase_lower_room
+ObjectTemplate.setHasCollisionPhysics 1
+
+rem-------------------------------------------------
+ObjectTemplate.addTemplate echobase_ext
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate echobase_hangar
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+
+rem ObjectTemplate.addTemplate echobase_lower_room
+rem ObjectTemplate.setPosition 0/0/0
+rem ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate echobase_upper_room
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate echobase_walkways
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate echobase_spiral
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+rem-------------------------------------------------
+
+ObjectTemplate.create SimpleObject echobase_ext
+ObjectTemplate.aiTemplate echobase
+ObjectTemplate.geometry echobase_ext
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject echobase_hangar
+ObjectTemplate.aiTemplate echobase
+ObjectTemplate.geometry echobase_hangar
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject echobase_lower_room
+ObjectTemplate.aiTemplate echobase
+ObjectTemplate.geometry echobase_lower_room
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject echobase_upper_room
+ObjectTemplate.aiTemplate echobase
+ObjectTemplate.geometry echobase_upper_room
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject echobase_spiral
+ObjectTemplate.aiTemplate echobase
+ObjectTemplate.geometry echobase_spiral
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject echobase_walkways
+ObjectTemplate.aiTemplate echobase
+ObjectTemplate.geometry echobase_walkways
+ObjectTemplate.setHasCollisionPhysics 1

@@ -1,0 +1,7 @@
+ObjectTemplate.create SimpleObject Grass2
+ObjectTemplate.aiTemplate Grass2
+ObjectTemplate.geometry Grass2
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setPosition 0/-1/0
+
+

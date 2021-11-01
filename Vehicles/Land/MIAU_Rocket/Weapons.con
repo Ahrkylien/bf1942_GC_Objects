@@ -1,0 +1,34 @@
+ObjectTemplate.create Projectile MIAU_Rocket
+ObjectTemplate.geometry ProtonTorpedo_m1
+ObjectTemplate.timeToLive CRD_NONE/20/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.drag 1.0
+ObjectTemplate.mass 20
+
+ObjectTemplate.startEffectTemplate e_glowTieBomb
+
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 0
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 0
+ObjectTemplate.invisible 0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 711
+ObjectTemplate.material2 712
+ObjectTemplate.radius 40
+ObjectTemplate.ForceOnExplosion 80
+ObjectTemplate.startEffectTemplate e_engineImpartProjectile
+ObjectTemplate.loadSoundScript ../../Common/Sounds/BigProjectile.ssc
+
+ObjectTemplate.addTemplate MIAU_Rocket_WingA
+ObjectTemplate.setPosition 0/0/-1.5
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate MIAU_Rocket_EngineA
+ObjectTemplate.setPosition 0/0/-2
+ObjectTemplate.setRotation 0/0/0
+
+
+

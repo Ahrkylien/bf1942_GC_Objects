@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle jud_fakedoor04
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry jud_fakedoor04
+objectTemplate.aiTemplate jud_fakedoor04
+rem ---------------------------

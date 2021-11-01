@@ -1,0 +1,13 @@
+GeometryTemplate.create StandardMesh Sentry_Bob_M1
+GeometryTemplate.file Vehicles/sentry/sentry
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 200
+
+
+GeometryTemplate.create StandardMesh Sentry_Bobwreck_m1
+GeometryTemplate.file scrap_metal3_m1

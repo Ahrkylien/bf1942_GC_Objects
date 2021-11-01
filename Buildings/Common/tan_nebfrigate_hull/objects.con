@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject tan_nebfrigate_hull
+ObjectTemplate.geometry tan_nebfrigate_hull
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate tan_nebfrigate_hull
+

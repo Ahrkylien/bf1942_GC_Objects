@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle tat_launchbay_inside01
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry tat_launchbay_inside01
+objectTemplate.aiTemplate tat_launchbay_inside01
+rem ---------------------------

@@ -1,0 +1,11 @@
+NetworkableInfo.createNewInfo TurboLaserBatteryTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo TurboLaserBatteryGunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo TurboLaserBatteryCameraInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo TurboLaserBatteryBodyInfo
+NetworkableInfo.setPredictionMode PMLinear

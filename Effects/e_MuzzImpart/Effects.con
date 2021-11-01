@@ -1,0 +1,63 @@
+rem *** e_MuzzImpart ***
+ObjectTemplate.create EffectBundle e_MuzzImpart
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_MuzzImpart_Flare
+
+ObjectTemplate.addTemplate Em_MuzzImpart_Glint
+ObjectTemplate.setPosition 0.02/-0.024/5
+ObjectTemplate.setRotation -180/0/0
+ObjectTemplate.addTemplate Em_MuzzPanz_Shock1
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+
+rem *** Em_MuzzImpart_Flare ***
+ObjectTemplate.create Emitter Em_MuzzImpart_Flare
+ObjectTemplate.template Fx_MuzzImpart_Flare
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.2/0/0
+ObjectTemplate.intensity CRD_NONE/100/0/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/-4/-2/0
+ObjectTemplate.positionalSpeedInDof CRD_NONE/-15/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+rem *** Fx_MuzzImpart_Flare ***
+ObjectTemplate.create SpriteParticle Fx_MuzzImpart_Flare
+ObjectTemplate.timeToLive CRD_NONE/0.3/0.3/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.drag CRD_NONE/5/0/0
+ObjectTemplate.sizeOverTime 0/3|21/0.760048|100/0.420148
+ObjectTemplate.texture e_muz1_I
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeed CRD_UNIFORM/1/180/1
+ObjectTemplate.XYSizeRatioOverTime 0/1|100/1
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/51|18/255/255/128/114|36/255/187/60/177|52/255/128/0/51|100/0/0/0/0
+
+rem *** Em_MuzzImpart_Glint ***
+ObjectTemplate.create Emitter Em_MuzzImpart_Glint
+ObjectTemplate.template Fx_MuzzImpart_Glint
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/20/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/-1/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+rem *** Fx_MuzzImpart_Glint ***
+ObjectTemplate.create SpriteParticle Fx_MuzzImpart_Glint
+ObjectTemplate.timeToLive CRD_NONE/0.2/0.2/0
+ObjectTemplate.size CRD_NONE/2/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.drag CRD_NONE/5/0/0
+ObjectTemplate.sizeOverTime 0/1|13/0.840007|100/0
+ObjectTemplate.gravityModifierOverTime 0/6.1e-005|100/6.1e-005
+ObjectTemplate.texture e_muz2_I
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeed CRD_UNIFORM/1/180/1
+ObjectTemplate.rotationSpeedOverTime 0/5.87979|64/5.03995|100/6
+ObjectTemplate.colorRGBAOverTime 0/254/253/226/102|30/177/177/158/65|60/101/101/90/130|100/0/0/0/0

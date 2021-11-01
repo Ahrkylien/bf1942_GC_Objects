@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh Wreck_Lambda2_m1
+GeometryTemplate.file Vehicles/Lambda/Wreck_Lambda_Top
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 400
+GeometryTemplate.setLodDistance 4 600
+GeometryTemplate.setLodDistance 5 800

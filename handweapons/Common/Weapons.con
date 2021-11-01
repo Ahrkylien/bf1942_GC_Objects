@@ -1,0 +1,200 @@
+rem ********************************************************
+rem ************** GCMOD WEAPON PROJECTILES ****************
+rem ********************************************************
+
+ObjectTemplate.create Projectile kylanProjectile
+ObjectTemplate.geometry Tlight_r1_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 501
+
+ObjectTemplate.create Projectile razorProjectile
+ObjectTemplate.geometry Tlight_r1_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 502
+
+ObjectTemplate.create Projectile Dl44Projectile
+ObjectTemplate.geometry Tlight_r1_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 503
+
+ObjectTemplate.create Projectile speederpistolProjectile
+ObjectTemplate.geometry Tlight_r1_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 504
+
+ObjectTemplate.create Projectile Dh17Projectile
+ObjectTemplate.geometry Tlight_r1_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 505
+
+ObjectTemplate.create Projectile E-11Projectile
+ObjectTemplate.geometry Tlight_r1_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 512
+
+ObjectTemplate.create Projectile A295Projectile
+ObjectTemplate.geometry Tlight_r1_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 512
+
+ObjectTemplate.create Projectile tracker16Projectile
+ObjectTemplate.geometry Tlight_r1_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 522
+
+ObjectTemplate.create Projectile TL-21Projectile
+ObjectTemplate.geometry Tlight_r1_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 522
+
+ObjectTemplate.create Projectile EWEBProjectile
+ObjectTemplate.geometry Tlight_r2_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 523
+ObjectTemplate.material2 524
+ObjectTemplate.damageType 1
+ObjectTemplate.radius 3
+ObjectTemplate.ForceOnExplosion 2
+ObjectTemplate.explodeNearEnemyDistance 3
+ObjectTemplate.ProximityFusePrimer 0.01
+
+ObjectTemplate.create Projectile dressilianrifleProjectile
+ObjectTemplate.geometry bullet_m1
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 1
+ObjectTemplate.material 531
+ObjectTemplate.loadSoundScript ..\..\common\Sounds\projectile.ssc
+
+ObjectTemplate.create Projectile e-11sniperProjectile
+ObjectTemplate.geometry Tlight_r1_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 531
+
+rem *** Invisible knife projectile.
+ObjectTemplate.create Projectile KnifeProjectile
+ObjectTemplate.geometry bullet_m1
+ObjectTemplate.timeToLive CRD_NONE/0.0665/0/0
+rem ObjectTemplate.endEffectTemplate e_RichoSand
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.hasStartEffect 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 1
+ObjectTemplate.material 210
+rem ObjectTemplate.loadSoundScript ..\..\common\Sounds\projectile.ssc
+
+
+
+
+
+

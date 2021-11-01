@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh ds_hanger
+GeometryTemplate.file buildings/deathstar/ds_hanger
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 800
+GeometryTemplate.setLodDistance 4 1200
+GeometryTemplate.setLodDistance 5 1500

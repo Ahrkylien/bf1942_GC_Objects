@@ -1,0 +1,23 @@
+NetworkableInfo.createNewInfo Sentry_BobEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Sentry_BobHoverEngine1Info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Sentry_BobHoverEngine2Info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Sentry_BobHoverEngine3Info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Sentry_BobEngineRack1Info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Sentry_BobEngineRack2Info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Sentry_BobEngineRack3Info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Sentry_BobBodyInfo
+NetworkableInfo.setPredictionMode PMLinear

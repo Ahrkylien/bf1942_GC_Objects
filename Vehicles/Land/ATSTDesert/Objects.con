@@ -1,0 +1,455 @@
+rem *** ATSTDesert ***
+ObjectTemplate.create PlayerControlObject ATSTDesert
+ObjectTemplate.NameTagOffset -0.3/-0.2/0
+ObjectTemplate.setNetworkableInfo ATSTDesertBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.drag 5
+ObjectTemplate.mass 10000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.exitTimer 0.75
+ObjectTemplate.hitpoints 250
+ObjectTemplate.maxhitpoints 250
+ObjectTemplate.material 811
+ObjectTemplate.criticalDamage 12
+ObjectTemplate.hpLostWhileCriticalDamage 1.2
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.hpLostWhileUpSideDown 12
+ObjectTemplate.hpLostWhileDamageFromWater 12
+ObjectTemplate.addArmorEffect 24 e_WillyDamage 0/8.059/1.14512
+ObjectTemplate.addArmorEffect 12 e_WillyFire 0/8.059/1.14512
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_atst 0/8.059/1.14512
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/8.059/1.14512
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.aiTemplate Willy
+rem -------------------------------------
+ObjectTemplate.addTemplate lodATSTDesert
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.5/0/-0.8 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_atst.dds"
+ObjectTemplate.setVehicleIconPos 55/18
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bomb.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_at-st_16x16.dds"
+
+rem *** lodATSTDesert ***
+ObjectTemplate.create LodObject lodATSTDesert
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTDesertComplex
+ObjectTemplate.addTemplate ATSTDesertSimple
+ObjectTemplate.addTemplate ATSTWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector ATSTLodSelector
+
+rem *** ATSTDesertComplex ***
+ObjectTemplate.create Bundle ATSTDesertComplex
+ObjectTemplate.geometry ATSTDesertHips
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTDesertCockpit
+ObjectTemplate.setPosition 0/8.9059/1.14512
+ObjectTemplate.addTemplate ATSTEntry
+ObjectTemplate.setPosition -2/0/1
+ObjectTemplate.addTemplate ATSTEntry
+ObjectTemplate.setPosition -2/0/-1
+ObjectTemplate.addTemplate ATSTDesertDummyEngine
+ObjectTemplate.setPosition 0/0.5/-0.25
+ObjectTemplate.addTemplate ATSTDesertLLegRot1
+ObjectTemplate.setPosition -1.4272/6.9694/1.0835
+ObjectTemplate.setRotation 0/30.5/0
+ObjectTemplate.addTemplate ATSTDesertRLegRot1
+ObjectTemplate.setPosition 1.4272/6.9694/1.0835
+ObjectTemplate.setRotation 0/30.5/0
+rem -------------------------------------
+
+rem *** ATSTDesertCockpit ***
+ObjectTemplate.create RotationalBundle ATSTDesertCockpit
+ObjectTemplate.setNetworkableInfo ATSTDesertTurretInfo
+ObjectTemplate.loadSoundScript Sounds/ATSTHeadRotate.ssc
+ObjectTemplate.geometry ATSTDesertHead
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTCamera
+ObjectTemplate.setPosition -0.4/1.15/1.67
+ObjectTemplate.addTemplate ATSTSeat
+ObjectTemplate.setPosition -0.4/0.7/1
+ObjectTemplate.addTemplate ATSTGrenadeLauncher
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate ATSTDesertMainLaserBundle
+ObjectTemplate.setPosition 0/-0.633/1.3641
+ObjectTemplate.addTemplate ATSTDesertLaserBarrel
+ObjectTemplate.setPosition -1.5238/0.3561/0.3561
+ObjectTemplate.addTemplate ATSTDesertCoPilot
+ObjectTemplate.setPosition 1.59422/0.33462/0.66838
+ObjectTemplate.addTemplate ATSTHatchPCO
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -45/-20/0
+ObjectTemplate.setMaxRotation 45/40/0
+ObjectTemplate.setMaxSpeed 45/45/0
+ObjectTemplate.setAcceleration 1000/1000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *********** ATSTDesertMainLaserBundle ************
+ObjectTemplate.create Bundle ATSTDesertMainLaserBundle
+ObjectTemplate.geometry ATSTDesertMGun
+ObjectTemplate.hasCollisionPhysics 1
+rem --------------------------------
+ObjectTemplate.addTemplate ATSTMainLaser
+rem --------------------------------
+
+rem ********* ATSTDesertLaserBarrel
+ObjectTemplate.create SimpleObject ATSTDesertLaserBarrel
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.geometry ATSTDesertLGun
+
+rem ------------------------------- CoPilot -------------------------------
+
+rem *********** ATSTDesert CoPilot **********
+ObjectTemplate.create PlayerControlObject ATSTDesertCoPilot
+ObjectTemplate.setNetworkableInfo ATSTDesertBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTCoPilotSeat
+ObjectTemplate.setPosition -1.15/0.55/0.25
+ObjectTemplate.addTemplate ATSTDesertSideLaserBundle
+ObjectTemplate.setRotation -10/0/0
+ObjectTemplate.addTemplate ATSTCoPilotEntry
+ObjectTemplate.setPosition 1/-9/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 2/-8/1 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_atst.dds"
+ObjectTemplate.setVehicleIconPos 44/18
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_at-st_16x16.dds"
+
+rem *** ATSTDesertSideLaserBundle ***
+ObjectTemplate.create RotationalBundle ATSTDesertSideLaserBundle
+ObjectTemplate.setNetworkableInfo ATSTDesertBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTDesertSideLaserYRotation
+rem -------------------------------------
+ObjectTemplate.setMinRotation -15/0/0
+ObjectTemplate.setMaxRotation 55/0/0
+ObjectTemplate.setMaxSpeed 90/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** ATSTDesertSideLaserYRotation ***
+ObjectTemplate.create RotationalBundle ATSTDesertSideLaserYRotation
+ObjectTemplate.setNetworkableInfo ATSTDesertBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTCoPilotCamera
+ObjectTemplate.setPosition 0.3/0.45/-0.75
+ObjectTemplate.addTemplate ATSTDesertSideLaser
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-50/0
+ObjectTemplate.setMaxRotation 0/50/0
+ObjectTemplate.setMaxSpeed 0/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** ATSTDesertSimple ***
+ObjectTemplate.create SimpleObject ATSTDesertSimple
+ObjectTemplate.geometry ATSTDesert_Hull_L1
+
+rem ---------------------------------- Legs ----------------------------------
+
+rem *** ATSTDesert Right Leg Rot 1 ***
+ObjectTemplate.create RotationalBundle ATSTDesertRLegRot1
+ObjectTemplate.setNetworkableInfo ATSTDesertBodyInfo
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTDesertRLegRot1_2
+ObjectTemplate.setPosition 0/-5.692/-0.492
+ObjectTemplate.setRotation 0/5.0/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 360/0/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** ATSTDesert Right Leg Rot 1_2 ***
+ObjectTemplate.create RotationalBundle ATSTDesertRLegRot1_2
+ObjectTemplate.setNetworkableInfo ATSTDesertBodyInfo
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTDesertRLeg1
+ObjectTemplate.setPosition 0/5.714/-0.006
+ObjectTemplate.setRotation 0/-20.5/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 360/0/0
+ObjectTemplate.setAcceleration -500/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** ATSTDesert Right Leg Rot 3 ***
+ObjectTemplate.create RotationalBundle ATSTDesertRLegRot3
+ObjectTemplate.setNetworkableInfo ATSTDesertBodyInfo
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTDesertRLegRot3_2
+ObjectTemplate.setPosition 0/-1.751/-0.3
+ObjectTemplate.setRotation 0/10.0/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 360/0/0
+ObjectTemplate.setAcceleration -500/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** ATSTDesert Right Leg Rot 3_2 ***
+ObjectTemplate.create RotationalBundle ATSTDesertRLegRot3_2
+ObjectTemplate.setNetworkableInfo ATSTDesertBodyInfo
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTDesertRLeg3
+ObjectTemplate.setPosition 0/1.777/-0.009
+ObjectTemplate.setRotation 0/32.0/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 360/0/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** ATSTDesert Left Leg Rot 1 ***
+ObjectTemplate.create RotationalBundle ATSTDesertLLegRot1
+ObjectTemplate.setNetworkableInfo ATSTDesertBodyInfo
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTDesertLLegRot1_2
+ObjectTemplate.setPosition 0/-5.691/0.504
+ObjectTemplate.setRotation 0/-5.0/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 360/0/0
+ObjectTemplate.setAcceleration -500/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** ATSTDesert Left Leg Rot 1_2 ***
+ObjectTemplate.create RotationalBundle ATSTDesertLLegRot1_2
+ObjectTemplate.setNetworkableInfo ATSTDesertBodyInfo
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTDesertLLeg1
+ObjectTemplate.setPosition 0/5.714/-0.006
+ObjectTemplate.setRotation 0/-20.5/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 360/0/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** ATSTDesert Left Leg Rot 3 ***
+ObjectTemplate.create RotationalBundle ATSTDesertLLegRot3
+ObjectTemplate.setNetworkableInfo ATSTDesertBodyInfo
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTDesertLLegRot3_2
+ObjectTemplate.setPosition 0/-1.748/0.317
+ObjectTemplate.setRotation 0/-10.0/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 360/0/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** ATSTDesert Left Leg Rot 3_2 ***
+ObjectTemplate.create RotationalBundle ATSTDesertLLegRot3_2
+ObjectTemplate.setNetworkableInfo ATSTDesertBodyInfo
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTDesertLLeg3
+ObjectTemplate.setPosition 0/1.777/-0.009
+ObjectTemplate.setRotation 0/32.0/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 360/0/0
+ObjectTemplate.setAcceleration -500/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** ATSTDesert Right Leg 1 ***
+ObjectTemplate.create RotationalBundle ATSTDesertRLeg1
+ObjectTemplate.geometry ATSTDesertRLeg1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTDesertRLeg2
+ObjectTemplate.setPosition -0.1658/-0.9188/-2.353525
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/1000/0
+rem ObjectTemplate.setInputToPitch c_PIThrottle
+
+rem *** ATSTDesert Left Leg 1 ***
+ObjectTemplate.create RotationalBundle ATSTDesertLLeg1
+ObjectTemplate.geometry ATSTDesertLLeg1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTDesertLLeg2
+ObjectTemplate.setPosition 0.1658/-0.9188/-2.353525
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/-1000/0
+rem ObjectTemplate.setInputToPitch c_PIThrottle
+
+rem *** ATSTDesert Right Leg 2 ***
+ObjectTemplate.create RotationalBundle ATSTDesertRLeg2
+ObjectTemplate.geometry ATSTDesertRLeg2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+rem ObjectTemplate.addTemplate ATSTDesertRLeg3
+rem ObjectTemplate.setPosition 0.10775/-4.435375/0.358375
+ObjectTemplate.addTemplate ATSTDesertRLegRot3
+ObjectTemplate.setPosition 0.10775/-4.435375/0.358375
+ObjectTemplate.setRotation 0/-42.0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/40/0
+ObjectTemplate.setAcceleration 0/-1000/0
+rem ObjectTemplate.setInputToPitch c_PIThrottle
+
+rem *** ATSTDesert Left Leg 2 ***
+ObjectTemplate.create RotationalBundle ATSTDesertLLeg2
+ObjectTemplate.geometry ATSTDesertLLeg2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+rem ObjectTemplate.addTemplate ATSTDesertLLeg3
+rem ObjectTemplate.setPosition -0.10775/-4.435375/0.358375
+ObjectTemplate.addTemplate ATSTDesertLLegRot3
+ObjectTemplate.setPosition -0.10775/-4.435375/0.358375
+ObjectTemplate.setRotation 0/-42.0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/40/0
+ObjectTemplate.setAcceleration 0/1000/0
+rem ObjectTemplate.setInputToPitch c_PIThrottle
+
+rem *** ATSTDesert Right Leg 3 ***
+ObjectTemplate.create RotationalBundle ATSTDesertRLeg3
+ObjectTemplate.geometry ATSTDesertLLeg3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTDesertRFoot
+ObjectTemplate.setPosition -0.008875/-1.501625/0.949
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-40/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/190/0
+ObjectTemplate.setAcceleration 0/100000/0
+rem ObjectTemplate.setInputToPitch c_PIThrottle
+
+rem *** ATSTDesert Left Leg 3 ***
+ObjectTemplate.create RotationalBundle ATSTDesertLLeg3
+ObjectTemplate.geometry ATSTDesertLLeg3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTDesertLFoot
+ObjectTemplate.setPosition 0.008875/-1.501625/0.949
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-40/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/190/0
+ObjectTemplate.setAcceleration 0/-100000/0
+rem ObjectTemplate.setInputToPitch c_PIThrottle
+
+rem *** ATSTDesert Right Foot ***
+ObjectTemplate.create RotationalBundle ATSTDesertRFoot
+ObjectTemplate.geometry ATSTDesertRFoot
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+rem ObjectTemplate.addTemplate ATSTDesertFootSpringR
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/40/0
+ObjectTemplate.setMaxSpeed 0/190/0
+ObjectTemplate.setAcceleration 0/-100000/0
+rem ObjectTemplate.setInputToPitch c_PIThrottle
+
+rem *** ATSTDesert Left Foot ***
+ObjectTemplate.create RotationalBundle ATSTDesertLFoot
+ObjectTemplate.geometry ATSTDesertLFoot
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+rem ObjectTemplate.addTemplate ATSTDesertFootSpringL
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/40/0
+ObjectTemplate.setMaxSpeed 0/190/0
+ObjectTemplate.setAcceleration 0/100000/0
+rem ObjectTemplate.setInputToPitch c_PIThrottle
+
+rem *** ATSTDesertDummyFrontWheelR ***
+ObjectTemplate.create RotationalBundle ATSTDesertDummyFrontWheelR
+ObjectTemplate.setNetworkableInfo ATSTDesertSteeringInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTDesertDummyFrontSpringR
+ObjectTemplate.setPosition 0/-0.599/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -40/0/0
+ObjectTemplate.setMaxRotation 40/0/0
+ObjectTemplate.setMaxSpeed 200/0/0
+ObjectTemplate.setAcceleration 200/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+rem *** ATSTDesertDummyFrontWheelL ***
+ObjectTemplate.create RotationalBundle ATSTDesertDummyFrontWheelL
+ObjectTemplate.setNetworkableInfo ATSTDesertSteeringInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTDesertDummyFrontSpringL
+ObjectTemplate.setPosition 0/-0.599/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -40/0/0
+ObjectTemplate.setMaxRotation 40/0/0
+ObjectTemplate.setMaxSpeed 200/0/0
+ObjectTemplate.setAcceleration 200/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+

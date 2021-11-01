@@ -1,0 +1,156 @@
+rem *** yt1300 (MilleniumFalcon) ***
+ObjectTemplate.create PlayerControlObject yt1300
+ObjectTemplate.setNetworkableInfo Millenium_Body_Info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 0.135
+ObjectTemplate.mass 13000
+ObjectTemplate.inertiaModifier 0.5/0.65/0.5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.hitpoints 400
+ObjectTemplate.maxhitpoints 400
+ObjectTemplate.material 811
+ObjectTemplate.criticalDamage 21
+ObjectTemplate.hpLostWhileCriticalDamage 2.1
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.hpLostWhileUpSideDown 21
+ObjectTemplate.hpLostWhileDamageFromWater 21
+ObjectTemplate.addArmorEffect 42 em_MilleniumFalconDamage 3.2/2.9/-13
+ObjectTemplate.addArmorEffect 42 em_PlaneDamage 3.2/2.9/-13
+ObjectTemplate.addArmorEffect 42 em_MilleniumFalconDamage 7/2.9/-11
+ObjectTemplate.addArmorEffect 42 em_PlaneDamage 7/2.9/-11
+ObjectTemplate.addArmorEffect 42 em_MilleniumFalconDamage -3.2/2.9/-13
+ObjectTemplate.addArmorEffect 42 em_PlaneDamage -3.2/2.9/-13
+ObjectTemplate.addArmorEffect 42 em_MilleniumFalconDamage -7/2.9/-11
+ObjectTemplate.addArmorEffect 42 em_PlaneDamage -7/2.9/-11
+ObjectTemplate.addArmorEffect 21 e_MilleniumFalconFire 0/0/-13.8
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_MilFalcon 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate B17
+rem -------------------------------------
+ObjectTemplate.addTemplate lodyt1300
+rem -------------------------------------
+rem *************** FALCON SOLDIER SPAWN
+ObjectTemplate.addTemplate yt1300_sold_spawn
+rem ObjectTemplate.setPosition -0.5/2.823/-0.5
+rem *************** FALCON SOLDIER SPAWN
+rem ******Active MF Radar - Distance in air/common/objects.con*******
+ObjectTemplate.sonarPos 1
+ObjectTemplate.setSoldierExitLocation 12/2.7/7.8 -135/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_falcon.dds"
+ObjectTemplate.setVehicleIconPos 27/55
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTFighter
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_missile_concussion.dds"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setMinimapIcon "minimap/minimap_icon_falcon_16x16.dds"
+
+rem *** lodMilleniumFalcon ***
+ObjectTemplate.create LodObject lodyt1300
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate yt1300Complex
+ObjectTemplate.addTemplate MilleniumFalconSimple
+ObjectTemplate.addTemplate yt1300Wreck
+rem -------------------------------------
+ObjectTemplate.lodSelector yt1300LodSelector
+
+rem *** yt1300Complex ***
+ObjectTemplate.create Bundle yt1300Complex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodyt1300Cockpit
+ObjectTemplate.addTemplate MFSonar
+ObjectTemplate.addTemplate MFCamera
+ObjectTemplate.setPosition 11.83/3.5/9.3
+ObjectTemplate.addTemplate MilleniumFalconEntry
+ObjectTemplate.setPosition 11/1.078/8.7
+ObjectTemplate.addTemplate MF_Concussion_Missile
+ObjectTemplate.setPosition 12/2.2/9.5
+ObjectTemplate.addTemplate MilleniumFalconEngine
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate MilleniumFalconEngine2
+rem ---------------------------------
+ObjectTemplate.addTemplate FalconVTOLRack
+ObjectTemplate.setPosition 0/0/-0.01
+ObjectTemplate.setRotation 180.0/-90.0/-180.0
+ObjectTemplate.addTemplate MF_Turret_PCO1
+ObjectTemplate.addTemplate MF_Turret_PCO2
+ObjectTemplate.addTemplate MilleniumFalconFlapLeftMiddle
+ObjectTemplate.setPosition -2.563/0.456/0.895
+ObjectTemplate.setRotation 9/0/-5.999
+ObjectTemplate.addTemplate MilleniumFalconFlapRightMiddle
+ObjectTemplate.setPosition 2.563/0.456/0.895
+ObjectTemplate.setRotation -8.999/0/6
+ObjectTemplate.addTemplate MilleniumFalconFlapLeftOuter
+ObjectTemplate.setPosition -4.129/0.664/1.124
+ObjectTemplate.setRotation 8/0/-8.999
+ObjectTemplate.addTemplate MilleniumFalconFlapRightOuter
+ObjectTemplate.setPosition 4.129/0.664/1.124
+ObjectTemplate.setRotation -8.999/0/8
+ObjectTemplate.addTemplate MilleniumFalconFlapTailLeft
+ObjectTemplate.setPosition -1.124/1.012/-6.539
+ObjectTemplate.addTemplate MilleniumFalconFlapTailRight
+ObjectTemplate.setPosition 1.146/1.012/-6.539
+ObjectTemplate.addTemplate MilleniumFalconRudder
+ObjectTemplate.setPosition 0.03/1.88/-6.649
+ObjectTemplate.setRotation 0/0/-89.999
+ObjectTemplate.addTemplate MFHyperDriveEngine
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate MilleniumFalconBodyWingVertical
+ObjectTemplate.setRotation 0/0/-89.999
+ObjectTemplate.AddTemplate Ammobox
+ObjectTemplate.setPosition -4.35/1.525/7.42
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.AddTemplate HealthPack
+ObjectTemplate.setPosition -4.56/2.195/7.635
+ObjectTemplate.AddTemplate MilleniumFalconPCO5
+ObjectTemplate.AddTemplate MilleniumFalconPCO6
+
+rem *** lodyt1300Cockpit ***
+ObjectTemplate.create LodObject lodyt1300Cockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate yt1300mfCockpitExternal
+ObjectTemplate.addTemplate mfCockpitInternal
+ObjectTemplate.setPosition 0/2.58/0
+rem -------------------------------------
+ObjectTemplate.lodSelector mfCockpitSelector
+
+rem *** yt1300mfCockpitExternal ***
+ObjectTemplate.create SimpleObject yt1300mfCockpitExternal
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.geometry tan_MilleniumFalcon_fus_M1
+
+rem ***PLAYER SPAWN INSIDE****
+ObjectTemplate.create SpawnPoint yt1300_sold_spawn
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 8
+ObjectTemplate.setGroup 74
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** yt1300Wreck ***
+ObjectTemplate.create SimpleObject yt1300Wreck
+ObjectTemplate.geometry Wreck_Null
+
+rem *** yt1300LodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 yt1300LodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 350

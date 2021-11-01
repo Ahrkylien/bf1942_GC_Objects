@@ -1,0 +1,19 @@
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/flagbase.wav
+loop
+volume 0.9
+minDistance 5
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 16
+	param 1
+	param -1	
+endEffect

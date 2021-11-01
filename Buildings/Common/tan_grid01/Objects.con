@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle tan_grid01
+ObjectTemplate.geometry tan_grid01
+objectTemplate.aiTemplate tan_grid01
+rem ---------------------------

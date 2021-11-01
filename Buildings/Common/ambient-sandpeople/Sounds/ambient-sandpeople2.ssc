@@ -1,0 +1,17 @@
+newPatch
+load @ROOT/Sound/@RTD/ambient-sandpeople2.wav
+volume 0.7
+minDistance 500
+dopplerOff
+priority 6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 500
+	param 1000
+	param 1
+	param -1	
+endEffect
+

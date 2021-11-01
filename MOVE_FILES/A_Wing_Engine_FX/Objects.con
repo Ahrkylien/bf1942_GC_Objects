@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject A_Wing_Engine_FX
+ObjectTemplate.geometry A_Wing_Engine_FX
+

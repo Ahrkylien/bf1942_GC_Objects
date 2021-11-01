@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject endfern4
+ObjectTemplate.geometry endfern4
+ObjectTemplate.setHasCollisionPhysics 0
+objectTemplate.cullRadiusScale 5.0

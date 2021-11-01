@@ -1,0 +1,22 @@
+rem
+rem *** Ammobox ***
+rem
+ObjectTemplate.create Bundle rebnofly
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.hasResponsePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate rebnoflydepot
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+
+
+rem -----------------------------------------
+ObjectTemplate.create SupplyDepot rebnoflydepot
+ObjectTemplate.radius 400
+ObjectTemplate.team 2
+ObjectTemplate.workOnVehicles 0
+ObjectTemplate.workOnSoldiers 1
+ObjectTemplate.setHealth -1 -15 0
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/LaserDistanceHigh.ssc
+rem ----------------------------------------

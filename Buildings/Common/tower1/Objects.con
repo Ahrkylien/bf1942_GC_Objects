@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle tower1
+ObjectTemplate.geometry tower1
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate tower1
+

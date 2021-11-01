@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject dan_bush
+ObjectTemplate.geometry dan_bush
+ObjectTemplate.HasCollisionPhysics 0
+
+rem ObjectTemplate.loadSoundScript Sounds/bird_fly.ssc

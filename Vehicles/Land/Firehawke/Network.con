@@ -1,0 +1,14 @@
+NetworkableInfo.createNewInfo FirehawkeTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo FirehawkeGunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo FirehawkeEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo FirehawkeBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo FHSteeringInfo
+NetworkableInfo.setPredictionMode PMLinear

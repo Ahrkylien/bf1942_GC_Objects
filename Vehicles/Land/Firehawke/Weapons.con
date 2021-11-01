@@ -1,0 +1,59 @@
+
+
+rem *** ***
+ObjectTemplate.create FireArms Firehawke_GunBarrel
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/FirehawkeCannon.ssc
+ObjectTemplate.geometry firehawke_mgun_recoil
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzFirehawke
+ObjectTemplate.setPosition 0/0/12
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HeavyBlasterProjectileBlueS
+ObjectTemplate.projectilePosition 0/0/6.1
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 30
+ObjectTemplate.velocity 200
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 2.0
+ObjectTemplate.roundOfFire 2.7
+ObjectTemplate.fireingForce 60
+ObjectTemplate.recoilSpeed 6
+ObjectTemplate.recoilSize 40
+ObjectTemplate.fireOnce 1
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.8
+ObjectTemplate.distToStartLoseDamage 250
+ObjectTemplate.distToMinDamage 500
+ObjectTemplate.AmmoType	8
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+
+
+rem *** ***
+ObjectTemplate.create FireArms Firehawke_SGun
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/ATSTLaser.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzHeavy
+ObjectTemplate.setPosition 0/0/-2.75
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileGreenS
+ObjectTemplate.projectilePosition 0/0/0.5
+ObjectTemplate.magSize 50
+ObjectTemplate.numOfMag 5
+ObjectTemplate.velocity 600
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 6
+ObjectTemplate.roundOfFire 3.2
+ObjectTemplate.fireingForce 20
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 10
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 250
+ObjectTemplate.distToMinDamage 500
+ObjectTemplate.AmmoType	8
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+
+
+

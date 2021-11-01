@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle mc_dock_outside
+ObjectTemplate.geometry mc_dock_outside
+objectTemplate.aiTemplate mc_dock_outside
+ObjectTemplate.setHasCollisionPhysics 1

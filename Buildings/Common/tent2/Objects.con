@@ -1,0 +1,6 @@
+ObjectTemplate.create Bundle tent2
+ObjectTemplate.geometry tent2
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate tent2
+ObjectTemplate.loadSoundScript Sounds/Ambient.ssc
+

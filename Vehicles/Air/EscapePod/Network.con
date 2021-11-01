@@ -1,0 +1,9 @@
+NetworkableInfo.createNewInfo EscapePod_wing_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo EscapePod_engine_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo EscapePod_body_info
+NetworkableInfo.setPredictionMode PMLinear
+

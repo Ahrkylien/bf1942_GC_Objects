@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject ds_block05
+ObjectTemplate.geometry ds_block05
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate ds_block05
+

@@ -1,0 +1,5 @@
+ObjectTemplate.create AnimatedBundle dan_grass1
+ObjectTemplate.geometry dan_grass1
+ObjectTemplate.createSkeleton animations/dan_grass1.ske
+ObjectTemplate.setAnimationState dan_grass1
+rem ObjectTemplate.cullRadiusScale 1

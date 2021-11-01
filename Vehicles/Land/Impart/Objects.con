@@ -1,0 +1,224 @@
+rem *** Impart ***
+ObjectTemplate.create PlayerControlObject MIAU
+ObjectTemplate.NameTagOffset 0/0/0
+ObjectTemplate.setNetworkableInfo ImpartBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 8
+ObjectTemplate.mass 25000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 80
+ObjectTemplate.maxhitpoints 80
+ObjectTemplate.material 831
+ObjectTemplate.criticalDamage 8
+ObjectTemplate.hpLostWhileCriticalDamage 0.8
+ObjectTemplate.explosionForceMod 13
+ObjectTemplate.hpLostWhileUpSideDown 8
+ObjectTemplate.hpLostWhileDamageFromWater 8
+ObjectTemplate.speedMod 1
+ObjectTemplate.addArmorEffect 80 e_engineImpart 0.615/0.5/-6.6
+ObjectTemplate.addArmorEffect 80 e_engineImpart -0.615/0.5/-6.6
+ObjectTemplate.addArmorEffect 16 e_WespeDamage 0/0.2/-6.35
+ObjectTemplate.addArmorEffect 16 e_engineImpart 0.615/0.5/-6.6
+ObjectTemplate.addArmorEffect 16 e_engineImpart -0.615/0.5/-6.6
+ObjectTemplate.addArmorEffect 8 e_WespeFire 0/0.5/-6.35
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_Impart 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate Wespe
+rem -------------------------------------
+ObjectTemplate.addTemplate lodImpart
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 3/0/0 0/0/0
+ObjectTemplate.GUIIndex 76
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_impart.dds"
+ObjectTemplate.setVehicleIconPos 97/90
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTFighter
+ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_impart_16x16.dds"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** lodImpart ***
+ObjectTemplate.create LodObject lodImpart
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ImpartComplex
+ObjectTemplate.addTemplate ImpartSimple
+ObjectTemplate.addTemplate ImpartWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector ImpartLodSelector
+
+rem *** ImpartComplex ***
+ObjectTemplate.create Bundle ImpartComplex
+ObjectTemplate.geometry Impart_Hull_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+rem ObjectTemplate.addTemplate lodImpartCockpit
+ObjectTemplate.addTemplate ImpartEntry
+ObjectTemplate.setPosition 1.7/0.9/-0.3
+
+ObjectTemplate.addTemplate ImpartRollWheelBundle
+ObjectTemplate.setPosition 3.5/-0.6/6
+ObjectTemplate.addTemplate ImpartRollWheelBundle
+ObjectTemplate.setPosition -3.5/-0.6/6
+ObjectTemplate.addTemplate ImpartDummyWheel
+ObjectTemplate.setPosition 3.5/-0.6/-6
+ObjectTemplate.addTemplate ImpartDummyWheel
+ObjectTemplate.setPosition -3.5/-0.6/-6
+
+ObjectTemplate.addTemplate ImpartYawWing
+ObjectTemplate.setPosition 0/1.088/-6.067
+ObjectTemplate.setRotation 0/0/-89.998
+ObjectTemplate.addTemplate ImpartEngine
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.addTemplate ImpartCamera
+ObjectTemplate.setPosition 0/2.0/4.7
+ObjectTemplate.addTemplate Impart_Gunner_PCO1
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+
+rem *** lodImpartCockpit ***
+ObjectTemplate.create LodObject lodImpartCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate ImpartCockpitExternal
+ObjectTemplate.addTemplate ImpartCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector ImpartCockpitSelector
+
+rem *** ImpartCockpitExternal ***
+ObjectTemplate.create SimpleObject ImpartCockpitExternal
+ObjectTemplate.geometry Impart_Hull_M1
+
+rem *** ImpartCockpitInternal ***
+ObjectTemplate.create SimpleObject ImpartCockpitInternal
+ObjectTemplate.geometry 1P_Impart_Driver_M1
+
+rem *** ImpartCockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector ImpartCockpitSelector
+LodSelectorTemplate.addLodDistance 1.2
+LodSelectorTemplate.addLodComparison 0.5
+
+rem *** ImpartEntry ***
+ObjectTemplate.create EntryPoint ImpartEntry
+ObjectTemplate.setEntryRadius 2
+
+rem *** ImpartCamera ***
+ObjectTemplate.create Camera ImpartCamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** Impart_Gunner_PCO1 ***
+ObjectTemplate.create PlayerControlObject Impart_Gunner_PCO1
+ObjectTemplate.setNetworkableInfo ImpartBodyInfo
+ObjectTemplate.aiTemplate WespeCannon
+rem -------------------------------------
+ObjectTemplate.addTemplate ImpartTower
+ObjectTemplate.setPosition 0/4.05/-4.331
+ObjectTemplate.addTemplate ImpartDoor
+ObjectTemplate.setPosition 1.362/0.227/-0.274
+ObjectTemplate.setRotation 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 3.5/0/0 0/0/0
+ObjectTemplate.GUIIndex 21
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_impart.dds"
+ObjectTemplate.setVehicleIconPos 33/43
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bomb.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTArtillery
+ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_impart_16x16.dds"
+
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 60
+ObjectTemplate.DirBarYScaleAbove 45
+ObjectTemplate.DirBarYScaleBelow 0
+ObjectTemplate.DirBarYScaleMin -95
+ObjectTemplate.DirBarYScaleMax -50
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** ImpartTower ***
+ObjectTemplate.create RotationalBundle ImpartTower
+ObjectTemplate.setNetworkableInfo ImpartTurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/ImpartTurretRotate.ssc
+ObjectTemplate.geometry Impart_Tower_M1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ImpartGunBase
+ObjectTemplate.setPosition 0/1.17/0
+ObjectTemplate.addTemplate ImpartGunnerCamera
+ObjectTemplate.setPosition 0/6.0/-7
+rem -------------------------------------
+ObjectTemplate.setMinRotation -60/0/0
+ObjectTemplate.setMaxRotation 60/0/0
+ObjectTemplate.setMaxSpeed 20/25/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** ImpartGunBase ***
+ObjectTemplate.create RotationalBundle ImpartGunBase
+ObjectTemplate.setNetworkableInfo ImpartGunInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.geometry Impart_Barrel1_M1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ImpartCannon
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-45/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/500/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** ImpartGunnerCamera ***
+ObjectTemplate.create Camera ImpartGunnerCamera
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMinRotation 0/-45/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/1000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMExternTrace 1
+
+rem *** ImpartDoor ***
+ObjectTemplate.create RotationalBundle ImpartDoor
+ObjectTemplate.setNetworkableInfo ImpartDoorInfo
+ObjectTemplate.loadSoundScript Sounds/ImpartDoor.ssc
+ObjectTemplate.geometry Impart_Door_M1
+ObjectTemplate.setMaxRotation 0/0/82
+ObjectTemplate.setMaxSpeed 0/0/50
+ObjectTemplate.setAcceleration 0/0/70
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setInputToRoll c_PIPitch
+
+rem *** ImpartSimple ***
+ObjectTemplate.create SimpleObject ImpartSimple
+ObjectTemplate.geometry Impart_Hull_L1
+
+rem *** ImpartWreck ***
+ObjectTemplate.create SimpleObject ImpartWreck
+ObjectTemplate.geometry Wreck_Impart_M1
+
+rem *** ImpartLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 ImpartLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 100

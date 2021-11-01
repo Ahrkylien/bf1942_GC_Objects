@@ -1,0 +1,7 @@
+#templateLevel HIGH
+
+	#include High/SoldierJumpLand.ssc
+	
+#templateLevel MEDIUM
+
+	#include Medium/SoldierJumpLand.ssc

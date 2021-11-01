@@ -1,0 +1,8 @@
+NetworkableInfo.createNewInfo Spy_TurretBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Spy_Turret_TurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+

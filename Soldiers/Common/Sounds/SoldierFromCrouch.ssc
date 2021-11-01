@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/SoldierFromCrouch.ssc
+	
+#templateLevel MEDIUM
+
+	#include Medium/SoldierFromCrouch.ssc
+	
+#templateLevel LOW
+
+	#include Low/SoldierFromCrouch.ssc

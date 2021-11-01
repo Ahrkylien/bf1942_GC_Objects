@@ -1,0 +1,29 @@
+GeometryTemplate.create StandardMesh NebulonBbody
+GeometryTemplate.file Vehicles/NebulonB/NebulonB_hull
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 400
+GeometryTemplate.setLodDistance 2 800
+GeometryTemplate.setLodDistance 3 1000
+GeometryTemplate.setLodDistance 4 1400
+GeometryTemplate.setLodDistance 5 1800
+
+
+
+GeometryTemplate.create StandardMesh NebulonBlow
+GeometryTemplate.file Vehicles/NebulonB/nebulonb_hull_m2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 500
+
+
+GeometryTemplate.create StandardMesh NebulonBinside
+GeometryTemplate.file Vehicles/NebulonB/NebulonB_inside
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 600

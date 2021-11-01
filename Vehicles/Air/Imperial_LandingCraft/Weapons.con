@@ -1,0 +1,116 @@
+rem *** Imperial_LandingCraft_Lasers ***
+ObjectTemplate.create FireArms Imperial_LandingCraft_Lasers
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/LanderLaser1.ssc
+ObjectTemplate.aiTemplate SpitfireMachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzThomp
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileGreenNS
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.ammotype 8
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 700
+ObjectTemplate.reloadtime 0.0001
+ObjectTemplate.roundOfFire 4.235
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 2
+ObjectTemplate.addFireArmsPosition -0.4742/0.0924/2.2819 0/0/0
+ObjectTemplate.addFireArmsPosition 0.4742/0.0924/2.2819 -0/0/0
+ObjectTemplate.addFireArmsPosition -1.3509/-0.1367/1.3585 0/0/0
+ObjectTemplate.addFireArmsPosition 1.3509/-0.1367/1.3585 -0/0/0
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.05
+objectTemplate.coolDownPerSec 0.8
+objectTemplate.timeDelayOnOverHeat 2
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 100
+ObjectTemplate.distToMinDamage 300
+
+
+rem *** Imperial_LandingCraft_Lasers ***
+ObjectTemplate.create FireArms ILC_Turret_Lasers
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/LanderLaser2.ssc
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.aiTemplate SpitfireMachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzThomp
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileGreenNS
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.ammotype 8
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 700
+ObjectTemplate.reloadtime 0.0001
+ObjectTemplate.roundOfFire 4.235
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 2
+ObjectTemplate.addFireArmsPosition 0.173/0/2.37 0/0/0
+ObjectTemplate.addFireArmsPosition -0.173/0/2.37 -0/0/0
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.05
+objectTemplate.coolDownPerSec 0.8
+objectTemplate.timeDelayOnOverHeat 2
+REM *** DAMAGE OVER DISTANCE ***
+
+
+rem ***SpeederDrop ***
+ObjectTemplate.create FireArms Imperial_LandingCraft_Speederbike
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+rem ObjectTemplate.loadSoundScript Sounds/LambdaLaser1.ssc
+ObjectTemplate.aiTemplate SpitfireMachineGun
+rem -------------------------------------
+rem ObjectTemplate.visibleBarrelTemplate e_MuzzThomp
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Speederbike_Deploy
+ObjectTemplate.magSize 3
+ObjectTemplate.numOfMag 3
+ObjectTemplate.velocity 0
+ObjectTemplate.reloadtime 60
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 0.5
+ObjectTemplate.recoilSpeed 0
+ObjectTemplate.recoilSize 0
+ObjectTemplate.addFireArmsPosition -21/-2/0 0/0/0
+ObjectTemplate.addFireArmsPosition -17/-2/0 -0/0/0
+ObjectTemplate.addFireArmsPosition -19/-2/0 0/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.AmmoType	9
+
+ObjectTemplate.create Projectile Speederbike_Deploy
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.geometry Speederbike_Fus_M1
+ObjectTemplate.timeToLive CRD_NONE/90/0/0
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.gravityModifier 1.0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.drag 1.0
+ObjectTemplate.mass 200
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 0
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 50
+ObjectTemplate.material2 50
+ObjectTemplate.radius 15
+ObjectTemplate.ForceOnExplosion 0
+ObjectTemplate.addTemplate Imperial_LandingCraft_SpeederbikeSpawner
+ObjectTemplate.setPosition 0/0/0
+
+ObjectTemplate.create ObjectSpawner Imperial_LandingCraft_SpeederbikeSpawner
+ObjectTemplate.setObjectTemplate 1 Speederbike
+ObjectTemplate.setObjectTemplate 2 Speederbike
+ObjectTemplate.minSpawnDelay 1
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 30
+ObjectTemplate.spawnOffset 0/0/0
+rem ObjectTemplate.holdObject 0
+ObjectTemplate.team 1

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/ShermanEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/ShermanEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/ShermanEngine.ssc

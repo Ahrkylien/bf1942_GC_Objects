@@ -1,0 +1,13 @@
+GeometryTemplate.create StandardMesh tan_AWing_Fuselage_M1
+GeometryTemplate.file Vehicles/AWing/tan_AWing_Fus
+GeometryTemplate.hasDynamicShadow 0
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 140
+
+GeometryTemplate.create StandardMesh tan_AWing_Fuselage_L1
+GeometryTemplate.file Vehicles/AWing/tan_AWing_Low
+GeometryTemplate.hasDynamicShadow 0

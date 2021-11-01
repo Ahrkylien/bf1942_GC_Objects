@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/KatyushaRampRot.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/KatyushaRampRot.ssc
+	
+#templateLevel LOW
+
+	#include Low/KatyushaRampRot.ssc

@@ -1,0 +1,25 @@
+rem *** R5D4_Droid_Launcher ***
+ObjectTemplate.create FireArms R5D4_Droid_Launcher
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setAsynchronyFire 0
+ObjectTemplate.aiTemplate WasserFallLauncherWeapon
+ObjectTemplate.projectileTemplate R5D4Droid
+ObjectTemplate.projectilePosition 0/0/1.3
+ObjectTemplate.visibleDummyProjectileTemplate R5D4_Droid_Dummy
+ObjectTemplate.setHasMag 1
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag -1
+ObjectTemplate.magType 0
+ObjectTemplate.velocity 0
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 60
+ObjectTemplate.roundOfFire 100000
+ObjectTemplate.fireingForce 0
+ObjectTemplate.disableWhenFired 1
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+
+ObjectTemplate.create SimpleObject R5D4_Droid_Dummy
+ObjectTemplate.geometry R5D4_Hull_M1
+ObjectTemplate.hasCollisionPhysics 1

@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject atatde_ladder_m1
+ObjectTemplate.geometry atatde_ladder_m1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.addToCollisionGroup c_CGLadders
+ObjectTemplate.addToCollisionGroup c_CGProjectiles

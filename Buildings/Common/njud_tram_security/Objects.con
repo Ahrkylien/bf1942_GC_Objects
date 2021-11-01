@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle njud_tram_security
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry njud_tram_security
+objectTemplate.aiTemplate njud_tram_security
+rem ---------------------------

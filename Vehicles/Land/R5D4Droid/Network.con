@@ -1,0 +1,9 @@
+NetworkableInfo.createNewInfo R5D4RepairWeaponInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo R5D4Droid_engine_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo R5D4Droid_body_info
+NetworkableInfo.setPredictionMode PMLinear
+

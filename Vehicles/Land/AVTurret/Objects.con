@@ -1,0 +1,93 @@
+rem *** avturret ***
+ObjectTemplate.create PlayerControlObject AVTurret
+ObjectTemplate.setNetworkableInfo avturretBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.geometry DefGun_thing_M1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 200
+ObjectTemplate.maxhitpoints 200
+ObjectTemplate.material 811
+ObjectTemplate.criticalDamage 7.5
+ObjectTemplate.hpLostWhileCriticalDamage 0.75
+ObjectTemplate.addArmorEffect 7.5 e_Wreck1Smoke 0/1/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_avturret 0/2/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/10/0
+ObjectTemplate.aiTemplate avturret
+ObjectTemplate.timetoliveafterdeath 1
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate lodAVTurret
+ObjectTemplate.setSoldierExitLocation 0/2.2/-3 -180/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_avturret.tga"
+ObjectTemplate.setVehicleIconPos 50/60
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_artillery.tga"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory Land
+ObjectTemplate.setVehicleType AAGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_avturret_16x16.dds"
+
+rem *** lodavturret ***
+ObjectTemplate.create LodObject lodAVTurret
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate AVTurretOrginal
+ObjectTemplate.addTemplate AVTurretWreck
+ObjectTemplate.setPosition 0/0/0.6
+rem -------------------------------------
+ObjectTemplate.lodSelector lodAVTurretSelectah
+
+rem *** AVTurretOrginal ***
+ObjectTemplate.create Bundle AVTurretOrginal
+ObjectTemplate.geometry AVBase
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate AVTurretEntry
+ObjectTemplate.addTemplate AVTurretrotation
+ObjectTemplate.setPosition 0/0.8/0
+rem -------------------------------------
+
+rem *** avturretEntry ***
+ObjectTemplate.create EntryPoint AVTurretEntry
+ObjectTemplate.setEntryRadius 4
+
+rem *** avturretTurret ***
+ObjectTemplate.create RotationalBundle AVTurretRotation
+ObjectTemplate.setNetworkableInfo avturretBodyInfo
+ObjectTemplate.geometry AVTurret
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.loadSoundScript Sounds/AVTurretRotate.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate AVTurretCamera
+ObjectTemplate.setPosition 0/2.30/0.2
+ObjectTemplate.addTemplate AVTurretGun
+ObjectTemplate.setposition 0/1.96/2.06
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-20/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 500/500/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** avturretCamera ***
+ObjectTemplate.create Camera AVTurretCamera
+
+rem *** avturretWreck ***
+ObjectTemplate.create SimpleObject AVTurretWreck
+ObjectTemplate.geometry Wreck_AVTurret1_M1
+ObjectTemplate.addTemplate e_ScrapMetalSmoke
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/3/0
+ObjectTemplate.setRotation 0/0/0
+
+rem *** lodavturretSelectah ***
+LodSelectorTemplate.create DistCompareSelector2 lodAVTurretSelectah
+LodSelectorTemplate.hasDestroyedLod 1

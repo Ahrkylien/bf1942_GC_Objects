@@ -1,0 +1,23 @@
+
+rem ------------------------------------------------
+
+rem *** ATSTLauncher ***
+ObjectTemplate.create FireArms ATSTRocketLauncher
+ObjectTemplate.loadSoundScript Sounds/ATSTGrenadeLauncher.ssc
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.projectileTemplate T-3BRocket
+ObjectTemplate.projectilePosition 0/0/0.25
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 8
+ObjectTemplate.velocity 70
+ObjectTemplate.reloadtime 6
+ObjectTemplate.roundOfFire 0.3
+ObjectTemplate.autoReload 1 
+ObjectTemplate.AltFireOnce 1
+ObjectTemplate.setinputfire c_PIAltFire
+ObjectTemplate.addFireArmsPosition -1.5238/0.3561/0.7561 0/0/0
+ObjectTemplate.AmmoType	7
+
+
+
+rem -------------------- Co-Pilot Guns -------------------

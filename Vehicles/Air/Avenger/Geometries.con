@@ -1,0 +1,13 @@
+GeometryTemplate.create StandardMesh tan_TieInterceptor_M1
+GeometryTemplate.file Vehicles/TieInterceptor/tan_TieInterceptor
+GeometryTemplate.hasDynamicShadow 0
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 140
+
+GeometryTemplate.create StandardMesh tan_TieInterceptor_L1
+GeometryTemplate.file Vehicles/TieInterceptor/tan_TieInterceptor
+GeometryTemplate.hasDynamicShadow 0

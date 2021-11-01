@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject Big_Bomb_M1
+ObjectTemplate.geometry Big_Bomb_M1
+

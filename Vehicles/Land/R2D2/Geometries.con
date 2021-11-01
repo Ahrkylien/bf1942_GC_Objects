@@ -1,0 +1,25 @@
+GeometryTemplate.create StandardMesh R2D2_Hull_M1
+GeometryTemplate.file Vehicles/R2/r2_body
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 50
+GeometryTemplate.setLodDistance 4 75
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh R2D2_Head_M1
+GeometryTemplate.file Vehicles/R2/r2_head
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 50
+GeometryTemplate.setLodDistance 4 75
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh R2D2_Wheel_M1
+GeometryTemplate.file Tiger_whe3L_M1
+
+GeometryTemplate.create StandardMesh Wreck_R2D2_M1
+GeometryTemplate.file scrap_metal3_m1

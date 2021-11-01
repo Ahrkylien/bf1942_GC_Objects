@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject endor_bunker_1
+ObjectTemplate.aiTemplate endor_bunker_1
+ObjectTemplate.geometry endor_bunker_1
+ObjectTemplate.setHasCollisionPhysics 1
+
+

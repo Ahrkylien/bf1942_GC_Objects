@@ -1,0 +1,28 @@
+ObjectTemplate.create Kit tl-21_kit_AV
+ObjectTemplate.setType AT
+ObjectTemplate.setKitTeam 1
+
+ObjectTemplate.geometry TL-21_ground
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.addTemplate imp_backpack
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_assault_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_assault_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/icon_alliesknife.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_tl21.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+
+ObjectTemplate.setKitIcon 2 "kits/Heavy_Imperial.tga"
+ObjectTemplate.setKitName 2 "RESPAWN_ASSAULT"
+ObjectTemplate.setKitActiveName 0 "RESPAWN_ACTIVE_ASSAULT"
+
+ObjectTemplate.addTemplate TL-21
+ObjectTemplate.addTemplate KnifeAxis
+
+ObjectTemplate.addTemplate NoChute
+
+ObjectTemplate.aiTemplate  AT
+

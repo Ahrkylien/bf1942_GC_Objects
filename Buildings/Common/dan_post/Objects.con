@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject dan_post
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry dan_post
+objectTemplate.aiTemplate dan_post
+rem ---------------------------

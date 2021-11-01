@@ -1,0 +1,33 @@
+ObjectTemplate.create Kit Empire_Medic
+ObjectTemplate.setType Medic
+ObjectTemplate.setKitTeam 1
+ObjectTemplate.geometry  Kit_Axis_Medic
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+
+rem Add Class Visual Art
+ObjectTemplate.addTemplate Empire_Medic_Belt
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_medic_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_medic_64x64.tga"
+
+ObjectTemplate.addWeaponIcon "Weapon/icon_lethal_injection.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_distuptor2.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_impgasgren.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_medpack.dds"
+
+
+ObjectTemplate.setKitIcon 3 "kits/Icon_medic_axis_selected.tga"
+ObjectTemplate.setKitName 3 "RESPAWN_MEDIC"
+ObjectTemplate.setKitActiveName 3 "RESPAWN_ACTIVE_MEDIC"
+
+ObjectTemplate.addTemplate disruptor2
+ObjectTemplate.addTemplate lethal_injection
+ObjectTemplate.addTemplate Imperialgasgren
+ObjectTemplate.addTemplate MedPack
+
+ObjectTemplate.addTemplate NoChute
+
+ObjectTemplate.aiTemplate  Medic
+

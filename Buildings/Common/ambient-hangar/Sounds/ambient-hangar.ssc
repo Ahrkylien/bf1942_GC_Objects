@@ -1,0 +1,19 @@
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/ambient-hangar.wav
+loop
+minDistance 80
+volume .5
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 60
+	param 80
+	param 1
+	param -1	
+endEffect

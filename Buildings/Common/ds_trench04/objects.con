@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject ds_trench04
+ObjectTemplate.geometry ds_trench04
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate ds_trench04
+

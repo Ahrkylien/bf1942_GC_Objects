@@ -1,0 +1,18 @@
+newPatch
+############
+### Beep ###
+############
+load @ROOT/Sound/@RTD/r2d2-beep2.wav
+minDistance 10
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 60
+	param 1
+	param -1	
+endEffect

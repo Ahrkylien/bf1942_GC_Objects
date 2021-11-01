@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/TigerCannon.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/TigerCannon.ssc
+	
+#templateLevel LOW
+
+	#include Low/TigerCannon.ssc

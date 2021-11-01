@@ -1,0 +1,15 @@
+rem *******************************************
+rem Galactic Conquest
+rem May 03, 2004
+rem Ver 1.04
+rem *******************************************
+rem ImpSkiff - Created for Suges favorite raping vehilce
+
+NetworkableInfo.createNewInfo ImpSkiff_engine_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo ImpSkiff_body_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo ImpSkiff_rack_info
+NetworkableInfo.setPredictionMode PMLinear

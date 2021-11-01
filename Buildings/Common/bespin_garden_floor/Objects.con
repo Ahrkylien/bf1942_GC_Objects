@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject bespin_garden_floor
+ObjectTemplate.geometry bespin_garden_floor
+ObjectTemplate.setHasCollisionPhysics 1

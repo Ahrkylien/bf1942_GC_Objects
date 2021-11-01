@@ -1,0 +1,140 @@
+rem *** SnowspeederEngine ***
+ObjectTemplate.create Engine SnowspeederEngine
+ObjectTemplate.setNetworkableInfo snowspeeder_engine_info
+ObjectTemplate.loadSoundScript Sounds/SnowspeederEngine.ssc
+rem -------------------------------------
+ObjectTemplate.setMinRotation -0.3/0/0
+ObjectTemplate.setMaxRotation 0.3/0/1000
+ObjectTemplate.setMaxSpeed 1000/0/1000
+ObjectTemplate.setAcceleration 500/0/10000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 100
+ObjectTemplate.setDifferential 10
+
+rem *** SnowspeederVTOLEngineRack ***
+ObjectTemplate.create RotationalBundle SnowspeederVTOLEngineRack
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate SnowspeederVTOLEngine
+rem -------------------------------------
+ObjectTemplate.setMinRotation -20/-30/0
+ObjectTemplate.setMaxRotation 20/30/0
+ObjectTemplate.setMaxSpeed 150/50/0
+ObjectTemplate.setAcceleration 150/100/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setInputToYaw c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+
+rem *** SnowspeederVTOLEngine ***
+ObjectTemplate.create Engine SnowspeederVTOLEngine
+ObjectTemplate.setNetworkableInfo snowspeeder_engine_info
+ObjectTemplate.loadSoundScript Sounds/SnowspeederVEngine.ssc
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/100
+ObjectTemplate.setMaxSpeed 0/0/3
+ObjectTemplate.setAcceleration 0/0/-10000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 8
+ObjectTemplate.setDifferential 3
+
+rem *** SnowspeederFlaps1 ***
+ObjectTemplate.create Wing SnowspeederFlaps1
+ObjectTemplate.setNetworkableInfo snowspeeder_wing_info
+ObjectTemplate.setMinRotation 0/-2/0
+ObjectTemplate.setMaxRotation 0/2/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPositionOffset 1.862/-0.003/-0.15
+ObjectTemplate.setFlapLift 4
+ObjectTemplate.setRegulateToLift 4.91
+ObjectTemplate.setWingToRegulatorRatio 1
+
+rem *** SnowspeederFlaps2 ***
+ObjectTemplate.create Wing SnowspeederFlaps2
+ObjectTemplate.setNetworkableInfo snowspeeder_wing_info
+ObjectTemplate.setMinRotation 0/-2/0
+ObjectTemplate.setMaxRotation 0/2/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPositionOffset -1.863/-0.003/-0.15
+ObjectTemplate.setFlapLift 4
+ObjectTemplate.setRegulateToLift 4.91
+ObjectTemplate.setWingToRegulatorRatio 1
+
+rem *** SnowspeederRudderBackVertical ***
+ObjectTemplate.create Wing SnowspeederRudderBackVertical
+ObjectTemplate.setNetworkableInfo snowspeeder_wing_info
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/60/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/-0.5/0
+ObjectTemplate.setWingLift 2.0
+ObjectTemplate.setFlapLift 2.0
+
+rem *** SnowspeederBodyWingVertical ***
+ObjectTemplate.create Wing SnowspeederBodyWingVertical
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/-0.6
+ObjectTemplate.setWingLift 4
+ObjectTemplate.setFlapLift 0
+
+rem *** SnowspeederRudderBackLeft ***
+ObjectTemplate.create Wing SnowspeederRudderBackLeft
+ObjectTemplate.setNetworkableInfo snowspeeder_wing_info
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/-60/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0.5/0/0
+ObjectTemplate.rememberExcessInput 0
+ObjectTemplate.setWingLift 0.5
+ObjectTemplate.setFlapLift 1.5
+
+rem *** SnowspeederRudderBackRight ***
+ObjectTemplate.create Wing SnowspeederRudderBackRight
+ObjectTemplate.setNetworkableInfo snowspeeder_wing_info
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/-60/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset -0.5/0/0
+ObjectTemplate.rememberExcessInput 0
+ObjectTemplate.setWingLift 0.5
+ObjectTemplate.setFlapLift 1.5
+
+rem *** SnowspeederRudderFrontLeft ***
+ObjectTemplate.create Wing SnowspeederRudderFrontLeft
+ObjectTemplate.setNetworkableInfo snowspeeder_wing_info
+ObjectTemplate.setMinRotation 0/-20/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/100/0
+ObjectTemplate.setAcceleration 0/-120/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0.5/0/0.2
+ObjectTemplate.setWingLift 4
+ObjectTemplate.setFlapLift 1.5
+
+rem *** SnowspeederRudderFrontRight ***
+ObjectTemplate.create Wing SnowspeederRudderFrontRight
+ObjectTemplate.setNetworkableInfo snowspeeder_wing_info
+ObjectTemplate.setMinRotation 0/-20/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/100/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset -0.5/0/0.2
+ObjectTemplate.setWingLift 4
+ObjectTemplate.setFlapLift 1.5

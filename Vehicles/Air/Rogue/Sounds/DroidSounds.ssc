@@ -1,0 +1,48 @@
+newPatch
+
+####################
+### Engine Start ###
+####################
+load @ROOT/Sound/@RTD/r2d2-beep.wav
+minDistance 1
+volume 0.9
+dopplerOff
+priority -2
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 40
+	param 1
+	param -1	
+endEffect
+
+############
+### Main ###
+############
+load @ROOT/Sound/@RTD/silence.wav
+loop
+volume 0
+
+###################
+### Engine Stop ###
+###################
+
+load @ROOT/Sound/@RTD/r2d2-beep2.wav
+minDistance 1
+volume 0.9
+trigger Release
+dopplerOff
+priority -2
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 40
+	param 1
+	param -1	
+endEffect

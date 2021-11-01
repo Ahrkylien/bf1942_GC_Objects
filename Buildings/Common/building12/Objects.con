@@ -1,0 +1,6 @@
+ObjectTemplate.create Bundle building12
+ObjectTemplate.geometry building12
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate building12
+ObjectTemplate.cullRadiusScale 3
+

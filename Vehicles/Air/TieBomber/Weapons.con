@@ -1,0 +1,57 @@
+rem *** TieBomberLaser ***
+ObjectTemplate.create FireArms TieBomberLaser
+ObjectTemplate.loadSoundScript Sounds/TieBomberLaser.ssc
+ObjectTemplate.aiTemplate SpitfireMachineGun
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileGreenNS
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 650
+ObjectTemplate.reloadtime 3
+ObjectTemplate.roundOfFire 4.8
+ObjectTemplate.addFireArmsPosition -0.5/-2.05/0.2 0/0/0
+ObjectTemplate.addFireArmsPosition -0.8/-2.05/0.2 0/0/0
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.07
+objectTemplate.coolDownPerSec 0.8
+objectTemplate.timeDelayOnOverHeat 2.5
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 100
+ObjectTemplate.distToMinDamage 300
+ObjectTemplate.AmmoType	8
+
+rem *** TieBombRack ***
+ObjectTemplate.create FireArms TieBombRack
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.aitemplate CorsairBombs
+ObjectTemplate.projectileTemplate TieBomb
+ObjectTemplate.projectilePosition -0.7/-2.2/1.2 0/0/-20
+ObjectTemplate.magSize 20
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 16
+ObjectTemplate.roundOfFire 2
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.fireingForce 1
+ObjectTemplate.AmmoType	7
+
+rem *** SpaceRocketLauncher ***
+ObjectTemplate.create FireArms TieRocketRack
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.setAsynchronyFire 0
+ObjectTemplate.projectileTemplate SpaceRocket
+ObjectTemplate.autoReload 1
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 5
+ObjectTemplate.velocity 140
+ObjectTemplate.roundOfFire 3
+ObjectTemplate.reloadtime 3
+ObjectTemplate.AltFireOnce 1
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.addFireArmsPosition 0/0/1
+ObjectTemplate.AmmoType	9
+

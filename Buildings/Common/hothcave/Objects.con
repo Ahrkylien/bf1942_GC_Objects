@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject hothcave
+ObjectTemplate.aiTemplate hothcave
+ObjectTemplate.geometry hothcave
+ObjectTemplate.setHasCollisionPhysics 1
+
+

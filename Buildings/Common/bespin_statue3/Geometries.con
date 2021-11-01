@@ -1,0 +1,12 @@
+GeometryTemplate.create StandardMesh bespin_statue3
+GeometryTemplate.file Buildings/Bespin/bespin_statue3
+
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 175
+GeometryTemplate.setLodDistance 3 250
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 400
+
+
+

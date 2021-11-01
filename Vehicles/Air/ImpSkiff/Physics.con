@@ -1,0 +1,241 @@
+rem *******************************************
+rem Galactic Conquest
+rem May 03, 2004
+rem Ver Who the heck really knows?
+rem *******************************************
+rem
+
+rem *** ImpSkiffDummyEngine ***
+ObjectTemplate.create Engine ImpSkiffDummyEngine
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setNetworkableInfo ImpSkiff_engine_info
+ObjectTemplate.loadSoundScript Sounds/ImpSkiffEngine.ssc
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/50
+ObjectTemplate.setMaxRotation 0/0/700
+ObjectTemplate.setMaxSpeed 0/0/10000
+ObjectTemplate.setAcceleration 0/0/15000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque .1
+ObjectTemplate.setDifferential .1
+ObjectTemplate.setNoPropellerEffectAtSpeed 100
+
+rem *** impskiffgoengine ***
+ObjectTemplate.create Engine impskiffgoengine
+rem ObjectTemplate.setNetworkableInfo ImpSkiff_engine_info
+ObjectTemplate.loadSoundScript Sounds/ImpSkiffEngine.ssc
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/1
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/5000
+ObjectTemplate.setInputToRoll c_PIAltFire
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 500
+ObjectTemplate.setDifferential 10
+
+
+rem *** ImpSkiffDummyRearEngine ***
+ObjectTemplate.create Engine ImpSkiffDummyRearEngine
+ObjectTemplate.setNetworkableInfo ImpSkiff_engine_info
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/50
+ObjectTemplate.setMaxRotation 0/0/500
+ObjectTemplate.setMaxSpeed 0/0/1
+ObjectTemplate.setAcceleration 0/0/100
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 0
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque .1
+ObjectTemplate.setDifferential .1
+ObjectTemplate.setNoPropellerEffectAtSpeed 100
+
+rem *** ImpSkiffHoverEngine1 ***
+ObjectTemplate.create Engine ImpSkiffHoverEngine1
+ObjectTemplate.setNetworkableInfo ImpSkiff_engine_info
+ObjectTemplate.setMinRotation -5000/-5000/1500
+ObjectTemplate.setMaxRotation 5000/5000/5000
+ObjectTemplate.setMaxSpeed 100/100/10000
+ObjectTemplate.setAcceleration 100/100/25000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 10
+ObjectTemplate.setDifferential 3.6
+ObjectTemplate.setNoPropellerEffectAtSpeed 3000
+
+rem *** ImpSkiffHoverEngine2 ***
+ObjectTemplate.create Engine ImpSkiffHoverEngine2
+ObjectTemplate.setNetworkableInfo ImpSkiff_engine_info
+ObjectTemplate.setMinRotation -5000/-5000/1500
+ObjectTemplate.setMaxRotation 5000/5000/5000
+ObjectTemplate.setMaxSpeed 50/50/9500
+ObjectTemplate.setAcceleration 50/50/25000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 10
+ObjectTemplate.setDifferential 3.6
+ObjectTemplate.setNoPropellerEffectAtSpeed 3000
+
+rem *** ImpSkiffHoverEngine3 ***
+ObjectTemplate.create Engine ImpSkiffHoverEngine3
+ObjectTemplate.setNetworkableInfo ImpSkiff_engine_info
+ObjectTemplate.setMinRotation -3000/-3000/1500
+ObjectTemplate.setMaxRotation 3000/3000/3000
+ObjectTemplate.setMaxSpeed 50/50/9500
+ObjectTemplate.setAcceleration 50/50/25000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 10
+ObjectTemplate.setDifferential 3.6
+ObjectTemplate.setNoPropellerEffectAtSpeed 3000
+
+beginrem
+ObjectTemplate.create FloatingBundle ImpSkiffFloater
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.setHullHeight 300000
+ObjectTemplate.setFloatMaxLift 9.81
+ObjectTemplate.setFloatMinLift 9.81
+ObjectTemplate.setDragModifier 0  
+ObjectTemplate.setMinRotation 0/1/0
+ObjectTemplate.setMaxRotation 0/1/0
+ObjectTemplate.setMaxSpeed 0/10/0
+ObjectTemplate.setAcceleration 0/1000/0
+ObjectTemplate.setInputToPitch 0
+ObjectTemplate.setAutomaticReset 0
+endrem
+
+
+rem *** E_11goengine ***
+ObjectTemplate.create Engine E_11goengine
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/1
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/5000
+ObjectTemplate.setInputToRoll c_PIAltFire
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 500
+ObjectTemplate.setDifferential 10
+
+rem *** E_11DummyEngine ***
+ObjectTemplate.create Engine E_11DummyEngine
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setNetworkableInfo ImpSkiff_engine_info
+ObjectTemplate.setMinRotation 0/0/50
+ObjectTemplate.setMaxRotation 0/0/700
+ObjectTemplate.setMaxSpeed 0/0/10000
+ObjectTemplate.setAcceleration 0/0/15000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque .1
+ObjectTemplate.setDifferential .1
+ObjectTemplate.setNoPropellerEffectAtSpeed 100
+
+rem *** E_11DummyRearEngine ***
+ObjectTemplate.create Engine E_11DummyRearEngine
+ObjectTemplate.setNetworkableInfo ImpSkiff_engine_info
+ObjectTemplate.setMinRotation 0/0/50
+ObjectTemplate.setMaxRotation 0/0/500
+ObjectTemplate.setMaxSpeed 0/0/1
+ObjectTemplate.setAcceleration 0/0/100
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 0
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque .1
+ObjectTemplate.setDifferential .1
+ObjectTemplate.setNoPropellerEffectAtSpeed 100
+
+rem *** E_11HoverEngine1 ***
+ObjectTemplate.create Engine E_11HoverEngine1
+ObjectTemplate.setNetworkableInfo ImpSkiff_engine_info
+ObjectTemplate.setMinRotation -5000/-5000/1500
+ObjectTemplate.setMaxRotation 5000/5000/5000
+ObjectTemplate.setMaxSpeed 100/100/10000
+ObjectTemplate.setAcceleration 100/100/25000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 10
+ObjectTemplate.setDifferential 3.6
+ObjectTemplate.setNoPropellerEffectAtSpeed 3000
+
+rem *** E_11HoverEngine2 ***
+ObjectTemplate.create Engine E_11HoverEngine2
+ObjectTemplate.setNetworkableInfo ImpSkiff_engine_info
+ObjectTemplate.setMinRotation -5000/-5000/1500
+ObjectTemplate.setMaxRotation 5000/5000/5000
+ObjectTemplate.setMaxSpeed 50/50/9500
+ObjectTemplate.setAcceleration 50/50/25000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 10
+ObjectTemplate.setDifferential 3.6
+ObjectTemplate.setNoPropellerEffectAtSpeed 3000
+
+rem *** E_11HoverEngine3 ***
+ObjectTemplate.create Engine E_11HoverEngine3
+ObjectTemplate.setNetworkableInfo ImpSkiff_engine_info
+ObjectTemplate.setMinRotation -3000/-3000/1500
+ObjectTemplate.setMaxRotation 3000/3000/3000
+ObjectTemplate.setMaxSpeed 50/50/9500
+ObjectTemplate.setAcceleration 50/50/25000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 10
+ObjectTemplate.setDifferential 3.6
+ObjectTemplate.setNoPropellerEffectAtSpeed 3000
+
+rem *** RollWheel_ImpSkiff_E_111 ***
+ObjectTemplate.create Spring RollWheel_ImpSkiff_E_111
+ObjectTemplate.geometry Mustang_whe2_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+ObjectTemplate.setStrength 16
+ObjectTemplate.setDamping 4
+ObjectTemplate.createInvisible 1
+
+rem *** RollWheel_ImpSkiff_E_113 ***
+ObjectTemplate.create Spring RollWheel_ImpSkiff_E_113
+ObjectTemplate.geometry Mustang_whe2_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+ObjectTemplate.setStrength 16
+ObjectTemplate.setDamping 4
+ObjectTemplate.createInvisible 1
+
+rem *** DummyWheel_ImpSkiff_E_114 ***
+ObjectTemplate.create Spring DummyWheel_ImpSkiff_E_114
+ObjectTemplate.geometry Mustang_whe2_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFDummyGrip
+ObjectTemplate.setStrength 16
+ObjectTemplate.setDamping 4
+ObjectTemplate.createInvisible 1
+
+rem *** DummyWheel_ImpSkiff_E_115 ***
+ObjectTemplate.create Spring DummyWheel_ImpSkiff_E_115
+ObjectTemplate.geometry Mustang_whe2_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFDummyGrip
+ObjectTemplate.setStrength 16
+ObjectTemplate.setDamping 4
+ObjectTemplate.createInvisible 1
+
+

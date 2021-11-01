@@ -1,0 +1,67 @@
+ObjectTemplate.create PlayercontrolObject tan_objective01
+ObjectTemplate.setNetworkableInfo tan_objective01Info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 1000
+ObjectTemplate.maxhitpoints 1000
+ObjectTemplate.material 811
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 10
+ObjectTemplate.explosionRadius 50
+ObjectTemplate.explosionDamage 20
+ObjectTemplate.explosionForceMod 100
+ObjectTemplate.FadeAtTimeToLiveAfterDeath -1
+ObjectTemplate.addArmorEffect 500 em_TieInterceptorDamage 0/0/0
+ObjectTemplate.addArmorEffect 200 em_PlaneDamage 0/0/0
+ObjectTemplate.addArmorEffect 150 e_TieInterceptorFire 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_TieFighter 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+
+rem -------------------------------
+rem --------------------------------------
+ObjectTemplate.addTemplate lodtan_objective01
+rem --------------------------------------
+ObjectTemplate.GUIIndex 67
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTDefGun
+ObjectTemplate.setToolTipType  TTDefGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+
+rem *** lodX-Wing ***
+ObjectTemplate.create LodObject lodtan_objective01
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate tan_objective01_complex
+ObjectTemplate.addTemplate tan_objective01_simple2
+ObjectTemplate.addTemplate tan_objective01_wrecks
+rem -------------------------------------
+ObjectTemplate.lodSelector tan_objective01LodSelector
+
+rem ***  ***
+ObjectTemplate.create Bundle tan_objective01_complex
+ObjectTemplate.geometry tan_objective01
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------
+rem -------------------------------
+
+
+ObjectTemplate.create SimpleObject tan_objective01_simple2
+ObjectTemplate.geometry tan_objective01
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+rem *** ***
+ObjectTemplate.create SimpleObject tan_objective01_wrecks
+ObjectTemplate.geometry tan_objective01_wreck
+
+LodSelectorTemplate.create DistCompareSelector2 tan_objective01LodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 900

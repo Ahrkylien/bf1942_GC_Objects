@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject ewok_bridge3_upanddown
+ObjectTemplate.aiTemplate ewok_bridge3_upanddown
+ObjectTemplate.geometry ewok_bridge3_upanddown
+ObjectTemplate.setHasCollisionPhysics 1
+
+

@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle bridge1
+ObjectTemplate.geometry bridge1
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate bridge1
+

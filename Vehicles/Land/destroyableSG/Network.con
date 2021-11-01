@@ -1,0 +1,2 @@
+NetworkableInfo.createNewInfo DestroyableSGInfo
+NetworkableInfo.setPredictionMode PMLinear

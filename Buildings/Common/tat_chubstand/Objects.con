@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle tat_chubstand
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry tat_chubstand
+objectTemplate.aiTemplate tat_chubstand
+rem ---------------------------

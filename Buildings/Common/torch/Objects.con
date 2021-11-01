@@ -1,0 +1,8 @@
+ObjectTemplate.create Bundle torch	
+ObjectTemplate.geometry torch
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.addTemplate e_ExFumeFact
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/2.1/0
+ObjectTemplate.setRotation 0/0/0
+objectTemplate.aiTemplate torch

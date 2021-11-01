@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/SoldierStandUp.ssc
+	
+#templateLevel MEDIUM
+
+	#include Medium/SoldierStandUp.ssc
+	
+#templateLevel LOW
+
+	#include Low/SoldierStandUp.ssc

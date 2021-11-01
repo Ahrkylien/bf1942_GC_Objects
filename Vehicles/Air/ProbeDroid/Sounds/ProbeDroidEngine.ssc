@@ -1,0 +1,33 @@
+#include ../../../Common/Sounds/EngineMap.ssc
+
+newPatch
+
+####################
+### Engine Start ###
+####################
+load @ROOT/Sound/@RTD/silence.wav
+
+#########
+### 1 ###
+#########
+load @ROOT/Sound/@RTD/probedroid-pulse.wav
+loop
+minDistance 10
+volume 0.5
+priority 9
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 70
+	param 1
+	param -1	
+endEffect
+
+###################
+### Engine Stop ###
+###################
+load @ROOT/Sound/@RTD/silence.wav

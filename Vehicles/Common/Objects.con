@@ -1,0 +1,12 @@
+ObjectTemplate.create AnimatedBundle Attach_R_Hand
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0/0/0 0/0/0
+
+ObjectTemplate.create AnimatedBundle Attach_L_Hand
+ObjectTemplate.addSkeletonIK Bip01_L_Hand 0/0/0 0/0/0
+
+ObjectTemplate.create AnimatedBundle Attach_R_Foot
+ObjectTemplate.addSkeletonIK Bip01_R_Foot 0/0/0 0/0/0
+
+ObjectTemplate.create AnimatedBundle Attach_L_Foot
+ObjectTemplate.addSkeletonIK Bip01_L_Foot 0/0/0 0/0/0
+

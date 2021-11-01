@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh endor_objective
+GeometryTemplate.file buildings/DeathStar/endor_objective
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300
+GeometryTemplate.setLodDistance 2 400
+GeometryTemplate.setLodDistance 3 500
+GeometryTemplate.setLodDistance 4 600
+GeometryTemplate.setLodDistance 5 800

@@ -1,0 +1,168 @@
+rem *** Slave1VTOLRack ***
+ObjectTemplate.create RotationalBundle Slave1VTOLRack
+rem ObjectTemplate.setNetworkableInfo Slave1EngineInfo
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Slave1VTOLEngine
+rem -------------------------------------
+ObjectTemplate.setMinRotation -20/-30/0
+ObjectTemplate.setMaxRotation 20/30/0
+ObjectTemplate.setMaxSpeed 150/50/0
+ObjectTemplate.setAcceleration 150/100/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setInputToYaw c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+rem -------------------------------------
+
+rem *** floater ***
+ObjectTemplate.create FloatingBundle Slave1Floater
+ObjectTemplate.setHullHeight 100000
+ObjectTemplate.setFloatMaxLift 9.81
+ObjectTemplate.setFloatMinLift 9.81
+
+rem *** DummyWheel ***
+ObjectTemplate.create Spring Slave1DummyWheel
+ObjectTemplate.geometry spitfire_wheel_left_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFDummyGrip
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12
+ObjectTemplate.createInvisible 1
+
+rem *** Slave1Engine ***
+ObjectTemplate.create Engine Slave1Engine
+ObjectTemplate.setNetworkableInfo Slave1EngineInfo
+ObjectTemplate.loadSoundScript Sounds/LambdaEngine.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Slave1Gyro
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/-90/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -0.3/0/0
+ObjectTemplate.setMaxRotation 0.3/0/5000
+ObjectTemplate.setMaxSpeed 3700/0/1700
+ObjectTemplate.setAcceleration 1700/0/7700
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 65
+ObjectTemplate.setDifferential 8
+ObjectTemplate.setGearUp 0.4
+ObjectTemplate.setGearDown 0.4
+
+rem *** Slave1VTOLEngine ***
+ObjectTemplate.create Engine Slave1VTOLEngine
+ObjectTemplate.setNetworkableInfo Slave1EngineInfo
+rem ObjectTemplate.loadSoundScript Sounds/LambdaEngine.ssc
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/900
+ObjectTemplate.setAcceleration 0/0/-5000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 50
+ObjectTemplate.setDifferential 5
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+
+rem *** Slave1FlapLeftMiddle ***
+ObjectTemplate.create Wing Slave1FlapLeftMiddle
+ObjectTemplate.setNetworkableInfo Slave1WingInfo
+ObjectTemplate.setMinRotation 0/-4/0
+ObjectTemplate.setMaxRotation 0/4/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setFlapLift 4
+ObjectTemplate.setRegulateToLift 4.90
+ObjectTemplate.setWingToRegulatorRatio 1
+
+rem *** Slave1FlapLeftOuter ***
+ObjectTemplate.create Wing Slave1FlapLeftOuter
+ObjectTemplate.setNetworkableInfo Slave1WingInfo
+ObjectTemplate.setMinRotation 0/-21/0
+ObjectTemplate.setMaxRotation 0/21/0
+ObjectTemplate.setMaxSpeed 0/150/0
+ObjectTemplate.setAcceleration 0/-150/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 1.5/0/-0.4
+ObjectTemplate.setWingLift 3
+ObjectTemplate.setFlapLift 3
+
+rem *** Slave1FlapRightMiddle ***
+ObjectTemplate.create Wing Slave1FlapRightMiddle
+rem ObjectTemplate.setNetworkableInfo Slave1WingInfo
+ObjectTemplate.setMinRotation 0/-4/0
+ObjectTemplate.setMaxRotation 0/4/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setFlapLift 5
+ObjectTemplate.setRegulateToLift 4.90
+ObjectTemplate.setWingToRegulatorRatio 1
+
+rem *** Slave1FlapRightOuter ***
+ObjectTemplate.create Wing Slave1FlapRightOuter
+rem ObjectTemplate.setNetworkableInfo Slave1WingInfo
+ObjectTemplate.setMinRotation 0/-21/0
+ObjectTemplate.setMaxRotation 0/21/0
+ObjectTemplate.setMaxSpeed 0/150/0
+ObjectTemplate.setAcceleration 0/150/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset -1.5/0/-0.4
+ObjectTemplate.setWingLift 3
+ObjectTemplate.setFlapLift 3
+
+rem *** Slave1FlapTailLeft ***
+ObjectTemplate.create Wing Slave1FlapTailLeft
+rem ObjectTemplate.setNetworkableInfo Slave1WingInfo
+ObjectTemplate.setMinRotation 0/-22/0
+ObjectTemplate.setMaxRotation 0/22/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/-60/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0.5/0/0
+ObjectTemplate.setWingLift 1
+ObjectTemplate.setFlapLift 1
+
+rem *** Slave1FlapTailRight ***
+ObjectTemplate.create Wing Slave1FlapTailRight
+rem ObjectTemplate.setNetworkableInfo Slave1WingInfo
+ObjectTemplate.setMinRotation 0/-22/0
+ObjectTemplate.setMaxRotation 0/22/0
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/-60/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset -0.5/0/0
+ObjectTemplate.setWingLift 1
+ObjectTemplate.setFlapLift 1
+
+rem *** Slave1Rudder ***
+ObjectTemplate.create Wing Slave1Rudder
+rem ObjectTemplate.setNetworkableInfo Slave1WingInfo
+ObjectTemplate.setMinRotation 0/-22/0
+ObjectTemplate.setMaxRotation 0/22/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/60/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/-0.5/0
+ObjectTemplate.setWingLift 3
+ObjectTemplate.setFlapLift 3
+
+rem *** Slave1BodyWingVertical ***
+ObjectTemplate.create Wing Slave1BodyWingVertical
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setWingLift 4
+ObjectTemplate.setFlapLift 0

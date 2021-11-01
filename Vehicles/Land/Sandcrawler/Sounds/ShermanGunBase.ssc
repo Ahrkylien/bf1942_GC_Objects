@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/ShermanGunBase.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/ShermanGunBase.ssc
+	
+#templateLevel LOW
+
+	#include Low/ShermanGunBase.ssc

@@ -1,0 +1,31 @@
+rem *** Weaponory ***
+
+rem * Machine gun *
+weaponTemplate.create Aichival-TMachineGun
+weaponTemplate.burst 1
+weaponTemplate.indirect 0
+weaponTemplate.minRange 5.0
+weaponTemplate.maxRange 300.0
+weaponTemplate.weaponActivate PINone
+weaponTemplate.weaponFire PIFire
+weaponTemplate.setStrength Infantry    7.0
+weaponTemplate.setStrength LightArmour 3.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Submarine   0.0
+weaponTemplate.setStrength Air         7.0
+
+rem * Bombs *
+weaponTemplate.create Aichival-TBombs
+weaponTemplate.burst 0
+weaponTemplate.indirect 1
+weaponTemplate.minRange 40.0
+weaponTemplate.maxRange 200.0
+weaponTemplate.weaponActivate PINone
+weaponTemplate.weaponFire PIAltFire
+weaponTemplate.setStrength Infantry    8.0
+weaponTemplate.setStrength LightArmour 8.0
+weaponTemplate.setStrength HeavyArmour 7.0
+weaponTemplate.setStrength NavalArmour 7.0
+weaponTemplate.setStrength Submarine   0.0
+weaponTemplate.setStrength Air         1.0

@@ -1,0 +1,27 @@
+ObjectTemplate.create Kit Fleet_Scout3
+ObjectTemplate.setType Scout
+ObjectTemplate.setKitTeam 2
+
+
+ObjectTemplate.setHealthBarIcon "Ingame/reb_Healthbar_empty_assault_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/reb_Healthbar_full_assault_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/icon_alliesknife.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_dl44.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+
+ObjectTemplate.setKitIcon 0 "kits/Icon_assault_allies_selected.tga"
+ObjectTemplate.setKitName 0 "RESPAWN_SCOUT"
+ObjectTemplate.setKitActiveName 0 "RESPAWN_ACTIVE_SCOUT"
+
+ObjectTemplate.geometry pistolgun
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+
+
+ObjectTemplate.addTemplate Dl44
+ObjectTemplate.addTemplate KnifeAllies
+ObjectTemplate.addTemplate NoChute
+
+ObjectTemplate.aitemplate Assault

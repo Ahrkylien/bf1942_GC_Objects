@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle com_table_glow
+ObjectTemplate.geometry com_table_glow
+
+

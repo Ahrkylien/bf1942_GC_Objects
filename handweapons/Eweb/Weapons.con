@@ -1,0 +1,22 @@
+ObjectTemplate.create FireArms ewebweaponfire
+ObjectTemplate.loadSoundScript Sounds/Eweb.ssc
+ObjectTemplate.aiTemplate mortarGun
+ObjectTemplate.addTemplate e_MuzzThomp
+ObjectTemplate.networkableInfo eweb_firearmsInfo
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.projectileTemplate LightLaserProjectileRedS
+ObjectTemplate.magSize 999
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 4
+ObjectTemplate.roundOfFire 5
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 100
+ObjectTemplate.maxhitpoints 100
+ObjectTemplate.autoReload 0
+ObjectTemplate.velocity 500
+
+

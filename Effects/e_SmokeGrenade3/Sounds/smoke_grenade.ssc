@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include smoke_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include smoke_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include smoke_MedLow.ssc

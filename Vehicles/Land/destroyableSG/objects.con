@@ -1,0 +1,90 @@
+rem ******** Destroyable Shieldgenerator ******
+rem ******** 29 April 05
+
+ObjectTemplate.create PlayercontrolObject DestroyableSG
+ObjectTemplate.setNetworkableInfo DestroyableSGInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 1400
+ObjectTemplate.maxhitpoints 1400
+ObjectTemplate.material 811
+ObjectTemplate.criticalDamage 7.5
+ObjectTemplate.hpLostWhileCriticalDamage 0.75
+ObjectTemplate.explosionRadius 50
+ObjectTemplate.explosionDamage 500
+
+ObjectTemplate.addArmorEffect 1300 e_ExplGas 0/2/0
+ObjectTemplate.addArmorEffect 1000 em_ExFumePOW 0/4/0
+ObjectTemplate.addArmorEffect 1200 em_FletcherDamage 7/7/20
+ObjectTemplate.addArmorEffect 800 em_FletcherDamage -7/7/-20
+ObjectTemplate.addArmorEffect 700 em_FletcherDamage -5/8/-10
+ObjectTemplate.addArmorEffect 600 em_FletcherDamage 6/6/-10
+ObjectTemplate.addArmorEffect 500 em_FletcherDamage 4/6/5
+ObjectTemplate.addArmorEffect 400 em_FletcherDamage -4/6/8
+ObjectTemplate.addArmorEffect 300 em_FletcherDamage 7/6/15
+ObjectTemplate.addArmorEffect 100 e_scrapmetal 0/6/0
+ObjectTemplate.addArmorEffect 0 em_ExFumePOW -3/4/0
+ObjectTemplate.addArmorEffect 50 e_scrapmetal 0/6/10
+ObjectTemplate.addArmorEffect 9 e_scrapmetal -4/6/5
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 4/6/-5
+ObjectTemplate.addArmorEffect 0 e_scrapmetal -2/6/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 2/6/0
+ObjectTemplate.addArmorEffect 0 e_Wreck1Smoke 0/4/4
+
+ObjectTemplate.FadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.timetoliveafterdeath 9999
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+
+rem **** runner explosion *******
+rem DEATH BLOW
+ObjectTemplate.addArmorEffect 200 e_ExplGas -2/3/-8
+ObjectTemplate.addArmorEffect 180 e_ExplGas 3/5/0
+ObjectTemplate.addArmorEffect 160 e_ExplGas -2/5/10
+ObjectTemplate.addArmorEffect 0 e_ExplCap  5/2/0
+
+ObjectTemplate.addArmorEffect 120 e_ExplGas 1/4.3/10
+ObjectTemplate.addArmorEffect 140 e_ExplGas -5/6/15
+ObjectTemplate.addArmorEffect 100 e_ExplGas 2/5.0/-15
+ObjectTemplate.addArmorEffect 80 e_ExplGas -3/8.0/-10
+ObjectTemplate.addArmorEffect 20 e_ExplGas 1/7/0
+
+ObjectTemplate.addArmorEffect 30 e_ExplGas 1/2.3/1.3
+ObjectTemplate.addArmorEffect 10 e_ExplGas 5/2/5
+ObjectTemplate.addArmorEffect 0 e_ExplGas -3/1/5
+ObjectTemplate.addArmorEffect 75 e_ExplGas 0/2/-1
+ObjectTemplate.addArmorEffect 40 e_ExplGas 10/3/0
+
+ObjectTemplate.addArmorEffect 0 e_ExplGas 4/4.3/-20
+ObjectTemplate.addArmorEffect 0 e_ExplGas -4/3/20
+ObjectTemplate.addArmorEffect 0 e_ExplGas 2/0/10
+ObjectTemplate.addArmorEffect 0 e_ExplGas -5/4/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas -2/0/-10
+rem DEATH BLOW
+
+ObjectTemplate.addTemplate lodDestroyableSG
+
+rem *** lodDestroyableSG ***
+ObjectTemplate.create LodObject lodDestroyableSG
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate DestroyableSG_simple
+ObjectTemplate.addTemplate DestroyableSG_wreck
+ObjectTemplate.lodSelector DestroyableSGLodSelector
+
+ObjectTemplate.create SimpleObject destroyableSG_simple
+ObjectTemplate.geometry destroyableSG
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+rem *** ***
+ObjectTemplate.create bundle DestroyableSG_wreck
+ObjectTemplate.geometry DestroyableSGwreck
+ObjectTemplate.addtemplate e_scrapmetalsmoke
+ObjectTemplate.setPosition 3/0/-3
+
+LodSelectorTemplate.create DistCompareSelector2 DestroyableSGLodSelector
+LodSelectorTemplate.hasDestroyedLod 1

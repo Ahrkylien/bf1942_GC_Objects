@@ -1,0 +1,823 @@
+
+rem *** REPUBLIC GUNSHIP ***
+rem Galactic Conquest
+rem ************************
+
+rem RepGun Feb 16, 2005
+rem Repgun Added new glide engine as RepLevelEngine
+
+ObjectTemplate.create PlayerControlObject RepGun
+ObjectTemplate.setNetworkableInfo repgun_body_info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag .8
+ObjectTemplate.mass 2500
+ObjectTemplate.inertiaModifier 0.4/0.4/0.4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 1.5
+ObjectTemplate.hitpoints 400
+ObjectTemplate.maxhitpoints 400
+ObjectTemplate.material 811
+ObjectTemplate.criticalDamage 20
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.hpLostWhileUpSideDown 50
+ObjectTemplate.hpLostWhileDamageFromWater 56
+ObjectTemplate.addArmorEffect 110 em_PlaneDamage 1/0.5/.5
+ObjectTemplate.addArmorEffect 75 em_PlaneDamage -1/0.5/.5
+ObjectTemplate.addArmorEffect 75 em_PlaneDamage 1/0.5/.5
+ObjectTemplate.addArmorEffect 50 e_StukaFire -1/1/.5
+ObjectTemplate.addArmorEffect 20 e_StukaFire 1/1/.5
+ObjectTemplate.addArmorEffect 20 e_StukaFire -1/1/.5
+ObjectTemplate.addArmorEffect 0 e_StukaFire -1/1/.5
+ObjectTemplate.addArmorEffect 0 e_StukaFire 1/1/.5
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Plane 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodRepGun
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/-1.2/-1.42359 0/0/0
+ObjectTemplate.GUIIndex 108
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_missile_concussion.dds"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_gunship.dds"
+ObjectTemplate.setVehicleIconPos 41/52
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTDivebomber
+ObjectTemplate.setToolTipType  TTDivebomber
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_gunship.dds"
+
+rem *** lod ***
+ObjectTemplate.create LodObject lodRepGun
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate GunShipComplex
+ObjectTemplate.addTemplate GunShipSimple
+ObjectTemplate.addTemplate GunShipWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector GunShipLodSelector
+
+
+rem *** Complex ***
+ObjectTemplate.create Bundle GunShipComplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.loadSoundScript Sounds/RepGunCockpit.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodGunShipCockpit
+ObjectTemplate.addTemplate GunShipCamera 
+ObjectTemplate.setPosition 0/0.3/0
+ObjectTemplate.addTemplate GunShipEntry
+ObjectTemplate.setPosition -0.0015312/1.41595/3.90604
+
+ObjectTemplate.addTemplate GunShip_CoPilot
+ObjectTemplate.addTemplate GunShip_BubbleGunner1
+ObjectTemplate.addTemplate GunShip_BubbleGunner2
+ObjectTemplate.addTemplate GunShip_Passenger1
+ObjectTemplate.addTemplate GunShip_Passenger2
+
+ObjectTemplate.addTemplate RollWheelBundle
+ObjectTemplate.setPosition 3/-3/7
+ObjectTemplate.addTemplate RollWheelBundle
+ObjectTemplate.setPosition -3/-3/7
+ObjectTemplate.addTemplate DummyWheel
+ObjectTemplate.setPosition 3.5/-3/-7
+ObjectTemplate.addTemplate DummyWheel
+ObjectTemplate.setPosition -3.5/-3/-7
+
+
+ObjectTemplate.addTemplate GunShip_Wing_Mesh
+
+ObjectTemplate.addTemplate GunShipRearFlap
+ObjectTemplate.setPosition 0/-.3/-7.6
+ObjectTemplate.addTemplate GunShipDummyEngineRack
+ObjectTemplate.setPosition 0/1.4/2.2
+ObjectTemplate.addTemplate GunShipDummyRearEngineRack
+ObjectTemplate.setPosition .9/1.65/-7.95
+ObjectTemplate.addTemplate GunShipEngineRack1
+ObjectTemplate.setPosition 0/1/2.5
+ObjectTemplate.addTemplate GunShipEngineRack2
+ObjectTemplate.setPosition 0/1/-2.5
+ObjectTemplate.addTemplate GunShipEngineRack3
+ObjectTemplate.setPosition 0/1/0
+
+rem ObjectTemplate.addTemplate GunMainEngine
+rem ObjectTemplate.setPosition 0/0/1
+rem ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate RepLevelEngine
+ObjectTemplate.setPosition 0/0/0
+
+ObjectTemplate.addTemplate GunShipRockets
+
+
+rem -------------- Create PCO's AND TURRENTS ---------------
+rem *** COPILOT ***
+ObjectTemplate.create PlayerControlObject GunShip_CoPilot
+ObjectTemplate.setNetworkableInfo repgun_body_info
+rem -------------------------------------
+ObjectTemplate.addTemplate GunShipEntry
+ObjectTemplate.setPosition 0/-1.2/-1.42359
+ObjectTemplate.addTemplate GunShipFrontGun1
+ObjectTemplate.setPosition -0.636679/-1.95135/6.34031
+ObjectTemplate.addTemplate GunShipFrontGun2
+ObjectTemplate.setPosition 0.666779/-1.95135/6.34031
+rem ObjectTemplate.setRotation 0.0/12.9795/180.0
+ObjectTemplate.addTemplate GunShipCameraMove
+ObjectTemplate.setPosition 0/-0.8/9
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/-1.2/-1.42359 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_gunship.dds"
+ObjectTemplate.setVehicleIconPos 27/65
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_greenlaser_64x64.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+
+rem *** CoPilot Turrents ***
+ObjectTemplate.create RotationalBundle GunShipFrontGun1
+ObjectTemplate.setNetworkableInfo repgun_turrent_Info
+ObjectTemplate.loadSoundScript Sounds/TurretRotate.ssc
+ObjectTemplate.geometry gunship_fturret_left
+rem -------------------------------------
+ObjectTemplate.addTemplate GunShipFrontLaser
+rem -------------------------------------
+ObjectTemplate.setMinRotation -35/-25/0
+ObjectTemplate.setMaxRotation 35/70/0
+ObjectTemplate.setMaxSpeed 15/15/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+ObjectTemplate.create RotationalBundle GunShipFrontGun2
+ObjectTemplate.setNetworkableInfo repgun_turrent_Info
+ObjectTemplate.loadSoundScript Sounds/TurretRotate.ssc
+ObjectTemplate.geometry gunship_fturret_right
+rem -------------------------------------
+ObjectTemplate.addTemplate GunShipFrontLaser
+rem -------------------------------------
+ObjectTemplate.setMinRotation -35/-25/0
+ObjectTemplate.setMaxRotation 35/70/0
+ObjectTemplate.setMaxSpeed 15/15/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem ----------- BUBBLE GUNNERS -------------
+
+ObjectTemplate.create PlayerControlObject GunShip_BubbleGunner1
+ObjectTemplate.setNetworkableInfo repgun_body_info
+rem -------------------------------------
+ObjectTemplate.addTemplate GunShipEntry
+ObjectTemplate.setPosition -2.47266/-1.92255/1.8311
+ObjectTemplate.addTemplate GunShipBubbleGun1
+ObjectTemplate.setPosition -2.47266/-1.92255/1.8311
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/-1.2/-1.42359 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_gunship.dds"
+ObjectTemplate.setVehicleIconPos 70/79
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_greenlaser_64x64.tga"
+ObjectTemplate.setPrimaryAmmoBar ABHeatBarOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+
+rem *** CoPilot Turrents ***
+ObjectTemplate.create RotationalBundle GunShipBubbleGun1
+ObjectTemplate.setNetworkableInfo repgun_turrent_Info
+ObjectTemplate.loadSoundScript Sounds/TurretRotate.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate GunShipBubbleLaser
+ObjectTemplate.addTemplate GunShipBubbleLaser2
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate GunShipBubbleCamera
+ObjectTemplate.addTemplate GunShipSeat
+ObjectTemplate.setPosition 0/0.2/1.2
+rem -------------------------------------
+ObjectTemplate.setMinRotation -130/-5/0
+ObjectTemplate.setMaxRotation 0/45/0
+ObjectTemplate.setMaxSpeed 20/20/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem -------------------
+
+ObjectTemplate.create PlayerControlObject GunShip_BubbleGunner2
+ObjectTemplate.setNetworkableInfo repgun_body_info
+rem -------------------------------------
+ObjectTemplate.addTemplate GunShipEntry
+ObjectTemplate.setPosition 2.52299/-1.92255/1.8311
+ObjectTemplate.addTemplate GunShipBubbleGun2
+ObjectTemplate.setPosition 2.52299/-1.92255/1.8311
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/-1.2/-1.42359 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_gunship.dds"
+ObjectTemplate.setVehicleIconPos 9/60
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_greenlaser_64x64.tga"
+ObjectTemplate.setPrimaryAmmoBar ABHeatBarOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+
+rem *** Turrent2 ***
+ObjectTemplate.create RotationalBundle GunShipBubbleGun2
+ObjectTemplate.setNetworkableInfo repgun_turrent_Info
+ObjectTemplate.loadSoundScript Sounds/TurretRotate.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate GunShipBubbleLaser
+ObjectTemplate.addTemplate GunShipBubbleLaser2
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate GunShipBubbleCamera
+ObjectTemplate.addTemplate GunShipSeat
+ObjectTemplate.setPosition 0/0.2/1.2
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-5/0
+ObjectTemplate.setMaxRotation 130/45/0
+ObjectTemplate.setMaxSpeed 20/20/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+Rem ***** PASSENGER
+
+rem *** GunShip Pass ***
+ObjectTemplate.create PlayerControlObject GunShip_Passenger1
+ObjectTemplate.setNetworkableInfo repgun_body_info
+rem -------------------------------------
+ObjectTemplate.addTemplate GunShipEntry
+ObjectTemplate.setPosition -0.632959/-1.49439/-1.42359
+ObjectTemplate.addTemplate GunShipCamera
+ObjectTemplate.setPosition -0.632959/-1.2/-1.42359
+ObjectTemplate.addTemplate GunShipStandSeat
+ObjectTemplate.setPosition -0.632959/-1.49439/-1.42359
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -0.632959/-1.49439/-1.42359 0/0/0
+ObjectTemplate.GUIIndex 53
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_gunship.tga"
+ObjectTemplate.setVehicleIconPos 70/61
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAPC
+ObjectTemplate.setToolTipType  TTAPC
+ObjectTemplate.hasRestrictedExit 0
+
+rem *** GunShip Pass ***
+ObjectTemplate.create PlayerControlObject GunShip_Passenger2
+ObjectTemplate.setNetworkableInfo repgun_body_info
+rem -------------------------------------
+ObjectTemplate.addTemplate GunShipEntry
+ObjectTemplate.setPosition 0.700819/-1.49439/-1.42359
+ObjectTemplate.addTemplate GunShipCamera
+ObjectTemplate.setPosition 0.700819/-1.2/-1.42359
+ObjectTemplate.addTemplate GunShipStandSeat
+ObjectTemplate.setPosition 0.700819/-1.49439/-1.42359
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0.700819/-1.49439/-1.42359 0/0/0
+ObjectTemplate.GUIIndex 53
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_gunship.tga"
+ObjectTemplate.setVehicleIconPos 55/61
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAPC
+ObjectTemplate.setToolTipType  TTAPC
+ObjectTemplate.hasRestrictedExit 0
+
+
+
+rem -----------------------------------------------------------
+rem ENGINE RACK CODE - Nice Rack, baby. - 
+rem -----------------------------------------------------------
+
+rem *** DummyEngineRack ***
+ObjectTemplate.create RotationalBundle GunShipDummyEngineRack
+ObjectTemplate.setNetworkableInfo repgun_body_info
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate GunShipDummyEngine
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/270/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -2/-2/-2
+ObjectTemplate.setMaxRotation 2/2/2
+ObjectTemplate.setMaxSpeed 150/150/-150
+ObjectTemplate.setAcceleration 150/150/-150
+ObjectTemplate.setInputToRoll c_PIRoll
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+
+rem *** DummyRearEngineRack ***
+ObjectTemplate.create Bundle GunshipDummyRearEngineRack
+ObjectTemplate.setNetworkableInfo repgun_body_info
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate GunshipDummyRearEngine
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotatation 0/270/0
+rem -------------------------------------
+
+
+rem *** EngineRack1 ***
+ObjectTemplate.create RotationalBundle GunShipEngineRack1
+rem ObjectTemplate.setNetworkableInfo repgun_body_info
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate GunShipHoverEngine1
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/270/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -20/-20/-20
+ObjectTemplate.setMaxRotation 20/20/20
+ObjectTemplate.setMaxSpeed 150/150/-150
+ObjectTemplate.setAcceleration 150/150/-150
+ObjectTemplate.setInputToRoll c_PIYaw
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** EngineRack2 ***
+ObjectTemplate.create RotationalBundle GunShipEngineRack2
+rem ObjectTemplate.setNetworkableInfo repgun_body_info
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate GunShipHoverEngine2
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/270/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -20/-20/-20
+ObjectTemplate.setMaxRotation 20/20/20
+ObjectTemplate.setMaxSpeed 150/150/150
+ObjectTemplate.setAcceleration 150/150/150
+ObjectTemplate.setInputToRoll c_PIYaw
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+
+rem *** EngineRack3 ***
+ObjectTemplate.create RotationalBundle GunShipEngineRack3
+rem ObjectTemplate.setNetworkableInfo repgun_body_info
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate GunShipHoverEngine3
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/270/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -20/-20/-20
+ObjectTemplate.setMaxRotation 20/20/20
+ObjectTemplate.setMaxSpeed 150/150/-150
+ObjectTemplate.setAcceleration 150/150/-150
+ObjectTemplate.setInputToRoll c_PIRoll
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+
+
+rem -----------------------------------------------
+rem CREATE OBJECTS!
+rem -----------------------------------------------
+
+
+rem *** Cockpit ***
+ObjectTemplate.create LodObject lodGunShipCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate GunShipCockpitExternal
+ObjectTemplate.addTemplate GunShipCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector GunShipCockpitSelector
+
+rem *** CockpitExternal ***
+ObjectTemplate.create Bundle GunshipCockpitExternal
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.geometry GunShip
+
+rem *** CockpitInternal ***
+ObjectTemplate.create SimpleObject GunShipCockpitInternal
+ObjectTemplate.geometry gunship_pilot_cockpit
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+
+
+ObjectTemplate.create SimpleObject GunShip_Wing_Mesh
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.geometry GunShip_Wings
+
+rem *** CockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector GunShipCockpitSelector
+LodSelectorTemplate.addLodDistance 10
+LodSelectorTemplate.addLodComparison 0.5
+
+ObjectTemplate.create Camera GunShipCameraMove
+ObjectTemplate.setMinRotation -35/-20/0
+ObjectTemplate.setMaxRotation 35/70/0
+ObjectTemplate.setMaxSpeed 15/15/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** Camera ***
+ObjectTemplate.create Camera GunShipCamera
+ObjectTemplate.setMinRotation -70/-60/0
+ObjectTemplate.setMaxRotation 70/30/0
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/-5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.OutsideHudOffset 0/1/4.1
+
+rem ---------------------------------------------
+rem ---------------------------------------------
+rem *** GUNCAM ***
+rem *** GunnerCamera ***
+ObjectTemplate.create Camera GunShipBubbleCamera
+ObjectTemplate.addTemplate lodGunShipBubbleHUD
+ObjectTemplate.setPosition 0/0/0
+
+rem *** Cockpit ***
+ObjectTemplate.create LodObject lodGunShipBubbleHUD
+rem -------------------------------------
+ObjectTemplate.addTemplate BubbleExternal
+ObjectTemplate.addTemplate BubbleInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector GunShipBubbleHUDSelector
+
+rem *** CockpitExternal ***
+ObjectTemplate.create Bundle BubbleExternal
+ObjectTemplate.geometry gunship_bubble
+
+rem *** CockpitInternal ***
+ObjectTemplate.create SimpleObject BubbleInternal
+ObjectTemplate.geometry gunship_bubble_cockpit
+ObjectTemplate.setPosition 0/-4.1/-0.24
+
+
+rem *** CockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector GunShipBubbleHUDSelector
+LodSelectorTemplate.addLodDistance 10
+LodSelectorTemplate.addLodComparison 0.5
+
+rem ---------------------------------------------
+rem ---------------------------------------------
+
+rem *** Seat ***
+ObjectTemplate.create SeatObject GunshipSeat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+
+rem *** Seat ***
+ObjectTemplate.create SeatObject GunShipStandSeat
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+
+rem *** Entry ***
+ObjectTemplate.create EntryPoint GunShipEntry
+ObjectTemplate.setEntryRadius 6
+
+rem ***GunShipSimple ***
+ObjectTemplate.create SimpleObject GunShipSimple
+ObjectTemplate.geometry GunShip
+
+rem *** Wreck ***
+ObjectTemplate.create SimpleObject GunShipWreck
+ObjectTemplate.geometry wreck_gunship
+
+rem *** LodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 GunShipLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 700
+
+
+
+rem ---------------------------------------------
+rem ---------------------------------------------
+rem ---------------------------------------------
+rem GUNSHIP VERISON 2 - LOW ARMED
+rem ---------------------------------------------
+rem ---------------------------------------------
+rem ---------------------------------------------
+
+
+rem *** REPUBLIC GUNSHIP2 ***
+rem Galactic Conquest
+rem ************************
+
+ObjectTemplate.create PlayerControlObject RepGun2
+ObjectTemplate.setNetworkableInfo repgun_body_info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag .8
+ObjectTemplate.mass 2500
+ObjectTemplate.inertiaModifier 0.4/0.4/0.4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 1.5
+ObjectTemplate.hitpoints 400
+ObjectTemplate.maxhitpoints 400
+ObjectTemplate.material 811
+ObjectTemplate.criticalDamage 20
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.hpLostWhileUpSideDown 50
+ObjectTemplate.hpLostWhileDamageFromWater 56
+ObjectTemplate.addArmorEffect 110 em_PlaneDamage 1/0.5/.5
+ObjectTemplate.addArmorEffect 75 em_PlaneDamage -1/0.5/.5
+ObjectTemplate.addArmorEffect 75 em_PlaneDamage 1/0.5/.5
+ObjectTemplate.addArmorEffect 50 e_StukaFire -1/1/.5
+ObjectTemplate.addArmorEffect 20 e_StukaFire 1/1/.5
+ObjectTemplate.addArmorEffect 20 e_StukaFire -1/1/.5
+ObjectTemplate.addArmorEffect 0 e_StukaFire -1/1/.5
+ObjectTemplate.addArmorEffect 0 e_StukaFire 1/1/.5
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Plane 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodRepGun2
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/-1.2/-1.42359 0/0/0
+ObjectTemplate.GUIIndex 108
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_missile_concussion.dds"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_gunship.dds"
+ObjectTemplate.setVehicleIconPos 41/52
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTDivebomber
+ObjectTemplate.setToolTipType  TTDivebomber
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_gunship.dds"
+
+rem *** lod ***
+ObjectTemplate.create LodObject lodRepGun2
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate GunShipComplex2
+ObjectTemplate.addTemplate GunShipSimple
+ObjectTemplate.addTemplate GunShipWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector GunShipLodSelector
+
+
+rem *** Complex ***
+ObjectTemplate.create Bundle GunShipComplex2
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.loadSoundScript Sounds/RepGunCockpit.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodGunShipCockpit
+ObjectTemplate.addTemplate GunShipCamera 
+ObjectTemplate.setPosition 0/0.3/0
+ObjectTemplate.addTemplate GunShipEntry
+ObjectTemplate.setPosition -0.0015312/1.41595/3.90604
+
+ObjectTemplate.addTemplate GunShip_CoPilot2
+rem ObjectTemplate.addTemplate GunShip_BubbleGunner1
+ObjectTemplate.addTemplate GunShip_BubbleGunner2
+ObjectTemplate.addTemplate GunShip_Passenger1
+ObjectTemplate.addTemplate GunShip_Passenger2
+
+ObjectTemplate.addTemplate RollWheelBundle
+ObjectTemplate.setPosition 3.5/-3/7
+ObjectTemplate.addTemplate RollWheelBundle
+ObjectTemplate.setPosition -3.5/-3/7
+ObjectTemplate.addTemplate DummyWheel
+ObjectTemplate.setPosition 4.5/-3/-7
+ObjectTemplate.addTemplate DummyWheel
+ObjectTemplate.setPosition -4.5/-3/-7
+
+
+ObjectTemplate.addTemplate GunShip_Wing_Mesh
+
+ObjectTemplate.addTemplate GunShipRearFlap
+ObjectTemplate.setPosition 0/-.3/-7.6
+ObjectTemplate.addTemplate GunShipDummyEngineRack
+ObjectTemplate.setPosition 0/1.4/2.2
+ObjectTemplate.addTemplate GunShipDummyRearEngineRack
+ObjectTemplate.setPosition .9/1.65/-7.95
+ObjectTemplate.addTemplate GunShipEngineRack1
+ObjectTemplate.setPosition 0/1/2.5
+ObjectTemplate.addTemplate GunShipEngineRack2
+ObjectTemplate.setPosition 0/1/-2.5
+ObjectTemplate.addTemplate GunShipEngineRack3
+ObjectTemplate.setPosition 0/1/0
+
+rem ObjectTemplate.addTemplate GunMainEngine
+rem ObjectTemplate.setPosition 0/0/1
+rem ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate RepLevelEngine
+ObjectTemplate.setPosition 0/0/0
+
+ObjectTemplate.addTemplate GunShipRockets2
+
+
+ObjectTemplate.create PlayerControlObject GunShip_CoPilot2
+ObjectTemplate.setNetworkableInfo repgun_body_info
+rem -------------------------------------
+ObjectTemplate.addTemplate GunShipEntry
+ObjectTemplate.setPosition 0/-1.2/-1.42359
+ObjectTemplate.addTemplate GunShipCameraMove
+ObjectTemplate.setPosition -0.632959/-1.2/0
+ObjectTemplate.addTemplate GunShipStandSeat
+ObjectTemplate.setPosition -0.632959/-1.49439/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/-1.2/-1.42359 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_gunship.dds"
+ObjectTemplate.setVehicleIconPos 27/65
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+
+rem ------------------------------------------------------------------------------------
+
+rem *** IMPERIAL GUNSHIP ***
+rem Galactic Conquest
+rem ************************
+
+ObjectTemplate.create PlayerControlObject ImpGunship
+ObjectTemplate.setNetworkableInfo ImpGunship_body_info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag .8
+ObjectTemplate.mass 2500
+ObjectTemplate.inertiaModifier 0.4/0.4/0.4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 1.5
+ObjectTemplate.hitpoints 400
+ObjectTemplate.maxhitpoints 400
+ObjectTemplate.material 811
+ObjectTemplate.criticalDamage 20
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.hpLostWhileUpSideDown 50
+ObjectTemplate.hpLostWhileDamageFromWater 56
+ObjectTemplate.addArmorEffect 110 em_PlaneDamage 1/0.5/.5
+ObjectTemplate.addArmorEffect 75 em_PlaneDamage -1/0.5/.5
+ObjectTemplate.addArmorEffect 75 em_PlaneDamage 1/0.5/.5
+ObjectTemplate.addArmorEffect 50 e_StukaFire -1/1/.5
+ObjectTemplate.addArmorEffect 20 e_StukaFire 1/1/.5
+ObjectTemplate.addArmorEffect 20 e_StukaFire -1/1/.5
+ObjectTemplate.addArmorEffect 0 e_StukaFire -1/1/.5
+ObjectTemplate.addArmorEffect 0 e_StukaFire 1/1/.5
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Plane 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodImpGunship
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/-1.2/-1.42359 0/0/0
+ObjectTemplate.GUIIndex 108
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_missile_concussion.dds"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_gunship.dds"
+ObjectTemplate.setVehicleIconPos 41/52
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTDivebomber
+ObjectTemplate.setToolTipType  TTDivebomber
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_gunship.dds"
+
+rem *** lod ***
+ObjectTemplate.create LodObject lodImpGunship
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ImpGunshipComplex
+ObjectTemplate.addTemplate ImpGunshipSimple
+ObjectTemplate.addTemplate ImpGunshipWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector ImpGunshipLodSelector
+
+
+rem *** Complex ***
+ObjectTemplate.create Bundle ImpGunshipComplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.loadSoundScript Sounds/RepGunCockpit.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodImpGunshipCockpit
+ObjectTemplate.addTemplate GunShipCamera 
+ObjectTemplate.setPosition 0/0.3/0
+ObjectTemplate.addTemplate ImpGunshipEntry
+ObjectTemplate.setPosition -0.0015312/1.41595/3.90604
+
+ObjectTemplate.addTemplate GunShip_CoPilot
+ObjectTemplate.addTemplate GunShip_BubbleGunner1
+ObjectTemplate.addTemplate GunShip_BubbleGunner2
+ObjectTemplate.addTemplate GunShip_Passenger1
+ObjectTemplate.addTemplate GunShip_Passenger2
+
+ObjectTemplate.addTemplate RollWheelBundle
+ObjectTemplate.setPosition 3.5/-3/7
+ObjectTemplate.addTemplate RollWheelBundle
+ObjectTemplate.setPosition -3.5/-3/7
+ObjectTemplate.addTemplate DummyWheel
+ObjectTemplate.setPosition 4.5/-3/-7
+ObjectTemplate.addTemplate DummyWheel
+ObjectTemplate.setPosition -4.5/-3/-7
+
+
+ObjectTemplate.addTemplate ImpGunShip_Wing_Mesh
+
+ObjectTemplate.addTemplate GunShipRearFlap
+ObjectTemplate.setPosition 0/-.3/-7.6
+ObjectTemplate.addTemplate GunShipDummyEngineRack
+ObjectTemplate.setPosition 0/1.4/2.2
+ObjectTemplate.addTemplate GunShipDummyRearEngineRack
+ObjectTemplate.setPosition .9/1.65/-7.95
+ObjectTemplate.addTemplate GunShipEngineRack1
+ObjectTemplate.setPosition 0/1/2.5
+ObjectTemplate.addTemplate GunShipEngineRack2
+ObjectTemplate.setPosition 0/1/-2.5
+ObjectTemplate.addTemplate GunShipEngineRack3
+ObjectTemplate.setPosition 0/1/0
+ObjectTemplate.addTemplate RepLevelEngine
+ObjectTemplate.setPosition 0/0/0
+
+
+ObjectTemplate.addTemplate GunShipRockets
+
+
+rem *** Cockpit ***
+ObjectTemplate.create LodObject lodImpGunShipCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate ImpGunShipCockpitExternal
+ObjectTemplate.addTemplate GunShipCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector ImpGunShipCockpitSelector
+
+rem *** CockpitExternal ***
+ObjectTemplate.create Bundle ImpGunshipCockpitExternal
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.geometry ImpGunShip
+
+rem *** CockpitInternal ***
+ObjectTemplate.create SimpleObject ImpGunShipCockpitInternal
+ObjectTemplate.geometry gunship_pilot_cockpit
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+
+
+ObjectTemplate.create SimpleObject ImpGunShip_Wing_Mesh
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.geometry ImpGunShip_Wings
+
+rem *** CockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector ImpGunShipCockpitSelector
+LodSelectorTemplate.addLodDistance 10
+LodSelectorTemplate.addLodComparison 0.5
+
+rem *** Entry ***
+ObjectTemplate.create EntryPoint ImpGunShipEntry
+ObjectTemplate.setEntryRadius 6
+
+rem ***GunShipSimple ***
+ObjectTemplate.create SimpleObject ImpGunShipSimple
+ObjectTemplate.geometry GunShip
+
+rem *** Wreck ***
+ObjectTemplate.create SimpleObject ImpGunShipWreck
+ObjectTemplate.geometry wreck_gunship
+
+rem *** LodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 ImpGunShipLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 700

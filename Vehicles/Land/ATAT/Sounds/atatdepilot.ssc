@@ -1,0 +1,19 @@
+#templateLevel HIGH
+
+newPatch
+load @ROOT/Sound/@RTD/atatdepilot.wav
+loop
+dopplerOff
+minDistance 25
+volume 10
+priority 5
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 15
+	param 25
+	param 1
+	param -1	
+endEffect

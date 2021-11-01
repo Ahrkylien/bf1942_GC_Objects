@@ -1,0 +1,80 @@
+ObjectTemplate.create HandFireArms Cammo
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.loadSoundScript Sounds/BuildEweb.ssc
+ObjectTemplate.itemIndex 2
+ObjectTemplate.projectileTemplate BuildCammo
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.projectileVisible 0
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 999
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.autoReload 1
+ObjectTemplate.GUIIndex 10
+ObjectTemplate.setHudAmmoType ATIcon
+ObjectTemplate.setAmmoIcon "ammo/icon_laser_64x32.dds"
+ObjectTemplate.setHasMag 0
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.velocity 1
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.hideDuringFireTime 0.2
+ObjectTemplate.fireDelay 0.4
+ObjectTemplate.soldierCameraPosition 0/-0.05/0.3
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+ObjectTemplate.AmmoType	99
+
+
+ObjectTemplate.createSkeleton animations/Cammo.ske
+ObjectTemplate.useSkeletonPartAsMain base
+ObjectTemplate.addTemplate CammoLod
+
+rem *** Objects ***
+ObjectTemplate.create SimpleObject CammoSimple
+ObjectTemplate.geometry Landmine
+
+ObjectTemplate.create AnimatedBundle CammoComplex
+ObjectTemplate.geometry Landmine
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.createSkeleton animations/Cammo.ske
+
+ObjectTemplate.create LodObject CammoLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate CammoComplex
+ObjectTemplate.addTemplate CammoSimple
+
+
+rem *** Spawn *** 
+ObjectTemplate.create ObjectSpawner BuildCammoSpawner
+ObjectTemplate.setObjectTemplate 1 CammoPlace
+ObjectTemplate.setObjectTemplate 2 CammoPlace
+ObjectTemplate.holdObject 0 
+ObjectTemplate.minSpawnDelay 0 
+ObjectTemplate.maxSpawnDelay 0 
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 1000 
+ObjectTemplate.spawnOffset 0/.17/0
+ObjectTemplate.team 2 
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+ObjectTemplate.create Projectile BuildCammo
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.saveInSeparateFile 1 
+ObjectTemplate.addTemplate BuildCammoSpawner
+ObjectTemplate.setPosition 0/0/.4 
+ObjectTemplate.timeToLive CRD_NONE/1/0/0 
+ObjectTemplate.gravityModifier 0.5 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.DetonateOnWaterCollision 1 
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 

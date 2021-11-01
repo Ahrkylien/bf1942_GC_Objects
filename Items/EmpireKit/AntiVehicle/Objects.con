@@ -1,0 +1,33 @@
+ObjectTemplate.create Kit Empire_AT
+ObjectTemplate.setType AT
+ObjectTemplate.setKitTeam 1
+ObjectTemplate.geometry Kit_Axis_AntiTank
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+
+ObjectTemplate.addTemplate Imp_AT_Backpack
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_at_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_at_64x64.tga"
+
+rem Add Class Visual Art
+rem ObjectTemplate.addTemplate Empire_AntiVehicle_Badge
+
+ObjectTemplate.addWeaponIcon "Weapon/icon_axisknife.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_speederpistol.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_flechette.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_impmine.dds"
+
+ObjectTemplate.setKitIcon 2 "kits/Icon_antitank_axis_selected.tga"
+ObjectTemplate.setKitName 2 "RESPAWN_AT"
+ObjectTemplate.setKitActiveName 2 "RESPAWN_ACTIVE_AT"
+
+ObjectTemplate.addTemplate Flechette
+ObjectTemplate.addTemplate speederpistol
+ObjectTemplate.addTemplate KnifeAxis
+ObjectTemplate.addTemplate Impmine
+
+ObjectTemplate.addTemplate NoChute
+
+ObjectTemplate.aiTemplate  AT

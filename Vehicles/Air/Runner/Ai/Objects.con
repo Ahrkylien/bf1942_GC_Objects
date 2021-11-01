@@ -1,0 +1,123 @@
+rem *** Plugins ***
+aiTemplatePlugIn.create Unit MilleniumFalconUnit
+aiTemplatePlugIn.equipmentType 1
+aiTemplatePlugIn.setStrategicStrength 0 3
+aiTemplatePlugIn.setStrategicStrength 1 3
+
+aiTemplatePlugIn.create Cover ZeroCover
+aiTemplatePlugIn.coverValue 2.0
+
+aiTemplatePlugIn.create Physical ZeroPhysical
+aiTemplatePlugIn.setStrType Air
+
+aiTemplatePlugIn.create ControlInfo3d ZeroCtrl
+aiTemplatePlugIn.driveTurnControl     PIYaw
+aiTemplatePlugIn.driveThrottleControl PIThrottle
+aiTemplatePlugIn.aimHorizontalControl PIYaw
+aiTemplatePlugIn.aimVerticalControl   PIPitch
+aiTemplatePlugIn.driveRollControl     PIRoll
+aiTemplatePlugIn.drivePitchControl    PIPitch
+aiTemplatePlugIn.aimRollControl       PIRoll
+aiTemplatePlugIn.aimThrottleControl   PIThrottle
+aiTemplatePlugIn.throttleSensitivity -3.0
+rem aiTemplatePlugIn.pitchSensitivity -0.5
+aiTemplatePlugIn.pitchSensitivity    -1.0
+aiTemplatePlugIn.rollSensitivity     -1.3
+aiTemplatePlugIn.yawSensitivity       0.3
+aiTemplatePlugIn.throttleLookAhead    1.0
+aiTemplatePlugIn.pitchLookAhead       1.2
+aiTemplatePlugIn.rollLookAhead        1.5
+aiTemplatePlugIn.yawLookAhead         0.3
+aiTemplatePlugIn.throttleScale        1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale           0.0420
+aiTemplatePlugIn.rollScale            0.0680
+aiTemplatePlugIn.yawScale             0.0275
+aiTemplatePlugIn.maxRollAngle         0.9000
+aiTemplatePlugIn.maxClimbAngle        0.3050
+
+aiTemplatePlugIn.create Mobile ZeroMobile
+aiTemplatePlugIn.vehicleNumber 1
+aiTemplatePlugIn.maxSpeed 60.0
+aiTemplatePlugIn.turnRadius 25.0
+
+aiTemplatePlugIn.create Armament ZeroArms
+aiTemplatePlugIn.setIsAntiAircraft 1
+
+
+rem *** AITemplate ***
+aiTemplate.create MilleniumFalcon
+aiTemplate.addType ITUnit
+aiTemplate.addType ITMobile
+aiTemplate.addType ITAir
+rem aiTemplate.addType ITCover
+aiTemplate.degeneration 5
+aiTemplate.allowedTimeDiff 0.5
+aiTemplate.basicTemp 15
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn ZeroUnit
+aiTemplate.addPlugIn ZeroCover
+aiTemplate.addPlugIn ZeroPhysical
+aiTemplate.addPlugIn ZeroCtrl
+aiTemplate.addPlugIn ZeroMobile
+aiTemplate.addPlugIn ZeroArms
+
+
+rem ******************************************************************
+rem ******************************************************************
+
+rem *** Plugins ***
+
+aiTemplatePlugIn.create Unit MFPassenger_6Unit
+aiTemplatePlugIn.equipmentType 8
+aiTemplatePlugIn.setStrategicStrength 0 1
+aiTemplatePlugIn.setStrategicStrength 1 0
+aiTemplatePlugIn.setSelectKey PIMenuSelect3
+
+aiTemplatePlugIn.create ControlInfo MFPassenger_6Ctrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+rem aiTemplatePlugIn.pitchSensitivity           0.021817
+rem aiTemplatePlugIn.rollSensitivity           -0.021817
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+rem aiTemplatePlugIn.lookVerticalSensitivity    0.021817
+rem aiTemplatePlugIn.lookHorizontalSensitivity -0.021817
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -90/0/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 90/0/0
+
+
+rem *** AITemplate ***
+aiTemplate.create MFPassenger_6
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITAir
+aiTemplate.addType ITObstructedView
+aiTemplate.degeneration 20
+aiTemplate.allowedTimeDiff 1
+aiTemplate.basicTemp 4
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn MFPassenger_6Unit
+aiTemplate.addPlugIn MFPassenger_6Ctrl

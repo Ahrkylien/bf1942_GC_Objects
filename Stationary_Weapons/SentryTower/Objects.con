@@ -1,0 +1,27 @@
+ObjectTemplate.create PlayerControlObject SentryTower
+ObjectTemplate.networkableInfo Spy_TurretBodyInfo
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.setSoldierExitLocation 0/4.85/0 0/0/0
+ObjectTemplate.aiTemplate Stationary_Browning
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.setPcoId 0
+ObjectTemplate.HasArmor 1
+ObjectTemplate.HitPoints 75
+ObjectTemplate.MaxHitPoints 75
+ObjectTemplate.Material 811
+Objecttemplate.GUIIndex 80
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_SpyTurret.dds"
+ObjectTemplate.setVehicleIconPos 64/64
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBar
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTStationaryMG
+rem ObjectTemplate.setCrossHairType CHTIcon
+rem --------------------------------------------
+ObjectTemplate.addTemplate Eweb_SentryBase
+ObjectTemplate.setPosition 0.04/4.05/0.73
+

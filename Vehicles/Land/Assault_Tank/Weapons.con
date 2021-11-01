@@ -1,0 +1,95 @@
+
+
+rem *** Assault_TankGunBarrel ***
+ObjectTemplate.create FireArms Assault_TankGunBarrel
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/Assualt_TankCannon.ssc
+ObjectTemplate.geometry Assault_Tank_barrels
+ObjectTemplate.aiTemplate TigerMainGun
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzFirehawke
+ObjectTemplate.setPosition -0.2333/0/8
+ObjectTemplate.addTemplate e_MuzzFirehawke
+ObjectTemplate.setPosition 0.2333/0/8
+rem -------------------------------------
+ObjectTemplate.fireOnce 1
+ObjectTemplate.projectileTemplate HeavyBlasterProjectileBlueS
+rem ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.projectilePosition 0/0/0
+rem ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag 25
+ObjectTemplate.velocity 150
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 3.0
+ObjectTemplate.roundOfFire 0.8
+ObjectTemplate.fireingForce 35
+ObjectTemplate.recoilSpeed 6
+ObjectTemplate.recoilSize 10
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.8
+ObjectTemplate.distToStartLoseDamage 250
+ObjectTemplate.distToMinDamage 500
+ObjectTemplate.AmmoType	8
+ObjectTemplate.addFireArmsPosition -0.2333/0/0.903 0/0/0
+ObjectTemplate.addFireArmsPosition 0.2333/0/0.903 0/0/0
+
+
+rem ---------------------------------
+
+rem *** Assault_Tank_Rocket_Launcher ***
+ObjectTemplate.create FireArms Assault_Tank_Rocket_Launcher
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.aiTemplate KatyushaMainGun
+ObjectTemplate.projectileTemplate T-3BRocket
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.visibleDummyProjectileTemplate Assault_Tank_RocketDummy
+ObjectTemplate.magSize 8
+ObjectTemplate.numOfMag 4
+ObjectTemplate.velocity 45
+ObjectTemplate.fireOnce 1
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 10
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireingForce 30
+ObjectTemplate.AmmoType	9
+ObjectTemplate.addFireArmsPosition -2.9342/0.1906/0 0/0/0
+ObjectTemplate.addFireArmsPosition 2.9342/0.1906/0 0/0/0
+ObjectTemplate.addFireArmsPosition -2.5884/0.1906/0 0/0/0
+ObjectTemplate.addFireArmsPosition 2.5884/0.1906/0 0/0/0
+ObjectTemplate.addFireArmsPosition -2.7194/-0.1721/0 0/0/0
+ObjectTemplate.addFireArmsPosition 2.7194/-0.1721/0 0/0/0
+ObjectTemplate.addFireArmsPosition -3.0643/-0.1721/0 0/0/0
+ObjectTemplate.addFireArmsPosition 3.0643/-0.1721/0 0/0/0
+
+ObjectTemplate.create SimpleObject Assault_Tank_RocketDummy
+ObjectTemplate.geometry T-3Br_rocket_m1
+
+
+rem *** RAT GUN ***
+ObjectTemplate.create FireArms RAT_Rocket_Launcher
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.aiTemplate KatyushaMainGun
+ObjectTemplate.projectileTemplate RAT_Rocket
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 3
+ObjectTemplate.numOfMag 10
+ObjectTemplate.velocity 100
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 10
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireingForce 30
+ObjectTemplate.AmmoType	9
+ObjectTemplate.addFireArmsPosition -.315523/.39503/2.36812 0/0/0
+ObjectTemplate.addFireArmsPosition -.00355339/.39503/2.36812 0/0/0
+ObjectTemplate.addFireArmsPosition  -.315523/.39503/2.36812 0/0/0
+ObjectTemplate.addTemplate e_MuzzFirehawke
+ObjectTemplate.setPosition -.315523/.39503/2.36812
+ObjectTemplate.addTemplate e_MuzzFirehawke
+ObjectTemplate.setPosition -.00355339/.39503/2.36812
+ObjectTemplate.addTemplate e_MuzzFirehawke
+ObjectTemplate.setPosition -.315523/.39503/2.36812
+
+

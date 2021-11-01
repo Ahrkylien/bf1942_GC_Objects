@@ -1,0 +1,6 @@
+GeometryTemplate.create StandardMesh dan_wheat4
+rem GeometryTemplate.setSkin animations/dan_wheat4.skn
+GeometryTemplate.file buildings/dantooine/dant_wheat_tall_single
+
+
+

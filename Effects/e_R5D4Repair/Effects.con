@@ -1,0 +1,139 @@
+rem
+rem *** e_R5D4Repair ***
+rem
+ObjectTemplate.create EffectBundle e_R5D4Repair
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/R5D4Repair.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_R5D4RepairBase
+ObjectTemplate.addTemplate Em_richoMetal_Smoke
+ObjectTemplate.addTemplate Em_richoMetal_Glint
+ObjectTemplate.addTemplate Em_richoMetal_Glint1
+rem ObjectTemplate.addTemplate Em_RichoBase
+rem ObjectTemplate.setRotation 45/0/0
+ObjectTemplate.timeToLive CRD_NONE/0.2/0/0
+rem -------------------------------------
+
+rem *** Em_R5D4RepairBase ***
+ObjectTemplate.create Emitter Em_R5D4RepairBase
+ObjectTemplate.template Fx_R5D4RepairBase
+ObjectTemplate.lodDistance 375
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.relativePositionInUp CRD_NONE/0.05/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+rem *** Fx_R5D4RepairBase ***
+ObjectTemplate.create SpriteParticle Fx_R5D4RepairBase
+ObjectTemplate.timeToLive CRD_NONE/0.2/0.2/0
+ObjectTemplate.size CRD_UNIFORM/0.18/0.15/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeOverTime 0/0.18|100/1
+ObjectTemplate.texture Effects/e_electric1
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/0
+ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeed CRD_UNIFORM/1/10/0
+ObjectTemplate.XYSizeRatioOverTime 0/1|100/1
+rem ObjectTemplate.colorRGBAOverTime 0/255/255/255/0|5/66/66/255/255|82/198|100/200/200/255/0
+
+rem *** Em_R5D4Repair_Smoke ***
+ObjectTemplate.create Emitter Em_R5D4Repair_Smoke
+ObjectTemplate.template Fx_R5D4Repair_Smoke
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 150
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.relativePositionInUp CRD_NONE/0.1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0.05/0
+ObjectTemplate.positionalSpeedInUp CRD_NONE/1/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0.02/0
+rem *** Fx_R5D4Repair_Smoke ***
+ObjectTemplate.create SpriteParticle Fx_R5D4Repair_Smoke
+ObjectTemplate.timeToLive CRD_UNIFORM/1/1/0
+ObjectTemplate.size CRD_UNIFORM/0.6/0.3/0
+ObjectTemplate.gravityModifier CRD_UNIFORM/0.05/-0.05/0
+ObjectTemplate.drag CRD_NONE/2/0/0
+ObjectTemplate.sizeOverTime 0/0.090014|48/0.220038|100/0.599963
+ObjectTemplate.texture Effects/e_muz1_I
+ObjectTemplate.initRotation CRD_UNIFORM/0/180/1
+ObjectTemplate.XYSizeRatio CRD_NONE/1/0/0
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeed CRD_UNIFORM/20/50/1
+ObjectTemplate.colorRGBAOverTime 0/204/200/176/102|100/128/128/128/0
+
+rem *** Em_R5D4Repair_Glint ***
+ObjectTemplate.create Emitter Em_R5D4Repair_Glint
+ObjectTemplate.template Fx_R5D4Repair_GlintX
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 50
+ObjectTemplate.delay CRD_NONE/0/0/0
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_UNIFORM/1/6/0
+ObjectTemplate.intensityOverTime 
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/1/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/1/3/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/1/-2/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/10/0/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/10/0/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/30/0/0
+ObjectTemplate.startRotation CRD_UNIFORM/180/0/1
+rem *** Fx_R5D4Repair_GlintX ***
+ObjectTemplate.create Particle Fx_R5D4Repair_GlintX
+ObjectTemplate.geometry Richo_glintlong_m1
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.size CRD_UNIFORM/1.8/0.8/0
+ObjectTemplate.gravityModifier CRD_UNIFORM/0.6/0.3/0
+ObjectTemplate.drag CRD_NONE/0/0/0
+ObjectTemplate.sizeModifier 1/1/1
+ObjectTemplate.sizeOverTime 0/0.199988|100/1
+
+rem *** Em_R5D4Repair_Glint1 ***
+ObjectTemplate.create Emitter Em_R5D4Repair_Glint1
+ObjectTemplate.template Fx_R5D4Repair_Glint1X
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 150
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_UNIFORM/5/15/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/1/1
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/4/0.4/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0.2/2/1
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/2/0/0
+rem *** Fx_R5D4Repair_Glint1X ***
+ObjectTemplate.create SpriteParticle Fx_R5D4Repair_Glint1X
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.size CRD_UNIFORM/0.07/0.1/0
+ObjectTemplate.gravityModifier CRD_UNIFORM/0.4/1/0
+ObjectTemplate.drag CRD_UNIFORM/1/0.5/0
+ObjectTemplate.sizeOverTime 0/1|100/1
+ObjectTemplate.dragOverTime 0/0.059999|100/1
+ObjectTemplate.texture E_richoMetal_I
+ObjectTemplate.useMipMaps 1
+ObjectTemplate.turnsInMovingDirection 1
+ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeed CRD_NONE/1/0/0
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/255|86/255/255/128/255|100/255/255/255/51
+
+rem *** Em_GCRicho1 ***
+ObjectTemplate.create Emitter Em_GCRicho1
+ObjectTemplate.template Fx_GCRicho1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 400
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/2/0/0
+ObjectTemplate.relativePositionInUp CRD_NONE/0.05/0/0
+rem *** Fx_GCRicho1 ***
+ObjectTemplate.create Particle Fx_GCRicho1
+ObjectTemplate.geometry Richo_main_m1
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.size CRD_NONE/20/0/0
+ObjectTemplate.sizeModifier 0.35/0.45/0.35
+ObjectTemplate.sizeOverTime 0/0.200003|100/1.4
+
+
+

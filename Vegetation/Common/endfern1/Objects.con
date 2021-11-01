@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject endfern1
+ObjectTemplate.geometry endfern1
+ObjectTemplate.setHasCollisionPhysics 1

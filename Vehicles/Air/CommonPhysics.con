@@ -1,0 +1,34 @@
+rem *** DummyWheel ***
+ObjectTemplate.create Spring DummyWheel
+ObjectTemplate.geometry Mustang_whe2_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFDummyGrip
+ObjectTemplate.setStrength 16
+ObjectTemplate.setDamping 4
+ObjectTemplate.createInvisible 1
+
+rem *** RollWheel ***
+ObjectTemplate.create Spring RollWheel
+ObjectTemplate.geometry Mustang_whe2_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+ObjectTemplate.setStrength 16
+ObjectTemplate.setDamping 4
+ObjectTemplate.createInvisible 1
+
+rem *** RollWheelBundle ***
+ObjectTemplate.create RotationalBundle RollWheelBundle
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate RollWheel
+rem -------------------------------------
+ObjectTemplate.setMinRotation -45/0/0
+ObjectTemplate.setMaxRotation 45/0/0
+ObjectTemplate.setMaxSpeed 50/0/0
+ObjectTemplate.setAcceleration 100/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1

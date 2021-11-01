@@ -1,0 +1,25 @@
+GeometryTemplate.create StandardMesh YWing_Fuselage_M1
+GeometryTemplate.file Vehicles/YWing/ywing
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 140
+
+GeometryTemplate.create StandardMesh YWingGunTurret_M1
+GeometryTemplate.file Vehicles/YWing/ywing_gun
+
+GeometryTemplate.create StandardMesh AWing_Fuselage_L1
+GeometryTemplate.file Vehicles/YWing/ywing
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_YWing_M1
+GeometryTemplate.file Vehicles/AWing/Wreck_AWing
+
+GeometryTemplate.create StandardMesh 1P_YWing_Cockpit
+GeometryTemplate.file Vehicles/ywing/ywing_cockpit
+
+GeometryTemplate.create StandardMesh 1P_YWingGunnerHUD_M1
+GeometryTemplate.file Vehicles/APTurret/aphud

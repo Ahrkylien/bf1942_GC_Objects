@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/SoldierCrouchMove.ssc
+	
+#templateLevel MEDIUM
+
+	#include Medium/SoldierCrouchMove.ssc
+	
+#templateLevel LOW
+
+	#include Low/SoldierCrouchMove.ssc

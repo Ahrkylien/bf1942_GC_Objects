@@ -1,0 +1,209 @@
+rem *** skyhopper ***
+ObjectTemplate.create PlayerControlObject skyhopper
+ObjectTemplate.setNetworkableInfo skyhopper_body_info
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 0.1
+ObjectTemplate.mass 2500
+ObjectTemplate.inertiaModifier 1/1/1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.hitpoints 65
+ObjectTemplate.maxhitpoints 65
+ObjectTemplate.material 801
+ObjectTemplate.criticalDamage 6.5
+ObjectTemplate.hpLostWhileCriticalDamage 0.65
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.hpLostWhileUpSideDown 6.5
+ObjectTemplate.hpLostWhileDamageFromWater 6.5
+ObjectTemplate.addArmorEffect 13 em_tiefighterDamage 0/0/0
+ObjectTemplate.addArmorEffect 13 em_PlaneDamage 0/0/0
+ObjectTemplate.addArmorEffect 6.5 e_tiefighterFire 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Skyhopper 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate skyhopper
+rem -------------------------------------
+ObjectTemplate.addTemplate lodskyhopper
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.8/.5/0 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_skyhopper.dds"
+ObjectTemplate.setVehicleIconPos 76/80
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABHeatBarOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTFighter
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_skyhopper_16x16.dds"
+
+rem *** lodskyhopper ***
+ObjectTemplate.create LodObject lodskyhopper
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate skyhopperComplex
+ObjectTemplate.addTemplate skyhopperSimple
+ObjectTemplate.addTemplate skyhopperWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector skyhopperLodSelector
+
+rem *** skyhopperComplex ***
+ObjectTemplate.create Bundle skyhopperComplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodskyhopperCockpit
+ObjectTemplate.addTemplate skyhopperCamera
+ObjectTemplate.setPosition -0.2/0.6/0.6
+ObjectTemplate.addTemplate skyhopperSeat
+ObjectTemplate.setPosition -0.2/0/-0.3
+ObjectTemplate.addTemplate skyhopperEntry
+ObjectTemplate.setPosition -1/0/0
+ObjectTemplate.addTemplate skyhopper_gun
+ObjectTemplate.setPosition 0/0.522/0
+ObjectTemplate.addTemplate SkyhopperLaser
+ObjectTemplate.addTemplate skyhopperPassenger
+ObjectTemplate.setPosition 0/0/0
+
+ObjectTemplate.addTemplate SkyhopperVTOLEngineRack
+ObjectTemplate.setPosition 4.5/1.5/4.5
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate SkyhopperVTOLEngineRack
+ObjectTemplate.setPosition 4.5/1.5/-4.5
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate SkyhopperVTOLEngineRack
+ObjectTemplate.setPosition -4.5/1.5/4.5
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate SkyhopperVTOLEngineRack
+ObjectTemplate.setPosition -4.5/1.5/-4.5
+ObjectTemplate.setRotation 0/-90/0
+
+ObjectTemplate.addTemplate RollWheelBundle
+ObjectTemplate.setPosition 6/-4.4/3
+ObjectTemplate.addTemplate RollWheelBundle
+ObjectTemplate.setPosition -6/-4.4/3
+ObjectTemplate.addTemplate DummyWheel
+ObjectTemplate.setPosition 6/-4.4/-2.7
+ObjectTemplate.addTemplate DummyWheel
+ObjectTemplate.setPosition -6/-4.4/-2.7
+
+ObjectTemplate.addTemplate SkyhopperFlaps1
+ObjectTemplate.setPosition -1.862/0.003/0.15
+ObjectTemplate.setRotation 5.859/0/-4.437
+ObjectTemplate.addTemplate SkyhopperFlaps2
+ObjectTemplate.setPosition 1.863/0.003/0.15
+ObjectTemplate.setRotation -5.858/0/4.438
+ObjectTemplate.addTemplate SkyhopperRudderBackVertical
+ObjectTemplate.setPosition 0/1.339/-4.679
+ObjectTemplate.setRotation 0/0/-89.999
+ObjectTemplate.addTemplate SkyhopperBodyWingVertical
+ObjectTemplate.setPosition 0/0/0.3
+ObjectTemplate.setRotation 0/0/-89.999
+ObjectTemplate.addTemplate SkyhopperRudderBackLeft
+ObjectTemplate.setPosition -1.015/0.869/-4.039
+ObjectTemplate.addTemplate SkyhopperRudderBackRight
+ObjectTemplate.setPosition 1.014/0.87/-4.035
+ObjectTemplate.addTemplate SkyhopperRudderFrontLeft
+ObjectTemplate.setPosition -4.29/0.195/0.32
+ObjectTemplate.setRotation 6.652/0/-4.412
+ObjectTemplate.addTemplate SkyhopperRudderFrontRight
+ObjectTemplate.setPosition 4.291/0.195/0.32
+ObjectTemplate.setRotation -6.651/0/4.413
+ObjectTemplate.addTemplate SkyhopperSeat
+ObjectTemplate.setPosition 0/0.6/0.3
+ObjectTemplate.addTemplate SkyhopperEngine
+ObjectTemplate.setPosition 0/0.5/4
+
+rem *** skyhopperPassenger ***
+ObjectTemplate.create PlayerControlObject skyhopperPassenger
+ObjectTemplate.setNetworkableInfo skyhopper_body_info
+ObjectTemplate.aiTemplate WillyPassenger
+rem -------------------------------------
+ObjectTemplate.addTemplate skyhopperEntry
+ObjectTemplate.setPosition 1/0/0
+ObjectTemplate.addTemplate skyhopperCamera
+ObjectTemplate.setPosition 0.2/0.6/0.6
+ObjectTemplate.addTemplate skyhopperSeat
+ObjectTemplate.setPosition 0.2/0/-0.3
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 1.8/.5/0 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_skyhopper.dds"
+ObjectTemplate.setVehicleIconPos 71/80
+ObjectTemplate.setNumberOfWeaponIcons 0
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABHeatBarOnly
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTFighter
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_skyhopper_16x16.dds"
+
+rem *** lodskyhopperCockpit ***
+ObjectTemplate.create LodObject lodskyhopperCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate skyhopperCockpitExternal
+ObjectTemplate.addTemplate skyhopperCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector skyhopperCockpitSelector
+
+rem *** skyhopperCockpitExternal ***
+ObjectTemplate.create SimpleObject skyhopperCockpitExternal
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.geometry skyhopper
+
+rem *** skyhopperCockpitInternal ***
+ObjectTemplate.create SimpleObject skyhopperCockpitInternal
+ObjectTemplate.geometry skyhopperinternal
+
+rem *** skyhopperCockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector skyhopperCockpitSelector
+LodSelectorTemplate.addLodDistance 20
+LodSelectorTemplate.addLodComparison 0.5
+
+rem *** skyhopperCamera ***
+ObjectTemplate.create Camera skyhopperCamera
+ObjectTemplate.setMinRotation -70/-40/0
+ObjectTemplate.setMaxRotation 70/5/0
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/-5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.OutsideHudOffset 0/-0.7/2
+
+rem *** skyhopperEntry ***
+ObjectTemplate.create EntryPoint skyhopperEntry
+ObjectTemplate.setEntryRadius 7
+
+rem *** skyhopperSeat ***
+ObjectTemplate.create SeatObject skyhopperSeat
+ObjectTemplate.seatFlags c_SeatShowHalfBodySoldier
+
+rem *** skyhopper_gun ***
+ObjectTemplate.create SimpleObject skyhopper_gun
+ObjectTemplate.geometry skyhopper_gun
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+rem *** skyhopperSimple ***
+ObjectTemplate.create SimpleObject skyhopperSimple
+ObjectTemplate.geometry skyhopper_low
+
+rem *** CorsairWreck ***
+ObjectTemplate.create SimpleObject skyhopperWreck
+ObjectTemplate.geometry Wreck_skyhopper
+
+rem *** skyhopperLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 skyhopperLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 200

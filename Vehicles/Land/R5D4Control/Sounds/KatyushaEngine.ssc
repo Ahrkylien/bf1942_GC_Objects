@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/KatyushaEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/KatyushaEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/KatyushaEngine.ssc

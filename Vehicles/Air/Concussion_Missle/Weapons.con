@@ -1,0 +1,28 @@
+ObjectTemplate.create Projectile ConcussionMissile
+ObjectTemplate.geometry ConcussionMissileGeometry
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.drag 0.0
+ObjectTemplate.mass 1.0
+ObjectTemplate.startEffectTemplate e_engineConcussionMissile
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 0
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 539
+ObjectTemplate.material2 540
+ObjectTemplate.radius 15
+ObjectTemplate.ForceOnExplosion 1
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.addTemplate Concussion_Missle_Engine
+ObjectTemplate.setPosition 0/0/-2
+
+rem *** ConcussionMissileDummy ***
+ObjectTemplate.create SimpleObject ConcussionMissileDummy
+ObjectTemplate.geometry ConcussionMissileGeometry
+
+
+

@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle jud_tramtunnel
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry jud_tramtunnel
+objectTemplate.aiTemplate jud_tramtunnel
+rem ---------------------------

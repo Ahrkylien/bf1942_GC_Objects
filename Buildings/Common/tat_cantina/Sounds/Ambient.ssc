@@ -1,0 +1,45 @@
+#templateLevel HIGH
+
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/cantina-music-hi.wav
+loop
+dopplerOff
+minDistance 25
+volume 10
+priority 5
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 15
+	param 25
+	param 1
+	param -1	
+endEffect
+
+#templateLevel MEDIUM
+
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/cantina-music-lo.wav
+loop
+dopplerOff
+minDistance 25
+volume 10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 15
+	param 25
+	param 1
+	param -1	
+endEffect
+priority 5

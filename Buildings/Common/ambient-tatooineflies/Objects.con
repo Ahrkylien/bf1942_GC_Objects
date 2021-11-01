@@ -1,0 +1,3 @@
+ObjectTemplate.create Bundle ambient-tatooineflies
+ObjectTemplate.setHasCollisionPhysics 0
+ObjectTemplate.loadSoundScript Sounds/ambient-tatooineflies.ssc

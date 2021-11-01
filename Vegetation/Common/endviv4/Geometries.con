@@ -1,0 +1,4 @@
+GeometryTemplate.create TreeMesh endviv4
+GeometryTemplate.file endviv4
+GeometryTemplate.billboard 1
+GeometryTemplate.billboardDistance 150

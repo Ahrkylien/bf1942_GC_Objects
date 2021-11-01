@@ -1,0 +1,49 @@
+
+
+rem *** e_SmokeGrenade3 ***
+ObjectTemplate.create EffectBundle e_SmokeGrenade3
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.inertiaModifier 1.71931e-039/1.71931e-039/1.71931e-039
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_Smoke_Grenade3
+ObjectTemplate.setStartOnEffects 1
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+
+
+rem *** Em_Smoke_Grenade3 ***
+ObjectTemplate.create Emitter Em_Smoke_Grenade3
+ObjectTemplate.inertiaModifier 1.4013e-045/1.4013e-045/1.4013e-045
+ObjectTemplate.template Fx_Smoke_Grenade3
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.lodDistance 700
+ObjectTemplate.timeToLive CRD_NONE/26/0/0
+ObjectTemplate.intensity CRD_UNIFORM/7/9/0
+ObjectTemplate.intensityOverTime 0/1
+ObjectTemplate.IntensityAtSpeed 3
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+ObjectTemplate.forceEmission 1
+ObjectTemplate.allowRestart 1
+ObjectTemplate.dontCullWithViewFrustum 1
+
+
+rem *** Fx_Smoke_Grenade3 ***
+ObjectTemplate.create SpriteParticle Fx_Smoke_Grenade3
+ObjectTemplate.timeToLive CRD_NORMAL/0.8/0.8/0
+ObjectTemplate.size CRD_UNIFORM/0.25/0.3/0
+ObjectTemplate.gravityModifier CRD_NONE/-0.1/0/0
+ObjectTemplate.sizeOverTime 0/0.650044|100/5
+ObjectTemplate.gravityModifierOverTime 0/1
+ObjectTemplate.dragOverTime 0/1
+ObjectTemplate.texture e_SmokeUniversal
+ObjectTemplate.initRotation CRD_UNIFORM/0/360/1
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_UNIFORM/50/100/1
+ObjectTemplate.XYSizeRatioOverTime 0/1
+ObjectTemplate.rotationSpeedOverTime 0/1
+ObjectTemplate.colorRGBAOverTime 0/233/217/20/255|100/255/248/106/0
+ObjectTemplate.alphaTestRefOverTime 0/1

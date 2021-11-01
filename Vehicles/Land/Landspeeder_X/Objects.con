@@ -1,0 +1,355 @@
+rem *** Landspeeder_X ***
+ObjectTemplate.create PlayerControlObject GAIN-135
+ObjectTemplate.NameTagOffset -0.3/-0.2/0
+ObjectTemplate.setNetworkableInfo Landspeeder_XBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.drag 1
+ObjectTemplate.GravityModifier 50
+ObjectTemplate.mass 3500
+rem ObjectTemplate.inertiaModifier 1.5/1.5/1.5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.exitTimer 0.75
+ObjectTemplate.hitpoints 80
+ObjectTemplate.maxhitpoints 80
+ObjectTemplate.material 801
+ObjectTemplate.criticalDamage 6
+ObjectTemplate.hpLostWhileCriticalDamage 1
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.hpLostWhileUpSideDown 6
+ObjectTemplate.hpLostWhileDamageFromWater 6
+ObjectTemplate.addArmorEffect 12 e_WillyDamage 0/1.7/0
+ObjectTemplate.addArmorEffect 6 e_WillyFire 0/0.5/0.8
+rem ObjectTemplate.addArmorEffect 0 e_scrapmetal_willy 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
+rem ObjectTemplate.addArmorEffect 0 e_scrapmetal_LandSpeeder 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.aiTemplate Willy
+rem -------------------------------------
+ObjectTemplate.addTemplate lodLandspeeder_X
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.7/0/0 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Landspeeder_X.tga"
+ObjectTemplate.setVehicleIconPos 60/55
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTScoutCar
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_landspeeder_16x16.dds"
+
+rem *** lodLandspeeder_X ***
+ObjectTemplate.create LodObject lodLandspeeder_X
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Landspeeder_XComplex
+rem ObjectTemplate.addTemplate Landspeeder_XSimple
+ObjectTemplate.addTemplate Landspeeder_XWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector Landspeeder_XLodSelector
+
+rem *** Landspeeder_XComplex ***
+ObjectTemplate.create Bundle Landspeeder_XComplex
+ObjectTemplate.geometry Landspeeder_X1
+ObjectTemplate.createInvisible 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate LandspeederX
+ObjectTemplate.setRandomGeometries 4
+rem -------------------------------------
+ObjectTemplate.addTemplate Landspeeder_XCamera
+ObjectTemplate.setPosition 0/0.9/-0.15
+ObjectTemplate.addTemplate Landspeeder_XSeat
+ObjectTemplate.setPosition 0/0.7/0.23
+ObjectTemplate.addTemplate Landspeeder_XEntry
+ObjectTemplate.setPosition 0/0/1
+ObjectTemplate.addTemplate Landspeeder_XEntry
+ObjectTemplate.setPosition 0/0/-1
+ObjectTemplate.addTemplate Landspeeder_XPassengerPCO
+ObjectTemplate.setPosition 0.5/0.45/-0.25
+ObjectTemplate.addTemplate Landspeeder_XPassengerPCO2
+ObjectTemplate.setPosition -0.5/0.45/-0.25
+ObjectTemplate.addTemplate Landspeeder_XSteeringDummy
+ObjectTemplate.setPosition 0/0.35/1.33
+ObjectTemplate.setRotation 0/34/0
+
+ObjectTemplate.addTemplate Landspeeder_X_Gunner_Base
+ObjectTemplate.setPosition 0/1.4077/-2.8048
+ObjectTemplate.addTemplate Landspeeder_X_GunnerPCO
+rem ______________________________________
+ObjectTemplate.addTemplate landspeederEngine
+ObjectTemplate.setPosition 0/0.2/0
+ObjectTemplate.addTemplate Landspeeder_XRudderRear 
+ObjectTemplate.setPosition 0/0/-5
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate Landspeeder_XRudderFront 
+ObjectTemplate.setPosition 0/0/4 
+ObjectTemplate.setRotation 0/0/-90 
+beginrem
+ObjectTemplate.addTemplate GravEngine
+ObjectTemplate.setPosition 0/2.27/0
+ObjectTemplate.setRotation 0/90/0
+ObjectTemplate.addTemplate GravEngine
+ObjectTemplate.setPosition 0/1.27/0
+ObjectTemplate.setRotation 0/0/0
+endrem
+
+
+rem -------------- Create Different Coloured Bodies -------------
+ObjectTemplate.create SimpleObject LandspeederX1
+ObjectTemplate.geometry Landspeeder_X1
+ObjectTemplate.hasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject LandspeederX2
+ObjectTemplate.geometry Landspeeder_X2
+ObjectTemplate.hasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject LandspeederX3
+ObjectTemplate.geometry Landspeeder_X3
+ObjectTemplate.hasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject LandspeederX4
+ObjectTemplate.geometry Landspeeder_X4
+ObjectTemplate.hasCollisionPhysics 1
+rem ------------- /Create Different Coloured Bodies -------------
+
+rem *** Landspeeder_XCamera ***
+ObjectTemplate.create Camera Landspeeder_XCamera
+ObjectTemplate.setMinRotation -110/-40/0
+ObjectTemplate.setMaxRotation 110/10/0
+ObjectTemplate.setPivotPosition 0/0.25/0.3
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** Landspeeder_XSeat ***
+ObjectTemplate.create SeatObject Landspeeder_XSeat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+rem *** Landspeeder_XEntry ***
+ObjectTemplate.create EntryPoint Landspeeder_XEntry
+ObjectTemplate.setEntryRadius 2.3
+
+rem *** Landspeeder_XPassengerPCO ***
+ObjectTemplate.create PlayerControlObject Landspeeder_XPassengerPCO
+ObjectTemplate.setNetworkableInfo Landspeeder_XBodyInfo
+ObjectTemplate.aiTemplate WillyPassenger
+rem -------------------------------------
+ObjectTemplate.addTemplate Landspeeder_XEntry
+ObjectTemplate.setPosition 0/-0.35/1.25
+ObjectTemplate.addTemplate Landspeeder_XEntry
+ObjectTemplate.setPosition 0/-0.35/-0.75
+ObjectTemplate.addTemplate Landspeeder_XCamera
+ObjectTemplate.setPosition 0/0.6/-0.999
+ObjectTemplate.addTemplate Landspeeder_XPassengerSeat
+ObjectTemplate.setPosition 0/0.3/-0.499
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 2.7/0/0 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Landspeeder_X.tga"
+ObjectTemplate.setVehicleIconPos 73/61
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTScoutCar
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_landspeeder_16x16.dds"
+
+rem *** Landspeeder_XPassengerPCO2 ***
+ObjectTemplate.create PlayerControlObject Landspeeder_XPassengerPCO2
+ObjectTemplate.setNetworkableInfo Landspeeder_XBodyInfo
+ObjectTemplate.aiTemplate WillyPassenger
+rem -------------------------------------
+ObjectTemplate.addTemplate Landspeeder_XEntry
+ObjectTemplate.setPosition 0/-0.35/1.25
+ObjectTemplate.addTemplate Landspeeder_XEntry
+ObjectTemplate.setPosition 0/-0.35/-0.75
+ObjectTemplate.addTemplate Landspeeder_XCamera
+ObjectTemplate.setPosition 0/0.6/-0.999
+ObjectTemplate.addTemplate Landspeeder_XPassengerSeat
+ObjectTemplate.setPosition 0/0.3/-0.499
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 2.7/0/0 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Landspeeder_X.tga"
+ObjectTemplate.setVehicleIconPos 83/61
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTScoutCar
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_landspeeder_16x16.dds"
+
+rem *** Landspeeder_XPassengerSeat ***
+ObjectTemplate.create SeatObject Landspeeder_XPassengerSeat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+ObjectTemplate.seatAnimationUpperBody Ub_PassengerInWilly
+ObjectTemplate.seatAnimationLowerBody Lb_PassengerInWilly
+
+
+
+rem -----------------------------------------------------
+rem *** Gunner ***
+ObjectTemplate.create PlayerControlObject Landspeeder_X_GunnerPCO
+ObjectTemplate.setNetworkableInfo Landspeeder_XBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Landspeeder_X_GunnerEntry
+ObjectTemplate.setPosition 0/-0.03/-2
+ObjectTemplate.addTemplate Landspeeder_X_GunnerPivot
+ObjectTemplate.setPosition 0/1.4077/-2.8048
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Landspeeder_X_GunnerSeat
+ObjectTemplate.setPosition 0/1.5/-1.45
+ObjectTemplate.setRotation 180/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/0/-1 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Landspeeder_X.tga"
+ObjectTemplate.setVehicleIconPos 71/81
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTScoutCar
+ObjectTemplate.setToolTipType  TTScoutCar
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_common_16x16.tga"
+ObjectTemplate.setPrimaryAmmoBar ABHeatBarOnly
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+
+
+rem *** Landspeeder_X_GunnerHolder ***
+ObjectTemplate.create RotationalBundle Landspeeder_X_GunnerPivot
+ObjectTemplate.setNetworkableInfo Landspeeder_XTurretInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Landspeeder_X_GunnerRotation
+ObjectTemplate.setPosition 0/0.3434/-0.1843
+ObjectTemplate.addTemplate landspeeder_X_gun_pivot_vis
+ObjectTemplate.setRotation 180/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-35/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/80/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem ***  ***
+ObjectTemplate.create RotationalBundle Landspeeder_X_GunnerRotation
+ObjectTemplate.setNetworkableInfo Landspeeder_XTurretInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate RJ_45
+ObjectTemplate.addTemplate Landspeeder_X_GunnerCamera
+ObjectTemplate.setPosition 0/0.222/-0.6
+rem -------------------------------------
+ObjectTemplate.setMinRotation -45/0/0
+ObjectTemplate.setMaxRotation 45/0/0
+ObjectTemplate.setMaxSpeed 90/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem ***
+ObjectTemplate.create SimpleObject landspeeder_X_gun_pivot_vis
+ObjectTemplate.geometry landspeeder_X_gun_pivot_vis
+rem ***
+ObjectTemplate.create SimpleObject Landspeeder_X_Gunner_Base
+ObjectTemplate.geometry landspeeder_X_gun_base
+
+rem *** Landspeeder2_GunnerCamera ***
+ObjectTemplate.create Camera Landspeeder_X_GunnerCamera
+
+rem *** Landspeeder2_GunnerSeat ***
+ObjectTemplate.create SeatObject Landspeeder_X_GunnerSeat
+ObjectTemplate.seatFlags c_SeatIsOutside
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+
+rem *** Landspeeder2_GunnerEntry ***
+ObjectTemplate.create EntryPoint Landspeeder_X_GunnerEntry
+ObjectTemplate.setEntryRadius 3
+rem -----------------------------------------------------------
+
+
+rem *** Landspeeder_XSteeringDummy ***
+ObjectTemplate.create AnimatedBundle Landspeeder_XSteeringDummy
+rem -------------------------------------
+ObjectTemplate.addTemplate Landspeeder_XSteering
+rem -------------------------------------
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.24/-0.1/-0.82 -80/60/50
+ObjectTemplate.addSkeletonIK Bip01_L_Hand -0.26/-0.1/-0.82 -80/-60/50
+
+rem *** Landspeeder_XSteering ***
+ObjectTemplate.create RotationalBundle Landspeeder_XSteering
+ObjectTemplate.setNetworkableInfo Landspeeder_XSteeringInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate lodLandspeeder_XSteering
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-60
+ObjectTemplate.setMaxRotation 0/0/60
+ObjectTemplate.setMaxSpeed 0/0/180
+ObjectTemplate.setAcceleration 0/0/-180
+ObjectTemplate.setInputToRoll c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+rem *** lodLandspeeder_XSteering ***
+ObjectTemplate.create LodObject lodLandspeeder_XSteering
+rem -------------------------------------
+ObjectTemplate.addTemplate Landspeeder_XHighRSteering
+ObjectTemplate.addTemplate Landspeeder_XLowSteering
+rem -------------------------------------
+ObjectTemplate.lodSelector Landspeeder_XSteeringSelector
+
+rem *** Landspeeder_XHighRSteering ***
+ObjectTemplate.create SimpleObject Landspeeder_XHighRSteering
+ObjectTemplate.geometry 1P_Willy_Str_M1
+
+rem *** Landspeeder_XLowSteering ***
+ObjectTemplate.create SimpleObject Landspeeder_XLowSteering
+ObjectTemplate.geometry Willy_Steering_M1
+
+LodSelectorTemplate.create DistanceSelector Landspeeder_XSteeringSelector
+LodSelectorTemplate.addLodDistance 10
+
+rem *** Landspeeder_XSimple ***
+ObjectTemplate.create SimpleObject Landspeeder_XSimple
+ObjectTemplate.geometry Landspeeder_X1
+
+rem *** Landspeeder_XWreck ***
+ObjectTemplate.create SimpleObject Landspeeder_XWreck
+ObjectTemplate.geometry Wreck_Landspeeder_X
+
+rem *** Landspeeder_XLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 Landspeeder_XLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+
+rem *** SpeederbikeRudderFront ***
+ObjectTemplate.create Wing Landspeeder_XRudderFront
+ObjectTemplate.setNetworkableInfo Landspeeder_XWingInfo
+ObjectTemplate.setMinRotation 0/-7/0
+ObjectTemplate.setMaxRotation 0/7/0
+ObjectTemplate.setMaxSpeed 0/100/0
+ObjectTemplate.setAcceleration 0/-100/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 2
+
+rem *** SpeederbikeRudderRear *** 
+ObjectTemplate.create Wing Landspeeder_XRudderRear
+ObjectTemplate.setNetworkableInfo Landspeeder_XWingInfo
+ObjectTemplate.setMinRotation 0/-7/0
+ObjectTemplate.setMaxRotation 0/7/0
+ObjectTemplate.setMaxSpeed 0/100/0
+ObjectTemplate.setAcceleration 0/100/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 2

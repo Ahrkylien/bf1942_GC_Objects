@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject imp_rail
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry imp_rail
+objectTemplate.aiTemplate imp_rail
+rem ---------------------------

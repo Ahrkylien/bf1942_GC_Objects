@@ -1,0 +1,12 @@
+ObjectTemplate.create Bundle tat_snipertower
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry tat_snipertower
+objectTemplate.aiTemplate tat_snipertower
+
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition -0.07/1.954/-2.09
+ObjectTemplate.setRotation 90/0/0
+
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition 0.112/5.518/2.15
+ObjectTemplate.setRotation -90/0/0

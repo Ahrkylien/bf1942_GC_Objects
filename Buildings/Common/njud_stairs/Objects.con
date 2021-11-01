@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle njud_stairs
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry njud_stairs
+objectTemplate.aiTemplate njud_stairs
+rem ---------------------------

@@ -1,0 +1,26 @@
+GeometryTemplate.create StandardMesh Cloudcar_m1
+GeometryTemplate.file Vehicles/Cloudcar/Cloudcar
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 140
+
+GeometryTemplate.create StandardMesh Cloudcar_Flap_m1
+GeometryTemplate.file Vehicles/Cloudcar/Cloudcar_Flap
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 140
+
+GeometryTemplate.create StandardMesh Cloudcar_Window_m1
+GeometryTemplate.file Vehicles/Cloudcar/Cloudcar_Window
+
+GeometryTemplate.create StandardMesh Wreck_Cloudcar1_m1
+GeometryTemplate.file Vehicles/Cloudcar/Wreck_Cloudcar1_m1
+
+

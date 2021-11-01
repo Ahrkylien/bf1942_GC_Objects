@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle jud_round
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry jud_round
+objectTemplate.aiTemplate jud_round
+rem ---------------------------

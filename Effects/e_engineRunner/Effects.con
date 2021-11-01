@@ -1,0 +1,32 @@
+rem *** e_engineRunner ***
+ObjectTemplate.create EffectBundle e_engineRunner
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_engineRunner
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+rem -------------------------------------
+
+rem *** Em_engineRunner ***
+ObjectTemplate.create Emitter Em_engineRunner
+ObjectTemplate.template Fx_engineRunner
+ObjectTemplate.lodDistance 1000
+ObjectTemplate.IntensityAtSpeed 2
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/11/0/0
+ObjectTemplate.startRotation CRD_NORMAL/180/180/180
+ObjectTemplate.noPhysics 1
+ObjectTemplate.addChild 1
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+
+rem *** fx_engineRunner ***
+ObjectTemplate.create Particle fx_engineRunner
+ObjectTemplate.geometry Cloudcar_Engine_FX
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.size CRD_NONE/4/1/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeModifier 4/4/4
+ObjectTemplate.sizeOverTime 0/1|100/0.6
+ObjectTemplate.alphaOverTime 0/0|100/0.2

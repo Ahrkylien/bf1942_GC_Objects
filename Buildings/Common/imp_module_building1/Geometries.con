@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh imp_module_building1
+GeometryTemplate.file buildings/dantooine/imp_module_building1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800

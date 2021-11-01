@@ -1,0 +1,7 @@
+ObjectTemplate.create SimpleObject canopy
+ObjectTemplate.aiTemplate canopy
+ObjectTemplate.geometry canopy
+ObjectTemplate.setHasCollisionPhysics 0
+objectTemplate.loadSoundScript Sounds/Ambient.ssc
+
+

@@ -1,0 +1,171 @@
+
+GeometryTemplate.create StandardMesh GasGiant_Platform
+GeometryTemplate.file \Buildings\Bespin\GasGiant\GasGiant_Platform
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 1200
+GeometryTemplate.setLodDistance 2 1450
+GeometryTemplate.setLodDistance 3 1500
+GeometryTemplate.setLodDistance 4 1650
+GeometryTemplate.setLodDistance 5 1700
+
+GeometryTemplate.create StandardMesh GasGiant_PlatformBottom
+GeometryTemplate.file \Buildings\Bespin\GasGiant\GasGiant_PlatformBottom
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 1200
+GeometryTemplate.setLodDistance 2 1450
+GeometryTemplate.setLodDistance 3 1500
+GeometryTemplate.setLodDistance 4 1650
+GeometryTemplate.setLodDistance 5 1700
+
+GeometryTemplate.create StandardMesh GasGiant_Tunnel
+GeometryTemplate.file \Buildings\Bespin\GasGiant\GasGiant_Tunnel
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 1200
+GeometryTemplate.setLodDistance 2 1450
+GeometryTemplate.setLodDistance 3 1500
+GeometryTemplate.setLodDistance 4 1650
+GeometryTemplate.setLodDistance 5 1700
+
+GeometryTemplate.create StandardMesh GasGiant_TunnelPillar
+GeometryTemplate.file \Buildings\Bespin\GasGiant\GasGiant_TunnelPillar
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh GasGiant_FatTower
+GeometryTemplate.file \Buildings\Bespin\GasGiant\GasGiant_FatTower
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh GasGiant_TallTower
+GeometryTemplate.file \Buildings\Bespin\GasGiant\GasGiant_TallTower
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh GasGiant_StarTower
+GeometryTemplate.file \Buildings\Bespin\GasGiant\GasGiant_StarTower
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh GasGiant_Tempel
+GeometryTemplate.file \Buildings\Bespin\GasGiant\GasGiant_Tempel
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh GasGiant_Center
+GeometryTemplate.file \Buildings\Bespin\GasGiant\GasGiant_Center
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh GasGiant_C4Monoliths
+GeometryTemplate.file \Buildings\Bespin\GasGiant\GasGiant_C4Monoliths
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh GasGiant_CenterPillars
+GeometryTemplate.file \Buildings\Bespin\GasGiant\GasGiant_CenterPillars
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh GasGiant_Bubble
+GeometryTemplate.file \Buildings\Bespin\GasGiant\GasGiant_Bubble
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh GasGiant_IndentTower
+GeometryTemplate.file \Buildings\Bespin\GasGiant\GasGiant_IndentTower
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh GasGiant_RoundTower
+GeometryTemplate.file \Buildings\Bespin\GasGiant\GasGiant_RoundTower
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh GasGiant_RoundTower2
+GeometryTemplate.file \Buildings\Bespin\GasGiant\GasGiant_RoundTower2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh GasGiant_RoundTower3
+GeometryTemplate.file \Buildings\Bespin\GasGiant\GasGiant_RoundTower3
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh GasGiant_SpikeTower
+GeometryTemplate.file \Buildings\Bespin\GasGiant\GasGiant_SpikeTower
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh GasGiant_Vase
+GeometryTemplate.file \Buildings\Bespin\GasGiant\GasGiant_Vase
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh GasGiant_SquareTower
+GeometryTemplate.file \Buildings\Bespin\GasGiant\GasGiant_SquareTower
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300

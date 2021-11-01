@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle jud_upstruts
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry jud_upstruts
+objectTemplate.aiTemplate jud_upstruts
+rem ---------------------------

@@ -1,0 +1,175 @@
+rem *** TurboLaserBattery ***
+ObjectTemplate.create PlayerControlObject TurboLaserBattery
+ObjectTemplate.setNetworkableInfo TurboLaserBatteryBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.geometry TurboLaserBase_m1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 90
+ObjectTemplate.maxhitpoints 90
+ObjectTemplate.material 811
+ObjectTemplate.criticalDamage 9
+ObjectTemplate.hpLostWhileCriticalDamage 0.9
+ObjectTemplate.addArmorEffect 9 e_Wreck1Smoke 0/2/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_apturret 0/2/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/10/0
+ObjectTemplate.aiTemplate apturret
+ObjectTemplate.timetoliveafterdeath 5
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate lodTurboLaserBattery
+ObjectTemplate.setSoldierExitLocation 5/2/-46 0/0/0
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+ObjectTemplate.setVehicleIconPos 60/55
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory Land
+ObjectTemplate.setVehicleType AAGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_turbolaser_16x16.dds"
+
+rem *** lodTurboLaserBattery ***
+ObjectTemplate.create LodObject lodTurboLaserBattery
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate TurboLaserBatteryComplex
+ObjectTemplate.addTemplate TurboLaserBatteryWreck
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.lodSelector lodTurboLaserBatterySelector
+
+rem *** TurboLaserComplex ***
+ObjectTemplate.create Bundle TurboLaserBatteryComplex
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate TurboLaserBatteryEntry
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate TurboLaserBatteryBase
+ObjectTemplate.setPosition 10/0/0
+ObjectTemplate.addTemplate TurboLaserBatteryBase
+ObjectTemplate.setPosition -10/0/0
+ObjectTemplate.addTemplate TurboLaserBatteryBase
+ObjectTemplate.setPosition 20/0/0
+ObjectTemplate.addTemplate TurboLaserBatteryBase
+ObjectTemplate.setPosition -20/0/0
+ObjectTemplate.addTemplate TurboLaserBatteryHead
+ObjectTemplate.setPosition 0/0/0.071
+ObjectTemplate.addTemplate TurboLaserBatteryHead2
+ObjectTemplate.setPosition 10/0/0.071
+ObjectTemplate.addTemplate TurboLaserBatteryHead2
+ObjectTemplate.setPosition -10/0/0.071
+ObjectTemplate.addTemplate TurboLaserBatteryHead2
+ObjectTemplate.setPosition 20/0/0.071
+ObjectTemplate.addTemplate TurboLaserBatteryHead2
+ObjectTemplate.setPosition -20/0/0.071
+rem -------------------------------------
+
+rem *** TurboLaserBatteryEntry ***
+ObjectTemplate.create EntryPoint TurboLaserBatteryEntry
+ObjectTemplate.setEntryRadius 150
+
+rem *** TurboLaserBatteryHead ***
+ObjectTemplate.create RotationalBundle TurboLaserBatteryHead
+ObjectTemplate.setNetworkableInfo TurboLaserBatteryGunInfo
+ObjectTemplate.geometry TurboLaserBatteryHead_m1
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.loadSoundScript Sounds/TurboLaserRotate.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate TurboLaserBatteryBarrel
+ObjectTemplate.setPosition 0/3.5/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 200/0/0
+ObjectTemplate.setAcceleration 700/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** TurboLaserBatteryBase ***
+ObjectTemplate.create SimpleObject TurboLaserBatteryBase
+ObjectTemplate.geometry TurboLaserBase_m1
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasCollisionPhysics 1
+
+rem *** TurboLaserBatteryBarrel ***
+ObjectTemplate.create RotationalBundle TurboLaserBatteryBarrel
+ObjectTemplate.setNetworkableInfo TurboLaserBatteryCameraInfo
+
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.loadSoundScript Sounds/TurboLaserRotate.ssc
+rem**********************
+ObjectTemplate.addTemplate TurboLaserBatteryCamera
+ObjectTemplate.setPosition 0/0.05/1.5
+ObjectTemplate.addTemplate TurboLaserBatteryGun
+ObjectTemplate.setPosition 0/0/0
+rem**********************
+ObjectTemplate.setMinRotation 0/-35/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/200/0
+ObjectTemplate.setAcceleration 0/700/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** TurboLaserBatteryCamera ***
+ObjectTemplate.create Camera TurboLaserBatteryCamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** TurboLaserWreck ***
+ObjectTemplate.create SimpleObject TurboLaserBatteryWreck
+ObjectTemplate.geometry TurboLaserBatteryWreck
+
+rem *** lodTurboLaserBatterySelector ***
+LodSelectorTemplate.create DistCompareSelector2 lodTurboLaserBatterySelector
+LodSelectorTemplate.hasDestroyedLod 1
+
+rem *** TurboLaserBatteryHead2 ***
+ObjectTemplate.create RotationalBundle TurboLaserBatteryHead2
+ObjectTemplate.setNetworkableInfo TurboLaserBatteryGunInfo
+ObjectTemplate.geometry TurboLaserBatteryHead_m1
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.loadSoundScript Sounds/TurboLaserRotate.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate TurboLaserBatteryBarrel2
+ObjectTemplate.setPosition 0/3.5/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 200/0/0
+ObjectTemplate.setAcceleration 700/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** TurboLaserBatteryBase ***
+ObjectTemplate.create SimpleObject TurboLaserBatteryBase2
+ObjectTemplate.geometry TurboLaserBatteryBase_m1
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasCollisionPhysics 1
+
+rem *** TurboLaserBatteryBarrel ***
+ObjectTemplate.create RotationalBundle TurboLaserBatteryBarrel2
+ObjectTemplate.setNetworkableInfo TurboLaserBatteryCameraInfo
+
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.loadSoundScript Sounds/TurboLaserRotate.ssc
+rem**********************
+ObjectTemplate.addTemplate TurboLaserBatteryGun
+ObjectTemplate.setPosition 0/0/0
+rem**********************
+ObjectTemplate.setMinRotation 0/-35/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/200/0
+ObjectTemplate.setAcceleration 0/700/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY

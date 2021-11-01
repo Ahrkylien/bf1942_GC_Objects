@@ -1,0 +1,8 @@
+NetworkableInfo.createNewInfo EchoTrolleyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo EchoTrolleyPassengerInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+

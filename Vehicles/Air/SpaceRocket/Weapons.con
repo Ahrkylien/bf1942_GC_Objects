@@ -1,0 +1,39 @@
+ObjectTemplate.create Projectile SpaceRocket
+ObjectTemplate.geometry spacerocket
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.drag .5
+ObjectTemplate.mass 20
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.addTemplate e_enginerocket
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.useMMOnEndEffect 1
+ObjectTemplate.damageType 1
+ObjectTemplate.cullRadiusScale 3
+
+ObjectTemplate.material 570
+ObjectTemplate.material2 571
+
+ObjectTemplate.radius 8
+ObjectTemplate.ForceOnExplosion 15
+ObjectTemplate.ProximityFusePrimer 0.1
+ObjectTemplate.explodeNearEnemyDistance 7
+
+ObjectTemplate.addTemplate SpaceRocketWing
+ObjectTemplate.setPosition 0/0/-1.5
+
+ObjectTemplate.addTemplate SpaceRocketEngine
+ObjectTemplate.setPosition 0/0/-2
+
+
+rem -------------------------------------------------
+
+rem *** ProtonTorpedoDummy ***
+ObjectTemplate.create SimpleObject SpaceRocket
+ObjectTemplate.geometry spacerocket

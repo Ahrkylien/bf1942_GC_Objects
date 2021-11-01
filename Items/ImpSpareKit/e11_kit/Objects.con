@@ -1,0 +1,25 @@
+ObjectTemplate.create Kit e11_kit
+ObjectTemplate.setType Assault
+ObjectTemplate.setKitTeam 1
+
+ObjectTemplate.geometry e11_ground
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_assault_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_assault_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/icon_axisknife.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_e11.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+
+ObjectTemplate.setKitIcon 1 "kits/Icon_assault_axis_selected.tga"
+ObjectTemplate.setKitName 1 "RESPAWN_ASSAULT"
+ObjectTemplate.setKitActiveName 1 "RESPAWN_ACTIVE_ASSAULT"
+
+ObjectTemplate.addTemplate E-11
+ObjectTemplate.addTemplate KnifeAxis
+ObjectTemplate.addTemplate NoChute
+
+ObjectTemplate.aiTemplate  Assault

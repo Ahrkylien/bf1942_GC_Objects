@@ -1,0 +1,16 @@
+rem *** AvengerProtonTorpedoLauncher ***
+ObjectTemplate.create FireArms TieInterceptorProtonTorpedoLauncher
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.projectileTemplate ProtonTorpedo
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.autoReload 1
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 3
+ObjectTemplate.velocity 150
+ObjectTemplate.roundOfFire 3
+ObjectTemplate.reloadtime 8
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.AmmoType	7
+ObjectTemplate.addFireArmsPosition 0/-0.2366/2
+
+

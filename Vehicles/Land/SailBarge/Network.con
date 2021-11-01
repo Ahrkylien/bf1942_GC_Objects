@@ -1,0 +1,15 @@
+NetworkableInfo.createNewInfo SailBargeBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SailBargeEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SailBargePassengerInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SailBargeTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SailBargeRudderInfo
+NetworkableInfo.setPredictionMode PMLinear
+

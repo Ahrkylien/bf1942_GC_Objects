@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject echo_hanger1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry echo_hanger1
+objectTemplate.aiTemplate echo_hanger1
+rem ---------------------------

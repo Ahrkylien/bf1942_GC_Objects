@@ -1,0 +1,3 @@
+GeometryTemplate.create StandardMesh ray1
+GeometryTemplate.file buildings/Endor/ray1
+

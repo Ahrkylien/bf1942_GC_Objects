@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh echo_hall
+GeometryTemplate.file buildings/Hoth/SuperEcho/echo_hall
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 350

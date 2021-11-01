@@ -1,0 +1,53 @@
+
+
+rem *** SkiffGunBarrel ***
+ObjectTemplate.create FireArms SkiffGuns
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+rem ObjectTemplate.loadSoundScript Sounds/spitfirefire.ssc
+ObjectTemplate.aiTemplate SkiffRockets
+rem -------------------------------------
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.projectileTemplate SkiffProjectile
+rem ObjectTemplate.projectilePosition 0/0/2
+rem ObjectTemplate.visibleDummyProjectileTemplate SkiffRocketDummy
+ObjectTemplate.magSize 24
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 200
+ObjectTemplate.roundOfFire 2
+rem -------------------------------------
+ObjectTemplate.addFireArmsPosition 0.1/0.14/0 0/0/0
+ObjectTemplate.addFireArmsPosition -0.1/0.14/0 0/0/0
+rem -------------------------------------
+ObjectTemplate.addFireArmsPosition 0.2/0.06/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0.06/0 0/0/0
+ObjectTemplate.addFireArmsPosition -0.2/0.06/0 0/0/0
+rem -------------------------------------
+ObjectTemplate.addFireArmsPosition 0.2/-0.06/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/-0.06/0 0/0/0
+ObjectTemplate.addFireArmsPosition -0.2/-0.06/0 0/0/0
+rem -------------------------------------
+ObjectTemplate.addFireArmsPosition 0.1/-0.14/0 0/0/0
+ObjectTemplate.addFireArmsPosition -0.1/-0.14/0 0/0/0
+rem -------------------------------------
+ObjectTemplate.AmmoType	7
+
+rem *** SkiffProjectile ***
+ObjectTemplate.create Projectile SkiffProjectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.geometry projectile_m1
+ObjectTemplate.timeToLive CRD_NONE/12/0/0
+ObjectTemplate.timeOnEndEffect 0.5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.2
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.damageType 1
+ObjectTemplate.material 555
+ObjectTemplate.material2 556
+ObjectTemplate.radius 16
+ObjectTemplate.ForceOnExplosion 15
+ObjectTemplate.addTemplate e_rocketFume
+ObjectTemplate.loadSoundScript Sounds\bazookaprojectile.ssc
+
+ObjectTemplate.create SimpleObject SkiffRocketDummy
+ObjectTemplate.geometry projectile_m1

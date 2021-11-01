@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject ray1
+ObjectTemplate.aiTemplate ray1
+ObjectTemplate.geometry ray1
+ObjectTemplate.setHasCollisionPhysics 0
+
+

@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh hothpipes
+GeometryTemplate.file buildings/Hoth/Echobase/hothpipes
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 50
+GeometryTemplate.setLodDistance 4 60
+GeometryTemplate.setLodDistance 5 100

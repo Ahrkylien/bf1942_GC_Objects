@@ -1,0 +1,553 @@
+rem *** Imperial Landing Craft Objects***
+rem *** March 25th 04 ***
+rem *** Revision 1 ***
+
+rem *** Imperial_LandingCraft ***
+ObjectTemplate.create playercontrolobject Imperial_LandingCraft
+ObjectTemplate.setNetworkableInfo Imperial_LandingCraftBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.mass 10000
+ObjectTemplate.drag 0.05
+ObjectTemplate.hitpoints 2900
+ObjectTemplate.maxhitpoints 2900
+ObjectTemplate.material 811
+ObjectTemplate.criticalDamage 40
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.hpLostWhileCriticalDamage 4
+ObjectTemplate.hpLostWhileUpSideDown 400
+ObjectTemplate.hpLostWhileDamageFromWater 0
+rem -------------------------------------
+ObjectTemplate.addTemplate lodImperial_LandingCraft
+ObjectTemplate.addTemplate Imperial_LandingCraftFloater
+ObjectTemplate.setPosition 0/-1.3/0
+ObjectTemplate.addTemplate Imperial_LandingCraftFloater
+ObjectTemplate.setPosition 12/-1.3/15
+ObjectTemplate.addTemplate Imperial_LandingCraftFloater
+ObjectTemplate.setPosition -12/-1.3/15
+ObjectTemplate.addTemplate Imperial_LandingCraftFloater
+ObjectTemplate.setPosition 12/-1.3/-15
+ObjectTemplate.addTemplate Imperial_LandingCraftFloater
+ObjectTemplate.setPosition -12/-1.3/-15
+rem -------------------------------------
+rem *************** SOLDIER SPAWN
+ObjectTemplate.addTemplate ILC_solderspawner
+ObjectTemplate.setPosition 1.51678/6.97062e-007/21.5607
+rem *************** SOLDIER SPAWN
+rem
+ObjectTemplate.setSoldierExitLocation 1.51678/6.97062e-007/21.5607 180/0/0
+ObjectTemplate.timetoliveafterdeath 0.001
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_lander.dds"
+ObjectTemplate.setVehicleIconPos 14/98
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABHeatBarOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType VTLevelBomber
+ObjectTemplate.setToolTipType TTDiveBomber
+ObjectTemplate.setMinimapIcon "minimap/minimap_icon_lander_16x16.dds"
+
+rem -----------------------------------------------------------------------
+
+rem *** lodImperial_LandingCraft ***
+ObjectTemplate.create lodobject lodImperial_LandingCraft
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.lodSelector Imperial_LandingCraftLodSelector
+ObjectTemplate.addTemplate Imperial_LandingCraftComplex
+ObjectTemplate.addTemplate Imperial_LandingCraftWreck
+ObjectTemplate.addTemplate Imperial_LandingCraftSimple
+
+rem -----------------------------------------------------------------------
+
+rem *** Imperial_LandingCraftcomplex ***
+ObjectTemplate.create bundle Imperial_LandingCraftcomplex
+ObjectTemplate.geometry Imperial_LandingCraft
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+rem ------------------------------
+ObjectTemplate.addTemplate Imperial_LandingCraftCamera
+ObjectTemplate.setPosition 1.02948/0.917196/22.2581
+ObjectTemplate.addTemplate Imperial_LandingCraftSeat
+ObjectTemplate.setPosition 1.02948/0.4/22.7
+ObjectTemplate.addTemplate Imperial_LandingCraftDriverHandDummy
+ObjectTemplate.setPosition 1.02948/0.4/23.0631
+ObjectTemplate.addTemplate Imperial_LandingCraftEntry
+ObjectTemplate.setPosition 1.51678/6.97062e-007/21.5607
+
+ObjectTemplate.addTemplate Imperial_LandingCraft_Co-Pilot
+
+ObjectTemplate.addTemplate Imperial_LandingCraft_PassengerPCO3
+ObjectTemplate.addTemplate Imperial_LandingCraft_PassengerPCO4
+ObjectTemplate.addTemplate Imperial_LandingCraft_PassengerPCO5
+ObjectTemplate.addTemplate Imperial_LandingCraft_PassengerPCO6
+
+ObjectTemplate.addTemplate Imperial_LandingCraft_Guns
+ObjectTemplate.setPosition 8.3398/0.6923/14.0649
+ObjectTemplate.addTemplate Imperial_LandingCraft_Guns
+ObjectTemplate.setPosition -8.3398/0.6923/14.0649
+ObjectTemplate.addTemplate Imperial_LandingCraft_Lasers
+ObjectTemplate.setPosition 8.3398/0.6923/14.0649
+ObjectTemplate.addTemplate Imperial_LandingCraft_Lasers
+ObjectTemplate.setPosition -8.3398/0.6923/14.0649
+
+ObjectTemplate.addTemplate e_waveskim
+ObjectTemplate.setPosition 8/-1.5/14
+ObjectTemplate.addTemplate e_waveskim
+ObjectTemplate.setPosition -8/-1.5/14
+
+rem ObjectTemplate.addTemplate Imperial_LandingCraft_Speederbike
+rem //^^^^ was just trying it out, feel free to remove ^^^^
+
+ObjectTemplate.addTemplate Imperial_LandingCraftEngineForward
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate Imperial_LandingCraftVTOLRack
+ObjectTemplate.setRotation 180.0/-90.0/-180.0
+
+ObjectTemplate.addTemplate Imperial_LandingCraftBodyWingVertical
+ObjectTemplate.setRotation 0.0/0.0/-90.0
+ObjectTemplate.addTemplate Imperial_LandingCraftFlapLeftMiddle
+ObjectTemplate.setPosition -2.8/-0.2/0.6
+ObjectTemplate.setRotation 13.0/0/-9.5
+ObjectTemplate.addTemplate Imperial_LandingCraftFlapRightMiddle
+ObjectTemplate.setPosition 2.8/-0.2/0.6
+ObjectTemplate.setRotation -13.0/0.0/9.5
+ObjectTemplate.addTemplate Imperial_LandingCraftFlapLeftOuter
+ObjectTemplate.setPosition -5.4/0.0/1
+ObjectTemplate.setRotation 18.4/0/-9.5
+ObjectTemplate.addTemplate Imperial_LandingCraftFlapRightOuter
+ObjectTemplate.setPosition 5.4/0.0/1
+ObjectTemplate.setRotation -18.4/0.0/9.5
+ObjectTemplate.addTemplate Imperial_LandingCraftFlapTailLeft
+ObjectTemplate.setPosition -1.3/0.8/-5
+ObjectTemplate.setRotation 0.0/-1.7/0.0
+ObjectTemplate.addTemplate Imperial_LandingCraftFlapTailRight
+ObjectTemplate.setPosition 1.3/0.8/-5
+ObjectTemplate.setRotation 0.0/-1.7/0.0
+ObjectTemplate.addTemplate Imperial_LandingCraftRudder
+ObjectTemplate.setPosition 0.0/1.0/-8.0
+ObjectTemplate.setRotation 0.0/0.0/-90.0
+
+
+rem ------------- Driver Camera, Entry & Seat Object ----------------------
+
+rem *** Imperial_LandingCraftcamera ***
+ObjectTemplate.create camera Imperial_LandingCraftCamera
+ObjectTemplate.setMinRotation -80/-45/0
+ObjectTemplate.setMaxRotation 80/20/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/-5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.OutsideHudOffset -1.07948/0/3
+
+rem *** Imperial_LandingCraftseat ***
+ObjectTemplate.create seatobject Imperial_LandingCraftSeat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+ObjectTemplate.seatAnimationUpperBody Ub_PassengerInWilly
+ObjectTemplate.seatAnimationLowerBody Lb_PassengerInWilly
+
+rem *** Imperial_LandingCraftentry ***
+ObjectTemplate.create entrypoint Imperial_LandingCraftEntry
+ObjectTemplate.setEntryRadius 2
+
+rem *** Imperial_LandingCraftdriverhanddummy ***
+ObjectTemplate.create animatedbundle Imperial_LandingCraftDriverHandDummy
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.3/0/0.2 -60/130/30
+ObjectTemplate.addSkeletonIK Bip01_L_Hand -0.3/0/0.2 -100/-130/30
+
+
+rem ------------- Co-PilotPCO -----------------------------------------------
+
+rem *** Imperial_LandingCraft_Co-Pilot ***
+ObjectTemplate.create PlayerControlObject Imperial_LandingCraft_Co-Pilot
+ObjectTemplate.setNetworkableInfo Imperial_LandingCraftBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate ILC_Turret_1_X
+ObjectTemplate.setPosition -9.774/3.6/0
+ObjectTemplate.addTemplate Imperial_LandingCraftSeat
+ObjectTemplate.setPosition -1.02948/0.4/22.7
+ObjectTemplate.addTemplate Imperial_LandingCraftEntry
+ObjectTemplate.setPosition 1.51678/0/21.5607
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.51678/6.97062e-007/21.5607 180/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_lander.dds"
+ObjectTemplate.setVehicleIconPos 21/104
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABHeatBarOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.setMinimapIcon "minimap/minimap_icon_lander_16x16.dds"
+
+rem *** Imperial_LandingCraftCo_Pilotcamera ***
+ObjectTemplate.create camera Imperial_LandingCraftCo_PilotCamera
+ObjectTemplate.setMinRotation -80/-45/0
+ObjectTemplate.setMaxRotation 80/20/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** Turret_1_X ***
+ObjectTemplate.create RotationalBundle ILC_Turret_1_X
+ObjectTemplate.setNetworkableInfo ILCTurretInfo
+ObjectTemplate.loadSoundScript Sounds/TurretRotate.ssc
+ObjectTemplate.geometry ILC_Turbolaser_Base_M1
+rem -------------------------------------
+ObjectTemplate.addTemplate ILC_Turret_1_Y
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 30/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** Turret_1_Y***
+ObjectTemplate.create RotationalBundle ILC_Turret_1_Y
+ObjectTemplate.setNetworkableInfo ILCTurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/TurretRotate.ssc
+ObjectTemplate.geometry ILC_Turbolaser_Barrel_M1
+rem -------------------------------------
+ObjectTemplate.addTemplate ILCGunnerCamera
+ObjectTemplate.setPosition 0/0.5/2.5
+ObjectTemplate.addTemplate ILC_Turret_Lasers
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-80/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/25/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem ------------- Soldier PCOs --------------------------------------------
+
+rem *** Imperial_LandingCraft_PassengerPCO3 ***
+ObjectTemplate.create PlayerControlObject Imperial_LandingCraft_PassengerPCO3
+ObjectTemplate.setNetworkableInfo Imperial_LandingCraftBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate ILC_Turret_1_X
+ObjectTemplate.setPosition 9.884/3.6/0
+ObjectTemplate.addTemplate Imperial_LandingCraftSeat
+ObjectTemplate.setPosition -4.0036/-0.543896/-10.179
+ObjectTemplate.addTemplate Imperial_LandingCraftEntry
+ObjectTemplate.setPosition -4.0036/-0.543896/-10.179
+ObjectTemplate.addTemplate Imperial_LandingCraftEntry
+ObjectTemplate.setPosition 1.51678/0/21.5607
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -4.0036/-0.543896/-8 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_lander.dds"
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABHeatBarOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleIconPos 76/67
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.setMinimapIcon "minimap/minimap_icon_lander_16x16.dds"
+
+rem *** Imperial_LandingCraft_PassengerPCO4 ***
+ObjectTemplate.create PlayerControlObject Imperial_LandingCraft_PassengerPCO4
+ObjectTemplate.setNetworkableInfo Imperial_LandingCraftPassengerInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Imperial_LandingCraftCo_PilotCamera
+ObjectTemplate.setPosition 1.41591/0.2/-10.179
+ObjectTemplate.addTemplate Imperial_LandingCraftSeat
+ObjectTemplate.setPosition 1.41591/-0.543896/-10.179
+ObjectTemplate.addTemplate Imperial_LandingCraftEntry
+ObjectTemplate.setPosition 1.41591/-0.543896/-10.179
+ObjectTemplate.addTemplate Imperial_LandingCraftEntry
+ObjectTemplate.setPosition 1.51678/0/21.5607
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 1.41591/-0.543896/-8.179 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_lander.dds"
+ObjectTemplate.setVehicleIconPos 68/62
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.setMinimapIcon "minimap/minimap_icon_lander_16x16.dds"
+
+rem *** Imperial_LandingCraft_PassengerPCO5 ***
+ObjectTemplate.create PlayerControlObject Imperial_LandingCraft_PassengerPCO5
+ObjectTemplate.setNetworkableInfo Imperial_LandingCraftPassengerInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Imperial_LandingCraftCo_PilotCamera
+ObjectTemplate.setPosition -1.29668/.2/-10.179
+ObjectTemplate.addTemplate Imperial_LandingCraftSeat
+ObjectTemplate.setPosition -1.29668/-0.543896/-10.179
+ObjectTemplate.addTemplate Imperial_LandingCraftEntry
+ObjectTemplate.setPosition -1.29668/-0.543896/-10.179
+ObjectTemplate.addTemplate Imperial_LandingCraftEntry
+ObjectTemplate.setPosition 1.51678/0/21.5607
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.29668/-0.543896/-8.179 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_lander.dds"
+ObjectTemplate.setVehicleIconPos 59/59
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.setMinimapIcon "minimap/minimap_icon_lander_16x16.dds"
+
+rem *** Imperial_LandingCraft_PassengerPCO6 ***
+ObjectTemplate.create PlayerControlObject Imperial_LandingCraft_PassengerPCO6
+ObjectTemplate.setNetworkableInfo Imperial_LandingCraftPassengerInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Imperial_LandingCraftCo_PilotCamera
+ObjectTemplate.setPosition 3.87327/.2/-10.179
+ObjectTemplate.addTemplate Imperial_LandingCraftSeat
+ObjectTemplate.setPosition 3.87327/-0.543896/-10.179
+ObjectTemplate.addTemplate Imperial_LandingCraftEntry
+ObjectTemplate.setPosition 3.87327/-0.543896/-10.179
+ObjectTemplate.addTemplate Imperial_LandingCraftEntry
+ObjectTemplate.setPosition 1.51678/0/21.5607
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 3.87327/-0.543896/-8.179 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_lander.dds"
+ObjectTemplate.setVehicleIconPos 46/62
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.setMinimapIcon "minimap/minimap_icon_lander_16x16.dds"
+
+
+rem *** Imperial_LandingCraftSoldierSeat ***
+ObjectTemplate.create SeatObject Imperial_LandingCraftSoldierSeat
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+rem ------------- Left Door -----------------------------------------------
+
+rem *** Imperial_LandingCraft_door_leftbot_rot ***
+ObjectTemplate.create landinggear Imperial_LandingCraft_door_leftbot_rot
+ObjectTemplate.geometry Imperial_LandingCraft_door_leftbot
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMinRotation 0/0/-105
+ObjectTemplate.setMaxSpeed 0/0/32
+ObjectTemplate.setAcceleration 0/0/-105
+ObjectTemplate.setGearDownHeight 9999
+ObjectTemplate.setGearDownEngineInput 0.2
+ObjectTemplate.setGearUpEngineInput 0.3
+rem -------------------------------------
+ObjectTemplate.addTemplate Imperial_LandingCraft_door_lefttop_rot
+ObjectTemplate.setPosition -0.0520001/2.534/-0.003
+rem -------------------------------------
+
+rem *** Imperial_LandingCraft_door_lefttop_rot ***
+ObjectTemplate.create landinggear Imperial_LandingCraft_door_lefttop_rot
+ObjectTemplate.geometry Imperial_LandingCraft_door_lefttop
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMinRotation 0/0/-180
+ObjectTemplate.setMaxSpeed 0/0/90
+ObjectTemplate.setAcceleration 0/0/-180
+ObjectTemplate.setGearDownHeight 9999
+ObjectTemplate.setGearDownEngineInput 0.1
+ObjectTemplate.setGearUpEngineInput 0.15
+
+
+rem ------------- Right Door ----------------------------------------------
+
+rem *** Imperial_LandingCraft_door_rightbot_rot ***
+ObjectTemplate.create landinggear Imperial_LandingCraft_door_rightbot_rot
+ObjectTemplate.geometry Imperial_LandingCraft_door_rightbot
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMaxRotation 0/0/105
+ObjectTemplate.setMaxSpeed 0/0/32
+ObjectTemplate.setAcceleration 0/0/105
+ObjectTemplate.setGearDownHeight 9999
+ObjectTemplate.setGearDownEngineInput 0.2
+ObjectTemplate.setGearUpEngineInput 0.3
+rem -------------------------------------
+ObjectTemplate.addTemplate Imperial_LandingCraft_door_righttop_rot
+ObjectTemplate.setPosition 0.0520002/2.534/-0.003
+rem -------------------------------------
+
+rem *** Imperial_LandingCraft_door_righttop_rot ***
+ObjectTemplate.create landinggear Imperial_LandingCraft_door_righttop_rot
+ObjectTemplate.geometry Imperial_LandingCraft_door_righttop
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMaxRotation 0/0/180
+ObjectTemplate.setMaxSpeed 0/0/90
+ObjectTemplate.setAcceleration 0/0/180
+ObjectTemplate.setGearDownHeight 9999
+ObjectTemplate.setGearDownEngineInput 0.1
+ObjectTemplate.setGearUpEngineInput 0.15
+
+rem ------------- Front Door ----------------------------------------------
+
+rem *** Imperial_LandingCraft_door_fronttop_rot ***
+ObjectTemplate.create landinggear Imperial_LandingCraft_door_fronttop_rot
+ObjectTemplate.geometry Imperial_LandingCraft_door_fronttop
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMinRotation 0/-22.5/0
+ObjectTemplate.setMaxSpeed 0/32/0
+ObjectTemplate.setAcceleration 0/-85/0
+ObjectTemplate.setGearDownHeight 9999
+ObjectTemplate.setGearDownEngineInput 0.2
+ObjectTemplate.setGearUpEngineInput 0.3
+ObjectTemplate.addTemplate Imperial_LandingCraft_door_frontbot_rot
+ObjectTemplate.setPosition 0.0/-0.0810002/5.072
+ObjectTemplate.setRotation 0.0/15.0/0.0
+
+rem *** Imperial_LandingCraft_door_frontbot_rot ***
+ObjectTemplate.create landinggear Imperial_LandingCraft_door_frontbot_rot
+ObjectTemplate.geometry Imperial_LandingCraft_door_frontbot
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMinRotation 0/-47/0
+ObjectTemplate.setMaxSpeed 0/32/0
+ObjectTemplate.setAcceleration 0/-85/0
+ObjectTemplate.setGearDownHeight 9999
+ObjectTemplate.setGearDownEngineInput 0.1
+ObjectTemplate.setGearUpEngineInput 0.15
+
+rem ------------- Visible Wings ----------------------------------------------
+
+rem *** Imperial_LandingCraft_wing_right_rot ***
+ObjectTemplate.create landinggear Imperial_LandingCraft_wing_right_rot
+ObjectTemplate.geometry Imperial_LandingCraft_wing_right
+ObjectTemplate.loadSoundScript Sounds/LanderLandingGear.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMinRotation 0/0/-149
+ObjectTemplate.setMaxSpeed 0/0/32
+ObjectTemplate.setAcceleration 0/0/-85
+ObjectTemplate.setGearDownHeight 9999
+ObjectTemplate.setGearDownEngineInput 0.4
+ObjectTemplate.setGearUpEngineInput 0.6
+
+rem *** Imperial_LandingCraft_wing_left_rot ***
+ObjectTemplate.create landinggear Imperial_LandingCraft_wing_left_rot
+ObjectTemplate.geometry Imperial_LandingCraft_wing_left
+ObjectTemplate.loadSoundScript Sounds/LanderLandingGear.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMaxRotation 0/0/149
+ObjectTemplate.setMaxSpeed 0/0/32
+ObjectTemplate.setAcceleration 0/0/85
+ObjectTemplate.setGearDownHeight 9999
+ObjectTemplate.setGearDownEngineInput 0.4
+ObjectTemplate.setGearUpEngineInput 0.6
+
+rem ------------- Landing Gear ----------------------------------------
+
+rem *** Imperial_LandingCraft_lgear ***
+ObjectTemplate.create simpleobject Imperial_LandingCraft_lgear
+ObjectTemplate.geometry Imperial_LandingCraft_lgear
+
+rem *** Imperial_LandingCraft_lgear_rot ***
+ObjectTemplate.create landinggear Imperial_LandingCraft_lgear_rot
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem ----------------------------------
+ObjectTemplate.addTemplate Imperial_LandingCraft_support
+ObjectTemplate.setPosition 0.0/-1/0.0
+ObjectTemplate.addTemplate Imperial_LandingCraft_lgear
+ObjectTemplate.setPosition 0.0/-1/0.0
+rem ----------------------------------
+ObjectTemplate.setMinRotation 0/-180/0
+ObjectTemplate.setMaxSpeed 0/32/0
+ObjectTemplate.setAcceleration 0/-85/0
+ObjectTemplate.setGearDownHeight 9999
+ObjectTemplate.setGearDownEngineInput 0.3
+ObjectTemplate.setGearUpEngineInput 0.5
+
+
+rem *** Imperial_LandingCraft_lgear_rot1 ***
+ObjectTemplate.create landinggear Imperial_LandingCraft_lgear_rot1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem ---------------------------------
+ObjectTemplate.addTemplate Imperial_LandingCraft_lgear_rot
+ObjectTemplate.setPosition 0.0/-1/0.0
+rem ---------------------------------
+ObjectTemplate.setMaxRotation 0/180/0
+ObjectTemplate.setMaxSpeed 0/32/0
+ObjectTemplate.setAcceleration 0/85/0
+ObjectTemplate.setGearDownHeight 9999
+ObjectTemplate.setGearDownEngineInput 0.3
+ObjectTemplate.setGearUpEngineInput 0.5
+
+
+rem ------------- Other Bits ----------------------------------------
+
+rem *** Imperial_LandingCraftwreck ***
+ObjectTemplate.create simpleobject Imperial_LandingCraftwreck
+ObjectTemplate.geometry Imperial_LandingCraft
+
+
+rem *** Imperial_LandingCraftsimple ***
+ObjectTemplate.create simpleobject Imperial_LandingCraftsimple
+ObjectTemplate.geometry Imperial_LandingCraft
+
+ObjectTemplate.create simpleobject Imperial_LandingCraft_Guns
+ObjectTemplate.geometry Imperial_LandingCraft_Guns
+
+rem *** Imperial_LandingCraftlodselector ***
+LodSelectorTemplate.create distcompareselector2 Imperial_LandingCraftlodselector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 300
+
+rem *** GunnerCamera ***
+ObjectTemplate.create Camera ILCGunnerCamera
+ObjectTemplate.addTemplate lodILCGunnerHUD
+ObjectTemplate.setPosition 0/0/0.3
+
+rem *** lodGunnerHUD ***
+ObjectTemplate.create LodObject lodILCGunnerHUD
+rem -------------------------------------
+ObjectTemplate.addTemplate ILCGunnerHUDExternal
+ObjectTemplate.addTemplate ILCGunnerHUDInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector ILCGunnerHUDSelector
+
+rem *** GunnerHUDSelector ***
+LodSelectorTemplate.create DistCompareSelector ILCGunnerHUDSelector
+LodSelectorTemplate.addLodDistance 5
+LodSelectorTemplate.addLodComparison 0.5
+
+rem *** GunnerHUDExternal ***
+ObjectTemplate.create SimpleObject ILCGunnerHUDExternal
+rem ObjectTemplate.geometry Model_Null
+
+rem *** GunnerHUDInternal ***
+ObjectTemplate.create SimpleObject ILCGunnerHUDInternal
+ObjectTemplate.geometry 1P_LancerGunnerHUD_M1
+
+
+rem ***PLAYER SPAWN INSIDE****
+ObjectTemplate.create SpawnPoint ILC_solderspawner
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 83
+ObjectTemplate.setGroup 65
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0

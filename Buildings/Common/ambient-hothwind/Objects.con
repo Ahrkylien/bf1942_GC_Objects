@@ -1,0 +1,3 @@
+ObjectTemplate.create Bundle ambient-hothwind
+ObjectTemplate.setHasCollisionPhysics 0
+ObjectTemplate.loadSoundScript Sounds/ambient-hothwind.ssc

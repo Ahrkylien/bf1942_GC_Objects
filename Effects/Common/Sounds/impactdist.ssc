@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include impactdist_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include impactdist_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include impactdist_MedLow.ssc

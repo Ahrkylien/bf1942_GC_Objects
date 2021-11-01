@@ -1,0 +1,7 @@
+ObjectTemplate.create SimpleObject wampa_cave
+ObjectTemplate.geometry wampa_cave
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate wampa_cave
+objectTemplate.loadSoundScript Sounds/Ambient.ssc
+
+

@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject grass1
+ObjectTemplate.aiTemplate tree1
+ObjectTemplate.geometry grass1
+ObjectTemplate.setHasCollisionPhysics 1
+
+

@@ -1,0 +1,41 @@
+rem *******************************************
+rem Galactic Conquest
+rem May 03, 2004
+rem Ver 1.04
+rem *******************************************
+rem ImpSkiff - Created for Suges favorite raping vehilce
+
+render.beginGlobalCluster ImpSkiff
+GeometryTemplate.create StandardMesh imp_Skiff
+GeometryTemplate.file Vehicles/ImpSkiff/imp_skiff
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh imp_skiff_door
+GeometryTemplate.file Vehicles/ImpSkiff/imp_skiff_door
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+
+
+
+GeometryTemplate.create StandardMesh imp_skiff_gun
+GeometryTemplate.file Vehicles/ImpSkiff/imp_skiff_gun
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh ImpSkiff_Wreck
+GeometryTemplate.file scrap_metal3_m1

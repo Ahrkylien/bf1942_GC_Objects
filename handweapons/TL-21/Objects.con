@@ -1,0 +1,83 @@
+ObjectTemplate.create HandFireArms TL-21
+ObjectTemplate.itemIndex 3
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate TL-21Projectile
+ObjectTemplate.projectilePosition 0/0.01/0
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.unZoomBetweenFireTime 0
+ObjectTemplate.useScope 0
+ObjectTemplate.magSize 300
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.autoReload 0
+ObjectTemplate.setHasMag 0
+ObjectTemplate.reloadtime 0.00001
+ObjectTemplate.roundOfFire 8.5
+ObjectTemplate.setHudAmmoType ATIconAndHeatBar
+ObjectTemplate.setAmmoIcon "ammo/icon_laser_64x32.dds"
+ObjectTemplate.setCrossHairType CHTCrossHair
+
+objectTemplate.aiTemplate Mp18AI
+ObjectTemplate.zoomFov 0.9
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.soldierZoomFov 0.6 
+ObjectTemplate.soldierZoomPosition -0.05/0.02/0.06
+ObjectTemplate.soldierCameraPosition -0.01/-0.042/0.09
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	1
+
+ObjectTemplate.minDamage 0.05
+ObjectTemplate.distToStartLoseDamage 50
+ObjectTemplate.distToMinDamage 100
+
+rem ObjectTemplate.autoReload 1
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 420
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.4/0.2/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/0.7/-0.7/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 1
+
+ObjectTemplate.setFireDev 1.5 0.7 0.08
+ObjectTemplate.setDevMod 1 0.74 0.5
+ObjectTemplate.setTurnDev 0.5 0.1 0.2 0.1
+ObjectTemplate.setSpeedDev 3 0.4 0.2 0.1
+ObjectTemplate.setMiscDev 3 2.5 0.4
+ObjectTemplate.setMinDev 0.2
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript Sounds/TL-21.ssc
+
+ObjectTemplate.createSkeleton animations/TL-21.ske
+ObjectTemplate.useSkeletonPartAsMain thompson
+ObjectTemplate.addTemplate TL-21Lod
+ObjectTemplate.setPosition 0/0.05/0.05
+ObjectTemplate.setRotation 0/-2/0
+
+ObjectTemplate.addTemplate e_MuzzThomp
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0.005/0.086/0.64
+
+
+
+ObjectTemplate.create SimpleObject TL-21Simple
+ObjectTemplate.geometry TL-21
+
+
+ObjectTemplate.create AnimatedBundle TL-21Complex
+ObjectTemplate.addTemplate TL-21Simple
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.createSkeleton animations/TL-21.ske
+
+
+ObjectTemplate.create LodObject TL-21Lod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate TL-21Complex
+ObjectTemplate.addTemplate TL-21Simple
+
+
+

@@ -1,0 +1,183 @@
+ObjectTemplate.create Bundle GasGiant
+ObjectTemplate.geometry GasGiant_Platform
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate GasGiant
+rem -------------------------------------
+
+ObjectTemplate.addTemplate GasGiant_PlatformBottom
+ObjectTemplate.setPosition 0/0/0
+
+ObjectTemplate.addTemplate GasGiant_Center
+ObjectTemplate.setPosition 1.9714/0/-8.8061
+
+ObjectTemplate.addTemplate GasGiant_Tunnel
+ObjectTemplate.setPosition 104.947/-7.40848/0
+
+ObjectTemplate.addTemplate GasGiant_Tunnel
+ObjectTemplate.setPosition -104.947/-7.40848/0
+
+ObjectTemplate.addTemplate GasGiant_TunnelPillar
+ObjectTemplate.setPosition 104.984/-7.84202/0.0910751
+
+ObjectTemplate.addTemplate GasGiant_TunnelPillar
+ObjectTemplate.setPosition -104.978/-7.89321/0.101806
+
+ObjectTemplate.addTemplate GasGiant_FatTower
+ObjectTemplate.setPosition -75.2538/-7.65209/70.7263
+
+ObjectTemplate.addTemplate GasGiant_TallTower
+ObjectTemplate.setPosition 98.5499/-7.73829/-37.2796
+
+ObjectTemplate.addTemplate GasGiant_TallTower
+ObjectTemplate.setPosition -96.8343/-7.73829/-53.3261
+
+ObjectTemplate.addTemplate GasGiant_TallTower
+ObjectTemplate.setPosition -96.8343/-7.73829/-53.3261
+
+ObjectTemplate.addTemplate GasGiant_StarTower
+ObjectTemplate.setPosition -1.36756e-006/-10.1397/100.12
+
+ObjectTemplate.addTemplate GasGiant_Tempel
+ObjectTemplate.setPosition 2.06137/-0.35938/-9.00311
+
+ObjectTemplate.addTemplate GasGiant_C4Monoliths
+ObjectTemplate.setPosition -0.167888/-14.3491/-28.7772
+
+ObjectTemplate.addTemplate GasGiant_CenterPillars
+ObjectTemplate.setPosition 1.9474/0/-8.8061
+
+ObjectTemplate.addTemplate GasGiant_Bubble
+ObjectTemplate.setPosition -0.209753/-15.0423/36.9918
+
+ObjectTemplate.addTemplate GasGiant_IndentTower
+ObjectTemplate.setPosition -50.278/-9.10507/-90.8847
+
+ObjectTemplate.addTemplate GasGiant_IndentTower
+ObjectTemplate.setPosition -50.278/-9.10507/-90.8847
+
+ObjectTemplate.addTemplate GasGiant_RoundTower
+ObjectTemplate.setPosition 17.8838/-7.86643/116.631
+
+ObjectTemplate.addTemplate GasGiant_RoundTower
+ObjectTemplate.setPosition 39.5038/-13.9975/26.1524
+
+ObjectTemplate.addTemplate GasGiant_RoundTower2
+ObjectTemplate.setPosition -51.5069/-8.03544/90.2179
+
+ObjectTemplate.addTemplate GasGiant_RoundTower2
+ObjectTemplate.setPosition -0.0302149/-14.6063/-44.0868
+
+ObjectTemplate.addTemplate GasGiant_RoundTower3
+ObjectTemplate.setPosition -94.6495/-7.81256/49.5875
+
+ObjectTemplate.addTemplate GasGiant_RoundTower3
+ObjectTemplate.setPosition 50.8283/-7.81256/-88.0621
+
+ObjectTemplate.addTemplate GasGiant_SpikeTower
+ObjectTemplate.setPosition 1.92738/0/-8.86209
+
+ObjectTemplate.addTemplate GasGiant_Vase
+ObjectTemplate.setPosition 86.0654/-7.80695/-67.9371
+
+ObjectTemplate.addTemplate GasGiant_SquareTower
+ObjectTemplate.setPosition 106.329/-8.0072/38.8259
+
+ObjectTemplate.addTemplate GasGiant_SquareTower
+ObjectTemplate.setPosition -41.6166/-14.3766/-23.2544
+
+ObjectTemplate.addTemplate GasGiant_SquareTower
+ObjectTemplate.setPosition 26.9226/-7.88924/-102.76
+
+
+rem -------------------------------------
+
+ObjectTemplate.create SimpleObject GasGiant_PlatformBottom
+ObjectTemplate.aiTemplate GasGiant
+ObjectTemplate.geometry GasGiant_PlatformBottom
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject GasGiant_Center
+ObjectTemplate.aiTemplate GasGiant
+ObjectTemplate.geometry GasGiant_Center
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject GasGiant_Tunnel
+ObjectTemplate.aiTemplate GasGiant
+ObjectTemplate.geometry GasGiant_Tunnel
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject GasGiant_TunnelPillar
+ObjectTemplate.aiTemplate GasGiant
+ObjectTemplate.geometry GasGiant_TunnelPillar
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject GasGiant_FatTower
+ObjectTemplate.aiTemplate GasGiant
+ObjectTemplate.geometry GasGiant_FatTower
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject GasGiant_TallTower
+ObjectTemplate.aiTemplate GasGiant
+ObjectTemplate.geometry GasGiant_TallTower
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject GasGiant_StarTower
+ObjectTemplate.aiTemplate GasGiant
+ObjectTemplate.geometry GasGiant_StarTower
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject GasGiant_Tempel
+ObjectTemplate.aiTemplate GasGiant
+ObjectTemplate.geometry GasGiant_Tempel
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject GasGiant_C4Monoliths
+ObjectTemplate.aiTemplate GasGiant
+ObjectTemplate.geometry GasGiant_C4Monoliths
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject GasGiant_CenterPillars
+ObjectTemplate.aiTemplate GasGiant
+ObjectTemplate.geometry GasGiant_CenterPillars
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject GasGiant_Bubble
+ObjectTemplate.aiTemplate GasGiant
+ObjectTemplate.geometry GasGiant_Bubble
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject GasGiant_IndentTower
+ObjectTemplate.aiTemplate GasGiant
+ObjectTemplate.geometry GasGiant_IndentTower
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject GasGiant_RoundTower
+ObjectTemplate.aiTemplate GasGiant
+ObjectTemplate.geometry GasGiant_RoundTower
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject GasGiant_RoundTower2
+ObjectTemplate.aiTemplate GasGiant
+ObjectTemplate.geometry GasGiant_RoundTower2
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject GasGiant_RoundTower3
+ObjectTemplate.aiTemplate GasGiant
+ObjectTemplate.geometry GasGiant_RoundTower3
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject GasGiant_SpikeTower
+ObjectTemplate.aiTemplate GasGiant
+ObjectTemplate.geometry GasGiant_SpikeTower
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject GasGiant_Vase
+ObjectTemplate.aiTemplate GasGiant
+ObjectTemplate.geometry GasGiant_Vase
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject GasGiant_SquareTower
+ObjectTemplate.aiTemplate GasGiant
+ObjectTemplate.geometry GasGiant_SquareTower
+ObjectTemplate.setHasCollisionPhysics 1
+

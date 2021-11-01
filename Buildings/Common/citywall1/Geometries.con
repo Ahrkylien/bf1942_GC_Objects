@@ -1,0 +1,10 @@
+
+GeometryTemplate.create StandardMesh citywall1
+GeometryTemplate.file buildings/Tatooine/citywall1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 900
+GeometryTemplate.setLodDistance 3 1000
+GeometryTemplate.setLodDistance 4 1500
+GeometryTemplate.setLodDistance 5 1600
+

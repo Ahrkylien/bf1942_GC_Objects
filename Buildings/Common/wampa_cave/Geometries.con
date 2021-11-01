@@ -1,0 +1,11 @@
+
+GeometryTemplate.create StandardMesh wampa_cave
+GeometryTemplate.file buildings/Hoth/wampa_cave
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 900
+
+

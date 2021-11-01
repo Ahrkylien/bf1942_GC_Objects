@@ -1,0 +1,72 @@
+rem *** Skiff_Engine ***
+ObjectTemplate.create Engine Skiff_Engine
+ObjectTemplate.setNetworkableInfo SkiffEngineInfo
+ObjectTemplate.loadSoundScript Sounds/SkiffEngine.ssc
+ObjectTemplate.setMinRotation 0/0/-100
+ObjectTemplate.setMaxRotation 0/0/100
+ObjectTemplate.setMaxSpeed 0/0/7200
+ObjectTemplate.setAcceleration 0/0/2700
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 76
+ObjectTemplate.setDifferential 7
+
+rem *** Skiff_Vertical_Engine ***
+ObjectTemplate.create Engine Skiff_Vertical_Engine
+ObjectTemplate.setNetworkableInfo SkiffEngineInfo
+ObjectTemplate.setMinRotation 0/0/-100
+ObjectTemplate.setMaxRotation 0/0/100
+ObjectTemplate.setMaxSpeed 0/0/1000
+ObjectTemplate.setAcceleration 0/0/-1000
+ObjectTemplate.setInputToRoll c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 1000
+ObjectTemplate.setDifferential 10
+
+rem *** Skiff_Vertical_Engine_2 ***
+ObjectTemplate.create Engine Skiff_Vertical_Engine_2
+ObjectTemplate.setNetworkableInfo SkiffEngineInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/-5000
+ObjectTemplate.setMaxSpeed 0/0/200
+ObjectTemplate.setAcceleration 0/0/-5000
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETRocket
+ObjectTemplate.setTorque 2.1
+ObjectTemplate.setDifferential 1
+
+rem *** Skiff_Lateral_Engine ***
+ObjectTemplate.create Engine Skiff_Lateral_Engine
+ObjectTemplate.setNetworkableInfo SkiffEngineInfo
+ObjectTemplate.setMinRotation 0/0/-10
+ObjectTemplate.setMaxRotation 0/0/10
+ObjectTemplate.setMaxSpeed 0/0/1
+ObjectTemplate.setAcceleration 0/0/1000
+ObjectTemplate.setInputToRoll c_PIYaw
+ObjectTemplate.setAutomaticRollStabilization 1
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 50
+ObjectTemplate.setDifferential 1
+
+rem *** Skiff_Floater ***
+ObjectTemplate.create FloatingBundle Skiff_Floater
+ObjectTemplate.setHullHeight 1000
+ObjectTemplate.setFloatMaxLift 9.81
+ObjectTemplate.setFloatMinLift 9.81
+ObjectTemplate.setSinkingSpeedMod 0
+ObjectTemplate.setAutomaticReset 1
+
+rem *** Skiff_Wheel ***
+ObjectTemplate.create Spring Skiff_Wheel
+ObjectTemplate.geometry corsair_Bwheel_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFDummyGrip
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12
+ObjectTemplate.createInvisible 1
+

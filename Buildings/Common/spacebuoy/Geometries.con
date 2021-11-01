@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh spacebuoy
+GeometryTemplate.file buildings/Vanguard/spacebuoy
+GeometryTemplate.setLodDistance 0 200
+GeometryTemplate.setLodDistance 1 900
+GeometryTemplate.setLodDistance 2 940
+GeometryTemplate.setLodDistance 3 950
+GeometryTemplate.setLodDistance 4 1000
+GeometryTemplate.setLodDistance 5 1500

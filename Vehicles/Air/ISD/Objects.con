@@ -1,0 +1,97 @@
+
+ObjectTemplate.create PlayerControlObject isd
+ObjectTemplate.setNetworkableInfo isdBodyInfo
+rem--------------------------------------
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.explosionRadius 18
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.drag 2
+ObjectTemplate.dragOffset 0/0/0
+ObjectTemplate.mass 4500
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.hitpoints 5500
+ObjectTemplate.maxhitpoints 5500
+ObjectTemplate.aiTemplate pyrocopterMain
+ObjectTemplate.timeToLiveAfterDeath 10
+ObjectTemplate.material 821
+ObjectTemplate.criticalDamage 500
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.hpLostWhileCriticalDamage 50
+ObjectTemplate.hpLostWhileUpSideDown 50
+ObjectTemplate.hpLostWhileDamageFromWater 50
+rem -------------------------------------
+ObjectTemplate.addTemplate lodisd
+rem -------------------------------------
+ObjectTemplate.setPcoId 0
+ObjectTemplate.GUIIndex 30
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_b17.tga"
+ObjectTemplate.setSoldierExitLocation 6/12/-7 180/0/0
+ObjectTemplate.setVehicleIconPos 40/60
+ObjectTemplate.setNumberOfWeaponIcons 0
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTDiveBomber
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_Factory_32x32.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+rem-------------------------------------------
+
+rem *** lodisd ***
+ObjectTemplate.create LodObject lodisd
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate isdComplex
+ObjectTemplate.addTemplate isdSimple
+ObjectTemplate.addTemplate isdWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector isdLodSelector
+
+rem ***isdComplex***
+ObjectTemplate.create Bundle isdComplex
+ObjectTemplate.geometry isd
+ObjectTemplate.setHasCollisionPhysics 1
+rem ObjectTemplate.addTemplate TadvSpawner
+rem ObjectTemplate.setPosition 0/-1.037/136.716
+
+
+rem *** isdSimple ***
+ObjectTemplate.create Bundle isdSimple
+ObjectTemplate.geometry isd
+ObjectTemplate.hasDynamicShadow 1
+
+rem *** isdWreck ***
+ObjectTemplate.create SimpleObject isdWreck
+ObjectTemplate.geometry isd
+
+rem *** isdLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 isdLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 150
+
+rem *** TAdvSpawner ***
+ObjectTemplate.create ObjectSpawner TadvSpawner
+ObjectTemplate.setObjectTemplate 1 TieAdvanced
+ObjectTemplate.setObjectTemplate 2 TieAdvanced
+ObjectTemplate.minSpawnDelay 20
+ObjectTemplate.maxSpawnDelay 20
+ObjectTemplate.TimeToLive 30
+ObjectTemplate.Distance 20
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.holdObject 1
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 3
+ObjectTemplate.damageWhenLost 10
+
+
+
+
+
+
+
+
+

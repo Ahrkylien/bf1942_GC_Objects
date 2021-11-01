@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/laser.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/laser.ssc
+	
+#templateLevel LOW
+
+	#include Low/laser.ssc

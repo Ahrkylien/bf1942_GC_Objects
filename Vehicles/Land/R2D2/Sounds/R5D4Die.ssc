@@ -1,0 +1,19 @@
+newPatch
+load @ROOT/Sound/@RTD/r5d4-die.wav
+minDistance 10
+volume 0.9
+dopplerOff
+stop FinishSample
+priority -2
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 100
+	param 1
+	param -1	
+endEffect
+
+

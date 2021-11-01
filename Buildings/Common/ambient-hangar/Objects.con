@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject ambient-hangar
+ObjectTemplate.setHasCollisionPhysics 0
+objectTemplate.loadSoundScript Sounds/ambient-hangar.ssc
+
+

@@ -1,0 +1,26 @@
+rem *** Plugins ***
+aiTemplatePlugIn.create Cover Grass2Cover
+aiTemplatePlugIn.coverValue 2.0
+
+aiTemplatePlugIn.create Physical Grass2Physical
+
+rem *** AITemplate ***
+aiTemplate.create Grass21_snow
+aiTemplate.addType ITCover
+aiTemplate.addType ITScaleRender
+aiTemplate.degeneration 1
+aiTemplate.allowedTimeDiff -1
+aiTemplate.basicTemp 1
+aiTemplate.commonKnowledge 1
+aiTemplate.addPlugIn Grass2Cover
+aiTemplate.addPlugIn Grass2Physical
+
+aiTemplate.create Grass22_snow
+aiTemplate.addType ITCover
+aiTemplate.addType ITScaleRender
+aiTemplate.degeneration 1
+aiTemplate.allowedTimeDiff -1
+aiTemplate.basicTemp 1
+aiTemplate.commonKnowledge 1
+aiTemplate.addPlugIn Grass2Cover
+aiTemplate.addPlugIn Grass2Physical

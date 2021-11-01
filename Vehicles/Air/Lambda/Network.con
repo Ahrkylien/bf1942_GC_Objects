@@ -1,0 +1,10 @@
+NetworkableInfo.createNewInfo LambdaBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo LambdaEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo LambdaWingInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+

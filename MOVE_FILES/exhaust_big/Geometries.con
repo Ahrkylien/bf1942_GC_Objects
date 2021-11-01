@@ -1,0 +1,2 @@
+GeometryTemplate.create StandardMesh exhaust_big
+GeometryTemplate.file MOVE_FILES/exhaust_big

@@ -1,0 +1,20 @@
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/medbed.wav
+loop
+minDistance 10
+volume .6
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 10
+	param 1
+	param -1	
+endEffect
+priority -5

@@ -1,0 +1,52 @@
+################################################################
+#templateLevel HIGH
+
+newPatch
+
+#########################
+### Birds_and_Trees 3 ###
+#########################
+load @ROOT/Sound/@RTD/Bird_Hawk.wav
+loop
+volume .9
+minDistance 10
+randomStartPitch .1/.1
+priority -9
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 75
+	param 50
+	param 1
+	param -1	
+endEffect
+
+################################################################
+
+#templateLevel MEDIUM
+
+newPatch
+
+#########################
+### Birds_and_Trees 3 ###
+#########################
+load @ROOT/Sound/@RTD/Bird_Hawk.wav
+loop
+volume .5
+minDistance 10
+randomStartPitch .1/.1
+priority -9
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 25
+	param 1
+	param -1	
+endEffect

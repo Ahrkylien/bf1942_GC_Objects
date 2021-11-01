@@ -1,0 +1,60 @@
+rem *** LambdaFrontGun ***
+ObjectTemplate.create FireArms LambdaFrontGun
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/LambdaLaser1.ssc
+ObjectTemplate.aiTemplate SpitfireMachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzThomp
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileGreenNS
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 700
+ObjectTemplate.reloadtime 0.0001
+ObjectTemplate.roundOfFire 4.235
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 2
+ObjectTemplate.addFireArmsPosition -6.98/0.13/9.8 1/0/0
+ObjectTemplate.addFireArmsPosition -6.62/0.13/9.8 1/0/0
+ObjectTemplate.addFireArmsPosition 6.98/0.13/9.8 -1/0/0
+ObjectTemplate.addFireArmsPosition 6.62/0.13/9.8 -1/0/0
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.05
+objectTemplate.coolDownPerSec 0.8
+objectTemplate.timeDelayOnOverHeat 2
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 100
+ObjectTemplate.distToMinDamage 300
+ObjectTemplate.AmmoType	8
+
+rem *** LambdaBackGun ***
+ObjectTemplate.create FireArms LambdaBackGun
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/LambdaLaser2.ssc
+ObjectTemplate.aiTemplate SpitfireMachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzThomp
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileGreenNS
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 700
+ObjectTemplate.reloadtime 0.0001
+ObjectTemplate.roundOfFire 6
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 5
+ObjectTemplate.addFireArmsPosition -0.18/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0.18/0/0 0/0/0
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.05
+objectTemplate.coolDownPerSec 0.8
+objectTemplate.timeDelayOnOverHeat 2
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 100
+ObjectTemplate.distToMinDamage 300
+ObjectTemplate.AmmoType	8
+

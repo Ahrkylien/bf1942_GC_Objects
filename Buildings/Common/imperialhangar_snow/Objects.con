@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject imperialhangar_snow
+ObjectTemplate.aiTemplate hangar_snow
+ObjectTemplate.geometry hangar_snow
+ObjectTemplate.setHasCollisionPhysics 1
+
+

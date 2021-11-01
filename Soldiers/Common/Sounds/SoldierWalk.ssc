@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/SoldierWalk.ssc
+	
+#templateLevel MEDIUM
+
+	#include Medium/SoldierWalk.ssc
+	
+#templateLevel LOW
+
+	#include Low/SoldierWalk.ssc

@@ -1,0 +1,203 @@
+rem *********** fix. New  29 april 05 Django
+rem *********** new engine code
+
+
+rem *** atatdedummyengine ***
+ObjectTemplate.create engine atatdedummyengine
+ObjectTemplate.setNetworkableInfo atatdeEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/atatdeEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMinRotation -100/0/-100
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 2/0/2
+ObjectTemplate.setAcceleration 0.5/0/0.5
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 20
+ObjectTemplate.setDifferential 2
+ObjectTemplate.setNumberOfGears 2
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+
+ObjectTemplate.addTemplate atatdedummyfrontwheelr
+ObjectTemplate.setPosition 7.24785/-0/9.8672
+ObjectTemplate.addTemplate atatdedummyfrontwheell
+ObjectTemplate.setPosition -7.24845/-0/9.86573
+ObjectTemplate.addTemplate atatdedummybackspringr
+ObjectTemplate.setPosition 8.97203/-0/-14.9365
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate atatdedummybackspringl
+ObjectTemplate.setPosition -7.86299/-0/-14.9525
+ObjectTemplate.setRotation 180/0/0
+
+ObjectTemplate.create spring footl
+ObjectTemplate.setNetworkableInfo atatdeSpringInfo
+ObjectTemplate.geometry footsegment
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 0
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create spring footr
+ObjectTemplate.setNetworkableInfo atatdeSpringInfo
+ObjectTemplate.geometry footsegmentr
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 0
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create spring legsegmentFLspring
+ObjectTemplate.geometry legsegmentFL
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+
+ObjectTemplate.create spring legsegmentBLspring
+ObjectTemplate.geometry legsegmentBL
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+
+ObjectTemplate.create spring legsegmentBRspring
+ObjectTemplate.geometry legsegmentBR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+
+ObjectTemplate.create spring legsegmentFRspring
+ObjectTemplate.geometry legsegmentFR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ 
+ObjectTemplate.create spring legsegment2FLspring
+ObjectTemplate.geometry legsegment2FL
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+
+ObjectTemplate.create spring legsegment2FRspring
+ObjectTemplate.geometry legsegment2FR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+
+ObjectTemplate.create spring legsegment2BLspring
+ObjectTemplate.geometry legsegment2BL
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+
+ObjectTemplate.create spring legsegment2BRspring
+ObjectTemplate.geometry legsegment2BR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+rem *** atatdedummyfrontspringr ***
+ObjectTemplate.create spring atatdedummyfrontspringr
+ObjectTemplate.setNetworkableInfo atatdeSpringInfo
+ObjectTemplate.geometry Willy_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 36
+ObjectTemplate.setDamping 1
+
+rem *** atatdedummyfrontspringl ***
+ObjectTemplate.create spring atatdedummyfrontspringl
+ObjectTemplate.setNetworkableInfo atatdeSpringInfo
+ObjectTemplate.geometry Willy_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 36
+ObjectTemplate.setDamping 1
+
+
+rem *** atatdedummybackspringr ***
+ObjectTemplate.create spring atatdedummybackspringr
+ObjectTemplate.setNetworkableInfo atatdeSpringInfo
+ObjectTemplate.geometry Willy_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 36
+ObjectTemplate.setDamping 1
+
+
+rem *** atatdedummybackspringl ***
+ObjectTemplate.create spring atatdedummybackspringl
+ObjectTemplate.setNetworkableInfo atatdeSpringInfo
+ObjectTemplate.geometry Willy_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 36
+ObjectTemplate.setDamping 1
+
+
+rem *** atatde_footrdummysmoke ***
+ObjectTemplate.create spring atatde_footrdummysmoke
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 10
+ObjectTemplate.setDamping 0
+ObjectTemplate.addTemplate e_wdustpanzl
+ObjectTemplate.addTemplate e_wdustpanz
+
+
+rem *** atatde_footldummysmoke ***
+ObjectTemplate.create spring atatde_footldummysmoke
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 10
+ObjectTemplate.setDamping 5
+ObjectTemplate.addTemplate e_wdustpanzl
+ObjectTemplate.addTemplate e_wdustpanz
+
+
+rem *** atatde_footbrdummysmoke ***
+ObjectTemplate.create spring atatde_footbrdummysmoke
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 10
+ObjectTemplate.setDamping 5
+ObjectTemplate.addTemplate e_wdustpanzl
+ObjectTemplate.addTemplate e_wdustpanz
+
+
+rem *** atatde_footbldummysmoke ***
+ObjectTemplate.create spring atatde_footbldummysmoke
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 10
+ObjectTemplate.setDamping 5
+ObjectTemplate.addTemplate e_wdustpanzl
+ObjectTemplate.addTemplate e_wdustpanz

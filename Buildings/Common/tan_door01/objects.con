@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject tan_door01
+ObjectTemplate.geometry tan_door01
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate tan_door01
+

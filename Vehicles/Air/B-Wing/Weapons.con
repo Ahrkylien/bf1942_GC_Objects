@@ -1,0 +1,98 @@
+
+rem *** BWing_Laser_Cannon ***
+ObjectTemplate.create FireArms BWing_Laser_Cannon_Main
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+ObjectTemplate.loadSoundScript Sounds/XWingLaser.ssc
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileRedNS
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 650
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.roundOfFire 5.3
+ObjectTemplate.addFireArmsPosition 0/0/1.9 0/0/0
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.06
+objectTemplate.coolDownPerSec 0.7
+objectTemplate.timeDelayOnOverHeat 5
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.distToStartLoseDamage 100
+ObjectTemplate.distToMinDamage 300
+ObjectTemplate.AmmoType	10
+
+rem *** BWing_Laser_Cannon ***
+ObjectTemplate.create FireArms BWing_Ion_Cannon
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+ObjectTemplate.loadSoundScript Sounds/XWingLaser.ssc
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileBlueNS
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 630
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.roundOfFire 2.3
+ObjectTemplate.addFireArmsPosition 0/0/1.7 0/0/0
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.35
+objectTemplate.coolDownPerSec 0.7
+objectTemplate.timeDelayOnOverHeat 4
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.distToStartLoseDamage 100
+ObjectTemplate.distToMinDamage 300
+ObjectTemplate.AmmoType	10
+
+rem *** BWing_Laser_Cannon ***
+ObjectTemplate.create FireArms BWing_Ion_CannonFake
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+ObjectTemplate.loadSoundScript Sounds/XWingLaser.ssc
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileBlueNSFake
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 630
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.roundOfFire 2.3
+ObjectTemplate.addFireArmsPosition 0/0/1.7 0/0/0
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.35
+objectTemplate.coolDownPerSec 0.7
+objectTemplate.timeDelayOnOverHeat 4
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.distToStartLoseDamage 100
+ObjectTemplate.distToMinDamage 300
+ObjectTemplate.AmmoType	10
+
+rem *** BWingRocketLauncher ***
+ObjectTemplate.create FireArms BWingProtonTorpedoLauncher
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.projectileTemplate SpaceRocket
+ObjectTemplate.autoReload 1
+ObjectTemplate.magSize 8
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 100
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.reloadtime 4
+ObjectTemplate.AltFireOnce 1
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.addFireArmsPosition 3/1/3
+ObjectTemplate.addFireArmsPosition 4/1/3
+ObjectTemplate.addFireArmsPosition 5/1/3
+ObjectTemplate.addFireArmsPosition 6/1/3
+ObjectTemplate.addFireArmsPosition 3/-1/3
+ObjectTemplate.addFireArmsPosition 4/-1/3
+ObjectTemplate.addFireArmsPosition 5/-1/3
+ObjectTemplate.addFireArmsPosition 6/-1/3
+ObjectTemplate.AmmoType	9

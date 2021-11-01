@@ -1,0 +1,90 @@
+renderer.beginGlobalCluster Firehawke
+
+
+GeometryTemplate.create StandardMesh firehawke_hull
+GeometryTemplate.file Vehicles/Firehawke/firehawke_hull
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 150
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800
+
+
+GeometryTemplate.create StandardMesh firehawke_mgun_recoil
+GeometryTemplate.file Vehicles/Firehawke/firehawke_mgun_recoil
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 150
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800
+
+
+GeometryTemplate.create StandardMesh firehawke_mgun_xrot
+GeometryTemplate.file Vehicles/Firehawke/firehawke_mgun_xrot
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 150
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800
+
+
+GeometryTemplate.create StandardMesh firehawke_mgun_yrot
+GeometryTemplate.file Vehicles/Firehawke/firehawke_mgun_yrot
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 150
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800
+
+
+GeometryTemplate.create StandardMesh firehawke_sgun_yrot
+GeometryTemplate.file Vehicles/Firehawke/firehawke_sgun_yrot
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 150
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800
+
+
+GeometryTemplate.create StandardMesh firehawke_sgun_xrot
+GeometryTemplate.file Vehicles/Firehawke/firehawke_sgun_xrot
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 150
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800
+
+
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh firehawke_L1
+GeometryTemplate.file Vehicles/Firehawke/firehawke_hull
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 350
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Wreck_firehawke
+GeometryTemplate.file Vehicles/Firehawke/wreck_firehawk
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 350
+GeometryTemplate.setLodDistance 5 500

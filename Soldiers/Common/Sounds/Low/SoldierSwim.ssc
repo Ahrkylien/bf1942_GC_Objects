@@ -1,0 +1,54 @@
+############
+### SWIM ###
+############
+newPatch
+
+load @ROOT/Sound/@RTD/waterswim1.wav
+randomStartPitch 0.03 / 0.03
+minDistance 1
+dopplerOff
+priority 1
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 9
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/waterswim2.wav
+randomStartPitch 0.03 / 0.03
+minDistance 1
+dopplerOff
+priority 1
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 9
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/waterswim3.wav
+randomStartPitch 0.03 / 0.03
+minDistance 1
+dopplerOff
+priority 1
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 9
+	param 1
+	param -1	
+endEffect
+
+randomPlay 1

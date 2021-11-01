@@ -1,0 +1,19 @@
+ObjectTemplate.create Engine SpaceRocketEngine
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/100000
+ObjectTemplate.setAcceleration 0/0/100000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setEngineType c_ETRocket
+ObjectTemplate.setTorque 5.0
+ObjectTemplate.setNoPropellerEffectAtSpeed 1000
+ObjectTemplate.setDifferential 15.0
+ObjectTemplate.loadSoundScript Sounds/ProtonTorpedoEngine.ssc
+
+ObjectTemplate.create Wing SpaceRocketWing
+ObjectTemplate.setPitchOffset 0
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0.1
+ObjectTemplate.setFlapLift 0
+

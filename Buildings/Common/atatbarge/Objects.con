@@ -1,0 +1,16 @@
+ObjectTemplate.create Bundle atatbarge
+ObjectTemplate.geometry atatbarge
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.material 60
+
+ObjectTemplate.addTemplate ladder_20m_m1
+ObjectTemplate.setPosition 0.8/13.7964/13.8672
+ObjectTemplate.setRotation 90/0/0
+
+ObjectTemplate.addTemplate ladder_30m_m1
+ObjectTemplate.setPosition -11.655/32.7/10.6723
+ObjectTemplate.setRotation 180/10.44/0
+
+objectTemplate.aiTemplate atatbarge
+objectTemplate.loadSoundScript Sounds/atatbarge.ssc
+

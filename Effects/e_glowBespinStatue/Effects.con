@@ -1,0 +1,71 @@
+rem ------------------ Blue -------------------------
+
+rem *** e_glowBespinStatueBlue ***
+ObjectTemplate.create EffectBundle e_glowBespinStatueBlue
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_glowBespinStatueBlue
+rem -------------------------------------
+
+rem *** Em_glowBespinStatueBlue ***
+ObjectTemplate.create Emitter Em_glowBespinStatueBlue
+ObjectTemplate.template Fx_glowBespinStatueBlue
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 1000
+ObjectTemplate.timeToLive CRD_UNIFORM/1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/180
+
+rem *** Fx_glowBespinStatueBlue ***
+ObjectTemplate.create Particle Fx_glowBespinStatueBlue
+ObjectTemplate.timeToLive CRD_UNIFORM/0.6/0.8/0
+ObjectTemplate.size CRD_NONE/1/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.geometry bespin_statue
+ObjectTemplate.sizeModifier 1.1/1/1.1
+ObjectTemplate.sizeOverTime 0/1.2|100/1
+ObjectTemplate.alphaOverTime 0/0|100/0.2
+beginRem
+ObjectTemplate.initRotation CRD_UNIFORM/0/0/0
+ObjectTemplate.rotationSpeed CRD_NONE/10/0/0
+endRem
+
+rem ------------------- Red --------------------------
+
+rem *** e_glowBespinStatue ***
+ObjectTemplate.create EffectBundle e_glowBespinStatue
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_glowBespinStatue
+rem -------------------------------------
+
+rem *** Em_glowBespinStatueRed ***
+ObjectTemplate.create Emitter Em_glowBespinStatueRed
+ObjectTemplate.template Fx_glowBespinStatueRed
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 1000
+ObjectTemplate.timeToLive CRD_UNIFORM/1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/180
+
+rem *** Fx_glowBespinStatueRed ***
+ObjectTemplate.create Particle Fx_glowBespinStatueRed
+ObjectTemplate.timeToLive CRD_UNIFORM/0.6/0.8/0
+ObjectTemplate.size CRD_NONE/1/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.geometry bespin_statue
+ObjectTemplate.sizeModifier 1.1/1/1.1
+ObjectTemplate.sizeOverTime 0/1.2|100/1
+ObjectTemplate.alphaOverTime 0/0|100/0.2
+beginRem
+ObjectTemplate.initRotation CRD_UNIFORM/0/0/0
+ObjectTemplate.rotationSpeed CRD_NONE/10/0/0
+endRem

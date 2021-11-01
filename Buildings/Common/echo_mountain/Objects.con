@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject echo_mountain
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry echo_mountain
+objectTemplate.aiTemplate echo_mountain
+rem ---------------------------

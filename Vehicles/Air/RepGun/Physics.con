@@ -1,0 +1,113 @@
+rem *** GunMainEngine ***
+ObjectTemplate.create Engine GunMainEngine
+ObjectTemplate.setNetworkableInfo repgun_engine_info
+ObjectTemplate.loadSoundScript Sounds/RepGunEngine.ssc
+rem -------------------------------------
+ObjectTemplate.setMinRotation -0.3/0/-5000
+ObjectTemplate.setMaxRotation 0.3/0/0
+ObjectTemplate.setMaxSpeed 1000/0/5000
+ObjectTemplate.setAcceleration 500/0/10000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 50
+ObjectTemplate.setDifferential 20
+
+rem *** RepGlideEngine ***
+ObjectTemplate.create Engine RepLevelEngine
+ObjectTemplate.setNetworkableInfo repgun_engine_info
+ObjectTemplate.loadSoundScript Sounds/RepGunEngine.ssc
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/1
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/5000
+ObjectTemplate.setInputToRoll c_PIAltFire
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 500
+ObjectTemplate.setDifferential 10
+
+rem *** GunShipDummyEngine ***
+ObjectTemplate.create Engine GunShipDummyEngine
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setNetworkableInfo repgun_engine_info
+ObjectTemplate.setMinRotation 0/0/50
+ObjectTemplate.setMaxRotation 0/0/1000
+ObjectTemplate.setMaxSpeed 0/0/9500
+ObjectTemplate.setAcceleration 0/0/15000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque .1
+ObjectTemplate.setDifferential .1
+ObjectTemplate.setNoPropellerEffectAtSpeed 50
+
+rem *** GunShipDummyRearEngine ***
+ObjectTemplate.create Engine GunShipDummyRearEngine
+ObjectTemplate.setNetworkableInfo repgun_engine_info
+ObjectTemplate.setMinRotation 0/0/50
+ObjectTemplate.setMaxRotation 0/0/500
+ObjectTemplate.setMaxSpeed 0/0/50
+ObjectTemplate.setAcceleration 0/0/100
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque .1
+ObjectTemplate.setDifferential .1
+ObjectTemplate.setNoPropellerEffectAtSpeed 100
+
+rem *** HoverEngine1 ***
+ObjectTemplate.create Engine GunShipHoverEngine1
+ObjectTemplate.setNetworkableInfo repgun_engine_info
+ObjectTemplate.setMinRotation -5000/-5000/2300
+ObjectTemplate.setMaxRotation 5000/5000/5000
+ObjectTemplate.setMaxSpeed 50/50/9500
+ObjectTemplate.setAcceleration 50/50/10050
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 18
+ObjectTemplate.setDifferential 3.5
+ObjectTemplate.setNoPropellerEffectAtSpeed 3000
+
+rem *** HoverEngine2 ***
+ObjectTemplate.create Engine GunShipHoverEngine2
+ObjectTemplate.setNetworkableInfo repgun_engine_info
+ObjectTemplate.loadSoundScript Sounds/RepGunEngine.ssc
+rem -------------------------------------
+ObjectTemplate.setMinRotation -5000/-5000/2300
+ObjectTemplate.setMaxRotation 5000/5000/5000
+ObjectTemplate.setMaxSpeed 50/50/9500
+ObjectTemplate.setAcceleration 50/50/10050
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 18
+ObjectTemplate.setDifferential 3.5
+ObjectTemplate.setNoPropellerEffectAtSpeed 3000
+
+rem *** HoverEngine3 ***
+ObjectTemplate.create Engine GunShipHoverEngine3
+ObjectTemplate.setNetworkableInfo repgun_engine_info
+ObjectTemplate.setMinRotation -5000/-5000/2300
+ObjectTemplate.setMaxRotation 5000/5000/5000
+ObjectTemplate.setMaxSpeed 50/50/9500
+ObjectTemplate.setAcceleration 50/50/10050
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 18
+ObjectTemplate.setDifferential 3.5
+ObjectTemplate.setNoPropellerEffectAtSpeed 3000
+
+rem *** RearFlap ***
+ObjectTemplate.create RotationalBundle GunShipRearFlap
+ObjectTemplate.setNetworkableInfo repgun_body_info
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/120/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+

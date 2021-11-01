@@ -1,0 +1,183 @@
+############
+### SAND ###
+############
+newPatch
+
+load @ROOT/Sound/@RTD/SOLAGRASS.wav
+randomStartPitch 0.03 / 0.03
+minDistance 1
+volume .55
+dopplerOff
+priority 1
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 4
+	param 1
+	param -1	
+endEffect
+
+
+#############
+### METAL ###
+#############
+newPatch
+
+load @ROOT/Sound/@RTD/SOLAMETAL.wav
+randomStartPitch 0.03 / 0.03
+minDistance 1
+volume .55
+dopplerOff
+priority 1
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 4
+	param 1
+	param -1	
+endEffect
+
+
+############
+### WOOD ###
+############
+newPatch
+
+load @ROOT/Sound/@RTD/SOLAWOOD.wav
+randomStartPitch 0.03 / 0.03
+minDistance 1
+volume .55
+dopplerOff
+priority 1
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 4
+	param 1
+	param -1	
+endEffect
+
+
+################
+### CONCRETE ###
+################
+newPatch
+
+load @ROOT/Sound/@RTD/SOLAWOOD.wav
+randomStartPitch 0.03 / 0.03
+minDistance 1
+dopplerOff
+priority 1
+volume .55
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 4
+	param 1
+	param -1	
+endEffect
+
+
+#############
+### GRASS ###
+#############
+newPatch
+
+load @ROOT/Sound/@RTD/SOLASAND.wav
+dopplerOff
+priority 1
+randomStartPitch 0.03 / 0.03
+minDistance 1
+volume .55
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 4
+	param 1
+	param -1	
+endEffect
+
+
+##############
+### Gravel ###
+##############
+newPatch
+
+load @ROOT/Sound/@RTD/SOLAROAD.wav
+dopplerOff
+priority 1
+randomStartPitch 0.03 / 0.03
+minDistance 1
+volume .55
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 4
+	param 1
+	param -1	
+endEffect
+
+
+##############
+### Frozen ###
+##############
+newPatch
+
+load @ROOT/Sound/@RTD/footstep-snow-land.wav
+dopplerOff
+priority 1
+randomStartPitch 0.03 / 0.03
+minDistance 1
+volume .55
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 4
+	param 1
+	param -1	
+endEffect
+
+
+###########
+### MUD ###
+###########
+newPatch
+
+load @ROOT/Sound/@RTD/SOLAMUD.wav
+dopplerOff
+priority 1
+randomStartPitch 0.03 / 0.03
+minDistance 1
+volume .55
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 4
+	param 1
+	param -1	
+endEffect
+

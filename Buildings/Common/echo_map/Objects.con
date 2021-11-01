@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject echo_map
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry echo_map
+objectTemplate.aiTemplate echo_map
+rem ---------------------------

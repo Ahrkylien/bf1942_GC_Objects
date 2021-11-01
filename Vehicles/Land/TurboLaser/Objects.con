@@ -1,0 +1,210 @@
+rem *** TurboLaser ***
+ObjectTemplate.create PlayerControlObject TurboLaser
+ObjectTemplate.setNetworkableInfo TurboLaserBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 90
+ObjectTemplate.maxhitpoints 90
+ObjectTemplate.material 811
+ObjectTemplate.criticalDamage 9
+ObjectTemplate.geometry DefGun_thing_M1
+ObjectTemplate.hpLostWhileCriticalDamage 0.9
+rem ObjectTemplate.addArmorEffect 9 e_Wreck1Smoke 0/2/0
+rem ObjectTemplate.addArmorEffect 0 e_scrapmetal_awing 0/2/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/10/0
+ObjectTemplate.aiTemplate apturret
+ObjectTemplate.timetoliveafterdeath 5
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate lodTurboLaser
+ObjectTemplate.setSoldierExitLocation 2/2.5/0 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_turbolaser.dds"
+ObjectTemplate.setVehicleIconPos 60/55
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory Land
+ObjectTemplate.setVehicleType AAGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+
+rem *** lodTurboLaser ***
+ObjectTemplate.create LodObject lodTurboLaser
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate TurboLaserComplex
+rem -------------------------------------
+ObjectTemplate.lodSelector lodTurboLaserSelector
+
+rem *** TurboLaserComplex ***
+ObjectTemplate.create Bundle TurboLaserComplex
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.geometry TurboLaserBase_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate TurboLaserEntry
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate TurboLaserHead
+ObjectTemplate.setPosition 0/0/0.071
+rem -------------------------------------
+
+rem *** TurboLaserEntry ***
+ObjectTemplate.create EntryPoint TurboLaserEntry
+ObjectTemplate.setEntryRadius 4
+
+rem *** TurboLaserHead ***
+ObjectTemplate.create RotationalBundle TurboLaserHead
+ObjectTemplate.setNetworkableInfo TurboLaserGunInfo
+ObjectTemplate.geometry TurboLaserHead_m1
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.loadSoundScript Sounds/TurboLaserRotate.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate TurboLaserBarrel
+ObjectTemplate.setPosition 0/3.5/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 200/0/0
+ObjectTemplate.setAcceleration 700/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** TurboLaserBase ***
+ObjectTemplate.create SimpleObject TurboLaserBase
+ObjectTemplate.geometry TurboLaserBase_m1
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasCollisionPhysics 1
+
+rem *** TurboLaserBarrel ***
+ObjectTemplate.create RotationalBundle TurboLaserBarrel
+ObjectTemplate.setNetworkableInfo TurboLaserCameraInfo
+
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.loadSoundScript Sounds/TurboLaserRotate.ssc
+rem**********************
+ObjectTemplate.addTemplate TurboLaserCamera
+ObjectTemplate.setPosition 0/0.05/1.5
+ObjectTemplate.addTemplate TurboLaserGun
+ObjectTemplate.setPosition 0/0/0
+rem**********************
+ObjectTemplate.setMinRotation 0/-70/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/200/0
+ObjectTemplate.setAcceleration 0/700/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** TurboLaserCamera ***
+ObjectTemplate.create Camera TurboLaserCamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** TurboLaserWreck ***
+ObjectTemplate.create SimpleObject TurboLaserWreck
+ObjectTemplate.geometry Wreck_none
+
+rem *** lodTurboLaserSelector ***
+LodSelectorTemplate.create DistCompareSelector2 lodTurboLaserSelector
+LodSelectorTemplate.hasDestroyedLod 0
+
+
+rem *** TurboLaser2 ***
+ObjectTemplate.create PlayerControlObject TurboLaser2
+ObjectTemplate.setNetworkableInfo TurboLaserBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 90
+ObjectTemplate.maxhitpoints 90
+ObjectTemplate.material 811
+ObjectTemplate.criticalDamage 9
+ObjectTemplate.geometry DefGun_thing_M1
+ObjectTemplate.hpLostWhileCriticalDamage 0.9
+rem ObjectTemplate.addArmorEffect 9 e_Wreck1Smoke 0/2/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_awing 0/2/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/10/0
+ObjectTemplate.aiTemplate apturret
+ObjectTemplate.timetoliveafterdeath 5
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate TLSoldierSpawn
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.addTemplate lodTurboLaser
+ObjectTemplate.setSoldierExitLocation 2/2.5/0 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_turbolaser.dds"
+ObjectTemplate.setVehicleIconPos 60/55
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory Land
+ObjectTemplate.setVehicleType AAGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+
+rem *** TurboLaser3 ***
+ObjectTemplate.create PlayerControlObject TurboLaser3
+ObjectTemplate.setNetworkableInfo TurboLaserBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 90
+ObjectTemplate.maxhitpoints 90
+ObjectTemplate.material 811
+ObjectTemplate.criticalDamage 9
+ObjectTemplate.geometry DefGun_thing_M1
+ObjectTemplate.hpLostWhileCriticalDamage 0.9
+rem ObjectTemplate.addArmorEffect 9 e_Wreck1Smoke 0/2/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_awing 0/2/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/10/0
+ObjectTemplate.aiTemplate apturret
+ObjectTemplate.timetoliveafterdeath 5
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate TLSoldierSpawn2
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.addTemplate lodTurboLaser
+ObjectTemplate.setSoldierExitLocation 2/2.5/0 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_turbolaser.dds"
+ObjectTemplate.setVehicleIconPos 60/55
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory Land
+ObjectTemplate.setVehicleType AAGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+
+
+rem ***PLAYER SPAWN INSIDE****
+ObjectTemplate.create SpawnPoint TLSoldierSpawn
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 75
+ObjectTemplate.setGroup 75
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem ***PLAYER SPAWN INSIDE****
+ObjectTemplate.create SpawnPoint TLSoldierSpawn2
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 76
+ObjectTemplate.setGroup 76
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0

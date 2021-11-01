@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/HanomagTrack.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/HanomagTrack.ssc
+	
+#templateLevel LOW
+
+	#include Low/HanomagTrack.ssc

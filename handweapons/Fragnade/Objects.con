@@ -1,0 +1,101 @@
+ObjectTemplate.create HandFireArms Fragnade
+ObjectTemplate.itemIndex 4
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.projectileTemplate FragnadeProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.ForceOnExplosion 15
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 2
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+rem ObjectTemplate.altFireOnce 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.material 70
+ObjectTemplate.hitpoints 10000
+ObjectTemplate.maxhitpoints 10000
+ObjectTemplate.AmmoType	2
+
+ObjectTemplate.autoReload 1
+ObjectTemplate.GUIIndex 13
+ObjectTemplate.setHudAmmoType ATIconAndStrengthBar
+ObjectTemplate.setAmmoIcon "Ammo/Icon_fragnade.dds"
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setHasMag 0
+
+ObjectTemplate.rotationalSpeed 8/0/0
+ObjectTemplate.velocity 25
+
+ObjectTemplate.minDeviation 0
+ObjectTemplate.maxDeviation 0.08
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.hideDuringFireTime 0.4
+ObjectTemplate.fireDelay 1
+objectTemplate.aiTemplate GrenadeAlliesAI
+ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+ObjectTemplate.velocityDependentOnHeat 1
+ObjectTemplate.heatAddWhenFire 0.03
+rem ObjectTemplate.coolDownPerSec 0.05
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+ObjectTemplate.createSkeleton animations/GrenadeAllies.ske
+ObjectTemplate.useSkeletonPartAsMain Base
+ObjectTemplate.addTemplate FragnadeLod
+
+ObjectTemplate.loadSoundScript Sounds/GrenadeAllies.ssc
+
+rem
+rem ** SimpleObjects
+rem 
+ObjectTemplate.create SimpleObject FragnadeSimple
+ObjectTemplate.geometry Fragnade_m1
+
+ObjectTemplate.create AnimatedBundle FragnadeComplex
+ObjectTemplate.createSkeleton animations/GrenadeAllies.ske
+ObjectTemplate.addTemplate FragnadeSimple
+ObjectTemplate.setPosition 1/0/0
+ObjectTemplate.Bindtoskeletonpart Base
+
+
+
+ObjectTemplate.create LodObject FragnadeLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate FragnadeComplex
+ObjectTemplate.setPosition 0/-.055/.006
+ObjectTemplate.setRotation 0/-80/0
+ObjectTemplate.addTemplate FragnadeSimple
+ObjectTemplate.setPosition 0/-.055/.006
+ObjectTemplate.setRotation 0/-80/0
+
+rem
+rem Projectile
+rem 
+ObjectTemplate.create Projectile FragnadeProjectile
+ObjectTemplate.networkableInfo ProjectileInfo
+ObjectTemplate.geometry Fragnade_m1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitPoints 9999
+ObjectTemplate.maxHitPoints 9999
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.timeToLive CRD_NONE/3/0/0
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.radius 20
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.material 543
+ObjectTemplate.material2 544
+ObjectTemplate.useMMOnEndEffect 0
+ObjectTemplate.damageType 1
+ObjectTemplate.endEffectTemplate e_ExplGranade
+ObjectTemplate.noFFSound 1

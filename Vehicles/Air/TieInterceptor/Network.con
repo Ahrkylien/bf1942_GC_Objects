@@ -1,0 +1,9 @@
+NetworkableInfo.createNewInfo TieInterceptor_wing_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo TieInterceptor_engine_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo tieinterceptor_body_info
+NetworkableInfo.setPredictionMode PMLinear
+

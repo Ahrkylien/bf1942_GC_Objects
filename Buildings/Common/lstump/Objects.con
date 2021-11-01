@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle Lstump	
+ObjectTemplate.geometry Lstump
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate Lstump

@@ -1,0 +1,91 @@
+rem *** EchoTrolley ***
+ObjectTemplate.create PlayerControlObject ImpTrolley
+ObjectTemplate.setNetworkableInfo EchoTrolleyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 1.5
+ObjectTemplate.mass 2500
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 70
+ObjectTemplate.maxhitpoints 70
+ObjectTemplate.material 801
+ObjectTemplate.criticalDamage 8
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.hpLostWhileCriticalDamage 0.8
+ObjectTemplate.hpLostWhileUpSideDown 8
+ObjectTemplate.hpLostWhileDamageFromWater 8
+ObjectTemplate.addArmorEffect 16 em_TieBomberDamage -1.9/0/-1.5
+ObjectTemplate.addArmorEffect 16 em_PlaneDamage -1.5/0/-1.5
+ObjectTemplate.addArmorEffect 8 e_TieBomberFire -1.7/0/-1.5
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Skiff 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.aiTemplate Hanomag
+rem -------------------------------------
+ObjectTemplate.addTemplate lodImpTrolley
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 1.8/0/-0.2 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_echotrolley.dds"
+ObjectTemplate.setVehicleIconPos 78/56
+ObjectTemplate.setNumberOfWeaponIcons 0
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_echotrolley_16x16.dds"
+
+rem *** lodEchoTrolley ***
+ObjectTemplate.create LodObject lodImpTrolley
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ImpTrolleyComplex
+ObjectTemplate.addTemplate TramcarWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector ImpTrolleyLodSelector
+
+rem *** EchoTrolleyComplex ***
+ObjectTemplate.create Bundle ImpTrolleyComplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.geometry Tramcar_Hull
+rem -------------------------------------
+ObjectTemplate.addTemplate TramcarCamera
+ObjectTemplate.setPosition 0/1.6/.71
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate TramcarSeat
+ObjectTemplate.setPosition -.6937/1.3/1.3
+ObjectTemplate.setRotation 90/0/0
+
+ObjectTemplate.addTemplate Tramcar_Passenger_1
+ObjectTemplate.addTemplate Tramcar_Passenger_2
+ObjectTemplate.addTemplate Tramcar_Passenger_3
+ObjectTemplate.addTemplate Tramcar_Passenger_4
+ObjectTemplate.addTemplate Tramcar_Passenger_5
+
+ObjectTemplate.addTemplate TramcarEntry
+ObjectTemplate.setPosition 0/1.05/1.3
+
+ObjectTemplate.addTemplate EchoTrolleyEngine
+
+ObjectTemplate.addTemplate EchoTrolleySupplyDepot
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate EchoTrolleyVehicleSupplyDepot
+ObjectTemplate.setPosition 0/0/0
+rem -----------------------------------------------------------------
+
+rem *** EchoTrolleyLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 ImpTrolleyLodSelector
+LodSelectorTemplate.hasDestroyedLod 1

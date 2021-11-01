@@ -1,0 +1,19 @@
+newPatch
+load @ROOT/Sound/@RTD/carrackalm.wav
+loop
+minDistance 140
+dopplerOff
+priority 8
+relativePosition 0/0/0
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 140
+	param 150
+	param 1
+	param -1	
+endEffect
+
+

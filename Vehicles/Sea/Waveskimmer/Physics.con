@@ -1,0 +1,59 @@
+rem *****AMPH PHYSICS CODE*****
+rem *** Engine ***
+
+ObjectTemplate.create Engine Wave_Engine
+ObjectTemplate.setNetworkableInfo WaveEngineInfo
+ObjectTemplate.loadSoundScript Sounds/LandspeederEngine.ssc
+rem ------------------------
+
+rem ------------------------
+ObjectTemplate.setMinRotation 0/0/-4000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/5000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETShip
+ObjectTemplate.setTorque 220
+ObjectTemplate.setDifferential 11
+ObjectTemplate.setNoPropellerEffectAtSpeed 150
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+
+
+ObjectTemplate.create Wing Wave_Rudder_Stern
+ObjectTemplate.setNetworkableInfo WaveWingInfo
+ObjectTemplate.setMinRotation 0/-12/0
+ObjectTemplate.setMaxRotation 0/12/0
+ObjectTemplate.setMaxSpeed 0/6/0
+ObjectTemplate.setAcceleration 0/-15/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 1
+
+
+ObjectTemplate.create Wing Wave_Rudder_Aft
+ObjectTemplate.setNetworkableInfo WaveWingInfo
+ObjectTemplate.setMinRotation 0/-12/0
+ObjectTemplate.setMaxRotation 0/12/0
+ObjectTemplate.setMaxSpeed 0/6/0
+ObjectTemplate.setAcceleration 0/15/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 1
+
+
+ObjectTemplate.create FloatingBundle Wave_Floater
+ObjectTemplate.setHullHeight .4
+ObjectTemplate.setFloatMaxLift 8
+ObjectTemplate.setFloatMinLift 8
+ObjectTemplate.setSinkingSpeedMod 3
+
+
+ObjectTemplate.create FloatingBundle Wave_MiddleFloater
+ObjectTemplate.setHullHeight .4
+ObjectTemplate.setFloatMaxLift 9
+ObjectTemplate.setFloatMinLift 3
+ObjectTemplate.setSinkingSpeedMod 1

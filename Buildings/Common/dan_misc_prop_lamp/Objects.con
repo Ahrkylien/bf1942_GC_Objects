@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject dan_misc_prop_lamp
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry dan_misc_prop_lamp
+objectTemplate.aiTemplate dan_misc_prop_lamp
+rem ---------------------------

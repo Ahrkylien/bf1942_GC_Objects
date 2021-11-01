@@ -1,0 +1,5 @@
+GeometryTemplate.create StandardMesh ConcussionMissileGeometry
+GeometryTemplate.file Vehicles/ConcMissile/concmiss
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+

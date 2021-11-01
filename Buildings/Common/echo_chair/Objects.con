@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject echo_chair
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry echo_chair
+objectTemplate.aiTemplate echo_chair
+rem ---------------------------

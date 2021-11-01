@@ -1,0 +1,57 @@
+GeometryTemplate.create AnimatedMesh sarlaac_beak
+GeometryTemplate.setSkin animations/sarlaac_beak.skn
+GeometryTemplate.file buildings/tatooine/sarlaac_beak
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 300
+GeometryTemplate.setLodDistance 3 500
+GeometryTemplate.setLodDistance 4 700
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create StandardMesh sarlaac_beak_place
+GeometryTemplate.file buildings/tatooine/sarlaac_beak
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 300
+GeometryTemplate.setLodDistance 3 500
+GeometryTemplate.setLodDistance 4 700
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create AnimatedMesh sarlaac_tent
+GeometryTemplate.setSkin animations/sarlaac_tent.skn
+GeometryTemplate.file buildings/tatooine/sarlaac_tent
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 300
+GeometryTemplate.setLodDistance 3 500
+GeometryTemplate.setLodDistance 4 700
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create StandardMesh sarlaac_tent_place
+GeometryTemplate.file buildings/tatooine/sarlaac_tent
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 300
+GeometryTemplate.setLodDistance 3 500
+GeometryTemplate.setLodDistance 4 700
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create AnimatedMesh sarlaac_tent2
+GeometryTemplate.setSkin animations/sarlaac_tent2.skn
+GeometryTemplate.file buildings/tatooine/sarlaac_tent2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 300
+GeometryTemplate.setLodDistance 3 500
+GeometryTemplate.setLodDistance 4 700
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create StandardMesh sarlaac_tent2_place
+GeometryTemplate.file buildings/tatooine/sarlaac_tent2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 300
+GeometryTemplate.setLodDistance 3 500
+GeometryTemplate.setLodDistance 4 700
+GeometryTemplate.setLodDistance 5 800
+

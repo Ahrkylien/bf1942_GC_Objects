@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject ambient-radiochatter
+ObjectTemplate.setHasCollisionPhysics 0
+objectTemplate.loadSoundScript Sounds/ambient-radiochatter.ssc
+
+

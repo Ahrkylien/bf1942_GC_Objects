@@ -1,0 +1,71 @@
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/ambient-jud_catwalk-l.wav
+relativePosition -2.4/0/31.7
+loop
+minDistance 10
+volume .2
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 10
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/ambient-jud_catwalk-r.wav
+relativePosition 2.4/0/26.7
+loop
+minDistance 10
+volume .2
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 10
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/ambient-jud_catwalk-l.wav
+relativePosition -2.4/0/21.7
+loop
+minDistance 10
+volume .2
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 10
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/ambient-jud_catwalk-r.wav
+relativePosition 2.4/0/16.7
+loop
+minDistance 10
+volume .2
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 10
+	param 1
+	param -1	
+endEffect

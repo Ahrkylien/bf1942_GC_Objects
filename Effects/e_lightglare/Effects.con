@@ -1,0 +1,93 @@
+rem
+rem *** e_projectilePlx-2m ***
+rem
+ObjectTemplate.create EffectBundle e_lightglare
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_lightglare
+ObjectTemplate.addTemplate Em_lightglare2
+rem -------------------------------------
+
+rem ***  ***
+ObjectTemplate.create Emitter Em_lightglare
+ObjectTemplate.inertiaModifier 1.4013e-045/1.4013e-045/1.4013e-045
+ObjectTemplate.looping 1
+ObjectTemplate.template Fx_lg
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 5
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 2000
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/30/0/0
+ObjectTemplate.intensityOverTime 0/1
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/0/0
+ObjectTemplate.rotationalSpeedInDof CRD_NONE/0/0/0
+ObjectTemplate.rotationalSpeedInUp CRD_NONE/0/0/0
+ObjectTemplate.rotationalSpeedInRight CRD_NONE/0/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.addChild 1
+ObjectTemplate.forceEmission 1
+ObjectTemplate.allowRestart 1
+ObjectTemplate.minGeneratedParticles 1
+
+
+rem *** ***
+ObjectTemplate.create SpriteParticle Fx_lg
+ObjectTemplate.timeToLive CRD_NONE/0.15/0.18/0
+ObjectTemplate.size CRD_NONE/0.6/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeOverTime 0/0.400006|21/0.789987|100/0.460005
+ObjectTemplate.gravityModifierOverTime 0/1
+ObjectTemplate.dragOverTime 0/1
+ObjectTemplate.texture Effects/e_fire4
+ObjectTemplate.useMipMaps 1
+ObjectTemplate.initRotation CRD_NONE/0/0/0
+ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeed CRD_NONE/15/0/0
+ObjectTemplate.XYSizeRatioOverTime 0/1
+ObjectTemplate.rotationSpeedOverTime 0/1
+ObjectTemplate.colorRGBAOverTime 8/210/210/255/50|92/210/210/255/50
+
+
+rem ***  ***
+ObjectTemplate.create Emitter Em_lightglare2
+ObjectTemplate.inertiaModifier 1.4013e-045/1.4013e-045/1.4013e-045
+ObjectTemplate.looping 1
+ObjectTemplate.template Fx_lg2
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 5
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 2000
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/30/0/0
+ObjectTemplate.intensityOverTime 0/1
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/0/0
+ObjectTemplate.rotationalSpeedInDof CRD_NONE/0/0/0
+ObjectTemplate.rotationalSpeedInUp CRD_NONE/0/0/0
+ObjectTemplate.rotationalSpeedInRight CRD_NONE/0/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.addChild 1
+ObjectTemplate.forceEmission 1
+ObjectTemplate.allowRestart 1
+ObjectTemplate.minGeneratedParticles 1
+
+rem *** ***
+ObjectTemplate.create SpriteParticle Fx_lg2
+ObjectTemplate.timeToLive CRD_NONE/0.2/0.2/0
+ObjectTemplate.size CRD_NONE/0.6/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeOverTime 0/0.400006|21/0.789987|100/0.460005
+ObjectTemplate.gravityModifierOverTime 0/1
+ObjectTemplate.dragOverTime 0/1
+ObjectTemplate.texture Effects/e_fire4
+ObjectTemplate.useMipMaps 1
+ObjectTemplate.initRotation CRD_NONE/0/0/0
+ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeed CRD_NONE/15/0/0
+ObjectTemplate.XYSizeRatioOverTime 0/1
+ObjectTemplate.rotationSpeedOverTime 0/1
+ObjectTemplate.colorRGBAOverTime 8/210/210/255/50|92/210/210/255/50
+

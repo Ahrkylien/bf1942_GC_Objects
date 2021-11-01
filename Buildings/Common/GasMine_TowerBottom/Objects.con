@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject GasMine_TowerBottom
+ObjectTemplate.geometry GasMine_TowerBottom
+ObjectTemplate.setHasCollisionPhysics 1

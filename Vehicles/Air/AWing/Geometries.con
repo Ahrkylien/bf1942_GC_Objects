@@ -1,0 +1,22 @@
+GeometryTemplate.create StandardMesh AWing_Fuselage_M1
+GeometryTemplate.file Vehicles/AWing/AWing_Fus
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 140
+
+GeometryTemplate.create StandardMesh AWing_Fuselage_L1
+GeometryTemplate.file Vehicles/AWing/AWing_Low
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh AWing_Wheel_M1
+GeometryTemplate.file Vehicles/AWing/AWing_Wheel
+
+GeometryTemplate.create StandardMesh Wreck_AWing_M1
+GeometryTemplate.file Vehicles/AWing/Wreck_AWing
+
+GeometryTemplate.create StandardMesh 1P_AWing_Cockpit
+GeometryTemplate.file Vehicles/AWing/awing_cockpit

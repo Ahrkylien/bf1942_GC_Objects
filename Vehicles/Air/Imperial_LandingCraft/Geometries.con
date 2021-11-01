@@ -1,0 +1,117 @@
+
+GeometryTemplate.create StandardMesh Imperial_LandingCraft
+GeometryTemplate.file vehicles/Imperial_LandingCraft/Imp_LandingCraft_main
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh Imperial_LandingCraft_door_fronttop
+GeometryTemplate.file vehicles/Imperial_LandingCraft/Imp_LandingCraft_door_fronttop
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh Imperial_LandingCraft_door_frontbot
+GeometryTemplate.file vehicles/Imperial_LandingCraft/Imp_LandingCraft_door_frontbot
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh Imperial_LandingCraft_door_leftbot
+GeometryTemplate.file vehicles/Imperial_LandingCraft/Imp_LandingCraft_door_leftbot
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh Imperial_LandingCraft_door_lefttop
+GeometryTemplate.file vehicles/Imperial_LandingCraft/Imp_LandingCraft_door_lefttop
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh Imperial_LandingCraft_door_rightbot
+GeometryTemplate.file vehicles/Imperial_LandingCraft/Imp_LandingCraft_door_rightbot
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh Imperial_LandingCraft_door_righttop
+GeometryTemplate.file vehicles/Imperial_LandingCraft/Imp_LandingCraft_door_righttop
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh Imperial_LandingCraft_wing_right
+GeometryTemplate.file vehicles/Imperial_LandingCraft/Imp_LandingCraft_wing_right
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh Imperial_LandingCraft_wing_left
+GeometryTemplate.file vehicles/Imperial_LandingCraft/Imp_LandingCraft_wing_left
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh Imperial_LandingCraft_lgear
+GeometryTemplate.file vehicles/Imperial_LandingCraft/Imp_LandingCraft_lgear
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh Imperial_LandingCraft_guns
+GeometryTemplate.file vehicles/Imperial_LandingCraft/Imp_LandingCraft_guns
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 50
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh ILC_Turbolaser_Base_M1
+GeometryTemplate.file vehicles/Imperial_LandingCraft/ILC_turret
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 50
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh ILC_Turbolaser_Barrel_M1
+GeometryTemplate.file vehicles/Imperial_LandingCraft/ILC_gun
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 50
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100

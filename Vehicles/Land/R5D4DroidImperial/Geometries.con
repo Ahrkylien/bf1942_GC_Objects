@@ -1,0 +1,15 @@
+GeometryTemplate.create StandardMesh R5D4Imperial_Hull_M1
+GeometryTemplate.file Vehicles/Imperial/R5/r5d4
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 50
+GeometryTemplate.setLodDistance 4 75
+GeometryTemplate.setLodDistance 5 100
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject building13
+ObjectTemplate.geometry building13_m1
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate building13
+ObjectTemplate.cullRadiusScale 3
+

@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle tat_light
+ObjectTemplate.geometry tat_light
+objectTemplate.aiTemplate tat_light
+rem ---------------------------

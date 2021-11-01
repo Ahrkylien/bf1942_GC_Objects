@@ -1,0 +1,2 @@
+NetworkableInfo.createNewInfo RJ_45_Info
+NetworkableInfo.setPredictionMode PMLinear

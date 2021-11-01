@@ -1,0 +1,159 @@
+rem *** Avenger (TieInterceptor) ***
+ObjectTemplate.create PlayerControlObject Avenger
+ObjectTemplate.setNetworkableInfo avenger_body_info
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 0.1
+ObjectTemplate.mass 2500
+ObjectTemplate.inertiaModifier 1/1/1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.hitpoints 80
+ObjectTemplate.maxhitpoints 80
+ObjectTemplate.material 801
+ObjectTemplate.criticalDamage 16
+ObjectTemplate.hpLostWhileCriticalDamage 0.8
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.hpLostWhileUpSideDown 8
+ObjectTemplate.hpLostWhileDamageFromWater 8
+
+ObjectTemplate.addArmorEffect 48 em_PlaneDamage 0/0/-1.2
+
+ObjectTemplate.addArmorEffect 32 em_StukaDamage 0/0/-1.2
+ObjectTemplate.addArmorEffect 32 em_PlaneDamage 0/0/-1.2
+
+ObjectTemplate.addArmorEffect 16 e_StukaFire 0/0/-1.2
+
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_TieInterceptor 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate TieInterceptor
+rem -------------------------------------
+ObjectTemplate.addTemplate lodAvenger
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/-2.5/-1.5 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_TieInterceptor.dds"
+ObjectTemplate.setVehicleIconPos 60/56
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_rocket.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_greenlaser_64x64.tga"
+ObjectTemplate.setSecondaryAmmoBar ABHeatBarOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTFighter
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tieinterceptor_16x16.dds"
+
+rem *** lodAvenger ***
+ObjectTemplate.create LodObject lodAvenger
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate AvengerComplex
+ObjectTemplate.addTemplate AvengerSimple
+ObjectTemplate.addTemplate AvengerWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector AvengerLodSelector
+
+rem *** AvengerComplex ***
+ObjectTemplate.create Bundle AvengerComplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodAvengerCockpit
+ObjectTemplate.addTemplate TieInterceptorCamera
+ObjectTemplate.setPosition 0/0/0.3
+ObjectTemplate.addTemplate TieInterceptorEntry
+ObjectTemplate.addTemplate TieInterceptorProtonTorpedoLauncher
+ObjectTemplate.setPosition 0/0/1
+ObjectTemplate.addTemplate TieInterceptorGuns
+ObjectTemplate.addTemplate WaterBounce 
+ObjectTemplate.setPosition 0/1.0/2.0
+ObjectTemplate.addTemplate WaterBounce
+ObjectTemplate.setPosition 0/1.0/-1.5
+
+ObjectTemplate.addTemplate TieInterceptorVTOLEngineRack
+ObjectTemplate.setPosition 4.5/1.5/4.5
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate TieInterceptorVTOLEngineRack
+ObjectTemplate.setPosition 4.5/1.5/-4.5
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate TieInterceptorVTOLEngineRack
+ObjectTemplate.setPosition -4.5/1.5/4.5
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate TieInterceptorVTOLEngineRack
+ObjectTemplate.setPosition -4.5/1.5/-4.5
+ObjectTemplate.setRotation 0/-90/0
+
+ObjectTemplate.addTemplate RollWheelBundle
+ObjectTemplate.setPosition 4.5/-3.5/6
+ObjectTemplate.addTemplate RollWheelBundle
+ObjectTemplate.setPosition -4.5/-3.5/6
+ObjectTemplate.addTemplate DummyWheel
+ObjectTemplate.setPosition 4.5/-3.5/-2.5
+ObjectTemplate.addTemplate DummyWheel
+ObjectTemplate.setPosition -4.5/-3.5/-2.5
+
+ObjectTemplate.addTemplate TieInterceptorWing_L
+ObjectTemplate.setPosition -2.736/-0.216/-0.699
+ObjectTemplate.setRotation 13/0/-9.498
+ObjectTemplate.addTemplate TieInterceptorWing_R
+ObjectTemplate.setPosition 2.741/-0.216/-0.699
+ObjectTemplate.setRotation -12.998/0/9
+ObjectTemplate.addTemplate TieInterceptorRollWing_L
+ObjectTemplate.setPosition -5.357/0/0.048
+ObjectTemplate.setRotation 18.4/0/-8.999
+ObjectTemplate.addTemplate TieInterceptorRollWing_R
+ObjectTemplate.setPosition 5.362/0/0.048
+ObjectTemplate.setRotation -18.399/0/9.5
+ObjectTemplate.addTemplate TieInterceptorPitchWing_L
+ObjectTemplate.setPosition -1.263/0.8/-5.877
+ObjectTemplate.setRotation 0/-1.7/0
+ObjectTemplate.addTemplate TieInterceptorPitchWing_R
+ObjectTemplate.setPosition 1.266/0.8/-5.877
+ObjectTemplate.setRotation 0/-1.7/0
+ObjectTemplate.addTemplate TieInterceptorYawWing
+ObjectTemplate.setPosition 0/1.088/-6.067
+ObjectTemplate.setRotation 0/0/-89.998
+ObjectTemplate.addTemplate TieInterceptorBodyWingVertical
+ObjectTemplate.setRotation 0/0/-89.999
+
+ObjectTemplate.addTemplate TieInterceptorEngine
+ObjectTemplate.setPosition 0/0/0
+
+rem *** lodAvengerCockpit ***
+ObjectTemplate.create LodObject lodAvengerCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate AvengerCockpitExternal
+ObjectTemplate.addTemplate TieInterceptorCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector TieInterceptorCockpitSelector
+
+rem *** AvengerCockpitExternal ***
+ObjectTemplate.create SimpleObject AvengerCockpitExternal
+ObjectTemplate.geometry tan_TieInterceptor_M1
+
+rem *** AvengerSimple ***
+ObjectTemplate.create SimpleObject AvengerSimple
+ObjectTemplate.geometry tan_TieInterceptor_M1
+
+rem *** AvengerWreck ***
+ObjectTemplate.create SimpleObject AvengerWreck
+ObjectTemplate.geometry Wreck_Null
+
+rem *** AvengerLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 AvengerLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 200
+
+
+

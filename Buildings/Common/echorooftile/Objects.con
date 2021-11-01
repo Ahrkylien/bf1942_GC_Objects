@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject echorooftile
+ObjectTemplate.aiTemplate echorooftile
+ObjectTemplate.geometry echorooftile
+ObjectTemplate.setHasCollisionPhysics 1
+
+

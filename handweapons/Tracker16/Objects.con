@@ -1,0 +1,78 @@
+ObjectTemplate.create HandFireArms Tracker16
+ObjectTemplate.itemIndex 3
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate tracker16Projectile
+ObjectTemplate.projectilePosition 0/0.08/0
+ObjectTemplate.unZoomBetweenFireTime 0
+ObjectTemplate.useScope 0
+ObjectTemplate.magSize 600
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.autoReload 0
+ObjectTemplate.setHasMag 0
+ObjectTemplate.reloadtime 0.00001
+ObjectTemplate.roundOfFire 10.0
+ObjectTemplate.setHudAmmoType ATIconAndHeatBar
+ObjectTemplate.setAmmoIcon "ammo/icon_laser_64x32.dds"
+ObjectTemplate.setCrossHairType CHTCrossHair
+
+objectTemplate.aiTemplate Mp18AI
+ObjectTemplate.zoomFov 0.9
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.soldierZoomFov 0.6 
+ObjectTemplate.soldierZoomPosition -0.05/0/0.06
+ObjectTemplate.soldierCameraPosition -0.01/-0.042/0.09
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	1
+
+ObjectTemplate.minDamage 0.05
+ObjectTemplate.distToStartLoseDamage 50
+ObjectTemplate.distToMinDamage 100
+
+rem ObjectTemplate.autoReload 1
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 420
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.4/0.2/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/0.7/-0.7/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 1
+
+ObjectTemplate.setFireDev 1.5 0.7 0.08
+ObjectTemplate.setDevMod 1 0.74 0.5
+ObjectTemplate.setTurnDev 0.5 0.1 0.2 0.1
+ObjectTemplate.setSpeedDev 3 0.4 0.2 0.1
+ObjectTemplate.setMiscDev 3 2.5 0.4
+ObjectTemplate.setMinDev 0.2
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript Sounds/Tracker16.ssc
+
+ObjectTemplate.createSkeleton animations/Tracker16.ske
+ObjectTemplate.useSkeletonPartAsMain thompson
+ObjectTemplate.addTemplate tracker16Lod
+ObjectTemplate.setPosition 0/0/0.058
+ObjectTemplate.setRotation 0/-0.5/0
+
+ObjectTemplate.addTemplate e_MuzzThomp
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.08/0.616
+
+ObjectTemplate.create SimpleObject tracker16Simple
+ObjectTemplate.geometry tracker16
+
+ObjectTemplate.create AnimatedBundle tracker16Complex
+ObjectTemplate.addTemplate tracker16Simple
+
+ObjectTemplate.createSkeleton animations/Tracker16.ske
+
+ObjectTemplate.create LodObject tracker16Lod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate tracker16Complex
+ObjectTemplate.addTemplate tracker16Simple
+
+
+

@@ -1,0 +1,2 @@
+GeometryTemplate.create StandardMesh bespin_statue
+GeometryTemplate.file MOVE_FILES/bespin_statue

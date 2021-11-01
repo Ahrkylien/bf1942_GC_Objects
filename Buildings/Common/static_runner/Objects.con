@@ -1,0 +1,40 @@
+ObjectTemplate.create Bundle static_runner
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate static_runner
+ObjectTemplate.addTemplate stat_hulls
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate stat_inside
+ObjectTemplate.setPosition -.481/-.5/0
+ObjectTemplate.addTemplate stat_control
+ObjectTemplate.setPosition -.481/-.5/-.383
+ObjectTemplate.addTemplate stat_pod
+ObjectTemplate.setPosition -.481/-.5/0
+ObjectTemplate.addTemplate stat_window
+ObjectTemplate.setPosition -.481/-.5/-.383
+ObjectTemplate.addTemplate stat_dock
+ObjectTemplate.setPosition 0/0/0
+rem ---------------------------
+ObjectTemplate.create SimpleObject stat_hulls
+ObjectTemplate.geometry static_runner
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject stat_inside
+ObjectTemplate.geometry static_inside
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject stat_dock
+ObjectTemplate.geometry static_dock
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject stat_control
+ObjectTemplate.geometry static_controls
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject stat_pod
+ObjectTemplate.geometry static_pods
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject stat_window
+ObjectTemplate.geometry static_window
+ObjectTemplate.setHasCollisionPhysics 1
+

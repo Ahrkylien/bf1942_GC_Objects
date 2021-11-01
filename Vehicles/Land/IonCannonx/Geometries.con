@@ -1,0 +1,36 @@
+GeometryTemplate.create StandardMesh IonCannonxBody
+GeometryTemplate.file Vehicles/IonCannonx/IonCannonxBody
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 1500
+
+GeometryTemplate.create StandardMesh IonCannonxTurret
+GeometryTemplate.file Vehicles/IonCannonx/IonCannonxTurret
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 1500
+
+GeometryTemplate.create StandardMesh Wreck_IonCannonx
+GeometryTemplate.file Vehicles/IonCannonx/ioncannonxwreck
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 1500
+
+
+GeometryTemplate.create StandardMesh IonCannonxDoor
+GeometryTemplate.file Buildings/Judicator/jud_fakedoor02
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100

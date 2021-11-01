@@ -1,0 +1,4 @@
+GeometryTemplate.create TreeMesh gcforallfern1
+GeometryTemplate.file gcforallfern1
+GeometryTemplate.billboard 1
+GeometryTemplate.billboardDistance 50

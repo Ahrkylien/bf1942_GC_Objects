@@ -1,0 +1,3 @@
+GeometryTemplate.create StandardMesh Canopy
+GeometryTemplate.file buildings/Endor/Canopy
+GeometryTemplate.setLodDistance 0 0

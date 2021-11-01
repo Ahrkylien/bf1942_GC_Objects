@@ -1,0 +1,78 @@
+ObjectTemplate.create HandFireArms DL44
+ObjectTemplate.itemIndex 2
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate Dl44Projectile
+ObjectTemplate.projectilePosition 0/0.067/0
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.magSize 50
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 000000.1
+ObjectTemplate.roundOfFire 6
+ObjectTemplate.fireOnce 1
+objectTemplate.aiTemplate ColtAI
+ObjectTemplate.zoomFov 0.4
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.soldierZoomFov 0.5 
+ObjectTemplate.soldierZoomPosition -0.01/-0.01/0.1
+ObjectTemplate.soldierCameraPosition 0.02/-0.05/0.2
+ObjectTemplate.AmmoType	1
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.setHasMag 0
+
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 25
+ObjectTemplate.distToMinDamage 50
+
+ObjectTemplate.useScope 1
+ObjectTemplate.setScopeIcon "reb_dl-44scope.tga"
+ObjectTemplate.unZoomBetweenFireTime 0
+
+ObjectTemplate.setHudAmmoType ATIconAndHeatBar
+ObjectTemplate.setAmmoIcon "ammo/icon_laser_64x32.dds"
+ObjectTemplate.setCrossHairType CHTCrossHair
+
+Rem *** Deviation Begin *****
+ObjectTemplate.velocity 340
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.4/0.6/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.2/-0.2/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 1
+
+ObjectTemplate.setFireDev 2.5 1.5 0.07
+ObjectTemplate.setMinDev 0.2
+ObjectTemplate.setTurnDev 0 0 0 0
+ObjectTemplate.setSpeedDev 1.5 0.2 0.2 0.1
+ObjectTemplate.setMiscDev 2.5 2.5 0.1
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript Sounds/DL-44.ssc
+ObjectTemplate.createSkeleton animations/DL44.ske
+ObjectTemplate.useSkeletonPartAsMain Colt
+ObjectTemplate.addTemplate DL44Lod
+ObjectTemplate.setPosition -0.01/-0.06/-0.01
+
+ObjectTemplate.addTemplate e_MuzzGun
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.001/0.25
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.create AnimatedBundle DL44Complex
+ObjectTemplate.createSkeleton animations/DL44.ske
+ObjectTemplate.addTemplate DL44Simple
+ObjectTemplate.bindToSkeletonPart Colt
+
+ObjectTemplate.create SimpleObject DL44Simple
+ObjectTemplate.geometry Dl44_m1
+
+ObjectTemplate.create LodObject DL44Lod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate DL44Complex
+ObjectTemplate.addTemplate DL44Simple
+
+
+
+
+

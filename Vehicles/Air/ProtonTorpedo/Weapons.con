@@ -1,0 +1,39 @@
+ObjectTemplate.create Projectile ProtonTorpedo
+ObjectTemplate.geometry ProtonTorpedo_m1
+ObjectTemplate.timeToLive CRD_NONE/20/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.drag .5
+ObjectTemplate.mass 20
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.addTemplate e_engineProtonTorpedo
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.useMMOnEndEffect 1
+ObjectTemplate.damageType 1
+ObjectTemplate.cullRadiusScale 3
+
+ObjectTemplate.material 552
+ObjectTemplate.material2 553
+
+ObjectTemplate.radius 8
+ObjectTemplate.ForceOnExplosion 15
+ObjectTemplate.ProximityFusePrimer 0.1
+ObjectTemplate.explodeNearEnemyDistance 7
+
+ObjectTemplate.addTemplate ProtonTorpedoWing
+ObjectTemplate.setPosition 0/0/-1.5
+
+ObjectTemplate.addTemplate ProtonTorpedoEngine
+ObjectTemplate.setPosition 0/0/-2
+
+
+rem -------------------------------------------------
+
+rem *** ProtonTorpedoDummy ***
+ObjectTemplate.create SimpleObject ProtonTorpedoDummy
+ObjectTemplate.geometry ProtonTorpedo_m1

@@ -1,0 +1,14 @@
+rem *** Add gun ***
+weaponTemplate.create CeZeppelinGunAI
+weaponTemplate.burst 0
+weaponTemplate.indirect 0
+weaponTemplate.minRange 15.0
+weaponTemplate.maxRange 250.0
+weaponTemplate.weaponActivate PINone
+weaponTemplate.weaponFire PIFire
+weaponTemplate.setStrength Infantery 8.0
+weaponTemplate.setStrength LightArmour 14.0
+weaponTemplate.setStrength HeavyArmour 12.0
+weaponTemplate.setStrength NavalArmour 10.0
+weaponTemplate.setStrength Submarine 6.0
+weaponTemplate.setStrength Air 8.0

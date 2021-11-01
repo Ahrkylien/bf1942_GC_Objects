@@ -1,0 +1,39 @@
+ObjectTemplate.create PlayercontrolObject tan_objective02
+ObjectTemplate.geometry tan_objective02
+
+ObjectTemplate.setNetworkableInfo tan_objective02Info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 650
+ObjectTemplate.maxhitpoints 650
+ObjectTemplate.material 811
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 10
+ObjectTemplate.explosionRadius 50
+ObjectTemplate.explosionDamage 20
+ObjectTemplate.explosionForceMod 100
+ObjectTemplate.FadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.addArmorEffect 500 em_TieInterceptorDamage 0/0/0
+ObjectTemplate.addArmorEffect 200 em_PlaneDamage 0/0/0
+ObjectTemplate.addArmorEffect 150 e_TieInterceptorFire 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_TieFighter 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+
+rem -------------------------------
+rem --------------------------------------
+
+ObjectTemplate.GUIIndex 67
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTDefGun
+ObjectTemplate.setToolTipType  TTDefGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+
+rem --------------------------------------------
+
+

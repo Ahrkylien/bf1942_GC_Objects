@@ -1,0 +1,21 @@
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/escapepod-cockpit.wav
+loop
+minDistance 1
+relativePosition 0/0/0.5
+volume 0.5
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1.5
+	param 1
+	param -1	
+endEffect
+

@@ -1,0 +1,118 @@
+rem
+rem *** ImpCapsule ***
+rem
+ObjectTemplate.create PlayerControlObject ImpCapsule
+ObjectTemplate.setNetworkableInfo ImpCapsuleBodyInfo
+ObjectTemplate.geometry Ammobox_m1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.destroyOnExit 1
+ObjectTemplate.speedMod 0
+ObjectTemplate.hitpoints 10
+ObjectTemplate.maxhitpoints 10
+ObjectTemplate.material 801
+ObjectTemplate.criticalDamage 1
+ObjectTemplate.hpLostWhileCriticalDamage 0.1
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.hpLostWhileUpSideDown 1
+ObjectTemplate.hpLostWhileDamageFromWater 1
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.drag .01
+ObjectTemplate.inertiaModifier 0/0/0
+ObjectTemplate.mass 3000
+ObjectTemplate.setVehicleCategory Land
+ObjectTemplate.setVehicleType  AAGun
+rem -------------------------------------
+ObjectTemplate.loadSoundScript Sounds/Ambient.ssc
+ObjectTemplate.addTemplate ImpCapsuleEntry
+ObjectTemplate.setPosition 0/0.5/0
+ObjectTemplate.addTemplate ImpCapsuleSeat
+ObjectTemplate.setPosition 0/0.97/-1
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate ImpCapsuleCamera
+ObjectTemplate.setPosition 0/1.2/-1.2
+ObjectTemplate.setRotation 0/30/0
+ObjectTemplate.addTemplate projxLauncher
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/0/-1 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/icon_droidcapsule.dds"
+ObjectTemplate.setVehicleIconPos 22/38
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Vehicle/Icon_DTAP.dds"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoOnly
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+
+rem *** ImpCapsuleEntry ***
+ObjectTemplate.create EntryPoint ImpCapsuleEntry
+ObjectTemplate.setEntryRadius 2
+
+rem *** ImpCapsuleCamera ***
+ObjectTemplate.create Camera ImpCapsuleCamera
+ObjectTemplate.setMinRotation 0/-45/0
+ObjectTemplate.setMaxRotation 0/100/0
+ObjectTemplate.setMaxSpeed 100/100/0
+ObjectTemplate.setAcceleration 6000/6000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMExternTrace 1
+
+rem *** ImpCapsuleSeat ***
+ObjectTemplate.create SeatObject ImpCapsuleSeat
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+rem *** projxLauncher **
+ObjectTemplate.create FireArms projxLauncher
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.projectileTemplate projxSpawnerProjectile
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.setHasMag 1
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.velocity 1
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 60
+ObjectTemplate.FireOnce 1
+
+rem *** projxSpawnerProjectile ***
+ObjectTemplate.create Projectile projxSpawnerProjectile
+ObjectTemplate.saveInSeparateFile 1 
+ObjectTemplate.addTemplate projxSpawner
+ObjectTemplate.timeToLive CRD_NONE/1/0/0 
+ObjectTemplate.gravityModifier 0.5 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.DetonateOnWaterCollision 1 
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** projxSpawner *** 
+ObjectTemplate.create ObjectSpawner projxSpawner
+ObjectTemplate.setObjectTemplate 1 e_11
+ObjectTemplate.setObjectTemplate 2 e_11
+ObjectTemplate.minSpawnDelay 0 
+ObjectTemplate.maxSpawnDelay 0 
+ObjectTemplate.TimeToLive 60
+ObjectTemplate.Distance 10
+ObjectTemplate.team 2 
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 1
+
+

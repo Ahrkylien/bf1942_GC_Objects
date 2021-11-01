@@ -1,0 +1,7 @@
+ObjectTemplate.create SimpleObject rebtrans
+ObjectTemplate.aiTemplate rebtrans
+ObjectTemplate.geometry rebtrans
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.loadSoundScript Sounds/Ambient.ssc
+
+

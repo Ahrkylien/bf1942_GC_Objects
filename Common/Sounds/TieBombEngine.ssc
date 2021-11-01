@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/TieBombEngineEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/TieBombEngineEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/TieBombEngineEngine.ssc

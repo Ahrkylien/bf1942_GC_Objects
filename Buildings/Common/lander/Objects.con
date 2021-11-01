@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle lander
+ObjectTemplate.geometry lander
+objectTemplate.aiTemplate lander
+ObjectTemplate.setHasCollisionPhysics 1

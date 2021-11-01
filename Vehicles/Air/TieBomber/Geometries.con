@@ -1,0 +1,17 @@
+GeometryTemplate.create StandardMesh TieBomber_M1
+GeometryTemplate.file Vehicles/TieBomber/TieBomber
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 140
+
+GeometryTemplate.create StandardMesh TieBomber_L1
+GeometryTemplate.file Vehicles/TieBomber/TieBomber_Low
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_TieBomber1_M1
+GeometryTemplate.file Vehicles/TieBomber/Wreck_TieBomber1
+

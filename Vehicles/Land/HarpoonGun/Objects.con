@@ -1,0 +1,89 @@
+ObjectTemplate.create HandFireArms HarpoonGun
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.loadSoundScript Sounds/HarpoonGun.ssc
+ObjectTemplate.itemIndex 3
+ObjectTemplate.projectileTemplate HarpoonGunProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.projectileVisible 1
+ObjectTemplate.magSize 30
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 2
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.autoReload 1
+ObjectTemplate.GUIIndex 10
+ObjectTemplate.setHudAmmoType ATIcon
+ObjectTemplate.setAmmoIcon "ammo/icon_laser_64x32.dds"
+ObjectTemplate.setHasMag 0
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.velocity 0
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.hideDuringFireTime 999.2
+ObjectTemplate.fireDelay 0.4
+ObjectTemplate.soldierCameraPosition 0/-0.05/0.3
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+ObjectTemplate.AmmoType	3
+ObjectTemplate.createSkeleton animations/speederpistol.ske
+ObjectTemplate.useSkeletonPartAsMain base
+ObjectTemplate.addTemplate HarpoonGunLod
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 5
+ObjectTemplate.distToMinDamage 5
+
+
+
+ObjectTemplate.create LodObject HarpoonGunLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate HarpoonGunComplex
+ObjectTemplate.addTemplate HarpoonGunSimple
+
+
+
+ObjectTemplate.create SimpleObject HarpoonGunSimple
+ObjectTemplate.geometry HarpoonGunMesh
+
+ObjectTemplate.create AnimatedBundle HarpoonGunComplex
+ObjectTemplate.geometry HarpoonGunMesh
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/speederpistol.ske
+
+
+ObjectTemplate.create Projectile HarpoonGunProjectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.saveInSeparateFile 1 
+ObjectTemplate.addTemplate HarpoonSpawner
+ObjectTemplate.setPosition 0/0/.4 
+
+ObjectTemplate.timeToLive CRD_NONE/20/0/0 
+ObjectTemplate.gravityModifier 0.5 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.setHasPointPhysics 1
+ObjectTemplate.hasCollisionEffect 1
+rem ObjectTemplate.DetonateOnWaterCollision 1 
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 1000
+
+rem *** HarpoonSpawn *** 
+ObjectTemplate.create ObjectSpawner HarpoonSpawner
+ObjectTemplate.setObjectTemplate 1 
+ObjectTemplate.setObjectTemplate 2 Harpoon
+ObjectTemplate.timeToLive CRD_NONE/3/0/0 
+ObjectTemplate.holdObject 0 
+ObjectTemplate.minSpawnDelay 0 
+ObjectTemplate.maxSpawnDelay 0 
+ObjectTemplate.TimeToLive 5
+ObjectTemplate.Distance 1
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2 
+ObjectTemplate.MaxNrOfObjectSpawned 3 
+ObjectTemplate.damageWhenLost 0

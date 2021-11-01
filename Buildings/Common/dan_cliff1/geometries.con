@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh dan_cliff1
+GeometryTemplate.file buildings/Dantooine/dan_cliff1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 300
+GeometryTemplate.setLodDistance 3 400
+GeometryTemplate.setLodDistance 4 500
+GeometryTemplate.setLodDistance 5 800

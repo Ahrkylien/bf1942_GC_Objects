@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/HanomagTurret.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/HanomagTurret.ssc
+	
+#templateLevel LOW
+
+	#include Low/HanomagTurret.ssc

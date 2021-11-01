@@ -1,0 +1,35 @@
+
+
+rem *** e_shellImpartProjectile ***
+ObjectTemplate.create EffectBundle e_shellImpartProjectile
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript ..\common\Sounds/shells.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_shellImpartProjectile
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/90/0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+
+
+rem *** Em_shellImpartProjectile ***
+ObjectTemplate.create Emitter Em_shellImpartProjectile
+ObjectTemplate.template Fx_shellImpartProjectile
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 45
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0.5/1
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/20/0/1
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/0/1
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/0/0/1
+ObjectTemplate.showInThirdPerson 1
+
+
+rem *** Fx_shellImpartProjectile ***
+ObjectTemplate.create Particle Fx_shellImpartProjectile
+ObjectTemplate.geometry impart_shell
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.size CRD_NONE/1/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0.5/0/0

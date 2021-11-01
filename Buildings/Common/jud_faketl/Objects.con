@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle jud_faketl
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry jud_faketl
+objectTemplate.aiTemplate jud_faketl
+rem ---------------------------

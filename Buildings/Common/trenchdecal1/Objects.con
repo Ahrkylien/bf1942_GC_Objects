@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject trenchdecal1
+ObjectTemplate.geometry trenchdecal1
+ObjectTemplate.setHasCollisionPhysics 1

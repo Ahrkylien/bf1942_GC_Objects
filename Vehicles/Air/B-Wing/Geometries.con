@@ -1,0 +1,53 @@
+GeometryTemplate.create StandardMesh B-Wing_Fus
+GeometryTemplate.file Vehicles/BWing/bwing_fus
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 80
+GeometryTemplate.setLodDistance 2 150
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 500
+GeometryTemplate.setLodDistance 5 1000
+
+GeometryTemplate.create StandardMesh B-Wing_Low
+GeometryTemplate.file Vehicles/BWing/bwing_low
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh BWing_BotWing
+GeometryTemplate.file Vehicles/BWing/bwing_botwing
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 80
+GeometryTemplate.setLodDistance 2 150
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 500
+GeometryTemplate.setLodDistance 5 1000
+
+GeometryTemplate.create StandardMesh BWing_TopWing
+GeometryTemplate.file Vehicles/BWing/bwing_topwing
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 80
+GeometryTemplate.setLodDistance 2 150
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 500
+GeometryTemplate.setLodDistance 5 1000
+
+GeometryTemplate.create StandardMesh BWing_Cockpit
+GeometryTemplate.file Vehicles/BWing/bwing_cockpit
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 80
+GeometryTemplate.setLodDistance 2 150
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 500
+GeometryTemplate.setLodDistance 5 1000
+
+GeometryTemplate.create StandardMesh BWing_Wheel_M1
+GeometryTemplate.file Vehicles/AWing/AWing_Wheel
+
+GeometryTemplate.create StandardMesh Wreck_B-Wing
+GeometryTemplate.file Vehicles/BWing/wreck_bwing
+
+GeometryTemplate.create StandardMesh 1P_B-Wing_cockpit
+GeometryTemplate.file Vehicles/BWing/bwing_cockpit_int
+

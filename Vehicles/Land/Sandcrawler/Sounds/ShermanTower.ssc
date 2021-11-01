@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/ShermanTower.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/ShermanTower.ssc
+	
+#templateLevel LOW
+
+	#include Low/ShermanTower.ssc

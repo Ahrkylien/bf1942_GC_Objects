@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject ctown_pipe
+ObjectTemplate.geometry ctown_pipe
+ObjectTemplate.setHasCollisionPhysics 1

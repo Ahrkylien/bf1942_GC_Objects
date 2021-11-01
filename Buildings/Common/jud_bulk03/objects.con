@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject jud_bulk03
+ObjectTemplate.geometry jud_bulk03
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate jud_bulk03
+

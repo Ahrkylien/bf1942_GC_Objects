@@ -1,0 +1,63 @@
+renderer.beginGlobalCluster Impart
+
+GeometryTemplate.create StandardMesh Impart_Barrel1_M1
+GeometryTemplate.file Vehicles/Impart/impart_main_barrel1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Impart_Barrel2_M1
+GeometryTemplate.file Vehicles/Impart/impart_main_barrel2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Impart_Hull_M1
+GeometryTemplate.file Vehicles/Impart/impart_hull
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh ImpartWheelL_M1
+GeometryTemplate.file Wespe_wheel2L_M1
+
+GeometryTemplate.create StandardMesh ImpartWheelR_M1
+GeometryTemplate.file Wespe_wheel2R_M1
+
+GeometryTemplate.create StandardMesh Impart_Tower_M1
+GeometryTemplate.file Vehicles/Impart/impart_main_turret
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh 1P_Impart_Driver_M1
+GeometryTemplate.file 1P_Wespe_Driver_M1
+
+GeometryTemplate.create StandardMesh Impart_Door_M1
+GeometryTemplate.file Vehicles/Impart/impart_hatch
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh Impart_Hull_L1
+GeometryTemplate.file Vehicles/Impart/impart_hull
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_Impart_M1
+GeometryTemplate.file Vehicles/Impart/Wreck_Impart_Hull
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 150
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 250
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500

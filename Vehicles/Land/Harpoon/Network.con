@@ -1,0 +1,5 @@
+NetworkableInfo.createNewInfo HarpoonInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo HarpoonBodyInfo
+NetworkableInfo.setPredictionMode PMLinear

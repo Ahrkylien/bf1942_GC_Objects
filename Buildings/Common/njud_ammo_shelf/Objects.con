@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle njud_ammo_shelf
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry njud_ammo_shelf
+objectTemplate.aiTemplate njud_ammo_shelf
+rem ---------------------------

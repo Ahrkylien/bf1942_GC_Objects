@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle mc_pad
+ObjectTemplate.geometry mc_pad
+objectTemplate.aiTemplate mc_pad
+ObjectTemplate.setHasCollisionPhysics 1

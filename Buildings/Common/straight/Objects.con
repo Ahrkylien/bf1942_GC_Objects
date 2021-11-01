@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle straight	
+ObjectTemplate.geometry straight
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate straight

@@ -1,0 +1,24 @@
+ObjectTemplate.create AnimatedBundle sarlaac_beak
+ObjectTemplate.geometry sarlaac_beak
+ObjectTemplate.createSkeleton animations/sarlaac.ske
+ObjectTemplate.setAnimationState sarlaac_move
+
+ObjectTemplate.create AnimatedBundle sarlaac_tent
+ObjectTemplate.geometry sarlaac_tent
+ObjectTemplate.createSkeleton animations/sarlaac.ske
+ObjectTemplate.setAnimationState sarlaac_move
+
+ObjectTemplate.create AnimatedBundle sarlaac_tent2
+ObjectTemplate.geometry sarlaac_tent2
+ObjectTemplate.createSkeleton animations/sarlaac.ske
+ObjectTemplate.setAnimationState sarlaac_move
+
+ObjectTemplate.create SimpleObject sarlaac_tent_place
+ObjectTemplate.geometry sarlaac_tent_place
+
+ObjectTemplate.create SimpleObject sarlaac_beack_place
+ObjectTemplate.geometry sarlaac_beak_place
+
+
+ObjectTemplate.create SimpleObject sarlaac_tent2_place
+ObjectTemplate.geometry sarlaac_tent2_place

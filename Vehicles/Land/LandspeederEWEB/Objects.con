@@ -1,0 +1,148 @@
+rem *** LandspeederEWEB ***
+ObjectTemplate.create PlayerControlObject LandspeederEWEB
+ObjectTemplate.NameTagOffset -0.3/-0.2/0
+ObjectTemplate.setNetworkableInfo LandspeederBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.drag 1
+ObjectTemplate.GravityModifier 50
+ObjectTemplate.GravityModifier CRD_NONE/2.5/0/0 
+ObjectTemplate.dragOffset 0/-1/2
+ObjectTemplate.mass 3500
+rem ObjectTemplate.inertiaModifier 2/1/2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.exitTimer 0.75
+ObjectTemplate.hitpoints 120
+ObjectTemplate.maxhitpoints 120
+ObjectTemplate.material 801
+ObjectTemplate.criticalDamage 6
+ObjectTemplate.hpLostWhileCriticalDamage 0.6
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.hpLostWhileUpSideDown 6
+ObjectTemplate.hpLostWhileDamageFromWater 6
+ObjectTemplate.addArmorEffect 12 e_WillyDamage 0/1.7/0
+ObjectTemplate.addArmorEffect 6 e_WillyFire 0/0.5/0.8
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_willy 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_LandSpeeder 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.aiTemplate Willy
+rem -------------------------------------
+ObjectTemplate.addTemplate lodLandspeederEWEB
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 2.7/0/0 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_landspeeder.dds"
+ObjectTemplate.setVehicleIconPos 60/55
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTScoutCar
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_landspeeder_16x16.dds"
+
+rem *** lodLandspeederEWEB ***
+ObjectTemplate.create LodObject lodLandspeederEWEB
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate LandspeederEWEBComplex
+ObjectTemplate.addTemplate LandspeederWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector LandspeederLodSelector
+
+rem *** LandspeederEWEBComplex ***
+ObjectTemplate.create Bundle LandspeederEWEBComplex
+ObjectTemplate.geometry landspeeder_Eweb
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate LandspeederCamera
+ObjectTemplate.setPosition 0.38/1.25/-.3
+ObjectTemplate.addTemplate LandspeederSeat
+ObjectTemplate.setPosition 0.399/.75/.35
+ObjectTemplate.addTemplate LandspeederEntry
+ObjectTemplate.setPosition 0/0/1
+ObjectTemplate.addTemplate LandspeederEntry
+ObjectTemplate.setPosition 0/0/-1
+ObjectTemplate.addTemplate LandspeederSteeringDummy
+ObjectTemplate.setPosition -0.399/0.35/0.15
+ObjectTemplate.setRotation 0/34/0
+rem ______________________________________
+ObjectTemplate.addTemplate landspeederEngine
+ObjectTemplate.setPosition 0/.3/0
+ObjectTemplate.addTemplate Landspeeder_XRudderRear 
+ObjectTemplate.setPosition 0/0/-5
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate Landspeeder_XRudderFront 
+ObjectTemplate.setPosition 0/0/4 
+ObjectTemplate.setRotation 0/0/-90 
+beginrem
+ObjectTemplate.addTemplate GravEngine
+ObjectTemplate.setPosition 0/2.27/0
+ObjectTemplate.setRotation 0/90/0
+ObjectTemplate.addTemplate GravEngine
+ObjectTemplate.setPosition 0/1.27/0
+ObjectTemplate.setRotation 0/0/0
+endrem
+
+rem -------------------------------------
+
+ObjectTemplate.addTemplate LandspeederEWEBPCO
+rem ObjectTemplate.setPosition -0.4392/1.1024/1.459
+ObjectTemplate.setPosition -0.4392/1.1546/1.1812
+
+
+
+rem *** LandspeederEWEBPCO ***
+ObjectTemplate.create PlayerControlObject LandspeederEWEBPCO
+ObjectTemplate.setNetworkableInfo LandspeederBodyInfo
+ObjectTemplate.aiTemplate WillyPassenger
+rem -------------------------------------
+ObjectTemplate.addTemplate Eweb_LandSpeederBase
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.7/0/0 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_landspeeder.dds"
+ObjectTemplate.setVehicleIconPos 73/61
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTScoutCar
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_landspeeder_16x16.dds"
+
+rem *** LandspeederEWEBRotation ***
+ObjectTemplate.create RotationalBundle LandspeederEWEBRotation
+ObjectTemplate.networkableInfo eweb_TurretInfo
+ObjectTemplate.geometry Eweb_cannon_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate Eweb_Camera
+ObjectTemplate.setPosition 0/0.4/-0.5
+ObjectTemplate.addTemplate ewebweaponfire
+ObjectTemplate.setPosition 0/0/1.06
+ObjectTemplate.addTemplate ewebhanddummy
+rem -------------------------------------
+ObjectTemplate.setMinRotation -30/-30/0
+ObjectTemplate.setMaxRotation 30/0/0
+ObjectTemplate.setMaxSpeed 180/180/0
+ObjectTemplate.setAcceleration 1000/1000/0
+ObjectTemplate.setInputToYaw c_pimouselookX
+ObjectTemplate.setInputToPitch c_pimouselookY
+
+rem *** LandspeederEWEBSeat ***
+ObjectTemplate.create SeatObject LandspeederEWEBSeat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+ObjectTemplate.seatAnimationUpperBody Ub_PassengerInWilly
+ObjectTemplate.seatAnimationLowerBody Lb_PassengerInWilly
+
+
+
+

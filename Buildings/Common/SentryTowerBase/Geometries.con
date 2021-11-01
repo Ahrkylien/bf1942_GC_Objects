@@ -1,0 +1,12 @@
+GeometryTemplate.create StandardMesh spy_turret_base
+GeometryTemplate.file Buildings/Hoth/spy_turret
+
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 80
+GeometryTemplate.setLodDistance 3 120
+GeometryTemplate.setLodDistance 4 180
+GeometryTemplate.setLodDistance 5 300
+
+
+

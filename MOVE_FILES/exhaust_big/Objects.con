@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject exhaust_big
+ObjectTemplate.geometry exhaust_big
+

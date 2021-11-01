@@ -1,0 +1,22 @@
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/ambient-hothwind.wav
+loop
+minDistance 130
+randomStartPitch 0.25 / 0.0
+volume .8
+priority -10
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 110
+	param 130
+	param 1
+	param -1
+endEffect
+

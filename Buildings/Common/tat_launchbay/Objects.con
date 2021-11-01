@@ -1,0 +1,25 @@
+ObjectTemplate.create Bundle tat_launchbay
+ObjectTemplate.geometry tat_launchbay
+objectTemplate.aiTemplate tat_launchbay
+ObjectTemplate.setHasCollisionPhysics 1
+
+rem ---------------------------
+rem ObjectTemplate.addTemplate tat_launchbay_inside01
+rem ObjectTemplate.setPosition 0/0/0
+rem ObjectTemplate.setRotation 0/0/0
+
+rem ObjectTemplate.addTemplate tat_launchbay_inside02
+rem ObjectTemplate.setPosition 0/0/0
+rem ObjectTemplate.setRotation 0/0/0
+rem ----------------------------
+
+
+rem ObjectTemplate.create SimpleObject tat_launchbay_inside01
+rem ObjectTemplate.aiTemplate tat_launchbay
+rem ObjectTemplate.geometry tat_launchbay_inside01
+rem ObjectTemplate.setHasCollisionPhysics 1
+
+rem ObjectTemplate.create SimpleObject tat_launchbay_inside02
+rem ObjectTemplate.aiTemplate tat_launchbay
+rem ObjectTemplate.geometry tat_launchbay_inside02
+rem ObjectTemplate.setHasCollisionPhysics 1

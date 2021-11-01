@@ -1,0 +1,22 @@
+GeometryTemplate.create StandardMesh EWing_Fus_M1
+GeometryTemplate.file Vehicles/EWing/e_wing_fus
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 140
+
+GeometryTemplate.create StandardMesh EWing_Fus_L1
+GeometryTemplate.file Vehicles/EWing/e-wing_low
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 2000
+
+GeometryTemplate.create StandardMesh 1P_EWing_M1
+GeometryTemplate.file Vehicles/EWing/ewing_cockpit
+
+GeometryTemplate.create StandardMesh Wreck_EWing1_M1
+GeometryTemplate.file Vehicles/EWing/Wreck_EWing_01
+
+

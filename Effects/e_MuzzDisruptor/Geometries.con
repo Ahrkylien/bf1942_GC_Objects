@@ -1,0 +1,2 @@
+GeometryTemplate.create StandardMesh MuzzDisruptor
+GeometryTemplate.file MuzzDisruptor

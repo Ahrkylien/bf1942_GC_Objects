@@ -1,0 +1,51 @@
+newPatch
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/avturret-laser-stereo.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+stereo
+priority 10
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 5
+	param 1
+	param -1	
+endEffect
+
+################
+### Distance ###
+################
+load @ROOT/Sound/@RTD/avturret-laser-mono.wav
+minDistance 10
+randomStartPitch 0.05 / 0.05
+priority 9
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 5
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 150
+	param 350
+	param 1
+	param -1	
+endEffect

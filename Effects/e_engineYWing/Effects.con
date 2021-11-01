@@ -1,0 +1,32 @@
+rem *** e_engineYWing ***
+ObjectTemplate.create EffectBundle e_engineYWing
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_engineYWing
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+rem -------------------------------------
+
+rem *** Em_engineYWing ***
+ObjectTemplate.create Emitter Em_engineYWing
+ObjectTemplate.template Fx_engineYWing
+ObjectTemplate.lodDistance 500
+ObjectTemplate.IntensityAtSpeed 7
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/11/0/0
+ObjectTemplate.startRotation CRD_NORMAL/0/180/0
+ObjectTemplate.noPhysics 1
+ObjectTemplate.addChild 1
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+
+rem *** fx_engineYWing ***
+ObjectTemplate.create Particle fx_engineYWing
+ObjectTemplate.geometry A_Wing_Engine_FX
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.size CRD_NONE/1.4/1/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeModifier 1/1/2
+ObjectTemplate.sizeOverTime 0/1|100/0.6
+ObjectTemplate.alphaOverTime 0/0|100/0.2

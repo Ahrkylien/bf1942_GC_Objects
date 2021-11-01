@@ -1,0 +1,84 @@
+ObjectTemplate.create HandFireArms E-11
+ObjectTemplate.itemIndex 3
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate E-11Projectile
+ObjectTemplate.projectilePosition 0/0.051/0
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.unZoomBetweenFireTime 0
+ObjectTemplate.useScope 1
+ObjectTemplate.setScopeIcon "imp_e11scope.tga"
+ObjectTemplate.magSize 130
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.autoReload 0
+ObjectTemplate.setHasMag 0
+ObjectTemplate.reloadtime 0.00001
+ObjectTemplate.roundOfFire 5.8
+ObjectTemplate.GUIIndex 7
+ObjectTemplate.setHudAmmoType ATIconAndHeatBar
+ObjectTemplate.setAmmoIcon "ammo/icon_laser_64x32.dds"
+ObjectTemplate.setCrossHairType CHTCrossHair
+
+objectTemplate.aiTemplate Mp18AI
+ObjectTemplate.zoomFov 0.25
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.soldierZoomFov 0.3 
+ObjectTemplate.soldierZoomPosition -0.05/0.02/0.06
+ObjectTemplate.soldierCameraPosition -0.01/-0.04/0.09
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	1
+
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 100
+ObjectTemplate.distToMinDamage 300
+
+rem ObjectTemplate.autoReload 1
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 400
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.28/0.32/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.2/0.2/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 0
+
+rem objectTemplate.heatAddWhenFire 0.0295
+rem objectTemplate.coolDownPerSec 0.3
+rem objectTemplate.timeDelayOnOverHeat 2
+
+ObjectTemplate.setFireDev 1.5 0.36 0.05
+ObjectTemplate.setDevMod 1 0.76 0.5
+ObjectTemplate.setTurnDev 1 0.2 0.2 0.1
+ObjectTemplate.setSpeedDev 3 0.4 0.2 0.1
+ObjectTemplate.setMiscDev 3 2.5 0.4
+ObjectTemplate.setMinDev 0.2
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript Sounds/E-11.ssc
+
+ObjectTemplate.createSkeleton animations/e-11.ske
+ObjectTemplate.useSkeletonPartAsMain thompson
+ObjectTemplate.addTemplate E-11Lod
+ObjectTemplate.setPosition 0/0.01/0.12
+
+ObjectTemplate.addTemplate e_MuzzThomp
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.06/0.33
+
+ObjectTemplate.create SimpleObject E-11Simple
+ObjectTemplate.geometry E-11_m1
+
+ObjectTemplate.create AnimatedBundle E-11Complex
+ObjectTemplate.addTemplate e-11Simple
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.createSkeleton animations/E-11.ske
+
+ObjectTemplate.create LodObject E-11Lod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate E-11Complex
+ObjectTemplate.addTemplate E-11Simple
+
+
+

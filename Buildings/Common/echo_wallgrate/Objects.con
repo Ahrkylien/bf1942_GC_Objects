@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject echo_wallgrate
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry echo_wallgrate
+objectTemplate.aiTemplate echo_wallgrate
+rem ---------------------------

@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject tan_isd_hanger1a
+ObjectTemplate.geometry tan_isd_hanger1a
+ObjectTemplate.aiTemplate tan_isd_hanger1a
+

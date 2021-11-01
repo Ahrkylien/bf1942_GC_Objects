@@ -1,0 +1,27 @@
+rem *** e_MuzzDisruptor ***
+ObjectTemplate.create EffectBundle e_MuzzDisruptor
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate em_MuzzDisruptor
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+
+rem *** em_MuzzDisruptor ***
+ObjectTemplate.create Emitter em_MuzzDisruptor
+ObjectTemplate.template fx_MuzzDisruptor2
+ObjectTemplate.lodDistance 400
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.startRotation CRD_UNIFORM/0/180/1
+ObjectTemplate.noPhysics 1
+ObjectTemplate.addChild 1
+
+rem *** fx_MuzzDisruptor2 ***
+ObjectTemplate.create Particle fx_MuzzDisruptor2
+ObjectTemplate.geometry MuzzDisruptor
+ObjectTemplate.timeToLive CRD_NONE/0.07/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeModifier 1.3/1.3/8

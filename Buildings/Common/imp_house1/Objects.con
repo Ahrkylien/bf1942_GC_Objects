@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject imp_house1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry imp_house1
+objectTemplate.aiTemplate imp_house1
+rem ---------------------------

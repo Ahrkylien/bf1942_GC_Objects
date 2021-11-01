@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include debrie_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include debrie_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include debrie_MedLow.ssc

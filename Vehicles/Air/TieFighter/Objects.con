@@ -1,0 +1,177 @@
+rem *** tiefighter ***
+ObjectTemplate.create PlayerControlObject tiefighter
+ObjectTemplate.setNetworkableInfo tiefighter_body_info
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 0.1
+ObjectTemplate.mass 2500
+ObjectTemplate.inertiaModifier 1/1/1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.hitpoints 55
+ObjectTemplate.maxhitpoints 55
+ObjectTemplate.material 801
+ObjectTemplate.criticalDamage 11
+ObjectTemplate.hpLostWhileCriticalDamage 0.55
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.hpLostWhileUpSideDown 5.5
+ObjectTemplate.hpLostWhileDamageFromWater 5.5
+
+ObjectTemplate.addArmorEffect 33 em_PlaneDamage 0/0/0
+
+ObjectTemplate.addArmorEffect 22 em_PlaneDamage 0/0/0
+ObjectTemplate.addArmorEffect 22 em_StukaDamage 0/0/0
+ObjectTemplate.addArmorEffect 22 em_PlaneDamage 0/0/0
+
+ObjectTemplate.addArmorEffect 11 e_StukaFire 0/0/0
+
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_TieFighter 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate tiefighter
+rem -------------------------------------
+ObjectTemplate.addTemplate lodtiefighter
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.5/1/1 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_tiefighter.dds"
+ObjectTemplate.setVehicleIconPos 68/48
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_greenlaser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABHeatBarOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTFighter
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tiefighter_16x16.dds"
+
+rem *** lodtiefighter ***
+ObjectTemplate.create LodObject lodtiefighter
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate tiefighterComplex
+ObjectTemplate.addTemplate tiefighterSimple
+ObjectTemplate.addTemplate tiefighterWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector tiefighterLodSelector
+
+rem *** tiefighterComplex ***
+ObjectTemplate.create Bundle tiefighterComplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodTieFighterCockpit
+ObjectTemplate.addTemplate tiefighterCamera
+ObjectTemplate.setPosition 0/0/0.3
+ObjectTemplate.addTemplate tiefighterEntry
+ObjectTemplate.addTemplate TieFighterGuns
+
+ObjectTemplate.addTemplate TieFighterVTOLEngineRack
+ObjectTemplate.setPosition 3.5/1.5/3.5
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate TieFighterVTOLEngineRack
+ObjectTemplate.setPosition 3.5/1.5/-3.5
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate TieFighterVTOLEngineRack
+ObjectTemplate.setPosition -3.5/1.5/3.5
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate TieFighterVTOLEngineRack
+ObjectTemplate.setPosition -3.5/1.5/-3.5
+ObjectTemplate.setRotation 0/-90/0
+
+ObjectTemplate.addTemplate RollWheelBundle
+ObjectTemplate.setPosition -3.5/-4.35/4.5
+ObjectTemplate.addTemplate RollWheelBundle
+ObjectTemplate.setPosition 3.5/-4.35/4.5
+ObjectTemplate.addTemplate DummyWheel
+ObjectTemplate.setPosition -3.5/-4.35/-4
+ObjectTemplate.addTemplate DummyWheel
+ObjectTemplate.setPosition 3.5/-4.35/-4
+
+ObjectTemplate.addTemplate TieFighterWing_L
+ObjectTemplate.setPosition -2.736/-0.216/-0.699
+ObjectTemplate.setRotation 13/0/-9.498
+ObjectTemplate.addTemplate TieFighterWing_R
+ObjectTemplate.setPosition 2.741/-0.216/-0.699
+ObjectTemplate.setRotation -12.998/0/9
+ObjectTemplate.addTemplate TieFighterRollWing_L
+ObjectTemplate.setPosition -5.357/0/0.048
+ObjectTemplate.setRotation 18.4/0/-8.999
+ObjectTemplate.addTemplate TieFighterRollWing_R
+ObjectTemplate.setPosition 5.362/0/0.048
+ObjectTemplate.setRotation -18.399/0/9.5
+ObjectTemplate.addTemplate TieFighterPitchWing_L
+ObjectTemplate.setPosition -1.263/0.8/-5.877
+ObjectTemplate.setRotation 0/-1.7/0
+ObjectTemplate.addTemplate TieFighterPitchWing_R
+ObjectTemplate.setPosition 1.266/0.8/-5.877
+ObjectTemplate.setRotation 0/-1.7/0
+ObjectTemplate.addTemplate TieFighterYawWing
+ObjectTemplate.setPosition 0/1.088/-6.067
+ObjectTemplate.setRotation 0/0/-89.998
+ObjectTemplate.addTemplate TieFighterBodyWingVertical
+ObjectTemplate.setRotation 0/0/-89.999
+
+ObjectTemplate.addTemplate TieFighterEngine
+ObjectTemplate.setPosition 0/0.5/4
+
+rem *** lodTieFighterCockpit ***
+ObjectTemplate.create LodObject lodTieFighterCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate TieFighterCockpitExternal
+ObjectTemplate.addTemplate TieFighterCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector TieFighterCockpitSelector
+
+rem *** TieFighterCockpitExternal ***
+ObjectTemplate.create SimpleObject TieFighterCockpitExternal
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.geometry TieFighter_M1
+
+rem *** TieFighterCockpitInternal ***
+ObjectTemplate.create SimpleObject TieFighterCockpitInternal
+ObjectTemplate.geometry 1P_TieFighter_Cockpit
+
+rem *** TieFighterCockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector TieFighterCockpitSelector
+LodSelectorTemplate.addLodDistance 10
+LodSelectorTemplate.addLodComparison 0.5
+
+rem *** tiefighterCamera ***
+ObjectTemplate.create Camera tiefighterCamera
+ObjectTemplate.setMinRotation -8/-10/0
+ObjectTemplate.setMaxRotation 8/5/0
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/-5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.OutsideHudOffset 0/0/2
+
+rem *** tiefighterEntry ***
+ObjectTemplate.create EntryPoint tiefighterEntry
+ObjectTemplate.setEntryRadius 5
+
+rem *** tiefighterSimple ***
+ObjectTemplate.create SimpleObject tiefighterSimple
+ObjectTemplate.geometry TieFighter_L1
+
+rem *** TieFighterWreck ***
+ObjectTemplate.create SimpleObject TieFighterWreck
+ObjectTemplate.geometry Wreck_TieFighter1_M1
+
+rem *** tiefighterLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 tiefighterLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 200
+
+

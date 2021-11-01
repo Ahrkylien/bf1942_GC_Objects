@@ -1,0 +1,26 @@
+rem *** SkyhopperLaser ***
+ObjectTemplate.create FireArms SkyhopperLaser
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/SkyhopperLaser.ssc
+ObjectTemplate.aiTemplate SpitfireMachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzThomp
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileRedS
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 700
+ObjectTemplate.reloadtime 0.0001
+ObjectTemplate.roundOfFire 5.2
+ObjectTemplate.addFireArmsPosition 0/-2.539/4.583 0/0/0
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.05
+objectTemplate.coolDownPerSec 0.8
+objectTemplate.timeDelayOnOverHeat 2
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 300
+ObjectTemplate.distToMinDamage 500
+ObjectTemplate.AmmoType	10
+

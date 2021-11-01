@@ -1,0 +1,122 @@
+############
+### SAND ###
+############
+newPatch
+
+load @ROOT/Sound/@RTD/SOWAMTL1.wav
+randomStartPitch 0.03 / 0.03
+minDistance 1
+volume .6
+priority 8
+dopplerOff
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 10
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/SOWAMTL2.wav
+randomStartPitch 0.03 / 0.03
+minDistance 1
+volume .6
+priority 8
+dopplerOff
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 10
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/SOWAMTL3.wav
+randomStartPitch 0.03 / 0.03
+minDistance 1
+volume .6
+priority 8
+dopplerOff
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 10
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/SOWAMTL4.wav
+randomStartPitch 0.03 / 0.03
+minDistance 1
+volume .6
+priority 8
+dopplerOff
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 10
+	param 1
+	param -1	
+endEffect
+
+randomPlay 1
+
+###################
+### METAL DUMMY ###
+###################
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+##################
+### WOOD DUMMY ###
+##################
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+
+######################
+### CONCRETE DUMMY ###
+######################
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+
+###################
+### GRASS DUMMY ###
+###################
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+
+####################
+### Gravel DUMMY ###
+####################
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+
+####################
+### Frozen DUMMY ###
+####################
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+

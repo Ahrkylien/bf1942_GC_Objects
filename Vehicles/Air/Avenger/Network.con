@@ -1,0 +1,2 @@
+NetworkableInfo.createNewInfo avenger_body_info
+NetworkableInfo.setPredictionMode PMLinear

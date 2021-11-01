@@ -1,0 +1,53 @@
+rem *** probedroidGun ***
+ObjectTemplate.create FireArms probedroidGun
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/ProbeDroidGun.ssc
+rem -------------------------------------
+rem ObjectTemplate.visibleBarrelTemplate e_muzzGun
+rem -------------------------------------
+ObjectTemplate.projectileTemplate LightLaserProjectileRedNS
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 600
+ObjectTemplate.reloadtime 0.0001
+ObjectTemplate.roundOfFire 3
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.01
+ObjectTemplate.distToStartLoseDamage 60
+ObjectTemplate.distToMinDamage 200
+ObjectTemplate.AmmoType	8
+
+rem *** probedroidSpy ***
+ObjectTemplate.create FireArms probedroidSpy
+ObjectTemplate.magType 2
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magSize 5
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.projectileTemplate probedroidSpyProjectile
+ObjectTemplate.projectile2Template probedroidSpyProjectile2
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.GUIIndex 84
+ObjectTemplate.setInputFire c_PIAltFire
+
+ObjectTemplate.create Projectile probedroidSpyProjectile
+ObjectTemplate.networkableInfo SpyProjectileInfo
+ObjectTemplate.timeToLive CRD_NONE/120/0/0
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.gravityModifier 0.0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.damageType 3
+rem ObjectTemplate.addTemplate LaserSight
+
+ObjectTemplate.create Projectile probedroidSpyProjectile2
+rem ObjectTemplate.networkableInfo SpyProjectileInfo
+ObjectTemplate.timeToLive CRD_NONE/120/0/0
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.gravityModifier 0.0
+ObjectTemplate.hasCollisionEffect 0
+
+
+
+

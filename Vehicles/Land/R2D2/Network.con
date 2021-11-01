@@ -1,0 +1,11 @@
+NetworkableInfo.createNewInfo R2D2TurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo R2D2GunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo R2D2EngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo R2D2BodyInfo
+NetworkableInfo.setPredictionMode PMLinear

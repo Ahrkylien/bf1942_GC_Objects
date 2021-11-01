@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject tusken_hut1
+ObjectTemplate.geometry tusken_hut1	
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate tusken_hut1
+ObjectTemplate.cullRadiusScale 3
+

@@ -1,0 +1,41 @@
+rem *** R2D2Engine ***
+ObjectTemplate.create Engine R2D2Engine
+ObjectTemplate.setNetworkableInfo R2D2EngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/R5D4Engine.ssc
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate R2D2Wheel
+ObjectTemplate.setPosition -0.8/0.3/1
+ObjectTemplate.addTemplate R2D2Wheel
+ObjectTemplate.setPosition 0.8/0.3/1
+ObjectTemplate.addTemplate R2D2Wheel
+ObjectTemplate.setPosition -0.8/0.3/-1.25
+ObjectTemplate.addTemplate R2D2Wheel
+ObjectTemplate.setPosition 0.8/0.3/-1.25
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 1/0/1
+ObjectTemplate.setAcceleration 4/0/4
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 3
+ObjectTemplate.setDifferential 2
+ObjectTemplate.setNumberOfGears 3
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+
+rem *** R2D2Wheel ***
+ObjectTemplate.create Spring R2D2Wheel
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry R2D2_Wheel_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+ObjectTemplate.createInvisible 1

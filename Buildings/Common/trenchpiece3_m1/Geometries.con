@@ -1,0 +1,6 @@
+GeometryTemplate.create StandardMesh trenchpiece3_m1
+GeometryTemplate.file Buildings/trenchpiece3_m1
+GeometryTemplate.setLodDistance 0 0
+
+
+

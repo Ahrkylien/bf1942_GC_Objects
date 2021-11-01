@@ -1,0 +1,108 @@
+#############
+### crawl ###
+#############
+newPatch
+
+load @ROOT/Sound/@RTD/SOCRAWL1.wav
+randomStartPitch 0.03 / 0.03
+minDistance 1
+volume .6
+dopplerOff
+priority 0
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 6
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/SOCRAWL2.wav
+dopplerOff
+priority 0
+randomStartPitch 0.03 / 0.03
+minDistance 1
+volume .6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 6
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/SoFa1.wav
+dopplerOff
+priority 0
+randomStartPitch 0.03 / 0.03
+minDistance 1
+volume .6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 6
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/SoFa2.wav
+dopplerOff
+priority 0
+randomStartPitch 0.03 / 0.03
+minDistance 1
+volume .6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 6
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/SoFa3.wav
+randomStartPitch 0.03 / 0.03
+dopplerOff
+priority 0
+minDistance 1
+volume .6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 6
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/SoFa4.wav
+dopplerOff
+priority 0
+randomStartPitch 0.03 / 0.03
+minDistance 1
+volume .6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 6
+	param 1
+	param -1	
+endEffect
+
+randomPlay 1

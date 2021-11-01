@@ -1,0 +1,72 @@
+#include ../../../Common/Sounds/EngineMap.ssc
+
+newPatch
+
+####################
+### Engine Start ###
+####################
+load @ROOT/Sound/@RTD/silence.wav
+
+#########
+### 1 ###
+#########
+load @ROOT/Sound/@RTD/cloudbus-engine.wav
+loop
+volume 0.3
+minDistance 10
+randomStartPitch 0.05/0.05 
+priority 9
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 1.2
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0
+	param 2.5
+	param 0.8
+	param 0.2
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 100
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.2
+	param 1
+	param -1	
+endEffect
+
+###############
+### Cockpit ###
+###############
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+###################
+### Engine Stop ###
+###################
+load @ROOT/Sound/@RTD/silence.wav

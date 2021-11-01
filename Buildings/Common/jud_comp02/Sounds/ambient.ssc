@@ -1,0 +1,107 @@
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/ambient-jud_console-1.wav
+relativePosition 0/0.6/0
+loop
+minDistance 1
+volume 0.2
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 7
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/ambient-jud_console-2.wav
+relativePosition 0/0.6/0
+loop
+minDistance 1
+volume 0.2
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 7
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/ambient-jud_console-3.wav
+relativePosition 0/0.6/0
+loop
+minDistance 1
+volume 0.2
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 7
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/ambient-jud_console-4.wav
+relativePosition 0/0.6/0
+loop
+minDistance 1
+volume 0.2
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 7
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/ambient-jud_console-5.wav
+relativePosition 0/0.6/0
+loop
+minDistance 1
+volume 0.2
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 7
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/ambient-jud_console-6.wav
+relativePosition 0/0.6/0
+loop
+minDistance 1
+volume 0.2
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 7
+	param 1
+	param -1	
+endEffect
+
+randomPlay 1

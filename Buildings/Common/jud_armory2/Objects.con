@@ -1,0 +1,74 @@
+ObjectTemplate.create Bundle jud_armory2
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry jud_armory
+
+ObjectTemplate.addTemplate a295_Spawner
+ObjectTemplate.setPosition -.259602/.60/.0129127
+ObjectTemplate.setRotation 0/-78.4135/0
+
+ObjectTemplate.addTemplate Rebel_Tracker_Spawner
+ObjectTemplate.setPosition -.0912584/.60/.0129127
+ObjectTemplate.setRotation 0/-78.4135/0
+
+ObjectTemplate.addTemplate a295_Spawner
+ObjectTemplate.setPosition .0767183/.60/.0129127
+ObjectTemplate.setRotation 0/-78.4135/0
+
+ObjectTemplate.addTemplate Disrupter_Spawner
+ObjectTemplate.setPosition .244394/.525/.0129127
+ObjectTemplate.setRotation 0/-78.4135/0
+
+
+
+
+objectTemplate.aiTemplate jud_armory
+rem ---------------------------
+
+
+
+
+
+rem ----------------------------------------- 
+rem ---  A295 Spawn  ---
+rem ----------------------------------------- 
+ObjectTemplate.create ObjectSpawner a295_Spawner
+ObjectTemplate.setObjectTemplate 1 a295_kit
+ObjectTemplate.setObjectTemplate 2 a295_kit
+ObjectTemplate.MinSpawnDelay 10				
+ObjectTemplate.MaxSpawnDelay 20
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.team 1
+ObjectTemplate.TimeToLive 45
+ObjectTemplate.Distance 40
+ObjectTemplate.DamageWhenLost 10
+ObjectTemplate.maxNrOfObjectSpawned 2
+
+rem ----------------------------------------- 
+rem ---  Disrupter Spawn  ---
+rem ----------------------------------------- 
+ObjectTemplate.create ObjectSpawner Disrupter_Spawner
+ObjectTemplate.setObjectTemplate 1 Disruptor_Kit_Medic
+ObjectTemplate.setObjectTemplate 2 Disruptor_Kit_Medic
+ObjectTemplate.MinSpawnDelay 10
+ObjectTemplate.MaxSpawnDelay 20
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.team 1
+ObjectTemplate.TimeToLive 45
+ObjectTemplate.Distance 40
+ObjectTemplate.DamageWhenLost 10
+ObjectTemplate.maxNrOfObjectSpawned 2
+
+rem ----------------------------------------- 
+rem ---  Rebel Tracker Spawn  ---
+rem ----------------------------------------- 
+ObjectTemplate.create ObjectSpawner Rebel_Tracker_Spawner
+ObjectTemplate.setObjectTemplate 1 Rebel_Tracker
+ObjectTemplate.setObjectTemplate 2 Rebel_Tracker
+ObjectTemplate.MinSpawnDelay 10
+ObjectTemplate.MaxSpawnDelay 20
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.team 1
+ObjectTemplate.TimeToLive 45
+ObjectTemplate.Distance 40
+ObjectTemplate.DamageWhenLost 10
+ObjectTemplate.maxNrOfObjectSpawned 1

@@ -1,0 +1,130 @@
+
+ObjectTemplate.create FireArms GunShipBubbleLaser
+ObjectTemplate.loadSoundScript Sounds/LaserBeam.ssc
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+rem -------------------------------------
+rem ObjectTemplate.visibleBarrelTemplate e_greenbeam
+rem -------------------------------------
+ObjectTemplate.projectileTemplate BeamLaserProjectileGreenS
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 1200
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.roundOfFire 10
+ObjectTemplate.addFireArmsPosition 0/0/4 0/0/0
+ObjectTemplate.setInputFire c_PIFire
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.2
+objectTemplate.coolDownPerSec 0.7
+objectTemplate.timeDelayOnOverHeat 0.2
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 100
+ObjectTemplate.distToMinDamage 300
+ObjectTemplate.AmmoType	10
+
+ObjectTemplate.create FireArms GunShipFrontLaser
+ObjectTemplate.loadSoundScript Sounds/FrontLaser.ssc
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileGreenNS
+ObjectTemplate.magSize 400
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 650
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.roundOfFire 5.3
+ObjectTemplate.addFireArmsPosition 0/0/2 0/0/0
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 100
+ObjectTemplate.distToMinDamage 300
+ObjectTemplate.AmmoType	10
+
+rem ------------------------------------------------
+rem *** GunShipRockets ***
+ObjectTemplate.create FireArms GunShipRockets
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.projectileTemplate RocketProjectile2
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 4
+ObjectTemplate.numOfMag 2
+ObjectTemplate.velocity 110
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 10
+ObjectTemplate.roundOfFire 6
+ObjectTemplate.fireingForce 1
+rem ObjectTemplate.setInputFire c_PIFire
+ObjectTemplate.AmmoType	8
+ObjectTemplate.addFireArmsPosition 1.1/2.9/5 0/0/0
+ObjectTemplate.addFireArmsPosition -1.1/2.9/5 0/0/0
+
+rem -------------------------------------------------
+
+
+ObjectTemplate.create FireArms GunShipBubbleLaser2
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+rem -------------------------------------
+rem ObjectTemplate.visibleBarrelTemplate e_greenbeam
+rem -------------------------------------
+ObjectTemplate.projectileTemplate LaserSightProjectile
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 0
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.roundOfFire 20
+ObjectTemplate.addFireArmsPosition 0/0/3 0/0/0
+ObjectTemplate.setInputFire c_PIFire
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.1
+objectTemplate.coolDownPerSec 0.7
+objectTemplate.timeDelayOnOverHeat 0.2
+
+rem *** LaserSightProjectile ***
+ObjectTemplate.create Projectile LaserSightProjectile
+ObjectTemplate.geometry LaserSight_m1
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.hasStartEffect 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 0
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+
+
+ObjectTemplate.create SimpleObject LaserSight
+ObjectTemplate.geometry LaserSight_m1
+
+GeometryTemplate.create StandardMesh LaserSight_m1
+GeometryTemplate.file MOVE_FILES/scopelight
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10000
+
+
+rem ------------------------------------------------
+rem *** GunShipRockets ***
+ObjectTemplate.create FireArms GunShipRockets2
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.projectileTemplate RocketProjectile2
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag 3
+ObjectTemplate.velocity 110
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 6
+ObjectTemplate.roundOfFire 6
+ObjectTemplate.fireingForce 1
+rem ObjectTemplate.setInputFire c_PIFire
+ObjectTemplate.AmmoType	8
+ObjectTemplate.addFireArmsPosition 1.1/2.9/5 0/0/0
+ObjectTemplate.addFireArmsPosition -1.1/2.9/5 0/0/0
+
+rem -------------------------------------------------

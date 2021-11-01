@@ -1,0 +1,30 @@
+ObjectTemplate.create Kit Rebel_AT
+ObjectTemplate.setType AT
+ObjectTemplate.setKitTeam 2
+ObjectTemplate.geometry Kit_Allies_Antitank
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+
+ObjectTemplate.addTemplate Reb_AT_Visor
+ObjectTemplate.addTemplate Reb_AT_Backpack
+
+ObjectTemplate.setHealthBarIcon "Ingame/reb_Healthbar_empty_at_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/reb_Healthbar_full_at_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/icon_alliesknife.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_dh-17.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_plx2m.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_rebmine.dds"
+
+ObjectTemplate.setKitIcon 2 "kits/Icon_antitank_allies_selected.tga"
+ObjectTemplate.setKitName 2 "RESPAWN_AT"
+ObjectTemplate.setKitActiveName 2 "RESPAWN_ACTIVE_AT"
+
+ObjectTemplate.addTemplate PLX-2M
+ObjectTemplate.addTemplate DH-17
+ObjectTemplate.addTemplate KnifeAllies
+ObjectTemplate.addTemplate RebMine
+
+ObjectTemplate.addTemplate NoChute
+
+ObjectTemplate.aitemplate AT

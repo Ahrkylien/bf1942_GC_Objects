@@ -1,0 +1,10 @@
+ObjectTemplate.create Bundle njud_hanger
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry njud_hanger
+objectTemplate.aiTemplate njud_hanger
+rem ---------------------------
+
+objectTemplate.loadSoundScript Sounds/ambient.ssc
+ObjectTemplate.addTemplate ladder_10m_m1
+ObjectTemplate.setPosition -9.831/-3.336/9.179
+ObjectTemplate.setRotation 0/0/0

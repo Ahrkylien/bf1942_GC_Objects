@@ -1,0 +1,31 @@
+ObjectTemplate.create Kit Rebel_Medic
+ObjectTemplate.setType Medic
+ObjectTemplate.setKitTeam 2
+ObjectTemplate.geometry  Kit_Allies_Medic
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+
+rem Add Class Visual Art
+ObjectTemplate.addTemplate Rebel_Medic_Sack
+
+ObjectTemplate.setHealthBarIcon "Ingame/reb_Healthbar_empty_medic_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/reb_Healthbar_full_medic_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/icon_lethal_injection.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_distuptor1.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_rebgasgren.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_medpack.dds"
+
+ObjectTemplate.setKitIcon 3 "kits/Icon_medic_allies_selected.tga"
+ObjectTemplate.setKitName 3 "RESPAWN_MEDIC"
+ObjectTemplate.setKitActiveName 3 "RESPAWN_ACTIVE_MEDIC"
+
+ObjectTemplate.addTemplate disruptor
+ObjectTemplate.addTemplate lethal_injection
+ObjectTemplate.addTemplate gasgren
+ObjectTemplate.addTemplate MedPack
+
+ObjectTemplate.addTemplate NoChute
+
+ObjectTemplate.aitemplate Medic
+

@@ -1,0 +1,37 @@
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/ambient-computerchatter.wav
+relativePosition -4/0/-4
+loop
+minDistance 8
+volume .45
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 12
+	param 20
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/ambient-scannerchatter.wav
+relativePosition -4/0/4
+loop
+minDistance 10
+volume .45
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 15
+	param 25
+	param 1
+	param -1	
+endEffect

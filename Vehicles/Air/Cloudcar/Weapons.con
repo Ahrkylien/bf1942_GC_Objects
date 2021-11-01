@@ -1,0 +1,42 @@
+rem *** CloudcarLaser1 ***
+ObjectTemplate.create FireArms CloudcarLaser1
+ObjectTemplate.loadSoundScript Sounds/CloudcarLaser1.ssc
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileRedNS
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 600
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.roundOfFire 5.3
+ObjectTemplate.addFireArmsPosition -2.3/-0.7/1.5 0/0/0
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.05
+objectTemplate.coolDownPerSec 0.7
+objectTemplate.timeDelayOnOverHeat 2
+ObjectTemplate.AmmoType	10
+
+rem *** CloudcarLaser2 ***
+ObjectTemplate.create FireArms CloudcarLaser2
+ObjectTemplate.loadSoundScript Sounds/CloudcarLaser2.ssc
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileRedNS
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 600
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.roundOfFire 5.3
+ObjectTemplate.addFireArmsPosition 2.3/-0.7/1.5 0/0/0
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.05
+objectTemplate.coolDownPerSec 0.7
+objectTemplate.timeDelayOnOverHeat 2
+ObjectTemplate.AmmoType	10
+

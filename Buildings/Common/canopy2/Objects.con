@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject canopy2
+ObjectTemplate.aiTemplate canopy2
+ObjectTemplate.geometry canopy2
+ObjectTemplate.setHasCollisionPhysics 1
+
+

@@ -1,0 +1,20 @@
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/ambient-tanaab_fuel_tank.wav
+relativePosition 0/1/0
+loop
+minDistance 10
+volume .5
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 10
+	param 1
+	param -1	
+endEffect

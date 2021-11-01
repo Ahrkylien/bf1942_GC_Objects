@@ -1,0 +1,44 @@
+
+
+rem *** e_wsnowPlane ***
+ObjectTemplate.create EffectBundle e_wsnowPlane
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_wsnowPlane
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+ObjectTemplate.addWorkOnMaterial 2
+ObjectTemplate.addWorkOnMaterial 3
+ObjectTemplate.addWorkOnMaterial 4
+ObjectTemplate.addWorkOnMaterial 5
+ObjectTemplate.addWorkOnMaterial 6
+ObjectTemplate.addWorkOnMaterial 7
+ObjectTemplate.addWorkOnMaterial 8
+ObjectTemplate.addWorkOnMaterial 9
+ObjectTemplate.addWorkOnMaterial 11
+ObjectTemplate.addWorkOnMaterial 12
+ObjectTemplate.addWorkOnMaterial 14
+ObjectTemplate.addWorkOnMaterial 15
+
+rem *** Em_wsnowPlane ***
+ObjectTemplate.create Emitter Em_wsnowPlane
+ObjectTemplate.template Fx_wsnowPlane
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.timeToLive CRD_NONE/60/0/0
+ObjectTemplate.intensity CRD_NONE/30/0/0
+ObjectTemplate.IntensityAtSpeed 30
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+rem *** Fx_wsnowPlane ***
+ObjectTemplate.create SpriteParticle Fx_wsnowPlane
+ObjectTemplate.timeToLive CRD_NONE/1/1/0
+ObjectTemplate.size CRD_UNIFORM/2/3/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.drag CRD_UNIFORM/0.5/0.4/0
+ObjectTemplate.sizeOverTime 0/0|53/0.239998|100/0.400006
+ObjectTemplate.texture e_snowwind_I
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.colorRGBAOverTime 0/141/125/95/0|6/195/180/152/150|82/198/186/150/67|150/51/35/5/200

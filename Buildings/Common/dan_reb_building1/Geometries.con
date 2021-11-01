@@ -1,0 +1,28 @@
+GeometryTemplate.create StandardMesh dan_reb_building1
+GeometryTemplate.file buildings/dantooine/dan_reb_building1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create AnimatedMesh canvas1
+GeometryTemplate.setSkin animations/canvas1.skn
+GeometryTemplate.file buildings/dantooine/dan_reb_canvas1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800
+
+
+GeometryTemplate.create StandardMesh canvas1solid
+GeometryTemplate.file buildings/dantooine/dan_reb_canvas1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800

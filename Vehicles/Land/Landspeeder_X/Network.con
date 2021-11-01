@@ -1,0 +1,14 @@
+NetworkableInfo.createNewInfo Landspeeder_XEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Landspeeder_XSteeringInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Landspeeder_XBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Landspeeder_XTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Landspeeder_XWingInfo
+NetworkableInfo.setPredictionMode PMLinear

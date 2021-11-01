@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle njud_weapon_room
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry njud_weapon_room
+objectTemplate.aiTemplate njud_weapon_room
+rem ---------------------------

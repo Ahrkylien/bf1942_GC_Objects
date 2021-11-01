@@ -1,0 +1,622 @@
+rem *** BlockadeRunner ***
+ObjectTemplate.create PlayerControlObject Runner
+ObjectTemplate.setNetworkableInfo Runner_Body_Info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.inertiaModifier 80000/5/80000
+ObjectTemplate.drag 8
+ObjectTemplate.mass 250000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 15
+ObjectTemplate.explosionDamage 10
+ObjectTemplate.hasArmor 1
+rem ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod .1
+ObjectTemplate.hitpoints 1300
+ObjectTemplate.maxhitpoints 1300
+ObjectTemplate.material 821
+ObjectTemplate.criticalDamage 80
+ObjectTemplate.hpLostWhileCriticalDamage 12
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0.01
+ObjectTemplate.addArmorEffect 240 em_ExFumePOW 0/17/-9
+ObjectTemplate.addArmorEffect 240 em_FletcherDamage 0/0/0
+ObjectTemplate.addArmorEffect 240 em_FletcherDamage 0/0/20
+ObjectTemplate.addArmorEffect 240 em_FletcherDamage 0/0/-30
+ObjectTemplate.addArmorEffect 540 e_alarm1 0/5/60
+ObjectTemplate.addArmorEffect 540 e_alarm1 0/5/-20
+ObjectTemplate.addArmorEffect 120 em_FletcherDamage 0/0/0
+ObjectTemplate.addArmorEffect 120 em_FletcherDamage 0/0/20
+ObjectTemplate.addArmorEffect 120 em_FletcherDamage 0/0/-30
+ObjectTemplate.addArmorEffect 320 e_alarm1 0/5/60
+ObjectTemplate.addArmorEffect 320 e_alarm1 0/5/-20
+ObjectTemplate.addArmorEffect 80 e_waterBoatSinkEf 0/-2/-5
+ObjectTemplate.addArmorEffect 80 e_waterBoatSinkEf 0/-2/25
+ObjectTemplate.addArmorEffect 80 e_waterBoatSinkEf 0/-2/-35
+
+rem DEATH BLOW
+ObjectTemplate.addArmorEffect 0 e_ExplGas -14.9/0/-10
+ObjectTemplate.addArmorEffect 0 e_ExplGas 16.9/5.83/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas -16.9/5.83/0
+ObjectTemplate.addArmorEffect 0 e_ExplCap 0/0/0
+
+ObjectTemplate.addArmorEffect 12 e_ExplGas 0/4.3/74.3
+ObjectTemplate.addArmorEffect 15 e_ExplGas 0/16/41.9
+ObjectTemplate.addArmorEffect 12 e_ExplGas 16.9/5.83/23
+ObjectTemplate.addArmorEffect 30 e_ExplGas -16.9/5.83/23
+ObjectTemplate.addArmorEffect 50 e_ExplGas 0/0/0
+
+ObjectTemplate.addArmorEffect 30 e_ExplGas 0/4.3/74.3
+ObjectTemplate.addArmorEffect 50 e_ExplGas 0/16/41.9
+ObjectTemplate.addArmorEffect 80 e_ExplGas 16.9/5.83/23
+ObjectTemplate.addArmorEffect 75 e_ExplGas -16.9/5.83/23
+ObjectTemplate.addArmorEffect 40 e_ExplGas 0/0/0
+
+ObjectTemplate.addArmorEffect 44 e_ExplGas 0/4.3/74.3
+ObjectTemplate.addArmorEffect 85 e_ExplGas 0/16/41.9
+ObjectTemplate.addArmorEffect 70 e_ExplGas 16.9/5.83/23
+ObjectTemplate.addArmorEffect 35 e_ExplGas -16.9/5.83/23
+ObjectTemplate.addArmorEffect 30 e_ExplGas 0/0/0
+rem DEATH BLOW
+
+ObjectTemplate.aiTemplate B17
+rem -------------------------------------
+ObjectTemplate.addTemplate lodRunner
+rem -------------------------------------
+ObjectTemplate.addTemplate RunnerSoldierSpawn
+ObjectTemplate.setPosition 0/1/-24
+rem ------------------------------
+ObjectTemplate.setPcoId 0
+ObjectTemplate.addPcoPosId 1
+ObjectTemplate.setSoldierExitLocation 0/4.3/74.3 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_runner.dds"
+ObjectTemplate.setVehicleIconPos 19/95
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABReloadBarOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_runner_16x16.tga"
+
+rem *** lodRunner ***
+ObjectTemplate.create LodObject lodRunner
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate RunnerComplex
+ObjectTemplate.addTemplate RunnerSimple
+ObjectTemplate.addTemplate NoWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector RunnerLodSelector
+
+rem *** RunnerComplex ***
+ObjectTemplate.create Bundle RunnerComplex
+ObjectTemplate.setNetworkableInfo Runner_Body_Info
+ObjectTemplate.loadSoundScript Sounds/capenginerunner.ssc
+ObjectTemplate.geometry runnerbody
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Capital_Floater
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate Capital_Floater
+ObjectTemplate.setPosition -28/0/80
+ObjectTemplate.addTemplate Capital_Floater
+ObjectTemplate.setPosition 28/0/80
+ObjectTemplate.addTemplate Capital_Floater
+ObjectTemplate.setPosition 28/0/-70
+ObjectTemplate.addTemplate Capital_Floater
+ObjectTemplate.setPosition -28/0/-70
+ObjectTemplate.addTemplate Capital_Wheel
+ObjectTemplate.setPosition 10/-45/10
+ObjectTemplate.addTemplate Capital_Wheel
+ObjectTemplate.setPosition -10/-45/10
+ObjectTemplate.addTemplate Capital_Wheel
+ObjectTemplate.setPosition 10/-45/-10
+ObjectTemplate.addTemplate Capital_Wheel
+ObjectTemplate.setPosition -10/-45/-10
+ObjectTemplate.addTemplate Capital_Wheel
+ObjectTemplate.setPosition 10/45/10
+ObjectTemplate.addTemplate Capital_Wheel
+ObjectTemplate.setPosition -10/45/10
+ObjectTemplate.addTemplate Capital_Wheel
+ObjectTemplate.setPosition 10/45/-10
+ObjectTemplate.addTemplate Capital_Wheel
+ObjectTemplate.setPosition -10/45/-10
+rem ------------------------------------
+ObjectTemplate.addTemplate RunnerSeat
+ObjectTemplate.setPosition 0/4/74.1
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate RunnerCamera
+ObjectTemplate.setPosition -.281/4.8/72
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate RunnerEntry
+ObjectTemplate.setPosition 0/4.3/74.3
+ObjectTemplate.addTemplate Runnercontrolsarea
+ObjectTemplate.setPosition -.481/-.35/-.383
+ObjectTemplate.addTemplate RunnerInsidearea
+ObjectTemplate.setPosition -.481/-.35/0
+ObjectTemplate.addTemplate Runnerwindowarea
+ObjectTemplate.setPosition -.481/-.35/0
+ObjectTemplate.addTemplate Runnerpodsarea
+ObjectTemplate.setPosition -.481/-.35/-.383
+ObjectTemplate.addTemplate Runnerdockarea
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate escapepodspawn
+ObjectTemplate.setPosition -17.54/-3.4/18.74
+ObjectTemplate.setRotation 0/90.0/0
+ObjectTemplate.addTemplate escapepodspawn
+ObjectTemplate.setPosition 17.34/-3.4/18.74
+ObjectTemplate.setRotation 0/90.0/0
+rem -----------------------------------
+ObjectTemplate.addTemplate Runner_Turbolaser_Base
+ObjectTemplate.setPosition 0/16/41.9
+ObjectTemplate.addTemplate Runner_Turbolaser_Barrel
+ObjectTemplate.setPosition 0/16/41.9
+ObjectTemplate.addTemplate Runner_Turbolaser
+ObjectTemplate.setPosition 0/16/41.9
+ObjectTemplate.addTemplate Runner_Turret_PCO1
+ObjectTemplate.addTemplate Runner_Turret_PCO2
+ObjectTemplate.addTemplate Runner_Turret_PCO3
+rem -----------------------------------
+ObjectTemplate.addTemplate RunnerMainEngine
+ObjectTemplate.setPosition -10/0/0
+ObjectTemplate.addTemplate RunnerMainEngine
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate RunnerMainEngine
+ObjectTemplate.setPosition 10/0/0
+ObjectTemplate.addTemplate RunnerVEngine
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/270/0
+
+ObjectTemplate.addTemplate Runner_Rudder1
+ObjectTemplate.setPosition 0/-5/-55
+ObjectTemplate.setRotation 0/0/-90
+
+ObjectTemplate.addTemplate CapitalBodyWingVertical
+ObjectTemplate.setRotation 0/0/-89.999
+
+rem REMOVED TR ENGINES
+beginrem
+ObjectTemplate.addTemplate RunnerTREngine
+ObjectTemplate.setPosition 0/0/50
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate RunnerTREngine
+ObjectTemplate.setPosition 0/0/-50
+ObjectTemplate.setRotation -90/0/0
+endrem
+
+
+rem -----------------------------------------------------------------------------------------------
+rem ------------------------------------------- Create PCOs ------------------------------------
+rem -----------------------------------------------------------------------------------------------
+
+rem *** Runner_Turret_PCO1 ***
+ObjectTemplate.create PlayerControlObject Runner_Turret_PCO1
+ObjectTemplate.setNetworkableInfo Runner_Body_Info
+ObjectTemplate.aiTemplate B17MG
+rem -------------------------------------
+ObjectTemplate.addTemplate Runner_Turret_1_X
+ObjectTemplate.setPosition 16.9/5.83/23
+ObjectTemplate.setRotation 0/0/-25
+ObjectTemplate.addTemplate RunnerEntry
+ObjectTemplate.setPosition -4.46/3.3/77.6
+ObjectTemplate.addTemplate RunnerSeat
+ObjectTemplate.setPosition -4.46/4/77.6
+ObjectTemplate.setRotation 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -4.46/3.3/77.6 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_runner.dds"
+ObjectTemplate.setVehicleIconPos 40/63
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABHeatBarOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+
+rem *** Runner_Turret_PCO2 ***
+ObjectTemplate.create PlayerControlObject Runner_Turret_PCO2
+ObjectTemplate.setNetworkableInfo Runner_Body_Info
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.aiTemplate B17MG
+rem -------------------------------------
+ObjectTemplate.addTemplate Runner_Turret_1_X
+ObjectTemplate.setPosition -16.9/5.83/23
+ObjectTemplate.setRotation 0/0/25
+ObjectTemplate.addTemplate RunnerEntry
+ObjectTemplate.setPosition 4.8/3.3/77.6 
+ObjectTemplate.addTemplate RunnerSeat
+ObjectTemplate.setPosition 4.8/4/77.6
+ObjectTemplate.setRotation 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 4.8/3.3/77.6 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_runner.dds"
+ObjectTemplate.setVehicleIconPos 65/78
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABHeatBarOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+
+rem *** Runner_Turret_PCO3 ***
+ObjectTemplate.create PlayerControlObject Runner_Turret_PCO3
+ObjectTemplate.setNetworkableInfo Runner_Body_Info
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.aiTemplate B17MG
+rem -------------------------------------
+ObjectTemplate.addTemplate Runner_Turbolaser_X
+ObjectTemplate.setPosition -0.249/-13.55/42
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate RunnerEntry
+ObjectTemplate.setPosition -5.23/3.3/72.7
+ObjectTemplate.addTemplate RunnerSeat
+ObjectTemplate.setPosition -5.23/4/72.7
+ObjectTemplate.setRotation -90/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -5.23/3.3/72.7 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_runner.dds"
+ObjectTemplate.setVehicleIconPos 50/89
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABReloadBarOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+
+rem -----------------------------------------------------------------------------------------------
+rem ------------------------------------------- Create Turrets ------------------------------------
+rem -----------------------------------------------------------------------------------------------
+
+rem *** Runner_Turret_1_X ***
+ObjectTemplate.create RotationalBundle Runner_Turret_1_X
+ObjectTemplate.setNetworkableInfo Runner_Turret_Info
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/TurretRotate.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Runner_Turret_X_Reversed
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/180
+ObjectTemplate.addTemplate Runner_Turret_1_Y
+ObjectTemplate.setPosition 0/0/0.57
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 80/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** Runner_Turret_1_Y ***
+ObjectTemplate.create RotationalBundle Runner_Turret_1_Y
+ObjectTemplate.setNetworkableInfo Runner_Turret_Info
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/TurretRotate.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Runner_Turret_Y_Reversed
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/180
+ObjectTemplate.addTemplate RunnerGunnerCamera
+ObjectTemplate.setPosition 0/1.1/-0.09
+ObjectTemplate.addTemplate Runner_Turret_Lasers
+ObjectTemplate.setPosition 0/0/1.57
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-50/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/80/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** Runner_Turret_2_X ***
+ObjectTemplate.create RotationalBundle Runner_Turret_2_X
+ObjectTemplate.setNetworkableInfo Runner_Turret_Info
+ObjectTemplate.loadSoundScript Sounds/TurretRotate.ssc
+ObjectTemplate.geometry falcon_gun_x_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate Runner_Turret_2_Y
+ObjectTemplate.setPosition 0/0/0.57
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 80/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** Runner_Turret_2_Y***
+ObjectTemplate.create RotationalBundle Runner_Turret_2_Y
+ObjectTemplate.setNetworkableInfo Runner_Turret_Info
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/TurretRotate.ssc
+ObjectTemplate.geometry falcon_gun_y_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate RunnerGunnerCamera
+ObjectTemplate.setPosition 0/-1.1/-0.09
+ObjectTemplate.addTemplate Runner_Turret_Lasers
+ObjectTemplate.setPosition 0/0/1.57
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/50/0
+ObjectTemplate.setMaxSpeed 0/80/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** Runner_Turbolaser_X ***
+ObjectTemplate.create RotationalBundle Runner_Turbolaser_X
+ObjectTemplate.setNetworkableInfo Runner_Turret_Info
+ObjectTemplate.loadSoundScript Sounds/TurretRotate.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Runner_Turbolaser_Base
+ObjectTemplate.setRotation 0/0/180
+ObjectTemplate.addTemplate Runner_Turbolaser_Y
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 30/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** Runner_Turbolaser_Y ***
+ObjectTemplate.create RotationalBundle Runner_Turbolaser_Y
+ObjectTemplate.setNetworkableInfo Runner_Turret_Info
+ObjectTemplate.loadSoundScript Sounds/TurretRotate.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Runner_Turbolaser_Barrel
+ObjectTemplate.addTemplate RunnerGunnerCamera2
+ObjectTemplate.setPosition 0/0/1
+ObjectTemplate.addTemplate Runner_Turbolaser
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/70/0
+ObjectTemplate.setMaxSpeed 0/40/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem -----------------------------------------------------------------------------------------------
+rem ------------------------------------------- Create Objects ------------------------------------
+rem -----------------------------------------------------------------------------------------------
+
+rem *** RunnerSeat ***
+ObjectTemplate.create SeatObject RunnerSeat
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+
+rem *** RunnerCamera ***
+ObjectTemplate.create Camera RunnerCamera
+ObjectTemplate.setMinRotation -110/-40/0
+ObjectTemplate.setMaxRotation 110/10/0
+ObjectTemplate.setPivotPosition 0/0.25/0.3
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** RunnerGunnerCamera ***
+ObjectTemplate.create Camera RunnerGunnerCamera
+ObjectTemplate.addTemplate lodRunnerGunnerHUD
+ObjectTemplate.setPosition 0/0/0.3
+
+rem *** RunnerGunnerCamera ***
+ObjectTemplate.create Camera RunnerGunnerCamera2
+ObjectTemplate.addTemplate lodRunnerGunnerHUD2
+ObjectTemplate.setPosition 0/0/0.3
+
+rem *** lodRunnerGunnerHUD ***
+ObjectTemplate.create LodObject lodRunnerGunnerHUD
+rem -------------------------------------
+ObjectTemplate.addTemplate RunnerGunnerHUDExternal
+ObjectTemplate.addTemplate RunnerGunnerHUDInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector RunnerGunnerHUDSelector
+
+ObjectTemplate.create LodObject lodRunnerGunnerHUD2
+rem -------------------------------------
+ObjectTemplate.addTemplate RunnerGunnerHUDExternal
+ObjectTemplate.addTemplate RunnerGunnerHUDInternal2
+rem -------------------------------------
+ObjectTemplate.lodSelector RunnerGunnerHUDSelector
+
+
+rem *** RunnerGunnerHUDExternal ***
+ObjectTemplate.create SimpleObject RunnerGunnerHUDExternal
+rem ObjectTemplate.geometry Model_Null
+
+rem *** RunnerGunnerHUDInternal ***
+ObjectTemplate.create SimpleObject RunnerGunnerHUDInternal
+ObjectTemplate.geometry 1P_RunnerGunnerHUD_M1
+
+ObjectTemplate.create SimpleObject RunnerGunnerHUDInternal2
+ObjectTemplate.geometry 1P_RunnerGunnerHUD2_M1
+
+rem *** RunnerGunnerHUDSelector ***
+LodSelectorTemplate.create DistCompareSelector RunnerGunnerHUDSelector
+LodSelectorTemplate.addLodDistance 5
+LodSelectorTemplate.addLodComparison 0.5
+
+rem *** RunnerEntry ***
+ObjectTemplate.create EntryPoint RunnerEntry
+ObjectTemplate.setEntryRadius 10
+
+rem *** RunnerSimple ***
+ObjectTemplate.create SimpleObject RunnerSimple
+ObjectTemplate.geometry runnerlow
+
+rem *** RunnerLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 RunnerLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 900
+
+rem *** Runner_Inside ***
+ObjectTemplate.create SimpleObject RunnerInsidearea
+ObjectTemplate.geometry runnerinside
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+rem *** Runner_Controls ***
+ObjectTemplate.create SimpleObject Runnercontrolsarea
+ObjectTemplate.geometry runnercontrols
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+rem *** Runner_Inside ***
+ObjectTemplate.create SimpleObject Runnerpodsarea
+ObjectTemplate.geometry runnerpods
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+rem *** Runner_Inside ***
+ObjectTemplate.create SimpleObject Runnerwindowarea
+ObjectTemplate.geometry runnerwindow
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+rem *** Runner_Dock ***
+ObjectTemplate.create SimpleObject Runnerdockarea
+ObjectTemplate.geometry runnerdock
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+rem *** Runnerbar ***
+ObjectTemplate.create SimpleObject Runner_Turbolaser_Barrel
+ObjectTemplate.geometry Runner_Turbolaser_Barrel_M1
+
+rem *** Runner_Turbolaser_Barrel ***
+ObjectTemplate.create SimpleObject Runner_Turbolaser_Base
+ObjectTemplate.geometry Runner_Turbolaser_Base_M1
+
+rem *** Runner_Turret_Y_Reversed ***
+ObjectTemplate.create SimpleObject Runner_Turret_Y_Reversed
+ObjectTemplate.geometry falcon_gun_y_m1
+
+rem *** Runner_Turret_X_Reversed ***
+ObjectTemplate.create SimpleObject Runner_Turret_X_Reversed
+ObjectTemplate.geometry falcon_gun_x_m1
+
+rem -----------------------------------------------------------------------------------------------
+rem ------------------------------------------- Runner 2 ------------------------------------
+rem -----------------------------------------------------------------------------------------------
+
+rem *** BlockadeRunner ***
+ObjectTemplate.create PlayerControlObject Runner2
+ObjectTemplate.setNetworkableInfo Runner_Body_Info
+ObjectTemplate.loadSoundScript Sounds/capenginerunner.ssc
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.inertiaModifier 80000/5/80000
+ObjectTemplate.drag 8
+ObjectTemplate.mass 250000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 15
+ObjectTemplate.explosionDamage 10
+ObjectTemplate.hasArmor 1
+rem ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.hitpoints 1300
+ObjectTemplate.maxhitpoints 1300
+ObjectTemplate.material 821
+ObjectTemplate.criticalDamage 80
+ObjectTemplate.hpLostWhileCriticalDamage 12
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.addArmorEffect 240 em_ExFumePOW 0/17/-9
+ObjectTemplate.addArmorEffect 240 em_FletcherDamage 0/0/0
+ObjectTemplate.addArmorEffect 240 em_FletcherDamage 0/0/20
+ObjectTemplate.addArmorEffect 240 em_FletcherDamage 0/0/-30
+ObjectTemplate.addArmorEffect 240 e_alarm1 0/5/60
+ObjectTemplate.addArmorEffect 240 e_alarm1 0/5/-20
+ObjectTemplate.addArmorEffect 120 em_FletcherDamage 0/0/0
+ObjectTemplate.addArmorEffect 120 em_FletcherDamage 0/0/20
+ObjectTemplate.addArmorEffect 120 em_FletcherDamage 0/0/-30
+ObjectTemplate.addArmorEffect 120 e_alarm1 0/5/60
+ObjectTemplate.addArmorEffect 120 e_alarm1 0/5/-20
+ObjectTemplate.addArmorEffect 120 e_waterBoatSinkEf 0/-2/-5
+ObjectTemplate.addArmorEffect 120 e_waterBoatSinkEf 0/-2/25
+ObjectTemplate.addArmorEffect 120 e_waterBoatSinkEf 0/-2/-35
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0.01
+
+rem DEATH BLOW
+ObjectTemplate.addArmorEffect 0 e_ExplGas -14.9/0/-10
+ObjectTemplate.addArmorEffect 0 e_ExplGas 16.9/5.83/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas -16.9/5.83/0
+ObjectTemplate.addArmorEffect 0 e_ExplCap 0/0/0
+
+ObjectTemplate.addArmorEffect 12 e_ExplGas 0/4.3/74.3
+ObjectTemplate.addArmorEffect 15 e_ExplGas 0/16/41.9
+ObjectTemplate.addArmorEffect 12 e_ExplGas 16.9/5.83/23
+ObjectTemplate.addArmorEffect 30 e_ExplGas -16.9/5.83/23
+ObjectTemplate.addArmorEffect 50 e_ExplGas 0/0/0
+
+ObjectTemplate.addArmorEffect 30 e_ExplGas 0/4.3/74.3
+ObjectTemplate.addArmorEffect 50 e_ExplGas 0/16/41.9
+ObjectTemplate.addArmorEffect 80 e_ExplGas 16.9/5.83/23
+ObjectTemplate.addArmorEffect 75 e_ExplGas -16.9/5.83/23
+ObjectTemplate.addArmorEffect 40 e_ExplGas 0/0/0
+
+ObjectTemplate.addArmorEffect 44 e_ExplGas 0/4.3/74.3
+ObjectTemplate.addArmorEffect 85 e_ExplGas 0/16/41.9
+ObjectTemplate.addArmorEffect 70 e_ExplGas 16.9/5.83/23
+ObjectTemplate.addArmorEffect 35 e_ExplGas -16.9/5.83/23
+ObjectTemplate.addArmorEffect 30 e_ExplGas 0/0/0
+rem DEATH BLOW
+
+
+ObjectTemplate.aiTemplate B17
+rem -------------------------------------
+ObjectTemplate.addTemplate lodRunner
+rem -------------------------------------
+ObjectTemplate.addTemplate RunnerSoldierSpawn2
+ObjectTemplate.setPosition 0/1/-24
+rem ------------------------------
+ObjectTemplate.setPcoId 0
+ObjectTemplate.addPcoPosId 1
+ObjectTemplate.setSoldierExitLocation 0/4.3/74.3 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_runner.dds"
+ObjectTemplate.setVehicleIconPos 19/95
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABReloadBarOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_runner_16x16.tga"
+
+
+rem -----------------------------------------------------------------------------------------------
+rem --------------------------------------- Create Spawners ------------------------------------
+rem -----------------------------------------------------------------------------------------------
+
+rem ***PLAYER SPAWN INSIDE****
+ObjectTemplate.create SpawnPoint RunnerSoldierSpawn
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 66
+ObjectTemplate.setGroup 66
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem ***PLAYER SPAWN INSIDE****
+ObjectTemplate.create SpawnPoint RunnerSoldierSpawn2
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 67
+ObjectTemplate.setGroup 67
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** escapepodspawn ***
+ObjectTemplate.create ObjectSpawner escapepodspawn
+ObjectTemplate.setObjectTemplate 1 escapepod
+ObjectTemplate.setObjectTemplate 2 escapepod
+ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 5
+ObjectTemplate.maxSpawnDelay 11
+ObjectTemplate.TimeToLive 8
+ObjectTemplate.Distance 10
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.MaxNrOfObjectSpawned 2
+ObjectTemplate.damageWhenLost 15

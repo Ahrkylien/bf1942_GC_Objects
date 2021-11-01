@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh echo_floorlight
+GeometryTemplate.file buildings/Hoth/SuperEcho/echo_floorlight
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 120

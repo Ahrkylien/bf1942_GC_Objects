@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject echo_floorlight
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry echo_floorlight
+objectTemplate.aiTemplate echo_floorlight
+rem ---------------------------

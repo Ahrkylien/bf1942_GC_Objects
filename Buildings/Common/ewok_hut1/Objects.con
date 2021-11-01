@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject ewok_hut1
+ObjectTemplate.geometry ewok_hut_m1
+ObjectTemplate.setHasCollisionPhysics 1

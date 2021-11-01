@@ -1,0 +1,11 @@
+NetworkableInfo.createNewInfo WaveWingInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo WaveEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo WaveBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo WaveTurretInfo
+NetworkableInfo.setPredictionMode PMLinear

@@ -1,0 +1,39 @@
+
+GeometryTemplate.create StandardMesh spacetur
+GeometryTemplate.file Vehicles/I3satellite/spacetur
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 800
+GeometryTemplate.setLodDistance 2 900
+GeometryTemplate.setLodDistance 3 1000
+GeometryTemplate.setLodDistance 4 1200
+GeometryTemplate.setLodDistance 5 1500
+
+GeometryTemplate.create StandardMesh spacetur_xrot
+GeometryTemplate.file Vehicles/I3satellite/spacetur_xrot
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 400
+GeometryTemplate.setLodDistance 4 500
+GeometryTemplate.setLodDistance 5 900
+
+GeometryTemplate.create StandardMesh spacetur_yrot
+GeometryTemplate.file Vehicles/I3satellite/spacetur_yrot
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 300
+
+GeometryTemplate.create StandardMesh spacetur_recoil
+GeometryTemplate.file Vehicles/I3satellite/spacetur_recoil
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 300
+
+
+GeometryTemplate.create StandardMesh 1P_I3GunnerHUD_M1
+GeometryTemplate.file Vehicles/I3satellite/i13turret_hud
+

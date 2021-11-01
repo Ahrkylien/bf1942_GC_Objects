@@ -1,0 +1,17 @@
+rem *** APTurretGunBarrel ***
+ObjectTemplate.create FireArms APGun
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/apturretfire.ssc
+ObjectTemplate.aiTemplate ShermanMainGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_muzzHeavy
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileRedS
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 700
+ObjectTemplate.reloadtime 5
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 2.22
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0

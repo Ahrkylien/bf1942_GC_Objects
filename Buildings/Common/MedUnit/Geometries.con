@@ -1,0 +1,10 @@
+
+GeometryTemplate.create StandardMesh MedUnit_M1
+GeometryTemplate.file medcab1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 2
+GeometryTemplate.setLodDistance 2 6
+GeometryTemplate.setLodDistance 3 10
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 500
+

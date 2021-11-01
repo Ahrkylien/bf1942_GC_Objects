@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/SoldierVoice.ssc
+	
+#templateLevel MEDIUM
+
+	#include Medium/SoldierVoice.ssc
+	
+#templateLevel LOW
+
+	#include Low/SoldierVoice.ssc

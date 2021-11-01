@@ -1,0 +1,71 @@
+ObjectTemplate.create HandFireArms PLX-2M
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.aiTemplate BazookaRPG
+ObjectTemplate.itemIndex 3
+ObjectTemplate.projectileTemplate RocketProjectile1
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.ForceOnExplosion 2
+ObjectTemplate.magSize 4
+ObjectTemplate.numOfMag 4
+ObjectTemplate.magType 0
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 5
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+ObjectTemplate.soldierZoomFov 0.6 
+ObjectTemplate.soldierZoomPosition -0.05/-0.02/0
+ObjectTemplate.soldierCameraPosition -0.1/-0.1/-0.2
+ObjectTemplate.AmmoType	3
+ObjectTemplate.loadSoundScript Sounds/Plx-2m.ssc
+
+ObjectTemplate.zoomFov 0.5
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.fireInCameraDof 1
+
+ObjectTemplate.setHudAmmoType ATIcon
+ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setHasMag 1
+
+ObjectTemplate.useScope 1
+ObjectTemplate.setScopeIcon "plx_launcher.tga"
+
+Rem *** Deviation Begin *****
+ObjectTemplate.velocity 35
+
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.25/0.3/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.15/0.15/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 0
+
+ObjectTemplate.minDeviation 0.1
+ObjectTemplate.maxDeviation 2
+ObjectTemplate.setFireDev 1 0.2 0.02
+ObjectTemplate.setDevMod 1.4 0.9 0.3
+ObjectTemplate.minDevStanding 1.5
+ObjectTemplate.minDevCrouching 0.4
+ObjectTemplate.minDevLying 0.05
+ObjectTemplate.setTurnDev 1.4 0.6 0.6 0.02
+ObjectTemplate.setSpeedDev 1.4 0.6 0.6 0.02
+ObjectTemplate.setMiscDev 1.4 0.6 0.02
+Rem *** Deviation  End *****
+
+ObjectTemplate.createSkeleton animations/PLX-2M.ske
+ObjectTemplate.useSkeletonPartAsMain Thompson
+ObjectTemplate.addTemplate PLX-2MComplex
+ObjectTemplate.setPosition 0/0/0
+
+ObjectTemplate.addTemplate e_muzzGun
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition -0.1/0.09/0.8
+
+ObjectTemplate.create AnimatedBundle PLX-2MComplex
+ObjectTemplate.geometry PLX-2M_m1
+ObjectTemplate.createSkeleton animations/PLX-2M.ske
+ObjectTemplate.bindToSkeletonPart Thompson
+
+rem ObjectTemplate.addTemplate PLX-2MRocket
+
+ObjectTemplate.create SimpleObject PLX-2MRocket
+ObjectTemplate.geometry PLX-2MRocket_m1

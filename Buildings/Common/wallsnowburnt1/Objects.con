@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject wallsnowburnt1
+ObjectTemplate.aiTemplate wallsnowburnt1
+ObjectTemplate.geometry wallsnowburnt1
+ObjectTemplate.setHasCollisionPhysics 1
+
+

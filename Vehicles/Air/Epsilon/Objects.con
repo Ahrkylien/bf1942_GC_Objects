@@ -1,0 +1,350 @@
+rem ** Epsilon (Lambda) **
+ObjectTemplate.create PlayerControlObject Epsilon
+ObjectTemplate.setNetworkableInfo LambdaBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 0.05
+ObjectTemplate.mass 3000
+rem ObjectTemplate.inertiaModifier 0.8/0.8/0.8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 0
+ObjectTemplate.hitpoints 400
+ObjectTemplate.maxhitpoints 400
+ObjectTemplate.material 811
+ObjectTemplate.criticalDamage 55
+ObjectTemplate.hpLostWhileCriticalDamage 5
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.hpLostWhileUpSideDown 40
+ObjectTemplate.hpLostWhileDamageFromWater 40
+
+ObjectTemplate.addArmorEffect 210 em_PlaneDamage 3/-0.1/-7
+ObjectTemplate.addArmorEffect 210 em_PlaneDamage -3/-0.1/-7
+
+ObjectTemplate.addArmorEffect 160 em_B17Damage 3/-0.1/-7
+ObjectTemplate.addArmorEffect 160 em_PlaneDamage -3/-0.1/-7
+
+ObjectTemplate.addArmorEffect 110 em_B17Damage 3/-0.1/-7
+ObjectTemplate.addArmorEffect 110 em_B17Damage -3/-0.1/-7
+
+ObjectTemplate.addArmorEffect 55 e_e_B17Fire 0/-0.1/-7
+
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Lambda 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodepsilon
+rem -------------------------------------
+rem *************** Lambda SOLDIER SPAWN
+ObjectTemplate.addTemplate epsilon_sold_spawn
+ObjectTemplate.setPosition 0/2/-2
+rem *************** Lambda SOLDIER SPAWN
+ObjectTemplate.sonarPos 1
+ObjectTemplate.setSoldierExitLocation 0/2/-2 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_lambda.dds"
+ObjectTemplate.setVehicleIconPos 92/74
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABHeatBarOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTFighter
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_lambda_16x16.dds"
+
+rem *** lodepsilon ***
+ObjectTemplate.create LodObject lodepsilon
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate epsilonComplex
+ObjectTemplate.addTemplate LambdaSimple
+ObjectTemplate.addTemplate epsilonWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector epsilonLodSelector
+
+rem *** epsilonComplex ***
+ObjectTemplate.create Bundle epsilonComplex
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.geometry lambdabody_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate LambdaSonar
+ObjectTemplate.addTemplate epsilonWingTop
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate LambdaCamera
+ObjectTemplate.setPosition 1.4/2.1/12.5
+ObjectTemplate.addTemplate LambdaSeat
+ObjectTemplate.setPosition 1.4/2.0/12.5
+ObjectTemplate.addTemplate LambdaEntry
+ObjectTemplate.setPosition -3.5/-2.5/11
+ObjectTemplate.addTemplate LambdaEntry
+ObjectTemplate.setPosition 3.5/-2.5/11
+ObjectTemplate.addTemplate LambdaFrontGun
+ObjectTemplate.addTemplate LambdaDoorPCO
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate LambdaBackGunPCO
+ObjectTemplate.addTemplate epsilonEngine
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate LambdaBodyWingVertical
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate LambdaVTOLRack
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate LambdaFlapLeftMiddle
+ObjectTemplate.setPosition -2.8/-0.2/-0.7
+ObjectTemplate.setRotation 13/0/-9.5
+ObjectTemplate.addTemplate LambdaFlapLeftOuter
+ObjectTemplate.setPosition -5.4/0/0
+ObjectTemplate.setRotation 18.4/0/-9.5
+ObjectTemplate.addTemplate LambdaFlapRightMiddle
+ObjectTemplate.setPosition 2.8/-0.2/-0.7
+ObjectTemplate.setRotation -13/0/9.5
+ObjectTemplate.addTemplate LambdaFlapRightOuter
+ObjectTemplate.setPosition 5.4/0/0
+ObjectTemplate.setRotation -18.4/0/9.5
+ObjectTemplate.addTemplate LambdaFlapTailLeft
+ObjectTemplate.setPosition -1.3/0.8/-5.9
+ObjectTemplate.setRotation 0/-1.7/0
+ObjectTemplate.addTemplate LambdaFlapTailRight
+ObjectTemplate.setPosition 1.3/0.8/-5.9
+ObjectTemplate.setRotation 0/-1.7/0
+ObjectTemplate.addTemplate LambdaRudder
+ObjectTemplate.setPosition 0/1/-6
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate LambdaDummyEngineRack
+ObjectTemplate.setPosition 0/1.4/2.2
+ObjectTemplate.addTemplate LambdaDummyRearEngineRack
+ObjectTemplate.setPosition .9/1.65/-7.95
+ObjectTemplate.addTemplate LambdaEngineRack1
+ObjectTemplate.setPosition 0/1/2.5
+ObjectTemplate.addTemplate LambdaEngineRack2
+ObjectTemplate.setPosition 0/1/-2.5
+ObjectTemplate.addTemplate LambdaEngineRack3
+ObjectTemplate.setPosition 0/1/0
+
+rem ObjectTemplate.addTemplate GunMainEngine
+rem ObjectTemplate.setPosition 0/0/1
+rem ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate LambdaLevelEngine
+ObjectTemplate.setPosition 0/0/0
+
+ObjectTemplate.addTemplate LambdaPCO4
+ObjectTemplate.addTemplate LambdaPCO5
+ObjectTemplate.addTemplate LambdaPCO6
+ObjectTemplate.AddTemplate Ammobox
+ObjectTemplate.setPosition -2.43/1.155/-4.4
+ObjectTemplate.AddTemplate HealthPack
+ObjectTemplate.setPosition -2.47/1.822/-4.6
+ObjectTemplate.setRotation 90/0/0
+rem ObjectTemplate.addTemplate e_engineLambda
+rem ObjectTemplate.setPosition 0/0/-13
+
+rem -------------------------------------------------------------------------------------
+
+rem *** epsilonWingLeft ***
+ObjectTemplate.create LandingGear epsilonWingLeft
+ObjectTemplate.loadSoundScript Sounds/LambdaLandingGear.ssc
+ObjectTemplate.geometry tan_lambdaleftwing_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMaxRotation 0/0/150
+ObjectTemplate.setMaxSpeed 0/0/32
+ObjectTemplate.setAcceleration 0/0/85
+ObjectTemplate.setGearDownHeight 9999
+ObjectTemplate.setGearDownEngineInput 0.09
+ObjectTemplate.setGearUpEngineInput 1.16
+ObjectTemplate.addTemplate LambdaLeftWingGun
+ObjectTemplate.setPosition 0/-2.4/5.8
+ObjectTemplate.setRotation 0/90/0
+
+rem *** epsilonWingRight ***
+ObjectTemplate.create LandingGear epsilonWingRight
+ObjectTemplate.loadSoundScript Sounds/LambdaLandingGear.ssc
+ObjectTemplate.geometry tan_lambdarightwing_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMinRotation 0/0/-150
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/0/-32
+ObjectTemplate.setAcceleration 0/0/85
+ObjectTemplate.setGearDownHeight 9999
+ObjectTemplate.setGearDownEngineInput 0.09
+ObjectTemplate.setGearUpEngineInput 1.16
+ObjectTemplate.addTemplate LambdaRightWingGun
+ObjectTemplate.setPosition 0/-2.4/5.8
+ObjectTemplate.setRotation 0/90/0
+
+rem -------------------------------------------------------------------------------------
+
+rem *** epsilonWingTop ***
+ObjectTemplate.create SimpleObject epsilonWingTop
+ObjectTemplate.geometry tan_lambdatopwing_m1
+ObjectTemplate.hasCollisionPhysics 1
+
+rem ***PLAYER SPAWN INSIDE****
+ObjectTemplate.create SpawnPoint epsilon_sold_spawn
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 9
+ObjectTemplate.setGroup 76
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem ** epsilon Lambda **
+ObjectTemplate.create PlayerControlObject epsilon2
+ObjectTemplate.setNetworkableInfo LambdaBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 0.05
+ObjectTemplate.mass 3000
+rem ObjectTemplate.inertiaModifier 0.8/0.8/0.8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod .5
+ObjectTemplate.hitpoints 400
+ObjectTemplate.maxhitpoints 400
+ObjectTemplate.material 765
+ObjectTemplate.criticalDamage 55
+ObjectTemplate.hpLostWhileCriticalDamage 5
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.hpLostWhileUpSideDown 40
+ObjectTemplate.hpLostWhileDamageFromWater 40
+
+ObjectTemplate.addArmorEffect 210 em_PlaneDamage 3/-0.1/-7
+ObjectTemplate.addArmorEffect 210 em_PlaneDamage -3/-0.1/-7
+
+ObjectTemplate.addArmorEffect 160 em_B17Damage 3/-0.1/-7
+ObjectTemplate.addArmorEffect 160 em_PlaneDamage -3/-0.1/-7
+
+ObjectTemplate.addArmorEffect 110 em_B17Damage 3/-0.1/-7
+ObjectTemplate.addArmorEffect 110 em_B17Damage -3/-0.1/-7
+
+ObjectTemplate.addArmorEffect 55 e_e_B17Fire 0/-0.1/-7
+
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Lambda 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodepsilon
+rem -------------------------------------
+rem *************** Lambda SOLDIER SPAWN
+ObjectTemplate.addTemplate epsilon_sold_spawnAlt1
+ObjectTemplate.setPosition 0/2/-2
+rem *************** Lambda SOLDIER SPAWN
+ObjectTemplate.sonarPos 1
+ObjectTemplate.setSoldierExitLocation 0/2/-2 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_lambda.dds"
+ObjectTemplate.setVehicleIconPos 92/74
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABHeatBarOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTFighter
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_lambda_16x16.dds"
+
+rem ** epsilon Lambda **
+ObjectTemplate.create PlayerControlObject epsilon3
+ObjectTemplate.setNetworkableInfo LambdaBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 0.05
+ObjectTemplate.mass 3000
+rem ObjectTemplate.inertiaModifier 0.8/0.8/0.8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod .5
+ObjectTemplate.hitpoints 400
+ObjectTemplate.maxhitpoints 400
+ObjectTemplate.material 765
+ObjectTemplate.criticalDamage 55
+ObjectTemplate.hpLostWhileCriticalDamage 5
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.hpLostWhileUpSideDown 40
+ObjectTemplate.hpLostWhileDamageFromWater 40
+
+ObjectTemplate.addArmorEffect 210 em_PlaneDamage 3/-0.1/-7
+ObjectTemplate.addArmorEffect 210 em_PlaneDamage -3/-0.1/-7
+
+ObjectTemplate.addArmorEffect 160 em_B17Damage 3/-0.1/-7
+ObjectTemplate.addArmorEffect 160 em_PlaneDamage -3/-0.1/-7
+
+ObjectTemplate.addArmorEffect 110 em_B17Damage 3/-0.1/-7
+ObjectTemplate.addArmorEffect 110 em_B17Damage -3/-0.1/-7
+
+ObjectTemplate.addArmorEffect 55 e_e_B17Fire 0/-0.1/-7
+
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Lambda 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodepsilon
+rem -------------------------------------
+rem *************** Lambda SOLDIER SPAWN
+ObjectTemplate.addTemplate epsilon_sold_spawn_Alt2
+ObjectTemplate.setPosition 0/2/-2
+rem *************** Lambda SOLDIER SPAWN
+ObjectTemplate.sonarPos 1
+ObjectTemplate.setSoldierExitLocation 0/2/-2 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_lambda.dds"
+ObjectTemplate.setVehicleIconPos 92/74
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABHeatBarOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTFighter
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_lambda_16x16.dds"
+
+rem ***PLAYER SPAWN INSIDE****
+ObjectTemplate.create SpawnPoint epsilon_sold_spawnAlt1
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 28
+ObjectTemplate.setGroup 64
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem ***PLAYER SPAWN INSIDE****
+ObjectTemplate.create SpawnPoint epsilon_sold_spawn_Alt2
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 83
+ObjectTemplate.setGroup 65
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** epsilonWreck ***
+ObjectTemplate.create SimpleObject epsilonWreck
+ObjectTemplate.geometry Wreck_Null
+
+rem *** epsilonLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 epsilonLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 350

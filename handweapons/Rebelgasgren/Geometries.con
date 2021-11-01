@@ -1,0 +1,20 @@
+GeometryTemplate.create StandardMesh gasgren1
+GeometryTemplate.file gasgren1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+
+GeometryTemplate.create StandardMesh gasgren2
+GeometryTemplate.file gasgren2
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+
+GeometryTemplate.create StandardMesh gasgrenblades
+GeometryTemplate.file gasgren_blade
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100

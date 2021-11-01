@@ -1,0 +1,10 @@
+
+
+rem *** e_ScrapMetal_Slave1***
+ObjectTemplate.create EffectBundle e_ScrapMetal_Slave1
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_ScrapMetal_Plane_1
+ObjectTemplate.addTemplate Em_ScrapMetal_Plane_2
+ObjectTemplate.addTemplate Em_ScrapMetal_Plane_3
+rem -------------------------------------

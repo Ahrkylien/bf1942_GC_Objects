@@ -1,0 +1,100 @@
+ObjectTemplate.create BFSoldier EndorSoldier
+ObjectTemplate.createSkeleton animations/UsSoldier.ske
+
+include ../Common/CommonSoldierData.inc
+rem Sound.addRunTimeDirectory Language Hothrebel
+game.addLanguageRunTimeDirectory hothrebel
+include ../Common/Sounds/SoldierSound.inc
+
+
+ObjectTemplate.setSoldierStandingIcon "Soldier/Icon_us_soldier_standing.tga"
+ObjectTemplate.setSoldierCrouchIcon "Soldier/Icon_us_soldier_crouching.tga"
+ObjectTemplate.setSoldierProneIcon "Soldier/Icon_us_soldier_lying.tga"
+
+ObjectTemplate.setMinimapIcon "flag_us.tga"
+ObjectTemplate.setControlPointIcon "conp_us.tga"
+ObjectTemplate.setTicketIcon "flag_ticket_us.tga"
+ObjectTemplate.setTeamFlagIcon "Icon_flag_us.tga"
+ObjectTemplate.setRadioLanguage "HothRebel"
+
+ObjectTemplate.addTemplate EndorSoldierComplexHead
+ObjectTemplate.setRandomGeometries 3
+ObjectTemplate.setIsFirstPersonPart 0
+ObjectTemplate.setLodValue 0.01
+ObjectTemplate.bindToSkeletonPart Bip01_Spine3 3
+
+ObjectTemplate.addTemplate EndorSoldierHead
+ObjectTemplate.setIsFirstPersonPart 0
+ObjectTemplate.setLodValue -0.01
+
+ObjectTemplate.addTemplate EndorHelm
+ObjectTemplate.setIsFirstPersonPart 0
+
+ObjectTemplate.addTemplate EndorSoldier3PBody
+ObjectTemplate.setIsFirstPersonPart 0
+
+ObjectTemplate.addTemplate EndorSoldier1PBody
+ObjectTemplate.setIsFirstPersonPart 1
+
+ObjectTemplate.addTemplate EndorSoldierRightHand
+ObjectTemplate.setIsFirstPersonPart 0
+ObjectTemplate.setLodValue 0.03
+
+ObjectTemplate.addTemplate EndorSoldierLeftHand
+ObjectTemplate.setIsFirstPersonPart 0
+ObjectTemplate.setLodValue 0.03
+
+ObjectTemplate.addTemplate 1PEndorSoldierRightHand
+ObjectTemplate.setIsFirstPersonPart 1
+ObjectTemplate.setLodValue 0.03
+
+ObjectTemplate.addTemplate 1PEndorSoldierLeftHand
+ObjectTemplate.setIsFirstPersonPart 1
+ObjectTemplate.setLodValue 0.03
+
+ObjectTemplate.create SimpleObject EndorSoldier1PBody
+ObjectTemplate.geometry Soldier/1PEndorBody
+
+ObjectTemplate.create SimpleObject EndorSoldier3PBody
+ObjectTemplate.geometry Soldier/3PEndorBody
+ObjectTemplate.hasDynamicShadow 1
+
+ObjectTemplate.create AnimatedBundle EndorSoldierComplexHead1
+rem *** SHOULD BE UsFace.Ske on every nationality.
+ObjectTemplate.createSkeleton animations/UsFace.ske
+ObjectTemplate.geometry Soldier/EndorComplexHead1
+ObjectTemplate.hasDynamicShadow 1
+
+ObjectTemplate.create AnimatedBundle EndorSoldierComplexHead2
+rem *** SHOULD BE UsFace.Ske on every nationality.
+ObjectTemplate.createSkeleton animations/UsFace.ske
+ObjectTemplate.geometry Soldier/EndorComplexHead2
+ObjectTemplate.hasDynamicShadow 1
+
+ObjectTemplate.create AnimatedBundle EndorSoldierComplexHead3
+rem *** SHOULD BE UsFace.Ske on every nationality.
+ObjectTemplate.createSkeleton animations/UsFace.ske
+ObjectTemplate.geometry Soldier/EndorComplexHead3
+ObjectTemplate.hasDynamicShadow 1
+
+ObjectTemplate.create SimpleObject EndorSoldierHead
+ObjectTemplate.geometry Soldier/EndorHead
+ObjectTemplate.hasDynamicShadow 1
+
+ObjectTemplate.create SimpleObject Endorhelm
+ObjectTemplate.geometry Soldier/Endorhelm
+ObjectTemplate.hasDynamicShadow 1
+
+ObjectTemplate.create SimpleObject EndorSoldierLeftHand
+ObjectTemplate.geometry Soldier/EndorLeftHand
+
+ObjectTemplate.create SimpleObject EndorSoldierRightHand
+ObjectTemplate.geometry Soldier/EndorRightHand
+
+ObjectTemplate.create SimpleObject 1PEndorSoldierLeftHand
+ObjectTemplate.geometry Soldier/1PEndorLeftHand
+
+ObjectTemplate.create SimpleObject 1PEndorSoldierRightHand
+ObjectTemplate.geometry Soldier/1PEndorRightHand
+
+	

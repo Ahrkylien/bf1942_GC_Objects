@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/SoldierStop.ssc
+	
+#templateLevel MEDIUM
+
+	#include Medium/SoldierStop.ssc
+	
+#templateLevel LOW
+
+	#include Low/SoldierStop.ssc

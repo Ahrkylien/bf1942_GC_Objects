@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh ds_gridpanel2
+GeometryTemplate.file buildings/DeathStar/ds_gridpanel2
+GeometryTemplate.setLodDistance 0 1400
+GeometryTemplate.setLodDistance 1 1500
+GeometryTemplate.setLodDistance 2 1600
+GeometryTemplate.setLodDistance 3 1700
+GeometryTemplate.setLodDistance 4 1800
+GeometryTemplate.setLodDistance 5 1900

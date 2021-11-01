@@ -1,0 +1,25 @@
+newPatch
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+################
+### Distance ###
+################
+load @ROOT/Sound/@RTD/aharpoongun.wav
+minDistance 10
+priority 9
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 150
+	param 350
+	param 1
+	param -1	
+endEffect

@@ -1,0 +1,9 @@
+NetworkableInfo.createNewInfo skyhopper_wing_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo skyhopper_engine_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo skyhopper_body_info
+NetworkableInfo.setPredictionMode PMLinear
+

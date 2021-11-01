@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh Cammo
+GeometryTemplate.file cammo
+GeometryTemplate.setLodDistance 0 1000
+GeometryTemplate.setLodDistance 1 1200
+GeometryTemplate.setLodDistance 2 1300
+GeometryTemplate.setLodDistance 3 1350
+GeometryTemplate.setLodDistance 4 1360
+GeometryTemplate.setLodDistance 5 1400

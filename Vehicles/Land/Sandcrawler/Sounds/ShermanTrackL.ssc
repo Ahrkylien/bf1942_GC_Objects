@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/ShermanTrackL.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/ShermanTrackL.ssc
+	
+#templateLevel LOW
+
+	#include Low/ShermanTrackL.ssc

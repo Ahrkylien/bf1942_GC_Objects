@@ -1,0 +1,70 @@
+rem ObjectTemplate.create BFSoldier ImperialSoldier
+ObjectTemplate.create BFSoldier ScoutSoldier
+ObjectTemplate.createSkeleton animations/UsSoldier.ske
+
+include ../Common/CommonSoldierData.inc
+rem Sound.addRunTimeDirectory Language HothSnowtrooper
+game.addLanguageRunTimeDirectory HothSnowtrooper
+include ../Common/Sounds/SoldierSound.inc
+
+ObjectTemplate.setSoldierStandingIcon "Soldier/Icon_ger_soldier_standing.tga"
+ObjectTemplate.setSoldierCrouchIcon "Soldier/Icon_ger_soldier_crouching.tga"
+ObjectTemplate.setSoldierProneIcon "Soldier/Icon_ger_soldier_lying.tga"
+
+ObjectTemplate.setMinimapIcon "flag_ger.tga"
+ObjectTemplate.setControlPointIcon "conp_ger.tga"
+ObjectTemplate.setTicketIcon "flag_ticket_ger.tga"
+ObjectTemplate.setTeamFlagIcon "Icon_flag_ger.tga"
+ObjectTemplate.setRadioLanguage "Hothsnowtrooper"
+
+
+ObjectTemplate.addTemplate ScoutSoldierHead
+ObjectTemplate.setIsFirstPersonPart 0
+
+ObjectTemplate.addTemplate ScoutSoldier3PBody
+ObjectTemplate.setIsFirstPersonPart 0
+
+ObjectTemplate.addTemplate ScoutSoldier1PBody
+ObjectTemplate.setIsFirstPersonPart 1
+
+ObjectTemplate.addTemplate ScoutSoldierRightHand
+ObjectTemplate.setIsFirstPersonPart 0
+ObjectTemplate.setLodValue 0.03
+
+ObjectTemplate.addTemplate ScoutSoldierLeftHand
+ObjectTemplate.setIsFirstPersonPart 0
+ObjectTemplate.setLodValue 0.03
+
+ObjectTemplate.addTemplate 1PScoutSoldierRightHand
+ObjectTemplate.setIsFirstPersonPart 1
+ObjectTemplate.setLodValue 0.03
+
+ObjectTemplate.addTemplate 1PScoutSoldierLeftHand
+ObjectTemplate.setIsFirstPersonPart 1
+ObjectTemplate.setLodValue 0.03
+
+ObjectTemplate.create SimpleObject ScoutSoldier1PBody
+ObjectTemplate.geometry Soldier/1PScoutBody
+
+ObjectTemplate.create SimpleObject ScoutSoldier3PBody
+ObjectTemplate.geometry Soldier/3PScoutBody
+ObjectTemplate.hasDynamicShadow 1
+
+
+ObjectTemplate.create SimpleObject ScoutSoldierHead
+ObjectTemplate.geometry Soldier/ScoutHead
+ObjectTemplate.hasDynamicShadow 1
+
+ObjectTemplate.create SimpleObject ScoutSoldierLeftHand
+ObjectTemplate.geometry Soldier/ScoutLeftHand
+
+ObjectTemplate.create SimpleObject ScoutSoldierRightHand
+ObjectTemplate.geometry Soldier/ScoutRightHand
+
+ObjectTemplate.create SimpleObject 1PScoutSoldierLeftHand
+ObjectTemplate.geometry Soldier/1PScoutLeftHand
+
+ObjectTemplate.create SimpleObject 1PScoutSoldierRightHand
+ObjectTemplate.geometry Soldier/1PScoutRightHand
+
+	

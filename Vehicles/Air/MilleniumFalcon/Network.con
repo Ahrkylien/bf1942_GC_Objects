@@ -1,0 +1,30 @@
+NetworkableInfo.createNewInfo Millenium_wing_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Millenium_engine_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Millenium_Body_Info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo MF_Turret_1_Info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo MF_Turret_2_Info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo MF_Turret_1_Bundle_Info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo MF_Turret_2_Bundle_Info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo MilleniumVTO
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo MFPassenger_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo MFPassenger_Door_info
+NetworkableInfo.setPredictionMode PMLinear
+

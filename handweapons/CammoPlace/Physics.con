@@ -1,0 +1,27 @@
+
+rem *** landspeederengine ***
+ObjectTemplate.create Engine STOPENGINE
+ObjectTemplate.setNetworkableInfo CammoEngineInfo
+
+ObjectTemplate.addTemplate ATSTDummyBackSpringR
+ObjectTemplate.setPosition 1/0.45/1
+ObjectTemplate.addTemplate ATSTDummyBackSpringR
+ObjectTemplate.setPosition -1/0.45/1
+ObjectTemplate.addTemplate ATSTDummyBackSpringR
+ObjectTemplate.setPosition 1/0.45/-1
+ObjectTemplate.addTemplate ATSTDummyBackSpringR
+ObjectTemplate.setPosition -1/0.45/-1
+
+ObjectTemplate.setMinRotation -0.3/0/-5000
+ObjectTemplate.setMaxRotation 0.3/0/5000
+ObjectTemplate.setMaxSpeed 3500/0/1500
+ObjectTemplate.setAcceleration 1500/0/7500
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 10
+ObjectTemplate.setDifferential 7
+ObjectTemplate.setGearUp 0.3
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 190

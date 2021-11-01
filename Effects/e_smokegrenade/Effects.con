@@ -1,0 +1,50 @@
+
+
+rem *************************
+rem *** smoke effect ***
+rem *************************
+
+
+ObjectTemplate.create EffectBundle e_SmokeGrenade
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/SmokeGranade.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_SmokeGranade_Smoke
+ObjectTemplate.timeToLive CRD_NONE/40/0/0
+ObjectTemplate.setPosition 0/-1/0
+rem -------------------------------------
+
+rem *** Em_ExplGranade_Smoke ***
+ObjectTemplate.create Emitter Em_SmokeGranade_Smoke
+ObjectTemplate.template Fx_SmokeGranade_Smoke
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 0.5
+ObjectTemplate.lodDistance 180
+ObjectTemplate.delay CRD_NONE/3.7/3.7/0
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/100/150/0
+ObjectTemplate.relativePositionInDof CRD_NONE/-1.2/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/2/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/2/0/0
+ObjectTemplate.rotationalSpeedInDof CRD_NONE/0/0/0
+ObjectTemplate.rotationalSpeedInUp CRD_NONE/0/0/0
+ObjectTemplate.rotationalSpeedInRight CRD_NONE/0/0/0
+ObjectTemplate.startRotation CRD_UNIFORM/100/0/0
+
+rem *** Fx_ExplGranade_Smoke ***
+ObjectTemplate.create SpriteParticle Fx_SmokeGranade_Smoke
+ObjectTemplate.timeToLive CRD_NONE/11/0/0
+ObjectTemplate.size CRD_UNIFORM/10/10/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeOverTime 0/0.6|1/1.0|2/1.2
+ObjectTemplate.gravityModifierOverTime 0.001/0.001|0.005/0.005|0.001/0.001
+ObjectTemplate.texture e_SmokeUniversal
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/0
+ObjectTemplate.XYSizeRatio CRD_NONE/1.0/0/0
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_NONE/0/0/0
+ObjectTemplate.rotationSpeedOverTime 0/2.04004|26/3.36|64/3.84002|100/6
+rem ObjectTemplate.colorRGBAOverTime 0/245/219/35/255|65/251/237/81/255|78/252/241/90/167|100/255/248/106/0
+ObjectTemplate.colorRGBAOverTime 0/235/235/255/255|78/235/235/255/167|100/235/235/255/0

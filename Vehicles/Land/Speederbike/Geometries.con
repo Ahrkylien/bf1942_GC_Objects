@@ -1,0 +1,28 @@
+GeometryTemplate.create StandardMesh Speederbike_Fus_M1
+GeometryTemplate.file Vehicles/Speederbike/Speederbike
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 400
+GeometryTemplate.setLodDistance 3 800
+GeometryTemplate.setLodDistance 4 1000
+GeometryTemplate.setLodDistance 5 1400
+
+GeometryTemplate.create StandardMesh Speederbike_bb
+GeometryTemplate.file Vehicles/Speederbike/Speederbike_bb
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 400
+GeometryTemplate.setLodDistance 3 800
+GeometryTemplate.setLodDistance 4 1000
+GeometryTemplate.setLodDistance 5 1400
+
+GeometryTemplate.create StandardMesh SpeederbikeSimple
+GeometryTemplate.file Vehicles/Speederbike/Speeder_Fus_L1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 1500
+
+
+GeometryTemplate.create StandardMesh Wreck_Speederbike1_M1
+GeometryTemplate.file Vehicles/Speederbike/Wreck_Speederbike1

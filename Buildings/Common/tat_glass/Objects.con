@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle tat_glass
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry tat_glass
+objectTemplate.aiTemplate tat_glass
+rem ---------------------------

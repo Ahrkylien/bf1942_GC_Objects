@@ -1,0 +1,146 @@
+rem *** AWingEngine ***
+ObjectTemplate.create Engine AWingEngine
+ObjectTemplate.setNetworkableInfo AWing_engine_info
+ObjectTemplate.loadSoundScript Sounds/AWingEngine.ssc
+rem -------------------------------------
+ObjectTemplate.setMinRotation -0.3/0/0
+ObjectTemplate.setMaxRotation 0.3/0/5000
+ObjectTemplate.setMaxSpeed 1000/0/5000
+ObjectTemplate.setAcceleration 500/0/10000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 100
+ObjectTemplate.setDifferential 14
+
+rem *** AWingVTOLEngineRack ***
+ObjectTemplate.create RotationalBundle AWingVTOLEngineRack
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate AWingVTOLEngine
+rem -------------------------------------
+ObjectTemplate.setMinRotation -20/-30/0
+ObjectTemplate.setMaxRotation 20/30/0
+ObjectTemplate.setMaxSpeed 150/50/0
+ObjectTemplate.setAcceleration 150/100/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setInputToYaw c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+
+rem *** AWingVTOLEngine ***
+ObjectTemplate.create Engine AWingVTOLEngine
+ObjectTemplate.setNetworkableInfo AWing_engine_info
+ObjectTemplate.loadSoundScript Sounds/AWingVEngine.ssc
+ObjectTemplate.setMinRotation -0.3/0/0
+ObjectTemplate.setMaxRotation 0.3/0/100
+ObjectTemplate.setMaxSpeed 1000/0/3
+ObjectTemplate.setAcceleration 500/0/-10000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 8
+ObjectTemplate.setDifferential 3
+
+rem *** AWingWing_L ***
+ObjectTemplate.create Wing AWingWing_L
+ObjectTemplate.setNetworkableInfo AWing_wing_info
+ObjectTemplate.setMinRotation 0/-2/0
+ObjectTemplate.setMaxRotation 0/2/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setFlapLift 4
+ObjectTemplate.setRegulateToLift 4.91
+ObjectTemplate.setWingToRegulatorRatio 1
+
+rem *** AWingRollWing_L
+ObjectTemplate.create Wing AWingRollWing_L
+ObjectTemplate.setNetworkableInfo AWing_wing_info
+ObjectTemplate.setMinRotation 0/-26/0
+ObjectTemplate.setMaxRotation 0/26/0
+ObjectTemplate.setMaxSpeed 0/150/0
+ObjectTemplate.setAcceleration 0/-150/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 1.5/0/-0.4
+ObjectTemplate.setWingLift 3
+ObjectTemplate.setFlapLift 3
+
+rem *** AWingWing_R ***
+ObjectTemplate.create Wing AWingWing_R
+ObjectTemplate.setNetworkableInfo AWing_wing_info
+ObjectTemplate.setMinRotation 0/-2/0
+ObjectTemplate.setMaxRotation 0/2/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setFlapLift 5
+ObjectTemplate.setRegulateToLift 4.91
+ObjectTemplate.setWingToRegulatorRatio 1
+
+rem *** AWingRollWing_R ***
+ObjectTemplate.create Wing AWingRollWing_R
+ObjectTemplate.setNetworkableInfo AWing_wing_info
+ObjectTemplate.setMinRotation 0/-26/0
+ObjectTemplate.setMaxRotation 0/26/0
+ObjectTemplate.setMaxSpeed 0/150/0
+ObjectTemplate.setAcceleration 0/150/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset -1.5/0/-0.4
+ObjectTemplate.setWingLift 3
+ObjectTemplate.setFlapLift 3
+
+rem *** AWingPitchWing_L ***
+ObjectTemplate.create Wing AWingPitchWing_L 
+ObjectTemplate.setNetworkableInfo AWing_wing_info
+ObjectTemplate.setMinRotation 0/-35/0
+ObjectTemplate.setMaxRotation 0/35/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/-60/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0.5/0/0
+ObjectTemplate.setPitchOffset 0.1
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setWingLift 1.5
+ObjectTemplate.setFlapLift 1
+
+rem *** AWingPitchWing_R ***
+ObjectTemplate.create Wing AWingPitchWing_R
+ObjectTemplate.setNetworkableInfo AWing_wing_info
+ObjectTemplate.setMinRotation 0/-35/0
+ObjectTemplate.setMaxRotation 0/35/0
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/-60/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset -0.5/0/0
+ObjectTemplate.setPitchOffset 0.1
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setWingLift 1.5
+ObjectTemplate.setFlapLift 1
+
+rem *** AWingYawWing ***
+ObjectTemplate.create Wing AWingYawWing
+ObjectTemplate.setNetworkableInfo AWing_wing_info
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/60/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/-0.5/0
+ObjectTemplate.setWingLift 2
+ObjectTemplate.setFlapLift 2
+
+rem *** AWingBodyWingVertical ***
+ObjectTemplate.create Wing AWingBodyWingVertical
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 4
+ObjectTemplate.setFlapLift 0

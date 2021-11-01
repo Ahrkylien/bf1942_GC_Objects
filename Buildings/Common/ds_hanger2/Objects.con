@@ -1,0 +1,47 @@
+ObjectTemplate.create Bundle ds_hanger2
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry ds_hanger2
+objectTemplate.aiTemplate ds_hanger2
+
+ObjectTemplate.addTemplate ds_fakedoor
+ObjectTemplate.setPosition 24.4186/8.84574/-1.46203
+ObjectTemplate.setRotation 90.0/0.0/0.0
+
+ObjectTemplate.addTemplate ds_fakedoor
+ObjectTemplate.setPosition -24.2554/8.83834/-1.36434
+ObjectTemplate.setRotation -90.0/0.0/0.0
+
+beginrem
+ObjectTemplate.addTemplate ds_tiespawn
+ObjectTemplate.setPosition 17.932/10.5998/-6.6923
+ObjectTemplate.setRotation 180.0/0.0/0.0
+
+ObjectTemplate.addTemplate ds_tiespawn
+ObjectTemplate.setPosition .49335/10.5998/-6.6923
+ObjectTemplate.setRotation 180.0/0.0/0.0
+
+ObjectTemplate.addTemplate ds_tiespawn
+ObjectTemplate.setPosition -16.8258/10.5998/-6.6923
+ObjectTemplate.setRotation 180.0/0.0/0.0
+endrem
+
+rem ---------------------------
+ObjectTemplate.create SimpleObject ds_fakedoor
+ObjectTemplate.geometry ds_fakedoor
+ObjectTemplate.setHasCollisionPhysics 1
+
+beginrem
+rem *** TIE Spawner ***
+ObjectTemplate.create ObjectSpawner ds_tiespawn
+ObjectTemplate.setObjectTemplate 1 alpha
+ObjectTemplate.setObjectTemplate 2 alpha
+rem ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 15
+ObjectTemplate.maxSpawnDelay 30
+ObjectTemplate.TimeToLive 30
+ObjectTemplate.Distance 20
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 10
+endrem

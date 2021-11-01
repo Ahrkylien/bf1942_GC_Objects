@@ -1,0 +1,34 @@
+ObjectTemplate.create Projectile RAT_Rocket
+ObjectTemplate.geometry ProtonTorpedo_m1
+ObjectTemplate.timeToLive CRD_NONE/20/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.drag 1.0
+ObjectTemplate.mass 20
+
+ObjectTemplate.startEffectTemplate e_glowTieBomb
+ObjectTemplate.startEffectTemplate e_projectilePlx-2m
+
+ObjectTemplate.CreateNotInGrid 1
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 0
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 0
+ObjectTemplate.invisible 0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 711
+ObjectTemplate.material2 712
+ObjectTemplate.radius 30
+ObjectTemplate.ForceOnExplosion 50
+
+ObjectTemplate.addTemplate T-3BRocket_WingA
+ObjectTemplate.setPosition 0/0/-1.5
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate T-3BRocket_EngineA
+ObjectTemplate.setPosition 0/0/-2
+ObjectTemplate.setRotation 0/0/0
+
+
+

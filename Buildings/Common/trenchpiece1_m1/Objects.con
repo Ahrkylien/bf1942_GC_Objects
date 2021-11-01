@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject trenchpiece1_m1
+ObjectTemplate.geometry trenchpiece1_m1
+ObjectTemplate.setHasCollisionPhysics 1

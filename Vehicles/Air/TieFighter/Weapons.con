@@ -1,0 +1,30 @@
+rem *** TieFighterGuns ***
+ObjectTemplate.create FireArms TieFighterGuns
+ObjectTemplate.loadSoundScript Sounds/TieFighterlaser.ssc
+ObjectTemplate.aiTemplate SpitfireMachineGun
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileGreenNS
+ObjectTemplate.projectilePosition 0/-0.2/2
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 650
+ObjectTemplate.reloadtime 0.0001
+ObjectTemplate.roundOfFire 4.8
+ObjectTemplate.addFireArmsPosition -0.3/-1.2/1.1 0/0/0
+ObjectTemplate.addFireArmsPosition 0.3/-1.2/1.1 0/0/0
+ObjectTemplate.addFireArmsPosition -0.3/-1.2/1.1 0/0/0
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.07
+objectTemplate.coolDownPerSec 0.8
+objectTemplate.timeDelayOnOverHeat 2.5
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 100
+ObjectTemplate.distToMinDamage 300
+ObjectTemplate.AmmoType	8
+
+

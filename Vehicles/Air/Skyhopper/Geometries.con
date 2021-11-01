@@ -1,0 +1,32 @@
+GeometryTemplate.create StandardMesh Skyhopper
+GeometryTemplate.file Vehicles/Skyhopper/Skyhopper
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 140
+
+GeometryTemplate.create StandardMesh Skyhopper_gun
+GeometryTemplate.file Vehicles/Skyhopper/Skyhopper_gun
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 140
+
+GeometryTemplate.create StandardMesh skyhopperinternal
+GeometryTemplate.file Vehicles/Skyhopper/1p_skyhopper_int
+
+GeometryTemplate.create StandardMesh Skyhopper_Low
+GeometryTemplate.file Vehicles/Skyhopper/skyhopper_low
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_Skyhopper
+GeometryTemplate.file Vehicles/Skyhopper/Wreck_Skyhopper1
+
+
+

@@ -1,0 +1,56 @@
+GeometryTemplate.create StandardMesh snowspeeder
+GeometryTemplate.file Vehicles/Snowspeeder/snowspeeder
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 140
+
+GeometryTemplate.create StandardMesh snowspeeder_cockpit
+GeometryTemplate.file Vehicles/Snowspeeder/snowspeeder_cockpit
+
+GeometryTemplate.create StandardMesh snowspeeder_window
+GeometryTemplate.file Vehicles/Snowspeeder/snowspeeder_window
+
+GeometryTemplate.create StandardMesh ss_breakflap_left
+GeometryTemplate.file Vehicles/Snowspeeder/ss_breakflap_left
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh ss_breakflap_right
+GeometryTemplate.file Vehicles/Snowspeeder/ss_breakflap_right
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh snowspeeder_gun_base
+GeometryTemplate.file Vehicles/Snowspeeder/snowspeeder_tow_base
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 140
+
+GeometryTemplate.create StandardMesh snowspeeder_gun_rotation
+GeometryTemplate.file Vehicles/Snowspeeder/snowspeeder_tow_rotation
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 140
+
+GeometryTemplate.create StandardMesh snowspeeder_Low
+GeometryTemplate.file Vehicles/Snowspeeder/snowspeeder_low
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_Snowspeeder1_M1
+GeometryTemplate.file Vehicles/Snowspeeder/Wreck_Snowspeeder1
+
+

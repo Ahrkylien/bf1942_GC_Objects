@@ -1,0 +1,6 @@
+GeometryTemplate.create StandardMesh dan_wheat3
+rem GeometryTemplate.setSkin animations/dan_wheat3.skn
+GeometryTemplate.file buildings/dantooine/dant_wheat_noflowers_dense
+
+
+

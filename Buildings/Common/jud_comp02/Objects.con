@@ -1,0 +1,6 @@
+ObjectTemplate.create Bundle jud_comp02
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry jud_comp02
+objectTemplate.aiTemplate jud_comp02
+rem ---------------------------
+objectTemplate.loadSoundScript Sounds/ambient.ssc

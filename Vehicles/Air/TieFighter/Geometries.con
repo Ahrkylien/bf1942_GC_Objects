@@ -1,0 +1,21 @@
+GeometryTemplate.create StandardMesh TieFighter_M1
+GeometryTemplate.file Vehicles/TieFighter/TieFighter
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 140
+
+GeometryTemplate.create StandardMesh TieFighter_L1
+GeometryTemplate.file Vehicles/TieFighter/TieFighter_Low
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh 1P_TieFighter_Cockpit
+GeometryTemplate.file Vehicles/TieFighter/tie_cockpit
+
+GeometryTemplate.create StandardMesh Wreck_TieFighter1_M1
+GeometryTemplate.file Vehicles/TieFighter/Wreck_TieFighter1
+
+

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/SoldierClimbLadder.ssc
+	
+#templateLevel MEDIUM
+
+	#include Medium/SoldierClimbLadder.ssc
+	
+#templateLevel LOW
+
+	#include Low/SoldierClimbLadder.ssc

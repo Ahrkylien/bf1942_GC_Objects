@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject endviv2
+ObjectTemplate.geometry endviv2
+ObjectTemplate.setHasCollisionPhysics 1

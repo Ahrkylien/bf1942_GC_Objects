@@ -1,0 +1,45 @@
+GeometryTemplate.create StandardMesh MouseDroid_M1
+GeometryTemplate.file Vehicles/MouseDroid/mousedroid
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 50
+GeometryTemplate.setLodDistance 4 75
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh MouseDroid_Wheel_M1
+GeometryTemplate.file Vehicles/MouseDroid/mouse_droid_wheel
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh MouseDroidRepair_M1
+GeometryTemplate.file wrench_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh MouseDroidHeal_M1
+GeometryTemplate.file medpack_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 1P_MouseDroid_HUD_M1
+GeometryTemplate.file Vehicles/MouseDroid/mouserobot_hud
+
+GeometryTemplate.create StandardMesh Wreck_MouseDroid_M1
+GeometryTemplate.file scrap_metal3_m1
+
+
+
+
+

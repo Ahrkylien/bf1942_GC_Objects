@@ -1,0 +1,5 @@
+rem *** Cricket1 ***
+ObjectTemplate.create SimpleObject Cricket1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.triggerRadius 100
+ObjectTemplate.loadSoundScript Sounds/Cricket1.ssc

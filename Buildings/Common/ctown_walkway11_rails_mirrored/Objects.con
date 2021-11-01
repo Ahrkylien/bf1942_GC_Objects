@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject ctown_walkway11_rails_mirrored
+ObjectTemplate.geometry ctown_walkway11_rails_mirrored
+ObjectTemplate.setHasCollisionPhysics 1

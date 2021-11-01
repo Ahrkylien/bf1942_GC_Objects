@@ -1,0 +1,9 @@
+GeometryTemplate.create StandardMesh ctown_base1
+GeometryTemplate.file Buildings/Bespin/ctown_base1
+
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300
+
+
+
+

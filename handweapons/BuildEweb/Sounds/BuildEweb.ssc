@@ -1,0 +1,17 @@
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/eweb-build.wav
+minDistance 4
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 15
+	param 1
+	param -1	
+endEffect

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include ExplCryoban_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include ExplCryoban_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include ExplCryoban_MedLow.ssc

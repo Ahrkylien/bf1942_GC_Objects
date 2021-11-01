@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh mc_fort_wall
+GeometryTemplate.file buildings/Moncal/mc_fort_wall
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 810

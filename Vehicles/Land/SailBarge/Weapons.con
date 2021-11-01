@@ -1,0 +1,17 @@
+rem *** SailBargeDeckGun ***
+ObjectTemplate.create FireArms SailBarge_DeckGun
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/LargeTurboLaserFire.ssc
+ObjectTemplate.aiTemplate SpitfireMachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzThomp
+rem -------------------------------------
+ObjectTemplate.projectileTemplate StrongLaserProjectileRedNS
+ObjectTemplate.magSize 20
+ObjectTemplate.autoReload 1
+ObjectTemplate.numOfMag 800
+ObjectTemplate.velocity 650
+ObjectTemplate.reloadtime 10
+ObjectTemplate.roundOfFire 6
+ObjectTemplate.addFireArmsPosition 0/1/2.54 0/0/0
+ObjectTemplate.AmmoType	8

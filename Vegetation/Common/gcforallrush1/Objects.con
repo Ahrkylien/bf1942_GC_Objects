@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject gcforallrush1
+ObjectTemplate.geometry gcforallrush1
+ObjectTemplate.setHasCollisionPhysics 0
+objectTemplate.cullRadiusScale 2.0

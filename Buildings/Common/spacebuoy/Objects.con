@@ -1,0 +1,7 @@
+ObjectTemplate.create SimpleObject spacebuoy
+ObjectTemplate.aiTemplate spacebuoy
+ObjectTemplate.geometry spacebuoy
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.material 60
+ObjectTemplate.cullRadiusScale 3
+

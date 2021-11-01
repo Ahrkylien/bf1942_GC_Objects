@@ -1,0 +1,19 @@
+newPatch
+load @ROOT/Sound/@RTD/alarm2.wav
+loop
+minDistance 10
+volume 0.9
+dopplerOff
+priority 6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 15
+	param 25
+	param 1
+	param -1	
+endEffect
+
+

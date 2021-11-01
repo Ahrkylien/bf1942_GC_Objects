@@ -1,0 +1,60 @@
+rem ******** Destroyable ShieldgeneratorPiece ******
+rem .********29April : several fixes
+
+ObjectTemplate.create PlayercontrolObject destroyableSGpiece
+ObjectTemplate.setNetworkableInfo destroyableSGpieceInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 1300
+ObjectTemplate.maxhitpoints 1300
+ObjectTemplate.material 811
+ObjectTemplate.criticalDamage 7.5
+ObjectTemplate.hpLostWhileCriticalDamage 0.75
+ObjectTemplate.explosionRadius 50
+ObjectTemplate.explosionDamage 500
+
+ObjectTemplate.addArmorEffect 20 e_ExplGas 0/2/-20
+
+ObjectTemplate.addArmorEffect 600 em_FletcherDamage -4/6/-20
+ObjectTemplate.addArmorEffect 200 em_FletcherDamage -2/3/-20
+ObjectTemplate.addArmorEffect 100 em_FletcherDamage -4/6/-20
+ObjectTemplate.addArmorEffect 50 em_FletcherDamage -2/3/-20
+ObjectTemplate.addArmorEffect 0 em_ExFumePOW -4/6/-20
+
+ObjectTemplate.FadeAtTimeToLiveAfterDeath 1
+ObjectTemplate.timetoliveafterdeath 1
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/4/-20
+ObjectTemplate.addArmorEffect 0 e_ExplGas -5/3/-20
+ObjectTemplate.addArmorEffect 0 e_ExplGas -4/0/-20
+ObjectTemplate.addArmorEffect 0 e_ExplGas -3/4/-20
+ObjectTemplate.addArmorEffect 0 e_ExplGas -2/0/-20
+
+
+ObjectTemplate.addTemplate loddestroyableSGpiece
+
+rem *** loddestroyableSGpiece ***
+ObjectTemplate.create LodObject loddestroyableSGpiece
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate destroyableSGpiece_simple
+ObjectTemplate.addTemplate destroyableSGpiece_wreck
+ObjectTemplate.lodSelector destroyableSGpieceLodSelector
+
+
+ObjectTemplate.create SimpleObject destroyableSGpiece_simple
+ObjectTemplate.geometry destroyableSGpiece
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+rem *** ***
+ObjectTemplate.create SimpleObject destroyableSGpiece_wreck
+ObjectTemplate.geometry ModelNull
+
+LodSelectorTemplate.create DistCompareSelector2 destroyableSGpieceLodSelector
+LodSelectorTemplate.hasDestroyedLod 1

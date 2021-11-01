@@ -1,0 +1,32 @@
+ObjectTemplate.create Bundle wreckbundle1
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.AddTemplate e_Wreck1Smoke
+ObjectTemplate.startoneffects 1 
+ObjectTemplate.setPosition 0/-3/1 
+ObjectTemplate.setRotation 0/0/0 
+
+ObjectTemplate.AddTemplate WreckTiefighter1
+ObjectTemplate.setPosition 0/3/0
+ObjectTemplate.setRotation -90/31/-60 
+
+ObjectTemplate.AddTemplate WreckTiefighter2
+ObjectTemplate.setPosition -10/2.775/-4
+ObjectTemplate.setRotation 120/-20/100 
+
+ObjectTemplate.AddTemplate Ammobox
+ObjectTemplate.setPosition 1/0.3/-3
+ObjectTemplate.setRotation 45/25/-65
+
+ObjectTemplate.create SimpleObject WreckTiefighter1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.Geometry Wreck_TieFighter1_M1
+
+ObjectTemplate.create SimpleObject WreckTiefighter2
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.Geometry Wreck_TieFighter2_m1
+
+
+
+
+

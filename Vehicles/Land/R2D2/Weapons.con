@@ -1,0 +1,123 @@
+rem *** R2D2Beep ***
+ObjectTemplate.create FireArms R2D2Beep 
+ObjectTemplate.setNetworkableInfo R2D2BodyInfo
+ObjectTemplate.loadSoundScript Sounds/R2D2Beep.ssc
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.fireOnce 1
+ObjectTemplate.reloadtime 5
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	8
+ObjectTemplate.velocity 0
+
+rem *** R2D2Beep2 ***
+ObjectTemplate.create FireArms R2D2Beep2 
+ObjectTemplate.setNetworkableInfo R2D2BodyInfo
+ObjectTemplate.loadSoundScript Sounds/R2D2Beep2.ssc
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize -1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.AltFireOnce 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	8
+ObjectTemplate.velocity 0
+ObjectTemplate.setInputFire c_PIAltFire
+
+rem *** R2D2Laser ***
+ObjectTemplate.create FireArms R2D2Laser
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/R2D2Laser.ssc
+rem -------------------------------------
+rem ObjectTemplate.visibleBarrelTemplate e_muzzGun
+rem -------------------------------------
+ObjectTemplate.projectileTemplate R2D2LaserProjectile
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 600
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.roundOfFire 6.2
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.altfireOnce 1
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.28
+objectTemplate.coolDownPerSec 0.7
+objectTemplate.timeDelayOnOverHeat 1
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 12
+ObjectTemplate.distToMinDamage 20
+
+rem *** R2D2LaserProjectile ***
+ObjectTemplate.create Projectile R2D2LaserProjectile
+ObjectTemplate.geometry Tlight_g1_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 501
+
+rem ******** Dummy Weapon *******************************
+
+rem *** R2D2DummyWeapon ***
+ObjectTemplate.create FireArms R2D2DummyWeapon
+ObjectTemplate.projectileTemplate R2D2DummyProjectile
+ObjectTemplate.projectilePosition 0/0/0.4
+ObjectTemplate.magSize 900
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 10
+ObjectTemplate.AutoReload 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 10
+ObjectTemplate.setInputFire c_PIFire
+
+rem *** R2D2DummyProjectile ***
+ObjectTemplate.create Projectile R2D2DummyProjectile
+ObjectTemplate.addTemplate e_laser1blue
+ObjectTemplate.timeToLive CRD_NONE/0.08/0/0
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.gravityModifier 0.1
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+rem ObjectTemplate.endEffectTemplate e_R5D4Repair
+
+rem ******** Attack Weapon *******************************
+
+rem *** R2D2AttackWeapon ***
+ObjectTemplate.create FireArms R2D2AttackWeapon
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/R2D2Laser.ssc
+rem -------------------------------------
+rem ObjectTemplate.visibleBarrelTemplate e_muzzGun
+rem -------------------------------------
+ObjectTemplate.projectileTemplate LightLaserProjectileBlueNS
+ObjectTemplate.magSize 1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 600
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.roundOfFire 6.2
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.altfireOnce 1
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0.4
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 12
+ObjectTemplate.distToMinDamage 25
+ObjectTemplate.AmmoType	10

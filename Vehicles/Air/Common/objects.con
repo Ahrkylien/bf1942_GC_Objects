@@ -1,0 +1,34 @@
+
+beginRem
+ObjectTemplate.create SonarObject LambdaSonar
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.detectionRadius 400.0
+ObjectTemplate.scanForEnemySonars c_True
+ObjectTemplate.loadSoundScript Sounds/radar.ssc
+ObjectTemplate.SetAttachToListener 1
+
+ObjectTemplate.create SonarObject MFsonar
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.detectionRadius 600.0
+ObjectTemplate.scanForEnemySonars c_True
+ObjectTemplate.loadSoundScript Sounds/radar.ssc
+ObjectTemplate.SetAttachToListener 1
+endRem
+
+ObjectTemplate.create SonarObject LambdaSonar
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.detectionRadius 400.0
+ObjectTemplate.enableRadarMode 1
+ObjectTemplate.loadSoundScript Sounds/radar.ssc
+
+ObjectTemplate.create SonarObject MFSonar
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.detectionRadius 700.0
+ObjectTemplate.enableRadarMode 1
+rem ObjectTemplate.loadSoundScript Sounds/radar.ssc
+
+ObjectTemplate.create SonarObject Slave1Sonar
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.detectionRadius 400.0
+ObjectTemplate.enableRadarMode 1
+ObjectTemplate.loadSoundScript Sounds/radar.ssc

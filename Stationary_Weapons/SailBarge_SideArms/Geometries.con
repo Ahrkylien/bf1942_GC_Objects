@@ -1,0 +1,9 @@
+GeometryTemplate.create StandardMesh imp_skiff_gun
+GeometryTemplate.file Vehicles/ImpSkiff/imp_skiff_gun
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 100

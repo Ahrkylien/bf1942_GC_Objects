@@ -1,0 +1,33 @@
+ObjectTemplate.create Bundle wreckbundle2
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.AddTemplate e_Wreck1Smoke
+ObjectTemplate.startoneffects 1 
+ObjectTemplate.setPosition 0/-3/1 
+ObjectTemplate.setRotation 0/0/0 
+
+ObjectTemplate.AddTemplate WreckSnowspeeder1
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 20/160/30 
+
+ObjectTemplate.AddTemplate WreckSnowspeeder2
+ObjectTemplate.setPosition -10/-0.2/-4
+ObjectTemplate.setRotation -50/15/0 
+
+ObjectTemplate.AddTemplate HealthPack
+ObjectTemplate.setPosition -4/0.3/-1
+ObjectTemplate.setRotation 0/180/0
+
+ObjectTemplate.create SimpleObject WreckSnowspeeder1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.Geometry Wreck_Snowspeeder1_M1
+
+ObjectTemplate.create SimpleObject WreckSnowspeeder2
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.Geometry Wreck_Snowspeeder2_m1
+
+
+
+
+
+

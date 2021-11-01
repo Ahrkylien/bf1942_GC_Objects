@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle srisemerge	
+ObjectTemplate.geometry srisemerge
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate srisemerge

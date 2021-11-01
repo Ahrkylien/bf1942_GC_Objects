@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/SoldierToSwim.ssc
+	
+#templateLevel MEDIUM
+
+	#include Medium/SoldierToSwim.ssc
+	
+#templateLevel LOW
+
+	#include Low/SoldierToSwim.ssc

@@ -1,0 +1,101 @@
+rem ObjectTemplate.create BFSoldier FleetSoldier
+ObjectTemplate.create BFSoldier FleetSoldier
+ObjectTemplate.createSkeleton animations/UsSoldier.ske
+
+include ../Common/CommonSoldierData.inc
+rem Sound.addRunTimeDirectory Language Hothrebel
+game.addLanguageRunTimeDirectory hothrebel
+include ../Common/Sounds/SoldierSound.inc
+
+
+ObjectTemplate.setSoldierStandingIcon "Soldier/Icon_us_soldier_standing.tga"
+ObjectTemplate.setSoldierCrouchIcon "Soldier/Icon_us_soldier_crouching.tga"
+ObjectTemplate.setSoldierProneIcon "Soldier/Icon_us_soldier_lying.tga"
+
+ObjectTemplate.setMinimapIcon "flag_us.tga"
+ObjectTemplate.setControlPointIcon "conp_us.tga"
+ObjectTemplate.setTicketIcon "flag_ticket_us.tga"
+ObjectTemplate.setTeamFlagIcon "Icon_flag_us.tga"
+ObjectTemplate.setRadioLanguage "HothRebel"
+
+ObjectTemplate.addTemplate FleetSoldierComplexHead
+ObjectTemplate.setRandomGeometries 3
+ObjectTemplate.setIsFirstPersonPart 0
+ObjectTemplate.setLodValue 0.01
+ObjectTemplate.bindToSkeletonPart Bip01_Spine3 3
+
+ObjectTemplate.addTemplate FleetSoldierHead
+ObjectTemplate.setIsFirstPersonPart 0
+ObjectTemplate.setLodValue -0.01
+
+ObjectTemplate.addTemplate FleetHelm
+ObjectTemplate.setIsFirstPersonPart 0
+
+ObjectTemplate.addTemplate FleetSoldier3PBody
+ObjectTemplate.setIsFirstPersonPart 0
+
+ObjectTemplate.addTemplate FleetSoldier1PBody
+ObjectTemplate.setIsFirstPersonPart 1
+
+ObjectTemplate.addTemplate FleetSoldierRightHand
+ObjectTemplate.setIsFirstPersonPart 0
+ObjectTemplate.setLodValue 0.03
+
+ObjectTemplate.addTemplate FleetSoldierLeftHand
+ObjectTemplate.setIsFirstPersonPart 0
+ObjectTemplate.setLodValue 0.03
+
+ObjectTemplate.addTemplate 1PFleetSoldierRightHand
+ObjectTemplate.setIsFirstPersonPart 1
+ObjectTemplate.setLodValue 0.03
+
+ObjectTemplate.addTemplate 1PFleetSoldierLeftHand
+ObjectTemplate.setIsFirstPersonPart 1
+ObjectTemplate.setLodValue 0.03
+
+ObjectTemplate.create SimpleObject FleetSoldier1PBody
+ObjectTemplate.geometry Soldier/1PFleetBody
+
+ObjectTemplate.create SimpleObject FleetSoldier3PBody
+ObjectTemplate.geometry Soldier/3PFleetBody
+ObjectTemplate.hasDynamicShadow 1
+
+ObjectTemplate.create AnimatedBundle FleetSoldierComplexHead1
+rem *** SHOULD BE UsFace.Ske on every nationality.
+ObjectTemplate.createSkeleton animations/UsFace.ske
+ObjectTemplate.geometry Soldier/FleetComplexHead1
+ObjectTemplate.hasDynamicShadow 1
+
+ObjectTemplate.create AnimatedBundle FleetSoldierComplexHead2
+rem *** SHOULD BE UsFace.Ske on every nationality.
+ObjectTemplate.createSkeleton animations/UsFace.ske
+ObjectTemplate.geometry Soldier/FleetComplexHead2
+ObjectTemplate.hasDynamicShadow 1
+
+ObjectTemplate.create AnimatedBundle FleetSoldierComplexHead3
+rem *** SHOULD BE UsFace.Ske on every nationality.
+ObjectTemplate.createSkeleton animations/UsFace.ske
+ObjectTemplate.geometry Soldier/FleetComplexHead3
+ObjectTemplate.hasDynamicShadow 1
+
+ObjectTemplate.create SimpleObject FleetSoldierHead
+ObjectTemplate.geometry Soldier/FleetHead
+ObjectTemplate.hasDynamicShadow 1
+
+ObjectTemplate.create SimpleObject Fleethelm
+ObjectTemplate.geometry Soldier/Fleethelm
+ObjectTemplate.hasDynamicShadow 1
+
+ObjectTemplate.create SimpleObject FleetSoldierLeftHand
+ObjectTemplate.geometry Soldier/FleetLeftHand
+
+ObjectTemplate.create SimpleObject FleetSoldierRightHand
+ObjectTemplate.geometry Soldier/FleetRightHand
+
+ObjectTemplate.create SimpleObject 1PFleetSoldierLeftHand
+ObjectTemplate.geometry Soldier/1PFleetLeftHand
+
+ObjectTemplate.create SimpleObject 1PFleetSoldierRightHand
+ObjectTemplate.geometry Soldier/1PFleetRightHand
+
+	

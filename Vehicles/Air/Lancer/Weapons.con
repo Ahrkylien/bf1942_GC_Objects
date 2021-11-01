@@ -1,0 +1,49 @@
+rem *** Lancer_Turbolaser ***
+ObjectTemplate.create FireArms Lancer_Turbolaser
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/LancerTurbolaserFire.ssc
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+rem -------------------------------------
+ObjectTemplate.projectileTemplate CapitalLaserProjectileGreenS
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 550
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 3.5
+ObjectTemplate.roundOfFire 2
+ObjectTemplate.fireingForce 1
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 800
+ObjectTemplate.distToMinDamage 1700
+
+rem *** Lancer_Turret_Lasers ***
+ObjectTemplate.create FireArms Lancer_Turret_Lasers
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/LancerTurretFire.ssc
+ObjectTemplate.aiTemplate SpitfireMachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzThomp
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileGreenS
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 700
+ObjectTemplate.reloadtime 0.0001
+ObjectTemplate.roundOfFire 5.3
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.01
+objectTemplate.coolDownPerSec 0.8
+objectTemplate.timeDelayOnOverHeat 2
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 200
+ObjectTemplate.distToMinDamage 500
+

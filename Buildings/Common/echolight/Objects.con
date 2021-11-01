@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject echolight
+ObjectTemplate.aiTemplate echolight
+ObjectTemplate.geometry echolight
+ObjectTemplate.setHasCollisionPhysics 1
+
+

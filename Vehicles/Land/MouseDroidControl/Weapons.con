@@ -1,0 +1,25 @@
+rem *** MouseDroid_Launcher ***
+ObjectTemplate.create FireArms MouseDroid_Launcher
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setAsynchronyFire 0
+ObjectTemplate.aiTemplate WasserFallLauncherWeapon
+ObjectTemplate.projectileTemplate MouseDroid
+ObjectTemplate.projectilePosition 0/0/0.67
+ObjectTemplate.visibleDummyProjectileTemplate MouseDroid_Dummy
+ObjectTemplate.setHasMag 1
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag -1
+ObjectTemplate.magType 0
+ObjectTemplate.velocity 0
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 60
+ObjectTemplate.roundOfFire 100000
+ObjectTemplate.fireingForce 0
+ObjectTemplate.disableWhenFired 1
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+
+ObjectTemplate.create SimpleObject MouseDroid_Dummy
+ObjectTemplate.geometry MouseDroid_M1
+ObjectTemplate.hasCollisionPhysics 1

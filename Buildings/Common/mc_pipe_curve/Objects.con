@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle mc_pipe_curve
+ObjectTemplate.geometry mc_pipe_curve
+objectTemplate.aiTemplate mc_pipe_curve
+ObjectTemplate.setHasCollisionPhysics 1

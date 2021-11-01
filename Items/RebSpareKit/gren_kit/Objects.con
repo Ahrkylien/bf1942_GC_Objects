@@ -1,0 +1,26 @@
+ObjectTemplate.create Kit gren_kit
+ObjectTemplate.setType Assault
+ObjectTemplate.setKitTeam 2
+
+ObjectTemplate.setHealthBarIcon "Ingame/reb_Healthbar_empty_assault_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/reb_Healthbar_full_assault_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/icon_alliesknife.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_dh-17"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_fragnade.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+
+ObjectTemplate.setKitIcon 1 "kits/Icon_assault_allies_selected.tga"
+ObjectTemplate.setKitName 1 "RESPAWN_ASSAULT"
+ObjectTemplate.setKitActiveName 1 "RESPAWN_ACTIVE_ASSAULT"
+
+ObjectTemplate.geometry Fragnade_m1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+
+ObjectTemplate.addTemplate DH-17
+ObjectTemplate.addTemplate KnifeAllies
+ObjectTemplate.addTemplate ConcussionGrenade
+ObjectTemplate.addTemplate NoChute
+
+ObjectTemplate.aitemplate Assault

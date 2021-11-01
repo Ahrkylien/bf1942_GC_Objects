@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle curve
+ObjectTemplate.geometry curve
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate curve

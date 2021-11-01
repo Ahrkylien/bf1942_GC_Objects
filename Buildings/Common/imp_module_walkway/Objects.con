@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject imp_module_walkway
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry imp_module_walkway
+objectTemplate.aiTemplate imp_module_walkway
+rem ---------------------------

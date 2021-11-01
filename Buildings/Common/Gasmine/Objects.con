@@ -1,0 +1,98 @@
+ObjectTemplate.create Bundle Gasmine
+ObjectTemplate.aiTemplate Gasmine
+ObjectTemplate.geometry Gasmine_Platform
+ObjectTemplate.setHasCollisionPhysics 1
+
+rem-------------------------------------------------
+
+rem *** Inner Ring ***
+ObjectTemplate.addTemplate Gasmine_Top
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Gasmine_Bottom
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Gasmine_Tank
+ObjectTemplate.setPosition 15.5702/0.181611/16.0125
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Gasmine_Tank
+ObjectTemplate.setPosition 22.2984/0.181611/0.356842
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Gasmine_Tank
+ObjectTemplate.setPosition 0.641408/0.181611/-22.3055
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Gasmine_Tank
+ObjectTemplate.setPosition -15.2926/0.181611/-16.296
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Gasmine_Tank
+ObjectTemplate.setPosition -22.3538/0.181611/-0.857386
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Gasmine_Tank
+ObjectTemplate.setPosition -15.8093/0.181611/15.7893
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Gasmine_Tank
+ObjectTemplate.setPosition -0.148245/0.181611/22.334
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Gasmine_Tank
+ObjectTemplate.setPosition 16.149/0.181611/-15.4547
+ObjectTemplate.setRotation 0/0/0
+
+rem *** Outer Ring ***
+
+ObjectTemplate.addTemplate Gasmine_Tank
+ObjectTemplate.setPosition 30.7391/0.181611/-12.0658
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Gasmine_Tank
+ObjectTemplate.setPosition 13.2109/0.181611/30.3741
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Gasmine_Tank
+ObjectTemplate.setPosition 30.3188/0.181611/12.9696
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Gasmine_Tank
+ObjectTemplate.setPosition -30.5324/0.181611/12.6187
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Gasmine_Tank
+ObjectTemplate.setPosition -11.9491/0.181611/30.8546
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Gasmine_Tank
+ObjectTemplate.setPosition -30.5706/0.181611/-12.431
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Gasmine_Tank
+ObjectTemplate.setPosition -12.1919/0.181611/-30.6701
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Gasmine_Tank
+ObjectTemplate.setPosition 12.8515/0.181611/-30.3948
+ObjectTemplate.setRotation 0/0/0
+
+rem-------------------------------------------------
+
+ObjectTemplate.create SimpleObject Gasmine_Top
+ObjectTemplate.aiTemplate Gasmine
+ObjectTemplate.geometry Gasmine_Top
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject Gasmine_Bottom
+ObjectTemplate.aiTemplate Gasmine
+ObjectTemplate.geometry Gasmine_Bottom
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject Gasmine_Tank
+ObjectTemplate.aiTemplate Gasmine
+ObjectTemplate.geometry Gasmine_Tank
+ObjectTemplate.setHasCollisionPhysics 1

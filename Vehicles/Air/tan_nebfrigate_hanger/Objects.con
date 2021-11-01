@@ -1,0 +1,164 @@
+rem *** nebb ***
+ObjectTemplate.create PlayerControlObject tan_nebfrigate_hanger
+ObjectTemplate.setNetworkableInfo NebulonB_Body_Info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.inertiaModifier 80000/5/80000
+ObjectTemplate.drag 5
+ObjectTemplate.mass 16000
+ObjectTemplate.explosionRadius 15
+ObjectTemplate.explosionDamage 10
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 50000
+ObjectTemplate.maxhitpoints 50000
+ObjectTemplate.speedMod .5
+ObjectTemplate.material 821
+rem -------------------------------------
+ObjectTemplate.addTemplate NebulonBComplex2
+rem -------------------------------------
+rem FighterSpawners
+rem -------------------------------------
+ObjectTemplate.addTemplate falconspawner2
+ObjectTemplate.setPosition 0/25.5/-42.27
+ObjectTemplate.setRotation 90/0/0
+
+ObjectTemplate.addTemplate runnerspawner2
+ObjectTemplate.setPosition 180/0/60
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate runnerspawner3
+ObjectTemplate.setPosition -90/91.331/66.508
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate alliedairplaneammo
+ObjectTemplate.setPosition 14/30.4274/63.4435
+ObjectTemplate.setRotation 0.0/0.0/0.0
+ObjectTemplate.addTemplate alliedairplaneammo
+ObjectTemplate.setPosition 14/30.6877/84.3139
+ObjectTemplate.setRotation 0.0/0.0/0.0
+ObjectTemplate.addTemplate NebulonBAWingspawner2
+ObjectTemplate.setPosition 12/30.6877/84.3139
+ObjectTemplate.setRotation 90.0/0.0/0.0
+ObjectTemplate.addTemplate NebulonBXWingspawner2
+ObjectTemplate.setPosition 14/30.4274/63.4435
+ObjectTemplate.setRotation 90.0/0.0/0.0
+rem ------------------------------------
+rem -------------------------------------
+ObjectTemplate.addTemplate NebulonBSoldierSpawn
+ObjectTemplate.setPosition 4.5/27/73.3872
+rem ------------------------------
+ObjectTemplate.setPcoId 0
+ObjectTemplate.addPcoPosId 1
+ObjectTemplate.setSoldierExitLocation 1.98027/29.5/91.5403 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_NebulonB.dds"
+ObjectTemplate.setVehicleIconPos 26/76
+ObjectTemplate.setNumberOfWeaponIcons 0
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_redlaser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABReloadBarOnly
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_NebulonB_16x16.tga"
+
+rem *** Complex ***
+ObjectTemplate.create Bundle NebulonBComplex2
+ObjectTemplate.setNetworkableInfo NebulonB_Body_Info
+ObjectTemplate.geometry NebulonBbody
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+rem ------------------------------------
+ObjectTemplate.addTemplate NebulonBCamera
+ObjectTemplate.setPosition -2.55/62/110
+ObjectTemplate.addTemplate NebulonBEntry
+ObjectTemplate.setPosition 1.98027/29.5/91.5403
+ObjectTemplate.addTemplate NebulonBSeat
+ObjectTemplate.setPosition -1.79015/29.5/117
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate NebulonBinsidespot
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------
+ObjectTemplate.addTemplate NebulonB_Turret_PCO1
+ObjectTemplate.addTemplate NebulonB_Turret_PCO2
+ObjectTemplate.addTemplate NebulonB_Turret_PCO3
+
+
+rem --------------------------------------- Create Spawners 
+
+rem *** Spawner ***
+ObjectTemplate.create ObjectSpawner NebulonBXWingspawner2
+ObjectTemplate.setObjectTemplate 1 rogue
+ObjectTemplate.setObjectTemplate 2 rogue
+ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 10
+ObjectTemplate.maxSpawnDelay 15
+ObjectTemplate.TimeToLive 30
+ObjectTemplate.Distance 20
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 6
+ObjectTemplate.damageWhenLost 10
+
+rem *** Spawner ***
+ObjectTemplate.create ObjectSpawner NebulonBAWingspawner2
+ObjectTemplate.setObjectTemplate 1 green
+ObjectTemplate.setObjectTemplate 2 green
+ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 10
+ObjectTemplate.maxSpawnDelay 15
+ObjectTemplate.TimeToLive 30
+ObjectTemplate.Distance 20
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 6
+ObjectTemplate.damageWhenLost 10
+
+
+*** Falcon Spawner ***
+ObjectTemplate.create ObjectSpawner falconspawner2
+ObjectTemplate.setObjectTemplate 1 MilleniumFalcon
+ObjectTemplate.setObjectTemplate 2 MilleniumFalcon
+ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 15
+ObjectTemplate.maxSpawnDelay 60
+ObjectTemplate.TimeToLive 30
+ObjectTemplate.Distance 20
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 10
+
+*** Runner Spawner ***
+ObjectTemplate.create ObjectSpawner runnerspawner2
+ObjectTemplate.setObjectTemplate 1 runner
+ObjectTemplate.setObjectTemplate 2 runner
+ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 90
+ObjectTemplate.maxSpawnDelay 130
+ObjectTemplate.TimeToLive 30
+ObjectTemplate.Distance 20
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+ObjectTemplate.teamOnVehicle 1
+
+*** Runner Spawner2 ***
+ObjectTemplate.create ObjectSpawner runnerspawner3
+ObjectTemplate.setObjectTemplate 1 runner2
+ObjectTemplate.setObjectTemplate 2 runner2
+ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 90
+ObjectTemplate.maxSpawnDelay 130
+ObjectTemplate.TimeToLive 30
+ObjectTemplate.Distance 20
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+ObjectTemplate.teamOnVehicle 1
+
+

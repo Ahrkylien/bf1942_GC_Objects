@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject dan_cliff1
+ObjectTemplate.geometry dan_cliff1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate dan_cliff1
+

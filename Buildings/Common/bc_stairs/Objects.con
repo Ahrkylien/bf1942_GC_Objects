@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject bc_stairs
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry bc_stairs
+objectTemplate.aiTemplate bc_stairs
+rem ---------------------------

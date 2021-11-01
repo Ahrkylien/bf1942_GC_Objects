@@ -1,0 +1,102 @@
+GeometryTemplate.create StandardMesh lambdabody_m1
+GeometryTemplate.file Vehicles/Lambda/lambda_body
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 150
+GeometryTemplate.setLodDistance 5 250
+
+GeometryTemplate.create StandardMesh lambdatopwing_m1
+GeometryTemplate.file Vehicles/Lambda/lambda_dorsal_wing
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 150
+GeometryTemplate.setLodDistance 5 250
+
+GeometryTemplate.create StandardMesh lambdahatch_m1
+GeometryTemplate.file Vehicles/Lambda/lambda_hatch
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 150
+GeometryTemplate.setLodDistance 5 250
+
+GeometryTemplate.create StandardMesh lambdaleftwing_m1
+GeometryTemplate.file Vehicles/Lambda/lambda_left_wing
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 150
+GeometryTemplate.setLodDistance 5 250
+
+GeometryTemplate.create StandardMesh lambdarightwing_m1
+GeometryTemplate.file Vehicles/Lambda/lambda_right_wing
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 150
+GeometryTemplate.setLodDistance 5 250
+
+GeometryTemplate.create StandardMesh lambdaleftgun_m1
+GeometryTemplate.file Vehicles/Lambda/lambda_left_gun
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 150
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 250
+
+GeometryTemplate.create StandardMesh lambdarightgun_m1
+GeometryTemplate.file Vehicles/Lambda/lambda_right_gun
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 150
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 250
+
+GeometryTemplate.create StandardMesh lambdabackgun_m1
+GeometryTemplate.file Vehicles/Lambda/lambda_back_gun
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 150
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 250
+
+GeometryTemplate.create StandardMesh lambda_left_gear_m1
+GeometryTemplate.file Vehicles/Lambda/lambda_left_gear
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 150
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 250
+
+GeometryTemplate.create StandardMesh lambda_right_gear_m1
+GeometryTemplate.file Vehicles/Lambda/lambda_right_gear
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 150
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 250
+
+GeometryTemplate.create StandardMesh lambdabody_l1
+GeometryTemplate.file Vehicles/Lambda/lambda_low
+ObjectTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_Lambda1_M1
+GeometryTemplate.file Vehicles/Lambda/Wreck_Lambda_Main
+
+

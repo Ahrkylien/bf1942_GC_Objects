@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject Barricade2
+ObjectTemplate.geometry Barricade2
+ObjectTemplate.setHasCollisionPhysics 1

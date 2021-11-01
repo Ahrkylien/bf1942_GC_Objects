@@ -1,0 +1,50 @@
+newPatch
+load @ROOT/Sound/@RTD/r5d4-repair.wav
+randomStartPitch 0.03 / 0.0
+minDistance 3
+volume .5
+priority -5
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 4
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/r5d4-repair.wav
+randomStartPitch 0.03 / 0.0
+minDistance 3
+volume .5
+priority -5
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 4
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/r5d4-repair.wav
+randomStartPitch 0.03 / 0.0
+minDistance 3
+volume .5
+priority -5
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 4
+	param 1
+	param -1	
+endEffect
+
+randomPlay 1

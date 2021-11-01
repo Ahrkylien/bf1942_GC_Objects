@@ -1,0 +1,5 @@
+ObjectTemplate.create AnimatedBundle com_table_anim
+ObjectTemplate.geometry com_table_anim
+ObjectTemplate.createSkeleton animations/holo.ske
+ObjectTemplate.setAnimationState dan_holo
+

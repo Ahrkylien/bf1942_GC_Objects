@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject echocontrolpanel3
+ObjectTemplate.aiTemplate echocontrolpanel3
+ObjectTemplate.geometry echocontrolpanel3
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.loadSoundScript Sounds/Ambient.ssc
+

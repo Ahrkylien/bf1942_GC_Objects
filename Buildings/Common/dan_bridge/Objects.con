@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject dan_bridge
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry dan_bridge
+objectTemplate.aiTemplate dan_bridge
+rem ---------------------------

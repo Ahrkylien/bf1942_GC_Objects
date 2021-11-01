@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle section2	
+ObjectTemplate.geometry section2
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate section2

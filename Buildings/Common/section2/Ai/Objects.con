@@ -1,0 +1,26 @@
+rem *** Plugins ***
+aiTemplatePlugIn.create Cover hangarCover
+aiTemplatePlugIn.coverValue 2.0
+
+aiTemplatePlugIn.create Physical hangarPhysical
+
+rem *** AITemplate ***
+aiTemplate.create hangar1_snow
+aiTemplate.addType ITCover
+aiTemplate.addType ITScaleRender
+aiTemplate.degeneration 1
+aiTemplate.allowedTimeDiff -1
+aiTemplate.basicTemp 1
+aiTemplate.commonKnowledge 1
+aiTemplate.addPlugIn hangarCover
+aiTemplate.addPlugIn hangarPhysical
+
+aiTemplate.create hangar2_snow
+aiTemplate.addType ITCover
+aiTemplate.addType ITScaleRender
+aiTemplate.degeneration 1
+aiTemplate.allowedTimeDiff -1
+aiTemplate.basicTemp 1
+aiTemplate.commonKnowledge 1
+aiTemplate.addPlugIn hangarCover
+aiTemplate.addPlugIn hangarPhysical

@@ -1,0 +1,2 @@
+NetworkableInfo.createNewInfo alpha_body_info
+NetworkableInfo.setPredictionMode PMLinear

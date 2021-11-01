@@ -1,0 +1,30 @@
+
+rem *** e_MuzzHeavy ***
+ObjectTemplate.create EffectBundle e_padredglow
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate em_redglow
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+
+rem *** em_MuzzHeavy_glow ***
+ObjectTemplate.create Emitter em_redglow
+ObjectTemplate.template fx_redglow
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0.2/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+ObjectTemplate.showInThirdPerson 1
+
+rem *** fx_MuzzHeavy_glow ***
+ObjectTemplate.create SpriteParticle fx_redglow
+rem ObjectTemplate.timeToLive CRD_NONE/0/0/0
+ObjectTemplate.size CRD_NONE/0.43/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.texture Effects/e_redglow
+ObjectTemplate.initRotation CRD_NONE/1/0/0
+ObjectTemplate.destBlendMode BMOne
+rem ObjectTemplate.colorRGBAOverTime 0/255/255/128/255|77/255/157/29/172|100/255/128/0/65
+
+

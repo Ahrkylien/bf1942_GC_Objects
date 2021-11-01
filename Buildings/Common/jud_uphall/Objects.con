@@ -1,0 +1,6 @@
+ObjectTemplate.create Bundle jud_uphall
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry jud_uphall
+objectTemplate.aiTemplate jud_uphall
+rem ---------------------------
+objectTemplate.loadSoundScript Sounds/ambient.ssc

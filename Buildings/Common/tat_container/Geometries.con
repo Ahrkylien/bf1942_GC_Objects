@@ -1,0 +1,10 @@
+
+GeometryTemplate.create StandardMesh tat_container_m1
+GeometryTemplate.file buildings/Tatooine/container02
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 2
+GeometryTemplate.setLodDistance 2 6
+GeometryTemplate.setLodDistance 3 10
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 500
+

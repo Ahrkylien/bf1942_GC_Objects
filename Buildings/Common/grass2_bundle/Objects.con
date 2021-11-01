@@ -1,0 +1,7 @@
+ObjectTemplate.create SimpleObject Grass2_bundle
+ObjectTemplate.aiTemplate Grass2_bundle
+ObjectTemplate.geometry Grass2_bundle
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setPosition 0/-1/0
+
+

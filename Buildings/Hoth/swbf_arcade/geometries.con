@@ -1,0 +1,7 @@
+GeometryTemplate.create StandardMesh swbf_arcade
+GeometryTemplate.file swbf_arcade
+GeometryTemplate.setLodDistance 0 0
+
+
+
+

@@ -1,0 +1,94 @@
+rem **** new chinlaserGun Code
+rem **** by Django 14.12.04
+rem **** asynchrony Fire and recoil ( recoil of right Gun Still buggy!)
+
+
+rem *** atatdeChinLaserGunL ***
+ObjectTemplate.create FireArms atatdeChinLaserGunL
+ObjectTemplate.geometry atatdeLchin
+ObjectTemplate.loadSoundScript Sounds/atatdeMainLaser.ssc
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+rem -------------------------------------
+ObjectTemplate.projectileTemplate StrongLaserProjectileRedS
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.magSize 10
+ObjectTemplate.numOfMag 100
+ObjectTemplate.velocity 300
+ObjectTemplate.fireOnce 1
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 4
+ObjectTemplate.roundOfFire 5
+ObjectTemplate.fireingForce 20
+ObjectTemplate.AmmoType	9
+ObjectTemplate.recoilSpeed 5
+ObjectTemplate.recoilSize 28
+ObjectTemplate.SetAsynchronyFire 1
+rem ObjectTemplate.setinputfire c_PIFire
+ObjectTemplate.addFireArmsPosition -0/0/5.5 0/0/0
+ObjectTemplate.addFireArmsPosition 3/0/5.5 0/0/0
+ObjectTemplate.EndEffectTemplate e_ExplDirt
+
+
+
+rem *** atatdeChinLaserGunR ***
+ObjectTemplate.create FireArms atatdeChinLaserGunR
+ObjectTemplate.geometry atatdeLchin
+rem ObjectTemplate.loadSoundScript Sounds/atatdeMainLaser.ssc
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+rem ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+rem -------------------------------------
+ObjectTemplate.projectileTemplate dummy_Projectile
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.magSize 10
+ObjectTemplate.numOfMag 100
+ObjectTemplate.velocity 300
+ObjectTemplate.fireOnce 1
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 4
+ObjectTemplate.roundOfFire 5
+ObjectTemplate.fireingForce 20
+ObjectTemplate.AmmoType	9
+ObjectTemplate.recoilSpeed 5
+ObjectTemplate.recoilSize 28
+rem ObjectTemplate.SetAsynchronyFire 1
+ObjectTemplate.addFireArmsPosition -0/0/5.5 0/0/0
+ObjectTemplate.addFireArmsPosition 3/0/5.5 0/0/0
+rem *** dummy_Projectile ***
+ObjectTemplate.Create Projectile dummy_Projectile
+
+
+rem *** atatdeSideLaserGun ***
+ObjectTemplate.create FireArms atatdeSideLasergun
+rem ObjectTemplate.create FireArms atatdeSideLasera
+ObjectTemplate.loadSoundScript Sounds/atatdeSideLaser.ssc
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.aiTemplate ATATCoPilotGunAI
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate atatde_MuzzHeavy
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileRedS
+ObjectTemplate.magSize 1000
+rem ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 700
+ObjectTemplate.reloadtime 0.00001
+ObjectTemplate.roundOfFire 3.7
+ObjectTemplate.SetAsynchronyFire 1
+ObjectTemplate.recoilSpeed 1
+ObjectTemplate.recoilSize 2
+ObjectTemplate.addFireArmsPosition -3.5/-0.5/1 0.7/0/0
+ObjectTemplate.addFireArmsPosition 3.5/-0.5/1 -0.7/0/0
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.05
+objectTemplate.coolDownPerSec 0.6
+objectTemplate.timeDelayOnOverHeat 3
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 250
+ObjectTemplate.distToMinDamage 500
+ObjectTemplate.AmmoType	8
+
+
+
+

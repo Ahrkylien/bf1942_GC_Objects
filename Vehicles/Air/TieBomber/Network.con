@@ -1,0 +1,9 @@
+NetworkableInfo.createNewInfo tiebomber_wing_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo tiebomber_engine_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo tiebomber_body_info
+NetworkableInfo.setPredictionMode PMLinear
+

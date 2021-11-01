@@ -1,0 +1,199 @@
+GeometryTemplate.create StandardMesh atatdeHead
+GeometryTemplate.file Vehicles/ATAT/atatde_head_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 80
+GeometryTemplate.setLodDistance 3 120
+GeometryTemplate.setLodDistance 4 160
+GeometryTemplate.setLodDistance 5 220
+
+
+GeometryTemplate.create StandardMesh footcrush
+GeometryTemplate.file Vehicles/ATAT/atatde_footcrush
+
+GeometryTemplate.create StandardMesh atatde_door_m1
+GeometryTemplate.file Vehicles/ATAT/atatde_door_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 80
+GeometryTemplate.setLodDistance 3 120
+GeometryTemplate.setLodDistance 4 160
+GeometryTemplate.setLodDistance 5 220
+
+GeometryTemplate.create StandardMesh atatdeHips
+GeometryTemplate.file Vehicles/ATAT/atatde_body_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 120
+GeometryTemplate.setLodDistance 4 160
+GeometryTemplate.setLodDistance 5 220
+
+GeometryTemplate.create StandardMesh footsegment
+GeometryTemplate.file Vehicles/ATAT/atatde_LFoot_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 120
+GeometryTemplate.setLodDistance 4 160
+GeometryTemplate.setLodDistance 5 220
+
+GeometryTemplate.create StandardMesh footsegmentr
+GeometryTemplate.file Vehicles/ATAT/atatde_RFoot_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 120
+GeometryTemplate.setLodDistance 4 160
+GeometryTemplate.setLodDistance 5 220
+
+
+GeometryTemplate.create StandardMesh legsegmentFL
+GeometryTemplate.file Vehicles/ATAT/atatde_legsegment
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 120
+GeometryTemplate.setLodDistance 4 160
+GeometryTemplate.setLodDistance 5 220
+
+GeometryTemplate.create StandardMesh legsegment2FL
+GeometryTemplate.file Vehicles/ATAT/atatde_legsegment2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 120
+GeometryTemplate.setLodDistance 4 160
+GeometryTemplate.setLodDistance 5 220
+
+GeometryTemplate.create StandardMesh legsegmentBL
+GeometryTemplate.file Vehicles/ATAT/atatde_legsegmentR
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 120
+GeometryTemplate.setLodDistance 4 160
+GeometryTemplate.setLodDistance 5 220
+
+GeometryTemplate.create StandardMesh legsegment2BL
+GeometryTemplate.file Vehicles/ATAT/atatde_legsegment2R
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 120
+GeometryTemplate.setLodDistance 4 160
+GeometryTemplate.setLodDistance 5 220
+
+GeometryTemplate.create StandardMesh legsegmentFR
+GeometryTemplate.file Vehicles/ATAT/atatde_legsegmentFR
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 120
+GeometryTemplate.setLodDistance 4 160
+GeometryTemplate.setLodDistance 5 220
+
+GeometryTemplate.create StandardMesh legsegment2FR
+GeometryTemplate.file Vehicles/ATAT/atatde_legsegment2FR
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 120
+GeometryTemplate.setLodDistance 4 160
+GeometryTemplate.setLodDistance 5 220
+
+
+GeometryTemplate.create StandardMesh legsegmentBR
+GeometryTemplate.file Vehicles/ATAT/atatde_legsegmentBR
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 120
+GeometryTemplate.setLodDistance 4 160
+GeometryTemplate.setLodDistance 5 220
+
+GeometryTemplate.create StandardMesh legsegment2BR
+GeometryTemplate.file Vehicles/ATAT/atatde_legsegment2BR
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 120
+GeometryTemplate.setLodDistance 4 160
+GeometryTemplate.setLodDistance 5 220
+
+
+GeometryTemplate.create StandardMesh atatdeRchin
+GeometryTemplate.file Vehicles/ATAT/atatde_LGun_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 80
+GeometryTemplate.setLodDistance 3 120
+GeometryTemplate.setLodDistance 4 160
+GeometryTemplate.setLodDistance 5 220
+
+GeometryTemplate.create StandardMesh atatdeLchin
+GeometryTemplate.file Vehicles/ATAT/atatde_LGun_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 80
+GeometryTemplate.setLodDistance 3 120
+GeometryTemplate.setLodDistance 4 160
+GeometryTemplate.setLodDistance 5 220
+
+
+GeometryTemplate.create StandardMesh atatdeSideLaser
+GeometryTemplate.file Vehicles/ATAT/atatde_sidelaser_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 80
+GeometryTemplate.setLodDistance 3 120
+GeometryTemplate.setLodDistance 4 160
+GeometryTemplate.setLodDistance 5 220
+
+GeometryTemplate.create StandardMesh atatde_Mgun_m1
+GeometryTemplate.file Vehicles/ATAT/atatde_Mgun_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 80
+GeometryTemplate.setLodDistance 3 120
+GeometryTemplate.setLodDistance 4 160
+GeometryTemplate.setLodDistance 5 220
+
+GeometryTemplate.create StandardMesh atatde_cockpit
+GeometryTemplate.file Vehicles/ATAT/atatde_cockpitn
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+
+GeometryTemplate.create StandardMesh atatde_Hull_L1
+GeometryTemplate.file Vehicles/ATAT/atatde_low
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 80
+GeometryTemplate.setLodDistance 3 120
+GeometryTemplate.setLodDistance 4 160
+GeometryTemplate.setLodDistance 5 220
+
+
+GeometryTemplate.create StandardMesh wreck_atatde_m1
+GeometryTemplate.file Vehicles/ATAT/wreck_atatde_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+
+
+GeometryTemplate.create StandardMesh ATATPilotHUD
+GeometryTemplate.file Vehicles/ATAT/AT-ATpilot_hud
+
+GeometryTemplate.create StandardMesh ATATGunnerHUD
+GeometryTemplate.file Vehicles/ATST/at-stgunner_hud
+
+
+GeometryTemplate.create StandardMesh wheel_m
+GeometryTemplate.file wheel_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+
+

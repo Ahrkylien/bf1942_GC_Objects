@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle tat_grainsilo
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry tat_grainsilo
+objectTemplate.aiTemplate tat_grainsilo
+rem ---------------------------

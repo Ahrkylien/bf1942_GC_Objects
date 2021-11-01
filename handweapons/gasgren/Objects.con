@@ -1,0 +1,127 @@
+ObjectTemplate.create HandFireArms gasgrenbase
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.itemIndex 4
+ObjectTemplate.projectileTemplate gasgrenProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 2
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+rem ObjectTemplate.altFireOnce 1
+ObjectTemplate.aiTemplate  SGrenadeAI
+ObjectTemplate.hasArmor 1
+ObjectTemplate.material 70
+ObjectTemplate.hitpoints 10000
+ObjectTemplate.maxhitpoints 10000
+ObjectTemplate.AmmoType	2
+ObjectTemplate.timetoNotAllowChange 0.4
+
+ObjectTemplate.autoReload 1
+ObjectTemplate.GUIIndex 13
+ObjectTemplate.setHudAmmoType ATIconAndStrengthBar
+objectTemplate.ammoIcon "Weapon/Icon_rebgasgren.dds"
+ObjectTemplate.crossHairType CHTIcon
+ObjectTemplate.hasMag 0
+
+ObjectTemplate.rotationalSpeed 0/0/0
+ObjectTemplate.velocity 20
+
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.hideDuringFireTime .2
+ObjectTemplate.fireDelay 1
+ObjectTemplate.soldierCameraPosition 0/-0.02/0
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+ObjectTemplate.velocityDependentOnHeat 1
+ObjectTemplate.heatAddWhenFire 0.03
+rem ObjectTemplate.coolDownPerSec 0.05
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+ObjectTemplate.createSkeleton animations/gasgren.ske
+ObjectTemplate.useSkeletonPartAsMain base
+ObjectTemplate.addTemplate gasgrenLod
+
+ObjectTemplate.loadSoundScript Sounds/cryoban.ssc
+
+ObjectTemplate.addTemplate e_SmokeGrenade1
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+
+rem
+rem ** SimpleObjects
+rem 
+ObjectTemplate.create AnimatedBundle gasgrenComplex
+ObjectTemplate.createSkeleton animations/gasgren.ske
+ObjectTemplate.geometry gasgren1
+
+ObjectTemplate.create SimpleObject gasgrenSimple
+ObjectTemplate.geometry gasgren1
+
+ObjectTemplate.create LodObject gasgrenLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate gasgrenComplex
+ObjectTemplate.addTemplate gasgrenSimple
+
+
+ObjectTemplate.create Projectile gasgrenProjectile
+ObjectTemplate.networkableInfo ProjectileInfo
+ObjectTemplate.alwaysUseComplexCollisionLod 1
+rem ObjectTemplate.loadSoundScript Sounds/Sgrenade_smoke.ssc
+ObjectTemplate.geometry gasgren1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------
+ObjectTemplate.addTemplate gasgrenblades
+ObjectTemplate.addTemplate e_SmokeGrenade3
+ObjectTemplate.addTemplate e_SmokeGrenade2
+rem -----------------------------
+ObjectTemplate.hasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisibleAtEndEffect 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitPoints 9999
+ObjectTemplate.maxHitPoints 9999
+ObjectTemplate.explosionDamage 0
+rem *** MattiasH doesn't permit random time on projectiles. ask him about this.
+ObjectTemplate.timeToLive CRD_NONE/26/0/0
+ObjectTemplate.useMMOnEndEffect 0
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.radius 1.0
+ObjectTemplate.damageType 0
+ObjectTemplate.material 70
+ObjectTemplate.material2 199
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.noFFSound 1
+ObjectTemplate.projectileType 4
+
+
+rem -----------------------------------------
+ObjectTemplate.create RotationalBundle gasgrenblades
+ObjectTemplate.setHasCollisionPhysics 1
+rem ---------------
+ObjectTemplate.addTemplate bladeobstical
+rem ---------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed -350/0/0
+ObjectTemplate.setAcceleration -45/0/0
+ObjectTemplate.setContinousRotationSpeed -350/0/0
+
+
+rem -------------------------------------------
+ObjectTemplate.create Obstacle bladeobstical
+ObjectTemplate.geometry gasgrenblades
+ObjectTemplate.createInvisible 1
+ObjectTemplate.hasMobilePhysics 1
+
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.AddToCollisionGroup c_CGLandscape
+ObjectTemplate.AddToCollisionGroup c_CGStaticObjects
+ObjectTemplate.AddToCollisionGroup c_CGProjectiles
+

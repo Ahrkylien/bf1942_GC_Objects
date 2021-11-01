@@ -1,0 +1,71 @@
+
+GeometryTemplate.create AnimatedMesh Soldier/1PMonLeftHand
+GeometryTemplate.setSkin animations/moncal_lhand.skn
+GeometryTemplate.file moncal_lhand
+
+GeometryTemplate.create AnimatedMesh Soldier/1PMonRightHand
+GeometryTemplate.setSkin animations/moncal_rhand.skn
+GeometryTemplate.file moncal_rhand
+
+
+GeometryTemplate.create AnimatedMesh Soldier/3PMonBody
+GeometryTemplate.setSkin animations/moncal_body.skn
+GeometryTemplate.file moncal_body
+GeometryTemplate.setLodRange 0 0 1 30 2 80
+GeometryTemplate.setLodRange 3 150 4 210 5 230
+GeometryTemplate.setLodPercent 0 1.0
+GeometryTemplate.setLodPercent 1 0.7
+GeometryTemplate.setLodPercent 2 0.3
+GeometryTemplate.setLodPercent 3 0.2
+GeometryTemplate.setLodPercent 4 0.1
+GeometryTemplate.setLodPercent 5 0.05
+
+GeometryTemplate.create AnimatedMesh Soldier/MonHead
+GeometryTemplate.setSkin animations/moncal_head.skn
+GeometryTemplate.file moncal_head
+GeometryTemplate.setLodRange 0 0 1 10 2 30
+GeometryTemplate.setLodRange 3 50 4 60 5 100
+GeometryTemplate.setLodPercent 0 1.0
+GeometryTemplate.setLodPercent 1 0.7
+GeometryTemplate.setLodPercent 2 0.3
+GeometryTemplate.setLodPercent 3 0.2
+GeometryTemplate.setLodPercent 4 0.1
+GeometryTemplate.setLodPercent 5 0.03
+
+GeometryTemplate.create AnimatedMesh Soldier/MonEyes
+GeometryTemplate.setSkin animations/moncal_eyes.skn
+GeometryTemplate.file moncal_eyes
+GeometryTemplate.setLodRange 0 0 1 10 2 30
+GeometryTemplate.setLodRange 3 50 4 60 5 100
+GeometryTemplate.setLodPercent 0 1.0
+GeometryTemplate.setLodPercent 1 0.7
+GeometryTemplate.setLodPercent 2 0.3
+GeometryTemplate.setLodPercent 3 0.2
+GeometryTemplate.setLodPercent 4 0.1
+GeometryTemplate.setLodPercent 5 0.03
+
+GeometryTemplate.create AnimatedMesh Soldier/MonLeftHand
+GeometryTemplate.setSkin animations/moncal_lhand.skn
+GeometryTemplate.file moncal_lhand
+GeometryTemplate.setLodRange 0 0 1 30 2 80
+GeometryTemplate.setLodRange 3 150 4 210 5 230
+GeometryTemplate.setLodPercent 0 1.0
+GeometryTemplate.setLodPercent 1 0.7
+GeometryTemplate.setLodPercent 2 0.3
+GeometryTemplate.setLodPercent 3 0.2
+GeometryTemplate.setLodPercent 4 0.1
+GeometryTemplate.setLodPercent 5 0.05
+
+GeometryTemplate.create AnimatedMesh Soldier/MonRightHand
+GeometryTemplate.setSkin animations/moncal_rhand.skn
+GeometryTemplate.file moncal_rhand
+GeometryTemplate.setLodRange 0 0 1 30 2 80
+GeometryTemplate.setLodRange 3 150 4 210 5 230
+GeometryTemplate.setLodPercent 0 1.0
+GeometryTemplate.setLodPercent 1 0.7
+GeometryTemplate.setLodPercent 2 0.3
+GeometryTemplate.setLodPercent 3 0.2
+GeometryTemplate.setLodPercent 4 0.1
+GeometryTemplate.setLodPercent 5 0.05
+
+

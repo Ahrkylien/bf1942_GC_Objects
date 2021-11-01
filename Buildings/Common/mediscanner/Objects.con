@@ -1,0 +1,22 @@
+rem
+rem *** mediscanner ***
+rem
+ObjectTemplate.create Bundle mediscanner
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry mediscanner
+ObjectTemplate.aiTemplate mediscanner
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+objectTemplate.loadSoundScript Sounds/Ambient.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate mediscannerRepairpoint
+ObjectTemplate.setPosition 0/0/0.5
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.create SupplyDepot mediscannerRepairpoint
+ObjectTemplate.radius 5
+ObjectTemplate.team 0
+ObjectTemplate.workOnVehicles 0
+ObjectTemplate.workOnSoldiers 1
+ObjectTemplate.setHealth -1 4.0 0
+objectTemplate.loadSoundScript Sounds/MediScanner.ssc

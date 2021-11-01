@@ -1,0 +1,26 @@
+rem *** ATSTDesertSideLaser ***
+ObjectTemplate.create FireArms ATSTDesertSideLaser
+ObjectTemplate.loadSoundScript Sounds/ATSTSideLaser.ssc
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.aiTemplate ShermanMainGun
+ObjectTemplate.geometry ATSTDesertRGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileRedNS
+ObjectTemplate.magSize 400
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 700
+ObjectTemplate.reloadtime 0.0001
+ObjectTemplate.roundOfFire 3.7
+ObjectTemplate.addFireArmsPosition 0/0/0.65 0/0/0
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.065
+objectTemplate.coolDownPerSec 0.6
+objectTemplate.timeDelayOnOverHeat 3
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 250
+ObjectTemplate.distToMinDamage 500
+ObjectTemplate.AmmoType	8

@@ -1,0 +1,6 @@
+ObjectTemplate.create Bundle tat_cantina
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry tat_cantina
+ObjectTemplate.loadSoundScript Sounds/Ambient.ssc
+objectTemplate.aiTemplate tat_cantina
+rem ---------------------------

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/TigerTower.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/TigerTower.ssc
+	
+#templateLevel LOW
+
+	#include Low/TigerTower.ssc

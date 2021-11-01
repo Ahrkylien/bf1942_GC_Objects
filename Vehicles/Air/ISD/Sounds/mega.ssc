@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/mega.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/mega.ssc
+	
+#templateLevel LOW
+
+	#include Low/mega.ssc

@@ -1,0 +1,8 @@
+NetworkableInfo.createNewInfo Slave1BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Slave1EngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Slave1WingInfo
+NetworkableInfo.setPredictionMode PMLinear

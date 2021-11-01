@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject dan_reb_pillar3
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry dan_reb_pillar3
+objectTemplate.aiTemplate dan_reb_pillar3
+rem ---------------------------

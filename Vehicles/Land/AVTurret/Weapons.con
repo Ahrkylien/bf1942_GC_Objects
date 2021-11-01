@@ -1,0 +1,19 @@
+rem *** AVTurretGunBarrel ***
+ObjectTemplate.create FireArms AVTurretGun
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/AVTurretFire.ssc
+ObjectTemplate.aiTemplate ShermanMainGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_muzzGun
+rem -------------------------------------
+ObjectTemplate.projectileTemplate StrongLaserProjectileRedS
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 700
+ObjectTemplate.reloadtime 7
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 0.75
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+
+

@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject ioncannon
+ObjectTemplate.aiTemplate ioncannon
+ObjectTemplate.geometry ioncannon
+ObjectTemplate.setHasCollisionPhysics 1
+
+

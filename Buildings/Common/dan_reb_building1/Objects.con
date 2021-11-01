@@ -1,0 +1,23 @@
+ObjectTemplate.create Bundle dan_reb_building1
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.addTemplate dan_building1
+ObjectTemplate.addTemplate canvas1solid
+ObjectTemplate.setPosition -2.276/2.369/0
+
+objectTemplate.aiTemplate dan_reb_building1
+
+rem ---------------------------
+
+ObjectTemplate.create AnimatedBundle canvas1
+ObjectTemplate.geometry canvas1
+ObjectTemplate.createSkeleton animations/canvas1.ske
+ObjectTemplate.setAnimationState canvas1wave
+ObjectTemplate.loadSoundScript Sounds/flag.ssc
+
+ObjectTemplate.create SimpleObject dan_building1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry dan_reb_building1
+
+ObjectTemplate.create SimpleObject canvas1solid
+ObjectTemplate.geometry canvas1solid

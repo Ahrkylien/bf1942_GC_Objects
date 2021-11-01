@@ -1,0 +1,5 @@
+rem *** Bird ***
+ObjectTemplate.create SimpleObject Bird
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.triggerRadius 100
+ObjectTemplate.loadSoundScript Sounds/Bird.ssc

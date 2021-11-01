@@ -1,0 +1,28 @@
+GeometryTemplate.create StandardMesh amphbody
+GeometryTemplate.file Vehicles/amph/amph_hull
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 500
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create StandardMesh Amph_Turbolaser_Barrel_M1
+GeometryTemplate.file Vehicles/amph/amph_tur_y
+
+GeometryTemplate.create StandardMesh Amph_Turbolaser_Base_M1
+GeometryTemplate.file Vehicles/amph/amph_tur_x
+
+GeometryTemplate.create StandardMesh amph_low
+GeometryTemplate.file Vehicles/amph/amph_hull
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 500
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create StandardMesh 1P_AmphGunnerHUD_M1
+GeometryTemplate.file Vehicles/amph/moncalamari_hud

@@ -1,0 +1,62 @@
+newPatch
+
+rem **** background noise ****
+
+load @ROOT/Sound/@RTD/capenginelancer.wav
+loop
+minDistance 75
+relativePosition  0/0/-25
+volume .6
+dopplerOff
+priority 5
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 100
+	param 1
+	param -1
+endEffect
+
+
+load @ROOT/Sound/@RTD/capenginelancer.wav
+loop
+minDistance 80
+relativePosition  1/5/60
+volume .5
+dopplerOff
+priority 4
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 100
+	param 1
+	param -1
+endEffect
+
+Rem ***Ambient Computer Noise ****
+
+
+load @ROOT/Sound/@RTD/ambient-scannerchatter.wav
+relativePosition  0/5/80
+loop
+minDistance 35
+volume .1
+priority -9
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 35
+	param 40
+	param 1
+	param -1
+endEffect

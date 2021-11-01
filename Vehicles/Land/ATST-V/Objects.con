@@ -1,0 +1,114 @@
+rem *** ATST ***
+ObjectTemplate.create PlayerControlObject ATST-V
+ObjectTemplate.NameTagOffset -0.3/-0.2/0
+ObjectTemplate.setNetworkableInfo ATSTBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.drag 5
+ObjectTemplate.mass 10000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.exitTimer 0.75
+ObjectTemplate.hitpoints 300
+ObjectTemplate.maxhitpoints 300
+ObjectTemplate.material 811
+ObjectTemplate.criticalDamage 12
+ObjectTemplate.hpLostWhileCriticalDamage 1.2
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.hpLostWhileUpSideDown 12
+ObjectTemplate.hpLostWhileDamageFromWater 12
+ObjectTemplate.addArmorEffect 24 e_WillyDamage 0/8.059/1.14512
+ObjectTemplate.addArmorEffect 12 e_WillyFire 0/8.059/1.14512
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_atst 0/8.059/1.14512
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/8.059/1.14512
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.aiTemplate Willy
+rem -------------------------------------
+ObjectTemplate.addTemplate lodATST-V
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.5/0/-0.8 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_atst.dds"
+ObjectTemplate.setVehicleIconPos 55/18
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bomb.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_at-st_16x16.dds"
+
+rem *** lodATST ***
+ObjectTemplate.create LodObject lodATST-V
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTComplex-V
+ObjectTemplate.addTemplate ATSTSimple
+ObjectTemplate.addTemplate ATSTWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector ATSTLodSelector
+
+rem *** ATSTComplex ***
+ObjectTemplate.create Bundle ATSTComplex-V
+ObjectTemplate.geometry ATSTHips
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTCockpit-V
+ObjectTemplate.setPosition 0/8.9059/1.14512
+ObjectTemplate.addTemplate ATSTEntry
+ObjectTemplate.setPosition -2/0/1
+ObjectTemplate.addTemplate ATSTEntry
+ObjectTemplate.setPosition -2/0/-1
+ObjectTemplate.addTemplate ATSTDummyEngine
+ObjectTemplate.setPosition 0/0.5/-0.25
+ObjectTemplate.addTemplate ATSTLLegRot1
+ObjectTemplate.setPosition -1.4272/6.9694/1.0835
+ObjectTemplate.setRotation 0/30.5/0
+ObjectTemplate.addTemplate ATSTRLegRot1
+ObjectTemplate.setPosition 1.4272/6.9694/1.0835
+ObjectTemplate.setRotation 0/30.5/0
+rem -------------------------------------
+
+rem *** ATSTCockpit ***
+ObjectTemplate.create RotationalBundle ATSTCockpit-V
+ObjectTemplate.setNetworkableInfo ATSTTurretInfo
+ObjectTemplate.loadSoundScript Sounds/ATSTHeadRotate.ssc
+ObjectTemplate.geometry ATSTHead
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTCamera
+ObjectTemplate.setPosition -0.4/1.15/1.67
+ObjectTemplate.addTemplate ATSTSeat
+ObjectTemplate.setPosition -0.4/0.7/1
+ObjectTemplate.addTemplate ATSTRocketLauncher
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate ATSTMainLaserBundle
+ObjectTemplate.setPosition 0/-0.633/1.3641
+ObjectTemplate.addTemplate ATSTLaserBarrel
+ObjectTemplate.setPosition -1.5238/0.3561/0.3561
+ObjectTemplate.addTemplate ATSTCoPilot
+ObjectTemplate.setPosition 1.59422/0.33462/0.66838
+ObjectTemplate.addTemplate ATSTHatchPCO
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -45/-20/0
+ObjectTemplate.setMaxRotation 45/40/0
+ObjectTemplate.setMaxSpeed 45/45/0
+ObjectTemplate.setAcceleration 1000/1000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY

@@ -1,0 +1,17 @@
+GeometryTemplate.create StandardMesh slave1body_m1
+GeometryTemplate.file Vehicles/Slave1/slave1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 140
+
+GeometryTemplate.create StandardMesh 1p_slave1cockpit_m1
+GeometryTemplate.file Vehicles/Slave1/slave1_cockpit
+
+GeometryTemplate.create StandardMesh Wreck_Slave1_M1
+GeometryTemplate.file Vehicles/Slave1/Wreck_Slave1
+
+

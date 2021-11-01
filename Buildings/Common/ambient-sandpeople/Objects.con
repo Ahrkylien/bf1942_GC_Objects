@@ -1,0 +1,29 @@
+ObjectTemplate.create PlayerControlObject ambient-sandpeople
+ObjectTemplate.setNetworkableInfo ambient-sandpeopleBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.hasResponsePhysics 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 20
+ObjectTemplate.maxhitpoints 20
+ObjectTemplate.criticalDamage 20
+ObjectTemplate.hpLostWhileCriticalDamage 1
+ObjectTemplate.material 810
+ObjectTemplate.addArmorEffect 0 e_sandpeople_random 0/0/0
+ObjectTemplate.timetoliveafterdeath 0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/0/0 0/0/0
+ObjectTemplate.setVehicleIconPos 45/76
+ObjectTemplate.setNumberOfWeaponIcons 0
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_noshow_16x16.dds"
+
+rem *** e_sandpeople_random ***
+ObjectTemplate.create EffectBundle e_sandpeople_random
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/sandpeople_random.ssc
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+rem -------------------------------------

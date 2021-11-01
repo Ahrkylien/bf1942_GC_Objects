@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject tan_isd_back
+ObjectTemplate.geometry tan_isd_back
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate tan_isd_front	
+

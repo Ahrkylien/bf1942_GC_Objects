@@ -1,0 +1,125 @@
+
+
+rem *** e_ExplCapShip ***
+ObjectTemplate.create EffectBundle e_ExplCapShip
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/ExplCapShip.ssc
+ObjectTemplate.timeToLive CRD_NONE/4/0/0
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_ExplCapShip
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate Em_ExplCapShip_flash
+ObjectTemplate.addTemplate Em_ExplCapShip_Cloud
+ObjectTemplate.addTemplate Em_ExplCapShip_Fire
+ObjectTemplate.addTemplate Em_ExplAni_Smoke
+ObjectTemplate.addTemplate Em_ExplCapShip_ShockW
+rem -------------------------------------
+
+
+rem *** Em_ExplCapShip ***
+ObjectTemplate.create Emitter Em_ExplCapShip
+ObjectTemplate.template Fx_ExplCapShip
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 7000
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/15/0/0
+ObjectTemplate.relativePositionInUp CRD_NONE/1/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+rem *** Fx_ExplCapShip ***
+ObjectTemplate.create SpriteParticle Fx_ExplCapShip
+ObjectTemplate.timeToLive CRD_NONE/2/2/0
+ObjectTemplate.size CRD_UNIFORM/6/8/0
+ObjectTemplate.gravityModifier CRD_NONE/-0.2/0/0
+ObjectTemplate.sizeOverTime 0/5.60045|3/10|100/10
+ObjectTemplate.texture e_explani06
+ObjectTemplate.initRotation CRD_UNIFORM/0/180/1
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.useMipMaps 0
+ObjectTemplate.rotationSpeed CRD_UNIFORM/0/30/1
+ObjectTemplate.rotationSpeedOverTime 0/0.209998|100/1
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/0|46/255/255/255/92|65/255/255/255/59|100/0/0/0/0
+ObjectTemplate.numAnimationFrames 16
+ObjectTemplate.initAnimationFrame CRD_NONE/8/0/0
+ObjectTemplate.animationSpeed CRD_NONE/70/0/0
+
+
+rem *** Em_ExplCapShip_flash ***
+ObjectTemplate.create Emitter Em_ExplCapShip_flash
+ObjectTemplate.template Fx_ExplCapShip_flash
+ObjectTemplate.lodDistance 9000
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/20/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+rem *** Fx_ExplCapShip_flash ***
+ObjectTemplate.create SpriteParticle Fx_ExplCapShip_flash
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.size CRD_NONE/11/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0.5/0/0
+ObjectTemplate.sizeOverTime 0/0|6/10|100/150
+ObjectTemplate.texture e_fire4
+ObjectTemplate.useMipMaps 0
+ObjectTemplate.initRotation CRD_NONE/1/0/0
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.colorRGBAOverTime 0/254/232/156/255|73/255/255/162/193|100/255/255/128/0
+
+
+rem *** Em_ExplCapShip_Cloud ***
+ObjectTemplate.create Emitter Em_ExplCapShip_Cloud
+ObjectTemplate.template Fx_ExplCapShip_Cloud
+ObjectTemplate.delay CRD_UNIFORM/0.1/0.2/0
+ObjectTemplate.timeToLive CRD_NONE/0.3/0/0
+ObjectTemplate.intensity CRD_NONE/20/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/8/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+rem *** Fx_ExplCapShip_Cloud ***
+ObjectTemplate.create SpriteParticle Fx_ExplCapShip_Cloud
+ObjectTemplate.timeToLive CRD_UNIFORM/2/2/0
+ObjectTemplate.size CRD_UNIFORM/10/7/0
+ObjectTemplate.gravityModifier CRD_NONE/-0.1/0.15/0
+ObjectTemplate.sizeOverTime 0/7.20115|28/13.5002|100/15.5003
+ObjectTemplate.texture e_muzs3_I
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.colorRGBAOverTime 0/37/36/24/124|27/139/125/101/90|100/181/167/147/0
+
+
+rem *** Em_ExplCapShip_Fire ***
+ObjectTemplate.create Emitter Em_ExplCapShip_Fire
+ObjectTemplate.template Fx_ExplCapShip_Fire
+ObjectTemplate.lodDistance 5000
+ObjectTemplate.timeToLive CRD_NONE/0.2/0/0
+ObjectTemplate.intensity CRD_NONE/30/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+rem *** Fx_ExplCapShip_Fire ***
+ObjectTemplate.create SpriteParticle Fx_ExplCapShip_Fire
+ObjectTemplate.timeToLive CRD_NONE/1/1/0
+ObjectTemplate.size CRD_NONE/2.2/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeOverTime 0/9.00082|58/16.1998|100/17.0998
+ObjectTemplate.gravityModifierOverTime 0/0.550005
+ObjectTemplate.texture e_fire1
+ObjectTemplate.initRotation CRD_UNIFORM/0/180/1
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_NONE/0/0/0
+ObjectTemplate.XYSizeRatioOverTime 0/0|13/8.99991|100/10
+ObjectTemplate.colorRGBAOverTime 0/104/79/60/248|15/102/78/59/210|100/95/75/56/0
+
+rem *** Em_ExplCapShip_ShockW ***
+ObjectTemplate.create Emitter Em_ExplCapShip_ShockW
+ObjectTemplate.template Fx_ExplCapShip_ShockW
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/15/0/0
+ObjectTemplate.relativePositionInUp CRD_UNIFORM/0/2/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+rem *** Fx_ExplCapShip_ShockW ***
+ObjectTemplate.create Particle Fx_ExplCapShip_ShockW
+ObjectTemplate.geometry shockwave_m1
+ObjectTemplate.timeToLive CRD_NONE/1.8/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeModifier 5/2/5
+ObjectTemplate.sizeOverTime 0/9.00296|100/30
+ObjectTemplate.gravityModifierOverTime 0/0.800195|73/5.91983|100/10
+ObjectTemplate.alphaOverTime 0/1|100/0

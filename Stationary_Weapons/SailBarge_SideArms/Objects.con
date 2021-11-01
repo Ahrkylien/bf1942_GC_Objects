@@ -1,0 +1,41 @@
+ObjectTemplate.create FireArms SailBarge_SideArms
+ObjectTemplate.setNetworkableInfo SailBarge_SideArms_Info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/SnowSpeederLaser1.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzHeavy
+ObjectTemplate.setPosition 0/0/1.5
+rem -------------------------------------
+ObjectTemplate.geometry imp_skiff_gun
+ObjectTemplate.aiTemplate Browning 
+ObjectTemplate.projectileTemplate MediumLaserProjectileGreenS
+ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.magSize -1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 0.1
+rem ObjectTemplate.recoilSpeed 50.0
+ObjectTemplate.roundOfFire 10
+rem ObjectTemplate.autoReload 1
+ObjectTemplate.addDevFire 0
+ObjectTemplate.velocity 600
+
+
+objectTemplate.heatAddWhenFire 0.1
+objectTemplate.coolDownPerSec 0.7
+objectTemplate.timeDelayOnOverHeat 0.2
+
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 400
+ObjectTemplate.distToMinDamage 700
+ObjectTemplate.AmmoType	10
+
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.1697/0.1258/-0.1248 -30/80/179
+ObjectTemplate.addSkeletonIK Bip01_L_Hand -0.1697/0.1258/-0.1248 30/-100/-179
+rem ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.12/0.08/-0.68 -30/80/90
+rem ObjectTemplate.addSkeletonIK Bip01_L_Hand -0.12/0.08/-0.68 30/-100/-90
+
+rem *** Sound Browning ***
+ObjectTemplate.loadSoundScript Sounds/SnowSpeederLaser1.ssc
+

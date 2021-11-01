@@ -1,0 +1,4 @@
+GeometryTemplate.create TreeMesh endfern1
+GeometryTemplate.file endfern1
+GeometryTemplate.billboard 1
+GeometryTemplate.billboardDistance 10

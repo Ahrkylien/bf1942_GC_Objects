@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject ewok_bridge4_corner
+ObjectTemplate.aiTemplate ewok_bridge4_corner
+ObjectTemplate.geometry ewok_bridge4_corner
+ObjectTemplate.setHasCollisionPhysics 1
+
+

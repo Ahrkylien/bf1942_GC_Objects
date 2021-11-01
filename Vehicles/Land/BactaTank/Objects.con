@@ -1,0 +1,82 @@
+rem *** bactatank ***
+ObjectTemplate.create PlayerControlObject bactatank
+ObjectTemplate.geometry bactatank
+ObjectTemplate.NameTagOffset 0/-0.6/2
+ObjectTemplate.setNetworkableInfo bactatankInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.hitpoints 30
+ObjectTemplate.maxhitpoints 30
+ObjectTemplate.material 801
+ObjectTemplate.criticalDamage 6
+ObjectTemplate.hpLostWhileCriticalDamage 0.3
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.addArmorEffect 12 e_Wreck1Smoke 0/1/0
+ObjectTemplate.addArmorEffect 6 e_bactatankFire 0/1/2.7
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate bactatank
+rem -------------------------------------
+ObjectTemplate.addTemplate bactatankComplex
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 1.9/0.25/-0.4 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_bactatank.dds"
+ObjectTemplate.setVehicleIconPos 50/50
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+
+rem *** lodbactatank ***
+ObjectTemplate.create LodObject lodbactatank
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate bactatankComplex
+rem -------------------------------------
+ObjectTemplate.lodSelector bactatankLodSelector
+
+rem *** bactatankComplex ***
+ObjectTemplate.create Bundle bactatankComplex
+ObjectTemplate.loadSoundScript Sounds/Ambient.ssc
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate bactatank_heal
+ObjectTemplate.setPosition 0/1.8/0
+ObjectTemplate.addTemplate bactatank_seat
+ObjectTemplate.setPosition 0/1.8/0
+ObjectTemplate.addTemplate bactatank_camera
+ObjectTemplate.setPosition 0/1.8/0
+ObjectTemplate.setRotation 60/0/0
+ObjectTemplate.addTemplate bactatank_entry
+ObjectTemplate.setPosition 1.33/0.18/-0.3
+ObjectTemplate.addTemplate bactatank_entry
+ObjectTemplate.setPosition -1.7/1/1
+ObjectTemplate.addTemplate bactatank_entry
+ObjectTemplate.setPosition 0.4/1/1.9
+rem -------------------------------------
+
+rem *** bactatank_heal ***
+ObjectTemplate.create SupplyDepot bactatank_heal
+ObjectTemplate.radius 0.5
+ObjectTemplate.team 0
+ObjectTemplate.setHealth -1 4.0 0
+
+rem *** bactatank_seat ***
+ObjectTemplate.create SeatObject bactatank_seat
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+rem *** bactatank_camera ***
+ObjectTemplate.create Camera bactatank_camera
+
+rem *** bactatank_entry ***
+ObjectTemplate.create EntryPoint bactatank_entry
+ObjectTemplate.setEntryRadius 2

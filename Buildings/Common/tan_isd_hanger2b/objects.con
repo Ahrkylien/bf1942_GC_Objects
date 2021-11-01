@@ -1,0 +1,6 @@
+ObjectTemplate.create Bundle tan_isd_hanger2b
+ObjectTemplate.geometry tan_isd_hanger2
+ObjectTemplate.setHasCollisionPhysics 1
+
+objectTemplate.aiTemplate tan_isd_hanger2
+

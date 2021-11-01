@@ -1,0 +1,104 @@
+
+
+ObjectTemplate.create KitPart Imp_AT_Backpack
+ObjectTemplate.geometry Imp_AT_Backpack
+ObjectTemplate.setBoneName backpack
+ObjectTemplate.setCopyLinksCount 0
+
+ObjectTemplate.create ActiveKitPart NoChute
+ObjectTemplate.setBoneName backpack
+ObjectTemplate.setCopyLinksCount 0
+ObjectTemplate.OverrideAirMovementInhibitations 1
+
+ObjectTemplate.create KitPart reb_scoutpack
+ObjectTemplate.geometry reb_scoutpack
+ObjectTemplate.setBoneName backpack
+ObjectTemplate.setCopyLinksCount 0
+
+ObjectTemplate.create KitPart reb_backpack
+ObjectTemplate.geometry reb_backpack
+ObjectTemplate.setBoneName backpack
+ObjectTemplate.setCopyLinksCount 0
+
+ObjectTemplate.create KitPart imp_backpack
+ObjectTemplate.geometry imp_backpack
+ObjectTemplate.setBoneName backpack
+ObjectTemplate.setCopyLinksCount 0
+
+ObjectTemplate.create KitPart Reb_AT_Backpack
+ObjectTemplate.geometry Reb_AT_Backpack
+ObjectTemplate.setBoneName backpack
+ObjectTemplate.setCopyLinksCount 0
+
+ObjectTemplate.create KitPart Reb_AT_Visor
+ObjectTemplate.geometry Reb_AT_Visor
+ObjectTemplate.setBoneName A
+ObjectTemplate.setCopyLinksCount 0
+
+rem ---------------------------------------------------------------------
+ObjectTemplate.create ActiveKitPart Sprint
+ObjectTemplate.geometry rebel_scout_mesh
+ObjectTemplate.setBoneName A
+ObjectTemplate.setCopyLinksCount 0
+ObjectTemplate.setActiveAcceleration  0/0/90
+ObjectTemplate.setPassiveAcceleration 0/0/0
+ObjectTemplate.setInAirAnimOverride GrenadeAxisFire
+ObjectTemplate.burstFrequency 30
+rem ObjectTemplate.Damping 0.0
+ObjectTemplate.setTrigger PIUse
+ObjectTemplate.addToNegativeMask Climbing
+ObjectTemplate.addToNegativeMask Crouching
+ObjectTemplate.addToNegativeMask Swiming
+ObjectTemplate.addToNegativeMask Lying
+
+ObjectTemplate.ActiveHeatIncrement 0.80
+rem ** I think PassiveHeatIncrement should be kept to 0.0 **
+ObjectTemplate.PassiveHeatIncrement 0.0
+ObjectTemplate.CoolingFactor 0.05
+ObjectTemplate.ActiveEffectPersistancePerFrame 0
+rem ObjectTemplate.loadSoundScript Sounds/RocketPack.ssc
+rem ObjectTemplate.setInAirAnims Lb_RocketeeringIdle Empty
+ObjectTemplate.OverrideAirMovementInhibitations 0
+rem --------------------------------------------------------------------
+
+ObjectTemplate.create ActiveKitPart Sprint2
+ObjectTemplate.geometry Empire_scout_mesh
+ObjectTemplate.setBoneName "Bip01 R UpperArm"
+ObjectTemplate.setCopyLinksCount 0
+ObjectTemplate.setActiveAcceleration  0/0/90
+ObjectTemplate.setPassiveAcceleration 0/0/0
+ObjectTemplate.setInAirAnimOverride GrenadeAxisFire
+ObjectTemplate.burstFrequency 30
+rem ObjectTemplate.Damping 0.0
+ObjectTemplate.setTrigger PIUse
+ObjectTemplate.addToNegativeMask Climbing
+ObjectTemplate.addToNegativeMask Crouching
+ObjectTemplate.addToNegativeMask Swiming
+ObjectTemplate.addToNegativeMask Lying
+
+ObjectTemplate.ActiveHeatIncrement 0.80
+rem ** I think PassiveHeatIncrement should be kept to 0.0 **
+ObjectTemplate.PassiveHeatIncrement 0.0
+ObjectTemplate.CoolingFactor 0.05
+ObjectTemplate.ActiveEffectPersistancePerFrame 0
+rem ObjectTemplate.loadSoundScript Sounds/RocketPack.ssc
+rem ObjectTemplate.setInAirAnims Lb_RocketeeringIdle Empty
+ObjectTemplate.OverrideAirMovementInhibitations 0
+
+
+rem**************************************************************
+rem Yes these two are backwards named. When I made the .sms, I was 
+rem apparently unconcious. Rather than importing and exporting again
+rem I swaped the geomotry calls here. 
+
+ObjectTemplate.create KitPart Empire_Medic_Belt
+ObjectTemplate.geometry Rebel_Medic_Sack
+ObjectTemplate.setBoneName HipPack
+ObjectTemplate.setCopyLinksCount 0
+
+ObjectTemplate.create KitPart Rebel_Medic_Sack
+ObjectTemplate.geometry Empire_Medic_Belt
+ObjectTemplate.setBoneName backpack
+ObjectTemplate.setCopyLinksCount 0
+rem ****************************************************************
+

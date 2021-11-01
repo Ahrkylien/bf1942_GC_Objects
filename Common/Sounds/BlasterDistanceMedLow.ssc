@@ -1,0 +1,6 @@
+#####################
+### MG distance 1 ###
+#####################
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+randomPlay 1

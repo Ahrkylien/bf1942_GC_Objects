@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/ShermanCannon.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/ShermanCannon.ssc
+	
+#templateLevel LOW
+
+	#include Low/ShermanCannon.ssc

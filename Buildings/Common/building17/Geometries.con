@@ -1,0 +1,10 @@
+
+GeometryTemplate.create StandardMesh building17
+GeometryTemplate.file buildings/building17
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 300
+GeometryTemplate.setLodDistance 3 400
+GeometryTemplate.setLodDistance 4 500
+GeometryTemplate.setLodDistance 5 900
+

@@ -1,0 +1,203 @@
+rem *** Imperial Landing Craft Physics***
+rem *** March 25th 04 ***
+rem *** Revision 1 ***
+
+rem ---------------- Forward Engine -----------------------
+
+rem *** Imperial_LandingCraftengineforward ***
+ObjectTemplate.create engine Imperial_LandingCraftEngineForward
+ObjectTemplate.setNetworkableInfo Imperial_LandingCraftEngineInfo
+ObjectTemplate.loadSoundScript Sounds/LanderEngine2.ssc
+rem ---------------------------------------
+ObjectTemplate.addTemplate Imperial_LandingCraft_wing_right_rot
+ObjectTemplate.setPosition 11.006/2.517/-22.236
+ObjectTemplate.setRotation 0.0/0.0/14.0
+ObjectTemplate.addTemplate Imperial_LandingCraft_wing_left_rot
+ObjectTemplate.setPosition -11.006/2.517/-22.236
+ObjectTemplate.setRotation 0.0/0.0/-14.0
+ObjectTemplate.addTemplate Imperial_LandingCraft_door_leftbot_rot
+ObjectTemplate.setPosition -12.633/-1.433/0.171
+ObjectTemplate.setRotation 0.0/0.0/121.0
+ObjectTemplate.addTemplate Imperial_LandingCraft_door_rightbot_rot
+ObjectTemplate.setPosition 12.633/-1.433/0.171
+ObjectTemplate.setRotation 0.0/0.0/-121.0
+ObjectTemplate.addTemplate Imperial_LandingCraft_door_fronttop_rot
+ObjectTemplate.setPosition 0.0/-0.717/15.226
+ObjectTemplate.setRotation 0.0/30.0/0.0
+ObjectTemplate.addTemplate Imperial_LandingCraft_lgear_rot1
+ObjectTemplate.setPosition -8.065/0/6.638
+ObjectTemplate.addTemplate Imperial_LandingCraft_lgear_rot1
+ObjectTemplate.setPosition 8.065/0/6.638
+ObjectTemplate.addTemplate Imperial_LandingCraft_lgear_rot1
+ObjectTemplate.setPosition -8.065/0/-6.132
+ObjectTemplate.addTemplate Imperial_LandingCraft_lgear_rot1
+ObjectTemplate.setPosition 8.065/0/-6.132
+rem ---------------------------------------
+ObjectTemplate.setMinRotation -0.3/0/0
+ObjectTemplate.setMaxRotation 0.3/0/5000
+ObjectTemplate.setMaxSpeed 3700/0/1700
+ObjectTemplate.setAcceleration 1700/0/7700
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 65
+ObjectTemplate.setDifferential 8
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+
+
+
+rem -------------- VTOL EngineRack ----------------
+
+rem *** Imperial_LandingCraftVTOLEngine ***
+ObjectTemplate.create Engine Imperial_LandingCraftVTOLEngine
+ObjectTemplate.setNetworkableInfo Imperial_LandingCraftEngineInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/900
+ObjectTemplate.setAcceleration 0/0/-5000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 50
+ObjectTemplate.setDifferential 5
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+
+rem *** Imperial_LandingCraftVTOLRack ***
+ObjectTemplate.create RotationalBundle Imperial_LandingCraftVTOLRack
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Imperial_LandingCraftVTOLEngine
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-30/-20
+ObjectTemplate.setMaxRotation 0/30/20
+ObjectTemplate.setMaxSpeed 0/50/1500
+ObjectTemplate.setAcceleration 0/100/150
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setInputToRoll c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+
+rem -------------- Springs ----------------
+
+rem *** Imperial_LandingCraft_support ***
+ObjectTemplate.create spring Imperial_LandingCraft_support
+ObjectTemplate.geometry Imperial_LandingCraft_lgear
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+ObjectTemplate.setStrength 15
+ObjectTemplate.setDamping 10
+ObjectTemplate.createInvisible 1
+
+rem ---------------- Wings ----------------
+
+rem *** Imperial_LandingCraftFlapLeftMiddle ***
+ObjectTemplate.create Wing Imperial_LandingCraftFlapLeftMiddle
+ObjectTemplate.setNetworkableInfo Imperial_LandingCraftWingInfo
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/40/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPitchOffset 0.5
+rem ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setFlapLift 5
+ObjectTemplate.setRegulateToLift 4.90
+ObjectTemplate.setWingToRegulatorRatio 1
+
+rem *** Imperial_LandingCraftFlapLeftOuter ***
+ObjectTemplate.create Wing Imperial_LandingCraftFlapLeftOuter
+ObjectTemplate.setNetworkableInfo Imperial_LandingCraftWingInfo
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/150/0
+ObjectTemplate.setAcceleration 0/-150/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0.5
+rem ObjectTemplate.setPositionOffset 1.5/0/-0.4
+ObjectTemplate.setWingLift 5
+ObjectTemplate.setFlapLift 5
+
+rem *** Imperial_LandingCraftFlapRightMiddle ***
+ObjectTemplate.create Wing Imperial_LandingCraftFlapRightMiddle
+ObjectTemplate.setNetworkableInfo Imperial_LandingCraftWingInfo
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/40/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPitchOffset 0.5
+rem ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setFlapLift 5
+ObjectTemplate.setRegulateToLift 4.90
+ObjectTemplate.setWingToRegulatorRatio 1
+
+
+rem *** Imperial_LandingCraftFlapRightOuter ***
+ObjectTemplate.create Wing Imperial_LandingCraftFlapRightOuter
+ObjectTemplate.setNetworkableInfo Imperial_LandingCraftWingInfo
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/150/0
+ObjectTemplate.setAcceleration 0/150/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0.5
+rem ObjectTemplate.setPositionOffset -1.5/0/-0.4
+ObjectTemplate.setWingLift 5
+ObjectTemplate.setFlapLift 5
+
+rem *** Imperial_LandingCraftFlapTailLeft ***
+ObjectTemplate.create Wing Imperial_LandingCraftFlapTailLeft
+ObjectTemplate.setNetworkableInfo Imperial_LandingCraftWingInfo
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/-60/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+rem ObjectTemplate.setPositionOffset 0.5/0/0
+ObjectTemplate.setWingLift 5
+ObjectTemplate.setFlapLift 5
+
+rem *** Imperial_LandingCraftFlapTailRight ***
+ObjectTemplate.create Wing Imperial_LandingCraftFlapTailRight
+ObjectTemplate.setNetworkableInfo Imperial_LandingCraftWingInfo
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/-60/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+rem ObjectTemplate.setPositionOffset -0.5/0/0
+ObjectTemplate.setWingLift 5
+ObjectTemplate.setFlapLift 5
+
+rem *** Imperial_LandingCraftRudder ***
+ObjectTemplate.create Wing Imperial_LandingCraftRudder
+ObjectTemplate.setNetworkableInfo Imperial_LandingCraftWingInfo
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/60/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+rem ObjectTemplate.setPositionOffset 0/-0.5/0
+ObjectTemplate.setWingLift 5
+ObjectTemplate.setFlapLift 5
+
+rem *** Imperial_LandingCraftBodyWingVertical ***
+ObjectTemplate.create Wing Imperial_LandingCraftBodyWingVertical
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setWingLift 2
+ObjectTemplate.setFlapLift 0
+
+rem ---------------- Floaters ----------------
+
+ObjectTemplate.create FloatingBundle Imperial_LandingCraftFloater
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.setHullHeight 1
+ObjectTemplate.setDragModifier 15000
+ObjectTemplate.setFloatMaxLift 3
+ObjectTemplate.setFloatMinLift 3

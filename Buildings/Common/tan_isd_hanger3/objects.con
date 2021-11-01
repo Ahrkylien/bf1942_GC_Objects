@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle tan_isd_hanger3
+ObjectTemplate.geometry tan_isd_hanger3
+
+
+objectTemplate.aiTemplate tan_isd_hanger3

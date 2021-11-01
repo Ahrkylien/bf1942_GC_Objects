@@ -1,0 +1,42 @@
+ObjectTemplate.create PlayerControlObject CammoPlace
+ObjectTemplate.setSoldierExitLocation 0/.5/0 0/0/0
+ObjectTemplate.networkableInfo cammo_BodyInfo
+ObjectTemplate.aiTemplate DefgunAI
+ObjectTemplate.geometry Cammo
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.drag 1.6
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.explosionForceDamage 0
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.HasArmor 1
+ObjectTemplate.HitPoints 5
+ObjectTemplate.MaxHitPoints 5
+ObjectTemplate.Material 801
+ObjectTemplate.setVehicleIcon "Vehicle/icon_eweb.dds"
+ObjectTemplate.setVehicleIconPos 96/25
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_noshow_16x16"
+objectTemplate.criticalDamage 2
+ObjectTemplate.hpLostWhileDamageFromWater 20
+ObjectTemplate.drag .01
+ObjectTemplate.inertiaModifier 0/0/0
+ObjectTemplate.mass 3000
+ObjectTemplate.criticalDamage 1
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_willy 0/0/0
+ObjectTemplate.setVehicleCategory Land
+ObjectTemplate.setVehicleType  AAGun
+rem --------------------------------------------
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.addTemplate STOPENGINE
+ObjectTemplate.setPosition 0/0/0
+

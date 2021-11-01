@@ -1,0 +1,15 @@
+GeometryTemplate.create StandardMesh destroyableSG
+GeometryTemplate.file Vehicles/DestroyableSG/destroyableSG
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 1500
+
+GeometryTemplate.create StandardMesh DestroyableSGwreck
+GeometryTemplate.file Vehicles/DestroyableSG/destroyableSGwreck
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100

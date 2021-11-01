@@ -1,0 +1,49 @@
+newPatch
+###########
+### Far ###
+###########
+load @ROOT/Sound/@RTD/bactatank-stereo.wav
+minDistance 1
+volume 0.8
+relativePosition 0/1.8/0
+stereo
+loop
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0.1
+	param 0.5
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/bactatank-mono.wav
+loop
+volume 1
+relativePosition 0/1.8/0
+minDistance 10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0.4
+	param 0.5
+	param 0
+	param 1	
+endEffect
+priority -5
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0.5
+	param 10
+	param 1
+	param -1	
+endEffect
+priority -5

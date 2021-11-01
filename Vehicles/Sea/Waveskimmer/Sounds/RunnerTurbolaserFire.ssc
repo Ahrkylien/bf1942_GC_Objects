@@ -1,0 +1,52 @@
+newPatch
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+################
+### Distance ###
+################
+load @ROOT/Sound/@RTD/runner-turbolaser-stereo.wav
+relativePosition 0/0/-10.6
+minDistance 12
+stereo
+dopplerOff
+priority 8
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 12
+	param 12
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/runner-turbolaser-mono.wav
+minDistance 10
+priority 9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 12
+	param 12
+	param 0
+	param 1	
+endEffect
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 150
+	param 350
+	param 1
+	param -1	
+endEffect

@@ -1,0 +1,8 @@
+NetworkableInfo.createNewInfo I.M.D.STurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo I.M.D.SCameraInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo I.M.D.SBodyInfo
+NetworkableInfo.setPredictionMode PMLinear

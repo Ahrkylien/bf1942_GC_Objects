@@ -1,0 +1,25 @@
+NetworkableInfo.createNewInfo atatdeBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo atatdelegInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo atatdePassengerInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo atatdeEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo atatdeSteeringInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo atatdeDoorInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+
+rem NetworkableInfo.createNewInfo atatdeLadderInfo
+rem NetworkableInfo.setPredictionMode PMLinear
+
+rem NetworkableInfo.createNewInfo atatdeSpringInfo
+rem NetworkableInfo.setPredictionMode PMLinear

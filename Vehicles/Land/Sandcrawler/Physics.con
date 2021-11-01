@@ -1,0 +1,78 @@
+rem *** SandcrawlerEngine ***
+ObjectTemplate.create Engine SandcrawlerEngine
+ObjectTemplate.setNetworkableInfo SandcrawlerEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/SandcrawlerEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate SandcrawlerTrackL
+ObjectTemplate.setPosition -7.7/-3.85/-11.4
+ObjectTemplate.addTemplate SandcrawlerTrackR
+ObjectTemplate.setPosition 9.6/-3.85/-11.4
+ObjectTemplate.addTemplate SandcrawlerTrackL
+ObjectTemplate.setPosition -3.6/-3.85/-11.4
+ObjectTemplate.addTemplate SandcrawlerTrackR
+ObjectTemplate.setPosition 5.5/-3.85/-11.4
+ObjectTemplate.addTemplate SandcrawlerTrackL
+ObjectTemplate.setPosition -7.7/-3.85/11.4
+ObjectTemplate.addTemplate SandcrawlerTrackR
+ObjectTemplate.setPosition 9.6/-3.85/11.4
+ObjectTemplate.addTemplate SandcrawlerTrackL
+ObjectTemplate.setPosition -3.6/-3.85/11.4
+ObjectTemplate.addTemplate SandcrawlerTrackR
+ObjectTemplate.setPosition 5.5/-3.85/11.4
+
+ObjectTemplate.addTemplate SandcrawlerWheel
+ObjectTemplate.setPosition -9/-4.45/14
+ObjectTemplate.addTemplate SandcrawlerWheel
+ObjectTemplate.setPosition 9/-4.45/14
+ObjectTemplate.addTemplate SandcrawlerWheel
+ObjectTemplate.setPosition -9/-4.45/-14
+ObjectTemplate.addTemplate SandcrawlerWheel
+ObjectTemplate.setPosition 9/-4.45/-14
+ObjectTemplate.addTemplate SandcrawlerWheel
+ObjectTemplate.setPosition -9/-4.45/9
+ObjectTemplate.addTemplate SandcrawlerWheel
+ObjectTemplate.setPosition 9/-4.45/9
+ObjectTemplate.addTemplate SandcrawlerWheel
+ObjectTemplate.setPosition -9/-4.45/-9
+ObjectTemplate.addTemplate SandcrawlerWheel
+ObjectTemplate.setPosition 9/-4.45/-9
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 2/0/4
+ObjectTemplate.setAcceleration 2/0/4
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 8.0
+ObjectTemplate.setDifferential 5.0
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+
+rem *** SandcrawlerWheel ***
+ObjectTemplate.create Spring SandcrawlerWheel
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Sandcrawler_Wheel_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 4
+ObjectTemplate.setDamping 1
+ObjectTemplate.createInvisible 1
+
+rem *** SandcrawlerWheelR3Dummy ***
+ObjectTemplate.create Spring SandcrawlerWheelDummy
+ObjectTemplate.geometry Sandcrawler_Wheel_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+

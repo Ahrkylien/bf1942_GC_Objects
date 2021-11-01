@@ -1,0 +1,26 @@
+
+rem *** Turret_Lasers ***
+ObjectTemplate.create FireArms Wave_Turret_Lasers
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/RunnerTurretFire.ssc
+ObjectTemplate.aiTemplate SpitfireMachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzThomp
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileGreenNS
+ObjectTemplate.magSize 500
+ObjectTemplate.ammotype 10
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 550
+ObjectTemplate.reloadtime 0.0001
+ObjectTemplate.roundOfFire 4.5
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 5
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition -3.7/0/0 0/0/0
+
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 100
+ObjectTemplate.distToMinDamage 200

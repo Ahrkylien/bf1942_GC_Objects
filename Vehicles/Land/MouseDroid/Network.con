@@ -1,0 +1,8 @@
+NetworkableInfo.createNewInfo MouseDroid_engine_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo MouseDroid_body_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo MouseDroid_weapon_info
+NetworkableInfo.setPredictionMode PMLinear

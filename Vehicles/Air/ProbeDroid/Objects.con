@@ -1,0 +1,141 @@
+rem *** probedroid ***
+ObjectTemplate.create PlayerControlObject probedroid
+ObjectTemplate.LoadSoundScript Sounds/ProbeDroidSound.ssc
+ObjectTemplate.NameTagOffset 0/-0.3/0
+ObjectTemplate.setNetworkableInfo probedroidBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.exitTimer 2
+ObjectTemplate.drag 10
+ObjectTemplate.gravityModifier 1
+ObjectTemplate.mass 1000
+ObjectTemplate.inertiaModifier 0/0/0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.vehicleFOV 1.8
+ObjectTemplate.destroyOnExit 1
+ObjectTemplate.hitpoints 20
+ObjectTemplate.maxhitpoints 20
+ObjectTemplate.material 801
+ObjectTemplate.criticalDamage 4
+ObjectTemplate.hpLostWhileCriticalDamage 0.4
+ObjectTemplate.hpLostWhileUpSideDown 4
+ObjectTemplate.hpLostWhileDamageFromWater 4
+ObjectTemplate.addArmorEffect 5 em_B17Damage 0/0/0
+ObjectTemplate.addArmorEffect 4 em_PlaneDamage 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplodeGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodprobedroid
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.5/-0.5/0 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_probedroid.dds"
+ObjectTemplate.setVehicleIconPos 64/32
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTFighter
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_probedroid_16x16.dds"
+ObjectTemplate.sonarPos 1
+rem ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+rem *** lodprobedroid***
+ObjectTemplate.create LodObject lodprobedroid
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate probedroidComplex
+ObjectTemplate.addTemplate probedroidWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector probedroidLodSelector
+
+rem *** probedroidSimple ***
+ObjectTemplate.create Bundle probedroidSimple
+ObjectTemplate.geometry probedroid_m1
+ObjectTemplate.geometry probedroidhead_m1
+
+rem *** probedroidLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 probedroidLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+
+rem *** probedroidWreck ***
+ObjectTemplate.create SimpleObject probedroidWreck
+ObjectTemplate.geometry probedroidwreck_m1
+
+rem *** probedroidComplex ***
+ObjectTemplate.create RotationalBundle probedroidComplex
+ObjectTemplate.setNetworkableInfo probedroidBodyInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.geometry probedroid_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate probedroidHead
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate probedroidEntry
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate probedroid_engine
+ObjectTemplate.setPosition 0/1.3/0
+ObjectTemplate.addTemplate probedroid_engine_updown
+ObjectTemplate.setPosition 0/1.3/0
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate probedroidFloat
+ObjectTemplate.setRotation 0/1.3/0
+ObjectTemplate.addTemplate probedroidWheel
+ObjectTemplate.setRotation 0/-0.1/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 100/100/0
+ObjectTemplate.setAcceleration 200/-200/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** probedroidHead ***
+ObjectTemplate.create RotationalBundle probedroidHead
+ObjectTemplate.setNetworkableInfo probedroidBodyInfo
+ObjectTemplate.geometry probedroidhead_m1
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.loadSoundScript Sounds/ProbeDroidRotate.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate probedroidGun
+ObjectTemplate.setposition 0.29/1.63/0.5
+ObjectTemplate.addTemplate probedroidsonar
+ObjectTemplate.setPosition 0/1.63/0.59
+ObjectTemplate.addTemplate probedroidCamera
+ObjectTemplate.setPosition 0/1.63/0.59
+ObjectTemplate.addTemplate probedroidSpy
+ObjectTemplate.setPosition 0.29/1.63/0.5
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 100/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** probedroidEntry ***
+ObjectTemplate.create EntryPoint probedroidEntry
+ObjectTemplate.setEntryRadius 0
+
+rem *** probedroidCamera ***
+ObjectTemplate.create Camera probedroidCamera
+
+rem *** probedroidSonar ***
+ObjectTemplate.create SonarObject probedroidSonar
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.detectionRadius 450.0
+ObjectTemplate.enableRadarMode 1
+ObjectTemplate.scanForEnemySonars c_True
+ObjectTemplate.loadSoundScript Sounds/radar.ssc

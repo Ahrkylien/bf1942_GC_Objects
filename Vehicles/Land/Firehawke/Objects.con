@@ -1,0 +1,271 @@
+
+
+rem *** Firehawke ***
+
+ObjectTemplate.create PlayerControlObject Firehawke
+ObjectTemplate.setNetworkableInfo FirehawkeBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 4
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.drag 1.5
+ObjectTemplate.mass 3500
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.1
+ObjectTemplate.hitpoints 90
+ObjectTemplate.maxhitpoints 90
+ObjectTemplate.material 831
+ObjectTemplate.criticalDamage 12
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 6
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 50 e_PanzDamage 0/1/-1.6
+ObjectTemplate.addArmorEffect 12 e_PanzFire 0/1/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodFirehawke
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1.92/3.3 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_firehawke.dds"
+ObjectTemplate.setVehicleIconPos 42/87
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bomb.dds"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_firehawke_16x16.dds"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** lod ***
+ObjectTemplate.create LodObject lodFirehawke
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Firehawke_Complex
+ObjectTemplate.addTemplate Firehawke_Simple
+ObjectTemplate.addTemplate Firehawke_Wreck
+rem -------------------------------------
+ObjectTemplate.lodSelector FirehawkeLodSelector
+
+
+rem *** Assault_TankComplex ***
+ObjectTemplate.create Bundle Firehawke_Complex
+ObjectTemplate.geometry firehawke_hull
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Firehawke_Entry
+ObjectTemplate.setPosition -2/0/1
+ObjectTemplate.addTemplate Firehawke_Entry
+ObjectTemplate.setPosition 2/0/1
+
+ObjectTemplate.addTemplate Firehawke_Engine
+
+ObjectTemplate.addTemplate Firehawke_MainGun
+ObjectTemplate.setPosition 1.44671e-007/1.38554/-3.30969
+
+ObjectTemplate.addTemplate Firehawke_GunnerPCO
+
+rem -------------------------------------------------------------
+
+rem ---------------------------------------------------------------------
+
+rem *** Assault_TankEntry ***
+ObjectTemplate.create EntryPoint Firehawke_Entry
+ObjectTemplate.setEntryRadius 3.5
+
+
+rem *** MainGun ***
+ObjectTemplate.create RotationalBundle Firehawke_MainGun
+ObjectTemplate.setNetworkableInfo FirehawkeTurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/ATSTHeadRotate.ssc
+ObjectTemplate.geometry firehawke_mgun_xrot
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Firehawke_GunBase
+ObjectTemplate.setPosition 0.0/0.586245/1.12307
+rem -------------------------------------
+ObjectTemplate.setMinRotation -145/0/0
+ObjectTemplate.setMaxRotation 145/0/0
+ObjectTemplate.setMaxSpeed 20/20/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** GunBase ***
+ObjectTemplate.create RotationalBundle Firehawke_GunBase
+ObjectTemplate.setNetworkableInfo FirehawkeGunInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/ATSTHeadRotate.ssc
+ObjectTemplate.geometry firehawke_mgun_yrot
+rem -------------------------------------
+ObjectTemplate.addTemplate Firehawke_GunBarrel
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate Firehawke_Camera
+ObjectTemplate.setPosition 0/1.5/0.8
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 15/15/0
+ObjectTemplate.setAcceleration 0/1000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** lodCockpit ***
+ObjectTemplate.create LodObject lodFirehawkeCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate Firehawke_External
+ObjectTemplate.addTemplate Firehawke_Internal
+rem -------------------------------------
+ObjectTemplate.lodSelector FirehawkecockpitSelector
+
+
+rem *** CockpitExternal ***
+ObjectTemplate.create SimpleObject Firehawke_External
+ObjectTemplate.geometry firehawke_mgun_recoil
+
+
+rem *** CockpitInternal ***
+ObjectTemplate.create SimpleObject Firehawke_Internal
+ObjectTemplate.geometry firehawke_mgun_recoil
+
+
+rem *** cockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector FirehawkecockpitSelector
+LodSelectorTemplate.addLodDistance 1
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** Camera ***
+ObjectTemplate.create Camera Firehawke_Camera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem ----------------------------------------
+
+rem *** PCO ***
+ObjectTemplate.create PlayerControlObject Firehawke_GunnerPCO
+ObjectTemplate.setNetworkableInfo FirehawkeBodyInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Firehawke_Entry
+ObjectTemplate.setPosition 2/0/1
+ObjectTemplate.addTemplate Firehawke_Entry
+ObjectTemplate.setPosition -2/0/1
+ObjectTemplate.addTemplate Firehawke_PCOGunBaseX
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1.92/3.3 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_firehawke.dds"
+ObjectTemplate.setVehicleIconPos 46/79
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_greenlaser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_firehawke_16x16.dds"
+
+rem *** PCO GunBaseX ***
+ObjectTemplate.create RotationalBundle Firehawke_PCOGunBaseX
+ObjectTemplate.setNetworkableInfo FirehawkeTurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/ATSTHeadRotate.ssc
+ObjectTemplate.geometry firehawke_sgun_xrot
+rem -------------------------------------
+ObjectTemplate.addTemplate Firehawke_PCOGunBase
+ObjectTemplate.setPosition 0.0/1.61529/-0.103355
+rem -------------------------------------
+ObjectTemplate.setMinRotation -110/0/0
+ObjectTemplate.setMaxRotation 110/0/0
+ObjectTemplate.setMaxSpeed 15/15/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** PCO GunBaseY ***
+ObjectTemplate.create RotationalBundle Firehawke_PCOGunBase
+ObjectTemplate.setNetworkableInfo FirehawkeGunInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/ATSTHeadRotate.ssc
+ObjectTemplate.geometry firehawke_sgun_yrot
+rem -------------------------------------
+ObjectTemplate.addTemplate Firehawke_SGun
+ObjectTemplate.setPosition 0/0/5
+ObjectTemplate.addTemplate LancerGunnerCamera
+ObjectTemplate.setPosition 0/0/4
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 15/15/0
+ObjectTemplate.setAcceleration 0/1000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem ------------------------------
+
+rem *** FrontWheelR ***
+ObjectTemplate.create RotationalBundle FHFrontWheelR
+ObjectTemplate.setNetworkableInfo FHSteeringInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate FHFrontSpringR
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -30/0/0
+ObjectTemplate.setMaxRotation 30/0/0
+ObjectTemplate.setMaxSpeed 200/0/0
+ObjectTemplate.setAcceleration 200/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** FrontWheelL ***
+ObjectTemplate.create RotationalBundle FHFrontWheelL
+ObjectTemplate.setNetworkableInfo FHSteeringInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate FHFrontSpringL
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -30/0/0
+ObjectTemplate.setMaxRotation 30/0/0
+ObjectTemplate.setMaxSpeed 200/0/0
+ObjectTemplate.setAcceleration 200/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+rem -----------------------------------------
+
+rem *** Simple ***
+ObjectTemplate.create SimpleObject Firehawke_Simple
+ObjectTemplate.geometry firehawke_L1
+
+rem *** Wreck ***
+ObjectTemplate.create SimpleObject firehawke_Wreck
+ObjectTemplate.geometry Wreck_firehawke
+
+rem *** LodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 FirehawkeLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 500

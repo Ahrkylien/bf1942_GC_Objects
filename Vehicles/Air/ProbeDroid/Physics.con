@@ -1,0 +1,62 @@
+rem *** probedroid_engine ***
+ObjectTemplate.create Engine probedroid_engine
+ObjectTemplate.setNetworkableInfo probedroidEngineInfo
+ObjectTemplate.loadSoundScript Sounds/ProbeDroidEngine.ssc
+ObjectTemplate.setMinRotation 0/0/-50
+ObjectTemplate.setMaxRotation 0/0/50
+ObjectTemplate.setMaxSpeed 0/0/100
+ObjectTemplate.setAcceleration 0/0/1000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 10000
+ObjectTemplate.setDifferential 2
+
+rem *** probedroid_engine_updown ***
+ObjectTemplate.create Engine probedroid_engine_updown
+ObjectTemplate.setNetworkableInfo probedroidEngineInfo
+ObjectTemplate.setMinRotation 0/0/-5
+ObjectTemplate.setMaxRotation 0/0/5
+ObjectTemplate.setMaxSpeed 0/0/10
+ObjectTemplate.setAcceleration 0/0/10000
+ObjectTemplate.setInputToRoll c_PIMouseLookY
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 10
+ObjectTemplate.setDifferential 1
+
+rem *** probedroid_engine_strafe ***
+ObjectTemplate.create Engine probedroid_engine_strafe
+ObjectTemplate.setNetworkableInfo probedroidEngineInfo
+ObjectTemplate.setMinRotation 0/0/-1
+ObjectTemplate.setMaxRotation 0/0/1
+ObjectTemplate.setMaxSpeed 0/0/10
+ObjectTemplate.setAcceleration 0/0/1000
+ObjectTemplate.setInputToRoll c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 10
+ObjectTemplate.setDifferential 10
+
+rem *** probedroidWheel ***
+ObjectTemplate.create Spring probedroidWheel
+ObjectTemplate.geometry corsair_Rwheel_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+ObjectTemplate.setStrength 40
+ObjectTemplate.setDamping 12
+
+ObjectTemplate.create FloatingBundle probedroidFloat
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.setHullHeight 300000
+ObjectTemplate.setFloatMaxLift 9.81
+ObjectTemplate.setFloatMinLift 9.81
+ObjectTemplate.setDragModifier 0  
+ObjectTemplate.setMinRotation 0/1/0
+ObjectTemplate.setMaxRotation 0/1/0
+ObjectTemplate.setMaxSpeed 0/10/0
+ObjectTemplate.setAcceleration 0/1000/0
+ObjectTemplate.setInputToPitch 0
+ObjectTemplate.setAutomaticReset 0

@@ -1,0 +1,167 @@
+rem *** green awing ***
+ObjectTemplate.create PlayerControlObject Green
+ObjectTemplate.setNetworkableInfo green_body_info
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 0.1
+ObjectTemplate.mass 2500
+ObjectTemplate.inertiaModifier 1/1/1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.hitpoints 65
+ObjectTemplate.maxhitpoints 65
+ObjectTemplate.material 801
+ObjectTemplate.criticalDamage 13
+ObjectTemplate.hpLostWhileCriticalDamage 0.65
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.hpLostWhileUpSideDown 6.5
+ObjectTemplate.hpLostWhileDamageFromWater 6.5
+ObjectTemplate.addArmorEffect 65 e_engineAWing -1.55/0/-3.1
+ObjectTemplate.addArmorEffect 65 e_engineAWing 1.55/0/-3.1
+
+ObjectTemplate.addArmorEffect 40 em_PlaneDamage 1.55/0/-2.2
+ObjectTemplate.addArmorEffect 40 e_engineAWing -1.55/0/-3.1
+ObjectTemplate.addArmorEffect 40 e_engineAWing 1.55/0/-3.1
+
+ObjectTemplate.addArmorEffect 26 em_StukaDamage 1.55/0/-2.2
+ObjectTemplate.addArmorEffect 26 em_PlaneDamage -1.55/0/-2.2
+ObjectTemplate.addArmorEffect 26 e_engineAWing -1.55/0/-3.1
+ObjectTemplate.addArmorEffect 26 e_engineAWing 1.55/0/-3.1
+
+ObjectTemplate.addArmorEffect 13 e_StukaFire 1.55/0/-2.2
+
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_AWing 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate awing
+rem -------------------------------------
+ObjectTemplate.addTemplate lodgreen
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -3.5/0/0 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_awing.dds"
+ObjectTemplate.setVehicleIconPos 64/53
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_missile_concussion.dds"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_laser_64x64.tga"
+ObjectTemplate.setSecondaryAmmoBar ABHeatBarOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTFighter
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_awing_16x16.dds"
+ObjectTemplate.sonarPos 1
+
+rem *** lodgreen ***
+ObjectTemplate.create LodObject lodgreen
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate greenComplex
+ObjectTemplate.addTemplate greenSimple
+ObjectTemplate.addTemplate greenWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector greenLodSelector
+
+rem *** greenComplex ***
+ObjectTemplate.create Bundle greenComplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodgreenCockpit
+ObjectTemplate.addTemplate MFSonar
+ObjectTemplate.addTemplate AWingEntry
+ObjectTemplate.setPosition 0/0/-0.5
+ObjectTemplate.addTemplate AWingCamera
+ObjectTemplate.setPosition 0/0.83/0.08
+ObjectTemplate.addTemplate AWingSeat
+ObjectTemplate.setPosition 0/0.5/0.05
+ObjectTemplate.addTemplate AWingConcussionMissile
+ObjectTemplate.setPosition 0/0/5.1
+ObjectTemplate.addTemplate AWingLasers
+ObjectTemplate.addTemplate WaterBounce 
+ObjectTemplate.setPosition 0/1.0/6.0
+ObjectTemplate.addTemplate WaterBounce
+ObjectTemplate.setPosition 0/1.0/-1.5
+ObjectTemplate.addTemplate RollWheelBundle
+ObjectTemplate.setPosition 2/-1.8/4.5
+ObjectTemplate.addTemplate RollWheelBundle
+ObjectTemplate.setPosition -2/-1.8/4.5
+ObjectTemplate.addTemplate DummyWheel
+ObjectTemplate.setPosition 3/-1.8/-3.5
+ObjectTemplate.addTemplate DummyWheel
+ObjectTemplate.setPosition -3/-1.8/-3.5
+ObjectTemplate.addTemplate AWingVTOLEngineRack
+ObjectTemplate.setPosition 4.5/1.5/4.5
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate AWingVTOLEngineRack
+ObjectTemplate.setPosition 4.5/1.5/-4.5
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate AWingVTOLEngineRack
+ObjectTemplate.setPosition -4.5/1.5/4.5
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate AWingVTOLEngineRack
+ObjectTemplate.setPosition -4.5/1.5/-4.5
+ObjectTemplate.setRotation 0/-90/0
+
+ObjectTemplate.addTemplate AWingWing_L
+ObjectTemplate.setPosition -2.736/-0.216/-0.699
+ObjectTemplate.setRotation 13/0/-9.498
+ObjectTemplate.addTemplate AWingWing_R
+ObjectTemplate.setPosition 2.741/-0.216/-0.699
+ObjectTemplate.setRotation -12.998/0/9
+ObjectTemplate.addTemplate AWingRollWing_L
+ObjectTemplate.setPosition -5.357/0/0.048
+ObjectTemplate.setRotation 18.4/0/-8.999
+ObjectTemplate.addTemplate AWingRollWing_R
+ObjectTemplate.setPosition 5.362/0/0.048
+ObjectTemplate.setRotation -18.399/0/9.5
+ObjectTemplate.addTemplate AWingPitchWing_L
+ObjectTemplate.setPosition -1.263/0.8/-5.877
+ObjectTemplate.setRotation 0/-1.7/0
+ObjectTemplate.addTemplate AWingPitchWing_R
+ObjectTemplate.setPosition 1.266/0.8/-5.877
+ObjectTemplate.setRotation 0/-1.7/0
+ObjectTemplate.addTemplate AWingYawWing
+ObjectTemplate.setPosition 0/1.088/-6.067
+ObjectTemplate.setRotation 0/0/-89.998
+ObjectTemplate.addTemplate AWingBodyWingVertical
+ObjectTemplate.setRotation 0/0/-89.999
+ObjectTemplate.addTemplate AWingEngine
+ObjectTemplate.setPosition 0/0.5/4
+
+rem *** lodgreenCockpit ***
+ObjectTemplate.create LodObject lodgreenCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate greenCockpitExternal
+ObjectTemplate.addTemplate AWingCockpitInternal
+ObjectTemplate.setPosition 0/-0.05/0.3
+rem -------------------------------------
+ObjectTemplate.lodSelector AWingCockpitSelector
+
+rem *** greenCockpitExternal ***
+ObjectTemplate.create SimpleObject greenCockpitExternal
+ObjectTemplate.geometry tan_AWing_Fuselage_M1
+
+rem *** greenSimple ***
+ObjectTemplate.create SimpleObject greenSimple
+ObjectTemplate.geometry tan_AWing_Fuselage_L1
+
+rem *** greenWreck ***
+ObjectTemplate.create SimpleObject greenWreck
+ObjectTemplate.geometry Wreck_Null
+
+rem *** greenLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 greenLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 200
+
+

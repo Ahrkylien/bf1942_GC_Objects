@@ -1,0 +1,466 @@
+rem *** spacetur ***
+ObjectTemplate.create PlayerControlObject I3satellite
+ObjectTemplate.setNetworkableInfo spaceturBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 210
+ObjectTemplate.maxhitpoints 210
+ObjectTemplate.material 821
+ObjectTemplate.criticalDamage 20
+ObjectTemplate.hpLostWhileCriticalDamage 0.5
+rem ObjectTemplate.addArmorEffect 9 e_Wreck1Smoke 0/2/0
+rem ObjectTemplate.addArmorEffect 0 e_scrapmetal_awing 0/2/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/10/0
+ObjectTemplate.aiTemplate apturret
+ObjectTemplate.timetoliveafterdeath 1
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate lodspacetur
+ObjectTemplate.setSoldierExitLocation 2/2.5/0 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_spacetur.dds"
+ObjectTemplate.setVehicleIconPos 20/10
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory Land
+ObjectTemplate.setVehicleType AAGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+rem -------------------------------------
+ObjectTemplate.addTemplate spaceturImpSpawn1
+ObjectTemplate.setPosition 0/5.0/0
+rem ------------------------------
+
+
+rem *** lod ***
+ObjectTemplate.create LodObject lodspacetur
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate spaceturComplex
+ObjectTemplate.addTemplate spaceturSimple
+rem -------------------------------------
+ObjectTemplate.lodSelector lodspaceturSelector
+
+rem *** Simple ***
+ObjectTemplate.create SimpleObject spaceturSimple
+ObjectTemplate.geometry spacetur
+ObjectTemplate.cullRadiusScale 8
+
+rem *** Complex ***
+ObjectTemplate.create Bundle spaceturComplex
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 0
+ObjectTemplate.geometry spacetur
+ObjectTemplate.cullRadiusScale 4
+rem -------------------------------------
+ObjectTemplate.addTemplate spaceturEntry
+ObjectTemplate.setPosition 0/5.0/0
+ObjectTemplate.addTemplate spaceGunner
+ObjectTemplate.setPosition 0/4.87/0
+ObjectTemplate.addTemplate TLGunnerPCO2
+ObjectTemplate.addTemplate TLGunnerPCO3
+ObjectTemplate.addTemplate spaceturEPspawner
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0.0/90/0.0
+ObjectTemplate.addTemplate MFSonar
+rem -------------------------------------
+
+
+rem *** PCO ***
+ObjectTemplate.create PlayerControlObject TLGunnerPCO2
+ObjectTemplate.setNetworkableInfo spaceturBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate spaceGunner
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate spaceturEntry
+ObjectTemplate.setPosition 0/5.0/0
+ObjectTemplate.addTemplate MFSonar
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 2/2.5/0 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_spacetur.dds"
+ObjectTemplate.setVehicleIconPos 20/30
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory Land
+ObjectTemplate.setVehicleType AAGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+
+
+rem *** PCO ***
+ObjectTemplate.create PlayerControlObject TLGunnerPCO3
+ObjectTemplate.setNetworkableInfo spaceturBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate spaceGunner
+ObjectTemplate.setPosition 0/-4.63/0
+ObjectTemplate.addTemplate spaceturEntry
+ObjectTemplate.setPosition 0/5.0/0
+ObjectTemplate.addTemplate MFSonar
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 2/2.5/0 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_spacetur.dds"
+ObjectTemplate.setVehicleIconPos 20/50
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory Land
+ObjectTemplate.setVehicleType AAGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+
+
+
+rem *** TurboLaserEntry ***
+ObjectTemplate.create EntryPoint spaceturEntry
+ObjectTemplate.setEntryRadius 1
+
+rem *** TurboLaserHead ***
+ObjectTemplate.create RotationalBundle spaceGunner
+ObjectTemplate.setNetworkableInfo spaceturTurretInfo
+ObjectTemplate.geometry spacetur_xrot
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.hasResponsePhysics 0
+ObjectTemplate.loadSoundScript Sounds/TurboLaserRotate.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate spaceturBarrel
+ObjectTemplate.setPosition 0/0/4.40
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 180/0/0
+ObjectTemplate.setAcceleration 660/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** Barrel ***
+ObjectTemplate.create RotationalBundle spaceturBarrel
+ObjectTemplate.setNetworkableInfo spaceturTurretInfo
+ObjectTemplate.geometry spacetur_yrot
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.hasResponsePhysics 0
+ObjectTemplate.loadSoundScript Sounds/TurboLaserRotate.ssc
+rem**********************
+ObjectTemplate.addTemplate spaceturCamera
+ObjectTemplate.setPosition 0/0.05/1.5
+ObjectTemplate.setRotation 0.0/0.0/0.0
+ObjectTemplate.addTemplate spaceturGun
+ObjectTemplate.setPosition 0/0/1.16
+rem**********************
+ObjectTemplate.setMinRotation 0/-70/0
+ObjectTemplate.setMaxRotation 0/70/0
+ObjectTemplate.setMaxSpeed 0/200/0
+ObjectTemplate.setAcceleration 0/700/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** Camera ***
+ObjectTemplate.create Camera spaceturCamera
+ObjectTemplate.addTemplate lodI3GunnerHUD
+ObjectTemplate.setPosition 0/0/0.3
+
+rem *** lodRunnerGunnerHUD ***
+ObjectTemplate.create LodObject lodI3GunnerHUD
+rem -------------------------------------
+ObjectTemplate.addTemplate I3GunnerHUDExternal
+ObjectTemplate.addTemplate I3GunnerHUDInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector I3GunnerHUDSelector
+
+rem *** GunnerHUDExternal ***
+ObjectTemplate.create SimpleObject I3GunnerHUDExternal
+rem ObjectTemplate.geometry Model_Null
+
+rem *** GunnerHUDInternal ***
+ObjectTemplate.create SimpleObject I3GunnerHUDInternal
+ObjectTemplate.geometry 1P_I3GunnerHUD_M1
+
+rem *** GunnerHUDSelector ***
+LodSelectorTemplate.create DistCompareSelector I3GunnerHUDSelector
+LodSelectorTemplate.addLodDistance 5
+LodSelectorTemplate.addLodComparison 0.5
+
+rem *** lodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 lodspaceturSelector
+LodSelectorTemplate.hasDestroyedLod 0
+LodSelectorTemplate.addLodDistance 900
+
+
+rem ***PLAYER SPAWN INSIDE****
+ObjectTemplate.create SpawnPoint spaceturImpSpawn1
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 82
+ObjectTemplate.setGroup 82
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem ***PLAYER SPAWN INSIDE****
+ObjectTemplate.create SpawnPoint spaceturImpSpawn2
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 83
+ObjectTemplate.setGroup 83
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem ***PLAYER SPAWN INSIDE****
+ObjectTemplate.create SpawnPoint spaceturImpSpawn3
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 75
+ObjectTemplate.setGroup 75
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem ***PLAYER SPAWN INSIDE****
+ObjectTemplate.create SpawnPoint spaceturRebSpawn1
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 80
+ObjectTemplate.setGroup 80
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem ***PLAYER SPAWN INSIDE****
+ObjectTemplate.create SpawnPoint spaceturRebSpawn2
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 81
+ObjectTemplate.setGroup 81
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem ***PLAYER SPAWN INSIDE****
+ObjectTemplate.create SpawnPoint spaceturRebSpawn3
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 73
+ObjectTemplate.setGroup 73
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** POD Spawner ***
+ObjectTemplate.create ObjectSpawner spaceturEPspawner
+ObjectTemplate.setObjectTemplate 1 impescapepod
+ObjectTemplate.setObjectTemplate 2 impescapepod
+ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 5
+ObjectTemplate.maxSpawnDelay 30
+ObjectTemplate.TimeToLive 30
+ObjectTemplate.Distance 20
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 10
+
+
+
+
+
+rem ____________________________________________________________________
+rem Instances of vehicle for spawn CHANGES!
+rem --------------------------------------------------------------------
+
+rem *** spacetur ***
+ObjectTemplate.create PlayerControlObject I2satellite
+ObjectTemplate.setNetworkableInfo spaceturBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 210
+ObjectTemplate.maxhitpoints 210
+ObjectTemplate.material 821
+ObjectTemplate.criticalDamage 20
+ObjectTemplate.hpLostWhileCriticalDamage 0.5
+rem ObjectTemplate.addArmorEffect 9 e_Wreck1Smoke 0/2/0
+rem ObjectTemplate.addArmorEffect 0 e_scrapmetal_awing 0/2/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/10/0
+ObjectTemplate.aiTemplate apturret
+ObjectTemplate.timetoliveafterdeath 1
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate lodspacetur
+ObjectTemplate.setSoldierExitLocation 2/2.5/0 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_spacetur.dds"
+ObjectTemplate.setVehicleIconPos 60/10
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory Land
+ObjectTemplate.setVehicleType AAGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+rem -------------------------------------
+ObjectTemplate.addTemplate spaceturImpSpawn2
+ObjectTemplate.setPosition 0/5.0/0
+rem ------------------------------
+
+
+
+
+rem *** spacetur ***
+ObjectTemplate.create PlayerControlObject I1satellite
+ObjectTemplate.setNetworkableInfo spaceturBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 210
+ObjectTemplate.maxhitpoints 210
+ObjectTemplate.material 821
+ObjectTemplate.criticalDamage 20
+ObjectTemplate.hpLostWhileCriticalDamage 0.5
+rem ObjectTemplate.addArmorEffect 9 e_Wreck1Smoke 0/2/0
+rem ObjectTemplate.addArmorEffect 0 e_scrapmetal_awing 0/2/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/10/0
+ObjectTemplate.aiTemplate apturret
+ObjectTemplate.timetoliveafterdeath 1
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate lodspacetur
+ObjectTemplate.setSoldierExitLocation 2/2.5/0 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_spacetur.dds"
+ObjectTemplate.setVehicleIconPos 60/10
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory Land
+ObjectTemplate.setVehicleType AAGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+rem -------------------------------------
+ObjectTemplate.addTemplate spaceturImpSpawn3
+ObjectTemplate.setPosition 0/5.0/0
+rem ------------------------------
+
+
+rem *** spacetur ***
+ObjectTemplate.create PlayerControlObject R1satellite
+ObjectTemplate.setNetworkableInfo spaceturBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 210
+ObjectTemplate.maxhitpoints 210
+ObjectTemplate.material 821
+ObjectTemplate.criticalDamage 20
+ObjectTemplate.hpLostWhileCriticalDamage 0.5
+rem ObjectTemplate.addArmorEffect 9 e_Wreck1Smoke 0/2/0
+rem ObjectTemplate.addArmorEffect 0 e_scrapmetal_awing 0/2/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/10/0
+ObjectTemplate.aiTemplate apturret
+ObjectTemplate.timetoliveafterdeath 1
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate lodspacetur
+ObjectTemplate.setSoldierExitLocation 2/2.5/0 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_spacetur.dds"
+ObjectTemplate.setVehicleIconPos 60/10
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory Land
+ObjectTemplate.setVehicleType AAGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+rem -------------------------------------
+ObjectTemplate.addTemplate spaceturRebSpawn1
+ObjectTemplate.setPosition 0/5.0/0
+rem ------------------------------
+
+rem *** spacetur ***
+ObjectTemplate.create PlayerControlObject R2satellite
+ObjectTemplate.setNetworkableInfo spaceturBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 210
+ObjectTemplate.maxhitpoints 210
+ObjectTemplate.material 821
+ObjectTemplate.criticalDamage 20
+ObjectTemplate.hpLostWhileCriticalDamage 0.5
+rem ObjectTemplate.addArmorEffect 9 e_Wreck1Smoke 0/2/0
+rem ObjectTemplate.addArmorEffect 0 e_scrapmetal_awing 0/2/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/10/0
+ObjectTemplate.aiTemplate apturret
+ObjectTemplate.timetoliveafterdeath 1
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate lodspacetur
+ObjectTemplate.setSoldierExitLocation 2/2.5/0 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_spacetur.dds"
+ObjectTemplate.setVehicleIconPos 60/10
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory Land
+ObjectTemplate.setVehicleType AAGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+rem -------------------------------------
+ObjectTemplate.addTemplate spaceturRebSpawn2
+ObjectTemplate.setPosition 0/5.0/0
+rem ------------------------------
+
+
+rem *** spacetur ***
+ObjectTemplate.create PlayerControlObject R3satellite
+ObjectTemplate.setNetworkableInfo spaceturBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 210
+ObjectTemplate.maxhitpoints 210
+ObjectTemplate.material 821
+ObjectTemplate.criticalDamage 20
+ObjectTemplate.hpLostWhileCriticalDamage 0.5
+rem ObjectTemplate.addArmorEffect 9 e_Wreck1Smoke 0/2/0
+rem ObjectTemplate.addArmorEffect 0 e_scrapmetal_awing 0/2/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/10/0
+ObjectTemplate.aiTemplate apturret
+ObjectTemplate.timetoliveafterdeath 1
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate lodspacetur
+ObjectTemplate.setSoldierExitLocation 2/2.5/0 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_spacetur.dds"
+ObjectTemplate.setVehicleIconPos 60/10
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory Land
+ObjectTemplate.setVehicleType AAGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+rem -------------------------------------
+ObjectTemplate.addTemplate spaceturRebSpawn3
+ObjectTemplate.setPosition 0/5.0/0
+rem ------------------------------
+
+

@@ -1,0 +1,54 @@
+rem *** Runner_Turbolaser ***
+ObjectTemplate.create FireArms Runner_Turbolaser
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/RunnerTurbolaserFire.ssc
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+rem -------------------------------------
+ObjectTemplate.projectileTemplate CapitalLaserProjectileRedS
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 450
+ObjectTemplate.autoReload 1
+ObjectTemplate.fireOnce 1
+ObjectTemplate.reloadtime 0.0001
+ObjectTemplate.roundOfFire 0.2
+ObjectTemplate.addFireArmsPosition -5/0/11.6 0/0/0
+ObjectTemplate.addFireArmsPosition 5/0/11.6 0/0/0
+
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 800
+ObjectTemplate.distToMinDamage 1700
+
+rem *** Runner_Turret_Lasers ***
+ObjectTemplate.create FireArms Runner_Turret_Lasers
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/RunnerTurretFire.ssc
+ObjectTemplate.aiTemplate SpitfireMachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzThomp
+ObjectTemplate.addTemplate MF_Turret_Barrel_Pair
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileRedNS
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 700
+ObjectTemplate.reloadtime 0.0001
+ObjectTemplate.roundOfFire 4.35
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 5
+ObjectTemplate.addFireArmsPosition -0.202/0.109/0.8 0/0/0
+ObjectTemplate.addFireArmsPosition -0.202/-0.109/0.8 0/0/0
+ObjectTemplate.addFireArmsPosition 0.202/-0.109/0.8 0/0/0
+ObjectTemplate.addFireArmsPosition 0.202/0.109/0.8 0/0/0
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.05
+objectTemplate.coolDownPerSec 0.8
+objectTemplate.timeDelayOnOverHeat 2
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 200
+ObjectTemplate.distToMinDamage 500

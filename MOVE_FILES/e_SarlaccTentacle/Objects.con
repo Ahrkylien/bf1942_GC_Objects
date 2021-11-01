@@ -1,0 +1,9 @@
+ObjectTemplate.create Obstacle e_SarlaccTentacle
+ObjectTemplate.geometry stebarbwire_m1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.addToCollisionGroup c_CGProjectiles
+ObjectTemplate.aiTemplate stebarbwire_m1
+ObjectTemplate.createInvisible 1
+ObjectTemplate.addtemplate e_SarlaccDamage
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0

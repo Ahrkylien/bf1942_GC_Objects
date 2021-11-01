@@ -1,0 +1,31 @@
+ObjectTemplate.create Projectile I.M.D.S_Missile
+ObjectTemplate.geometry I.M.D.SMissileDummy
+ObjectTemplate.timeToLive CRD_NONE/20/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.0
+ObjectTemplate.drag 1.0
+ObjectTemplate.mass 20
+ObjectTemplate.startEffectTemplate e_KatyushaFume
+ObjectTemplate.endEffectTemplate e_FlakBig
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 552
+ObjectTemplate.material2 553
+ObjectTemplate.radius 20
+ObjectTemplate.ForceOnExplosion 3
+ObjectTemplate.explodeNearEnemyDistance 1.5
+
+
+ObjectTemplate.addTemplate I.M.D.S_Missile_Wing
+ObjectTemplate.setPosition 0/0/-1.5
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate I.M.D.S_Missile_Engine
+ObjectTemplate.setPosition 0/0/-2
+ObjectTemplate.setRotation 0/0/0
+

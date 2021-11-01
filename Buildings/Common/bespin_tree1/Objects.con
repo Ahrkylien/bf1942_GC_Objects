@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject bespin_tree1
+ObjectTemplate.geometry bespin_tree1
+ObjectTemplate.setHasCollisionPhysics 1

@@ -1,0 +1,530 @@
+
+
+rem *** Assault_Tank ***
+ObjectTemplate.create PlayerControlObject T-3B
+ObjectTemplate.setNetworkableInfo Assault_TankBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 4
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 12
+ObjectTemplate.explosionDamage 20
+ObjectTemplate.drag 2
+ObjectTemplate.mass 25000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.1
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 150
+ObjectTemplate.maxhitpoints 150
+ObjectTemplate.material 831
+ObjectTemplate.criticalDamage 12
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 6
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 50 e_PanzDamage 0/1/-1.6
+ObjectTemplate.addArmorEffect 12 e_PanzFire 0/1/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate Tiger
+rem -------------------------------------
+ObjectTemplate.addTemplate lodAssault_Tank
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -4.5/0.5/2 0/0/0
+ObjectTemplate.GUIIndex 75
+ObjectTemplate.setVehicleIcon "Vehicle/icon_rebtank.tga"
+ObjectTemplate.setVehicleIconPos 62/97
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_rebtank_16x16.dds"
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bomb.dds"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** lodAssault_Tank ***
+ObjectTemplate.create LodObject lodAssault_Tank
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Assault_TankComplex
+ObjectTemplate.addTemplate Assault_TankSimple
+ObjectTemplate.addTemplate Assault_TankWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector Assault_TankLodSelector
+
+
+rem *** Assault_TankComplex ***
+ObjectTemplate.create Bundle Assault_TankComplex
+ObjectTemplate.geometry Assault_Tank_Hull_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Assault_Tank_decals
+
+ObjectTemplate.addTemplate Assault_TankEntry
+ObjectTemplate.setPosition -3/0/2
+ObjectTemplate.addTemplate Assault_TankEntry
+ObjectTemplate.setPosition 3/0/2
+ObjectTemplate.addTemplate Assault_TankEngine
+ObjectTemplate.addTemplate Assault_TankTower
+ObjectTemplate.setPosition 0/2.3142/0.1346
+
+ObjectTemplate.addTemplate Assault_Tank_Rocket_Launcher_PCO
+
+
+ObjectTemplate.addTemplate Assault_Tank_wheel_tlm
+ObjectTemplate.setPosition -2.7884/0.8811/0.7641
+ObjectTemplate.addTemplate Assault_Tank_wheel_tlm
+ObjectTemplate.setPosition -2.7884/0.8811/0.2483
+ObjectTemplate.addTemplate Assault_Tank_wheel_tlm
+ObjectTemplate.setPosition -2.7884/0.8811/-0.2689
+
+ObjectTemplate.addTemplate Assault_Tank_wheel_tlm
+ObjectTemplate.setPosition 2.7884/0.8811/0.7641
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Assault_Tank_wheel_tlm
+ObjectTemplate.setPosition 2.7884/0.8811/0.2483
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Assault_Tank_wheel_tlm
+ObjectTemplate.setPosition 2.7884/0.8811/-0.2689
+ObjectTemplate.setRotation 180/0/0
+
+ObjectTemplate.addTemplate Assault_Tank_wheel_tlo
+ObjectTemplate.setPosition -2.6703/0.7889/1.5165
+ObjectTemplate.addTemplate Assault_Tank_wheel_tlo
+ObjectTemplate.setPosition -2.6703/0.7889/-1.162
+
+ObjectTemplate.addTemplate Assault_Tank_wheel_tlo
+ObjectTemplate.setPosition 2.6703/0.7889/1.5165
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Assault_Tank_wheel_tlo
+ObjectTemplate.setPosition 2.6703/0.7889/-1.162
+ObjectTemplate.setRotation 180/0/0
+rem -------------------------------------------------------------
+
+
+rem *** TigerTrackL ***
+ObjectTemplate.create AnimatedBundle Assault_Tank_track_left
+ObjectTemplate.loadSoundScript Sounds/TigerTrackL.ssc
+ObjectTemplate.geometry Assault_Tank_track_left
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/Rebel_Tank_track_left.ske
+ObjectTemplate.setAnimatedTextureSpeed -0.012/0
+rem -------------------------------------
+ObjectTemplate.addTemplate Assault_Tank_Wheel_large
+ObjectTemplate.setPosition -0.02/-0.2219/2.6214
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate Assault_Tank_Wheel_large_dummy
+ObjectTemplate.setPosition -0.02/-0.2219/1.112
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate Assault_Tank_Wheel_large_dummy
+ObjectTemplate.setPosition -0.02/-0.2219/-0.4535
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate Assault_Tank_Wheel_large
+ObjectTemplate.setPosition -0.02/-0.2219/-2.0396
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+
+rem *** TigerTrackR ***
+ObjectTemplate.create AnimatedBundle Assault_Tank_track_right
+ObjectTemplate.loadSoundScript Sounds/TigerTrackR.ssc
+ObjectTemplate.geometry Assault_Tank_track_right
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/Rebel_Tank_track_left.ske
+ObjectTemplate.setAnimatedTextureSpeed -0.012/0
+rem -------------------------------------
+ObjectTemplate.addTemplate Assault_Tank_Wheel_large
+ObjectTemplate.setPosition 0.02/-0.2219/2.6214
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate Assault_Tank_Wheel_large_dummy
+ObjectTemplate.setPosition 0.02/-0.2219/1.112
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate Assault_Tank_Wheel_large_dummy
+ObjectTemplate.setPosition 0.02/-0.2219/-0.4535
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate Assault_Tank_Wheel_large
+ObjectTemplate.setPosition 0.02/-0.2219/-2.0396
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+rem ---------------------------------------------------------------------
+
+rem *** Assault_TankEntry ***
+ObjectTemplate.create EntryPoint Assault_TankEntry
+ObjectTemplate.setEntryRadius 3.5
+
+
+rem *** Assault_TankTower ***
+ObjectTemplate.create RotationalBundle Assault_TankTower
+ObjectTemplate.setNetworkableInfo Assault_TankTurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/tigertower.ssc
+ObjectTemplate.geometry Assault_Tank_Turret
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Assault_TankGunBase
+ObjectTemplate.setPosition 0/0.6291/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -145/0/0
+ObjectTemplate.setMaxRotation 145/0/0
+ObjectTemplate.setMaxSpeed 20/25/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** Assault_TankGunBase ***
+ObjectTemplate.create RotationalBundle Assault_TankGunBase
+ObjectTemplate.setNetworkableInfo Assault_TankGunInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/TigerGunBase.ssc
+ObjectTemplate.geometry Assault_Tank_barrel_pivot
+rem -------------------------------------
+ObjectTemplate.addTemplate lodAssault_TankCockpit
+ObjectTemplate.addTemplate Assault_TankGunBarrel
+ObjectTemplate.setPosition 0/0/2.1141
+ObjectTemplate.addTemplate Assault_TankCamera
+ObjectTemplate.setPosition 0/0.5/0.8
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 15/15/0
+ObjectTemplate.setAcceleration 0/1000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** lodAssault_TankCockpit ***
+ObjectTemplate.create LodObject lodAssault_TankCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate Assault_TankCockpitExternal
+ObjectTemplate.addTemplate Assault_TankCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector Assault_TankcockpitSelector
+
+
+rem *** Assault_TankCockpitExternal ***
+ObjectTemplate.create SimpleObject Assault_TankCockpitExternal
+ObjectTemplate.geometry Assault_Tank_barrel_pivot
+
+
+rem *** Assault_TankCockpitInternal ***
+ObjectTemplate.create SimpleObject Assault_TankCockpitInternal
+ObjectTemplate.geometry Assault_Tank_barrel_pivot
+
+
+rem *** Assault_TankcockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector Assault_TankcockpitSelector
+LodSelectorTemplate.addLodDistance 1
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** Assault_TankCamera ***
+ObjectTemplate.create Camera Assault_TankCamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem ----------------------------------------
+
+rem *** Assault_Tank_Rocket_Launcher _PCO ***
+ObjectTemplate.create PlayerControlObject Assault_Tank_Rocket_Launcher_PCO
+ObjectTemplate.setNetworkableInfo Assault_TankBodyInfo
+ObjectTemplate.aiTemplate KatyushaCannon
+rem -------------------------------------
+ObjectTemplate.addTemplate Assault_Tank_Launcher
+ObjectTemplate.setPosition 0/1.7081/-2.8462
+ObjectTemplate.addTemplate Assault_Tank_Camera_PcoId1
+ObjectTemplate.setPosition 0/3.85/-2.8
+ObjectTemplate.addTemplate Assault_TankEntry
+ObjectTemplate.setPosition 0/0/-3.2772
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -4.5/0.5/-3 0/0/0
+ObjectTemplate.GUIIndex 21
+ObjectTemplate.setVehicleIcon "Vehicle/icon_rebtank.dds"
+ObjectTemplate.setVehicleIconPos 35/55
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_rocket.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTArtillery
+ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 70
+ObjectTemplate.DirBarYScaleAbove 37.5
+ObjectTemplate.DirBarYScaleBelow 0
+ObjectTemplate.DirBarYScaleMin -90
+ObjectTemplate.DirBarYScaleMax -45
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** Assault_Tank_Launcher ***
+ObjectTemplate.create RotationalBundle Assault_Tank_Launcher
+ObjectTemplate.setNetworkableInfo Assault_TankGunInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/KatyushaRamp.ssc
+ObjectTemplate.geometry Assault_Tank_Launcher
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Assault_Tank_Rocket_Launcher
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-45/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/1000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** Assault_Tank_Camera_PcoId1 ***
+ObjectTemplate.create Camera Assault_Tank_Camera_PcoId1
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMinRotation 0/-45/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/1000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMExternTrace 1
+
+rem ------------------------------
+
+
+rem *** Assault_Tank_wheel_tlm ***
+ObjectTemplate.create SimpleObject Assault_Tank_wheel_tlm
+ObjectTemplate.geometry Assault_Tank_wheel_tlm
+
+
+rem *** Assault_Tank_wheel_tlo ***
+ObjectTemplate.create SimpleObject Assault_Tank_wheel_tlo
+ObjectTemplate.geometry Assault_Tank_wheel_tlo
+
+
+rem *** Assault_TankSimple ***
+ObjectTemplate.create SimpleObject Assault_TankSimple
+ObjectTemplate.geometry Assault_Tank_Hull_L1
+
+
+rem *** Assault_TankWreck ***
+ObjectTemplate.create SimpleObject Assault_TankWreck
+ObjectTemplate.geometry Wreck_Assault_Tank_m1
+
+
+ObjectTemplate.create SimpleObject Assault_Tank_decals
+ObjectTemplate.geometry Assault_Tank_decals
+
+
+rem *** Assault_TankLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 Assault_TankLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 600
+
+
+
+
+rem **********************************************
+rem REBEL ARTILLARY T-3BA
+rem **********************************************
+
+
+rem *** RAT ***
+ObjectTemplate.create PlayerControlObject T-3BA
+ObjectTemplate.setNetworkableInfo Assault_TankBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 4
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 12
+ObjectTemplate.explosionDamage 20
+ObjectTemplate.drag 2
+ObjectTemplate.mass 25000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.4
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 110
+ObjectTemplate.maxhitpoints 110
+ObjectTemplate.material 831
+ObjectTemplate.criticalDamage 12
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 6
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 50 e_PanzDamage 0/1/-1.6
+ObjectTemplate.addArmorEffect 12 e_PanzFire 0/1/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate Tiger
+rem -------------------------------------
+ObjectTemplate.addTemplate lodAssault_TankA
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -4.5/0.5/2 0/0/0
+ObjectTemplate.GUIIndex 75
+ObjectTemplate.setVehicleIcon "Vehicle/icon_rebart.dds"
+ObjectTemplate.setVehicleIconPos 62/97
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_rebart_16x16.dds"
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** lodAssault_Tank ***
+ObjectTemplate.create LodObject lodAssault_TankA
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Assault_TankComplexA
+ObjectTemplate.addTemplate Assault_TankSimple
+ObjectTemplate.addTemplate Assault_TankWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector Assault_TankALodSelector
+
+
+rem *** Assault_TankComplex ***
+ObjectTemplate.create Bundle Assault_TankComplexA
+ObjectTemplate.geometry Assault_Tank_Hull_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Assault_Tank_decals
+
+ObjectTemplate.addTemplate Assault_TankEntry
+ObjectTemplate.setPosition -3/0/2
+ObjectTemplate.addTemplate Assault_TankEntry
+ObjectTemplate.setPosition 3/0/2
+ObjectTemplate.addTemplate Assault_TankEngine
+
+ObjectTemplate.addTemplate RAT_PCO
+
+ObjectTemplate.addTemplate Assault_TankCamera
+ObjectTemplate.setPosition 0/3.85/0
+
+ObjectTemplate.addTemplate Assault_Tank_wheel_tlm
+ObjectTemplate.setPosition -2.7884/0.8811/0.7641
+ObjectTemplate.addTemplate Assault_Tank_wheel_tlm
+ObjectTemplate.setPosition -2.7884/0.8811/0.2483
+ObjectTemplate.addTemplate Assault_Tank_wheel_tlm
+ObjectTemplate.setPosition -2.7884/0.8811/-0.2689
+
+ObjectTemplate.addTemplate Assault_Tank_wheel_tlm
+ObjectTemplate.setPosition 2.7884/0.8811/0.7641
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Assault_Tank_wheel_tlm
+ObjectTemplate.setPosition 2.7884/0.8811/0.2483
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Assault_Tank_wheel_tlm
+ObjectTemplate.setPosition 2.7884/0.8811/-0.2689
+ObjectTemplate.setRotation 180/0/0
+
+ObjectTemplate.addTemplate Assault_Tank_wheel_tlo
+ObjectTemplate.setPosition -2.6703/0.7889/1.5165
+ObjectTemplate.addTemplate Assault_Tank_wheel_tlo
+ObjectTemplate.setPosition -2.6703/0.7889/-1.162
+
+ObjectTemplate.addTemplate Assault_Tank_wheel_tlo
+ObjectTemplate.setPosition 2.6703/0.7889/1.5165
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Assault_Tank_wheel_tlo
+ObjectTemplate.setPosition 2.6703/0.7889/-1.162
+ObjectTemplate.setRotation 180/0/0
+rem -------------------------------------------------------------
+
+
+rem ***PCO ***
+ObjectTemplate.create PlayerControlObject RAT_PCO
+ObjectTemplate.setNetworkableInfo Assault_TankBodyInfo
+ObjectTemplate.aiTemplate KatyushaCannon
+rem -------------------------------------
+ObjectTemplate.addTemplate rat_turret_x
+ObjectTemplate.setPosition 0/2.3142/0.1346
+ObjectTemplate.addTemplate Assault_TankEntry
+ObjectTemplate.setPosition 0/0/-3.2772
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -4.5/0.5/-3 0/0/0
+ObjectTemplate.GUIIndex 21
+ObjectTemplate.setVehicleIcon "Vehicle/icon_rebart.dds"
+ObjectTemplate.setVehicleIconPos 40/97
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_rebart_16x16.dds"
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_missile_concussion.dds"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTArtillery
+ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 60
+ObjectTemplate.DirBarYScaleAbove 45
+ObjectTemplate.DirBarYScaleBelow 0
+ObjectTemplate.DirBarYScaleMin -95
+ObjectTemplate.DirBarYScaleMax -50
+ObjectTemplate.hasRestrictedExit 1
+
+rem ***  ***
+ObjectTemplate.create RotationalBundle rat_turret_x
+ObjectTemplate.setNetworkableInfo Assault_TankGunInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/TigerGunBase.ssc
+ObjectTemplate.geometry rat_turret_base
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate rat_turret_y
+ObjectTemplate.setPosition 0/0/-.3576
+ObjectTemplate.setRotation 0/-10/0
+ObjectTemplate.addTemplate Assault_Tank_Camera_PcoId1
+ObjectTemplate.setPosition 0/3.85/-2.8
+rem -------------------------------------
+ObjectTemplate.setMinRotation -70/0/0
+ObjectTemplate.setMaxRotation 70/0/0
+ObjectTemplate.setMaxSpeed 15/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem ***  ***
+ObjectTemplate.create RotationalBundle rat_turret_y
+ObjectTemplate.setNetworkableInfo Assault_TankGunInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/TigerGunBase.ssc
+ObjectTemplate.geometry rat_turrent_launcher
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate RAT_Rocket_Launcher
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-70/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/1000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** Assault_TankLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 Assault_TankALodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 600

@@ -1,0 +1,8 @@
+NetworkableInfo.createNewInfo Rogue_wing_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Rogue_engine_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo rogue_body_info
+NetworkableInfo.setPredictionMode PMLinear

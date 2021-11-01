@@ -1,0 +1,2 @@
+NetworkableInfo.createNewInfo ds_objective_info
+NetworkableInfo.setPredictionMode PMLinear

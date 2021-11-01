@@ -1,0 +1,9 @@
+GeometryTemplate.create StandardMesh dan_bush
+GeometryTemplate.file buildings/dantooine/dan_bush
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 600
+GeometryTemplate.setLodDistance 2 800
+GeometryTemplate.setLodDistance 3 1000
+GeometryTemplate.setLodDistance 4 1200
+GeometryTemplate.setLodDistance 5 1400
+GeometryTemplate.onlyUseHigestLod true

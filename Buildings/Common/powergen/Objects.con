@@ -1,0 +1,8 @@
+ObjectTemplate.create Bundle powergen
+ObjectTemplate.aiTemplate powergen
+ObjectTemplate.geometry powergen
+ObjectTemplate.addTemplate powergenwindowsimple
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.create SimpleObject powergenwindowsimple
+OBjectTemplate.geometry powergenwindow
+

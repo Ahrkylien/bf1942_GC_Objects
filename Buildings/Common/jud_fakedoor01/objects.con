@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject jud_fakedoor01
+ObjectTemplate.geometry jud_fakedoor01
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate jud_fakedoor01
+

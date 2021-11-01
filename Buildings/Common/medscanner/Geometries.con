@@ -1,0 +1,11 @@
+renderer.beginGlobalCluster medscanner
+
+GeometryTemplate.create StandardMesh medscanner
+GeometryTemplate.file buildings/Hoth/Echobase/mediscanner
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 45
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.hasDynamicShadow 1
+
+renderer.endGlobalCluster

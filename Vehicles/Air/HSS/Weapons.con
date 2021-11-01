@@ -1,0 +1,38 @@
+
+ObjectTemplate.create Projectile HSS
+ObjectTemplate.geometry hss
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.drag 1
+ObjectTemplate.mass 5
+
+rem ObjectTemplate.startEffectTemplate e_projectile2
+
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 0
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 0
+ObjectTemplate.invisible 0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 554
+ObjectTemplate.material2 553
+ObjectTemplate.useMMOnEndEffect 1
+ObjectTemplate.radius 10
+ObjectTemplate.ProximityFusePrimer 0.1
+ObjectTemplate.ForceOnExplosion 6
+ObjectTemplate.gravityModifier 0
+
+ObjectTemplate.addTemplate HSS_Engine
+ObjectTemplate.setPosition 0/0/-2
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate HSS_Wing
+ObjectTemplate.setPosition 1/0/-1.5
+ObjectTemplate.setRotation 6/6/6
+
+ObjectTemplate.addTemplate HSS_Wing
+ObjectTemplate.setPosition -1/0/-1.5
+ObjectTemplate.setRotation -15/-15/-15

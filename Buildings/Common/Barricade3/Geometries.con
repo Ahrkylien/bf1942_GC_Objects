@@ -1,0 +1,9 @@
+GeometryTemplate.create StandardMesh Barricade3
+GeometryTemplate.file Buildings/Bespin/Barricade3
+
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300
+
+
+
+

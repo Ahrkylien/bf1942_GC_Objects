@@ -1,0 +1,146 @@
+newPatch
+#################
+### Near left ###
+#################
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+##############
+### Reload ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+###############
+### Release ###
+###############
+newPatch
+
+load @ROOT/Sound/@RTD/blaster-distance.wav
+minDistance 30
+randomStartPitch 0.05 / 0.05
+priority 8
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 150
+	param 200
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/a295-release-stereo.wav
+minDistance 4
+stereo
+priority 8
+randomStartPitch 0.05 / 0.05
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 4
+	param 1
+	param -1
+endEffect
+
+
+load @ROOT/Sound/@RTD/a295-release-mono.wav
+minDistance 15
+priority 8
+randomStartPitch 0.05 / 0.05
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 15
+	param 150
+	param 1
+	param -1
+endEffect
+
+####################
+### Shell Bounce ###
+####################
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+############################
+### Mashine gun distance ###
+############################
+newPatch
+#include ../../../Common/Sounds/BlasterDistance.ssc
+
+###########################################################################################################
+### Fire Loop ###
+#################
+newPatch
+
+load @ROOT/Sound/@RTD/a295-short-stereo.wav
+minDistance 4
+stereo
+loop
+stop FinishSample
+dopplerOff
+randomStartPitch 0.05 / 0.05
+priority 10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 4
+	param 1
+	param -1
+endEffect
+
+
+load @ROOT/Sound/@RTD/a295-short-mono.wav
+minDistance 15
+loop
+stop FinishSample
+dopplerOff
+randomStartPitch 0.05 / 0.05
+priority 10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 15
+	param 150
+	param 1
+	param -1
+endEffect
+

@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject ewok_hut1_bsp
+ObjectTemplate.aiTemplate ewok_hut1_bsp
+ObjectTemplate.geometry ewok_hut1_bsp
+ObjectTemplate.setHasCollisionPhysics 1
+
+

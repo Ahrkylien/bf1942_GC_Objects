@@ -1,0 +1,22 @@
+rem *** IonCannonxGunBarrel ***
+ObjectTemplate.create FireArms IonCannonxGun
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.geometry IonCannonxTurret
+ObjectTemplate.loadSoundScript Sounds/RunnerTurbolaserFire.ssc
+ObjectTemplate.aiTemplate ShermanMainGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+rem -------------------------------------
+ObjectTemplate.projectileTemplate CapitalLaserProjectileRedS
+ObjectTemplate.magSize 10
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 80
+ObjectTemplate.reloadtime 4
+ObjectTemplate.autoReload 1
+ObjectTemplate.recoilSpeed 8
+ObjectTemplate.recoilSize 60
+ObjectTemplate.roundOfFire 3
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+
+

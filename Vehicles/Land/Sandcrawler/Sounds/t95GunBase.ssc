@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/TigerGunBase.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/TigerGunBase.ssc
+	
+#templateLevel LOW
+
+	#include Low/TigerGunBase.ssc

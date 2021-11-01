@@ -1,0 +1,61 @@
+GeometryTemplate.create StandardMesh MilleniumFalcon_fus_M1
+GeometryTemplate.file Vehicles/MilleniumFalcon/falconbody
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 450
+GeometryTemplate.setLodDistance 5 650
+
+GeometryTemplate.create StandardMesh MFDoorGeom
+GeometryTemplate.file Vehicles/MilleniumFalcon/falcondoor
+
+GeometryTemplate.create StandardMesh backleftgdl
+GeometryTemplate.file Vehicles/MilleniumFalcon/backleftgdl
+
+GeometryTemplate.create StandardMesh backleftgdr
+GeometryTemplate.file Vehicles/MilleniumFalcon/backleftgdr
+
+GeometryTemplate.create StandardMesh backgearright
+GeometryTemplate.file Vehicles/MilleniumFalcon/backgearright
+
+GeometryTemplate.create StandardMesh backgearleft
+GeometryTemplate.file Vehicles/MilleniumFalcon/backgearleft
+
+GeometryTemplate.create StandardMesh backrightgdl
+GeometryTemplate.file Vehicles/MilleniumFalcon/backrightgdl
+
+GeometryTemplate.create StandardMesh backrightgdr
+GeometryTemplate.file Vehicles/MilleniumFalcon/backrightgdr
+
+GeometryTemplate.create StandardMesh frontgear
+GeometryTemplate.file Vehicles/MilleniumFalcon/frontgear
+
+GeometryTemplate.create StandardMesh frontgeardoor
+GeometryTemplate.file Vehicles/MilleniumFalcon/frontgeardoor
+GeometryTemplate.scale 0.75
+
+GeometryTemplate.create StandardMesh frontpad
+GeometryTemplate.file Vehicles/MilleniumFalcon/frontpad
+
+GeometryTemplate.create StandardMesh falcon_gun_barrel_m1
+GeometryTemplate.file Vehicles/MilleniumFalcon/falcon_gun_barrel
+
+GeometryTemplate.create StandardMesh falcon_gun_x_m1
+GeometryTemplate.file Vehicles/MilleniumFalcon/falcon_gun_x
+
+GeometryTemplate.create StandardMesh falcon_gun_y_m1
+GeometryTemplate.file Vehicles/MilleniumFalcon/falcon_gun_y
+
+GEometryTemplate.create StandardMesh 1P_MilleniumFalcon_M1
+GeometryTemplate.file Vehicles/MilleniumFalcon/MilleniumCockpit
+
+GeometryTemplate.create StandardMesh MillFalcon_fus_L1
+GeometryTemplate.file Vehicles/MilleniumFalcon/falcon_low
+ObjectTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_Falcon1
+GeometryTemplate.file Vehicles/MilleniumFalcon/Wreck_Falcon1_m1
+
+

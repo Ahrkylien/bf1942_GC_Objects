@@ -1,0 +1,32 @@
+ObjectTemplate.create Projectile T-3BRocket
+ObjectTemplate.geometry T-3Br_rocket_m1
+ObjectTemplate.loadSoundScript Sounds/T-3BRocket.ssc
+ObjectTemplate.timeToLive CRD_NONE/20/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.drag 1.0
+ObjectTemplate.mass 20
+ObjectTemplate.startEffectTemplate e_KatyushaFume
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 0
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 0
+ObjectTemplate.invisible 0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 711
+ObjectTemplate.material2 714
+ObjectTemplate.radius 20
+ObjectTemplate.ForceOnExplosion 30
+ObjectTemplate.AmmoType	9
+
+ObjectTemplate.addTemplate T-3BRocket_Wing
+ObjectTemplate.setPosition 0/0/-1.5
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate T-3BRocket_Engine
+ObjectTemplate.setPosition 0/0/-2
+ObjectTemplate.setRotation 0/0/0
+
+
+

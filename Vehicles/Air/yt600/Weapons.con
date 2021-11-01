@@ -1,0 +1,52 @@
+rem ******** Dummy Weapon *******************************
+
+rem *** R5D4DummyWeapon ***
+ObjectTemplate.create FireArms yt600DummyWeapon
+ObjectTemplate.projectileTemplate yt600DummyProjectile
+ObjectTemplate.projectilePosition 0/0/0.4
+ObjectTemplate.magSize 10000
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 10
+ObjectTemplate.AutoReload 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 10
+
+rem *** R5D4DummyProjectile ***
+ObjectTemplate.create Projectile yt600DummyProjectile
+ObjectTemplate.addTemplate e_laser1blue
+ObjectTemplate.timeToLive CRD_NONE/0.08/0/0
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.gravityModifier 0.1
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.endEffectTemplate e_R5D4Repair
+
+rem ******** Repair Weapon *******************************
+
+rem *** R5D4RepairWeapon ***
+ObjectTemplate.create FireArms yt600RepairWeapon
+ObjectTemplate.setNetworkableInfo R5D4RepairWeaponInfo
+ObjectTemplate.projectileTemplate yt600RepairProjectile
+ObjectTemplate.projectilePosition 0/0/0.4
+ObjectTemplate.magSize 10000
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 10
+ObjectTemplate.AutoReload 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 10
+
+rem *** R5D4RepairProjectile ***
+ObjectTemplate.create Projectile yt600RepairProjectile
+ObjectTemplate.addTemplate yt600RepairPoint
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.1
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.material 0
+

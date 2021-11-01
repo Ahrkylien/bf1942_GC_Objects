@@ -1,0 +1,287 @@
+rem *** LambdaEngine ***
+ObjectTemplate.create Engine LambdaEngine
+ObjectTemplate.setNetworkableInfo LambdaEngineInfo
+ObjectTemplate.loadSoundScript Sounds/LambdaEngine.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate LambdaLandingGearLeft
+ObjectTemplate.setPosition -31/21.4/0
+ObjectTemplate.setRotation 0/0/-352.5
+ObjectTemplate.addTemplate LambdaLandingGearRight
+ObjectTemplate.setPosition 31/21.4/0
+ObjectTemplate.addTemplate LambdaLandingGearFront
+ObjectTemplate.setPosition -24.3/21.4/16
+ObjectTemplate.setRotation 0/0/-352.5
+ObjectTemplate.addTemplate LambdaLandingGearBack
+ObjectTemplate.setPosition 24.3/21.4/-7.5
+ObjectTemplate.addTemplate LambdaWingLeft
+ObjectTemplate.setPosition -7.3/0/0
+ObjectTemplate.setRotation 0/0/210
+ObjectTemplate.addTemplate LambdaWingRight
+ObjectTemplate.setPosition 7.3/0/0
+ObjectTemplate.setRotation 0/0/-210
+ObjectTemplate.addTemplate LambdaDoorAuto
+ObjectTemplate.setPosition 0/-0.109/6.037
+ObjectTemplate.setRotation 0/29/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -0.3/0/0
+ObjectTemplate.setMaxRotation 0.3/0/5000
+ObjectTemplate.setMaxSpeed 3700/0/1700
+ObjectTemplate.setAcceleration 1700/0/7700
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 65
+ObjectTemplate.setDifferential 8
+
+rem *** LambdaGlideEngine ***
+ObjectTemplate.create Engine LambdaLevelEngine
+ObjectTemplate.setNetworkableInfo lambdaengineinfo
+ObjectTemplate.loadSoundScript Sounds/RepGunEngine.ssc
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/1
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/5000
+ObjectTemplate.setInputToRoll c_PIAltFire
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 500
+ObjectTemplate.setDifferential 10
+
+rem *** LambdaDummyEngine ***
+ObjectTemplate.create Engine LambdaDummyEngine
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setNetworkableInfo lambdaengineinfo
+ObjectTemplate.setMinRotation 0/0/50
+ObjectTemplate.setMaxRotation 0/0/1000
+ObjectTemplate.setMaxSpeed 0/0/9500
+ObjectTemplate.setAcceleration 0/0/15000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque .1
+ObjectTemplate.setDifferential .1
+ObjectTemplate.setNoPropellerEffectAtSpeed 50
+
+rem *** LambdaDummyRearEngine ***
+ObjectTemplate.create Engine LambdaDummyRearEngine
+ObjectTemplate.setNetworkableInfo lambdaengineinfo
+ObjectTemplate.setMinRotation 0/0/50
+ObjectTemplate.setMaxRotation 0/0/500
+ObjectTemplate.setMaxSpeed 0/0/50
+ObjectTemplate.setAcceleration 0/0/100
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque .1
+ObjectTemplate.setDifferential .1
+ObjectTemplate.setNoPropellerEffectAtSpeed 100
+
+rem *** HoverEngine1 ***
+ObjectTemplate.create Engine LambdaHoverEngine1
+ObjectTemplate.setNetworkableInfo lambdaengineinfo
+ObjectTemplate.setMinRotation -5000/-5000/2300
+ObjectTemplate.setMaxRotation 5000/5000/5000
+ObjectTemplate.setMaxSpeed 50/50/9500
+ObjectTemplate.setAcceleration 50/50/10050
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 18
+ObjectTemplate.setDifferential 3.5
+ObjectTemplate.setNoPropellerEffectAtSpeed 3000
+
+rem *** HoverEngine2 ***
+ObjectTemplate.create Engine LambdaHoverEngine2
+ObjectTemplate.setNetworkableInfo lambdaengineinfo
+ObjectTemplate.loadSoundScript Sounds/RepGunEngine.ssc
+rem -------------------------------------
+ObjectTemplate.setMinRotation -5000/-5000/2300
+ObjectTemplate.setMaxRotation 5000/5000/5000
+ObjectTemplate.setMaxSpeed 50/50/9500
+ObjectTemplate.setAcceleration 50/50/10050
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 18
+ObjectTemplate.setDifferential 3.5
+ObjectTemplate.setNoPropellerEffectAtSpeed 3000
+
+rem *** HoverEngine3 ***
+ObjectTemplate.create Engine LambdaHoverEngine3
+ObjectTemplate.setNetworkableInfo lambdaengineinfo
+ObjectTemplate.setMinRotation -5000/-5000/2300
+ObjectTemplate.setMaxRotation 5000/5000/5000
+ObjectTemplate.setMaxSpeed 50/50/9500
+ObjectTemplate.setAcceleration 50/50/10050
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 18
+ObjectTemplate.setDifferential 3.5
+ObjectTemplate.setNoPropellerEffectAtSpeed 3000
+
+rem *** LambdaVTOLRack ***
+ObjectTemplate.create RotationalBundle LambdaVTOLRack
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate LambdaVTOLEngine
+rem -------------------------------------
+ObjectTemplate.setMinRotation -20/-30/0
+ObjectTemplate.setMaxRotation 20/30/0
+ObjectTemplate.setMaxSpeed 150/50/0
+ObjectTemplate.setAcceleration 150/100/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setInputToYaw c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+rem -------------------------------------
+
+rem *** LambdaVTOLEngine ***
+ObjectTemplate.create Engine LambdaVTOLEngine
+ObjectTemplate.setNetworkableInfo LambdaEngineInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/900
+ObjectTemplate.setAcceleration 0/0/-5000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 50
+ObjectTemplate.setDifferential 5
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+
+rem *** LambdaFlapLeftMiddle ***
+ObjectTemplate.create Wing LambdaFlapLeftMiddle
+ObjectTemplate.setNetworkableInfo LambdaWingInfo
+ObjectTemplate.setMinRotation 0/-4/0
+ObjectTemplate.setMaxRotation 0/4/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setFlapLift 4
+ObjectTemplate.setRegulateToLift 4.90
+ObjectTemplate.setWingToRegulatorRatio 1
+
+rem *** LambdaFlapLeftOuter ***
+ObjectTemplate.create Wing LambdaFlapLeftOuter
+ObjectTemplate.setNetworkableInfo LambdaWingInfo
+ObjectTemplate.setMinRotation 0/-21/0
+ObjectTemplate.setMaxRotation 0/21/0
+ObjectTemplate.setMaxSpeed 0/150/0
+ObjectTemplate.setAcceleration 0/-150/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 1.5/0/-0.4
+ObjectTemplate.setWingLift 3
+ObjectTemplate.setFlapLift 3
+
+rem *** LambdaFlapRightMiddle ***
+ObjectTemplate.create Wing LambdaFlapRightMiddle
+ObjectTemplate.setNetworkableInfo LambdaWingInfo
+ObjectTemplate.setMinRotation 0/-4/0
+ObjectTemplate.setMaxRotation 0/4/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setFlapLift 5
+ObjectTemplate.setRegulateToLift 4.90
+ObjectTemplate.setWingToRegulatorRatio 1
+
+rem *** LambdaFlapRightOuter ***
+ObjectTemplate.create Wing LambdaFlapRightOuter
+ObjectTemplate.setNetworkableInfo LambdaWingInfo
+ObjectTemplate.setMinRotation 0/-21/0
+ObjectTemplate.setMaxRotation 0/21/0
+ObjectTemplate.setMaxSpeed 0/150/0
+ObjectTemplate.setAcceleration 0/150/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset -1.5/0/-0.4
+ObjectTemplate.setWingLift 3
+ObjectTemplate.setFlapLift 3
+
+rem *** LambdaFlapTailLeft ***
+ObjectTemplate.create Wing LambdaFlapTailLeft
+ObjectTemplate.setNetworkableInfo LambdaWingInfo
+ObjectTemplate.setMinRotation 0/-22/0
+ObjectTemplate.setMaxRotation 0/22/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/-60/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0.5/0/0
+ObjectTemplate.setWingLift 1
+ObjectTemplate.setFlapLift 1
+
+rem *** LambdaFlapTailRight ***
+ObjectTemplate.create Wing LambdaFlapTailRight
+ObjectTemplate.setNetworkableInfo LambdaWingInfo
+ObjectTemplate.setMinRotation 0/-22/0
+ObjectTemplate.setMaxRotation 0/22/0
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/-60/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset -0.5/0/0
+ObjectTemplate.setWingLift 1
+ObjectTemplate.setFlapLift 1
+
+rem *** LambdaRudder ***
+ObjectTemplate.create Wing LambdaRudder
+ObjectTemplate.setNetworkableInfo LambdaWingInfo
+ObjectTemplate.setMinRotation 0/-22/0
+ObjectTemplate.setMaxRotation 0/22/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/60/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/-0.5/0
+ObjectTemplate.setWingLift 3
+ObjectTemplate.setFlapLift 3
+
+rem *** LambdaBodyWingVertical ***
+ObjectTemplate.create Wing LambdaBodyWingVertical
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setWingLift 4
+ObjectTemplate.setFlapLift 0
+
+rem *** LambdaEngine ***
+ObjectTemplate.create Engine LambdaEngine2
+rem FOR NON FLYING LAMBDA's, so they still seem functional on ground
+ObjectTemplate.setNetworkableInfo LambdaEngineInfo
+ObjectTemplate.loadSoundScript Sounds/LambdaEngine.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate LambdaLandingGearLeft
+ObjectTemplate.setPosition -31/21.4/0
+ObjectTemplate.setRotation 0/0/-352.5
+ObjectTemplate.addTemplate LambdaLandingGearRight
+ObjectTemplate.setPosition 31/21.4/0
+ObjectTemplate.addTemplate LambdaLandingGearFront
+ObjectTemplate.setPosition -24.3/21.4/16
+ObjectTemplate.setRotation 0/0/-352.5
+ObjectTemplate.addTemplate LambdaLandingGearBack
+ObjectTemplate.setPosition 24.3/21.4/-7.5
+ObjectTemplate.addTemplate LambdaWingLeft
+ObjectTemplate.setPosition -7.3/0/0
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate LambdaWingRight
+ObjectTemplate.setPosition 7.3/0/0
+ObjectTemplate.setRotation 0/0/-210
+ObjectTemplate.addTemplate LambdaDoorAuto
+ObjectTemplate.setPosition 0/-0.109/6.037
+ObjectTemplate.setRotation 0/29/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 0
+ObjectTemplate.setDifferential 0
+

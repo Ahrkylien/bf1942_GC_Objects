@@ -1,0 +1,166 @@
+rem *** XWing_Laser_Cannon ***
+ObjectTemplate.create FireArms XWing_Laser_Cannon
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileRedNS
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 650
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.roundOfFire 5.3
+ObjectTemplate.addFireArmsPosition 0/0/5.9 0/0/0
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.06
+objectTemplate.coolDownPerSec 0.7
+objectTemplate.timeDelayOnOverHeat 5
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 100
+ObjectTemplate.distToMinDamage 300
+ObjectTemplate.AmmoType	10
+
+rem *** XWing_Dummy_Laser ***
+ObjectTemplate.create FireArms XWing_Dummy_Laser
+ObjectTemplate.loadSoundScript Sounds/XWingLaser.ssc
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 600
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.roundOfFire 5.3
+ObjectTemplate.addFireArmsPosition 0/0.82/-0.8 0/0/0
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.06
+objectTemplate.coolDownPerSec 0.7
+objectTemplate.timeDelayOnOverHeat 5
+
+rem *** XWingProtonTorpedoLauncher ***
+ObjectTemplate.create FireArms XWingProtonTorpedoLauncher
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.projectileTemplate ProtonTorpedo
+ObjectTemplate.autoReload 1
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag 3
+ObjectTemplate.velocity 150
+ObjectTemplate.roundOfFire 3
+ObjectTemplate.reloadtime 4
+ObjectTemplate.AltFireOnce 1
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.addFireArmsPosition -0.5445/-0.2366/1.2107
+ObjectTemplate.addFireArmsPosition 0.5445/-0.2366/1.2107
+ObjectTemplate.AmmoType	9
+
+rem *** XWingProtonTorpedoLauncher ***
+ObjectTemplate.create FireArms Rogue2_missle
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.projectileTemplate ProtonTorpedo
+ObjectTemplate.autoReload 1
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 3
+ObjectTemplate.velocity 150
+ObjectTemplate.roundOfFire 3
+ObjectTemplate.reloadtime 4
+ObjectTemplate.AltFireOnce 1
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.addFireArmsPosition -0.5445/-0.2366/1.2107
+ObjectTemplate.addFireArmsPosition 0.5445/-0.2366/1.2107
+ObjectTemplate.AmmoType	9
+
+rem *** Astromech_Droid_repair ***
+ObjectTemplate.create FireArms Astromech_Droid_repair
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.projectileTemplate Astromech_Droid_repair_projectile
+ObjectTemplate.projectilePosition 0/0/0.4
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag -1
+ObjectTemplate.velocity 10
+ObjectTemplate.AutoReload 1
+ObjectTemplate.reloadtime 0.01
+ObjectTemplate.roundOfFire 5
+objectTemplate.heatAddWhenFire 0.06
+objectTemplate.coolDownPerSec 0.2
+objectTemplate.timeDelayOnOverHeat 2
+
+rem *** Astromech_Droid_repair_projectile ***
+ObjectTemplate.create Projectile Astromech_Droid_repair_projectile
+ObjectTemplate.addTemplate e_laser1blue
+ObjectTemplate.addTemplate Astromech_Droid_repair_point
+ObjectTemplate.timeToLive CRD_NONE/0.04/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.1
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+rem ObjectTemplate.invisibleAtEndEffect 1
+rem ObjectTemplate.dieAfterColl 1
+rem ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 620
+ObjectTemplate.endEffectTemplate e_R5D4Repair
+
+rem *** Astromech_Droid_repair_point ***
+ObjectTemplate.create SupplyDepot Astromech_Droid_repair_point
+ObjectTemplate.radius 10
+ObjectTemplate.team 0
+ObjectTemplate.addVehicleType YWing -1 5 0
+ObjectTemplate.addVehicleType X-Wing -1 3 0
+ObjectTemplate.addVehicleType rogue -1 3 0
+ObjectTemplate.addVehicleType Red -1 2 0
+beginRem
+ObjectTemplate.addAmmoType 0 -1 10 0
+ObjectTemplate.addAmmoType 1 -1 15 0
+ObjectTemplate.addAmmoType 2 -1 1.2 0
+ObjectTemplate.addAmmoType 3 -1 1.2 0
+endRem
+ObjectTemplate.workOnVehicles 1
+ObjectTemplate.workOnSoldiers 0
+
+rem *** DroidCapsuleLauncher **
+ObjectTemplate.create FireArms DroidCapsuleLauncher
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/DroidCapsuleLaunch.ssc
+ObjectTemplate.projectileTemplate DroidCapsuleSpawnerProjectile
+ObjectTemplate.projectilePosition 0/-3/0
+ObjectTemplate.setHasMag 1
+ObjectTemplate.magSize 3
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.velocity 1
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 2
+ObjectTemplate.roundOfFire 0.5
+ObjectTemplate.AltFireOnce 1
+ObjectTemplate.setInputFire c_PIAltFire
+
+rem *** DroidCapsuleSpawnerProjectile ***
+ObjectTemplate.create Projectile DroidCapsuleSpawnerProjectile
+ObjectTemplate.saveInSeparateFile 1 
+ObjectTemplate.addTemplate DroidCapsuleSpawner
+ObjectTemplate.timeToLive CRD_NONE/1/0/0 
+ObjectTemplate.gravityModifier 0.5 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.DetonateOnWaterCollision 1 
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** DroidCapsuleSpawner *** 
+ObjectTemplate.create ObjectSpawner DroidCapsuleSpawner
+ObjectTemplate.setObjectTemplate 1 DroidCapsule
+ObjectTemplate.setObjectTemplate 2 DroidCapsule
+ObjectTemplate.minSpawnDelay 0 
+ObjectTemplate.maxSpawnDelay 0 
+ObjectTemplate.TimeToLive 60
+ObjectTemplate.Distance 10
+ObjectTemplate.team 2 
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 1

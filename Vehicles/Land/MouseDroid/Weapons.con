@@ -1,0 +1,28 @@
+rem *** MouseDroidBeep ***
+ObjectTemplate.create FireArms MouseDroidBeep 
+ObjectTemplate.setNetworkableInfo MouseDroid_weapon_info
+ObjectTemplate.loadSoundScript Sounds/MouseDroidBeep.ssc
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize -1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.fireOnce 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	8
+ObjectTemplate.velocity 0
+
+rem *** MouseDroidBeep2 ***
+ObjectTemplate.create FireArms MouseDroidBeep2 
+ObjectTemplate.setNetworkableInfo MouseDroid_weapon_info
+ObjectTemplate.loadSoundScript Sounds/MouseDroidBeep2.ssc
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize -1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.AltFireOnce 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	8
+ObjectTemplate.velocity 0
+ObjectTemplate.setInputFire c_PIAltFire

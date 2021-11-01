@@ -1,0 +1,73 @@
+ObjectTemplate.create HandFireArms SpeederPistol
+ObjectTemplate.itemIndex 2
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate speederpistolProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.magSize 55
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 0.000001
+ObjectTemplate.roundOfFire 6
+ObjectTemplate.fireOnce 1
+objectTemplate.aiTemplate P38AI
+ObjectTemplate.zoomFov 0.4
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.soldierZoomFov 0.5 
+ObjectTemplate.soldierZoomPosition -0.01/-0.01/0.1
+ObjectTemplate.soldierCameraPosition 0.02/-0.05/0.2
+ObjectTemplate.AmmoType	1
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.setHasMag 0
+
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 25
+ObjectTemplate.distToMinDamage 50
+
+ObjectTemplate.useScope 1
+ObjectTemplate.setScopeIcon "reb_dl-44scope.tga"
+ObjectTemplate.unZoomBetweenFireTime 0
+
+ObjectTemplate.setHudAmmoType ATIconAndHeatBar
+ObjectTemplate.setAmmoIcon "ammo/icon_laser_64x32.dds"
+ObjectTemplate.setCrossHairType CHTCrossHair
+
+Rem *** Deviation Begin *****
+ObjectTemplate.velocity 340
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.4/0.6/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.2/-0.2/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 1
+
+ObjectTemplate.setFireDev 2.5 1.5 0.07
+ObjectTemplate.setMinDev 0.2
+ObjectTemplate.setTurnDev 0 0 0 0
+ObjectTemplate.setSpeedDev 1.5 0.2 0.2 0.1
+ObjectTemplate.setMiscDev 2.5 2.5 0.1
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript Sounds/SpeederPistol.ssc
+ObjectTemplate.createSkeleton animations/SpeederPistol.ske
+ObjectTemplate.useSkeletonPartAsMain Colt
+ObjectTemplate.addTemplate SpeederPistolLod
+
+
+ObjectTemplate.addTemplate e_MuzzGun
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0/0.183
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.create AnimatedBundle SpeederPistolComplex
+ObjectTemplate.createSkeleton animations/SpeederPistol.ske
+ObjectTemplate.addTemplate SpeederPistolSimple
+ObjectTemplate.bindToSkeletonPart Colt
+
+ObjectTemplate.create SimpleObject SpeederPistolSimple
+ObjectTemplate.geometry SpeederPistol_m1
+
+ObjectTemplate.create LodObject SpeederPistolLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate SpeederPistolComplex
+ObjectTemplate.addTemplate SpeederPistolSimple

@@ -1,0 +1,378 @@
+rem ---------- Laser Projectiles - No Splash ----------
+
+rem *** LightLaserProjectileRedNS ***
+ObjectTemplate.create Projectile LightLaserProjectileRedNS
+ObjectTemplate.geometry Tlight_r1_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 700
+
+rem *** LightLaserProjectileGreenNS ***
+ObjectTemplate.create Projectile LightLaserProjectileGreenNS
+ObjectTemplate.geometry Tlight_g1_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 700
+
+rem *** MediumLaserProjectileRedNS ***
+ObjectTemplate.create Projectile MediumLaserProjectileRedNS
+ObjectTemplate.geometry Tlight_r2_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 702
+
+rem *** MediumLaserProjectileGreenNS ***
+ObjectTemplate.create Projectile MediumLaserProjectileGreenNS
+ObjectTemplate.geometry Tlight_g2_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 702
+
+rem *** StrongLaserProjectileRedNS ***
+ObjectTemplate.create Projectile StrongLaserProjectileRedNS
+ObjectTemplate.geometry Tlight_r3_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 704
+
+rem *** StrongLaserProjectileGreenNS ***
+ObjectTemplate.create Projectile StrongLaserProjectileGreenNS
+ObjectTemplate.geometry Tlight_g3_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 704
+
+rem *** MediumLaserProjectileBlueNS ***
+ObjectTemplate.create Projectile MediumLaserProjectileBlueNS
+ObjectTemplate.geometry Tlight_b2_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+rem Material is from Heavy Blasters on Tanks
+ObjectTemplate.material 713
+
+rem *** MediumLaserProjectileBlueNS ***
+ObjectTemplate.create Projectile MediumLaserProjectileBlueNSFake
+ObjectTemplate.geometry Tlight_b2_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+rem Faked as a normal Medium projectile- not ion
+ObjectTemplate.material 702
+
+rem ---------- Laser Projectiles - With Splash ----------
+
+rem *** LightLaserProjectileRedS ***
+ObjectTemplate.create Projectile LightLaserProjectileRedS
+ObjectTemplate.geometry Tlight_r1_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 700
+ObjectTemplate.material2 701
+ObjectTemplate.damageType 1
+ObjectTemplate.radius 8
+ObjectTemplate.ForceOnExplosion 2
+ObjectTemplate.explodeNearEnemyDistance 6.5
+ObjectTemplate.ProximityFusePrimer 0.01
+
+rem *** LightLaserProjectileGreenS ***
+ObjectTemplate.create Projectile LightLaserProjectileGreenS
+ObjectTemplate.geometry Tlight_g1_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 700
+ObjectTemplate.material2 701
+ObjectTemplate.damageType 1
+ObjectTemplate.radius 8
+ObjectTemplate.ForceOnExplosion 2
+ObjectTemplate.explodeNearEnemyDistance 6.5
+ObjectTemplate.ProximityFusePrimer 0.01
+
+rem *** MediumLaserProjectileRedS ***
+ObjectTemplate.create Projectile MediumLaserProjectileRedS
+ObjectTemplate.geometry Tlight_r2_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 702
+ObjectTemplate.material2 703
+ObjectTemplate.damageType 1
+ObjectTemplate.radius 5
+ObjectTemplate.ForceOnExplosion 2
+ObjectTemplate.explodeNearEnemyDistance 3.8
+ObjectTemplate.ProximityFusePrimer 0.01
+
+rem *** MediumLaserProjectileGreenS ***
+ObjectTemplate.create Projectile MediumLaserProjectileGreenS
+ObjectTemplate.geometry Tlight_g2_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 702
+ObjectTemplate.material2 703
+ObjectTemplate.damageType 1
+ObjectTemplate.radius 5
+ObjectTemplate.ForceOnExplosion 2
+ObjectTemplate.explodeNearEnemyDistance 3.8
+ObjectTemplate.ProximityFusePrimer 0.01
+
+rem *** StrongLaserProjectileRedS ***
+ObjectTemplate.create Projectile StrongLaserProjectileRedS
+ObjectTemplate.geometry Tlight_r3_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 704
+ObjectTemplate.material2 705
+ObjectTemplate.damageType 1
+ObjectTemplate.radius 8
+ObjectTemplate.ForceOnExplosion 2
+ObjectTemplate.explodeNearEnemyDistance 6.5
+ObjectTemplate.ProximityFusePrimer 0.01
+
+rem *** StrongLaserProjectileGreenS ***
+ObjectTemplate.create Projectile StrongLaserProjectileGreenS
+ObjectTemplate.geometry Tlight_g3_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 704
+ObjectTemplate.material2 705
+ObjectTemplate.damageType 1
+ObjectTemplate.radius 8
+ObjectTemplate.ForceOnExplosion 2
+ObjectTemplate.explodeNearEnemyDistance 6.5
+ObjectTemplate.ProximityFusePrimer 0.01
+
+rem *** CaptialLaserProjectileGreenS ***
+ObjectTemplate.create Projectile CapitalLaserProjectileGreenS
+ObjectTemplate.geometry Tlight_g3_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 706
+ObjectTemplate.material2 707
+ObjectTemplate.damageType 1
+ObjectTemplate.radius 10
+ObjectTemplate.ForceOnExplosion 2
+ObjectTemplate.explodeNearEnemyDistance 6.5
+ObjectTemplate.ProximityFusePrimer 0.01
+
+rem *** CaptialLaserProjectileGreenS ***
+ObjectTemplate.create Projectile CapitalLaserProjectileRedS
+ObjectTemplate.geometry Tlight_r3_m1
+ObjectTemplate.tracerScaler 50.0
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 706
+ObjectTemplate.material2 707
+ObjectTemplate.damageType 1
+ObjectTemplate.radius 10
+ObjectTemplate.ForceOnExplosion 2
+ObjectTemplate.explodeNearEnemyDistance 6.5
+ObjectTemplate.ProximityFusePrimer 0.01
+
+rem *** BeamLaserProjectileGreenS ***
+ObjectTemplate.create Projectile BeamLaserProjectileGreenS
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 1
+ObjectTemplate.material 708
+ObjectTemplate.material2 551
+ObjectTemplate.damageType 1
+ObjectTemplate.radius 4
+ObjectTemplate.ForceOnExplosion 20
+ObjectTemplate.explodeNearEnemyDistance 6.5
+ObjectTemplate.ProximityFusePrimer 0.01
+
+rem *** HeavyBlasterProjectileBlueS ***
+ObjectTemplate.create Projectile HeavyBlasterProjectileBlueS
+ObjectTemplate.geometry projectile_m1
+ObjectTemplate.timeToLive CRD_NONE/20/0/0
+rem ObjectTemplate.addTemplate e_blaster_blue
+ObjectTemplate.addTemplate e_projectiletank
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 1
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.material 713
+ObjectTemplate.material2 714
+ObjectTemplate.damageType 1
+ObjectTemplate.radius 10
+ObjectTemplate.ForceOnExplosion 30
+ObjectTemplate.explodeNearEnemyDistance 6.5
+ObjectTemplate.ProximityFusePrimer 0.01
+
+ObjectTemplate.create Projectile AA_Allies_Projectile
+ObjectTemplate.geometry tracklight_M1
+ObjectTemplate.timeToLive CRD_UNIFORM/0.8/1.4/0
+ObjectTemplate.endEffectTemplate e_FlakBig
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 228
+ObjectTemplate.material2 199
+ObjectTemplate.damageType 4
+ObjectTemplate.radius 20.0
+ObjectTemplate.ForceOnExplosion 1
+ObjectTemplate.explodeNearEnemyDistance 10.0
+ObjectTemplate.ProximityFusePrimer 0.1
+
+rem ---------- Rocket Projectiles ----------
+
+rem *** RocketProjectile1 ***
+ObjectTemplate.create Projectile RocketProjectile1
+ObjectTemplate.geometry FlechetteRocket_m1
+ObjectTemplate.timeToLive CRD_NONE/28/0/0
+rem ObjectTemplate.timeOnEndEffect 0.1
+ObjectTemplate.hasCollisionPhysics 1
+rem ObjectTemplate.gravityModifier .17
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.damageType 1
+ObjectTemplate.material 539
+ObjectTemplate.material2 540
+ObjectTemplate.radius 10
+ObjectTemplate.ForceOnExplosion 1
+ObjectTemplate.addTemplate e_projectilePlx-2m
+ObjectTemplate.loadSoundScript Sounds/bazookaprojectile.ssc
+
+rem See Object code for Rocket2 projectile
+rem ---------- Bomb Projectiles ----------
+
+

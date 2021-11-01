@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle platformpiece	
+ObjectTemplate.geometry platformpiece
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate platformpiece

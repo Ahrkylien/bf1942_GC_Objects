@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject echo_medroom
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry echo_medroom
+objectTemplate.aiTemplate echo_medroom
+rem ---------------------------

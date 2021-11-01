@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject imp_module_armory1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry imp_module_armory1
+objectTemplate.aiTemplate imp_module_armory1
+rem ---------------------------

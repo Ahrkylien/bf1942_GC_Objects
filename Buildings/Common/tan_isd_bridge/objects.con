@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject tan_isd_bridge
+ObjectTemplate.geometry tan_isd_bridge
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate tan_isd_bridge
+

@@ -1,0 +1,6 @@
+NetworkableInfo.createNewInfo medscannerInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo medscanner_pcoInfo
+NetworkableInfo.setPredictionMode PMNone
+NetworkableInfo.setBasePriority 0

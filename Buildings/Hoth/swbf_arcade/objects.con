@@ -1,0 +1,8 @@
+rem ******** swbf_arcade ******
+rem ******** by Preacher
+
+ObjectTemplate.create SimpleObject swbf_arcade
+ObjectTemplate.geometry swbf_arcade
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+

@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle tat_mug1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry tat_mug1
+objectTemplate.aiTemplate tat_mug1
+rem ---------------------------

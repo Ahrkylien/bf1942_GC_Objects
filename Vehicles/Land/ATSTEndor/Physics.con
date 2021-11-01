@@ -1,0 +1,86 @@
+
+
+rem *** ATSTDummyEngine ***
+ObjectTemplate.create Engine ATSTDummyEngine
+ObjectTemplate.setNetworkableInfo ATSTEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/ATSTEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ATSTDummyFrontWheelR
+ObjectTemplate.setPosition 1.6/0.11/1.0
+ObjectTemplate.addTemplate ATSTDummyFrontWheelL
+ObjectTemplate.setPosition -1.6/0.11/1.0
+ObjectTemplate.addTemplate ATSTDummyBackSpringR
+ObjectTemplate.setPosition 1.6/-0.472/-1.21
+ObjectTemplate.addTemplate ATSTDummyBackSpringL
+ObjectTemplate.setPosition -1.6/-0.472/-1.21
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-50
+ObjectTemplate.setMaxRotation 0/0/50
+ObjectTemplate.setMaxSpeed 0/0/10
+ObjectTemplate.setAcceleration 0/0/50000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 5
+ObjectTemplate.setDifferential 5
+ObjectTemplate.setNumberOfGears 4
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+
+rem *** ATSTDummyFrontSpringR ***
+ObjectTemplate.create Spring ATSTDummyFrontSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Willy_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+
+rem *** ATSTDummyFrontSpringL ***
+ObjectTemplate.create Spring ATSTDummyFrontSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Willy_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+
+
+rem *** ATSTDummyBackSpringR ***
+ObjectTemplate.create Spring ATSTDummyBackSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Willy_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+
+
+rem *** ATSTDummyBackSpringL ***
+ObjectTemplate.create Spring ATSTDummyBackSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Willy_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5

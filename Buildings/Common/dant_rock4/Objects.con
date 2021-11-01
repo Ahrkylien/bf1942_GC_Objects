@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject dant_rock4
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry dant_rock4
+objectTemplate.aiTemplate dant_rock4
+rem ---------------------------

@@ -1,0 +1,11 @@
+NetworkableInfo.createNewInfo yt600BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo yt600EngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo yt600RudderInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo yt600PassengerInfo
+NetworkableInfo.setPredictionMode PMLinear

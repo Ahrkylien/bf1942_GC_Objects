@@ -1,0 +1,87 @@
+################
+### Gear Out ###
+################
+newPatch
+
+##################
+### Gear Start ###
+##################
+load @ROOT/Sound/@RTD/silence.wav
+
+###############
+### Gear Out ##
+###############
+load @ROOT/Sound/@RTD/silence.wav
+
+#################
+### Gear Out 2 ##
+#################
+
+load @ROOT/Sound/@RTD/heightwarning.wav
+loop
+minDistance 3
+dopplerOff
+volume .5
+priority 3
+*** Gear start Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param .4
+	param 1.2
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 10
+	param 1
+	param -1	
+endEffect
+
+*** Gear stop Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+#################
+### Gear Stop ###
+#################
+load @ROOT/Sound/@RTD/silence.wav
+
+##############
+### Gear In ##
+##############
+newPatch
+
+##################
+### Gear Start ###
+##################
+load @ROOT/Sound/@RTD/silence.wav
+
+##############
+### Gear In ##
+##############
+load @ROOT/Sound/@RTD/silence.wav
+
+################
+### Gear In 2 ##
+################
+load @ROOT/Sound/@RTD/silence.wav
+
+#################
+### Gear Stop ###
+#################
+load @ROOT/Sound/@RTD/silence.wav

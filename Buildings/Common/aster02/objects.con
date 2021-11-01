@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject aster02
+ObjectTemplate.geometry aster02
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate aster02
+

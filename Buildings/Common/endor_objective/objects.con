@@ -1,0 +1,22 @@
+rem *** DsObj ***
+ObjectTemplate.create PlayerControlObject endor_objective
+ObjectTemplate.setNetworkableInfo ds_objective_info
+ObjectTemplate.geometry endor_objective
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 400
+ObjectTemplate.maxhitpoints 400
+ObjectTemplate.material 811
+ObjectTemplate.criticalDamage 35
+ObjectTemplate.hpLostWhileCriticalDamage 4
+ObjectTemplate.addArmorEffect 300 e_DefGunDamage 0/1/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.timetoliveafterdeath 9999
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+rem -------------------------------------
+ObjectTemplate.GUIIndex 67
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_blank_16x16.dds"
+

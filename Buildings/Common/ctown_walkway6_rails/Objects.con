@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject ctown_walkway6_rails
+ObjectTemplate.geometry ctown_walkway6_rails
+ObjectTemplate.setHasCollisionPhysics 1

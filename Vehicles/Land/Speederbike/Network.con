@@ -1,0 +1,12 @@
+NetworkableInfo.createNewInfo SpeederbikeEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SpeederbikeSteeringInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SpeederbikeBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SpeederbikeWingInfo
+NetworkableInfo.setPredictionMode PMLinear
+

@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh ioncannon
+GeometryTemplate.file buildings/ioncannon
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 1000
+GeometryTemplate.setLodDistance 2 1400
+GeometryTemplate.setLodDistance 3 1500
+GeometryTemplate.setLodDistance 4 1600
+GeometryTemplate.setLodDistance 5 2000

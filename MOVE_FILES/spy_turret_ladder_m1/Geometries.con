@@ -1,0 +1,5 @@
+GeometryTemplate.create StandardMesh spy_turret_ladder_m1
+GeometryTemplate.file Buildings/Hoth/spy_turret_ladder
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+

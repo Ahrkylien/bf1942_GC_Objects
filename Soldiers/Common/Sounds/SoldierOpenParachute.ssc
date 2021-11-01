@@ -1,0 +1,6 @@
+newPatch
+############
+### Para ###
+############
+
+load @ROOT/Sound/@RTD/silence.wav

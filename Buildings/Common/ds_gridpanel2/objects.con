@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject ds_gridpanel2
+ObjectTemplate.geometry ds_gridpanel2
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate ds_gridpanel2
+

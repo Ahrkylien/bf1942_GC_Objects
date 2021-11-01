@@ -1,0 +1,21 @@
+ObjectTemplate.create Bundle evaporator
+ObjectTemplate.geometry evaporator
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate evaporator
+ObjectTemplate.loadSoundScript Sounds/Radarbun.ssc
+rem ---------------------------------------
+ObjectTemplate.addTemplate evaporator1
+ObjectTemplate.setPosition 0.01/6.25/-0.02
+rem ---------------------------------------
+
+ObjectTemplate.create RotationalBundle evaporator1
+ObjectTemplate.geometry evaporatortop
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.loadSoundScript Sounds/Radarbun_tow.ssc
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 300/0/0
+ObjectTemplate.setAcceleration 5/0/0
+ObjectTemplate.setContinousRotationSpeed 300/0/0
+
+

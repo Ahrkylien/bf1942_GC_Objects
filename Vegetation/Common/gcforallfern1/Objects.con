@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject gcforallfern1
+ObjectTemplate.geometry gcforallfern1
+ObjectTemplate.setHasCollisionPhysics 0
+

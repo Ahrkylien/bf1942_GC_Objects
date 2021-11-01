@@ -1,0 +1,39 @@
+renderer.beginGlobalCluster TurboLaser
+
+GeometryTemplate.create StandardMesh TurboLaserBatteryBase_m1
+GeometryTemplate.file Vehicles/TurboLaser/turbo_base
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 25
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh TurboLaserBatteryHead_m1
+GeometryTemplate.file Vehicles/TurboLaser/turbo_head
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh TurboLaserBatteryBarrel_m1
+GeometryTemplate.file Vehicles/TurboLaser/turbo_guns
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+
+GeometryTemplate.create StandardMesh DefGun_thing_M1
+GeometryTemplate.file DefGun_thing_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 200
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh TurboLaserBatteryWreck
+GeometryTemplate.file Vehicles/APTurret/Wreck_APTurret1

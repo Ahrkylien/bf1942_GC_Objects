@@ -1,0 +1,8 @@
+ObjectTemplate.create Bundle mc_tower
+ObjectTemplate.geometry mc_tower
+ObjectTemplate.aiTemplate mc_tower
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.addTemplate ladder_15m_m1
+ObjectTemplate.setPosition -1.229/10.4658/0.42
+ObjectTemplate.setRotation -31.9776/0.0/0.0

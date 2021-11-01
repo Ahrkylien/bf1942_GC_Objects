@@ -1,0 +1,103 @@
+ObjectTemplate.create Bundle jud_rails
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry jud_rails
+objectTemplate.aiTemplate jud_rails
+rem ---------------------------
+beginrem
+ObjectTemplate.addTemplate Ladders1
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate Ladders1
+ObjectTemplate.setPosition 0/0/8.665
+ObjectTemplate.addTemplate Ladders1
+ObjectTemplate.setPosition 0/0/-6.715
+ObjectTemplate.addTemplate Ladders1
+ObjectTemplate.setPosition 0/0/-15.355
+ObjectTemplate.addTemplate Ladders2
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate Ladders3
+ObjectTemplate.setPosition 0/0/0
+
+ObjectTemplate.create Bundle Ladders1
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition -500/2.16/0.935
+ObjectTemplate.setRotation 180/25.5/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition -300/2.16/0.935
+ObjectTemplate.setRotation 180/25.5/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition -100/2.16/0.935
+ObjectTemplate.setRotation 180/25.5/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition 100/2.16/0.935
+ObjectTemplate.setRotation 180/25.5/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition 300/2.16/0.935
+ObjectTemplate.setRotation 180/25.5/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition 500/2.16/0.935
+ObjectTemplate.setRotation 180/25.5/0
+
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition -500/2.16/3.63
+ObjectTemplate.setRotation 0/-23/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition -300/2.16/3.63
+ObjectTemplate.setRotation 0/-23/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition -100/2.16/3.63
+ObjectTemplate.setRotation 0/-23/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition 100/2.16/3.63
+ObjectTemplate.setRotation 0/-23/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition 300/2.16/3.63
+ObjectTemplate.setRotation 0/-23/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition 500/2.16/3.63
+ObjectTemplate.setRotation 0/-23/0
+
+ObjectTemplate.create Bundle Ladders2
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition -500/2.16/18.2
+ObjectTemplate.setRotation 180/25.5/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition -300/2.16/18.2
+ObjectTemplate.setRotation 180/25.5/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition -100/2.16/18.2
+ObjectTemplate.setRotation 180/25.5/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition 100/2.16/18.2
+ObjectTemplate.setRotation 180/25.5/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition 300/2.16/18.2
+ObjectTemplate.setRotation 180/25.5/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition 500/2.16/18.2
+ObjectTemplate.setRotation 180/25.5/0
+
+ObjectTemplate.create Bundle Ladders3
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition -500/2.16/-22.24
+ObjectTemplate.setRotation 0/-23/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition -300/2.16/-22.24
+ObjectTemplate.setRotation 0/-23/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition -100/2.16/-22.24
+ObjectTemplate.setRotation 0/-23/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition 100/2.16/-22.24
+ObjectTemplate.setRotation 0/-23/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition 300/2.16/-22.24
+ObjectTemplate.setRotation 0/-23/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition 500/2.16/-22.24
+ObjectTemplate.setRotation 0/-23/0
+
+endrem
+
+
+
+

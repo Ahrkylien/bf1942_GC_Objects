@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle mc_fort_tower
+ObjectTemplate.geometry mc_fort_tower
+objectTemplate.aiTemplate mc_fort_tower
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.cullRadiusScale 2

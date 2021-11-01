@@ -1,0 +1,31 @@
+ObjectTemplate.create PlayerControlObject Stationary_Eweb
+ObjectTemplate.setSoldierExitLocation 1/0/-1.5 0/0/0
+ObjectTemplate.networkableInfo StationaryEweb_Base_BodyInfo
+ObjectTemplate.setPcoId 0
+ObjectTemplate.HasArmor 1
+ObjectTemplate.HitPoints 75
+ObjectTemplate.MaxHitPoints 75
+ObjectTemplate.Material 811
+Objecttemplate.GUIIndex 79
+ObjectTemplate.setVehicleIcon "Vehicle/icon_eweb.dds"
+ObjectTemplate.setVehicleIconPos 96/25
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory Land
+ObjectTemplate.setVehicleType AAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.HasCollisionPhysics 1
+ObjectTemplate.HasResponsePhysics 1
+objectTemplate.criticalDamage 1
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.aiTemplate AA_Allies
+ObjectTemplate.timetoliveafterdeath 0
+
+ObjectTemplate.addTemplate Eweb_StationaryBase
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+
+

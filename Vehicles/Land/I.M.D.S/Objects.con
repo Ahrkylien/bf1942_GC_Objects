@@ -1,0 +1,120 @@
+rem *** I.M.D.S ***
+ObjectTemplate.create PlayerControlObject I.M.D.S
+ObjectTemplate.setNetworkableInfo I.M.D.SBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 160
+ObjectTemplate.maxhitpoints 160
+ObjectTemplate.material 811
+ObjectTemplate.criticalDamage 9
+rem ObjectTemplate.geometry DefGun_thing_M1
+ObjectTemplate.hpLostWhileCriticalDamage 0.9
+rem ObjectTemplate.addArmorEffect 9 e_Wreck1Smoke 0/2/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_awing 0/2/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/10/0
+ObjectTemplate.aiTemplate apturret
+ObjectTemplate.timetoliveafterdeath 5
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate lodI.M.D.S
+ObjectTemplate.setSoldierExitLocation 0/0/2.5 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_IMDS.dds"
+ObjectTemplate.setVehicleIconPos 60/55
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_rocket.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType AAGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+
+rem *** lodI.M.D.S ***
+ObjectTemplate.create LodObject lodI.M.D.S
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate I.M.D.SComplex
+ObjectTemplate.addTemplate I.M.D.SWreck
+ObjectTemplate.setPosition 0/2/0
+rem -------------------------------------
+ObjectTemplate.lodSelector lodI.M.D.SSelector
+
+rem *** I.M.D.SComplex ***
+ObjectTemplate.create Bundle I.M.D.SComplex
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.geometry I.M.D.SBase_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate I.M.D.SEntry
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate I.M.D.SHead
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+
+rem *** I.M.D.SEntry ***
+ObjectTemplate.create EntryPoint I.M.D.SEntry
+ObjectTemplate.setEntryRadius 5
+
+rem *** I.M.D.SHead ***
+ObjectTemplate.create RotationalBundle I.M.D.SHead
+ObjectTemplate.setNetworkableInfo I.M.D.STurretInfo
+ObjectTemplate.geometry I.M.D.SHead_m1
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.loadSoundScript Sounds/I.M.D.SRotate.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate I.M.D.SBarrel
+ObjectTemplate.setPosition 0/3.0594/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 200/0/0
+ObjectTemplate.setAcceleration 700/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** I.M.D.SBase ***
+ObjectTemplate.create SimpleObject I.M.D.SBase
+ObjectTemplate.geometry I.M.D.SBase_m1
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasCollisionPhysics 1
+
+rem *** I.M.D.SBarrel ***
+ObjectTemplate.create RotationalBundle I.M.D.SBarrel
+ObjectTemplate.setNetworkableInfo I.M.D.SCameraInfo
+
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.loadSoundScript Sounds/TurboLaserRotate.ssc
+rem**********************
+ObjectTemplate.addTemplate I.M.D.SCamera
+ObjectTemplate.setPosition 0/0.05/1.5
+ObjectTemplate.addTemplate I.M.D.SGun
+ObjectTemplate.setPosition 0/0/0
+rem**********************
+ObjectTemplate.setMinRotation 0/-70/0
+ObjectTemplate.setMaxRotation 0/-3/0
+ObjectTemplate.setMaxSpeed 0/200/0
+ObjectTemplate.setAcceleration 0/700/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** I.M.D.SCamera ***
+ObjectTemplate.create Camera I.M.D.SCamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** I.M.D.SWreck ***
+ObjectTemplate.create SimpleObject I.M.D.SWreck
+ObjectTemplate.geometry Wreck_none
+
+rem *** lodI.M.D.SSelector ***
+LodSelectorTemplate.create DistCompareSelector2 lodI.M.D.SSelector
+LodSelectorTemplate.hasDestroyedLod 1
+

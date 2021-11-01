@@ -1,0 +1,45 @@
+newPatch
+#################
+### Near left ###
+#################
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+######################
+### Near/Far Right ###
+######################
+load @ROOT/Sound/@RTD/mf-hyperdrive-start.wav
+minDistance 20
+priority 8
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 220
+	param 1
+	param -1
+endEffect
+
+
+##############
+### Reload ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+###############
+### Release ###
+###############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+####################
+### Shell Bounce ###
+####################
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0

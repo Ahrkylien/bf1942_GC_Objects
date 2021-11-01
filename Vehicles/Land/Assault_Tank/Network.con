@@ -1,0 +1,11 @@
+NetworkableInfo.createNewInfo Assault_TankTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Assault_TankGunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Assault_TankEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Assault_TankBodyInfo
+NetworkableInfo.setPredictionMode PMLinear

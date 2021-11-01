@@ -1,0 +1,7 @@
+rem GeometryTemplate.create AnimatedMesh dan_wheat1
+GeometryTemplate.create StandardMesh dan_wheat1
+rem GeometryTemplate.setSkin animations/dan_wheat1.skn
+GeometryTemplate.file buildings/dantooine/dant_wheat_fullbloom_dense
+
+
+

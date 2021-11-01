@@ -1,0 +1,46 @@
+newPatch
+###############
+### SOUND 1 ###
+###############
+stream @ROOT/Sound/@RTD/smoke_grenade2.wav
+
+minDistance 2
+randomStartPitch 0.05 / 0.05
+stop FinishSample
+dopplerOff
+volume 1
+priority 8
+
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0
+	param 0.9
+	param 0
+	param 1	
+endEffect
+trigger Volume
+/*
+load @ROOT/Sound/@RTD/smoke_grenade_start.wav
+
+minDistance 2
+randomStartPitch 0.05 / 0.05
+stop FinishSample
+dopplerOff
+volume 1
+priority 8
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 1
+	param 1
+	param 0
+	param 1	
+endEffect
+trigger Volume

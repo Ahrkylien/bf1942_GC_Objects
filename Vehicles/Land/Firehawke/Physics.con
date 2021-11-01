@@ -1,0 +1,104 @@
+
+
+rem *** Engine ***
+ObjectTemplate.create Engine Firehawke_Engine
+ObjectTemplate.setNetworkableInfo FirehawkeEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/SailBargeEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate FHFrontWheelR
+ObjectTemplate.setPosition 2.2/-1.3/4.4
+ObjectTemplate.addTemplate FHFrontWheelL
+ObjectTemplate.setPosition -2.2/-1.3/4.4
+
+ObjectTemplate.addTemplate FHBackSpringR
+ObjectTemplate.setPosition 3.2/-0.8/-0.8
+ObjectTemplate.addTemplate FHBackSpringL
+ObjectTemplate.setPosition -3.2/-0.8/-0.8
+
+ObjectTemplate.addTemplate FHBackSpringR
+ObjectTemplate.setPosition 2.2/-1.3/-4.8
+ObjectTemplate.addTemplate FHBackSpringL
+ObjectTemplate.setPosition -2.2/-1.3/-4.8
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-5000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/5000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 25
+ObjectTemplate.setDifferential 10
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.4
+
+
+rem *** WillyFrontSpringR ***
+ObjectTemplate.create Spring FHFrontSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Willy_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+rem ObjectTemplate.addTemplate e_wdustWheelFL
+rem ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 40
+ObjectTemplate.setDamping 5
+ObjectTemplate.createInvisible 1
+
+
+rem *** WillyFrontSpringL ***
+ObjectTemplate.create Spring FHFrontSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Willy_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+rem ObjectTemplate.addTemplate e_wdustWheelFL
+rem ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 40
+ObjectTemplate.setDamping 5
+ObjectTemplate.createInvisible 1
+
+rem *** WillyBackSpringR ***
+ObjectTemplate.create Spring FHBackSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Willy_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+rem ObjectTemplate.addTemplate e_wdustWheelFL
+rem ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 40
+ObjectTemplate.setDamping 5
+ObjectTemplate.createInvisible 1
+
+rem *** WillyBackSpringL ***
+ObjectTemplate.create Spring FHBackSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Willy_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+rem ObjectTemplate.addTemplate e_wdustWheelFL
+rem ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 40
+ObjectTemplate.setDamping 5
+ObjectTemplate.createInvisible 1

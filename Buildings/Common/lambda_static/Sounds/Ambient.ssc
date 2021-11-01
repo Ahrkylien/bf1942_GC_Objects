@@ -1,0 +1,20 @@
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/mediscanner.wav
+loop
+minDistance 5
+volume .7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1	
+endEffect
+priority -5

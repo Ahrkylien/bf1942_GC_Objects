@@ -1,0 +1,20 @@
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/ambient-mouse_droid_control.wav
+relativePosition 0/0.5/0
+loop
+minDistance 2
+volume 0.25
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 7
+	param 1
+	param -1	
+endEffect

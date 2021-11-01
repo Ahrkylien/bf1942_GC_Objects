@@ -1,0 +1,89 @@
+rem ----------------------------------------------------------
+rem Firearm: E-11Sniper
+rem ----------------------------------------------------------
+ObjectTemplate.create HandFireArms E-11Sniper
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.itemIndex 3
+ObjectTemplate.zoomFov 0.08
+ObjectTemplate.unZoomBetweenFireTime 0
+ObjectTemplate.useScope 1
+ObjectTemplate.projectileTemplate E-11sniperProjectile
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.projectilePosition 0/0.058/0
+ObjectTemplate.magSize 50
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 0.0001
+ObjectTemplate.roundOfFire 1.2
+ObjectTemplate.fireOnce 1
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.setHudAmmoType ATIconAndHeatBar
+ObjectTemplate.setAmmoIcon "ammo/icon_laser_64x32.dds"
+ObjectTemplate.setHasMag 0
+ObjectTemplate.setScopeIcon "imp_E-11_sniper.tga"
+ObjectTemplate.setSniperSight 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.soldierZoomFov 0.6 
+ObjectTemplate.soldierZoomPosition -0.1/0/0
+ObjectTemplate.soldierCameraPosition -0.02/-0.04/0.1
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	1
+ObjectTemplate.timeToNotAllowChange 0.25
+
+
+ObjectTemplate.minDamage 1.8
+ObjectTemplate.distToStartLoseDamage 700
+ObjectTemplate.distToMinDamage 710
+
+
+Rem *** Deviation Begin *****
+ObjectTemplate.velocity 3000
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/1.8/2/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 0
+
+ObjectTemplate.setFireDev 0 0 0
+ObjectTemplate.setDevMod  1 0.7 0.5
+ObjectTemplate.setMinDev 0
+ObjectTemplate.setTurnDev 0 0 0 0
+ObjectTemplate.setSpeedDev 1.5 0.4 0.4 0.1
+ObjectTemplate.setMiscDev 2.5 2.5 0.1
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript Sounds/E-11Sniper.ssc
+ObjectTemplate.createSkeleton animations/E-11Sniper.ske
+ObjectTemplate.useSkeletonPartAsMain thompson
+
+ObjectTemplate.addTemplate E-11SniperLod
+rem ObjectTemplate.setRotation -13.5/0/0
+ObjectTemplate.setPosition 0/-0.035/0.2
+
+
+ObjectTemplate.addTemplate e_MuzzGun
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.03/0.5
+
+rem *** Objects ***
+
+ObjectTemplate.create SimpleObject E-11SniperSimple
+ObjectTemplate.geometry E-11s_m1
+
+ObjectTemplate.create AnimatedBundle E-11SniperComplex
+ObjectTemplate.geometry E-11s_m1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.createSkeleton animations/E-11Sniper.ske
+
+
+ObjectTemplate.create LodObject E-11SniperLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate E-11SniperComplex
+ObjectTemplate.addTemplate E-11SniperSimple
+
+
+
+
+
+

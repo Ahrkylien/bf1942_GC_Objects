@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle jud_security2
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry jud_security2
+objectTemplate.aiTemplate jud_security2
+rem ---------------------------

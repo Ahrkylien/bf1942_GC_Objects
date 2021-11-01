@@ -1,0 +1,9 @@
+
+NetworkableInfo.createNewInfo SandcrawlerEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SandcrawlerBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SandcrawlerDoorInfo
+NetworkableInfo.setPredictionMode PMLinear

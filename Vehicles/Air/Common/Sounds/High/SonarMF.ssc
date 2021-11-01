@@ -1,0 +1,39 @@
+newPatch
+
+load @ROOT/Sound/@RTD/snrsub.wav
+priority 10
+stereo
+minDistance 10
+
+*** Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 0
+	param 0.75
+	param 0
+endEffect
+
+*** Ping Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 1
+	param 1
+	param -1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20 
+	param 1
+	param -1
+endEffect

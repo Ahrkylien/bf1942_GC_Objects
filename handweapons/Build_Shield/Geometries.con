@@ -1,0 +1,19 @@
+GeometryTemplate.create StandardMesh Shield_hand
+GeometryTemplate.file shield_build
+GeometryTemplate.hasDynamicShadow 0
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 40
+GeometryTemplate.setLodDistance 2 80
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh Shield_down
+GeometryTemplate.file shield_down
+GeometryTemplate.hasDynamicShadow 0
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 400
+GeometryTemplate.setLodDistance 2 500
+GeometryTemplate.setLodDistance 3 800
+GeometryTemplate.setLodDistance 4 850
+GeometryTemplate.setLodDistance 5 1000

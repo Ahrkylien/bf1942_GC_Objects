@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject tan_computer
+ObjectTemplate.geometry tan_computer
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate tan_computer
+

@@ -1,0 +1,46 @@
+newPatch
+
+################
+### CockpitL ###
+################
+
+load @ROOT/Sound/@RTD/snowspeeder-cockpit-l.wav
+loop
+minDistance 2
+relativePosition 0.2/0.3/0
+volume 0.3
+priority 6
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1	
+endEffect
+
+################
+### CockpitR ###
+################
+
+load @ROOT/Sound/@RTD/snowspeeder-cockpit-r.wav
+loop
+minDistance 2
+relativePosition -0.2/0.3/0
+volume 0.35
+priority 6
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1	
+endEffect
+

@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle riserpiece	
+ObjectTemplate.geometry riserpiece
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate riserpiece

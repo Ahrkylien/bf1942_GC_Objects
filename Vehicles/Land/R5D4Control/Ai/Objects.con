@@ -1,0 +1,62 @@
+rem *** Plugins ***
+
+aiTemplatePlugIn.create Cover WasserFallLauncherCover
+aiTemplatePlugIn.coverValue 5.0
+
+aiTemplatePlugIn.create Unit WasserFallLauncherUnit
+aiTemplatePlugIn.setStrategicStrength 0 0
+aiTemplatePlugIn.setStrategicStrength 1 4
+aiTemplatePlugIn.equipmentType 17
+
+aiTemplatePlugIn.create Physical WasserFallLauncherPhysical
+aiTemplatePlugIn.setStrType LightArmour
+
+aiTemplatePlugIn.create Armament WasserFallLauncherArms
+aiTemplatePlugIn.setIsAntiAircraft 1
+
+aiTemplatePlugIn.create ControlInfo WasserFallLauncherCtrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.maxSpeedBumpinessFallOff   0.001
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -360/0/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 360/70/0
+
+
+rem *** AITemplate ***
+aiTemplate.create WasserFallLauncherAI
+aiTemplate.addType ITBiological
+aiTemplate.addType ITGround
+aiTemplate.addType ITUnit
+aiTemplate.degeneration 30
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 20
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn WasserFallLauncherUnit
+aiTemplate.addPlugIn WasserFallLauncherPhysical
+aiTemplate.addPlugIn WasserFallLauncherCtrl
+aiTemplate.addPlugIn WasserFallLauncherCover
+aiTemplate.addPlugIn WasserFallLauncherArms
+

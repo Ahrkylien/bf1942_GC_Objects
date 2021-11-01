@@ -1,0 +1,84 @@
+rem *****AMPH PHYSICS CODE*****
+rem *** Engine ***
+
+ObjectTemplate.create Engine Amph_Engine
+ObjectTemplate.setNetworkableInfo AmphEngineInfo
+ObjectTemplate.loadSoundScript Sounds/LandspeederEngine.ssc
+ObjectTemplate.setMinRotation 0/0/-4000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/5000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETShip
+ObjectTemplate.setTorque 220
+ObjectTemplate.setDifferential 11
+ObjectTemplate.setNoPropellerEffectAtSpeed 150
+
+
+ObjectTemplate.create Wing Amph_Rudder_Stern
+ObjectTemplate.setNetworkableInfo AmphWingInfo
+ObjectTemplate.setMinRotation 0/-12/0
+ObjectTemplate.setMaxRotation 0/12/0
+ObjectTemplate.setMaxSpeed 0/6/0
+ObjectTemplate.setAcceleration 0/-15/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 1
+
+
+ObjectTemplate.create Wing Amph_Rudder_Aft
+ObjectTemplate.setNetworkableInfo AmphWingInfo
+ObjectTemplate.setMinRotation 0/-12/0
+ObjectTemplate.setMaxRotation 0/12/0
+ObjectTemplate.setMaxSpeed 0/6/0
+ObjectTemplate.setAcceleration 0/15/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 1
+
+
+ObjectTemplate.create FloatingBundle Amph_Floater
+ObjectTemplate.setHullHeight .1
+ObjectTemplate.setFloatMaxLift 8
+ObjectTemplate.setFloatMinLift 8
+ObjectTemplate.setSinkingSpeedMod 3
+
+
+ObjectTemplate.create FloatingBundle Amph_MiddleFloater
+ObjectTemplate.setHullHeight .1
+ObjectTemplate.setFloatMaxLift 9
+ObjectTemplate.setFloatMinLift 3
+ObjectTemplate.setSinkingSpeedMod 1
+
+
+ObjectTemplate.create Engine Amph_FrontLandEngine
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate WillyFrontWheelR
+ObjectTemplate.setPosition 2/1/6
+ObjectTemplate.addTemplate WillyFrontWheelL
+ObjectTemplate.setPosition -2/1/6
+ObjectTemplate.addTemplate WillyBackSpringR
+ObjectTemplate.setPosition 2/1/-6
+ObjectTemplate.addTemplate WillyBackSpringL
+ObjectTemplate.setPosition -2/1/-6
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-4000
+ObjectTemplate.setMaxRotation 0/0/2500
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/5000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 25
+ObjectTemplate.setDifferential 5
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.4
+

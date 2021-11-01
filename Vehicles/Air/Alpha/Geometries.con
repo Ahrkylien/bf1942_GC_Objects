@@ -1,0 +1,13 @@
+GeometryTemplate.create StandardMesh tan_TieFighter_M1
+GeometryTemplate.file Vehicles/TieFighter/tan_TieFighter_m1
+GeometryTemplate.hasDynamicShadow 0
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 140
+
+GeometryTemplate.create StandardMesh tan_TieFighter_L1
+GeometryTemplate.file Vehicles/TieFighter/TieFighter_Low
+GeometryTemplate.hasDynamicShadow 0

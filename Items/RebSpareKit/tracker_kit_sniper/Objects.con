@@ -1,0 +1,26 @@
+ObjectTemplate.create Kit Rebel_Tracker
+ObjectTemplate.setType Assault
+ObjectTemplate.setKitTeam 2
+
+ObjectTemplate.setHealthBarIcon "Ingame/reb_Healthbar_empty_assault_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/reb_Healthbar_full_assault_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/icon_alliesknife.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_tracker16.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_null.dds"
+
+ObjectTemplate.setKitIcon 0 "kits/Heavy_Rebel.tga"
+ObjectTemplate.setKitName 0 "RESPAWN_ASSAULT"
+ObjectTemplate.setKitActiveName 0 "RESPAWN_ACTIVE_ASSAULT"
+
+ObjectTemplate.geometry tracker_ground
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+
+ObjectTemplate.addTemplate Tracker16
+
+ObjectTemplate.addTemplate KnifeAllies
+ObjectTemplate.addTemplate NoChute
+
+ObjectTemplate.aitemplate Assault

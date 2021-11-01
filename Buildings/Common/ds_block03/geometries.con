@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh ds_block03
+GeometryTemplate.file buildings/DeathStar/ds_block03
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 800
+GeometryTemplate.setLodDistance 3 1000
+GeometryTemplate.setLodDistance 4 1500
+GeometryTemplate.setLodDistance 5 1900

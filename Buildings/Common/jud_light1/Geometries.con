@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh jud_light1
+GeometryTemplate.file buildings/Judicator/jud_light1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 400
+GeometryTemplate.setLodDistance 3 500
+GeometryTemplate.setLodDistance 4 900
+

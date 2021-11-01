@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject ctown_building12
+ObjectTemplate.geometry ctown_building12
+ObjectTemplate.setHasCollisionPhysics 1

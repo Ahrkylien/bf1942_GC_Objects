@@ -1,0 +1,64 @@
+ObjectTemplate.create HandFireArms lethal_injection
+ObjectTemplate.itemIndex 1
+ObjectTemplate.projectileTemplate lethal_injectionProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 10
+ObjectTemplate.magType 0
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 3
+ObjectTemplate.fireOnce c_True
+ObjectTemplate.roundOfFire 2
+ObjectTemplate.GUIIndex 82
+
+
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript Sounds/LethalInjection.ssc
+ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
+ObjectTemplate.aiTemplate KnifeAllies
+
+ObjectTemplate.setHudAmmoType ATAmmoBar
+ObjectTemplate.setAmmoIcon "weapon/Icon_lethal_injection.dds"
+ObjectTemplate.setCrossHairType CHTCrossHair
+
+ObjectTemplate.velocity 50
+
+ObjectTemplate.createSkeleton animations/lethal_injection.ske
+ObjectTemplate.useSkeletonPartAsMain base
+ObjectTemplate.addTemplate lethal_injectionLod
+
+rem *** Objects ***
+
+ObjectTemplate.create SimpleObject lethal_injectionSimple
+ObjectTemplate.geometry lethal_injection
+
+
+ObjectTemplate.create AnimatedBundle lethal_injectionComplex
+ObjectTemplate.createSkeleton animations/lethal_injection.ske
+ObjectTemplate.addTemplate lethal_injectionSimple
+
+
+ObjectTemplate.create LodObject lethal_injectionLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate lethal_injectionComplex
+ObjectTemplate.addTemplate lethal_injectionSimple
+
+
+rem *** Invisible knife projectile.
+ObjectTemplate.create Projectile lethal_injectionProjectile
+ObjectTemplate.geometry bullet_m1
+ObjectTemplate.timeToLive CRD_NONE/0.0665/0/0
+rem ObjectTemplate.endEffectTemplate e_RichoSand
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.hasStartEffect 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 1
+ObjectTemplate.material 750
+
+

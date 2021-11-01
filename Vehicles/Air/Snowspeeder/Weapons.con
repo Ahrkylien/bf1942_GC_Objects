@@ -1,0 +1,70 @@
+rem *** SnowspeederLaser ***
+ObjectTemplate.create FireArms SnowspeederLaser
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/SnowSpeederLaser1.ssc
+ObjectTemplate.aiTemplate SpitfireMachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileRedNS
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 600
+ObjectTemplate.reloadtime 0.0001
+ObjectTemplate.roundOfFire 5.3
+ObjectTemplate.addFireArmsPosition -1.75/0/5 0.9/0/0
+ObjectTemplate.addFireArmsPosition 1.75/0/5 -0.9/0/0
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.085
+objectTemplate.coolDownPerSec 0.8
+objectTemplate.timeDelayOnOverHeat 2
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 100
+ObjectTemplate.distToMinDamage 300
+ObjectTemplate.AmmoType	10
+
+rem *** SnowspeederRearLaser ***
+ObjectTemplate.create FireArms SnowspeederRearLaser
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/SnowSpeederLaser2.ssc
+ObjectTemplate.aiTemplate SpitfireMachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzThomp
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileRedS
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 700
+ObjectTemplate.reloadtime 0.0001
+ObjectTemplate.roundOfFire 5.2
+ObjectTemplate.addFireArmsPosition 0/0/1.4 0/0/0
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.05
+objectTemplate.coolDownPerSec 0.8
+objectTemplate.timeDelayOnOverHeat 2
+ObjectTemplate.AmmoType	10
+
+
+rem *** Harpoon Weapon ***
+ObjectTemplate.create FireArms Harpoon_Weapon
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.setAsynchronyFire 0
+ObjectTemplate.projectileTemplate HSS
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 4
+ObjectTemplate.velocity 80
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 10
+ObjectTemplate.roundOfFire 6
+ObjectTemplate.fireingForce 1
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.AmmoType	8
+ObjectTemplate.AltFireOnce 1
+ObjectTemplate.addFireArmsPosition 0/0/1.7 0/0/0
+
+
+

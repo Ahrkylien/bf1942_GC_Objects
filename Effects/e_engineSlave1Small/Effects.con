@@ -1,0 +1,32 @@
+rem *** e_engineSlave1Small ***
+ObjectTemplate.create EffectBundle e_engineSlave1Small
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_engineSlave1Small
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+rem -------------------------------------
+
+rem *** Em_engineSlave1Small ***
+ObjectTemplate.create Emitter Em_engineSlave1Small
+ObjectTemplate.template Fx_engineSlave1Small
+ObjectTemplate.lodDistance 500
+ObjectTemplate.IntensityAtSpeed 20
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/11/0/0
+ObjectTemplate.startRotation CRD_NORMAL/0/180/0
+ObjectTemplate.noPhysics 1
+ObjectTemplate.addChild 1
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+
+rem *** Fx_engineSlave1Small ***
+ObjectTemplate.create Particle Fx_engineSlave1Small
+ObjectTemplate.geometry e_Incom_4L4_Fusial_Thrust_Engine_m1
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.size CRD_NONE/2/1/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeModifier 1/1/2
+ObjectTemplate.sizeOverTime 0/1|100/0.5
+ObjectTemplate.alphaOverTime 0/0|100/0.2

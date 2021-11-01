@@ -1,0 +1,28 @@
+rem *** probedroidLauncher ***
+ObjectTemplate.create FireArms probedroidLauncher
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.projectileTemplate probedroid
+ObjectTemplate.projectilePosition 0/5/5
+ObjectTemplate.visibleDummyProjectileTemplate probedroiddummybundle
+ObjectTemplate.setHasMag 1
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag -1
+ObjectTemplate.magType 0
+ObjectTemplate.velocity 1
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 60
+ObjectTemplate.roundOfFire 100000
+ObjectTemplate.FireOnce 1
+ObjectTemplate.fireingForce 1
+ObjectTemplate.disableWhenFired 1
+
+ObjectTemplate.create Bundle probedroiddummybundle
+ObjectTemplate.addTemplate probedroidhead
+ObjectTemplate.setPosition 0/5/5
+ObjectTemplate.addTemplate probedroidbody
+ObjectTemplate.setPosition 0/5/5
+
+ObjectTemplate.create SimpleObject probedroidhead
+ObjectTemplate.geometry probedroidhead_m1
+ObjectTemplate.create SimpleObject probedroidbody
+ObjectTemplate.geometry probedroid_m1

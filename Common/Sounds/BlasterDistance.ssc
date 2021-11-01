@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+#include BlasterDistanceHigh.ssc
+
+#templateLevel MEDIUM
+
+#include BlasterDistanceMedLow.ssc
+
+#templateLevel LOW
+
+#include BlasterDistanceMedLow.ssc

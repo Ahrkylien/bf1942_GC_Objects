@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh metalgrate
+GeometryTemplate.file buildings/Hoth/Echobase/metalgrate
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 700
+GeometryTemplate.setLodDistance 3 800
+GeometryTemplate.setLodDistance 4 900
+GeometryTemplate.setLodDistance 5 1000

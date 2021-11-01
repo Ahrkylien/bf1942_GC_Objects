@@ -1,0 +1,58 @@
+#templateLevel HIGH
+
+newPatch
+load @ROOT/Sound/@RTD/Ammorefill.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+priority -2
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 15
+	param 1
+	param -1
+endEffect
+
+
+#templateLevel MEDIUM
+
+newPatch
+load @ROOT/Sound/@RTD/Ammorefill.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 15
+	param 1
+	param -1
+endEffect
+priority 3
+
+
+#templateLevel LOW
+
+newPatch
+load @ROOT/Sound/@RTD/Ammorefill.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 15
+	param 1
+	param -1
+endEffect
+priority 3
+

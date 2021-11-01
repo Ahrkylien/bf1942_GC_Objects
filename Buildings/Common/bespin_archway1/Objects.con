@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject bespin_archway1
+ObjectTemplate.geometry bespin_archway1
+ObjectTemplate.setHasCollisionPhysics 1

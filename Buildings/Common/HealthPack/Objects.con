@@ -1,0 +1,19 @@
+rem
+rem *** HealthPack ***
+rem
+ObjectTemplate.create Bundle HealthPack 
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry Shad_MedPack
+ObjectTemplate.aiTemplate mediclocker_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.loadSoundScript Sounds/Ambient.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate HealthPackProperties
+
+ObjectTemplate.create SupplyDepot HealthPackProperties
+ObjectTemplate.radius 2
+ObjectTemplate.team 0
+ObjectTemplate.workOnVehicles 0
+ObjectTemplate.workOnSoldiers 1
+ObjectTemplate.setHealth -1 4.0 0

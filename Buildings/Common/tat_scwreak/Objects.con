@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle tat_scwreak
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry tat_scwreak
+objectTemplate.aiTemplate tat_scwreak
+rem ---------------------------

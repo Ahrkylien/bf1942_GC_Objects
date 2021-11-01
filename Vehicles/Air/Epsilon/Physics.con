@@ -1,0 +1,36 @@
+rem *** epsilonEngine ***
+ObjectTemplate.create Engine epsilonEngine
+ObjectTemplate.setNetworkableInfo LambdaEngineInfo
+ObjectTemplate.loadSoundScript Sounds/LambdaEngine.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate LambdaLandingGearLeft
+ObjectTemplate.setPosition -31/21.4/0
+ObjectTemplate.setRotation 0/0/-352.5
+ObjectTemplate.addTemplate LambdaLandingGearRight
+ObjectTemplate.setPosition 31/21.4/0
+ObjectTemplate.addTemplate LambdaLandingGearFront
+ObjectTemplate.setPosition -24.3/21.4/16
+ObjectTemplate.setRotation 0/0/-352.5
+ObjectTemplate.addTemplate LambdaLandingGearBack
+ObjectTemplate.setPosition 24.3/21.4/-7.5
+ObjectTemplate.addTemplate epsilonWingLeft
+ObjectTemplate.setPosition -7.3/0/0
+ObjectTemplate.setRotation 0/0/210
+ObjectTemplate.addTemplate epsilonWingRight
+ObjectTemplate.setPosition 7.3/0/0
+ObjectTemplate.setRotation 0/0/-210
+ObjectTemplate.addTemplate LambdaDoorAuto
+ObjectTemplate.setPosition 0/-0.109/6.037
+ObjectTemplate.setRotation 0/29/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -0.3/0/0
+ObjectTemplate.setMaxRotation 0.3/0/5000
+ObjectTemplate.setMaxSpeed 3700/0/1700
+ObjectTemplate.setAcceleration 1700/0/7700
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 65
+ObjectTemplate.setDifferential 8
+
+

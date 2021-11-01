@@ -1,0 +1,31 @@
+rem *** e_glowConcussionGrenade ***
+ObjectTemplate.create EffectBundle e_glowConcussionGrenade
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_glowConcussionGrenade
+rem -------------------------------------
+
+rem *** Em_glowConcussionGrenade ***
+ObjectTemplate.create Emitter Em_glowConcussionGrenade
+ObjectTemplate.template Fx_glowConcussionGrenade
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 1000
+ObjectTemplate.timeToLive CRD_UNIFORM/1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/180
+
+rem *** Fx_glowConcussionGrenade ***
+ObjectTemplate.create Particle Fx_glowConcussionGrenade
+ObjectTemplate.timeToLive CRD_UNIFORM/0.1/0.2/0
+ObjectTemplate.size CRD_NONE/0.5/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.geometry Big_Bomb_M1
+ObjectTemplate.sizeModifier 1.1/1/1.1
+ObjectTemplate.sizeOverTime 0/1|100/0.8
+ObjectTemplate.alphaOverTime 0/0|100/0.2
+ObjectTemplate.initRotation CRD_UNIFORM/0/0/0
+ObjectTemplate.rotationSpeed CRD_NONE/10/0/0

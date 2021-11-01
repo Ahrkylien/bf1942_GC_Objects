@@ -1,0 +1,21 @@
+newPatch
+############
+### Main ###
+############
+
+load @ROOT/Sound/@RTD/VESTRTYAW.wav
+loop
+minDistance 5
+dopplerOff
+priority -7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 25
+	param 1
+	param -1
+endEffect

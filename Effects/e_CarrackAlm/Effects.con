@@ -1,0 +1,10 @@
+
+rem *** e_carrackalm ***
+ObjectTemplate.create EffectBundle e_carrackalm
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/e_carrackalm.ssc
+
+rem *** Em_Silent ***
+ObjectTemplate.addTemplate Em_SilentLoop
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+

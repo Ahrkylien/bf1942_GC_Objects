@@ -1,0 +1,21 @@
+rem *** probedroidLauncher ***
+ObjectTemplate.create FireArms sentryLauncher
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.projectileTemplate sentry
+ObjectTemplate.projectilePosition 0/20/5
+ObjectTemplate.visibleDummyProjectileTemplate sentryhead
+ObjectTemplate.setHasMag 1
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag -1
+ObjectTemplate.magType 0
+ObjectTemplate.velocity 20
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 30
+ObjectTemplate.roundOfFire 100000
+ObjectTemplate.FireOnce 1
+ObjectTemplate.fireingForce 1
+ObjectTemplate.disableWhenFired 1
+
+
+ObjectTemplate.create SimpleObject sentryhead
+ObjectTemplate.geometry Sentry_Bob_M1

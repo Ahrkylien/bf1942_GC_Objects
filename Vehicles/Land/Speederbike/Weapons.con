@@ -1,0 +1,25 @@
+rem *** SpeederbikeLasers ***
+ObjectTemplate.create FireArms SpeederbikeLasers
+ObjectTemplate.loadSoundScript Sounds/SpeederbikeLasers.ssc
+ObjectTemplate.aiTemplate SpitfireMachineGun
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MediumLaserProjectileRedS
+ObjectTemplate.magSize -1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 650
+ObjectTemplate.reloadtime 0.0001
+ObjectTemplate.roundOfFire 5.8
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+REM *** OVERHEAT *** 
+objectTemplate.heatAddWhenFire 0.09
+objectTemplate.coolDownPerSec 0.8
+objectTemplate.timeDelayOnOverHeat 2.0
+REM *** DAMAGE OVER DISTANCE ***
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 100
+ObjectTemplate.distToMinDamage 300
+ObjectTemplate.AmmoType	8

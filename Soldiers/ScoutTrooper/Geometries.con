@@ -1,0 +1,54 @@
+GeometryTemplate.create AnimatedMesh Soldier/1PScoutBody
+GeometryTemplate.setSkin animations/1PGerBody.skn
+GeometryTemplate.file 1PGerBody
+
+GeometryTemplate.create AnimatedMesh Soldier/1PScoutLeftHand
+GeometryTemplate.setSkin animations/1PGerLeftHand.skn
+GeometryTemplate.file 1PGerLeftHand
+
+GeometryTemplate.create AnimatedMesh Soldier/1PScoutRightHand
+GeometryTemplate.setSkin animations/1PGerRightHand.skn
+GeometryTemplate.file 1PGerRightHand
+
+
+
+GeometryTemplate.create AnimatedMesh Soldier/3PScoutBody
+GeometryTemplate.setSkin animations/scout_Body.skn
+GeometryTemplate.file scout_body
+GeometryTemplate.setLodRange 0 0 1 30 2 80
+GeometryTemplate.setLodRange 3 150 4 210 5 230
+GeometryTemplate.setLodPercent 0 1.0
+GeometryTemplate.setLodPercent 1 0.7
+GeometryTemplate.setLodPercent 2 0.3
+GeometryTemplate.setLodPercent 3 0.2
+GeometryTemplate.setLodPercent 4 0.1
+GeometryTemplate.setLodPercent 5 0.05
+
+GeometryTemplate.create AnimatedMesh Soldier/ScoutHead
+GeometryTemplate.setSkin animations/scout_helm.skn
+GeometryTemplate.file scout_helm
+GeometryTemplate.setLodRange 0 0 1 10 2 30
+GeometryTemplate.setLodRange 3 50 4 60 5 100
+GeometryTemplate.setLodPercent 0 1.0
+GeometryTemplate.setLodPercent 1 0.7
+GeometryTemplate.setLodPercent 2 0.3
+GeometryTemplate.setLodPercent 3 0.2
+GeometryTemplate.setLodPercent 4 0.1
+GeometryTemplate.setLodPercent 5 0.03
+
+GeometryTemplate.create AnimatedMesh Soldier/ScoutLeftHand
+GeometryTemplate.setSkin animations/scout_l_hand.skn
+GeometryTemplate.file scout_l_hand
+GeometryTemplate.setLodRange 0 0 1 20 2 50
+GeometryTemplate.setLodPercent 0 1.0
+GeometryTemplate.setLodPercent 1 0.6
+GeometryTemplate.setLodPercent 2 0.03
+
+GeometryTemplate.create AnimatedMesh Soldier/ScoutRightHand
+GeometryTemplate.setSkin animations/scout_r_hand.skn
+GeometryTemplate.file scout_r_hand
+GeometryTemplate.setLodRange 0 0 1 20 2 50
+GeometryTemplate.setLodPercent 0 1.0
+GeometryTemplate.setLodPercent 1 0.6
+GeometryTemplate.setLodPercent 2 0.03
+

@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject hanglight
+ObjectTemplate.aiTemplate hanglight
+ObjectTemplate.geometry hanglight
+ObjectTemplate.setHasCollisionPhysics 1
+
+

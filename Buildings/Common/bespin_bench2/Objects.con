@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject bespin_bench2
+ObjectTemplate.geometry bespin_bench2
+ObjectTemplate.setHasCollisionPhysics 1

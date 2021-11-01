@@ -1,0 +1,5 @@
+ObjectTemplate.create Bundle njud_hall02
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry njud_hall02
+objectTemplate.aiTemplate njud_hall02
+rem ---------------------------

@@ -1,0 +1,10 @@
+
+ObjectTemplate.create Obstacle dan_rails
+ObjectTemplate.geometry dan_rails
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.addToCollisionGroup c_CGProjectiles
+ObjectTemplate.aiTemplate dam_rails
+
+ObjectTemplate.addtemplate e_lazerwire
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0

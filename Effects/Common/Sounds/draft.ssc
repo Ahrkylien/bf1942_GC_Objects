@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include draft_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include draft_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include draft_MedLow.ssc

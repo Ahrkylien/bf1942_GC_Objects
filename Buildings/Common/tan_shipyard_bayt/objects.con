@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject tan_shipyard_bayt
+ObjectTemplate.geometry tan_shipyard_bayt
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate tan_shipyard_bayt
+

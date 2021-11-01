@@ -1,0 +1,269 @@
+rem *** BlockadeRunner ***
+ObjectTemplate.create PlayerControlObject Amphibian
+ObjectTemplate.setNetworkableInfo AmphBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.drag 1.2
+ObjectTemplate.dragOffset 0/0/-1
+ObjectTemplate.mass 20450
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 600
+ObjectTemplate.maxhitpoints 600
+ObjectTemplate.material 811
+ObjectTemplate.speedMod 0.2
+ObjectTemplate.criticalDamage 350
+ObjectTemplate.hpLostWhileCriticalDamage 40
+ObjectTemplate.explosionRadius 5
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.explosionForceMod 5
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.addArmorEffect 200 em_LcvpDamage 1.709/1.4/1.6
+ObjectTemplate.addArmorEffect 125 e_waterBoatSinkSmall 0/2/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_Willy 0/1.4/-0.5
+rem ObjectTemplate.addArmorEffect -1 e_Type38Wreck 0/1.4/12.4
+ObjectTemplate.timetoliveafterdeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate lodAmph
+
+ObjectTemplate.addTemplate Amph_Floater
+ObjectTemplate.setPosition 2.5/2.6/-5.5
+ObjectTemplate.addTemplate Amph_Floater
+ObjectTemplate.setPosition -2.5/2.6/-5.5
+ObjectTemplate.addTemplate Amph_Floater
+ObjectTemplate.setPosition 3/2.6/5
+ObjectTemplate.addTemplate Amph_Floater
+ObjectTemplate.setPosition -3/2.6/5
+ObjectTemplate.addTemplate Amph_MiddleFloater
+ObjectTemplate.setPosition 0/1.8/5
+ObjectTemplate.addTemplate Amph_MiddleFloater
+ObjectTemplate.setPosition 0/2.4/-5.5
+
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.154/3.6/.67 0/0/0
+ObjectTemplate.GUIIndex 42
+ObjectTemplate.setMiniMapIcon "Minimap/minimap_icon_amph.dds"
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_amph.dds"
+ObjectTemplate.setVehicleIconPos 51/76
+ObjectTemplate.setNumberOfWeaponIcons 0
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTLcvp
+ObjectTemplate.setToolTipType TTPTBoat
+
+rem *** lod ***
+ObjectTemplate.create LodObject lodAmph
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate AmphComplex
+ObjectTemplate.addTemplate AmphSimple
+rem -------------------------------------
+ObjectTemplate.lodSelector AmphLodSelector
+
+rem *** Complex ***
+ObjectTemplate.create Bundle AmphComplex
+ObjectTemplate.setNetworkableInfo AmphBodyInfo
+ObjectTemplate.geometry amphbody
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+ObjectTemplate.addTemplate AmphSeat
+ObjectTemplate.setPosition -0.768/4.0/4.108
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate AmphCamera
+ObjectTemplate.setPosition -0.5/4.24/3.7
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate AmphEntry
+ObjectTemplate.setPosition -0.786/3.1/4.1
+
+
+ObjectTemplate.addTemplate Amph_Turret_PCO1
+ObjectTemplate.addTemplate Amph_PCO2
+ObjectTemplate.addTemplate Amph_PCO3
+
+ObjectTemplate.addTemplate Amph_Engine
+ObjectTemplate.setPosition 0/.5/-4
+ObjectTemplate.addTemplate Amph_FrontLandEngine
+ObjectTemplate.addTemplate Amph_Rudder_Stern
+ObjectTemplate.setPosition 0/-.2/3.3
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate Amph_Rudder_Aft
+ObjectTemplate.setPosition 0/-.2/-4.3
+ObjectTemplate.setRotation 0/0/-90
+
+ObjectTemplate.addTemplate e_WaterFrontPTBoat
+ObjectTemplate.setPosition 0/1.8/6.9
+ObjectTemplate.addTemplate e_WaterBackMedium
+ObjectTemplate.setPosition 0/1.8/-4
+
+
+rem ------------------------------------------- Create PCOs 
+
+rem *** Runner_Turret_PCO1 ***
+ObjectTemplate.create PlayerControlObject Amph_Turret_PCO1
+ObjectTemplate.setNetworkableInfo AmphBodyInfo
+ObjectTemplate.aiTemplate B17MG
+rem -------------------------------------
+ObjectTemplate.addTemplate Amph_Turret_1_X
+ObjectTemplate.setPosition 0/5.918/-5.768
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate AmphEntry
+ObjectTemplate.setPosition 0.558/3.1/4.108
+ObjectTemplate.addTemplate AmphSeat
+ObjectTemplate.setPosition 0.558/4.0/4.108
+ObjectTemplate.setRotation 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 2/3.6/.67 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_amph.dds"
+ObjectTemplate.setVehicleIconPos 99/25
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_laser_64x64.dds"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+
+rem ***  ***
+ObjectTemplate.create PlayerControlObject Amph_PCO2
+ObjectTemplate.setNetworkableInfo AmphBodyInfo
+ObjectTemplate.aiTemplate B17MG
+rem -------------------------------------
+ObjectTemplate.addTemplate AmphEntry
+ObjectTemplate.setPosition 2/0/0
+ObjectTemplate.addTemplate AmphSeat2
+ObjectTemplate.setPosition 1.726/3.8/-1.369
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate AmphCamera
+ObjectTemplate.setPosition 1.726/4/-1.369
+ObjectTemplate.setRotation 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 1.726/3.6/-1.369 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_amph.dds"
+ObjectTemplate.setVehicleIconPos 85/75
+ObjectTemplate.setVehicleCategory VCLand
+
+rem ***  ***
+ObjectTemplate.create PlayerControlObject Amph_PCO3
+ObjectTemplate.setNetworkableInfo AmphBodyInfo
+ObjectTemplate.aiTemplate B17MG
+rem -------------------------------------
+ObjectTemplate.addTemplate AmphEntry
+ObjectTemplate.setPosition -2/0/0
+ObjectTemplate.addTemplate AmphSeat2
+ObjectTemplate.setPosition -1.726/3.8/-1.369
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate AmphCamera
+ObjectTemplate.setPosition -1.726/4/-1.369
+ObjectTemplate.setRotation 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.726/3.6/-1.369 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_amph.dds"
+ObjectTemplate.setVehicleIconPos 46/58
+ObjectTemplate.setVehicleCategory VCLand
+
+
+rem -----------------------------------------------------------------------------------------------
+rem ------------------------------------------- Create Turrets ------------------------------------
+rem -----------------------------------------------------------------------------------------------
+
+rem *** Turret_1_X ***
+ObjectTemplate.create RotationalBundle Amph_Turret_1_X
+ObjectTemplate.setNetworkableInfo AmphTurretInfo
+ObjectTemplate.loadSoundScript Sounds/TurretRotate.ssc
+ObjectTemplate.geometry Amph_Turbolaser_Base_M1
+rem -------------------------------------
+ObjectTemplate.addTemplate Amph_Turret_1_Y
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 30/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** Runner_Turret_2_Y***
+ObjectTemplate.create RotationalBundle Amph_Turret_1_Y
+ObjectTemplate.setNetworkableInfo AmphTurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/TurretRotate.ssc
+ObjectTemplate.geometry Amph_Turbolaser_Barrel_M1
+rem -------------------------------------
+ObjectTemplate.addTemplate AmphGunnerCamera
+ObjectTemplate.setPosition 0/1/1.5
+ObjectTemplate.addTemplate Amph_Turret_Lasers
+ObjectTemplate.setPosition 0/0/2.4
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-40/0
+ObjectTemplate.setMaxRotation 0/40/0
+ObjectTemplate.setMaxSpeed 0/25/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem ------------------------------------------- Create Objects 
+
+rem *** Seat ***
+ObjectTemplate.create SeatObject AmphSeat2
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+rem *** Seat ***
+ObjectTemplate.create SeatObject AmphSeat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+
+
+rem *** RunnerCamera ***
+ObjectTemplate.create Camera AmphCamera
+ObjectTemplate.setMinRotation -110/-40/0
+ObjectTemplate.setMaxRotation 110/10/0
+ObjectTemplate.setPivotPosition 0/0.25/0.3
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** GunnerCamera ***
+ObjectTemplate.create Camera AmphGunnerCamera
+ObjectTemplate.addTemplate lodAmphGunnerHUD
+ObjectTemplate.setPosition 0/0/0.3
+
+
+rem *** lodGunnerHUD ***
+ObjectTemplate.create LodObject lodAmphGunnerHUD
+rem -------------------------------------
+ObjectTemplate.addTemplate AmphGunnerHUDExternal
+ObjectTemplate.addTemplate AmphGunnerHUDInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector AmphGunnerHUDSelector
+
+
+rem *** GunnerHUDExternal ***
+ObjectTemplate.create SimpleObject AmphGunnerHUDExternal
+rem ObjectTemplate.geometry Model_Null
+
+rem *** GunnerHUDInternal ***
+ObjectTemplate.create SimpleObject AmphGunnerHUDInternal
+ObjectTemplate.geometry 1P_AmphGunnerHUD_M1
+
+
+rem *** GunnerHUDSelector ***
+LodSelectorTemplate.create DistCompareSelector AmphGunnerHUDSelector
+LodSelectorTemplate.addLodDistance 5
+LodSelectorTemplate.addLodComparison 0.5
+
+rem *** RunnerEntry ***
+ObjectTemplate.create EntryPoint AmphEntry
+ObjectTemplate.setEntryRadius 6
+
+rem *** RunnerSimple ***
+ObjectTemplate.create SimpleObject AmphSimple
+ObjectTemplate.geometry Amph_low
+
+rem *** RunnerLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 AmphLodSelector
+LodSelectorTemplate.addLodDistance 2000
+
+

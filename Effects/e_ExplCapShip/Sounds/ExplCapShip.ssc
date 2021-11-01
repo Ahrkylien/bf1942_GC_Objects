@@ -1,0 +1,10 @@
+
+##############
+### impact ###
+##############
+#include ../../Common/Sounds/capshipexpl.ssc
+
+##############
+### reverb ###
+####¤#########
+#include ../../Common/Sounds/rev.ssc

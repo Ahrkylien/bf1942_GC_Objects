@@ -1,0 +1,213 @@
+
+
+ObjectTemplate.create PlayerControlObject Uplift
+ObjectTemplate.setNetworkableInfo UpliftBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.drag 15
+ObjectTemplate.mass 3000
+ObjectTemplate.inertiaModifier 0/.1/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0
+ObjectTemplate.hitpoints 50
+rem ObjectTemplate.gravityModifier 1
+ObjectTemplate.maxhitpoints 50
+ObjectTemplate.criticalDamage 6
+ObjectTemplate.hpLostWhileCriticalDamage 1
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.hpLostWhileUpSideDown 0.6
+ObjectTemplate.hpLostWhileDamageFromWater 0.6
+ObjectTemplate.addArmorEffect 12 e_WillyDamage 0/1.7/0
+ObjectTemplate.addArmorEffect 6 e_WillyFire 0/0.5/0.8
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_willy 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_LandSpeeder 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.aiTemplate Willy
+rem -------------------------------------
+ObjectTemplate.addTemplate lodUplift
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.0/2/.71 0/0/0
+ObjectTemplate.setexitTimer 1
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_uplift.dds"
+ObjectTemplate.setVehicleIconPos 60/55
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTScoutCar
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_uplift.dds"
+
+rem *** lodUPlift ***
+ObjectTemplate.create LodObject lodUplift
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate UpliftComplex
+ObjectTemplate.addTemplate UpliftWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector UpliftLodSelector
+
+
+rem *** UpliftComplex ***
+ObjectTemplate.create Bundle UpliftComplex
+ObjectTemplate.setNetworkableInfo UpliftBodyInfo
+ObjectTemplate.geometry Uplift_Hull
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate UpliftCamera
+ObjectTemplate.setPosition 2/1.6/.71
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate UpliftSeat
+ObjectTemplate.setPosition 2.0/1.6/.71
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate UpliftEntry
+ObjectTemplate.setPosition 2.2/1.6/1
+ObjectTemplate.AddTemplate UpliftConsole
+ObjectTemplate.setPosition 2.7/.52/.71
+ObjectTemplate.setRotation 90/0/0
+
+ObjectTemplate.addTemplate UpliftEngine
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/270/0
+
+ObjectTemplate.addTemplate Uplift_Floater
+ObjectTemplate.setPosition 4/0/4
+ObjectTemplate.addTemplate Uplift_Floater
+ObjectTemplate.setPosition -4/0/4
+ObjectTemplate.addTemplate Uplift_Floater
+ObjectTemplate.setPosition -4/0/-4
+ObjectTemplate.addTemplate Uplift_Floater
+ObjectTemplate.setPosition 4/0/-4
+ObjectTemplate.addTemplate Uplift_Floater
+ObjectTemplate.setPosition 0/0/0
+
+ObjectTemplate.addTemplate Uplift_Wheel
+ObjectTemplate.setPosition 2/-1/2
+ObjectTemplate.addTemplate Uplift_Wheel
+ObjectTemplate.setPosition -2/-1/2
+ObjectTemplate.addTemplate Uplift_Wheel
+ObjectTemplate.setPosition -2/-1/-2
+ObjectTemplate.addTemplate Uplift_Wheel
+ObjectTemplate.setPosition 2/-1/-2
+
+ObjectTemplate.addTemplate Uplift_Wheel
+ObjectTemplate.setPosition 1/3/1
+ObjectTemplate.addTemplate Uplift_Wheel
+ObjectTemplate.setPosition -1/3/1
+ObjectTemplate.addTemplate Uplift_Wheel
+ObjectTemplate.setPosition -1/3/-1
+ObjectTemplate.addTemplate Uplift_Wheel
+ObjectTemplate.setPosition 1/3/-1
+
+ObjectTemplate.addTemplate Uplift_Passenger_1
+ObjectTemplate.addTemplate Uplift_Passenger_2
+ObjectTemplate.addTemplate Uplift_Passenger_3
+rem -------------------------------------
+
+
+rem -------------------------------------
+rem PCO's
+rem -------------------------------------
+
+rem *** Skiff_Passenger_1 ***
+ObjectTemplate.create PlayerControlObject Uplift_Passenger_1
+ObjectTemplate.setNetworkableInfo UpliftBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate UpliftCamera
+ObjectTemplate.setPosition 0/1.6/.71
+ObjectTemplate.addTemplate UpliftSeat
+ObjectTemplate.setPosition 0/1.6/.71
+ObjectTemplate.addTemplate UpliftEntry
+ObjectTemplate.setPosition 0/1.6/.71
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1.6/.71 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_uplift.dds"
+ObjectTemplate.setVehicleIconPos 90/70
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** Skiff_Passenger_1 ***
+ObjectTemplate.create PlayerControlObject Uplift_Passenger_2
+ObjectTemplate.setNetworkableInfo UpliftBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate UpliftCamera
+ObjectTemplate.setPosition -2/1.6/.71
+ObjectTemplate.addTemplate UpliftSeat
+ObjectTemplate.setPosition -2/1.6/.71
+ObjectTemplate.addTemplate UpliftEntry
+ObjectTemplate.setPosition -2/1.6/.71
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/1.6/.71 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_uplift.dds"
+ObjectTemplate.setVehicleIconPos 80/60
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** Skiff_Passenger_1 ***
+ObjectTemplate.create PlayerControlObject Uplift_Passenger_3
+ObjectTemplate.setNetworkableInfo UpliftBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate UpliftCamera
+ObjectTemplate.setPosition 0/1.6/1.2
+ObjectTemplate.addTemplate UpliftSeat
+ObjectTemplate.setPosition 0/1.6/1.2
+ObjectTemplate.addTemplate UpliftEntry
+ObjectTemplate.setPosition 0/1.6/1.2
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 1.2/1.6/.71 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_uplift.dds"
+ObjectTemplate.setVehicleIconPos 70/50
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem ------------------------------------
+rem Objects
+rem ------------------------------------
+
+rem ***UpliftConsole***
+ObjectTemplate.create Bundle UpliftConsole
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.geometry uplift_console
+
+
+rem *** UpliftCamera ***
+ObjectTemplate.create Camera UpliftCamera
+ObjectTemplate.setMinRotation -110/-40/0
+ObjectTemplate.setMaxRotation 110/10/0
+ObjectTemplate.setPivotPosition 0/0.25/0.3
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** Seat ***
+ObjectTemplate.create SeatObject UpliftSeat
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+
+
+rem *** Entry ***
+ObjectTemplate.create EntryPoint UpliftEntry
+ObjectTemplate.setEntryRadius 7
+
+
+
+rem *** Wreck ***
+ObjectTemplate.create SimpleObject UpliftWreck
+ObjectTemplate.geometry Wreck_none
+
+
+rem *** LandspeederLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 UpliftLodSelector
+LodSelectorTemplate.hasDestroyedLod 1

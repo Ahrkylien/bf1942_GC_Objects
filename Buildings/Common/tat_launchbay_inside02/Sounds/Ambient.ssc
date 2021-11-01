@@ -1,0 +1,88 @@
+#templateLevel HIGH
+
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/jabbas_palace.wav
+loop
+minDistance 20
+relativePosition 20/25/40
+volume 0.7
+priority -9
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 30
+	param 50
+	param 1
+	param -1	
+endEffect
+
+################
+### Near/Far ###
+################
+load @ROOT/Sound/@RTD/jabbas_palace.wav
+loop
+minDistance 20
+relativePosition 20/25/40
+volume .5
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 100
+	param 1
+	param -1	
+endEffect
+
+#templateLevel MEDIUM
+
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/jabbas_palace.wav
+loop
+minDistance 10
+relativePosition 20/25/40
+volume 0.7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1	
+endEffect
+priority -5
+
+################
+### Near/Far ###
+################
+load @ROOT/Sound/@RTD/jabbas_palace.wav
+loop
+minDistance 10
+relativePosition 20/25/40
+volume .5
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 15
+	param 30
+	param 1
+	param -1	
+endEffect
+priority -5

@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject tan_aster
+ObjectTemplate.geometry tan_aster
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate tan_aster
+

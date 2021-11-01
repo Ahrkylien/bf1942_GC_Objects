@@ -1,0 +1,261 @@
+rem *** EscapePod ***
+ObjectTemplate.create PlayerControlObject escapepod
+ObjectTemplate.setNetworkableInfo EscapePod_body_info
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 0.25
+ObjectTemplate.mass 2500
+ObjectTemplate.inertiaModifier 0.85/0.833/0.84
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 0
+ObjectTemplate.speedMod 0
+ObjectTemplate.hitpoints 5
+ObjectTemplate.maxhitpoints 5
+ObjectTemplate.material 801
+ObjectTemplate.criticalDamage 3.5
+ObjectTemplate.hpLostWhileCriticalDamage 0.35
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.hpLostWhileUpSideDown 3.5
+ObjectTemplate.hpLostWhileDamageFromWater 3.5
+ObjectTemplate.addArmorEffect 5 e_engineXWing -0.356/0/-1.0
+ObjectTemplate.addArmorEffect 5 e_engineXWing 0.356/0/-1.0
+ObjectTemplate.addArmorEffect 5 e_engineXWing 0/-0.356/-1.0
+ObjectTemplate.addArmorEffect 5 e_engineXWing 0/0.356/-1.0
+ObjectTemplate.addArmorEffect 1 em_StukaDamage -0.356/0/-1.75
+ObjectTemplate.addArmorEffect 1 em_PlaneDamage 0/-0.356/-1.75
+ObjectTemplate.addArmorEffect 1 e_StukaFire 0.356/0/-1.75
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate EscapePod
+rem -------------------------------------
+ObjectTemplate.addTemplate lodEscapePod
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.5/0/-3 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/icon_escpod.dds"
+ObjectTemplate.setVehicleIconPos 72/100
+ObjectTemplate.setNumberOfWeaponIcons 0
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTFighter
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** lodEscapePod ***
+ObjectTemplate.create LodObject lodEscapePod
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate EscapePodComplex
+ObjectTemplate.addTemplate EscapePodWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector EscapePodLodSelector
+
+rem *** EscapePodComplex ***
+ObjectTemplate.create Bundle EscapePodComplex
+rem ObjectTemplate.loadSoundScript Sounds/EscapePodCockpit.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodEscapePodCockpit
+ObjectTemplate.addTemplate EscapePodPilotCamera
+ObjectTemplate.setPosition 0/0/1.2
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate EscapePodSeat
+ObjectTemplate.setPosition -0.6/0/0.4
+ObjectTemplate.setRotation 90/0/90
+ObjectTemplate.addTemplate EscapePodEntry
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate EP_Play
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate EP_Play2
+ObjectTemplate.setPosition 0/0/0
+
+ObjectTemplate.addTemplate AWingVTOLEngineRack
+ObjectTemplate.setPosition 4.5/1.5/4.5
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate AWingVTOLEngineRack
+ObjectTemplate.setPosition 4.5/1.5/-4.5
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate AWingVTOLEngineRack
+ObjectTemplate.setPosition -4.5/1.5/4.5
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate AWingVTOLEngineRack
+ObjectTemplate.setPosition -4.5/1.5/-4.5
+ObjectTemplate.setRotation 0/-90/0
+
+ObjectTemplate.addTemplate RollWheelBundle
+ObjectTemplate.setPosition 2/-1.3/2.5
+ObjectTemplate.addTemplate RollWheelBundle
+ObjectTemplate.setPosition -2/-1.3/2.5
+ObjectTemplate.addTemplate DummyWheel
+ObjectTemplate.setPosition 2/-1.3/-3
+ObjectTemplate.addTemplate DummyWheel
+ObjectTemplate.setPosition -2/-1.3/-3
+
+ObjectTemplate.addTemplate EscapePodAirbreakLeft
+ObjectTemplate.setPosition -1.538/0.05/-0.882
+ObjectTemplate.setRotation 6.973/-0.612/-5.036
+ObjectTemplate.addTemplate EscapePodAirbreakRight
+ObjectTemplate.setPosition 1.539/0.05/-0.882
+ObjectTemplate.setRotation -6.972/-0.612/5.037
+ObjectTemplate.addTemplate EscapePodRudderBackVertical
+ObjectTemplate.setPosition 0/1.244/-5.452	
+ObjectTemplate.setRotation 0/0/-89.999
+ObjectTemplate.addTemplate EscapePodBodyWingVertical
+ObjectTemplate.setPosition 0/0/0.3
+ObjectTemplate.setRotation 0/0/-89.999
+ObjectTemplate.addTemplate EscapePodRudderBackLeft
+ObjectTemplate.setPosition -0.889/0.89/-5.306
+ObjectTemplate.addTemplate EscapePodRudderBackRight
+ObjectTemplate.setPosition 0.89/0.89/-5.306
+ObjectTemplate.addTemplate EscapePodRudderFrontLeft
+ObjectTemplate.setPosition -3.814/0.275/-0.371
+ObjectTemplate.setRotation 9/-0.862/-5.499
+ObjectTemplate.addTemplate EscapePodRudderFrontRight
+ObjectTemplate.setPosition 3.815/0.275/-0.371
+ObjectTemplate.setRotation -8.999/-0.862/5.5
+
+ObjectTemplate.addTemplate EscapePodEngine
+ObjectTemplate.setPosition 0/0/0
+
+ObjectTemplate.addTemplate EscapePod_Passenger_1
+ObjectTemplate.addTemplate EscapePod_Passenger_2
+ObjectTemplate.addTemplate EscapePod_Passenger_3
+
+rem -------------------------------------
+
+rem *** lodEscapePodCockpit ***
+ObjectTemplate.create LodObject lodEscapePodCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate EscapePodCockpitExternal
+ObjectTemplate.addTemplate EscapePodCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector EscapePodcockpitSelector
+
+rem *** EscapePodCockpitExternal ***
+ObjectTemplate.create Bundle EscapePodCockpitExternal
+ObjectTemplate.geometry EscapePod_Hull_M1
+objecttemplate.createInvisible 0
+
+rem *** EscapePodCockpitInternal ***
+ObjectTemplate.create SimpleObject EscapePodCockpitInternal
+ObjectTemplate.geometry 1P_EscapePod_M1
+
+rem *** EscapePodcockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector EscapePodcockpitSelector
+LodSelectorTemplate.addLodDistance 10
+LodSelectorTemplate.addLodComparison 0.5
+
+rem *** EscapePod_Passenger_1 ***
+ObjectTemplate.create PlayerControlObject EscapePod_Passenger_1
+ObjectTemplate.setNetworkableInfo EscapePod_body_info
+rem -------------------------------------
+ObjectTemplate.addTemplate lodEscapePodCockpit
+ObjectTemplate.addTemplate EscapePodCamera
+ObjectTemplate.setPosition -0.3/0.5/0.4
+ObjectTemplate.setRotation 90/45/90
+ObjectTemplate.addTemplate EscapePodSeat
+ObjectTemplate.setPosition -0.3/0.5/0.4
+ObjectTemplate.setRotation 90/45/90
+ObjectTemplate.addTemplate EscapePodEntry
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.8/0/-2.6 45/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/icon_escpod.dds"
+ObjectTemplate.setVehicleIconPos 66/85
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_apc_16x16.dds"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** EscapePod_Passenger_2 ***
+ObjectTemplate.create PlayerControlObject EscapePod_Passenger_2
+ObjectTemplate.setNetworkableInfo EscapePod_body_info
+rem -------------------------------------
+ObjectTemplate.addTemplate lodEscapePodCockpit
+ObjectTemplate.addTemplate EscapePodCamera
+ObjectTemplate.setPosition 0.3/0.5/0.4
+ObjectTemplate.setRotation -90/-45/-90
+ObjectTemplate.addTemplate EscapePodSeat
+ObjectTemplate.setPosition 0.3/0.5/0.4
+ObjectTemplate.setRotation -90/-45/-90
+ObjectTemplate.addTemplate EscapePodEntry
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.8/0/0 90/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/icon_escpod.dds"
+ObjectTemplate.setVehicleIconPos 50/67
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_apc_16x16.dds"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** EscapePod_Passenger_3 ***
+ObjectTemplate.create PlayerControlObject EscapePod_Passenger_3
+ObjectTemplate.setNetworkableInfo EscapePod_body_info
+rem -------------------------------------
+ObjectTemplate.addTemplate lodEscapePodCockpit
+ObjectTemplate.addTemplate EscapePodCamera
+ObjectTemplate.setPosition 0.6/0/0.4
+ObjectTemplate.setRotation -90/0/-90
+ObjectTemplate.addTemplate EscapePodSeat
+ObjectTemplate.setPosition 0.6/0/0.4
+ObjectTemplate.setRotation -90/0/-90
+ObjectTemplate.addTemplate EscapePodEntry
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.8/0/2.6 135/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/icon_escpod.dds"
+ObjectTemplate.setVehicleIconPos 34/49
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_apc_16x16.dds"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** EscapePodPilotCamera ***
+ObjectTemplate.create Camera EscapePodPilotCamera
+ObjectTemplate.setMinRotation -45/0/0
+ObjectTemplate.setMaxRotation 45/100/0
+ObjectTemplate.setMaxSpeed 350/350/0
+ObjectTemplate.setAcceleration 10000/-10000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.OutsideHudOffset 0/0/0
+
+rem *** EscapePodCamera ***
+ObjectTemplate.create Camera EscapePodCamera
+ObjectTemplate.setMinRotation -45/-90/0
+ObjectTemplate.setMaxRotation 45/90/0
+ObjectTemplate.setMaxSpeed 350/350/0
+ObjectTemplate.setAcceleration 10000/-10000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** EscapePodEntry ***
+ObjectTemplate.create EntryPoint EscapePodEntry
+ObjectTemplate.setEntryRadius 10
+
+rem *** EscapePodSeat ***
+ObjectTemplate.create SeatObject EscapePodSeat
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+rem *** EscapePodWreck ***
+ObjectTemplate.create SimpleObject EscapePodWreck
+ObjectTemplate.geometry Wreck_Null
+
+rem *** EscapePodLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 EscapePodLodSelector
+LodSelectorTemplate.hasDestroyedLod 1

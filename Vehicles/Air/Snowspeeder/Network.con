@@ -1,0 +1,9 @@
+NetworkableInfo.createNewInfo snowspeeder_wing_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo snowspeeder_engine_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo snowspeeder_body_info
+NetworkableInfo.setPredictionMode PMLinear
+

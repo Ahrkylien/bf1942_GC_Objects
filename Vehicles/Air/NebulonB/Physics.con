@@ -1,0 +1,79 @@
+rem *****LANCER PHYSICS CODE*****
+
+rem *** MAIN Engine ***
+ObjectTemplate.create Engine NebulonBMainEngine
+ObjectTemplate.setNetworkableInfo NebulonBEngineInfo
+ObjectTemplate.loadSoundScript Sounds/nebengine.ssc
+ObjectTemplate.setMinRotation 0/0/-700
+ObjectTemplate.setMaxRotation 0/0/3000
+ObjectTemplate.setMaxSpeed 0/0/3000
+ObjectTemplate.setAcceleration 0/0/80
+ObjectTemplate.setAutomaticPitchStabilization 1
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 2
+ObjectTemplate.setDifferential 1
+
+REM *** TurnLeftRight Engine ***
+ObjectTemplate.create Engine NebulonBTREngine
+ObjectTemplate.setNetworkableInfo NebulonBEngineInfo
+ObjectTemplate.setMinRotation 0/0/-4000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/5000
+ObjectTemplate.setInputToRoll c_PIYaw
+ObjectTemplate.setAutomaticRollStabilization 1
+ObjectTemplate.setAutomaticPitchStabilization 1
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 45
+ObjectTemplate.setDifferential 1
+
+
+*** RUNNER_Rudder1 ***
+ObjectTemplate.create Wing NebulonB_Rudder1
+ObjectTemplate.setNetworkableInfo NebulonBRudderInfo
+ObjectTemplate.setMinRotation 0/-35/0
+ObjectTemplate.setMaxRotation 0/35/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/10/0
+ObjectTemplate.setAutomaticPitchStabilization 1
+ObjectTemplate.setAutomaticRollStabilization 1
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 40
+
+rem *** Virtical Engine ***
+ObjectTemplate.create Engine NebulonBVEngine
+ObjectTemplate.setNetworkableInfo NebulonBEngineInfo
+ObjectTemplate.setMinRotation 0/0/-600
+ObjectTemplate.setMaxRotation 0/0/600
+ObjectTemplate.setMaxSpeed 0/0/600
+ObjectTemplate.setAcceleration 0/0/-400
+ObjectTemplate.setAutomaticRollStabilization 1
+ObjectTemplate.setAutomaticPitchStabilization 1
+ObjectTemplate.setInputToRoll c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 1
+ObjectTemplate.setDifferential 1
+
+rem *** Floater ***
+ObjectTemplate.create FloatingBundle NebulonB_Floater
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.setHullHeight 2000
+ObjectTemplate.setFloatMaxLift 1.972
+ObjectTemplate.setFloatMinLift 1.972
+ObjectTemplate.setAutomaticRollStabilization 1
+ObjectTemplate.setAutomaticPitchStabilization 1
+ObjectTemplate.setDragModifier 0   
+ObjectTemplate.setMinRotation 0/5/0
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 0/5/0
+ObjectTemplate.setAcceleration 0/4/0
+ObjectTemplate.setInputToPitch 0
+ObjectTemplate.setAutomaticReset 0
+

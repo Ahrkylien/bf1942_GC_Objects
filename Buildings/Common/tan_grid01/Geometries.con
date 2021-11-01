@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh tan_grid01
+GeometryTemplate.file buildings/Tanaab/tan_grid01
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 20
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 40
+GeometryTemplate.setLodDistance 5 100

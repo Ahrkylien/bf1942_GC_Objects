@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh echo_lights
+GeometryTemplate.file buildings/Hoth/SuperEcho/echo_lights
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 40
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 90

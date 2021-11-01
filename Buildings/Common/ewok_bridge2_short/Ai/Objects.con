@@ -1,0 +1,26 @@
+rem *** Plugins ***
+aiTemplatePlugIn.create Cover tree1Cover
+aiTemplatePlugIn.coverValue 2.0
+
+aiTemplatePlugIn.create Physical tree1Physical
+
+rem *** AITemplate ***
+aiTemplate.create tree11_snow
+aiTemplate.addType ITCover
+aiTemplate.addType ITScaleRender
+aiTemplate.degeneration 1
+aiTemplate.allowedTimeDiff -1
+aiTemplate.basicTemp 1
+aiTemplate.commonKnowledge 1
+aiTemplate.addPlugIn tree1Cover
+aiTemplate.addPlugIn tree1Physical
+
+aiTemplate.create tree12_snow
+aiTemplate.addType ITCover
+aiTemplate.addType ITScaleRender
+aiTemplate.degeneration 1
+aiTemplate.allowedTimeDiff -1
+aiTemplate.basicTemp 1
+aiTemplate.commonKnowledge 1
+aiTemplate.addPlugIn tree1Cover
+aiTemplate.addPlugIn tree1Physical

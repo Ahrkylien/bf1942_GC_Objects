@@ -1,0 +1,5 @@
+NetworkableInfo.createNewInfo cammo_BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo CammoEngineInfo
+NetworkableInfo.setPredictionMode PMLinear

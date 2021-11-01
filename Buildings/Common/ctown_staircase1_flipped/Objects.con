@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject ctown_staircase1_flipped
+ObjectTemplate.geometry ctown_staircase1_flipped
+ObjectTemplate.setHasCollisionPhysics 1

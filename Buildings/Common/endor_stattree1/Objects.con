@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject endor_stattree1
+ObjectTemplate.aiTemplate endor_stattree1
+ObjectTemplate.geometry endor_stattree1
+ObjectTemplate.setHasCollisionPhysics 1
+
+

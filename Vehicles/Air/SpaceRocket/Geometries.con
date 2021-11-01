@@ -1,0 +1,6 @@
+GeometryTemplate.create StandardMesh spacerocket
+GeometryTemplate.file Vehicles/Rocket/rocket
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 500
+
+

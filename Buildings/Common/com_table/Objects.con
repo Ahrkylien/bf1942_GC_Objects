@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject com_table
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry com_table
+objectTemplate.aiTemplate com_table
+ObjectTemplate.loadSoundScript Sounds/flagbase.ssc
+rem ---------------------------

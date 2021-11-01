@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh njud_weapon_room
+GeometryTemplate.file buildings/Judicator/njud_weapon_room
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800

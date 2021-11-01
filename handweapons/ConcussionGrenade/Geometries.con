@@ -1,0 +1,6 @@
+GeometryTemplate.create StandardMesh Fragnade_m1
+GeometryTemplate.file Fragnade_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 5
+GeometryTemplate.setLodDistance 2 60

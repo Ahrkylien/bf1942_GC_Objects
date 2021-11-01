@@ -1,0 +1,7 @@
+#templateLevel HIGH
+
+	#include HighMed.ssc
+	
+#templateLevel MEDIUM
+
+	#include HighMed.ssc

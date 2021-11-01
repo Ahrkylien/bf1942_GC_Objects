@@ -1,0 +1,87 @@
+
+
+rem *** Assault_TankEngine ***
+ObjectTemplate.create Engine Assault_TankEngine
+ObjectTemplate.setNetworkableInfo Assault_TankEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/TigerEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Assault_Tank_Wheel_small_left
+ObjectTemplate.setPosition -3.0579/0.0653/3.7861
+ObjectTemplate.addTemplate Assault_Tank_Wheel_small_left
+ObjectTemplate.setPosition -3.0579/0.0544/-3.1098
+ObjectTemplate.addTemplate Assault_Tank_Wheel_small_right
+ObjectTemplate.setPosition 3.0579/0.0653/3.7861
+ObjectTemplate.addTemplate Assault_Tank_Wheel_small_right
+ObjectTemplate.setPosition 3.0579/0.0544/-3.1098
+ObjectTemplate.addTemplate Assault_Tank_track_left
+ObjectTemplate.setPosition -3.0432/0/0
+ObjectTemplate.addTemplate Assault_Tank_track_right
+ObjectTemplate.setPosition 3.0432/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/10
+ObjectTemplate.setAcceleration 4/0/10
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 15
+ObjectTemplate.setDifferential 5
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+
+
+rem *** Assault_Tank_Wheel_large_dummy ***
+ObjectTemplate.create Spring Assault_Tank_Wheel_large_dummy
+ObjectTemplate.geometry Assault_Tank_wheel_large
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustPanzL
+ObjectTemplate.addTemplate e_wdustPanz
+rem -------------------------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** Assault_Tank_Wheel_large ***
+ObjectTemplate.create Spring Assault_Tank_Wheel_large
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Assault_Tank_wheel_large
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 18
+ObjectTemplate.setDamping 8
+
+
+rem *** Assault_Tank_Wheel_small_left ***
+ObjectTemplate.create Spring Assault_Tank_Wheel_small_left
+ObjectTemplate.geometry Assault_Tank_wheel_small_left
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+rem -------------------------------------
+rem -------------------------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** Assault_Tank_Wheel_small_right ***
+ObjectTemplate.create Spring Assault_Tank_Wheel_small_right
+ObjectTemplate.geometry Assault_Tank_wheel_small_right
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+rem -------------------------------------
+rem -------------------------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0

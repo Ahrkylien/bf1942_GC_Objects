@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject hothpipes
+ObjectTemplate.aiTemplate hothpipes
+ObjectTemplate.geometry hothpipes
+ObjectTemplate.setHasCollisionPhysics 1
+
+

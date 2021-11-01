@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject echo_hall
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.geometry echo_hall
+objectTemplate.aiTemplate echo_hall
+rem ---------------------------

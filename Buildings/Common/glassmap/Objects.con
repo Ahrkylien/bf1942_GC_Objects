@@ -1,0 +1,7 @@
+ObjectTemplate.create SimpleObject glassmap
+ObjectTemplate.aiTemplate glassmap
+ObjectTemplate.geometry glassmap
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.loadSoundScript Sounds/Ambient.ssc
+
+

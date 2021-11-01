@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject bespin_monument2
+ObjectTemplate.geometry bespin_monument2
+ObjectTemplate.setHasCollisionPhysics 1

@@ -1,0 +1,25 @@
+rem *** EP_Play ***
+ObjectTemplate.create FireArms EP_Play
+ObjectTemplate.loadSoundScript Sounds/EscapePodCockpit.ssc
+ObjectTemplate.projectilePosition 0/0/0.4
+ObjectTemplate.magSize 1
+ObjectTemplate.magType 0
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 10
+ObjectTemplate.autoReload 0
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+
+
+rem *** EP_Play2 ***
+ObjectTemplate.create FireArms EP_Play2
+ObjectTemplate.loadSoundScript Sounds/EscapePodCockpit.ssc
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.projectileTemplate ConcussionMissile
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 10
+ObjectTemplate.altfireOnce 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.setInputFire c_PIAltFire

@@ -1,0 +1,20 @@
+ObjectTemplate.create Bundle windtower
+ObjectTemplate.geometry windtower
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate windtower
+ObjectTemplate.loadSoundScript Sounds/Radarbun.ssc
+rem ---------------------------------------
+ObjectTemplate.addTemplate windprop1
+ObjectTemplate.setPosition -2.2/51/0
+rem ---------------------------------------
+
+ObjectTemplate.create RotationalBundle windprop1
+ObjectTemplate.geometry windprop
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.loadSoundScript Sounds/Radarbun_tow.ssc
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/300/0
+ObjectTemplate.setAcceleration 0/300/0
+ObjectTemplate.setContinousRotationSpeed 0/300/0
+

@@ -1,0 +1,33 @@
+renderer.beginGlobalCluster I.M.D.S
+
+GeometryTemplate.create StandardMesh I.M.D.SBase_m1
+GeometryTemplate.file Vehicles/I.M.D.S/missile_turret_base
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 450
+GeometryTemplate.setLodDistance 5 600
+
+GeometryTemplate.create StandardMesh I.M.D.SHead_m1
+GeometryTemplate.file Vehicles/I.M.D.S/missile_turret_head
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 450
+GeometryTemplate.setLodDistance 5 600
+
+GeometryTemplate.create StandardMesh I.M.D.SBarrel_m1
+GeometryTemplate.file Vehicles/I.M.D.S/missile_turret_barrel
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 450
+GeometryTemplate.setLodDistance 5 600
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh WreckI.M.D.S1_m1
+GeometryTemplate.file Vehicles/TurboLaser/Wreck_TurboLaser

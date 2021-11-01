@@ -1,0 +1,4 @@
+GeometryTemplate.create StandardMesh hss
+GeometryTemplate.file Vehicles/hss/hss
+
+

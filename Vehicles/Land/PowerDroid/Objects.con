@@ -1,0 +1,43 @@
+rem
+rem *** powerdroid ***
+rem
+ObjectTemplate.create Bundle powerdroid
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry powerdroid_body
+ObjectTemplate.setRotation -179.9/0/0
+ObjectTemplate.aiTemplate powerdroid
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+objectTemplate.cullRadiusScale 3.0
+rem -------------------------------------
+ObjectTemplate.addTemplate powerdroidSupplyDepot
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate powerdroidVehicleSupplyDepot
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.create SupplyDepot powerdroidSupplyDepot
+ObjectTemplate.radius 3
+ObjectTemplate.team 0
+ObjectTemplate.setHealth 0 0 0
+ObjectTemplate.addAmmoType 1 -1 15 0
+ObjectTemplate.addAmmoType 2 -1 1.2 0
+ObjectTemplate.addAmmoType 3 -1 1.2 0
+ObjectTemplate.workOnVehicles 0
+ObjectTemplate.workOnSoldiers 1
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/SupplyDepot.ssc
+
+rem *** powerdroidVehicleSupplyDepot ***
+ObjectTemplate.create SupplyDepot powerdroidVehicleSupplyDepot
+ObjectTemplate.radius 20
+ObjectTemplate.team 0
+ObjectTemplate.setHealth 0 0 0
+ObjectTemplate.addAmmoType 0 -1 20 0
+ObjectTemplate.addAmmoType 10 -1 100 0
+ObjectTemplate.addAmmoType 9 -1 4 0
+ObjectTemplate.addAmmoType 8 -1 100 0
+ObjectTemplate.addAmmoType 7 -1 4 0
+ObjectTemplate.workOnVehicles 1
+ObjectTemplate.workOnSoldiers 0
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/SupplyDepot.ssc
