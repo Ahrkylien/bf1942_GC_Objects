@@ -2,6 +2,7 @@ renderer.beginGlobalCluster LargeTurboLaser
 
 GeometryTemplate.create StandardMesh LargeTurboLaserBase_m1
 GeometryTemplate.file Vehicles/LargeTurboLaser/large_tl_base_m1
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 100
 GeometryTemplate.setLodDistance 2 300
@@ -11,6 +12,7 @@ GeometryTemplate.setLodDistance 5 800
 
 GeometryTemplate.create StandardMesh LargeTurboLaserHead_m1
 GeometryTemplate.file Vehicles/LargeTurboLaser/large_tl_head_m1
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 100
 GeometryTemplate.setLodDistance 2 300
@@ -20,6 +22,7 @@ GeometryTemplate.setLodDistance 5 800
 
 GeometryTemplate.create StandardMesh LargeTurboLaserBarrel_m1
 GeometryTemplate.file Vehicles/LargeTurboLaser/large_tl_barrels_m1
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 100
 GeometryTemplate.setLodDistance 2 300
@@ -29,6 +32,7 @@ GeometryTemplate.setLodDistance 5 800
 
 GeometryTemplate.create StandardMesh LargeTurboLaserBarrelMount_m1
 GeometryTemplate.file Vehicles/LargeTurboLaser/large_tl_barrel_mounts_m1
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 100
 GeometryTemplate.setLodDistance 2 300
@@ -38,6 +42,7 @@ GeometryTemplate.setLodDistance 5 800
 
 GeometryTemplate.create StandardMesh DefGun_thing_M1
 GeometryTemplate.file DefGun_thing_M1
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 100
 GeometryTemplate.setLodDistance 2 300
@@ -48,6 +53,7 @@ GeometryTemplate.setLodDistance 5 800
 
 GeometryTemplate.create StandardMesh LargeTurboLaserConsole_m1
 GeometryTemplate.file Vehicles/LargeTurboLaser/tl_console_m1
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 100
 GeometryTemplate.setLodDistance 2 300

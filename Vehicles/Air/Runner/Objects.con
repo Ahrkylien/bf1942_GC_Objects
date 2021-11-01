@@ -83,6 +83,7 @@ ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_runner_16x16.tga"
 
 rem *** lodRunner ***
 ObjectTemplate.create LodObject lodRunner
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -98,6 +99,7 @@ ObjectTemplate.create Bundle RunnerComplex
 ObjectTemplate.setNetworkableInfo Runner_Body_Info
 ObjectTemplate.loadSoundScript Sounds/capenginerunner.ssc
 ObjectTemplate.geometry runnerbody
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -145,6 +147,8 @@ ObjectTemplate.addTemplate Runnerwindowarea
 ObjectTemplate.setPosition -.481/-.35/0
 ObjectTemplate.addTemplate Runnerpodsarea
 ObjectTemplate.setPosition -.481/-.35/-.383
+rem ObjectTemplate.addTemplate Runnerpodsarea2
+rem ObjectTemplate.setPosition -.481/-.35/-.383
 ObjectTemplate.addTemplate Runnerdockarea
 ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate escapepodspawn
@@ -273,6 +277,7 @@ rem ----------------------------------------------------------------------------
 
 rem *** Runner_Turret_1_X ***
 ObjectTemplate.create RotationalBundle Runner_Turret_1_X
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setNetworkableInfo Runner_Turret_Info
 ObjectTemplate.setAttachToListener 1
 ObjectTemplate.loadSoundScript Sounds/TurretRotate.ssc
@@ -289,6 +294,7 @@ ObjectTemplate.setInputToYaw c_PIMouseLookX
 
 rem *** Runner_Turret_1_Y ***
 ObjectTemplate.create RotationalBundle Runner_Turret_1_Y
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setNetworkableInfo Runner_Turret_Info
 ObjectTemplate.setAttachToListener 1
 ObjectTemplate.loadSoundScript Sounds/TurretRotate.ssc
@@ -312,6 +318,7 @@ ObjectTemplate.create RotationalBundle Runner_Turret_2_X
 ObjectTemplate.setNetworkableInfo Runner_Turret_Info
 ObjectTemplate.loadSoundScript Sounds/TurretRotate.ssc
 ObjectTemplate.geometry falcon_gun_x_m1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.addTemplate Runner_Turret_2_Y
 ObjectTemplate.setPosition 0/0/0.57
@@ -326,6 +333,7 @@ ObjectTemplate.setNetworkableInfo Runner_Turret_Info
 ObjectTemplate.setAttachToListener 1
 ObjectTemplate.loadSoundScript Sounds/TurretRotate.ssc
 ObjectTemplate.geometry falcon_gun_y_m1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.addTemplate RunnerGunnerCamera
 ObjectTemplate.setPosition 0/-1.1/-0.09
@@ -340,6 +348,7 @@ ObjectTemplate.setInputToPitch c_PIMouseLookY
 
 rem *** Runner_Turbolaser_X ***
 ObjectTemplate.create RotationalBundle Runner_Turbolaser_X
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setNetworkableInfo Runner_Turret_Info
 ObjectTemplate.loadSoundScript Sounds/TurretRotate.ssc
 rem -------------------------------------
@@ -353,6 +362,7 @@ ObjectTemplate.setInputToYaw c_PIMouseLookX
 
 rem *** Runner_Turbolaser_Y ***
 ObjectTemplate.create RotationalBundle Runner_Turbolaser_Y
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setNetworkableInfo Runner_Turret_Info
 ObjectTemplate.loadSoundScript Sounds/TurretRotate.ssc
 rem -------------------------------------
@@ -434,6 +444,7 @@ ObjectTemplate.setEntryRadius 10
 rem *** RunnerSimple ***
 ObjectTemplate.create SimpleObject RunnerSimple
 ObjectTemplate.geometry runnerlow
+ObjectTemplate.hasDynamicShadow 1
 
 rem *** RunnerLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 RunnerLodSelector
@@ -443,6 +454,7 @@ LodSelectorTemplate.addLodDistance 900
 rem *** Runner_Inside ***
 ObjectTemplate.create SimpleObject RunnerInsidearea
 ObjectTemplate.geometry runnerinside
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -450,6 +462,7 @@ ObjectTemplate.hasResponsePhysics 1
 rem *** Runner_Controls ***
 ObjectTemplate.create SimpleObject Runnercontrolsarea
 ObjectTemplate.geometry runnercontrols
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -460,10 +473,20 @@ ObjectTemplate.geometry runnerpods
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate runner_pods_int
+ObjectTemplate.setPosition -.481/-.35/-.383
+
+rem *** Runner_Inside ***
+rem ObjectTemplate.create SimpleObject Runnerpodsarea2
+rem ObjectTemplate.geometry runnerpods_int
+rem ObjectTemplate.hasMobilePhysics 1
+rem ObjectTemplate.hasCollisionPhysics 1
+rem ObjectTemplate.hasResponsePhysics 1
 
 rem *** Runner_Inside ***
 ObjectTemplate.create SimpleObject Runnerwindowarea
 ObjectTemplate.geometry runnerwindow
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -471,6 +494,7 @@ ObjectTemplate.hasResponsePhysics 1
 rem *** Runner_Dock ***
 ObjectTemplate.create SimpleObject Runnerdockarea
 ObjectTemplate.geometry runnerdock
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -478,18 +502,22 @@ ObjectTemplate.hasResponsePhysics 1
 rem *** Runnerbar ***
 ObjectTemplate.create SimpleObject Runner_Turbolaser_Barrel
 ObjectTemplate.geometry Runner_Turbolaser_Barrel_M1
+ObjectTemplate.hasDynamicShadow 1
 
 rem *** Runner_Turbolaser_Barrel ***
 ObjectTemplate.create SimpleObject Runner_Turbolaser_Base
 ObjectTemplate.geometry Runner_Turbolaser_Base_M1
+ObjectTemplate.hasDynamicShadow 1
 
 rem *** Runner_Turret_Y_Reversed ***
 ObjectTemplate.create SimpleObject Runner_Turret_Y_Reversed
 ObjectTemplate.geometry falcon_gun_y_m1
+ObjectTemplate.hasDynamicShadow 1
 
 rem *** Runner_Turret_X_Reversed ***
 ObjectTemplate.create SimpleObject Runner_Turret_X_Reversed
 ObjectTemplate.geometry falcon_gun_x_m1
+ObjectTemplate.hasDynamicShadow 1
 
 rem -----------------------------------------------------------------------------------------------
 rem ------------------------------------------- Runner 2 ------------------------------------

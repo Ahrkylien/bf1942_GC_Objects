@@ -1,5 +1,6 @@
 GeometryTemplate.create StandardMesh trenchpiece1_m1
 GeometryTemplate.file buildings/trenchpiece1_m1
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 
 

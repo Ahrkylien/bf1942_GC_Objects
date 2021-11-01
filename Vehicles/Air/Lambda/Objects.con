@@ -54,13 +54,17 @@ ObjectTemplate.setMinimapIcon "minimap/minimap_icon_lambda_16x16.dds"
 
 rem *** lodLambda ***
 ObjectTemplate.create LodObject lodLambda
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate LambdaComplex
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addTemplate LambdaSimple
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addTemplate LambdaWreck
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.lodSelector LambdaLodSelector
 
@@ -73,74 +77,105 @@ ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate LambdaSonar
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addTemplate LambdaWingTop
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate LambdaCamera
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 1.4/2.1/12.5
 ObjectTemplate.addTemplate LambdaSeat
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 1.4/2.0/12.5
 ObjectTemplate.addTemplate LambdaEntry
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition -3.5/-2.5/11
 ObjectTemplate.addTemplate LambdaEntry
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 3.5/-2.5/11
 ObjectTemplate.addTemplate LambdaFrontGun
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addTemplate LambdaEngine
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate LambdaDoorPCO
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate LambdaBackGunPCO
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addTemplate LambdaBodyWingVertical
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setRotation 0/0/-90
 ObjectTemplate.addTemplate LambdaVTOLRack
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.setRotation 0/-90/0
 ObjectTemplate.addTemplate LambdaFlapLeftMiddle
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition -2.8/-0.2/-0.7
 ObjectTemplate.setRotation 13/0/-9.5
 ObjectTemplate.addTemplate LambdaFlapLeftOuter
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition -5.4/0/0
 ObjectTemplate.setRotation 18.4/0/-9.5
 ObjectTemplate.addTemplate LambdaFlapRightMiddle
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 2.8/-0.2/-0.7
 ObjectTemplate.setRotation -13/0/9.5
 ObjectTemplate.addTemplate LambdaFlapRightOuter
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 5.4/0/0
 ObjectTemplate.setRotation -18.4/0/9.5
 ObjectTemplate.addTemplate LambdaFlapTailLeft
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition -1.3/0.8/-5.9
 ObjectTemplate.setRotation 0/-1.7/0
 ObjectTemplate.addTemplate LambdaFlapTailRight
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 1.3/0.8/-5.9
 ObjectTemplate.setRotation 0/-1.7/0
 ObjectTemplate.addTemplate LambdaRudder
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/1/-6
 ObjectTemplate.setRotation 0/0/-90
 ObjectTemplate.addTemplate LambdaDummyEngineRack
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/1.4/2.2
 ObjectTemplate.addTemplate LambdaDummyRearEngineRack
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition .9/1.65/-7.95
 ObjectTemplate.addTemplate LambdaEngineRack1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/1/2.5
 ObjectTemplate.addTemplate LambdaEngineRack2
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/1/-2.5
 ObjectTemplate.addTemplate LambdaEngineRack3
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/1/0
 
 rem ObjectTemplate.addTemplate GunMainEngine
+ObjectTemplate.hasDynamicShadow 1
 rem ObjectTemplate.setPosition 0/0/1
 rem ObjectTemplate.setRotation 180/0/0
 ObjectTemplate.addTemplate LambdaLevelEngine
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/0/0
 
 ObjectTemplate.addTemplate LambdaPCO4
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addTemplate LambdaPCO5
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addTemplate LambdaPCO6
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.AddTemplate Ammobox
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition -2.43/1.155/-4.4
 ObjectTemplate.AddTemplate HealthPack
 ObjectTemplate.setPosition -2.47/1.822/-4.6
 ObjectTemplate.setRotation 90/0/0
 rem ObjectTemplate.addTemplate e_engineLambda
+ObjectTemplate.hasDynamicShadow 1
 rem ObjectTemplate.setPosition 0/0/-11
 rem -------------------------------------------------------------------------------------
 
@@ -170,6 +205,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.setGeometry lambdahatch_m1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setMinRotation 0/-29/0
 ObjectTemplate.setMaxRotation 0/0/0
 ObjectTemplate.setMaxSpeed 0/-32/0
@@ -184,6 +220,7 @@ rem *** LambdaWingLeft ***
 ObjectTemplate.create LandingGear LambdaWingLeft
 ObjectTemplate.loadSoundScript Sounds/LambdaLandingGear.ssc
 ObjectTemplate.geometry lambdaleftwing_m1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -201,6 +238,7 @@ rem *** LambdaWingRight ***
 ObjectTemplate.create LandingGear LambdaWingRight
 ObjectTemplate.loadSoundScript Sounds/LambdaLandingGear.ssc
 ObjectTemplate.geometry lambdarightwing_m1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -449,6 +487,7 @@ rem ----------------------------------------------------------------------------
 rem *** LambdaLandingGearLeft ***
 ObjectTemplate.create LandingGear LambdaLandingGearLeft
 ObjectTemplate.geometry lambda_left_gear_m1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -466,6 +505,7 @@ ObjectTemplate.setGearUpEngineInput 1.16
 rem *** LambdaLandingGearRight ***
 ObjectTemplate.create LandingGear LambdaLandingGearRight
 ObjectTemplate.geometry lambda_right_gear_m1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -483,6 +523,7 @@ ObjectTemplate.setGearUpEngineInput 1.16
 rem *** LambdaLandingGearFront ***
 ObjectTemplate.create LandingGear LambdaLandingGearFront
 ObjectTemplate.geometry lambda_left_gear_m1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasMobilePhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate RollWheelBundle
@@ -621,16 +662,19 @@ ObjectTemplate.setEntryRadius 2
 rem *** LambdaWingTop ***
 ObjectTemplate.create SimpleObject LambdaWingTop
 ObjectTemplate.geometry lambdatopwing_m1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasCollisionPhysics 1
 
 
 rem *** LambdaSimple ***
 ObjectTemplate.create SimpleObject LambdaSimple
 ObjectTemplate.geometry lambdabody_l1
+ObjectTemplate.hasDynamicShadow 1
 
 rem *** LambdaWreck ***
 ObjectTemplate.create SimpleObject LambdaWreck
 ObjectTemplate.geometry Wreck_Lambda1_M1
+ObjectTemplate.hasDynamicShadow 1
 
 rem *** LambdaLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 LambdaLodSelector
@@ -695,71 +739,98 @@ ObjectTemplate.setMinimapIcon "minimap/minimap_icon_lambda_16x16.dds"
 
 rem *** lodLambda ***
 ObjectTemplate.create LodObject lodLambda2
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate LambdaComplex2
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addTemplate LambdaSimple
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addTemplate LambdaWreck
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.lodSelector Lambda2LodSelector
 
 rem *** LambdaComplex ***
 ObjectTemplate.create Bundle LambdaComplex2
-ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.geometry lambdabody_m1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate LambdaSonar
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addTemplate LambdaWingTop
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate LambdaCamera
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 1.4/2.1/12.5
 ObjectTemplate.addTemplate LambdaSeat
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 1.4/2.0/12.5
 ObjectTemplate.addTemplate LambdaEntry
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition -3.5/-2.5/11
 ObjectTemplate.addTemplate LambdaEntry
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 3.5/-2.5/11
 ObjectTemplate.addTemplate LambdaFrontGun
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addTemplate LambdaDoorPCO
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate LambdaBackGunPCO
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addTemplate LambdaBodyWingVertical
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setRotation 0/0/-90
 ObjectTemplate.addTemplate LambdaFlapLeftMiddle
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition -2.8/-0.2/-0.7
 ObjectTemplate.setRotation 13/0/-9.5
 ObjectTemplate.addTemplate LambdaFlapLeftOuter
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition -5.4/0/0
 ObjectTemplate.setRotation 18.4/0/-9.5
 ObjectTemplate.addTemplate LambdaFlapRightMiddle
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 2.8/-0.2/-0.7
 ObjectTemplate.setRotation -13/0/9.5
 ObjectTemplate.addTemplate LambdaFlapRightOuter
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 5.4/0/0
 ObjectTemplate.setRotation -18.4/0/9.5
 ObjectTemplate.addTemplate LambdaFlapTailLeft
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition -1.3/0.8/-5.9
 ObjectTemplate.setRotation 0/-1.7/0
 ObjectTemplate.addTemplate LambdaFlapTailRight
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 1.3/0.8/-5.9
 ObjectTemplate.setRotation 0/-1.7/0
 ObjectTemplate.addTemplate LambdaRudder
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/1/-6
 ObjectTemplate.setRotation 0/0/-90
 ObjectTemplate.addTemplate LambdaPCO4
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addTemplate LambdaPCO5
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addTemplate LambdaPCO6
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.AddTemplate Ammobox
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition -2.43/1.155/-4.4
 ObjectTemplate.AddTemplate HealthPack
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition -2.47/1.822/-4.6
 ObjectTemplate.setRotation 90/0/0
 ObjectTemplate.addTemplate LambdaEngine2
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/0/0
 
 rem *** LambdaLodSelector ***

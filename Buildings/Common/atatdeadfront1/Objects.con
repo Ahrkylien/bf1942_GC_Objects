@@ -2,51 +2,64 @@ ObjectTemplate.create Bundle atatdeadfront1
 ObjectTemplate.aiTemplate atatdeadfront1
 ObjectTemplate.geometry atat_body
 ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.hasDynamicShadow 1
 
 ObjectTemplate.addTemplate atathead
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/0/0
 
 rem ObjectTemplate.addTemplate atatbody
+ObjectTemplate.hasDynamicShadow 1
 rem ObjectTemplate.setPosition 0/0/0
 
 ObjectTemplate.addTemplate atatfoot1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/0/0
 
 ObjectTemplate.addTemplate atatfoot2
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/0/0
 
 ObjectTemplate.addTemplate atatfoot3
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/0/0
 
 ObjectTemplate.addTemplate atatfoot4
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/0/0
 
 ObjectTemplate.create SimpleObject atathead
 ObjectTemplate.aiTemplate atatdeadfront1
 ObjectTemplate.geometry atat_head
 ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.hasDynamicShadow 1
 
 ObjectTemplate.create SimpleObject atatbody
 ObjectTemplate.aiTemplate atatdeadfront1
 ObjectTemplate.geometry atat_body
 ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.hasDynamicShadow 1
 
 ObjectTemplate.create SimpleObject atatfoot1
 ObjectTemplate.aiTemplate atatdeadfront1
 ObjectTemplate.geometry atat_foot1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasCollisionPhysics 1
 
 ObjectTemplate.create SimpleObject atatfoot2
 ObjectTemplate.aiTemplate atatdeadfront1
 ObjectTemplate.geometry atat_foot2
 ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.hasDynamicShadow 1
 
 ObjectTemplate.create SimpleObject atatfoot3
 ObjectTemplate.aiTemplate atatdeadfront1
 ObjectTemplate.geometry atat_foot3
 ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.hasDynamicShadow 1
 
 ObjectTemplate.create SimpleObject atatfoot4
 ObjectTemplate.setHasCollisionPhysics 1
 ObjectTemplate.geometry atat_foot4
 ObjectTemplate.aiTemplate atatdeadfront1
+ObjectTemplate.hasDynamicShadow 1

@@ -1,6 +1,7 @@
 ObjectTemplate.create Bundle Wreck_ATST
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.geometry Wreck_ATST2_M1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasCollisionPhysics 1
 ObjectTemplate.setHasResponsePhysics 1
 ObjectTemplate.destroyed 1

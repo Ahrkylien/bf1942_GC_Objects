@@ -2,120 +2,131 @@ GeometryTemplate.create StandardMesh ATSTDesertHead
 GeometryTemplate.file Vehicles/ATSTDesert/ATSTHead
 GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 30
-GeometryTemplate.setLodDistance 2 80
-GeometryTemplate.setLodDistance 3 120
-GeometryTemplate.setLodDistance 4 160
-GeometryTemplate.setLodDistance 5 220
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh ATSTDesertHips
 GeometryTemplate.file Vehicles/ATSTDesert/ATSTHips
 GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 30
-GeometryTemplate.setLodDistance 2 80
-GeometryTemplate.setLodDistance 3 120
-GeometryTemplate.setLodDistance 4 160
-GeometryTemplate.setLodDistance 5 220
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh ATSTDesertLFoot
 GeometryTemplate.file Vehicles/ATSTDesert/ATSTLFoot
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 30
-GeometryTemplate.setLodDistance 2 80
-GeometryTemplate.setLodDistance 3 120
-GeometryTemplate.setLodDistance 4 160
-GeometryTemplate.setLodDistance 5 220
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh ATSTDesertLLeg1
 GeometryTemplate.file Vehicles/ATSTDesert/ATSTLLeg1
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 30
-GeometryTemplate.setLodDistance 2 80
-GeometryTemplate.setLodDistance 3 120
-GeometryTemplate.setLodDistance 4 160
-GeometryTemplate.setLodDistance 5 220
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh ATSTDesertLLeg2
 GeometryTemplate.file Vehicles/ATSTDesert/ATSTLLeg2
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 30
-GeometryTemplate.setLodDistance 2 80
-GeometryTemplate.setLodDistance 3 120
-GeometryTemplate.setLodDistance 4 160
-GeometryTemplate.setLodDistance 5 220
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh ATSTDesertLLeg3
 GeometryTemplate.file Vehicles/ATSTDesert/ATSTLLeg3
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 30
-GeometryTemplate.setLodDistance 2 80
-GeometryTemplate.setLodDistance 3 120
-GeometryTemplate.setLodDistance 4 160
-GeometryTemplate.setLodDistance 5 220
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh ATSTDesertRFoot
 GeometryTemplate.file Vehicles/ATSTDesert/ATSTRFoot
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 30
-GeometryTemplate.setLodDistance 2 80
-GeometryTemplate.setLodDistance 3 120
-GeometryTemplate.setLodDistance 4 160
-GeometryTemplate.setLodDistance 5 220
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh ATSTDesertRLeg1
 GeometryTemplate.file Vehicles/ATSTDesert/ATSTRLeg1
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 30
-GeometryTemplate.setLodDistance 2 80
-GeometryTemplate.setLodDistance 3 120
-GeometryTemplate.setLodDistance 4 160
-GeometryTemplate.setLodDistance 5 220
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh ATSTDesertRLeg2
 GeometryTemplate.file Vehicles/ATSTDesert/ATSTRLeg2
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 30
-GeometryTemplate.setLodDistance 2 80
-GeometryTemplate.setLodDistance 3 120
-GeometryTemplate.setLodDistance 4 160
-GeometryTemplate.setLodDistance 5 220
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh ATSTDesertRLeg3
 GeometryTemplate.file Vehicles/ATSTDesert/ATSTRLeg3
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 30
-GeometryTemplate.setLodDistance 2 80
-GeometryTemplate.setLodDistance 3 120
-GeometryTemplate.setLodDistance 4 160
-GeometryTemplate.setLodDistance 5 220
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh ATSTDesertRGun
 GeometryTemplate.file Vehicles/ATSTDesert/ATSTRGun
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 30
-GeometryTemplate.setLodDistance 2 80
-GeometryTemplate.setLodDistance 3 120
-GeometryTemplate.setLodDistance 4 160
-GeometryTemplate.setLodDistance 5 220
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh ATSTDesertLGun
 GeometryTemplate.file Vehicles/ATSTDesert/ATSTLGun
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 30
-GeometryTemplate.setLodDistance 2 80
-GeometryTemplate.setLodDistance 3 120
-GeometryTemplate.setLodDistance 4 160
-GeometryTemplate.setLodDistance 5 220
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh ATSTDesertMGun
 GeometryTemplate.file Vehicles/ATSTDesert/ATSTMGun
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 30
-GeometryTemplate.setLodDistance 2 80
-GeometryTemplate.setLodDistance 3 120
-GeometryTemplate.setLodDistance 4 160
-GeometryTemplate.setLodDistance 5 220
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh ATSTDesert_Hull_L1
 GeometryTemplate.file Vehicles/ATSTDesert/ATST_Low
@@ -123,4 +134,5 @@ GeometryTemplate.hasDynamicShadow 1
 
 GeometryTemplate.create StandardMesh Wreck_ATST1_M1
 GeometryTemplate.file Wreck_ATST1
+GeometryTemplate.hasDynamicShadow 1
 

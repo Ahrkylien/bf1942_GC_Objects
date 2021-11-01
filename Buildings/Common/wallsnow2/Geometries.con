@@ -1,5 +1,6 @@
 GeometryTemplate.create StandardMesh wallsnow2
 GeometryTemplate.file buildings/Hoth/wallsnow2
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 100
 GeometryTemplate.setLodDistance 2 300

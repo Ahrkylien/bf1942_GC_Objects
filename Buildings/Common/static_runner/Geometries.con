@@ -1,5 +1,6 @@
 GeometryTemplate.create StandardMesh static_runner
 GeometryTemplate.file buildings/BCanyon/static_runner
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 100
 GeometryTemplate.setLodDistance 2 200
@@ -9,6 +10,7 @@ GeometryTemplate.setLodDistance 5 800
 
 GeometryTemplate.create StandardMesh static_inside
 GeometryTemplate.file Vehicles/runner/runner_inside
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 100
 GeometryTemplate.setLodDistance 2 200
@@ -18,6 +20,7 @@ GeometryTemplate.setLodDistance 5 800
 
 GeometryTemplate.create StandardMesh static_controls
 GeometryTemplate.file Vehicles/runner/runner_controls
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 100
 GeometryTemplate.setLodDistance 2 200
@@ -27,6 +30,7 @@ GeometryTemplate.setLodDistance 5 500
 
 GeometryTemplate.create StandardMesh static_dock
 GeometryTemplate.file Vehicles/runner/runner_dock
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 100
 GeometryTemplate.setLodDistance 2 200
@@ -36,6 +40,7 @@ GeometryTemplate.setLodDistance 5 500
 
 GeometryTemplate.create StandardMesh static_window
 GeometryTemplate.file Vehicles/runner/runner_window
+GeometryTemplate.hasDynamicShadow 0
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 100
 GeometryTemplate.setLodDistance 2 200
@@ -45,6 +50,17 @@ GeometryTemplate.setLodDistance 5 500
 
 GeometryTemplate.create StandardMesh static_pods
 GeometryTemplate.file Vehicles/runner/runner_pods
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh static_pods2
+GeometryTemplate.file Vehicles/runner/runner_pods_int
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 100
 GeometryTemplate.setLodDistance 2 200

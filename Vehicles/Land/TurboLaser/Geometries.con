@@ -2,30 +2,37 @@ renderer.beginGlobalCluster TurboLaser
 
 GeometryTemplate.create StandardMesh TurboLaserBase_m1
 GeometryTemplate.file Vehicles/TurboLaser/turbo_base
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 200
-GeometryTemplate.setLodDistance 2 500
-GeometryTemplate.setLodDistance 3 900
+GeometryTemplate.setLodDistance 2 400
+GeometryTemplate.setLodDistance 3 600
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh TurboLaserHead_m1
 GeometryTemplate.file Vehicles/TurboLaser/turbo_head
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 50
-GeometryTemplate.setLodDistance 2 100
-GeometryTemplate.setLodDistance 3 200
-GeometryTemplate.setLodDistance 4 300
-GeometryTemplate.setLodDistance 5 400
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 400
+GeometryTemplate.setLodDistance 3 600
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh TurboLaserBarrel_m1
 GeometryTemplate.file Vehicles/TurboLaser/turbo_guns
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 10
-GeometryTemplate.setLodDistance 2 15
-GeometryTemplate.setLodDistance 3 30
-GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 400
+GeometryTemplate.setLodDistance 3 600
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh DefGun_thing_M1
 GeometryTemplate.file DefGun_thing_M1
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 10
 GeometryTemplate.setLodDistance 2 30
@@ -37,3 +44,4 @@ renderer.endGlobalCluster
 
 GeometryTemplate.create StandardMesh WreckTurboLaser1_m1
 GeometryTemplate.file Vehicles/TurboLaser/Wreck_TurboLaser
+GeometryTemplate.hasDynamicShadow 1

@@ -1,6 +1,7 @@
 ObjectTemplate.create SimpleObject wallsnow2
 ObjectTemplate.aiTemplate wallsnow2
 ObjectTemplate.geometry wallsnow2
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasCollisionPhysics 1
 
 

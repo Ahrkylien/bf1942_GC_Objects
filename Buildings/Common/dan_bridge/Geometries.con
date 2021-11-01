@@ -1,5 +1,6 @@
 GeometryTemplate.create StandardMesh dan_bridge
 GeometryTemplate.file buildings/dantooine/dan_bridge
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 100
 GeometryTemplate.setLodDistance 2 200

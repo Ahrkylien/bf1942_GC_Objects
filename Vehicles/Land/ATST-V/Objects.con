@@ -10,9 +10,9 @@ ObjectTemplate.explosionRadius 8
 ObjectTemplate.explosionDamage 5
 ObjectTemplate.damageFromWater 1
 ObjectTemplate.drag 5
-ObjectTemplate.mass 10000
+ObjectTemplate.mass 100000
 ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasResponsePhysics 0
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 1
 ObjectTemplate.exitTimer 0.75
@@ -44,7 +44,8 @@ ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
 ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setCrossHairType CHTCrossHair
 ObjectTemplate.setVehicleCategory VCLand
-ObjectTemplate.setVehicleType  VTLightTank
+rem ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setVehicleType VTHeavyTank
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_at-st_16x16.dds"
 
 rem *** lodATST ***
@@ -52,10 +53,14 @@ ObjectTemplate.create LodObject lodATST-V
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.addTemplate ATSTComplex-V
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addTemplate ATSTSimple
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addTemplate ATSTWreck
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.lodSelector ATSTLodSelector
 
@@ -65,6 +70,7 @@ ObjectTemplate.geometry ATSTHips
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.addTemplate ATSTCockpit-V
 ObjectTemplate.setPosition 0/8.9059/1.14512
@@ -92,9 +98,9 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasMobilePhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate ATSTCamera
-ObjectTemplate.setPosition -0.4/1.15/1.67
+ObjectTemplate.setPosition -0.5/1.15/1.50
 ObjectTemplate.addTemplate ATSTSeat
-ObjectTemplate.setPosition -0.4/0.7/1
+ObjectTemplate.setPosition -0.35/0.7/0.9
 ObjectTemplate.addTemplate ATSTRocketLauncher
 ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate ATSTMainLaserBundle

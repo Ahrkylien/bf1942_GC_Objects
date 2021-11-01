@@ -1,5 +1,6 @@
 GeometryTemplate.create StandardMesh tat_sarlacc
 GeometryTemplate.file buildings/Tatooine/tat_sarlacc
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 100
 GeometryTemplate.setLodDistance 2 200

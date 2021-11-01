@@ -20,13 +20,13 @@ ObjectTemplate.criticalDamage 150
 ObjectTemplate.hpLostWhileCriticalDamage 12
 ObjectTemplate.explosionForceMod 10
 ObjectTemplate.addArmorEffect 350 em_ExFumePOW 0/17/-9
-ObjectTemplate.addArmorEffect 350 em_FletcherDamage 0/0/0
-ObjectTemplate.addArmorEffect 350 em_FletcherDamage 0/0/20
-ObjectTemplate.addArmorEffect 350 em_FletcherDamage 0/0/-30
+ObjectTemplate.addArmorEffect 350 Em_richoMetal_Glint1 0/0/0
+ObjectTemplate.addArmorEffect 350 Em_richoMetal_Glint1 0/0/20
+ObjectTemplate.addArmorEffect 350 Em_richoMetal_Glint1 0/0/-30
 ObjectTemplate.addArmorEffect 350 e_alarm2 0/5/80
-ObjectTemplate.addArmorEffect 300 em_FletcherDamage 0/0/110
-ObjectTemplate.addArmorEffect 300 em_FletcherDamage 0/0/110
-ObjectTemplate.addArmorEffect 300 em_FletcherDamage 0/0/110
+ObjectTemplate.addArmorEffect 300 Em_richoMetal_Glint1 0/0/110
+ObjectTemplate.addArmorEffect 300 Em_richoMetal_Glint1 0/0/110
+ObjectTemplate.addArmorEffect 300 Em_richoMetal_Glint1 0/0/110
 ObjectTemplate.addArmorEffect 120 e_alarm2 0/5/80
 ObjectTemplate.addArmorEffect 120 e_waterBoatSinkEf 0/-2/-5
 ObjectTemplate.addArmorEffect 120 e_waterBoatSinkEf 0/-2/25
@@ -34,28 +34,28 @@ ObjectTemplate.addArmorEffect 120 e_waterBoatSinkEf 0/-2/-35
 ObjectTemplate.fadeAtTimeToLiveAfterDeath 0.01
 
 rem DEATH BLOW
-ObjectTemplate.addArmorEffect 0 e_ExplGas -14.9/0/-10
-ObjectTemplate.addArmorEffect 0 e_ExplGas 16.9/5.83/0
-ObjectTemplate.addArmorEffect 0 e_ExplGas -16.9/5.83/0
+ObjectTemplate.addArmorEffect 0 Em_richoMetal_Glint1 -14.9/0/-10
+ObjectTemplate.addArmorEffect 0 Em_richoMetal_Glint1 16.9/5.83/0
+ObjectTemplate.addArmorEffect 0 Em_richoMetal_Glint1 -16.9/5.83/0
 ObjectTemplate.addArmorEffect 0 e_ExplCap 0/0/0
 
-ObjectTemplate.addArmorEffect 12 e_ExplGas 0/4.3/74.3
-ObjectTemplate.addArmorEffect 15 e_ExplGas 0/16/41.9
-ObjectTemplate.addArmorEffect 112 e_ExplGas 16.9/5.83/23
-ObjectTemplate.addArmorEffect 30 e_ExplGas -16.9/5.83/23
-ObjectTemplate.addArmorEffect 50 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 12 Em_richoMetal_Glint1 0/4.3/74.3
+ObjectTemplate.addArmorEffect 15 Em_richoMetal_Glint1 0/16/41.9
+ObjectTemplate.addArmorEffect 112 Em_richoMetal_Glint1 16.9/5.83/23
+ObjectTemplate.addArmorEffect 30 Em_richoMetal_Glint1 -16.9/5.83/23
+ObjectTemplate.addArmorEffect 50 Em_richoMetal_Glint1 0/0/0
 
-ObjectTemplate.addArmorEffect 130 e_ExplGas 0/4.3/74.3
-ObjectTemplate.addArmorEffect 50 e_ExplGas 0/16/41.9
-ObjectTemplate.addArmorEffect 80 e_ExplGas 16.9/5.83/23
-ObjectTemplate.addArmorEffect 75 e_ExplGas -16.9/5.83/23
-ObjectTemplate.addArmorEffect 40 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 130 Em_richoMetal_Glint1 0/4.3/74.3
+ObjectTemplate.addArmorEffect 50 Em_richoMetal_Glint1 0/16/41.9
+ObjectTemplate.addArmorEffect 80 Em_richoMetal_Glint1 16.9/5.83/23
+ObjectTemplate.addArmorEffect 75 Em_richoMetal_Glint1 -16.9/5.83/23
+ObjectTemplate.addArmorEffect 40 Em_richoMetal_Glint1 0/0/0
 
-ObjectTemplate.addArmorEffect 144 e_ExplGas 0/4.3/74.3
-ObjectTemplate.addArmorEffect 85 e_ExplGas 0/16/41.9
-ObjectTemplate.addArmorEffect 70 e_ExplGas 16.9/5.83/23
-ObjectTemplate.addArmorEffect 35 e_ExplGas -16.9/5.83/23
-ObjectTemplate.addArmorEffect 30 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 144 Em_richoMetal_Glint1 0/4.3/74.3
+ObjectTemplate.addArmorEffect 85 Em_richoMetal_Glint1 0/16/41.9
+ObjectTemplate.addArmorEffect 70 Em_richoMetal_Glint1 16.9/5.83/23
+ObjectTemplate.addArmorEffect 35 Em_richoMetal_Glint1 -16.9/5.83/23
+ObjectTemplate.addArmorEffect 30 Em_richoMetal_Glint1 0/0/0
 rem DEATH BLOW
 rem -------------------------------------
 ObjectTemplate.addTemplate lodLancer
@@ -452,42 +452,42 @@ ObjectTemplate.criticalDamage 150
 ObjectTemplate.hpLostWhileCriticalDamage 12
 ObjectTemplate.explosionForceMod 10
 ObjectTemplate.addArmorEffect 350 em_ExFumePOW 0/17/-9
-ObjectTemplate.addArmorEffect 350 em_FletcherDamage 0/0/0
-ObjectTemplate.addArmorEffect 350 em_FletcherDamage 0/0/20
-ObjectTemplate.addArmorEffect 350 em_FletcherDamage 0/0/-30
+ObjectTemplate.addArmorEffect 350 Em_richoMetal_Glint1 0/0/0
+ObjectTemplate.addArmorEffect 350 Em_richoMetal_Glint1 0/0/20
+ObjectTemplate.addArmorEffect 350 Em_richoMetal_Glint1 0/0/-30
 ObjectTemplate.addArmorEffect 350 e_alarm2 0/5/80
-ObjectTemplate.addArmorEffect 300 em_FletcherDamage 0/0/110
-ObjectTemplate.addArmorEffect 300 em_FletcherDamage 0/0/110
-ObjectTemplate.addArmorEffect 300 em_FletcherDamage 0/0/110
+ObjectTemplate.addArmorEffect 300 Em_richoMetal_Glint1 0/0/110
+ObjectTemplate.addArmorEffect 300 Em_richoMetal_Glint1 0/0/110
+ObjectTemplate.addArmorEffect 300 Em_richoMetal_Glint1 0/0/110
 ObjectTemplate.addArmorEffect 120 e_alarm2 0/5/80
-ObjectTemplate.addArmorEffect 120 e_waterBoatSinkEf 0/-2/-5
-ObjectTemplate.addArmorEffect 120 e_waterBoatSinkEf 0/-2/25
-ObjectTemplate.addArmorEffect 120 e_waterBoatSinkEf 0/-2/-35
+ObjectTemplate.addArmorEffect 120 Em_richoMetal_Glint1 0/-2/-5
+ObjectTemplate.addArmorEffect 120 Em_richoMetal_Glint1 0/-2/25
+ObjectTemplate.addArmorEffect 120 Em_richoMetal_Glint1 0/-2/-35
 ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
 
 rem DEATH BLOW
-ObjectTemplate.addArmorEffect 0 e_ExplGas -14.9/0/-10
-ObjectTemplate.addArmorEffect 0 e_ExplGas 16.9/5.83/0
-ObjectTemplate.addArmorEffect 0 e_ExplGas -16.9/5.83/0
+ObjectTemplate.addArmorEffect 0 Em_richoMetal_Glint1 -14.9/0/-10
+ObjectTemplate.addArmorEffect 0 Em_richoMetal_Glint1 16.9/5.83/0
+ObjectTemplate.addArmorEffect 0 Em_richoMetal_Glint1 -16.9/5.83/0
 ObjectTemplate.addArmorEffect 0 e_ExplCap 0/0/0
 
-ObjectTemplate.addArmorEffect 12 e_ExplGas 0/4.3/74.3
-ObjectTemplate.addArmorEffect 15 e_ExplGas 0/16/41.9
-ObjectTemplate.addArmorEffect 112 e_ExplGas 16.9/5.83/23
-ObjectTemplate.addArmorEffect 30 e_ExplGas -16.9/5.83/23
-ObjectTemplate.addArmorEffect 50 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 12 Em_richoMetal_Glint1 0/4.3/74.3
+ObjectTemplate.addArmorEffect 15 Em_richoMetal_Glint1 0/16/41.9
+ObjectTemplate.addArmorEffect 112 Em_richoMetal_Glint1 16.9/5.83/23
+ObjectTemplate.addArmorEffect 30 Em_richoMetal_Glint1 -16.9/5.83/23
+ObjectTemplate.addArmorEffect 50 Em_richoMetal_Glint1 0/0/0
 
-ObjectTemplate.addArmorEffect 130 e_ExplGas 0/4.3/74.3
-ObjectTemplate.addArmorEffect 50 e_ExplGas 0/16/41.9
-ObjectTemplate.addArmorEffect 80 e_ExplGas 16.9/5.83/23
-ObjectTemplate.addArmorEffect 75 e_ExplGas -16.9/5.83/23
-ObjectTemplate.addArmorEffect 40 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 130 Em_richoMetal_Glint1 0/4.3/74.3
+ObjectTemplate.addArmorEffect 50 Em_richoMetal_Glint1 0/16/41.9
+ObjectTemplate.addArmorEffect 80 Em_richoMetal_Glint1 16.9/5.83/23
+ObjectTemplate.addArmorEffect 75 Em_richoMetal_Glint1 -16.9/5.83/23
+ObjectTemplate.addArmorEffect 40 Em_richoMetal_Glint1 0/0/0
 
-ObjectTemplate.addArmorEffect 144 e_ExplGas 0/4.3/74.3
-ObjectTemplate.addArmorEffect 85 e_ExplGas 0/16/41.9
-ObjectTemplate.addArmorEffect 70 e_ExplGas 16.9/5.83/23
-ObjectTemplate.addArmorEffect 35 e_ExplGas -16.9/5.83/23
-ObjectTemplate.addArmorEffect 30 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 144 Em_richoMetal_Glint1 0/4.3/74.3
+ObjectTemplate.addArmorEffect 85 Em_richoMetal_Glint1 0/16/41.9
+ObjectTemplate.addArmorEffect 70 Em_richoMetal_Glint1 16.9/5.83/23
+ObjectTemplate.addArmorEffect 35 Em_richoMetal_Glint1 -16.9/5.83/23
+ObjectTemplate.addArmorEffect 30 Em_richoMetal_Glint1 0/0/0
 rem DEATH BLOW
 rem -------------------------------------
 ObjectTemplate.addTemplate lodLancer

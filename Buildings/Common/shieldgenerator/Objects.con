@@ -1,6 +1,7 @@
 ObjectTemplate.create SimpleObject shieldgenerator
 ObjectTemplate.aiTemplate shieldgenerator
 ObjectTemplate.geometry shieldgenerator
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasCollisionPhysics 1
 objectTemplate.loadSoundScript Sounds/Ambient.ssc
 

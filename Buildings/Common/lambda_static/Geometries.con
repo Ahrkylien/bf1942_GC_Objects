@@ -1,8 +1,9 @@
 GeometryTemplate.create StandardMesh lambda_static
 GeometryTemplate.file buildings/lambda_static
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 100
-GeometryTemplate.setLodDistance 2 300
-GeometryTemplate.setLodDistance 3 400
-GeometryTemplate.setLodDistance 4 500
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
 GeometryTemplate.setLodDistance 5 900

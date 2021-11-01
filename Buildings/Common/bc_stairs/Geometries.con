@@ -1,5 +1,6 @@
 GeometryTemplate.create StandardMesh bc_stairs
 GeometryTemplate.file buildings/BCanyon/bc_stairs
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 100
 GeometryTemplate.setLodDistance 2 200

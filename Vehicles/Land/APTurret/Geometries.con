@@ -2,40 +2,41 @@ GeometryTemplate.create StandardMesh APBase
 GeometryTemplate.file Vehicles/APTurret/APBase
 GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 50
-GeometryTemplate.setLodDistance 2 100
-GeometryTemplate.setLodDistance 3 150
-GeometryTemplate.setLodDistance 4 200
-GeometryTemplate.setLodDistance 5 250
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh APTurret
 GeometryTemplate.file Vehicles/APTurret/APTurret
 GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 50
-GeometryTemplate.setLodDistance 2 100
-GeometryTemplate.setLodDistance 3 150
-GeometryTemplate.setLodDistance 4 200
-GeometryTemplate.setLodDistance 5 250
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh AP_Barrel
 GeometryTemplate.file Vehicles/APTurret/AP_Barrel
 GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 50
-GeometryTemplate.setLodDistance 2 100
-GeometryTemplate.setLodDistance 3 150
-GeometryTemplate.setLodDistance 4 200
-GeometryTemplate.setLodDistance 5 250
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh DefGun_thing_M1
 GeometryTemplate.file DefGun_thing_M1
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 50
-GeometryTemplate.setLodDistance 2 100
-GeometryTemplate.setLodDistance 3 150
-GeometryTemplate.setLodDistance 4 200
-GeometryTemplate.setLodDistance 5 250
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh 1P_APHUD_M1
 GeometryTemplate.file Vehicles/APTurret/aphud

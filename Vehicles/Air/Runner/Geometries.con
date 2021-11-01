@@ -10,12 +10,15 @@ GeometryTemplate.setLodDistance 5 1800
 
 GeometryTemplate.create StandardMesh Runner_Turbolaser_Barrel_M1
 GeometryTemplate.file Vehicles/runner/runner_guns
+GeometryTemplate.hasDynamicShadow 1
 
 GeometryTemplate.create StandardMesh Runner_Turbolaser_Base_M1
 GeometryTemplate.file Vehicles/runner/runner_gunbase
+GeometryTemplate.hasDynamicShadow 1
 
 GeometryTemplate.create StandardMesh runnerinside
 GeometryTemplate.file Vehicles/runner/runner_inside
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 100
 GeometryTemplate.setLodDistance 2 500
@@ -25,6 +28,7 @@ GeometryTemplate.setLodDistance 5 1500
 
 GeometryTemplate.create StandardMesh runnercontrols
 GeometryTemplate.file Vehicles/runner/runner_controls
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 100
 GeometryTemplate.setLodDistance 2 200
@@ -34,6 +38,7 @@ GeometryTemplate.setLodDistance 5 500
 
 GeometryTemplate.create StandardMesh runnerwindow
 GeometryTemplate.file Vehicles/runner/runner_window
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 100
 GeometryTemplate.setLodDistance 2 200
@@ -43,6 +48,7 @@ GeometryTemplate.setLodDistance 5 500
 
 GeometryTemplate.create StandardMesh runnerpods
 GeometryTemplate.file Vehicles/runner/runner_pods
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 100
 GeometryTemplate.setLodDistance 2 200
@@ -50,8 +56,19 @@ GeometryTemplate.setLodDistance 3 300
 GeometryTemplate.setLodDistance 4 400
 GeometryTemplate.setLodDistance 5 500
 
+rem GeometryTemplate.create StandardMesh runnerpods_int
+rem GeometryTemplate.file Vehicles/runner/runner_pods_int
+rem GeometryTemplate.hasDynamicShadow 1
+rem GeometryTemplate.setLodDistance 0 0
+rem GeometryTemplate.setLodDistance 1 100
+rem GeometryTemplate.setLodDistance 2 200
+rem GeometryTemplate.setLodDistance 3 300
+rem GeometryTemplate.setLodDistance 4 400
+rem GeometryTemplate.setLodDistance 5 500
+
 GeometryTemplate.create StandardMesh runnerdock
 GeometryTemplate.file Vehicles/runner/runner_dock
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 100
 GeometryTemplate.setLodDistance 2 200

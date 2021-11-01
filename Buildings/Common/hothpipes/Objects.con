@@ -1,6 +1,7 @@
 ObjectTemplate.create SimpleObject hothpipes
 ObjectTemplate.aiTemplate hothpipes
 ObjectTemplate.geometry hothpipes
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasCollisionPhysics 1
 
 

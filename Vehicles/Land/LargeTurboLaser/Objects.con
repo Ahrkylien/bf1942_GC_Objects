@@ -5,6 +5,7 @@ ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.geometry LargeTurboLaserBase_m1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 300
 ObjectTemplate.maxhitpoints 300
@@ -33,6 +34,7 @@ ObjectTemplate.sonarPos 1
 
 rem *** lodTurboLaser ***
 ObjectTemplate.create LodObject lodLargeTurboLaser
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
@@ -44,6 +46,7 @@ ObjectTemplate.lodSelector lodLargeTurboLaserSelector
 
 rem *** TurboLaserComplex ***
 ObjectTemplate.create Bundle LargeTurboLaserComplex
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
@@ -67,6 +70,7 @@ rem *** TurboLaserHead ***
 ObjectTemplate.create RotationalBundle LargeTurboLaserHead
 ObjectTemplate.setNetworkableInfo LargeTurboLaserGunInfo
 ObjectTemplate.geometry LargeTurboLaserHead_m1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setAttachToListener 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -98,13 +102,14 @@ ObjectTemplate.setInputToYaw c_PIMouseLookX
 rem *** TurboLaserBase ***
 ObjectTemplate.create SimpleObject LargeTurboLaserBase
 ObjectTemplate.geometry LargeTurboLaserBase_m1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setAttachToListener 1
 ObjectTemplate.hasCollisionPhysics 1
 
 rem *** TurboLaserBarrel ***
 ObjectTemplate.create RotationalBundle LargeTurboLaserBarrel
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setNetworkableInfo LargeTurboLaserCameraInfo
-
 ObjectTemplate.setAttachToListener 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -132,14 +137,17 @@ ObjectTemplate.setInputToPitch c_PIMouseLookY
 
 ObjectTemplate.create SimpleObject LargeTurboLaserBarrelMount
 ObjectTemplate.geometry LargeTurboLaserBarrelMount_m1
+ObjectTemplate.hasDynamicShadow 1
 
 ObjectTemplate.create SimpleObject LargeTurboLaserConsole
 ObjectTemplate.geometry LargeTurboLaserConsole_m1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasCollisionPhysics 1
 
 rem *** TurboLaserWreck ***
 ObjectTemplate.create SimpleObject LargeTurboLaserWreck
 ObjectTemplate.geometry LargeTurboLaserWreck
+ObjectTemplate.hasDynamicShadow 1
 
 ObjectTemplate.create SeatObject LargeTurboLaserSeat
 ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
@@ -158,6 +166,7 @@ ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.geometry LargeTurboLaserBase_m1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 300
 ObjectTemplate.maxhitpoints 300
@@ -195,6 +204,7 @@ ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.geometry LargeTurboLaserBase_m1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 300
 ObjectTemplate.maxhitpoints 300
@@ -232,6 +242,7 @@ ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.geometry LargeTurboLaserBase_m1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 300
 ObjectTemplate.maxhitpoints 300

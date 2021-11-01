@@ -2,9 +2,11 @@ rem *** apturret ***
 ObjectTemplate.create PlayerControlObject APTurret
 ObjectTemplate.setNetworkableInfo apturretBodyInfo
 ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.geometry DefGun_thing_M1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 200
 ObjectTemplate.maxhitpoints 200
@@ -32,6 +34,7 @@ ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_apturret_16x16.dds"
 
 rem *** lodapturret ***
 ObjectTemplate.create LodObject lodApTurret
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
@@ -44,6 +47,7 @@ ObjectTemplate.lodSelector lodApTurretSelectah
 rem *** APTurretOrginal ***
 ObjectTemplate.create Bundle APTurretOrginal
 ObjectTemplate.geometry ApBase
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
@@ -61,6 +65,7 @@ rem *** apturretTurret ***
 ObjectTemplate.create RotationalBundle ApTurretRotation
 ObjectTemplate.setNetworkableInfo apturretBodyInfo
 ObjectTemplate.geometry ApTurret
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setAttachToListener 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -77,6 +82,7 @@ rem *** ApTurretGunbarrel ***
 ObjectTemplate.create RotationalBundle ApTurretGunbarrel
 ObjectTemplate.setNetworkableInfo apturretBodyInfo
 ObjectTemplate.geometry AP_Barrel
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setAttachToListener 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -123,6 +129,7 @@ ObjectTemplate.create Camera ApTurretCamera
 rem *** apturretWreck ***
 ObjectTemplate.create SimpleObject APTurretWreck
 ObjectTemplate.geometry Wreck_APTurret1_M1
+ObjectTemplate.hasDynamicShadow 1
 
 rem *** lodapturretSelectah ***
 LodSelectorTemplate.create DistCompareSelector2 lodAPTurretSelectah

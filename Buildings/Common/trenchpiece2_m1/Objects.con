@@ -1,3 +1,4 @@
 ObjectTemplate.create SimpleObject trenchpiece2_m1
 ObjectTemplate.geometry trenchpiece2_m1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasCollisionPhysics 1

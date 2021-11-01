@@ -5,6 +5,7 @@ rem -------------------------------------
 ObjectTemplate.addTemplate Em_ExplLargeRed
 ObjectTemplate.setRotation 90/0/0
 ObjectTemplate.addTemplate Em_ExplLargeRed_flash
+ObjectTemplate.addTemplate Em_richoMetal_Glint1
 ObjectTemplate.addTemplate Em_ExplLargeRed_Cloud
 ObjectTemplate.addTemplate Em_ExplLargeRed_Fire
 ObjectTemplate.addTemplate Em_ExplLargeRed_Smoke
@@ -163,3 +164,32 @@ ObjectTemplate.sizeModifier 2.5/1/2.5
 ObjectTemplate.sizeOverTime 0/0.900296|100/5
 ObjectTemplate.gravityModifierOverTime 0/0.800195|73/5.91983|100/10
 ObjectTemplate.alphaOverTime 0/1|100/0
+
+rem *** Em_richoMetal_Glint1 ***  GC GunFire Sparks on Metal
+ObjectTemplate.create Emitter Em_richoMetal_Glint1
+ObjectTemplate.template Fx_richoMetal_Glint1X
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 300
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/1000/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/1/1
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/4/0.4/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0.2/2/1
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/2/0/0
+rem *** Fx_richoMetal_Glint1X ***
+ObjectTemplate.create SpriteParticle Fx_richoMetal_Glint1X
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.size CRD_UNIFORM/0.4/0.1/0
+ObjectTemplate.gravityModifier CRD_UNIFORM/0.4/1/0
+ObjectTemplate.drag CRD_UNIFORM/1/0.5/0
+ObjectTemplate.sizeOverTime 0/1|100/1
+ObjectTemplate.dragOverTime 0/0.05|100/1
+ObjectTemplate.texture E_richoMetal_I
+ObjectTemplate.useMipMaps 1
+ObjectTemplate.turnsInMovingDirection 1
+ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeed CRD_NONE/1/0/0
+ObjectTemplate.colorRGBAOverTime 0/255/255/250/255|25/255/255/128/255|50/255/255/75/255|75/255/128/50/245|100/155/25/0/235

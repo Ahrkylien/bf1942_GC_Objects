@@ -10,9 +10,9 @@ ObjectTemplate.explosionRadius 8
 ObjectTemplate.explosionDamage 5
 ObjectTemplate.damageFromWater 1
 ObjectTemplate.drag 5
-ObjectTemplate.mass 10000
+ObjectTemplate.mass 100000
 ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasResponsePhysics 0
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 1
 ObjectTemplate.exitTimer 0.75
@@ -52,10 +52,14 @@ ObjectTemplate.create LodObject lodATSTDesert
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.addTemplate ATSTDesertComplex
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addTemplate ATSTDesertSimple
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addTemplate ATSTWreck
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.lodSelector ATSTLodSelector
 
@@ -65,6 +69,7 @@ ObjectTemplate.geometry ATSTDesertHips
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.addTemplate ATSTDesertCockpit
 ObjectTemplate.setPosition 0/8.9059/1.14512
@@ -90,11 +95,12 @@ ObjectTemplate.geometry ATSTDesertHead
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.addTemplate ATSTCamera
-ObjectTemplate.setPosition -0.4/1.15/1.67
+ObjectTemplate.setPosition -0.5/1.15/1.50
 ObjectTemplate.addTemplate ATSTSeat
-ObjectTemplate.setPosition -0.4/0.7/1
+ObjectTemplate.setPosition -0.35/0.7/0.9
 ObjectTemplate.addTemplate ATSTGrenadeLauncher
 ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate ATSTDesertMainLaserBundle
@@ -124,7 +130,9 @@ rem --------------------------------
 rem ********* ATSTDesertLaserBarrel
 ObjectTemplate.create SimpleObject ATSTDesertLaserBarrel
 ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.geometry ATSTDesertLGun
+ObjectTemplate.hasDynamicShadow 1
 
 rem ------------------------------- CoPilot -------------------------------
 
@@ -180,6 +188,7 @@ ObjectTemplate.setInputToPitch c_PIMouseLookY
 rem *** ATSTDesertSimple ***
 ObjectTemplate.create SimpleObject ATSTDesertSimple
 ObjectTemplate.geometry ATSTDesert_Hull_L1
+ObjectTemplate.hasDynamicShadow 1
 
 rem ---------------------------------- Legs ----------------------------------
 
@@ -187,6 +196,7 @@ rem *** ATSTDesert Right Leg Rot 1 ***
 ObjectTemplate.create RotationalBundle ATSTDesertRLegRot1
 ObjectTemplate.setNetworkableInfo ATSTDesertBodyInfo
 ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.addTemplate ATSTDesertRLegRot1_2
 ObjectTemplate.setPosition 0/-5.692/-0.492
@@ -200,6 +210,7 @@ rem *** ATSTDesert Right Leg Rot 1_2 ***
 ObjectTemplate.create RotationalBundle ATSTDesertRLegRot1_2
 ObjectTemplate.setNetworkableInfo ATSTDesertBodyInfo
 ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.addTemplate ATSTDesertRLeg1
 ObjectTemplate.setPosition 0/5.714/-0.006
@@ -213,6 +224,7 @@ rem *** ATSTDesert Right Leg Rot 3 ***
 ObjectTemplate.create RotationalBundle ATSTDesertRLegRot3
 ObjectTemplate.setNetworkableInfo ATSTDesertBodyInfo
 ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.addTemplate ATSTDesertRLegRot3_2
 ObjectTemplate.setPosition 0/-1.751/-0.3
@@ -226,6 +238,7 @@ rem *** ATSTDesert Right Leg Rot 3_2 ***
 ObjectTemplate.create RotationalBundle ATSTDesertRLegRot3_2
 ObjectTemplate.setNetworkableInfo ATSTDesertBodyInfo
 ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.addTemplate ATSTDesertRLeg3
 ObjectTemplate.setPosition 0/1.777/-0.009
@@ -239,6 +252,7 @@ rem *** ATSTDesert Left Leg Rot 1 ***
 ObjectTemplate.create RotationalBundle ATSTDesertLLegRot1
 ObjectTemplate.setNetworkableInfo ATSTDesertBodyInfo
 ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.addTemplate ATSTDesertLLegRot1_2
 ObjectTemplate.setPosition 0/-5.691/0.504
@@ -252,6 +266,7 @@ rem *** ATSTDesert Left Leg Rot 1_2 ***
 ObjectTemplate.create RotationalBundle ATSTDesertLLegRot1_2
 ObjectTemplate.setNetworkableInfo ATSTDesertBodyInfo
 ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.addTemplate ATSTDesertLLeg1
 ObjectTemplate.setPosition 0/5.714/-0.006
@@ -265,6 +280,7 @@ rem *** ATSTDesert Left Leg Rot 3 ***
 ObjectTemplate.create RotationalBundle ATSTDesertLLegRot3
 ObjectTemplate.setNetworkableInfo ATSTDesertBodyInfo
 ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.addTemplate ATSTDesertLLegRot3_2
 ObjectTemplate.setPosition 0/-1.748/0.317
@@ -278,6 +294,7 @@ rem *** ATSTDesert Left Leg Rot 3_2 ***
 ObjectTemplate.create RotationalBundle ATSTDesertLLegRot3_2
 ObjectTemplate.setNetworkableInfo ATSTDesertBodyInfo
 ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.addTemplate ATSTDesertLLeg3
 ObjectTemplate.setPosition 0/1.777/-0.009
@@ -293,6 +310,7 @@ ObjectTemplate.geometry ATSTDesertRLeg1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.addTemplate ATSTDesertRLeg2
 ObjectTemplate.setPosition -0.1658/-0.9188/-2.353525
@@ -309,6 +327,7 @@ ObjectTemplate.geometry ATSTDesertLLeg1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.addTemplate ATSTDesertLLeg2
 ObjectTemplate.setPosition 0.1658/-0.9188/-2.353525
@@ -325,6 +344,7 @@ ObjectTemplate.geometry ATSTDesertRLeg2
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 rem ObjectTemplate.addTemplate ATSTDesertRLeg3
 rem ObjectTemplate.setPosition 0.10775/-4.435375/0.358375
@@ -344,6 +364,7 @@ ObjectTemplate.geometry ATSTDesertLLeg2
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 rem ObjectTemplate.addTemplate ATSTDesertLLeg3
 rem ObjectTemplate.setPosition -0.10775/-4.435375/0.358375
@@ -363,6 +384,7 @@ ObjectTemplate.geometry ATSTDesertLLeg3
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.addTemplate ATSTDesertRFoot
 ObjectTemplate.setPosition -0.008875/-1.501625/0.949
@@ -379,6 +401,7 @@ ObjectTemplate.geometry ATSTDesertLLeg3
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.addTemplate ATSTDesertLFoot
 ObjectTemplate.setPosition 0.008875/-1.501625/0.949
@@ -395,6 +418,7 @@ ObjectTemplate.geometry ATSTDesertRFoot
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 rem ObjectTemplate.addTemplate ATSTDesertFootSpringR
 rem -------------------------------------
@@ -410,6 +434,7 @@ ObjectTemplate.geometry ATSTDesertLFoot
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 rem ObjectTemplate.addTemplate ATSTDesertFootSpringL
 rem -------------------------------------
@@ -425,6 +450,7 @@ ObjectTemplate.setNetworkableInfo ATSTDesertSteeringInfo
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.addTemplate ATSTDesertDummyFrontSpringR
 ObjectTemplate.setPosition 0/-0.599/0
@@ -442,6 +468,7 @@ ObjectTemplate.setNetworkableInfo ATSTDesertSteeringInfo
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.addTemplate ATSTDesertDummyFrontSpringL
 ObjectTemplate.setPosition 0/-0.599/0

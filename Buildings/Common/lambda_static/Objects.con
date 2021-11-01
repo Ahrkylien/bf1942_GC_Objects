@@ -1,6 +1,7 @@
 ObjectTemplate.create SimpleObject lambda_static
 ObjectTemplate.aiTemplate lambda_static
 ObjectTemplate.geometry lambda_static
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasCollisionPhysics 1
 
 

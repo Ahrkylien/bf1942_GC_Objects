@@ -64,7 +64,11 @@ rem --------------------------------------------------------------------
 ObjectTemplate.create ActiveKitPart Sprint2
 ObjectTemplate.geometry Empire_scout_mesh
 ObjectTemplate.setBoneName "Bip01 R UpperArm"
+rem ObjectTemplate.setBoneName backpack
 ObjectTemplate.setCopyLinksCount 0
+rem ObjectTemplate.addTemplate Empire_scout_mesh
+rem ObjectTemplate.setPosition 5/5/0
+rem ObjectTemplate.setRotation 90/180/0
 ObjectTemplate.setActiveAcceleration  0/0/90
 ObjectTemplate.setPassiveAcceleration 0/0/0
 ObjectTemplate.setInAirAnimOverride GrenadeAxisFire

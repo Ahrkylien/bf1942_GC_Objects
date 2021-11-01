@@ -4,12 +4,14 @@ ObjectTemplate.setNetworkableInfo TurboLaserBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 90
 ObjectTemplate.maxhitpoints 90
 ObjectTemplate.material 811
 ObjectTemplate.criticalDamage 9
 ObjectTemplate.geometry DefGun_thing_M1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hpLostWhileCriticalDamage 0.9
 rem ObjectTemplate.addArmorEffect 9 e_Wreck1Smoke 0/2/0
 rem ObjectTemplate.addArmorEffect 0 e_scrapmetal_awing 0/2/0
@@ -19,6 +21,7 @@ ObjectTemplate.timetoliveafterdeath 5
 ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
 rem -------------------------------------
 ObjectTemplate.addTemplate lodTurboLaser
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setSoldierExitLocation 2/2.5/0 0/0/0
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_turbolaser.dds"
 ObjectTemplate.setVehicleIconPos 60/55
@@ -36,19 +39,24 @@ ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate TurboLaserComplex
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.lodSelector lodTurboLaserSelector
 
 rem *** TurboLaserComplex ***
 ObjectTemplate.create Bundle TurboLaserComplex
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.geometry TurboLaserBase_m1
+ObjectTemplate.hasDynamicShadow 1
 rem -------------------------------------
 ObjectTemplate.addTemplate TurboLaserEntry
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.setRotation 0/0/0
 ObjectTemplate.addTemplate TurboLaserHead
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/0/0.071
 rem -------------------------------------
 
@@ -58,14 +66,17 @@ ObjectTemplate.setEntryRadius 4
 
 rem *** TurboLaserHead ***
 ObjectTemplate.create RotationalBundle TurboLaserHead
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setNetworkableInfo TurboLaserGunInfo
 ObjectTemplate.geometry TurboLaserHead_m1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setAttachToListener 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.loadSoundScript Sounds/TurboLaserRotate.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate TurboLaserBarrel
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/3.5/0
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/0/0
@@ -76,12 +87,15 @@ ObjectTemplate.setInputToYaw c_PIMouseLookX
 
 rem *** TurboLaserBase ***
 ObjectTemplate.create SimpleObject TurboLaserBase
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.geometry TurboLaserBase_m1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setAttachToListener 1
 ObjectTemplate.hasCollisionPhysics 1
 
 rem *** TurboLaserBarrel ***
 ObjectTemplate.create RotationalBundle TurboLaserBarrel
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setNetworkableInfo TurboLaserCameraInfo
 
 ObjectTemplate.setAttachToListener 1
@@ -90,8 +104,10 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.loadSoundScript Sounds/TurboLaserRotate.ssc
 rem**********************
 ObjectTemplate.addTemplate TurboLaserCamera
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/0.05/1.5
 ObjectTemplate.addTemplate TurboLaserGun
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setPosition 0/0/0
 rem**********************
 ObjectTemplate.setMinRotation 0/-70/0
@@ -109,7 +125,9 @@ ObjectTemplate.setInputToPitch c_PIMouseLookY
 
 rem *** TurboLaserWreck ***
 ObjectTemplate.create SimpleObject TurboLaserWreck
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.geometry Wreck_none
+ObjectTemplate.hasDynamicShadow 1
 
 rem *** lodTurboLaserSelector ***
 LodSelectorTemplate.create DistCompareSelector2 lodTurboLaserSelector
@@ -128,6 +146,7 @@ ObjectTemplate.maxhitpoints 90
 ObjectTemplate.material 811
 ObjectTemplate.criticalDamage 9
 ObjectTemplate.geometry DefGun_thing_M1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hpLostWhileCriticalDamage 0.9
 rem ObjectTemplate.addArmorEffect 9 e_Wreck1Smoke 0/2/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal_awing 0/2/0
@@ -140,6 +159,7 @@ ObjectTemplate.addTemplate TLSoldierSpawn
 ObjectTemplate.setPosition 0/0/0
 rem -------------------------------------
 ObjectTemplate.addTemplate lodTurboLaser
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setSoldierExitLocation 2/2.5/0 0/0/0
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_turbolaser.dds"
 ObjectTemplate.setVehicleIconPos 60/55
@@ -163,6 +183,7 @@ ObjectTemplate.maxhitpoints 90
 ObjectTemplate.material 811
 ObjectTemplate.criticalDamage 9
 ObjectTemplate.geometry DefGun_thing_M1
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hpLostWhileCriticalDamage 0.9
 rem ObjectTemplate.addArmorEffect 9 e_Wreck1Smoke 0/2/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal_awing 0/2/0
@@ -175,6 +196,7 @@ ObjectTemplate.addTemplate TLSoldierSpawn2
 ObjectTemplate.setPosition 0/0/0
 rem -------------------------------------
 ObjectTemplate.addTemplate lodTurboLaser
+ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setSoldierExitLocation 2/2.5/0 0/0/0
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_turbolaser.dds"
 ObjectTemplate.setVehicleIconPos 60/55

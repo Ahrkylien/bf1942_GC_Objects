@@ -1,53 +1,59 @@
 GeometryTemplate.create StandardMesh atat_head
 GeometryTemplate.file Vehicles/ATATDead/atat_head
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 100
-GeometryTemplate.setLodDistance 2 200
-GeometryTemplate.setLodDistance 3 300
-GeometryTemplate.setLodDistance 4 400
-GeometryTemplate.setLodDistance 5 500
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh atat_body
 GeometryTemplate.file Vehicles/ATATDead/atat_body
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 100
-GeometryTemplate.setLodDistance 2 200
-GeometryTemplate.setLodDistance 3 300
-GeometryTemplate.setLodDistance 4 400
-GeometryTemplate.setLodDistance 5 500
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh atat_foot1
 GeometryTemplate.file Vehicles/ATATDead/atat_foot1
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 100
-GeometryTemplate.setLodDistance 2 200
-GeometryTemplate.setLodDistance 3 300
-GeometryTemplate.setLodDistance 4 400
-GeometryTemplate.setLodDistance 5 500
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh atat_foot2
 GeometryTemplate.file Vehicles/ATATDead/atat_foot2
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 100
-GeometryTemplate.setLodDistance 2 200
-GeometryTemplate.setLodDistance 3 300
-GeometryTemplate.setLodDistance 4 400
-GeometryTemplate.setLodDistance 5 500
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh atat_foot3
 GeometryTemplate.file Vehicles/ATATDead/atat_foot3
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 100
-GeometryTemplate.setLodDistance 2 200
-GeometryTemplate.setLodDistance 3 300
-GeometryTemplate.setLodDistance 4 400
-GeometryTemplate.setLodDistance 5 500
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
 
 GeometryTemplate.create StandardMesh atat_foot4
 GeometryTemplate.file Vehicles/ATATDead/atat_foot4
+GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 100
-GeometryTemplate.setLodDistance 2 200
-GeometryTemplate.setLodDistance 3 300
-GeometryTemplate.setLodDistance 4 400
-GeometryTemplate.setLodDistance 5 500
+GeometryTemplate.setLodDistance 1 500
+GeometryTemplate.setLodDistance 2 600
+GeometryTemplate.setLodDistance 3 700
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 900
