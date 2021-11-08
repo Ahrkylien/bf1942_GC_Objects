@@ -1,5 +1,3 @@
 rem *** Bug ***
 ObjectTemplate.create SimpleObject Bug
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.triggerRadius 100
 ObjectTemplate.loadSoundScript Sounds/Bug.ssc

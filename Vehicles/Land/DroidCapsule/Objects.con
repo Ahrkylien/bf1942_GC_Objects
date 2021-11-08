@@ -150,17 +150,6 @@ ObjectTemplate.team 2
 ObjectTemplate.MaxNrOfObjectSpawned 1 
 ObjectTemplate.damageWhenLost 1
 
-rem *** R2DroidSpawner *** 
-ObjectTemplate.create ObjectSpawner R2DroidSpawner
-ObjectTemplate.setObjectTemplate 1 R5D4Droid
-ObjectTemplate.setObjectTemplate 2 R2D2
-ObjectTemplate.minSpawnDelay 0 
-ObjectTemplate.maxSpawnDelay 0 
-ObjectTemplate.TimeToLive 60
-ObjectTemplate.Distance 10
-ObjectTemplate.team 1 
-ObjectTemplate.MaxNrOfObjectSpawned 1 
-ObjectTemplate.damageWhenLost 1
 
 beginrem
 rem *** projxSpawner *** 

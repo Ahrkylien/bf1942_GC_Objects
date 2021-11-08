@@ -132,7 +132,3 @@ GeometryTemplate.create StandardMesh ATSTDesert_Hull_L1
 GeometryTemplate.file Vehicles/ATSTDesert/ATST_Low
 GeometryTemplate.hasDynamicShadow 1
 
-GeometryTemplate.create StandardMesh Wreck_ATST1_M1
-GeometryTemplate.file Wreck_ATST1
-GeometryTemplate.hasDynamicShadow 1
-

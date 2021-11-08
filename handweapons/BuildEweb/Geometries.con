@@ -1,12 +1,3 @@
-GeometryTemplate.create StandardMesh Eweb_tripod_m1
-GeometryTemplate.file Ewebtripod_m1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 3
-GeometryTemplate.setLodDistance 2 10
-GeometryTemplate.setLodDistance 3 20
-GeometryTemplate.setLodDistance 4 30
-GeometryTemplate.setLodDistance 5 100
-
 GeometryTemplate.create StandardMesh tripodwep
 GeometryTemplate.file tripodwep
 GeometryTemplate.setLodDistance 0 0

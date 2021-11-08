@@ -73,35 +73,35 @@ ObjectTemplate.seatFlags c_SeatShowStandingSoldier
 ObjectTemplate.seatFlags c_SeatIsOutside
 
 rem *** projxLauncher **
-ObjectTemplate.create FireArms projxLauncher
-ObjectTemplate.setNetworkableInfo TankFireArmInfo
-ObjectTemplate.projectileTemplate projxSpawnerProjectile
-ObjectTemplate.projectilePosition 0/0/2
-ObjectTemplate.setHasMag 1
-ObjectTemplate.magSize 1
-ObjectTemplate.numOfMag 1
-ObjectTemplate.magType 0
-ObjectTemplate.velocity 1
-ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 1
-ObjectTemplate.roundOfFire 60
-ObjectTemplate.FireOnce 1
+rem ObjectTemplate.create FireArms projxLauncher
+rem ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem ObjectTemplate.projectileTemplate projxSpawnerProjectile
+rem ObjectTemplate.projectilePosition 0/0/2
+rem ObjectTemplate.setHasMag 1
+rem ObjectTemplate.magSize 1
+rem ObjectTemplate.numOfMag 1
+rem ObjectTemplate.magType 0
+rem ObjectTemplate.velocity 1
+rem ObjectTemplate.autoReload 1
+rem ObjectTemplate.reloadtime 1
+rem ObjectTemplate.roundOfFire 60
+rem ObjectTemplate.FireOnce 1
 
 rem *** projxSpawnerProjectile ***
-ObjectTemplate.create Projectile projxSpawnerProjectile
-ObjectTemplate.saveInSeparateFile 1 
-ObjectTemplate.addTemplate projxSpawner
-ObjectTemplate.timeToLive CRD_NONE/1/0/0 
-ObjectTemplate.gravityModifier 0.5 
-ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.setHasMobilePhysics 1
-ObjectTemplate.setHasCollisionPhysics 1
-ObjectTemplate.setHasResponsePhysics 0
-ObjectTemplate.setHasPointPhysics 0
-ObjectTemplate.hasCollisionEffect 0
-ObjectTemplate.DetonateOnWaterCollision 1 
-ObjectTemplate.drag 0.04 
-ObjectTemplate.mass 800 
+rem ObjectTemplate.create Projectile projxSpawnerProjectile
+rem ObjectTemplate.saveInSeparateFile 1 
+rem ObjectTemplate.addTemplate projxSpawner
+rem ObjectTemplate.timeToLive CRD_NONE/1/0/0 
+rem ObjectTemplate.gravityModifier 0.5 
+rem ObjectTemplate.hasDynamicShadow 1
+rem ObjectTemplate.setHasMobilePhysics 1
+rem ObjectTemplate.setHasCollisionPhysics 1
+rem ObjectTemplate.setHasResponsePhysics 0
+rem ObjectTemplate.setHasPointPhysics 0
+rem ObjectTemplate.hasCollisionEffect 0
+rem ObjectTemplate.DetonateOnWaterCollision 1 
+rem ObjectTemplate.drag 0.04 
+rem ObjectTemplate.mass 800 
 
 rem *** projxSpawner *** 
 ObjectTemplate.create ObjectSpawner projxSpawner

@@ -32,8 +32,3 @@ ObjectTemplate.addTemplate SpaceRocketEngine
 ObjectTemplate.setPosition 0/0/-2
 
 
-rem -------------------------------------------------
-
-rem *** ProtonTorpedoDummy ***
-ObjectTemplate.create SimpleObject SpaceRocket
-ObjectTemplate.geometry spacerocket

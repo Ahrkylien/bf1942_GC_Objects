@@ -18,14 +18,5 @@ GeometryTemplate.setLodDistance 3 150
 GeometryTemplate.setLodDistance 4 200
 GeometryTemplate.setLodDistance 5 250
 
-GeometryTemplate.create StandardMesh DefGun_thing_M1
-GeometryTemplate.file DefGun_thing_M1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 50
-GeometryTemplate.setLodDistance 2 100
-GeometryTemplate.setLodDistance 3 150
-GeometryTemplate.setLodDistance 4 200
-GeometryTemplate.setLodDistance 5 250
-
 GeometryTemplate.create StandardMesh Wreck_AVTurret1_M1
 GeometryTemplate.file Vehicles/AVTurret/Wreck_AVTurret1

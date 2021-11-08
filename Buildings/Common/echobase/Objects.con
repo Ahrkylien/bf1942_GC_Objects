@@ -3,7 +3,7 @@ ObjectTemplate.aiTemplate echobase
 ObjectTemplate.geometry echobase_lower_room
 ObjectTemplate.setHasCollisionPhysics 1
 
-rem-------------------------------------------------
+rem -------------------------------------------------
 ObjectTemplate.addTemplate echobase_ext
 ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.setRotation 0/0/0
@@ -27,7 +27,7 @@ ObjectTemplate.setRotation 0/0/0
 ObjectTemplate.addTemplate echobase_spiral
 ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.setRotation 0/0/0
-rem-------------------------------------------------
+rem -------------------------------------------------
 
 ObjectTemplate.create SimpleObject echobase_ext
 ObjectTemplate.aiTemplate echobase

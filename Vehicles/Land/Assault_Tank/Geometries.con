@@ -66,16 +66,6 @@ GeometryTemplate.setLodDistance 3 50
 GeometryTemplate.setLodDistance 4 75
 GeometryTemplate.setLodDistance 5 100
 
-GeometryTemplate.create StandardMesh Assault_Tank_barrel_pivot
-GeometryTemplate.file Vehicles/Assault_Tank/Rebel_Tank_barrel_pivot
-GeometryTemplate.hasDynamicShadow 1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 20
-GeometryTemplate.setLodDistance 2 35
-GeometryTemplate.setLodDistance 3 50
-GeometryTemplate.setLodDistance 4 75
-GeometryTemplate.setLodDistance 5 100
-
 rem --------------------------------
 
 GeometryTemplate.create StandardMesh Assault_Tank_track_left
@@ -170,13 +160,3 @@ GeometryTemplate.setLodDistance 2 250
 GeometryTemplate.setLodDistance 3 300
 GeometryTemplate.setLodDistance 4 350
 GeometryTemplate.setLodDistance 5 500
-
-GeometryTemplate.create StandardMesh r_rocket_m1
-GeometryTemplate.file r_rocket_m1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 10
-GeometryTemplate.setLodDistance 2 15
-GeometryTemplate.setLodDistance 3 30
-GeometryTemplate.setLodDistance 4 50
-GeometryTemplate.setLodDistance 5 100
-geometryTemplate.Scale 0.75/0.75/0.75

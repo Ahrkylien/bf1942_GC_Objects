@@ -1,8 +1,0 @@
-GeometryTemplate.create StandardMesh jud_armory
-GeometryTemplate.file buildings/Judicator/jud_armory
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 100
-GeometryTemplate.setLodDistance 2 200
-GeometryTemplate.setLodDistance 3 300
-GeometryTemplate.setLodDistance 4 400
-GeometryTemplate.setLodDistance 5 800

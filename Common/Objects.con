@@ -98,21 +98,6 @@ rem ----------------------------------------------------------
 ObjectTemplate.create SimpleObject MG_tripodStick
 ObjectTemplate.geometry tripod_stick_m1
 
-ObjectTemplate.create Projectile Tracer_Projectile
-ObjectTemplate.geometry TLight_m1
-ObjectTemplate.timeToLive CRD_NONE/3/0/0
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.gravityModifier 0.0
-ObjectTemplate.hasStartEffect 0
-ObjectTemplate.hasCollisionEffect 1
-ObjectTemplate.hasOnTimeEffect 0
-ObjectTemplate.invisibleAtEndEffect 1
-ObjectTemplate.dieAfterColl 1
-ObjectTemplate.stopAtEndEffect 1
-ObjectTemplate.invisible 1
-ObjectTemplate.material 225
-ObjectTemplate.tracerScaler 50.0
-ObjectTemplate.invisible 0
 
 rem ################################### Neko&Loop's Lasers #########################
 

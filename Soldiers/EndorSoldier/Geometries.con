@@ -15,74 +15,74 @@ GeometryTemplate.setSkin animations/endorbody.skn
 GeometryTemplate.file endorbody
 GeometryTemplate.setLodRange 0 0 1 30 2 80
 GeometryTemplate.setLodRange 3 150 4 210 5 230
-GeometryTemplate.setLodPercent 0 1.0
-GeometryTemplate.setLodPercent 1 0.7
-GeometryTemplate.setLodPercent 2 0.3
-GeometryTemplate.setLodPercent 3 0.2
-GeometryTemplate.setLodPercent 4 0.1
-GeometryTemplate.setLodPercent 5 0.05
+rem GeometryTemplate.setLodDistance 0 1.0
+rem GeometryTemplate.setLodDistance 1 0.7
+rem GeometryTemplate.setLodDistance 2 0.3
+rem GeometryTemplate.setLodDistance 3 0.2
+rem GeometryTemplate.setLodDistance 4 0.1
+rem GeometryTemplate.setLodDistance 5 0.05
 
 GeometryTemplate.create AnimatedMesh Soldier/EndorComplexHead1
 GeometryTemplate.setSkin animations/Russ1Face.skn
 GeometryTemplate.file russ1face
 GeometryTemplate.setLodRange 0 0 1 3 2 10
-GeometryTemplate.setLodPercent 0 1.0
-GeometryTemplate.setLodPercent 1 0.6
-GeometryTemplate.setLodPercent 2 0.3
+rem GeometryTemplate.setLodDistance 0 1.0
+rem GeometryTemplate.setLodDistance 1 0.6
+rem GeometryTemplate.setLodDistance 2 0.3
 
 GeometryTemplate.create AnimatedMesh Soldier/EndorComplexHead2
 GeometryTemplate.setSkin animations/Russ2Face.skn
 GeometryTemplate.file russ2face
 GeometryTemplate.setLodRange 0 0 1 3 2 10
-GeometryTemplate.setLodPercent 0 1.0
-GeometryTemplate.setLodPercent 1 0.6
-GeometryTemplate.setLodPercent 2 0.3
+rem GeometryTemplate.setLodDistance 0 1.0
+rem GeometryTemplate.setLodDistance 1 0.6
+rem GeometryTemplate.setLodDistance 2 0.3
 
 GeometryTemplate.create AnimatedMesh Soldier/EndorComplexHead3
 GeometryTemplate.setSkin animations/Russ3Face.skn
 GeometryTemplate.file russ3face
 GeometryTemplate.setLodRange 0 0 1 3 2 10
-GeometryTemplate.setLodPercent 0 1.0
-GeometryTemplate.setLodPercent 1 0.6
-GeometryTemplate.setLodPercent 2 0.3
+rem GeometryTemplate.setLodDistance 0 1.0
+rem GeometryTemplate.setLodDistance 1 0.6
+rem GeometryTemplate.setLodDistance 2 0.3
 
 GeometryTemplate.create AnimatedMesh Soldier/EndorHead
 GeometryTemplate.setSkin animations/RussHead.skn
 GeometryTemplate.file russhead
 GeometryTemplate.setLodRange 0 0 1 10 2 30
 GeometryTemplate.setLodRange 3 50 4 60 5 100
-GeometryTemplate.setLodPercent 0 1.0
-GeometryTemplate.setLodPercent 1 0.6
-GeometryTemplate.setLodPercent 2 0.3
-GeometryTemplate.setLodPercent 3 0.2
-GeometryTemplate.setLodPercent 4 0.1
-GeometryTemplate.setLodPercent 5 0.03
+rem GeometryTemplate.setLodDistance 0 1.0
+rem GeometryTemplate.setLodDistance 1 0.6
+rem GeometryTemplate.setLodDistance 2 0.3
+rem GeometryTemplate.setLodDistance 3 0.2
+rem GeometryTemplate.setLodDistance 4 0.1
+rem GeometryTemplate.setLodDistance 5 0.03
 
 GeometryTemplate.create AnimatedMesh Soldier/Endorhelm
 GeometryTemplate.setSkin animations/endorhelm.skn
 GeometryTemplate.file endorhelm
 GeometryTemplate.setLodRange 0 0 1 10 2 30
 GeometryTemplate.setLodRange 3 50 4 60 5 100
-GeometryTemplate.setLodPercent 0 1.0
-GeometryTemplate.setLodPercent 1 0.7
-GeometryTemplate.setLodPercent 2 0.3
-GeometryTemplate.setLodPercent 3 0.2
-GeometryTemplate.setLodPercent 4 0.1
-GeometryTemplate.setLodPercent 5 0.03
+rem GeometryTemplate.setLodDistance 0 1.0
+rem GeometryTemplate.setLodDistance 1 0.7
+rem GeometryTemplate.setLodDistance 2 0.3
+rem GeometryTemplate.setLodDistance 3 0.2
+rem GeometryTemplate.setLodDistance 4 0.1
+rem GeometryTemplate.setLodDistance 5 0.03
 
 GeometryTemplate.create AnimatedMesh Soldier/EndorLeftHand
 GeometryTemplate.setSkin animations/endorlhand.skn
 GeometryTemplate.file endorlhand
 GeometryTemplate.setLodRange 0 0 1 20 2 50
-GeometryTemplate.setLodPercent 0 1.0
-GeometryTemplate.setLodPercent 1 0.6
-GeometryTemplate.setLodPercent 2 0.03
+rem GeometryTemplate.setLodDistance 0 1.0
+rem GeometryTemplate.setLodDistance 1 0.6
+rem GeometryTemplate.setLodDistance 2 0.03
 
 GeometryTemplate.create AnimatedMesh Soldier/EndorRightHand
 GeometryTemplate.setSkin animations/endorrhand.skn
 GeometryTemplate.file endorrhand
 GeometryTemplate.setLodRange 0 0 1 20 2 50
-GeometryTemplate.setLodPercent 0 1.0
-GeometryTemplate.setLodPercent 1 0.6
-GeometryTemplate.setLodPercent 2 0.03
+rem GeometryTemplate.setLodDistance 0 1.0
+rem GeometryTemplate.setLodDistance 1 0.6
+rem GeometryTemplate.setLodDistance 2 0.03
 

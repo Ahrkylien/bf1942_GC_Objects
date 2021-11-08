@@ -38,16 +38,6 @@ GeometryTemplate.setLodDistance 3 300
 GeometryTemplate.setLodDistance 4 400
 GeometryTemplate.setLodDistance 5 500
 
-GeometryTemplate.create StandardMesh static_pods2
-GeometryTemplate.file Vehicles/runner/runner_pods
-GeometryTemplate.hasDynamicShadow 1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 100
-GeometryTemplate.setLodDistance 2 200
-GeometryTemplate.setLodDistance 3 300
-GeometryTemplate.setLodDistance 4 400
-GeometryTemplate.setLodDistance 5 500
-
 GeometryTemplate.create StandardMesh static_pods3
 GeometryTemplate.file Vehicles/runner/runner_pods_int
 GeometryTemplate.hasDynamicShadow 1

@@ -96,24 +96,6 @@ GeometryTemplate.setLodDistance 3 75
 GeometryTemplate.setLodDistance 4 100
 GeometryTemplate.setLodDistance 5 200
 
-GeometryTemplate.create StandardMesh Small_Bomb_M1
-GeometryTemplate.file Small_Bomb_M1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 30
-GeometryTemplate.setLodDistance 2 50
-GeometryTemplate.setLodDistance 3 100
-GeometryTemplate.setLodDistance 4 200
-GeometryTemplate.setLodDistance 5 500
-
-GeometryTemplate.create StandardMesh Big_Bomb_M1
-GeometryTemplate.file Big_Bomb_M1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 30
-GeometryTemplate.setLodDistance 2 50
-GeometryTemplate.setLodDistance 3 100
-GeometryTemplate.setLodDistance 4 200
-GeometryTemplate.setLodDistance 5 500
-
 GeometryTemplate.create StandardMesh FlechetteRocket_m1
 GeometryTemplate.file flechetterocket
 GeometryTemplate.hasDynamicShadow 1

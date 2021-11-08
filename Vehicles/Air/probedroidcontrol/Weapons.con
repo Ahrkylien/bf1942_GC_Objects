@@ -22,7 +22,5 @@ ObjectTemplate.setPosition 0/5/5
 ObjectTemplate.addTemplate probedroidbody
 ObjectTemplate.setPosition 0/5/5
 
-ObjectTemplate.create SimpleObject probedroidhead
-ObjectTemplate.geometry probedroidhead_m1
 ObjectTemplate.create SimpleObject probedroidbody
 ObjectTemplate.geometry probedroid_m1

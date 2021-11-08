@@ -17,8 +17,5 @@ GeometryTemplate.file wrench_m1
 GeometryTemplate.create StandardMesh R5D4Heal_M1
 GeometryTemplate.file medpack_m1
 
-GeometryTemplate.create StandardMesh Landmine
-GeometryTemplate.file landmine_m1
-
 GeometryTemplate.create StandardMesh Wreck_R5D41_M1
 GeometryTemplate.file Vehicles/R5/Wreck_R5D41

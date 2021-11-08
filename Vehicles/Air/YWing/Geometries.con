@@ -11,7 +11,7 @@ GeometryTemplate.setLodDistance 5 2500
 GeometryTemplate.create StandardMesh YWingGunTurret_M1
 GeometryTemplate.file Vehicles/YWing/ywing_gun
 
-GeometryTemplate.create StandardMesh AWing_Fuselage_L1
+GeometryTemplate.create StandardMesh YWing_Fuselage_L1
 GeometryTemplate.file Vehicles/YWing/ywing
 GeometryTemplate.hasDynamicShadow 1
 

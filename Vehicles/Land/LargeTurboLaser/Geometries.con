@@ -40,17 +40,6 @@ GeometryTemplate.setLodDistance 3 400
 GeometryTemplate.setLodDistance 4 500
 GeometryTemplate.setLodDistance 5 800
 
-GeometryTemplate.create StandardMesh DefGun_thing_M1
-GeometryTemplate.file DefGun_thing_M1
-GeometryTemplate.hasDynamicShadow 1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 100
-GeometryTemplate.setLodDistance 2 300
-GeometryTemplate.setLodDistance 3 400
-GeometryTemplate.setLodDistance 4 500
-GeometryTemplate.setLodDistance 5 800
-
-
 GeometryTemplate.create StandardMesh LargeTurboLaserConsole_m1
 GeometryTemplate.file Vehicles/LargeTurboLaser/tl_console_m1
 GeometryTemplate.hasDynamicShadow 1

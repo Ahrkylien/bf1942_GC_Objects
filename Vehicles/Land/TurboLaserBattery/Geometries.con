@@ -24,15 +24,6 @@ GeometryTemplate.setLodDistance 2 15
 GeometryTemplate.setLodDistance 3 30
 GeometryTemplate.setLodDistance 4 50
 
-GeometryTemplate.create StandardMesh DefGun_thing_M1
-GeometryTemplate.file DefGun_thing_M1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 10
-GeometryTemplate.setLodDistance 2 30
-GeometryTemplate.setLodDistance 3 60
-GeometryTemplate.setLodDistance 4 100
-GeometryTemplate.setLodDistance 5 200
-
 renderer.endGlobalCluster
 
 GeometryTemplate.create StandardMesh TurboLaserBatteryWreck

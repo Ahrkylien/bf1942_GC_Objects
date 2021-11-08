@@ -1,6 +1,6 @@
 rem *** DsObj ***
 ObjectTemplate.create PlayerControlObject ds_objective_new
-ObjectTemplate.setNetworkableInfo ds_objective_info
+ObjectTemplate.setNetworkableInfo ds_objective_new_info
 ObjectTemplate.geometry ds_objective_m
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.hasCollisionPhysics 1

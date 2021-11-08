@@ -3,7 +3,7 @@ ObjectTemplate.aiTemplate Gasmine
 ObjectTemplate.geometry Gasmine_Platform
 ObjectTemplate.setHasCollisionPhysics 1
 
-rem-------------------------------------------------
+rem -------------------------------------------------
 
 rem *** Inner Ring ***
 ObjectTemplate.addTemplate Gasmine_Top
@@ -80,7 +80,7 @@ ObjectTemplate.addTemplate Gasmine_Tank
 ObjectTemplate.setPosition 12.8515/0.181611/-30.3948
 ObjectTemplate.setRotation 0/0/0
 
-rem-------------------------------------------------
+rem -------------------------------------------------
 
 ObjectTemplate.create SimpleObject Gasmine_Top
 ObjectTemplate.aiTemplate Gasmine

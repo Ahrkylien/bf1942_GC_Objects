@@ -68,7 +68,7 @@ ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate YWingComplex
-rem ObjectTemplate.addTemplate YWingSimple
+ObjectTemplate.addTemplate YWingSimple
 ObjectTemplate.addTemplate YWingWreck
 rem -------------------------------------
 ObjectTemplate.lodSelector YWingLodSelector
@@ -318,4 +318,4 @@ ObjectTemplate.geometry Wreck_Null
 rem *** YWingLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 YWingLodSelector
 LodSelectorTemplate.hasDestroyedLod 1
-rem LodSelectorTemplate.addLodDistance 200
+LodSelectorTemplate.addLodDistance 200

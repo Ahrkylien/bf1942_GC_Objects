@@ -602,41 +602,11 @@ ObjectTemplate.geometry R2D2_Head_M1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 
-rem *** tat_barstool ***
-ObjectTemplate.create SimpleObject tat_barstool
-ObjectTemplate.geometry tat_barstool
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-
-rem *** tat_glass ***
-ObjectTemplate.create SimpleObject tat_glass
-ObjectTemplate.geometry tat_glass
-
 rem *** kylan_static ***
 ObjectTemplate.create SimpleObject kylan_static
 ObjectTemplate.geometry kylan_m1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-
-rem *** tat_mug1 ***
-ObjectTemplate.create SimpleObject tat_mug1
-ObjectTemplate.geometry \Buildings\Tatooine\tat_mug1
-
-rem *** tat_mug2 ***
-ObjectTemplate.create SimpleObject tat_mug2
-ObjectTemplate.geometry \Buildings\Tatooine\tat_mug2
-
-rem *** tat_bottle1 ***
-ObjectTemplate.create SimpleObject tat_bottle1
-ObjectTemplate.geometry \Buildings\Tatooine\tat_bottle1
-
-rem *** tat_bottle2 ***
-ObjectTemplate.create SimpleObject tat_bottle2
-ObjectTemplate.geometry \Buildings\Tatooine\tat_bottle2
-
-rem *** tat_ashtray ***
-ObjectTemplate.create SimpleObject tat_ashtray
-ObjectTemplate.geometry \Buildings\Tatooine\tat_ashtray
 
 rem *** SailBarge_Interior ***
 ObjectTemplate.create SimpleObject SailBarge_Interior

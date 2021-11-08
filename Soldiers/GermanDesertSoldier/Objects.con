@@ -55,38 +55,5 @@ ObjectTemplate.create SimpleObject DesGerSoldier3PBody
 ObjectTemplate.geometry Soldier/3PDesGerBody
 ObjectTemplate.hasDynamicShadow 1
 
-ObjectTemplate.create AnimatedBundle GerSoldierComplexHead1
-rem *** SHOULD BE UsFace.Ske on every nationality.
-ObjectTemplate.createSkeleton animations/UsFace.ske
-ObjectTemplate.geometry Soldier/GerComplexHead1
-ObjectTemplate.hasDynamicShadow 1
-
-ObjectTemplate.create AnimatedBundle GerSoldierComplexHead2
-rem *** SHOULD BE UsFace.Ske on every nationality.
-ObjectTemplate.createSkeleton animations/UsFace.ske
-ObjectTemplate.geometry Soldier/GerComplexHead2
-ObjectTemplate.hasDynamicShadow 1
-
-ObjectTemplate.create AnimatedBundle GerSoldierComplexHead3
-rem *** SHOULD BE UsFace.Ske on every nationality.
-ObjectTemplate.createSkeleton animations/UsFace.ske
-ObjectTemplate.geometry Soldier/GerComplexHead3
-ObjectTemplate.hasDynamicShadow 1
-
-ObjectTemplate.create SimpleObject GerSoldierHead
-ObjectTemplate.geometry Soldier/GerHead
-ObjectTemplate.hasDynamicShadow 1
-
-ObjectTemplate.create SimpleObject GerSoldierLeftHand
-ObjectTemplate.geometry Soldier/GerLeftHand
-
-ObjectTemplate.create SimpleObject GerSoldierRightHand
-ObjectTemplate.geometry Soldier/GerRightHand
-
-ObjectTemplate.create SimpleObject 1PGerSoldierLeftHand
-ObjectTemplate.geometry Soldier/1PGerLeftHand
-
-ObjectTemplate.create SimpleObject 1PGerSoldierRightHand
-ObjectTemplate.geometry Soldier/1PGerRightHand
 
 	

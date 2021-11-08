@@ -71,7 +71,7 @@ ObjectTemplate.lodSelector epsilonLodSelector
 rem *** epsilonComplex ***
 ObjectTemplate.create Bundle epsilonComplex
 ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.geometry lambdabody_m1
+ObjectTemplate.geometry tan_lambdabody_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1

@@ -1,4 +1,4 @@
-GeometryTemplate.create StandardMesh lambdabody_m1
+GeometryTemplate.create StandardMesh tan_lambdabody_m1
 GeometryTemplate.file Vehicles/Lambda/tan_lambda_body
 GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
